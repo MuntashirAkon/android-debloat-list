@@ -30,6 +30,9 @@ foreach ($list as $item) {
 
 # Save to dir
 foreach ($new_list as $list_type => $list) {
+    usort($list, function ($o1, $o2) {
+        return $o1['id'] <=> $o2['id'];
+    });
     file_put_contents(__DIR__ . '/' . $list_type . '.json', json_encode($list, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
 

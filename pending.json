@@ -1,116 +1,11 @@
 [
     {
-        "id": "com.fingerprints.serviceext",
-        "description": "Handles fingerprint authentication?",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.skin",
+        "id": "android.auto_generated_rro_product__",
         "description": "",
         "removal": "caution"
     },
     {
-        "id": "com.android.fmradio",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.gba",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.adups.fota.sysoper",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.camera",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.ygps",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.simprocessor",
-        "description": "",
-        "removal": "delete"
-    },
-    {
-        "id": "com.mediatek.mms.appservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.adups.fota",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.st.nfc.dta.mobile",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.launcher3",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.mdmlsample",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.wtk.factory",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.batterywarning",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "ma.android.com.mafactory",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.wtk.stresstest",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.calendarimporter",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.thermalmanager",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.gnssdebugreport",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.lbs.em2.ui",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.location.mtknlp",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.mediatek.dataprotection",
+        "id": "android.auto_generated_rro_vendor__",
         "description": "",
         "removal": "caution"
     },
@@ -130,6 +25,16 @@
         "removal": "caution"
     },
     {
+        "id": "com.adups.fota",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.adups.fota.sysoper",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.android.bluetooth.overlay.common",
         "description": "Overlays are usually themes.",
         "removal": "caution"
@@ -142,6 +47,11 @@
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
         "description": "Light theme overlay for cellbroadcastreceiver?",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.cellbroadcastreceiver.overlay.base.s600ww",
+        "description": "Theme overlay for cellbroadcastreceiver?",
         "removal": "caution"
     },
     {
@@ -162,6 +72,26 @@
     {
         "id": "com.android.emergency.basiccolorwhite.overlay",
         "description": "Dark theme for Emergency rescue?",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.fmradio",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.gallery3d.refocus",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.hotspot2.osulogin",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.launcher3",
+        "description": "",
         "removal": "caution"
     },
     {
@@ -187,6 +117,11 @@
     {
         "id": "com.android.phone.overlay.common",
         "description": "Phone Services Theme pack\nGuessing it's a pack of themes for the stock phone app, based on the name.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.tctdatahubprovider",
+        "description": "",
         "removal": "caution"
     },
     {
@@ -225,86 +160,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.android.systemui.overlay.common",
-        "description": "System UI Theme pack\nThe package name is pretty self-explanatory.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.example.rftuner",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.gsma.rcs",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oem.rftoolkit",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.asti",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.contacts",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.diagnosemanager",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.screenshot",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.sdcardservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.sms.smscplugger",
-        "description": "Probably related to SMS based on the name?\nContains no services and I've never seen it run.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.qualcomm.qti.devicestatisticsservice",
-        "description": "Runs in the background as part of the system.\nUnsure of importantance; could theoretically mess with efficiency if these stats are used by other system services/processes.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.qti.pasrservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.qualcomm.qti.improvetouch.service",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.qualcomm.qti.qtisettings",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.recognize.number",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.android.systemui.gesture.line.overlay",
         "description": "System gesture bar overlay? Probably a bad idea to disable.",
         "removal": "caution"
@@ -315,18 +170,28 @@
         "removal": "caution"
     },
     {
-        "id": "android.auto_generated_rro_product__",
+        "id": "com.android.systemui.overlay.common",
+        "description": "System UI Theme pack\nThe package name is pretty self-explanatory.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.evenwell.whitebalance",
         "description": "",
         "removal": "caution"
     },
     {
-        "id": "android.auto_generated_rro_vendor__",
+        "id": "com.evenwell.whitebalance.overlay.base",
         "description": "",
         "removal": "caution"
     },
     {
-        "id": "com.android.hotspot2.osulogin",
+        "id": "com.example.rftuner",
         "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.fingerprints.serviceext",
+        "description": "Handles fingerprint authentication?",
         "removal": "caution"
     },
     {
@@ -390,8 +255,188 @@
         "removal": "caution"
     },
     {
+        "id": "com.gsma.rcs",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hawk.android.browser",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hiya.axolotl.tcl",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.hmdglobal.enterprise.api",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrd.verizonuriintentservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrdcom.Elabel",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrdcom.Elabel.a_overlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrdcom.Elabel.overlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrdcom.filemanager",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.jrdcom.filemanager.a_overlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.batterywarning",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.calendarimporter",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.camera",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.dataprotection",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.gba",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.gnssdebugreport",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.lbs.em2.ui",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.location.mtknlp",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.mdmlsample",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.mms.appservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.simprocessor",
+        "description": "",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.thermalmanager",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.ygps",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oem.rftoolkit",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.asti",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.contacts",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.diagnosemanager",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.overlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.screenshot",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.sdcardservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.skin",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.oneplus.sms.smscplugger",
+        "description": "Probably related to SMS based on the name?\nContains no services and I've never seen it run.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qti.pasrservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.devicestatisticsservice",
+        "description": "Runs in the background as part of the system.\nUnsure of importantance; could theoretically mess with efficiency if these stats are used by other system services/processes.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.improvetouch.service",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.qualcomm.qti.qccauthmgr",
         "description": "QCC-AUTHMGR",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.qtisettings",
+        "description": "",
         "removal": "caution"
     },
     {
@@ -420,172 +465,7 @@
         "removal": "caution"
     },
     {
-        "id": "vendor.qti.iwlan",
-        "description": "Used for VoLTE/VoWifi (Wifi-calling)\nIwLAN = Interworking wLAN.\nSupport for mobile data offloading (use of complementary network technologies for delivering data originally targeted for cellular networks)\nIt means your phone will use the Wi-Fi connection instead of the cellular data connection.\nhttps://en.wikipedia.org/wiki/Mobile_data_offloading",
-        "removal": "caution"
-    },
-    {
-        "id": "com.verizon.cloudsetupwizard",
-        "description": "",
-        "removal": "delete"
-    },
-    {
-        "id": "com.jrd.verizonuriintentservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tcl.vzwintents",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tct.vzwwifioffload",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.vzw.easvalidation",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.ts.setupwizard.overlay.overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.Elabel.overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.hawk.android.browser",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.hiya.axolotl.tcl",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.Elabel",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.Elabel.a_overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.filemanager",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.filemanager.a_overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.vendor.frameworkresoverlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.srin.indramayu",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.cmfa.framework",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.incall.contentprovider",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.service.tagservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.camerasdkservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.coldwalletservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.digitalkey",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.providers.carrier",
-        "description": "\n",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.wifi.resources",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.wifi.softap.resources",
-        "description": "",
-        "removal": "delete"
-    },
-    {
-        "id": "com.sec.android.Cdfs",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.sec.android.smartfpsadjuster",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.sec.location.nfwlocationprivacy",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.gamedriver.sm8250",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.gpuwatchapp",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.huxplatform",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.qosindicator",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.sait.sohservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.vklayer.sm8250",
+        "id": "com.recognize.number",
         "description": "",
         "removal": "caution"
     },
@@ -625,7 +505,27 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.camerasdkservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.cameraxservice",
+        "description": "CBattery drain related on S10",
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.android.cidmanager",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.cmfa.framework",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.coldwalletservice",
         "description": "",
         "removal": "caution"
     },
@@ -640,12 +540,22 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.digitalkey",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.android.dsms",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.samsung.android.hdmapp",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.incall.contentprovider",
         "description": "",
         "removal": "caution"
     },
@@ -685,6 +595,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.providers.carrier",
+        "description": "\n",
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.android.providers.contacts",
         "description": "Likely same as com.android.providers.contacts, but for Samsung phones.\nProbably breaks contact functionality if disabled.",
         "removal": "caution"
@@ -720,6 +635,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.service.tagservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.android.setting.multisound",
         "description": "",
         "removal": "caution"
@@ -750,6 +670,16 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.wifi.resources",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.android.wifi.softap.resources",
+        "description": "",
+        "removal": "delete"
+    },
+    {
         "id": "com.samsung.android.wifi.softapwpathree.resources",
         "description": "",
         "removal": "caution"
@@ -761,6 +691,21 @@
     },
     {
         "id": "com.samsung.gamedriver.ex2100",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.gamedriver.sm8250",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.gpuwatchapp",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.huxplatform",
         "description": "",
         "removal": "caution"
     },
@@ -805,12 +750,32 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.qosindicator",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.sait.sohservice",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.sec.android.teegris.tui_service",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.samsung.slsi.audiologging",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.vklayer.sm8250",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sec.android.Cdfs",
         "description": "",
         "removal": "caution"
     },
@@ -830,12 +795,22 @@
         "removal": "caution"
     },
     {
+        "id": "com.sec.android.smartfpsadjuster",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.sec.android.systemupdate",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.sec.factory.cameralyzer",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.sec.location.nfwlocationprivacy",
         "description": "",
         "removal": "caution"
     },
@@ -865,27 +840,12 @@
         "removal": "caution"
     },
     {
-        "id": "com.evenwell.whitebalance",
+        "id": "com.srin.indramayu",
         "description": "",
         "removal": "caution"
     },
     {
-        "id": "com.evenwell.whitebalance.overlay.base",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.hmdglobal.enterprise.api",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.gallery3d.refocus",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.providers.tctdatahubprovider",
+        "id": "com.st.nfc.dta.mobile",
         "description": "",
         "removal": "caution"
     },
@@ -1031,6 +991,11 @@
     },
     {
         "id": "com.tcl.usercare.a_overlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tcl.vzwintents",
         "description": "",
         "removal": "caution"
     },
@@ -1225,6 +1190,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.tct.vzwwifioffload",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.tct.weather",
         "description": "",
         "removal": "caution"
@@ -1240,13 +1210,43 @@
         "removal": "caution"
     },
     {
-        "id": "com.android.cellbroadcastreceiver.overlay.base.s600ww",
-        "description": "Theme overlay for cellbroadcastreceiver?",
+        "id": "com.ts.setupwizard.overlay.overlay",
+        "description": "",
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.cameraxservice",
-        "description": "CBattery drain related on S10",
+        "id": "com.vendor.frameworkresoverlay",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.verizon.cloudsetupwizard",
+        "description": "",
+        "removal": "delete"
+    },
+    {
+        "id": "com.vzw.easvalidation",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.wtk.factory",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.wtk.stresstest",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "ma.android.com.mafactory",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "vendor.qti.iwlan",
+        "description": "Used for VoLTE/VoWifi (Wifi-calling)\nIwLAN = Interworking wLAN.\nSupport for mobile data offloading (use of complementary network technologies for delivering data originally targeted for cellular networks)\nIt means your phone will use the Wi-Fi connection instead of the cellular data connection.\nhttps://en.wikipedia.org/wiki/Mobile_data_offloading",
         "removal": "caution"
     }
 ]
