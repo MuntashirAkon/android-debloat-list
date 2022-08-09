@@ -1,92 +1,105 @@
 [
     {
         "id": "com.android.bluetoothmidiservice",
-        "description": "Provides classes for using the MIDI protocol over Bluetooth. Safe to remove if you don't plan to connect MIDI devices.",
-        "removal": "delete"
+        "label": "Bluetooth MIDI Service",
+        "description": "Provides classes for using the MIDI protocol over Bluetooth.",
+        "removal": "delete",
+        "warning": "Do not remove if you connect to a MIDI device"
     },
     {
         "id": "com.android.bookmarkprovider",
-        "description": "Only exists for compatibility reasons to prevent apps querying it from getting null cursors they do not expect and crash.\n",
-        "removal": "replace"
+        "label": "Bookmark Provider",
+        "description": "Only exists for compatibility reasons to prevent apps querying it from getting null cursors they do not expect and crash.",
+        "removal": "caution",
+        "warning": "Apps targeting a very old SDK might crash."
     },
     {
         "id": "com.android.carrierdefaultapp",
-        "description": "This package is a generic solution that allows carriers to indicate when a device has run OOB(Out Of Balance). Android devices that are OOB need carrier mitigation protocols to allow select data through(like to notify users their data/balance is out, or allow them to buy more data through the carrier app).\nWill probably break that functionality if disabled, but is otherwise safe to disable(should only affect users that are out of data/balance?).\nhttps://source.android.com/devices/tech/connect/oob-users",
-        "removal": "replace"
+        "label": "CarrierDefaultApp",
+        "description": "This package is a generic solution that allows carriers to indicate when a device has run OOB (Out Of Balance). Android devices that are OOB need carrier mitigation protocols to allow select data through (like to notify users their data/balance is out, or allow them to buy more data through the carrier app).\nWill probably break that functionality if disabled, but is otherwise safe to disable (should only affect users that are out of data/balance?).\nhttps://source.android.com/devices/tech/connect/oob-users",
+        "removal": "caution"
     },
     {
         "id": "com.android.companiondevicemanager",
-        "description": "Companion Device Manager\nThis handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.\nOnly needed for Google smart IoT devices (WearOS/Android Wear)",
-        "removal": "replace"
+        "label": "Companion Device Manager",
+        "description": "This handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.",
+        "removal": "delete",
+        "warning": "Only needed for Google smart IoT devices (WearOS/Android Wear)"
     },
     {
         "id": "com.android.dreams.basic",
+        "label": "Basic Daydreams",
         "description": "Daydream (not Google Daydream VR) is an interactive screensaver mode built into Android.\nWith it turned on, it activates and shows the screensaver of your choice when you dock or charge your device.\nCan display the time, weather, quotes, photos, news, tweets, or anything else Daydream app developers can think of.\nhttps://developer.android.com/reference/android/service/dreams/DreamService",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.android.dreams.phototable",
-        "description": "Photographic screensavers\nDaydream stuff, see com.android.dreams.basic",
+        "label": "Photo Screensavers",
+        "description": "Daydream stuff, see com.android.dreams.basic",
         "removal": "delete"
     },
     {
         "id": "com.android.dreams.phototable.overlay",
         "description": "Overlay for the phototable daydream? Overlays are usually themes, but not sure about this one.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.android.egg",
+        "label": "Android Easter Egg",
         "description": "Android's easter egg feature (spam-tap on the android version in the settings)",
         "removal": "delete"
     },
     {
         "id": "com.android.galaxy4",
-        "description": "Built-in Dynamic wallpaper\n",
+        "description": "Built-in Dynamic wallpaper",
         "removal": "delete"
     },
     {
         "id": "com.android.htmlviewer",
-        "description": "Allows apps to load URLs into the WebView, which allows web content to be displayed directly in the app..\nWARNING: Removing this causes a bootloop on some MIUI 12.5.4+ phones.",
-        "removal": "caution"
+        "label": "HTML Viewer",
+        "description": "Allows apps to load URLs into the WebView, which allows web content to be displayed directly in the app.",
+        "removal": "caution",
+        "warning": "Removing this causes a bootloop on some MIUI 12.5.4+ phones."
     },
     {
         "id": "com.android.magicsmoke",
-        "description": "\"Magic smoke\" Live wallpaper.\n",
+        "description": "\"Magic smoke\" Live wallpaper.",
         "removal": "delete"
     },
     {
         "id": "com.android.musicvis",
-        "description": "Music Visualization Wallpapers\n",
+        "description": "Music Visualization Wallpapers.",
         "removal": "delete"
     },
     {
         "id": "com.android.noisefield",
-        "description": "\"Noise filed\" live wallpaper.\n",
+        "description": "\"Noise filed\" live wallpaper.",
         "removal": "delete"
     },
     {
         "id": "com.android.phasebeam",
-        "description": "\"Phase beam\" live wallpaper\n",
+        "description": "\"Phase beam\" live wallpaper.",
         "removal": "delete"
     },
     {
         "id": "com.android.providers.partnerbookmarks",
-        "description": "Provides bookmarks about partners of Google in Chrome.\n",
+        "description": "Provides bookmarks about partners of Google in Chrome.",
         "removal": "delete"
     },
     {
         "id": "com.android.runintest.ddrtest",
-        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)\n",
+        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
         "removal": "delete"
     },
     {
         "id": "com.android.simappdialog",
+        "label": "SIM App Dialog",
         "description": "Sim App Dialog\nCreates a pop-up asking if the user wants to install the carrier app when a SIM is inserted. Seems to be event-triggered, i.e: doesn't run in the background.\nhttps://android.googlesource.com/platform/frameworks/base/+/master/packages/SimAppDialog/src/com/android/simappdialog/InstallCarrierAppActivity.java",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.android.soundrecorder",
-        "description": "AOSP Sound recorder. OEM often use their own solution\nNOTE: On some phones, Huawei & Xiaomi also use this package name for their own browser app.\nThere are better apps (on F-droid) anyway \n",
+        "description": "AOSP Sound recorder. OEM often use their own solution\nNOTE: On some phones, Huawei & Xiaomi also use this package name for their own browser app.\nThere are better apps (on F-droid) anyway.",
         "removal": "replace"
     },
     {
