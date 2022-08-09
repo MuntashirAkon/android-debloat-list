@@ -1,0 +1,8 @@
+[
+    {
+        "id": "org.bromite.webview",
+        "label": "Bromite SystemWebView",
+        "source": "f",
+        "repo": "https://github.com/bromite/bromite"
+    }
+]

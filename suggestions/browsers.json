@@ -1,0 +1,14 @@
+[
+    {
+        "id": "org.bromite.bromite",
+        "label": "Bromite",
+        "source": "f",
+        "repo": "https://github.com/bromite/bromite"
+    },
+    {
+        "id": "org.chromium.chrome",
+        "label": "Vanadium",
+        "repo": "https://github.com/GrapheneOS/Vanadium",
+        "reason": "GrapheneOS only"
+    }
+]
