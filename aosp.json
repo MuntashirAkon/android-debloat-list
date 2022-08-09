@@ -1,0 +1,552 @@
+[
+    {
+        "id": "com.android.bluetoothmidiservice",
+        "description": "Provides classes for using the MIDI protocol over Bluetooth. Safe to remove if you don't plan to connect MIDI devices.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.bookmarkprovider",
+        "description": "Only exists for compatibility reasons to prevent apps querying it from getting null cursors they do not expect and crash.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.carrierdefaultapp",
+        "description": "This package is a generic solution that allows carriers to indicate when a device has run OOB(Out Of Balance). Android devices that are OOB need carrier mitigation protocols to allow select data through(like to notify users their data/balance is out, or allow them to buy more data through the carrier app).\nWill probably break that functionality if disabled, but is otherwise safe to disable(should only affect users that are out of data/balance?).\nhttps://source.android.com/devices/tech/connect/oob-users",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.companiondevicemanager",
+        "description": "Companion Device Manager\nThis handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.\nOnly needed for Google smart IoT devices (WearOS/Android Wear)",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.dreams.basic",
+        "description": "Daydream (not Google Daydream VR) is an interactive screensaver mode built into Android.\nWith it turned on, it activates and shows the screensaver of your choice when you dock or charge your device.\nCan display the time, weather, quotes, photos, news, tweets, or anything else Daydream app developers can think of.\nhttps://developer.android.com/reference/android/service/dreams/DreamService",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.dreams.phototable",
+        "description": "Photographic screensavers\nDaydream stuff, see com.android.dreams.basic",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.dreams.phototable.overlay",
+        "description": "Overlay for the phototable daydream? Overlays are usually themes, but not sure about this one.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.egg",
+        "description": "Android's easter egg feature (spam-tap on the android version in the settings)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.galaxy4",
+        "description": "Built-in Dynamic wallpaper\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.htmlviewer",
+        "description": "Allows apps to load URLs into the WebView, which allows web content to be displayed directly in the app..\nWARNING: Removing this causes a bootloop on some MIUI 12.5.4+ phones.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.magicsmoke",
+        "description": "\"Magic smoke\" Live wallpaper.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.musicvis",
+        "description": "Music Visualization Wallpapers\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.noisefield",
+        "description": "\"Noise filed\" live wallpaper.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.phasebeam",
+        "description": "\"Phase beam\" live wallpaper\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.providers.partnerbookmarks",
+        "description": "Provides bookmarks about partners of Google in Chrome.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.runintest.ddrtest",
+        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.simappdialog",
+        "description": "Sim App Dialog\nCreates a pop-up asking if the user wants to install the carrier app when a SIM is inserted. Seems to be event-triggered, i.e: doesn't run in the background.\nhttps://android.googlesource.com/platform/frameworks/base/+/master/packages/SimAppDialog/src/com/android/simappdialog/InstallCarrierAppActivity.java",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.soundrecorder",
+        "description": "AOSP Sound recorder. OEM often use their own solution\nNOTE: On some phones, Huawei & Xiaomi also use this package name for their own browser app.\nThere are better apps (on F-droid) anyway \n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.stk2",
+        "description": "SIM toolkit\nSpecial package for dual-sim devices?\nEnables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nhttps://en.wikipedia.org/wiki/SIM_Application_Toolkit#cite_note-CellularZA-1\nHas been abused:\n- SimJacker: https://thehackernews.com/2019/09/simjacker-mobile-hacking.html\n- WIBattack: https://www.zdnet.com/article/new-sim-card-attack-disclosed-similar-to-simjacker/\nWARNING: do mind that disabling/uninstalling this package will break mobile identity management which could be used by apps (for example your Bank) to authenticate you. See https://en.wikipedia.org/wiki/Mobile_identity_management",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.stk",
+        "description": "SIM toolkit\nEnables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nhttps://en.wikipedia.org/wiki/SIM_Application_Toolkit#cite_note-CellularZA-1\nHas been abused:\n- SimJacker: https://thehackernews.com/2019/09/simjacker-mobile-hacking.html\n- WIBattack: https://www.zdnet.com/article/new-sim-card-attack-disclosed-similar-to-simjacker/\nWARNING: do mind that disabling/uninstalling this package will break mobile identity management which could be used by apps (for example your Bank) to authenticate you. See https://en.wikipedia.org/wiki/Mobile_identity_management",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.traceur",
+        "description": "System Tracing\nRecording device activity over a short period of time is known as system tracing. System tracing produces a trace file that can be used to generate a system report.\nNot useful if you're not a developer.\nhttps://developer.android.com/topic/performance/tracing",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.wallpaper.holospiral",
+        "description": "\"Holo spiral\" Live wallpaper.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.wallpaper.livepicker.overlay",
+        "description": "Overlay for live wallpaper picker? Overlays are usually themes, but not sure about this one.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.wallpapercropper",
+        "description": "Wallpaper cropper.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.example.android.notepad",
+        "description": "(Bad) notepad app.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "android.auto_generated_vendor_",
+        "description": "Auto generated vendor's stuff for Android Auto (https://www.android.com/intl/en_en/auto/)\nNote: You don't need this if you don't use Android auto\n",
+        "removal": "delete"
+    },
+    {
+        "id": "android.auto_generated_rro__",
+        "description": "rro = Runtime Resources Overlay.\nChanges values of a package config, based in the overlay definitions (heavily used by OEM for custom themming android) \nLink: https://source.android.com/devices/architecture/rros and https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.apps.tag",
+        "description": "Support for NFC tags interactions (5 permissions, Contacts/Phone On by default).\nNFC Tags are for instance used in buses to validate your transport card with your phone.\nOther exemple: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to a NFC device (e.g a speaker) with this disabled.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.backupconfirm",
+        "description": "Restores Google settings with Google Backup restore.\nDisplays confirmation popup when doing ADB backup. Disabling this package breaks ADB Backup.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.bio.face.service",
+        "description": "Handles facial regognition.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.bluetooth",
+        "description": "Bluetooth service\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.browser",
+        "description": "Mi Browser\nYou really should use something else.\nFYI https://www.xda-developers.com/xiaomi-mi-web-browser-pro-mint-collecting-browsing-data-incognito-mode/\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.browser.provider",
+        "description": "Old package (2014). Chrome bookmarks provider? Injects Picasa URL (http://picasaweb.google.com) in the Chrome browser's bookmarks in the browser.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.calendar",
+        "description": "AOSP Calendar app\nNOTE: Some OEMs (like Huawei & Xiaomi) use the same package name for their app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.calculator2",
+        "description": "AOSP calculator app\nNOTE: Some OEMs (like Huawei & Xiaomi) use the same package name for their app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.calllogbackup",
+        "description": "Call Logs Backup/Restore feature.\nRuns in the background.\nhttps://android.googlesource.com/platform/packages/providers/CallLogProvider/+/refs/heads/master/src/com/android/calllogbackup",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.captiveportallogin",
+        "description": "Support for captive portal: https://en.wikipedia.org/wiki/Captive_portal\nA captive portal login is a web page where users have to log in or accept terms of use. Common for public wifi networks.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.carrierconfig",
+        "description": "Dynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM?\nhttps://source.android.com/devices/tech/config/carrier\nhttps://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.cellbroadcastreceiver",
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISPs to send Emergency/Government alerts.\nRuns at boot time and is also triggered after exiting airplane mode.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know\nhttps://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.contacts",
+        "description": "AOSP Contacts\nSome OEMs(for example Xiaomi) use the same package name for their app.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.cts.priv.ctsshim",
+        "description": "Compatibility Test Service. Verifies certain upgrade scenarios. Disabling could mess with OTA updates.\nA shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nhttps://android.googlesource.com/platform/frameworks/base/+/51e458e/packages/CtsShim\nhttps://en.wikipedia.org/wiki/Shim_(computing)",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.deskclock",
+        "description": "AOSP Clock app\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.email",
+        "description": "Xiaomi closed-source email app based on the AOSP version. Really confusing package name.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.emergency",
+        "description": "Emergency rescue\nShows emergency info on lockscreen and power menu. Safe to disable if you don't want it.\nLoads on device unlock/lockscreen and power menu, so it's basically always cached in RAM, but shouldn't use much/any battery, so the main thing gained from disabling this package is the ~9MB RAM it uses.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.exchange",
+        "description": "Handles all aspects of starting, maintaining, and stopping the various sync adapters for the email accounts.\nIs it only needed for the email stock app?\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.facelock",
+        "description": "Face Unlock\nSafe to remove if you don't use Face Unlock.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.gallery3d",
+        "description": "Xiaomi Gallery app",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.hotspot2",
+        "description": "Provides wifi tethering (lets you share your mobile device's Internet connection with other devices)\nhttps://en.wikipedia.org/wiki/Tethering)\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.inputdevices",
+        "description": "Only contains a receiver named \"Android keyboard\", possibly for an external keyboard.\nLocates available keyboard layouts. Apps can offer additional keyboard layouts to the user by declaring a suitable broadcast receiver in their manifest.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.inputmethod.latin",
+        "description": "AOSP keyboard (not Google Keyboard)",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.corner",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.double",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.hole",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.noCutout",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.tall",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.display.cutout.emulation.waterfall",
+        "description": "Display cutout variant\nhttps://developer.android.com/guide/topics/display-cutout\nhttps://source.android.com/devices/tech/display/display-cutouts",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.gestural",
+        "description": "Gesture navigation\nLets you use swipes and other actions to navigate your device, rather than buttons.\nhttps://android-developers.googleblog.com/2019/08/gesture-navigation-backstory.html",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.gestural_extra_wide_back",
+        "description": "Enables a setting increasing how far you need to move your finger to trigger the back gesture.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.gestural_narrow_back",
+        "description": "Enables a setting decreasing how far you need to move your finger to trigger the back gesture.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.gestural_wide_back",
+        "description": "Enables a setting increasing how far you need to move your finger to trigger the back gesture.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.twobutton",
+        "description": "Enables a setting for using just 2 buttons in the system navbar?",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.navbar.threebutton",
+        "description": "The default system navbar? It's what you use when you don't use gesture navigation.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.musicfx",
+        "description": "Audio EQ(equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.mms",
+        "description": "AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app.\nQKSMS is a good FOSS replacement: https://f-droid.org/en/packages/com.moez.QKSMS/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.nfc",
+        "description": "NFC Service\nRuns in the background as part of the System.\nI assume NFC breaks when disabled.\nWill probably run even if disabled, like most system packages. So disabling/uninstalling is probably pointless.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.ons",
+        "description": "Opportunistic Network Service\nFrom what I can glean in the source code it seems like this provides a list of available networks and assigns each network a priority.\nI've never seen it run on its own, so this might be part of some automatic network switching setting that I have turned off.\nhttps://cs.android.com/android/platform/superproject/+/master:packages/services/AlternativeNetworkAccess/src/com/android/ons/OpportunisticNetworkService.java\nhttps://developer.android.com/reference/android/telephony/AvailableNetworkInfo\nhttps://cs.android.com/android/platform/superproject/+/master:frameworks/base/telephony/java/android/telephony/AvailableNetworkInfo.java",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.managedprovisioning",
+        "description": "Work Setup/Work profile setup\nManages Android user account profiles.\nThe typical use-case is setting up a corporate profile that is controlled by the employer on an employee's personal device, to keep personal and work data separate.\nhttps://support.google.com/work/android/answer/6191949?\nhttps://developers.google.com/android/work/requirements/work-profile\nNeeded for sandbox's apps like Shelter/Island.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.otaprovisioningclient",
+        "description": "OTA Access Point Configuration\nOTA (Over the air) is the method used by OEMs to push updates to your device.\nAn OTA access point is used to run system software updates over a special gateway. This package is most likely customized by your OEM.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.pacprocessor",
+        "description": "PAC (Proxy Auto-Config) is a file which defines how an app can automatically find the correct proxy server for fetching an URL.\nShould be safe to remove if you don't use Auto-proxy (with PAC file config)\nhttps://en.wikipedia.org/wiki/Proxy_auto-config",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.phone.recorder",
+        "description": "AOSP Call recorder function. Most of the time OEM use their own code for this.\nNOTE: Some OEMs (like Huawei & Xiaomi) use the same package name for their app.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.printservice.recommendation",
+        "description": "Recommends 3rd-party print services apps in the PlayStore. Printing will probably still works without (by using the default print service).",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.printspooler",
+        "description": "Print Spooler\nManages the printing process.\nRuns on boot, but not beyond that.\nWARNING: Disabling breaks the connection preferences submenu in the settings app on most devices, but other than that it only breaks printing functionality and is safe to disable.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.blockednumber",
+        "description": "Handles blocked number storage.\nOn some devices this seems to be tied to the recent apps menu (see https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/6)\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.calendar",
+        "description": "Calendar Storage\nNecessary for the stock Calendar app to work correctly.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.drm",
+        "description": "DRM Protected Content Storage\nManages DRM storage on the device?\nProbably required for some forms of DRM; disabling might break things like Netflix streaming, which relies on DRM to function.\nhttps://en.wikipedia.org/wiki/Digital_rights_management",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.userdictionary",
+        "description": "Handles user dictionary for keyboard apps.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html. WARNING: Removing this package may cause settings menu to crash on some Huawei phones",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.proxyhandler",
+        "description": "Handles proxy config.\nSafe to remove if you don't use a proxy.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.quicksearchbox",
+        "description": "Google quick search box.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.se",
+        "description": "SecureElementApplication\nRuns in the background as part of the system.\nUnderlying implementation for the OMAPI SE service.\nEnables apps to use the OpenMobile API to access secure elements(SE) to enable smart-card payments and other secure services.\n\nAn SE is a special chip (e.g SIM-card) for storing cryptographic secrets in a way that makes illicit use hard.\nThe Open Mobile Alliance (OPA) is a standards organization which develops open standards for the mobile phone industry.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.settings.intelligence",
+        "description": "Settings Suggestions\nHandles the search and suggestions features in the settings app.\nDisabling this package makes the Settings app crash when you tap on search.\nDoesn't run in the background, so there's little benefit in disabling.\nhttps://gitlab.com/W1nst0n/universal-android-debloater/-/issues/51",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.sharedstoragebackup",
+        "description": "Used during backup. Backs up the shared storage? (files accessible by every app with STORAGE permission)\nThings have changed with Android 10. Don't know if this package is still relevant for new phones.\nhttps://blog.mindorks.com/understanding-the-scoped-storage-in-android.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.smspush",
+        "description": "This service is used to push/send specially formatted SMS messages that display an alert message to the user, and give them the option of connecting directly to a particular app.\nFor instance, an SMS notifying the user of a new e-mail, with a URL link to connect directly to the e-mail app.\nhttps://web.archive.org/web/20200915164901/https://www.nowsms.com/doc/submitting-sms-messages/sending-wap-push-messages",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.systemui.theme.dark",
+        "description": "Enables you to use Android dark theme.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.theme.icon_pack.rounded.systemui",
+        "description": "Android icons pack [Rounded].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.timezone.updater",
+        "description": "Time Zone Updater\nAutomatically updates the clock to correspond to your current time zone\nThis *may* causes a bootloop if removed. Timezone packages often causes that. \n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.voicedialer",
+        "description": "AOSP Voice dialer. Let's you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nNOTE: On some phones Huawei & Xiaomi also use this package name for their own voice dialer app.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.wallpaperpicker",
+        "description": "Enables you to pick a wallpaper.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.wallpaperbackup",
+        "description": "Backup your wallapaper and load this backup instead of the original file in case you delete it.\nSafe to remove if you really want to.\n",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.webview",
+        "description": "AOSP webview\nDeprecated and replaced by com.google.android.webview\nAllows Android apps to display content from the web directly inside the app. It's based on Chrome.\nBromite is an open-source, privacy-oriented Webview replacement: https://www.bromite.org/system_web_view",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.documentsui",
+        "description": "Same as com.google.android.documentsui? Here's that description:\nFiles\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.\nSafe to disable, but will of course break file saving/loading functionality for some apps.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.documentsui.a_overlay",
+        "description": "Some overlay for for \"Files\"?",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.externalstorage",
+        "description": "Needed by apps to access external storage (like memory cards).",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.contacts",
+        "description": "Contacts Storage\nProvider for contact data.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html\nBreaks contact functionality if disabled. Not recommended to disable if you plan to use your device as a phone.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.providers.media",
+        "description": "Provider of media files (images, videos and such).\nScans the device for media files and allows permitted apps access to them.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.vpndialogs",
+        "description": "Provide VPN support to Android\nhttps://en.wikipedia.org/wiki/Dialog_(software)\nSafe to remove if you don't plan to use a VPN.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.protips",
+        "description": "Home screen tips\nRuns on boot.\nThe tip popups you get on the homescreen.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.dialer",
+        "description": "AOSP Dialer/Phone app\nDefault phone app on some older phones(like Oneplus 3).",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.cellbroadcastreceiver.overlay.common",
+        "description": "com.android.cellbroadcastreceiver Theme pack\nGuessing it's a pack of themes for the cellbroadcastreceiver, based on the name.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.theme.icon.circle",
+        "description": "Android icons pack [Circle].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.theme.icon.square",
+        "description": "Android icons pack [Square].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.wifi.resources",
+        "description": "System Wi-Fi resources",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.theme.icon.pebble",
+        "description": "Android icons pack [Pebble].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.theme.icon.taperedrect",
+        "description": "Android icons pack [Taperedrect].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.theme.icon.vessel",
+        "description": "Android icons pack [Vessel].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.theme.icon_pack.rounded.themepicker",
+        "description": "Obviously related to the \"rounded\" icon pack but the full package is strange. A themepicker class only for a specific icon package?\nSafe to remove if you don't use them, but there's no point in doing so.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.cellbroadcastreceiver",
+        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know\nhttps://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.modules.documentsui",
+        "description": "Files Theme pack\nGuessing it's a pack of themes for the stock Android File Browser, based on the name.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.bips",
+        "description": "Default Print Service.\nGeneric printing service that should work with most printers.\nWill break printing functionality if disabled, but other replacement print services can be downloaded from the Play Store.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.email.partnerprovider",
+        "description": "Lets Google partners (OEM in most of the case) to customize the default email settings.\nThe manufacturer often change the default signature displayed the end of each of your mail (e.g \"Sent from my Nokia phone\")",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.wallpaper.livepicker",
+        "description": "Enables you to pick a live wallpaper. Removing it will break some weather applications (especially ones with widgets) and wallpaper applications like Muzei.",
+        "removal": "replace"
+    }
+]
