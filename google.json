@@ -20,6 +20,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.soundpicker",
+        "description": "Google Sounds. Needed to pick up a phone ringtone. No weird permissions.\n\nPithus analysis: https://beta.pithus.org/report/f5f7c265c6d98666c78267b91643bbfb635021d5d4f85c93407079ba4aad88ee",
+        "removal": "caution"
+    },
+    {
         "id": "com.android.systemui.plugin.globalactions.wallet",
         "description": "Apk file name: QuickAccessWallet\nThis is the Google Pay widget in the power menu(hold power button for 1sec to show this menu), below the Emergency, Power off and Reboot buttons.",
         "removal": "delete"
@@ -227,7 +232,8 @@
     {
         "id": "com.google.android.apps.messaging",
         "description": "Google Messages (SMS+RCS) (https://play.google.com/store/apps/details?id=com.google.android.apps.messaging)\nRuns in the background.\nQKSMS is a good FOSS replacement.",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Removing this may cause issues with receiving 2FA verification text messages and calls from Google on some devices. Please let us know your experience with this on https://github.com/0x192/universal-android-debloater/pull/250 (give your phone model + Android version)"
     },
     {
         "id": "com.google.android.apps.navlite",
@@ -288,6 +294,11 @@
         "id": "com.google.android.apps.restore",
         "description": "The backup restore wizard used for pulling Android system backups from your Google account.\nRuns on boot.\nYou only need this if you factory restore, in which case it’s automatically re-enabled for you.",
         "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.safetyhub",
+        "description": "Personal Safety (https://play.google.com/store/apps/details?id=com.google.android.apps.safetyhub)\nPersonal Safety is a Pixel app that helps you prepare and react in an emergency by quickly calling emergency services (e.g if your phone detects that you've been in a car crash, it can call for help automatically)\n\nThis app has obviously a lot of dangerous permissions due to its operation.\n\nPithus analysis: https://beta.pithus.org/report/e207f7d0f59d9df268154b90fc10cd861d0483465e30bbac8f68a7b12340c67f",
+        "removal": "replace"
     },
     {
         "id": "com.google.android.apps.santatracker",
@@ -357,7 +368,8 @@
     {
         "id": "com.google.android.apps.wellbeing",
         "description": "Digital Wellbeing (https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing)\nLets you track device and app usage and set usage limits.",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "It is a hard dependency for the settings app on Android 12+ on Pixel phones. Disable this package instead of uninstalling it, or the settings will crash on launch."
     },
     {
         "id": "com.google.android.apps.work.oobconfig",
@@ -366,32 +378,32 @@
     },
     {
         "id": "com.google.android.apps.youtube.creator",
-        "description": "Youtube Studio (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator)\n",
+        "description": "YouTube Studio (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator)\n",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.youtube.gaming",
-        "description": "Youtube Gaming -(discontinued in March 2019, features integrated in main youtube app)\n",
+        "description": "YouTube Gaming -(discontinued in March 2019, features integrated in main youtube app)\n",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.youtube.kids",
-        "description": "Youtube Kid (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids)\n",
+        "description": "YouTube Kids (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids)\n",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.youtube.mango",
-        "description": "YouTube Go (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango)\nLite version of the Youtube app. Shutdown by Google in august 2022.\nhttps://support.google.com/youtube/thread/162222567/youtube-go-is-going-away-in-august-of-this-year",
+        "description": "YouTube Go (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango)\nLite version of the YouTube app. Shutdown by Google in august 2022.\nhttps://support.google.com/youtube/thread/162222567/youtube-go-is-going-away-in-august-of-this-year",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.youtube.music",
-        "description": "Youtube Music (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)\n",
+        "description": "YouTube Music (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)\n",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.youtube.vr",
-        "description": "Youtube VR (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr)\n",
+        "description": "YouTube VR (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr)\n",
         "removal": "delete"
     },
     {
@@ -437,7 +449,8 @@
     {
         "id": "com.google.android.deskclock",
         "description": "Google clock app (https://play.google.com/store/apps/details?id=com.google.android.deskclock)\n",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "on some phones, removing this makes it so alarms and notifications only vibrate and don't make any sound (via any installed app), and makes the 'Alarm' section unavailable in 'Settings > Sound & Vibration'"
     },
     {
         "id": "com.google.android.dialer",
@@ -551,7 +564,7 @@
     },
     {
         "id": "com.google.android.markup",
-        "description": "Google Markup app made for modifying pictures, ships by default on every Pie+ device.\n",
+        "description": "Google Markup app made for modifying pictures, shipped by default on every Pie+ device.\n",
         "removal": "delete"
     },
     {
@@ -570,6 +583,14 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
+        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
+        "removal": "caution",
+        "dependencies": [
+            "com.google.android.cellbroadcastreceiver"
+        ]
+    },
+    {
         "id": "com.google.android.overlay.modules.ext.services",
         "description": "Android System Theme pack\nThe package name is pretty self-explanatory.",
         "removal": "caution"
@@ -582,11 +603,6 @@
     {
         "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
         "description": "Android System Theme pack\nGuessing it's a pack of themes for the Android system framework permission controller based on the name.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.packageinstaller",
-        "description": "Occasionally runs in the background.\nRelated to installing Google-specific packages? Possibly something to do with Play services and backend updates/installations. Installing an app through Google Play worked fine with it disabled.",
         "removal": "caution"
     },
     {
@@ -651,7 +667,7 @@
     },
     {
         "id": "com.google.android.tag",
-        "description": "Support for NFC tags interactions (5 permissions : Contacts/Phone On by default).\nNFC Tags are for instance used in bus to let you validate your transport card with your phone\nOther exemple : https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to a NFC device (e.g a speaker) if removed.\n",
+        "description": "Support for NFC tags interactions (5 permissions : Contacts/Phone On by default).\nNFC Tags are for instance used in bus to let you validate your transport card with your phone\nOther example: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to an NFC device (e.g a speaker) if removed.\n",
         "removal": "delete"
     },
     {
@@ -661,8 +677,8 @@
     },
     {
         "id": "com.google.android.tts",
-        "description": "Speech Services by Google (https://play.google.com/store/apps/details?id=com.google.android.tts)\nLets apps read text on your screen aloud, in many languages.",
-        "removal": "delete"
+        "description": "Speech Services by Google (https://play.google.com/store/apps/details?id=com.google.android.tts)\nDefault Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\n\nPithus analysis: https://beta.pithus.org/report/08f97758fbfae1e17c4a8e5ee1a1e6d2726ce6b0b4931d5452f2376d60f1b4fb\n\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services. Open-source TTS engines available on Android exists but, as of the end of 2022, there is only RHVoice (https://f-droid.org/en/packages/com.github.olga_yakovleva.rhvoice.android/) and it doesn't support a lot of languages. Mimic3 (https://mycroft.ai/mimic-3/) is probably the future of IoT open-source TTS engine but there is no Android support yet",
+        "removal": "replace"
     },
     {
         "id": "com.google.android.tv.remote",
@@ -701,8 +717,9 @@
     },
     {
         "id": "com.google.android.webview",
-        "description": "Android System WebView (https://play.google.com/store/apps/details?id=com.google.android.webview)\nAllows Android apps to display content from the web directly inside the app.\nBased on Chrome.\nBromite is an open-source, privacy-oriented Webview replacement: https://www.bromite.org/system_web_view",
-        "removal": "replace"
+        "description": "Android System WebView (https://play.google.com/store/apps/details?id=com.google.android.webview)\nAllows Android apps to display content from the web directly inside the app.\nBased on Chrome.\n",
+        "removal": "replace",
+        "suggestions": "webviews"
     },
     {
         "id": "com.google.android.youtube",

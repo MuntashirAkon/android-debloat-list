@@ -2,7 +2,7 @@
     {
         "id": "android.auto_generated_rro__",
         "label": "android.auto_generated_rro__",
-        "description": "rro = Runtime Resources Overlay.\nChanges values of a package config, based in the overlay definitions (heavily used by OEM for custom themming android) \nLink: https://source.android.com/devices/architecture/rros and https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708",
+        "description": "rro = Runtime Resources Overlay.\nChanges values of a package config, based in the overlay definitions (heavily used by OEMs to customize the look and feel of Android) \nLink: https://source.android.com/devices/architecture/rros and https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708",
         "removal": "delete"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
         "id": "com.android.apps.tag",
-        "description": "Support for NFC tags interactions (5 permissions, Contacts/Phone On by default).\nNFC Tags are for instance used in buses to validate your transport card with your phone.\nOther exemple: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to a NFC device (e.g a speaker) with this disabled.",
+        "description": "Support for NFC tags interactions (5 permissions, Contacts/Phone On by default).\nNFC Tags are for instance used in buses to validate your transport card with your phone.\nOther example: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to a NFC device (e.g a speaker) with this disabled.",
         "removal": "replace"
     },
     {
@@ -34,6 +34,11 @@
         "label": "Default Print Service",
         "description": "Generic printing service that should work with most printers.\nWill break printing functionality if disabled, but other replacement print services can be downloaded from the Play Store.",
         "removal": "replace"
+    },
+    {
+        "id": "com.android.bluetooth",
+        "description": "Bluetooth service",
+        "removal": "caution"
     },
     {
         "id": "com.android.bluetoothmidiservice",
@@ -90,7 +95,7 @@
     {
         "id": "com.android.carrierconfig",
         "label": "com.android.carrierconfig",
-        "description": "Dynamically provides configuration for the carrier network. The config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more. If a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM?\nhttps://source.android.com/devices/tech/config/carrier\nhttps://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java",
+        "description": "Dynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM?\nhttps://source.android.com/devices/tech/config/carrier\nhttps://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java",
         "removal": "replace"
     },
     {
@@ -105,6 +110,22 @@
         "removal": "caution"
     },
     {
+        "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
+        "description": "Dark theme overlay for com.android.cellbroadcastreceiver",
+        "removal": "caution",
+        "dependencies": [
+            "com.android.cellbroadcastreceiver"
+        ]
+    },
+    {
+        "id": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
+        "description": "Light theme overlay for com.android.cellbroadcastreceiver",
+        "removal": "caution",
+        "dependencies": [
+            "com.android.cellbroadcastreceiver"
+        ]
+    },
+    {
         "id": "com.android.cellbroadcastreceiver.overlay.common",
         "description": "com.android.cellbroadcastreceiver Theme pack\nGuessing it's a pack of themes for the cellbroadcastreceiver, based on the name.",
         "removal": "caution"
@@ -114,7 +135,7 @@
         "label": "Companion Device Manager",
         "description": "This handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.",
         "removal": "delete",
-        "warning": "Only needed for Google smart IoT devices (WearOS/Android Wear)"
+        "warning": "Removing this package will result in the inability to read the SD card from your computer's file manager when connecting through USB"
     },
     {
         "id": "com.android.contacts",
@@ -145,7 +166,7 @@
     {
         "id": "com.android.documentsui",
         "label": "Files",
-        "description": "Same as com.google.android.documentsui? Here's that description:\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.\nSafe to disable, but will of course break file saving/loading functionality for some apps.",
+        "description": "Same as com.google.android.documentsui? Here's that description:\nFiles\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.",
         "removal": "unsafe",
         "warning": "Storage Access Framework (SAF) will break if this is disabled."
     },
@@ -184,13 +205,13 @@
     },
     {
         "id": "com.android.email.partnerprovider",
-        "description": "Lets Google partners (OEM in most of the case) to customize the default email settings.\nThe manufacturer often change the default signature displayed the end of each of your mail (e.g \"Sent from my Nokia phone\")",
+        "description": "Lets Google partners (OEM in most of the case) to customize the default email settings.\nThe manufacturer often changes the default signature displayed at the end of each of your mail (e.g \"Sent from my Nokia phone\")",
         "removal": "delete"
     },
     {
         "id": "com.android.emergency",
         "label": "Emergency information",
-        "description": "Display emergency info on lockscreen and power menu. Safe to disable if you don't want it.\nLoads on device unlock/lockscreen and power menu, so it's basically always cached in RAM, but shouldn't use much/any battery, so the main thing gained from disabling this package is the ~9MB RAM it uses.",
+        "description": "Shows emergency info on lockscreen and power menu. Safe to disable if you don't want it.\nLoads on device unlock/lockscreen and power menu, so it's basically always cached in RAM, but shouldn't use much/any battery, so the main thing gained from disabling this package is the ~9MB RAM it uses.",
         "removal": "delete"
     },
     {
@@ -210,6 +231,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.android.fmradio",
+        "description": "FM Radio\n Plug in Head phones & listen to the Radio!\n",
+        "removal": "delete"
+    },
+    {
         "id": "com.android.galaxy4",
         "description": "Built-in Dynamic wallpaper",
         "removal": "delete"
@@ -218,6 +244,11 @@
         "id": "com.android.gallery3d",
         "description": "Xiaomi Gallery app",
         "removal": "replace"
+    },
+    {
+        "id": "com.android.hotspot2",
+        "description": "Provides wifi tethering (lets you share your mobile device's Internet connection with other devices)\nhttps://en.wikipedia.org/wiki/Tethering)\n",
+        "removal": "caution"
     },
     {
         "id": "com.android.htmlviewer",
@@ -230,7 +261,8 @@
         "id": "com.android.inputdevices",
         "label": "Input Devices",
         "description": "Only contains a receiver named \"Android keyboard\", possibly for an external keyboard.\nLocates available keyboard layouts. Apps can offer additional keyboard layouts to the user by declaring a suitable broadcast receiver in their manifest.",
-        "removal": "replace"
+        "removal": "caution",
+        "warning": "If you are using the default Samsung keyboard, then deleting this package on some phones may cause the keyboard to completely stop working. You may get locked out of your phone if the only method to authenticate yourself is using password."
     },
     {
         "id": "com.android.inputmethod.latin",
@@ -327,13 +359,18 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.modulemetadata",
+        "description": "It's used to manage and store metadata about installed modules, and is accessed by the system server. Breaks some core functionality if disabled.",
+        "removal": "caution"
+    },
+    {
         "id": "com.android.musicfx",
         "description": "Audio EQ (equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
         "removal": "replace"
     },
     {
         "id": "com.android.musicvis",
-        "description": "Music Visualization Wallpapers.",
+        "description": "Music Visualization Wallpapers\n",
         "removal": "delete"
     },
     {
@@ -343,14 +380,14 @@
     },
     {
         "id": "com.android.noisefield",
-        "description": "\"Noise filed\" live wallpaper.",
+        "description": "\"Noise filed\" live wallpaper.\n",
         "removal": "delete"
     },
     {
         "id": "com.android.ons",
         "label": "com.android.ons",
         "description": "Opportunistic Network Service\nFrom what I can glean in the source code it seems like this provides a list of available networks and assigns each network a priority.\nI've never seen it run on its own, so this might be part of some automatic network switching setting that I have turned off.\nhttps://cs.android.com/android/platform/superproject/+/master:packages/services/AlternativeNetworkAccess/src/com/android/ons/OpportunisticNetworkService.java\nhttps://developer.android.com/reference/android/telephony/AvailableNetworkInfo\nhttps://cs.android.com/android/platform/superproject/+/master:frameworks/base/telephony/java/android/telephony/AvailableNetworkInfo.java",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.android.otaprovisioningclient",
@@ -365,7 +402,7 @@
     },
     {
         "id": "com.android.phasebeam",
-        "description": "\"Phase beam\" live wallpaper.",
+        "description": "\"Phase beam\" live wallpaper\n",
         "removal": "delete"
     },
     {
@@ -381,7 +418,7 @@
     {
         "id": "com.android.printspooler",
         "label": "Print Spooler",
-        "description": "Print Spooler\nManages the printing process.\nRuns on boot, but not beyond that.",
+        "description": "Manages the printing process.\nRuns on boot, but not beyond that.",
         "removal": "caution",
         "warning": "Apart from breaking the printing functionality, it also breaks the connection preferences submenu in the settings app on most devices."
     },
@@ -421,7 +458,7 @@
     },
     {
         "id": "com.android.providers.partnerbookmarks",
-        "description": "Provides bookmarks about partners of Google in Chrome.",
+        "description": "Provides bookmarks about partners of Google in Chrome.\n",
         "removal": "delete"
     },
     {
@@ -434,7 +471,7 @@
         "id": "com.android.proxyhandler",
         "label": "ProxyHandler",
         "description": "Handles proxy config.",
-        "removal": "delete",
+        "removal": "caution",
         "warning": "Do not remove if you use a system proxy."
     },
     {
@@ -444,7 +481,7 @@
     },
     {
         "id": "com.android.runintest.ddrtest",
-        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
+        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)\n",
         "removal": "delete"
     },
     {
@@ -479,7 +516,7 @@
     },
     {
         "id": "com.android.soundrecorder",
-        "description": "AOSP Sound recorder. OEM often use their own solution\nNOTE: On some phones, Huawei & Xiaomi also use this package name for their own browser app.\nThere are better apps (on F-droid) anyway.",
+        "description": "AOSP Sound recorder. OEMs often use their own solution\nNOTE: On some phones, Huawei & Xiaomi also use this package name for their own browser app.\nThere are better apps (on F-droid) anyway \n",
         "removal": "replace"
     },
     {
@@ -534,17 +571,17 @@
         "id": "com.android.theme.icon_pack.rounded.systemui",
         "label": "Rounded",
         "description": "Android icons pack [Rounded].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
+        "removal": "caution"
     },
     {
         "id": "com.android.theme.icon_pack.rounded.themepicker",
         "label": "Rounded",
         "description": "Obviously related to the \"rounded\" icon pack but the full package is strange. A themepicker class only for a specific icon package?\nSafe to remove if you don't use them, but there's no point in doing so.",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "com.android.timezone.updater",
-        "description": "Time Zone Updater\nAutomatically updates the clock to correspond to your current time zone\nThis *may* causes a bootloop if removed. Timezone packages often causes that. \n",
+        "description": "Time Zone Updater\nAutomatically updates the clock to correspond to your current time zone\nThis *may* cause a bootloop if removed. Timezone packages often causes that. \n",
         "removal": "caution"
     },
     {
@@ -555,7 +592,7 @@
     },
     {
         "id": "com.android.voicedialer",
-        "description": "AOSP Voice dialer. Let's you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nNOTE: On some phones Huawei & Xiaomi also use this package name for their own voice dialer app.\n",
+        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nNOTE: On some phones Huawei & Xiaomi also use this package name for their own voice dialer app.\n",
         "removal": "replace"
     },
     {
@@ -573,7 +610,7 @@
         "id": "com.android.wallpaper.livepicker",
         "label": "Live Wallpaper Picker",
         "description": "Enables you to pick a live wallpaper. Removing it will break some weather applications (especially ones with widgets) and wallpaper applications like Muzei.",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.android.wallpaper.livepicker.overlay",
@@ -589,17 +626,16 @@
         "id": "com.android.wallpapercropper",
         "label": "com.android.wallpapercropper",
         "description": "Wallpaper cropper.\n",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.android.wallpaperpicker",
         "description": "Enables you to pick a wallpaper.\n",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "com.android.webview",
-        "label": "Android System WebView",
-        "description": "Same as com.google.android.webview\nAllows Android apps to display content from the web directly inside the app. It's based on Chrome.",
+        "description": "AOSP webview\nDeprecated and replaced by com.google.android.webview\nAllows Android apps to display content from the web directly inside the app. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly.\n",
         "removal": "replace",
         "suggestions": "webviews"
     },
@@ -607,7 +643,7 @@
         "id": "com.android.wifi.resources",
         "label": "System Wi-Fi Resources",
         "description": "System Wi-Fi resources",
-        "removal": "unsafe"
+        "removal": "caution"
     },
     {
         "id": "com.example.android.notepad",
@@ -617,7 +653,18 @@
     {
         "id": "com.google.android.cellbroadcastreceiver",
         "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know\nhttps://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver",
-        "removal": "caution"
+        "removal": "caution",
+        "dependencies": [
+            "com.google.android.cellbroadcastservice"
+        ]
+    },
+    {
+        "id": "com.google.android.cellbroadcastservice",
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
+        "removal": "caution",
+        "required_by": [
+            "com.google.android.cellbroadcastreceiver"
+        ]
     },
     {
         "id": "com.google.android.overlay.modules.documentsui",

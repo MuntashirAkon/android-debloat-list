@@ -40,21 +40,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
-        "description": "Dark theme overlay for cellbroadcastreceiver?",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
-        "description": "Light theme overlay for cellbroadcastreceiver?",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.cellbroadcastreceiver.overlay.base.s600ww",
-        "description": "Theme overlay for cellbroadcastreceiver?",
-        "removal": "caution"
-    },
-    {
         "id": "com.android.dialer.basiccolorblack.overlay",
         "description": "Dark theme overlay for AOSP Dialer?",
         "removal": "caution"
@@ -72,11 +57,6 @@
     {
         "id": "com.android.emergency.basiccolorwhite.overlay",
         "description": "Dark theme for Emergency rescue?",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.fmradio",
-        "description": "",
         "removal": "caution"
     },
     {
@@ -200,11 +180,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.google.android.cellbroadcastservice",
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nhttps://en.wikipedia.org/wiki/Cell_Broadcast\nhttps://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
-        "removal": "caution"
-    },
-    {
         "id": "com.google.android.connectivity.resources",
         "description": "",
         "removal": "caution"
@@ -237,11 +212,6 @@
     {
         "id": "com.google.android.overlay.gmsconfig.photos",
         "description": "Android System Theme pack\nGuessing it's a pack of overlay themes for Android System or Google Play Services based on the name.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "description": "",
         "removal": "caution"
     },
     {
@@ -355,11 +325,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.mediatek.simprocessor",
-        "description": "",
-        "removal": "delete"
-    },
-    {
         "id": "com.mediatek.thermalmanager",
         "description": "",
         "removal": "caution"
@@ -381,11 +346,6 @@
     },
     {
         "id": "com.oneplus.contacts",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.oneplus.diagnosemanager",
         "description": "",
         "removal": "caution"
     },
@@ -421,7 +381,7 @@
     },
     {
         "id": "com.qualcomm.qti.devicestatisticsservice",
-        "description": "Runs in the background as part of the system.\nUnsure of importantance; could theoretically mess with efficiency if these stats are used by other system services/processes.",
+        "description": "Runs in the background as part of the system.\nUnsure of importance; could theoretically mess with efficiency if these stats are used by other system services/processes.",
         "removal": "caution"
     },
     {
@@ -590,11 +550,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.privateshare",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.samsung.android.providers.carrier",
         "description": "\n",
         "removal": "caution"
@@ -651,11 +606,6 @@
     },
     {
         "id": "com.samsung.android.smartsuggestions",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.sume.nn.service",
         "description": "",
         "removal": "caution"
     },

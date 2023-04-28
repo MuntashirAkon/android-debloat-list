@@ -1,12 +1,17 @@
 [
     {
+        "id": "air.com.playtika.slotomania",
+        "description": "Slotomania (https://play.google.com/store/apps/details?id=air.com.playtika.slotomania)\nPreinstalled game on some Samsung phones. 31 permissions, 13 trackers: https://reports.exodus-privacy.eu.org/reports/air.com.playtika.slotomania/latest/",
+        "removal": "delete"
+    },
+    {
         "id": "cci.usage",
         "description": "My Consumer Cellular (https://play.google.com/store/apps/details?id=cci.usage)\nLets you manage your Consumer Cellular account, track your usage, pay your bill.\nConsumer Cellular is an American postpaid mobile virtual network operator\nhttps://en.wikipedia.org/wiki/Consumer_Cellular\n",
         "removal": "delete"
     },
     {
         "id": "co.sitic.pp",
-        "description": "Designed to remotely lock the phone (by sending a simple SMS) in case you don't pay your bill \nhttps://www.reddit.com/r/Android/comments/fde3l6/3rd_party_telemetry_found_in_nokia_smartphones/fjh4zbx/?context=3\nThis app was preinstalled on phone not served by that carrier (América Móvil) from South America. \nNormally you should not have this app anymore because it was removed by Nokia during an Android 10 update.\n",
+        "description": "Designed to remotely lock the phone (by sending a simple SMS) in case you don't pay your bill \nhttps://www.reddit.com/r/Android/comments/fde3l6/3rd_party_telemetry_found_in_nokia_smartphones/fjh4zbx/?context=3\nThis app was pre-installed on phone not served by that carrier (América Móvil) from South America.\nNormally you should not have this app anymore because it was removed by Nokia during an Android 10 update.\n",
         "removal": "delete"
     },
     {
@@ -25,8 +30,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.agui.toolbox",
+        "description": "Toolbox\n contains a bunch of small utilites, most have there own APP but are only accessible from the Toolbox UI\nincluded; Noise test, Compass, Flashlight, Bubble Level, Picture Hanging, Heart rate, Measure height,\n Magnifier,Alarm, Plumb Bob, Protractor, Speedometer & a Pedometer.",
+        "removal": "delete"
+    },
+    {
         "id": "com.amazon.aa",
-        "description": "Amazon Assistant app. Nice spyware ! \nShow you recoomanded products available on Amazon and price compare as you shop across the web.\nNOTE : https://www.gadgetguy.com.au/amazon-assistant-spies-on-you/\n",
+        "description": "Amazon Assistant app, a spyware.\nShows you recommended products available on Amazon and price compare as you shop across the web.\nNOTE : https://www.gadgetguy.com.au/amazon-assistant-spies-on-you/\n",
         "removal": "delete"
     },
     {
@@ -136,12 +146,12 @@
     },
     {
         "id": "com.contextlogic.wish",
-        "description": "Wish Shopping (https://play.google.com/store/apps/details?id=com.contextlogic.wish)\nYou should not buy with Wish if you want my opinion.\n",
+        "description": "Wish Shopping (https://play.google.com/store/apps/details?id=com.contextlogic.wish)",
         "removal": "delete"
     },
     {
         "id": "com.cootek.smartinputv5.language.englishgb",
-        "description": "TouchPal Keyboard by Cootek a chinese company.\nAdware (lots lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
+        "description": "TouchPal Keyboard by Cootek a chinese company.\nAdware (lots and lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
         "removal": "delete"
     },
     {
@@ -157,6 +167,11 @@
     {
         "id": "com.devhd.feedly",
         "description": "Feedly (https://play.google.com/store/apps/details?id=com.devhd.feedly)\nNews aggregator application (RSS)\nRSS aggregator are great but Feedly is really bad, especially privacy-wise.\nhttps://feedly.com/i/legal/privacy\nBetter Alternative : https://github.com/FreshRSS/FreshRSS\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.digitalturbine.toolbar",
+        "description": "Digital Turbine\nAdware and used by carriers to showcase their apps\n\nFYI: Digital Turbine is an advertising company.\n",
         "removal": "delete"
     },
     {
@@ -216,7 +231,7 @@
     },
     {
         "id": "com.ebay.carrier",
-        "description": "Kind of weird ebay apps preinstalled by carriers.\n",
+        "description": "Kind of weird ebay apps pre-installed by carriers.\n",
         "removal": "delete"
     },
     {
@@ -231,7 +246,7 @@
     },
     {
         "id": "com.emoji.keyboard.touchpal",
-        "description": "TouchPal Emoji Keyboard by Cootek a chinese company\nAdware (lots lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
+        "description": "TouchPal Emoji Keyboard by Cootek a chinese company\nAdware (lots and lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
         "removal": "delete"
     },
     {
@@ -266,7 +281,12 @@
     },
     {
         "id": "com.facebook.system",
-        "description": "Facebook App Installer (empty shell app which incite you to install the Facebook app)\n",
+        "description": "Facebook App Installer (empty shell app which incites you to install the Facebook app)\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.finshell.fin",
+        "description": "FinShell Pay (https://play.google.com/store/apps/details?id=com.finshell.fin)\nProvides various Payment and Financial Services. Pretty bad privacy policy: https://rwallet.finshell.co.in/html/user/privacy_policy.html",
         "removal": "delete"
     },
     {
@@ -282,6 +302,11 @@
     {
         "id": "com.generalmobi.go2pay",
         "description": "Go2Pay (https://play.google.com/store/apps/details?id=com.generalmobi.go2pay)\nPayment app that offers mobile pre-paid recharges and post-paid bill payment, data card recharges and bill payment, \nDTH recharges through cashless transactions.\nDTH = Direct To Home Television \n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.glance.internet",
+        "description": "Displays unsolicited \"trending\" stories on Lockscreen",
         "removal": "delete"
     },
     {
@@ -308,6 +333,12 @@
         "id": "com.handmark.expressweather.vpl",
         "description": "1Weather (https://play.google.com/store/apps/details?id=com.handmark.expressweather)\nForecasts alerts app (contain ads)\n",
         "removal": "delete"
+    },
+    {
+        "id": "com.haoba.btsmart",
+        "description": "Agui Unibuds",
+        "removal": "delete",
+        "warning": "May only be needed if you use Uniherts Ear Buds (Unibuds)"
     },
     {
         "id": "com.heytap.accessory",
@@ -373,7 +404,7 @@
     },
     {
         "id": "com.ironsource.appcloud.oobe.huawei",
-        "description": "Essentials apps\nApp who promotes some other apps (and encourages you to install them)\nThis is developped by IronSource, a \"next-generation advertising company\" \nhttps://aura.ironsrc.com/ (app) | https://company.ironsrc.com/ (company)\nWhen you try to read their privacy policy you arrive to an outstanding blank PDF file!\n(http://www.ironsrc.com/wp-content/uploads/2019/03/ironSource-Privacy-Policy.pdf)\n",
+        "description": "Essentials apps\nApp which promotes some other apps (and encourages you to install them)\nDeveloped by IronSource, a \"next-generation advertising company\" \nhttps://aura.ironsrc.com/ (app) | https://company.ironsrc.com/ (company)\nWhen you try to read their privacy policy you arrive to an outstanding blank PDF file!\n(http://www.ironsrc.com/wp-content/uploads/2019/03/ironSource-Privacy-Policy.pdf)\n",
         "removal": "delete"
     },
     {
@@ -383,7 +414,7 @@
     },
     {
         "id": "com.king.candycrushsaga",
-        "description": "Candy Crush Saga (https://play.google.com/store/apps/details?id=com.king.candycrushsaga)\nI don't understand why this game is so popular (I guess the fact it is preinstalled in a lot of phone helps)\n",
+        "description": "Candy Crush Saga (https://play.google.com/store/apps/details?id=com.king.candycrushsaga)\nI don't understand why this game is so popular (I guess the fact it is pre-installed in a lot of phone helps)\n",
         "removal": "delete"
     },
     {
@@ -418,18 +449,24 @@
     },
     {
         "id": "com.mediatek.engineermode",
-        "description": "Enigneer mode you can access by dialing a secret code (*#*#3646633#*#* on some Xiaomi phones for instance)\nIt enables you to access to debug/logged data and some hidden firmware settings. \n",
+        "description": "Engineer mode you can access by dialing a secret code (*#*#3646633#*#* on some Xiaomi phones for instance)\nIt enables you to access the debug/logged data and some hidden firmware settings.\n",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.gpslocationupdate",
-        "description": "I wonder if it is really only a logging app. \nCan someone try to remove it and use a GPS app to see it still works?\nCan someone share the apk? (from a Xiaomi/Huawei phone)\n",
+        "description": "I wonder if it is really only a logging app.\nCan someone try to remove it and use a GPS app to see if it still works?\nCan someone share the apk? (from a Xiaomi/Huawei phone)\n",
         "removal": "caution"
     },
     {
         "id": "com.mediatek.ims",
         "description": "Mediatek's implementation of IMS (low-level implementation?)\nhttps://www.programmersought.com/article/50164530665/\nIMS(Ip Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling).",
         "removal": "caution"
+    },
+    {
+        "id": "com.mediatek.ims.pco",
+        "description": "Protocol Configuration Options service for IMS\nIMS(IP Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling). This package enable automatic configuration pushed by your carrier.",
+        "removal": "caution",
+        "warning": "Maybe needed if you use IMS"
     },
     {
         "id": "com.mediatek.location.lppe.main",
@@ -462,13 +499,18 @@
         "removal": "replace"
     },
     {
+        "id": "com.mediatek.simprocessor",
+        "description": "This controls and imports contacts saved on a SIM card. Not needed if you don't store your contacts on the SIM card\n",
+        "removal": "replace"
+    },
+    {
         "id": "com.mediatek.wfo.impl",
-        "description": "According to olorin (https://www.olorin.me/2019/09/08/debloating-the-umidigi-f1-play/) it's MediaTek’s default fingerprint app (and he removed it).\nCan someone confirm what this package does?\nRemember that any preinstalled apps you don't actually need just increase the surface attack.\nVulnerability found in 2019: https://nvd.nist.gov/vuln/detail/CVE-2019-15368\nAny app co-located on the device could modify a system property through an exported interface without proper authorization.",
+        "description": "According to olorin (https://www.olorin.me/2019/09/08/debloating-the-umidigi-f1-play/) it's a MediaTek’s default fingerprint app (and he removed it).\nCan someone confirm what this package does?\nRemember that any pre-installed apps you don't actually need just increase the surface attack.\nVulnerability found in 2019: https://nvd.nist.gov/vuln/detail/CVE-2019-15368\nAny app co-located on the device could modify a system property through an exported interface without proper authorization.",
         "removal": "delete"
     },
     {
         "id": "com.micredit.in",
-        "description": "Mi Credit. Personal Loan app (https://play.google.com/store/apps/details?id=com.micredit.in.gp)\n",
+        "description": "Mi Credit (https://play.google.com/store/apps/details?id=com.micredit.in.gp)\nApp providing loans to MIUI users from India and China\n\nNote: https://web.archive.org/web/20221207193942/https://onsitego.com/blog/xiaomi-quietly-discontinues-mi-credit-mi-pay-india/",
         "removal": "delete"
     },
     {
@@ -494,6 +536,11 @@
     {
         "id": "com.microsoft.office.officehubrow",
         "description": "Microsoft Mobile Office Beta\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.microsoft.office.onenote",
+        "description": "OneNote (https://play.google.com/store/apps/details?id=com.microsoft.office.onenote)\nMicrosoft and privacy you know... This app has a lot of permissions. For example it has access to phone state, including the phone number of the device, current cellular network information, the status of any ongoing calls...",
         "removal": "delete"
     },
     {
@@ -593,7 +640,17 @@
     },
     {
         "id": "com.opera.preinstall",
-        "description": "Opera Preinstall Data\nGenerate utm tracking stuff\n",
+        "description": "Opera Preinstall Data\nGenerates utm tracking stuff\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.opos.cs",
+        "description": "Hot Apps\nGenerate app folders on home screen that recommended sponsored apps and games.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.pandora.android",
+        "description": "Pandora (https://play.google.com/store/apps/details?id=com.pandora.android)\nVery intrusive music and podcasts app. 17 permissions and 14 trackers: https://reports.exodus-privacy.eu.org/reports/com.pandora.android/latest/",
         "removal": "delete"
     },
     {
@@ -603,7 +660,7 @@
     },
     {
         "id": "com.phonepe.app",
-        "description": "PhonePe (https://play.google.com/store/apps/details?id=com.phonepe.app)\nPhonePe is a payments app that allows indian users to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, \npay your utility bills and also make instant payments at offline and online stores.\nPhonePe is an indian company (https://en.wikipedia.org/wiki/PhonePe)\nBHIM = Bharat Interface for Money : https://en.wikipedia.org/wiki/BHIM\nUPI = Unified Payement Interface : https://en.wikipedia.org/wiki/Unified_Payments_Interface\n",
+        "description": "PhonePe (https://play.google.com/store/apps/details?id=com.phonepe.app)\nPhonePe is a payment app that allows indian users to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, \npay your utility bills and also make instant payments at offline and online stores.\nPhonePe is an indian company (https://en.wikipedia.org/wiki/PhonePe)\nBHIM = Bharat Interface for Money : https://en.wikipedia.org/wiki/BHIM\nUPI = Unified Payement Interface : https://en.wikipedia.org/wiki/Unified_Payments_Interface\n",
         "removal": "delete"
     },
     {
@@ -613,7 +670,7 @@
     },
     {
         "id": "com.pinsight.v1",
-        "description": "App Spotlight\nMakes you discover new apps from the Google Play store. The selection criteria are unkown.\n",
+        "description": "App Spotlight\nMakes you discover new apps from the Google Play store. The selection criteria is unknown.\n",
         "removal": "delete"
     },
     {
@@ -843,7 +900,7 @@
     },
     {
         "id": "com.qualcomm.qti.telephony.vodafonepack",
-        "description": "Related to Vodafone Prepaid Recharge Plan\nIf you're not a Vodafone client but still has this package on your phone you can delete it.\nFor Vodafon client, I don't know what this package does.\nhttps://en.wikipedia.org/wiki/Vodafone\n",
+        "description": "Related to Vodafone Prepaid Recharge Plan\nIf you're not a Vodafone client but still has this package on your phone you can delete it.\nFor Vodafone client, I don't know what this package does.\nhttps://en.wikipedia.org/wiki/Vodafone\n",
         "removal": "caution"
     },
     {
@@ -932,6 +989,22 @@
         "removal": "delete"
     },
     {
+        "id": "com.redteamobile.roaming",
+        "description": "ORoaming\nLets you buy RedTeaMobile data plan to access Internet in foreign country with a virtual SIM card\nSee https://support.oppo.com/uk/answer/?aid=neu9139\nPithus analysis: https://beta.pithus.org/report/d017d4f6623bf8e71456e6bffe551ef6f3ff3095c62cef3df6d968354898c097",
+        "removal": "delete",
+        "dependencies": [
+            "com.redteamobile.roaming.deamon"
+        ]
+    },
+    {
+        "id": "com.redteamobile.roaming.deamon",
+        "description": "ORoaming\nRedtea Roaming service deamon for com.redteamobile.roaming",
+        "removal": "delete",
+        "required_by": [
+            "com.redteamobile.roaming"
+        ]
+    },
+    {
         "id": "com.remotefairy4",
         "description": "AnyMote Universal Remote + Wifi Smart Home Control (https://play.google.com/store/apps/details?id=com.remotefairy4)\nIR Remote control app \nLots of trackers and permissions : https://reports.exodus-privacy.eu.org/en/reports/com.remotefairy4/latest/\n",
         "removal": "delete"
@@ -973,12 +1046,12 @@
     },
     {
         "id": "com.sem.factoryapp",
-        "description": "SEMFactoryApp\nCall home (172.217.168.14 --> Google IP). Need NFC permission.\nThis package is maybe used to test NFC.\n",
+        "description": "SEMFactoryApp\nCall home (172.217.168.14 --> Google IP). Needs NFC permission.\nThis package is maybe used to test NFC.\n",
         "removal": "delete"
     },
     {
         "id": "com.servicemagic.consumer",
-        "description": "HomeAdvisor: Contractors for Home Improvement (https://play.google.com/store/apps/details?id=com.servicemagic.consumer)\nHelp you find local contractors from the service Home Advisor network\nHomeAdvisor collects users data when a request is made and then sells that data to local contractors in exchange for money.\nWorth Reading : https://en.wikipedia.org/wiki/HomeAdvisor#Critism\n",
+        "description": "HomeAdvisor: Contractors for Home Improvement (https://play.google.com/store/apps/details?id=com.servicemagic.consumer)\nHelps you find local contractors from the service Home Advisor network\nHomeAdvisor collects users data when a request is made and then sells that data to local contractors in exchange for money.\nWorth Reading: https://en.wikipedia.org/wiki/HomeAdvisor#Critism\n",
         "removal": "delete"
     },
     {
@@ -1022,13 +1095,18 @@
         "removal": "delete"
     },
     {
+        "id": "com.staplegames.blocksClassicSGGP",
+        "description": "Block (https://play.google.com/store/apps/details?id=com.staplegames.blocksClassicSGGP)\nPreinstalled game on some Samsung phones. 9 permissions, 26 trackers: https://reports.exodus-privacy.eu.org/reports/com.staplegames.blocksClassicSGGP/latest/",
+        "removal": "delete"
+    },
+    {
         "id": "com.swiftkey.swiftkeyconfigurator",
         "description": "SwiftKey factory settings\nUsed by commercial swiftkey partners to configure the SwiftKey app.\nSwiftkey is a keyboard developed by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n",
         "removal": "delete"
     },
     {
         "id": "com.talpa.hibrowser",
-        "description": "Hi Browser (https://play.google.com/store/apps/details?id=com.talpa.hibrowser)\nAwful browser with embeded trackers and ads (https://reports.exodus-privacy.eu.org/fr/reports/com.talpa.hibrowser/latest/)",
+        "description": "Hi Browser (https://play.google.com/store/apps/details?id=com.talpa.hibrowser)\nAwful browser with embedded trackers and ads (https://reports.exodus-privacy.eu.org/fr/reports/com.talpa.hibrowser/latest/)",
         "removal": "delete"
     },
     {
@@ -1049,6 +1127,11 @@
     {
         "id": "com.til.timesnews",
         "description": "India News (https://play.google.com/store/apps/details?id=com.til.timesnews)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tiqiaa.remote",
+        "description": "ZazaRemote (https://play.google.com/store/apps/details?id=com.tiqiaa.remote)\nA Universal infrared control app full of trackers and with unecessary permissions.\n\nPithus analysis: https://beta.pithus.org/report/93eed47a45c00998f2111907afc26b5697aaf7fb19c0efb6b42d46addf0e297c",
         "removal": "delete"
     },
     {
@@ -1074,6 +1157,16 @@
     {
         "id": "com.tripadvisor.tripadvisor",
         "description": "Trip advisor (https://play.google.com/store/apps/details?id=com.tripadvisor.tripadvisor)\nYou should never trust and use trip advisor\nhttps://en.wikipedia.org/wiki/TripAdvisor (see 'Controversy and fraudulent reviews' section)\nhttps://nypost.com/2016/03/01/why-you-should-never-ever-trust-tripadvisor/\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tripledot.solitaire",
+        "description": "Solitaire (https://play.google.com/store/apps/details?id=com.tripledot.solitaire)\nPreinstalled game on some Samsung phones. 30 permissions, 23 trackers: https://reports.exodus-privacy.eu.org/reports/com.tripledot.solitaire/latest/",
+        "removal": "delete"
+    },
+    {
+        "id": "com.tripledot.woodoku",
+        "description": "Woodoku (https://play.google.com/store/apps/details?id=com.tripledot.woodoku)\nPreinstalled game on some Samsung phones.28 permissions, 24 trackers: https://reports.exodus-privacy.eu.org/reports/com.tripledot.woodoku/latest/",
         "removal": "delete"
     },
     {
@@ -1177,13 +1270,18 @@
         "removal": "delete"
     },
     {
+        "id": "in.playsimple.tripcross",
+        "description": "Crossword Jam (https://play.google.com/store/apps/details?id=in.playsimple.tripcross)\nPreinstalled game on some Samsung phones. 12 permissions, 25 trackers : https://reports.exodus-privacy.eu.org/reports/in.playsimple.tripcross/latest/",
+        "removal": "delete"
+    },
+    {
         "id": "in.playsimple.wordtrip",
         "description": "World Trip (https://play.google.com/store/apps/details?id=in.playsimple.wordtrip)\nWord Count & word streak puzzle game\n19 trackers + 11 permissions (https://reports.exodus-privacy.eu.org/en/reports/in.playsimple.wordtrip/latest/)\n",
         "removal": "delete"
     },
     {
         "id": "jp.co.omronsoft.openwnn",
-        "description": "Japanese keyboard/IME (Don't know why it's preinstalled on US/european devices)\nNote : IME = input method editor \n",
+        "description": "Japanese keyboard/IME (don't know why it's pre-installed on US/european devices)\nNote : IME = input method editor \n",
         "removal": "delete"
     },
     {
@@ -1204,6 +1302,11 @@
     {
         "id": "net.sharewire.parkmobilev2",
         "description": "ParkMobile - Find Parking (https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2)\n",
+        "removal": "delete"
+    },
+    {
+        "id": "net.supertreat.solitaire",
+        "description": "Solitaire (https://play.google.com/store/apps/details?id=net.supertreat.solitaire)\nPreinstalled game on some Samsung phones. 8 permissions, 17 trackers: https://reports.exodus-privacy.eu.org/reports/net.supertreat.solitaire/latest/",
         "removal": "delete"
     },
     {
@@ -1228,7 +1331,7 @@
     },
     {
         "id": "org.simalliance.openmobileapi.uicc2terminal",
-        "description": "Open Mobile API (\"interface\") to access UICC secure elements \nUICC stands for Universal Integrated Circuit Card. \nIt is a the physical and logical platform for the USIM and may contain additional USIMs and other applications.\n(U)SIM is an application on the UICC.\nhttps://bluesecblog.wordpress.com/2016/11/18/uicc-sim-usim/\nGood read: https://arxiv.org/ftp/arxiv/papers/1601/1601.03027.pdf\nNote2: The term SIM is widely used in the industry and especially with consumers to mean both SIMs and UICCs.\nhttps://www.justaskgemalto.com/us/what-uicc-and-how-it-different-sim-card/\n",
+        "description": "Open Mobile API (\"interface\") to access UICC secure elements \nUICC stands for Universal Integrated Circuit Card. \nIt is the physical and logical platform for the USIM and may contain additional USIMs and other applications.\n(U)SIM is an application on the UICC.\nhttps://bluesecblog.wordpress.com/2016/11/18/uicc-sim-usim/\nGood read: https://arxiv.org/ftp/arxiv/papers/1601/1601.03027.pdf\nNote2: The term SIM is widely used in the industry and especially with consumers to mean both SIMs and UICCs.\nhttps://www.justaskgemalto.com/us/what-uicc-and-how-it-different-sim-card/\n",
         "removal": "caution"
     },
     {
@@ -1253,7 +1356,7 @@
     },
     {
         "id": "zpub.res",
-        "description": "3-party app preinstalled in ZTE phone.\n",
+        "description": "third-party app pre-installed on ZTE phones.\n",
         "removal": "delete"
     }
 ]
