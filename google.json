@@ -437,6 +437,31 @@
         "removal": "replace"
     },
     {
+        "id": "com.google.android.cellbroadcastreceiver",
+        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
+            "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
+        ],
+        "removal": "caution",
+        "dependencies": [
+            "com.google.android.cellbroadcastservice"
+        ]
+    },
+    {
+        "id": "com.google.android.cellbroadcastservice",
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
+        ],
+        "removal": "caution",
+        "required_by": [
+            "com.google.android.cellbroadcastreceiver"
+        ]
+    },
+    {
         "id": "com.google.android.configupdater",
         "description": "ConfigUpdater\nOccasionally runs in the background.\nAuto updates certificates for TLS connection, firewall configuration, e.t.c.\nMainly used for Google services? Might be fine to disable if you don't use Google services. Disabling might mess with security if you do use them though.\nhttps://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/ConfigUpdate.java",
         "removal": "replace"
@@ -589,6 +614,11 @@
         "dependencies": [
             "com.google.android.cellbroadcastreceiver"
         ]
+    },
+    {
+        "id": "com.google.android.overlay.modules.documentsui",
+        "description": "Files Theme pack\nGuessing it's a pack of themes for the stock Android File Browser, based on the name.",
+        "removal": "caution"
     },
     {
         "id": "com.google.android.overlay.modules.ext.services",
