@@ -430,7 +430,7 @@
         "web": "https://forums.lenovo.com/t5/Security-Malware/Tab4-Preinstalled-file-manager-has-Adware-trying-to-get-your/td-p/4355222",
         "removal": "replace"
         "warning": "You must allow 'location & phone calls' permission to run."
-        "suggestions": "file_managers",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.cnn.mobile.android.phone.edgepanel",
@@ -591,6 +591,13 @@
         "id": "com.data.overlay.base.s600ww",
         "description": "Some kind of theme overlay for Nokia devices?\nSome users claim to not see any differences when removed.",
         "removal": "caution"
+    },
+    {
+        "id": "com.dti.lenovo.tablet",
+        "label": "Mobile Services",
+        "description": "Silently installs unwanted packages without user permission.\n",
+        "web": "https://www.andrewnile.co.uk/blog/lenovo-mobile-services/.\nPithus report https://beta.pithus.org/report/4ebcc8b5a13851054d85153b0d4086e4b2b5adaee66eaea5843078c6134e9dd7",
+        "removal": "delete"
     },
     {
         "id": "com.duokan.phone.remotecontroller",
