@@ -424,6 +424,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.chaozhuo.filemanager",
+        "label": "File Manager",
+        "description": "Adware file manager aka 'CZ File Manager' that mostly came preinstalled on Lenovo Tablets.\n",
+        "web": "https://forums.lenovo.com/t5/Security-Malware/Tab4-Preinstalled-file-manager-has-Adware-trying-to-get-your/td-p/4355222",
+        "removal": "replace"
+        "warning": "You must allow 'location & phone calls' permission to run."
+        "suggestions": "file_managers",
+    },
+    {
         "id": "com.cnn.mobile.android.phone.edgepanel",
         "description": "CNN Edge panel. Twitter trends, and news from CNN.\n",
         "removal": "delete"
