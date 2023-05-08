@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": "dev.patrickgold.florisboard",
+    "label": "FlorisBoard",
+    "source": "f",
+    "repo": "https://github.com/florisboard/florisboard"
+  }
+]
