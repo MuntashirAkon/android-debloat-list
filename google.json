@@ -559,8 +559,11 @@
     },
     {
         "id": "com.google.android.inputmethod.latin",
-        "description": "Gboard – the Google Keyboard (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin)\nSometimes the only keyboard app on a phone; Make sure you have another installed before you disable.\n\"Simple Keyboard\" is a good FOSS, lightweight replacement based on the AOSP Keyboard:\nhttps://f-droid.org/en/packages/rkr.simplekeyboard.inputmethod/",
-        "removal": "replace"
+        "label": "Gboard",
+        "description": "Sometimes the only keyboard app on a phone; Make sure you have another installed before you disable.\n",
+        "web": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin",
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.google.android.inputmethod.pinyin",
