@@ -15,7 +15,7 @@ Our JSON schema is quite different from the one used in the UAD project.
 - `required_by` (list of strings) _optional_ - Package names of the apps that depend on this app.
 - `tags` (list of strings) _optional_ - List of predefined tags/categories.
 - `description` (string) - Description of the package under 200 words.
-- `web` (list of string) - List of websites including Google Play Store, investigation reports, etc.
+- `web` (list of strings) _optional_ - List of websites including Google Play Store, investigation reports, etc.
 - `removal` (string) - How should this app be removed. The values are predefined.
 - `warning` (string) _optional_ - Additional description for the app that require user's attention.
 - `suggestions` (string) _optional_ - Suggestion ID.
