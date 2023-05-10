@@ -426,12 +426,13 @@
     {
         "id": "com.chaozhuo.filemanager",
         "label": "File Manager",
-        "description": "Adware file manager aka 'CZ File Manager' that mostly came preinstalled on Lenovo Tablets.\n",
+        "description": "Adware file manager aka 'CZ File Manager' that mostly came preinstalled on Lenovo Tablets.\nFile management is a basic necessity, make sure you install a third-party file manager for this purpose.\n",
         "web": [
             "https://forums.lenovo.com/t5/Security-Malware/Tab4-Preinstalled-file-manager-has-Adware-trying-to-get-your/td-p/4355222"
+            "https://beta.pithus.org/report/02b0b4c60941960d3ac82177df0e5e93f61ee0f5c181ba50668d4ab0dae8d508",
         ],
-        "removal": "replace"
-        "warning": "You must allow 'location & phone calls' permission to run."
+        "removal": "replace",
+        "warning": "You must allow 'location & phone calls' permission to run.",
         "suggestions": "file_managers"
     },
     {
