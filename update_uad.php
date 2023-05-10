@@ -1,39 +1,106 @@
 <?php
-/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
 
-const LIST_JSON = 'https://raw.githubusercontent.com/0x192/universal-android-debloater/master/resources/assets/uad_lists.json';
+const LAST_COMMIT = "11f27c671cba278d71296cdef4c5a5dba06add5e";
+const THIS_COMMIT = "11f27c671cba278d71296cdef4c5a5dba06add5e";
 
-$list = json_decode(file_get_contents(LIST_JSON), true);
+const COLOR_RED = 31;
+const COLOR_GREEN = 32;
 
-$new_list = array();
+function get_link(string $commit_hash): string {
+    return "https://raw.githubusercontent.com/0x192/universal-android-debloater/$commit_hash/resources/assets/uad_lists.json";
+}
 
-foreach ($list as $item) {
-    $new_item = array();
-    $new_item['id'] = $item['id'];
-    $new_item['description'] = $item['description'];
-    $new_item['removal'] = get_removal($item['removal']);
-    if ($item['dependencies'] != null) {
-        $new_item['dependencies'] = $item['dependencies'];
+$old_list_link = get_link(LAST_COMMIT);
+$new_list_link = get_link(THIS_COMMIT);
+
+if ($old_list_link == $new_list_link) {
+    echo "Already up-to-date.\n";
+    exit(0);
+}
+
+$old_list = json_decode(file_get_contents($old_list_link), true);
+$new_list = json_decode(file_get_contents($new_list_link), true);
+
+// Iterate over the new list to find changes w.r.t old list. Delete the matched item from the old list
+foreach ($new_list as $item) {
+    if ($item['removal'] == 'Unsafe') {
+        // Exclude Unsafe items
+        continue;
     }
-    if ($item['neededBy'] != null) {
-        $new_item['required_by'] = $item['neededBy'];
-    }
-    $list_type = strtolower($item['list']);
-    if (!isset($new_list[$list_type])) {
-        $new_list[$list_type] = array();
-    }
-    // For now, exclude `unsafe` items
-    if ($new_item['removal'] != 'unsafe') {
-        $new_list[$list_type][] = $new_item;
+    $old_item = find_in_old_list($item['id']);
+    if ($item != $old_item) {
+        // Two arrays aren't the same, check one by one and print values
+        print(" {\n");
+        foreach ($item as $key => $value) {
+            if ($value != $old_item[$key]) {
+                // These values aren't the same
+                // Print diff
+                print_diff($key, $old_item[$key], COLOR_RED);
+                print_diff($key, $value, COLOR_GREEN);
+            } else {
+                // Values are the same, print as is
+                print_diff($key, $value, null);
+            }
+        }
+        print(" }\n");
     }
 }
 
-# Save to dir
-foreach ($new_list as $list_type => $list) {
-    usort($list, function ($o1, $o2) {
-        return $o1['id'] <=> $o2['id'];
-    });
-    file_put_contents(__DIR__ . '/' . $list_type . '.json', json_encode($list, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+// The remaining items in the old list are removed
+foreach ($old_list as $item) {
+    if ($item['removal'] == 'Unsafe') {
+        // Exclude Unsafe items
+        continue;
+    }
+    // List this item as removed item.
+    print("\e[31m-{\e[0m\n");
+    foreach ($item as $key => $value) {
+        print_diff($key, $value, null);
+    }
+    print("\e[31m-}\e[0m\n");
+}
+
+exit(0);
+
+function print_diff(string $key, string|array|null $value, ?int $color): void {
+    if ($color == COLOR_RED) {
+        $symbol = '-';
+        $color_begin = "\e[31m";
+        $color_end = "\e[0m";
+    } else if ($color == COLOR_GREEN) {
+        $symbol = '+';
+        $color_begin = "\e[32m";
+        $color_end = "\e[0m";
+    } else {
+        $symbol = ' ';
+        $color_begin = '';
+        $color_end = '';
+    }
+    if ($value == null) {
+        printf("$symbol$color_begin  $key: null,$color_end");
+    } else if (is_string($value)) {
+        printf("$symbol$color_begin  $key: $value,$color_end");
+    } else if (is_array($value)) {
+        printf("$symbol$color_begin  $key: [$color_end");
+        foreach ($value as $item) {
+            printf("$symbol$color_begin    $item,$color_end");
+        }
+        printf("$symbol$color_begin  ],$color_end");
+    }
+}
+
+function find_in_old_list(string $id): ?array {
+    global $old_list;
+    $c = count($old_list);
+    for ($i = 0; $i < $c; ++$i) {
+        $item = $old_list[$i];
+        if ($item['id'] == $id) {
+            array_splice($old_list, $i, 1);
+            return $item;
+        }
+    }
+    return null;
 }
 
 function get_removal(string $uad_removal): string {
