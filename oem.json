@@ -1891,18 +1891,145 @@
         "removal": "delete"
     },
     {
+        "id": "com.kidoz.lenovo",
+        "label": "Lenovo Kid's Account",
+        "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.\n",
+        "web": [
+            "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa"
+            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection",
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.knox.vpn.proxyhandler",
         "description": "Third-party package that provides caller profile information to help consumers identify incoming calls and block unwanted ones.\nhttps://en.wikipedia.org/wiki/Hiya_(company)\nhttps://hiya.com/\nNOTE: Never trust a company that promotes spam blocking features.\nhttps://itmunch.com/robocall-caught-sending-customers-confidential-data-without-consent/\nHave a look at their privacy policy. It's... pretty scary: https://hiya.com/fr/hiya-data-policy\nNeeded for Samsung Smart Call (com.samsung.android.smartcallprovider)\nSamsung Knox allows business and personal content to \"securely\" coexist on the same handset.\nThis package handles proxies alongside KNOX.",
         "removal": "delete"
     },
     {
-        "id": "com.lenovo.lsf.user",
+        "id": "com.lenovo.agent0",
+        "label": "OCZ_ProvisionAgent",
+        "description": "",
+        "web": [
+            "https://beta.pithus.org/report/9ebdba931604f90815b8014cbba12b91521811ac49a292dab438006",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.csdkplatform",
+        "label": "PlatformApk",
+        "description": "CSDK = Commercial Software Development Kit (CSDK) for details see official video.\n",
+        "web": [
+            "https://videos.emea.lenovo.com/lenovo-commercial-software",
+            "https://beta.pithus.org/report/130d7076019d7a4519a04c80dbd80fa3734542dc44ec1f5fba464569fb3f4adc"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.dagent",
+        "label": "OCZ_DeployAgent",
+        "description": "",
+        "web": [
+            "https://beta.pithus.org/report/d5bd860fb7c42078618118213913ea6d58fec2a51904728f2f429840386d0c70",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.dsa",
+        "label": "OCZ_DeployServiceApp",
+        "description": "Dynamic System Analysis (DSA) collects and analyzes system information to aid in diagnosing system problems.\n",
+        "web": [
+            "https://support.lenovo.com/us/en/solutions/LNVO-DSA",
+            "https://beta.pithus.org/report/2e4a0b3fa9ea4fb56a7bd90d1d2c9eb4cd7fffe481943e0f6bfb8a23554cb921"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.launcher",
+        "label": "LenovoLauncher",
+        "description": "Lenovo's default device launcher.\n",
+        "web": [
+            "https://beta.pithus.org/report/3cdd48fb6a9c94435fb1b46b41a19c553b96ae889aaa2d7285f28cd64d12363e",
+        ],
+        "removal": "replace"
+        "warning": "Make sure have installed another launcher before debloating this app"
+        "suggestions": "launchers"
+    },
+    {
+        "id": "com.lenovo.launcher.provider",
+        "label": "LenovoLauncherProvider",
+        "description": "Related to lenovo launcher(com.lenovo.launcher)?\n",
+        "web": [
+            "https://beta.pithus.org/report/c94afd8d85adb4c139ca6e78cd0fe643ebe0d0046480f2b12235e698eeccaa51",
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.lenovo.lsf",
+        "label": "Lenovo ID",
         "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework\n",
+        "web": [
+            "https://beta.pithus.org/report/f181581838c8898634160e5cceada5fd3e4032b6ad9eae39ff788e8cc2922db7",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.lsf.device",
+        "label": "Device Service",
+        "description": "",
+        "web": [
+            "https://beta.pithus.org/report/1cbd510ef561561b3d850583e9467f16b9ae2d94280c9b2a50bcb8cfbad6ccf9",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.lsf.user",
+        "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.ocpl",
+        "label": "OCZ_ClientDownloader",
+        "description": "",
+        "web": [
+            "https://forums.lenovo.com/t5/Lenovo-Android-based-Tablets-and-Phablets/OCZ-ClientDownloader/m-p/5090852?page=1#5396079",
+            "https://beta.pithus.org/report/8a1884d7604d3c3ab7559d6dcffe88b77243e85bee38ff100f1331043b6d5e6f"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.ota",
+        "label": "System Update",
+        "description": "App for your Over-The-Air (OTA) system update.\n",
+        "removal": "caution"
+    },
+    {
+        "id": "com.lenovo.tab4_8plus",
+        "label": "Lenovo TAB4 8 Plus",
+        "description": "App that shows TAB4 8 Plus device specifications.\n",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.ue.device",
-        "description": "User Experience Program\nAnalytics stuff. Displays an annoying notification after every reboot prompting you to join this user experience program.",
+        "label": "UserExperience",
+        "description": "User Experience Program\nAnalytics stuff. Displays an annoying notification after every reboot prompting you to join this user experience program.\n",
+        "web": [
+            "https://beta.pithus.org/report/54cc80e774c0106e2b74b7b8d50981ad2108dad2f8d4b2c6a5115e14256807f6",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.wallpaper",
+        "label": "Wallpapers",
+        "description": "Wallpaper manager app for lenovo devices.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.lenovo.weather.theme.dreamlandPad",
+        "label": "Lenovo Weather",
+        "description": "",
+        "web": [
+            "https://beta.pithus.org/report/aff85db4566c53f4b0668f603aa99dfcae13dd165835cca4d6d0b59265145f18",
+        ],
         "removal": "delete"
     },
     {
@@ -6633,13 +6760,55 @@
     },
     {
         "id": "com.tblenovo.center",
-        "description": "Useless dashboard related to the User Experience Program (com.lenovo.ue.device). Has 25 permissions (including ones you probably don't want to give to this kind of sketchy app\n\nPithus analysis: https://beta.pithus.org/report/dcb4acac003896077eaaeb8c7dc770d3171891784d98f7127f8495a3dec9954d",
+        "description": "Useless dashboard related to the User Experience Program (com.lenovo.ue.device). Has 25 permissions, including ones you probably don't want to give to this kind of sketchy app.\n",
+        "web": [
+            "https://beta.pithus.org/report/dcb4acac003896077eaaeb8c7dc770d3171891784d98f7127f8495a3dec9954d",
+        ],
         "removal": "delete"
     },
     {
         "id": "com.tblenovo.lenovotips",
-        "description": "Useless Lenovo Tips app used by Lenovo to display un-dismissable and un-mutable ads in notifications.\nhttps://news.ycombinator.com/item?id=28382081",
+        "description": "Useless Lenovo Tips app used by Lenovo to display un-dismissable and un-mutable ads in notifications.\n",
+        "web": [
+            "https://news.ycombinator.com/item?id=28382081",
+        ],
         "removal": "delete"
+    },
+    {
+        "id": "com.tblenovo.lewea",
+        "label": "Lenovo Weather",
+        "description": "",
+        "web": [
+            "https://beta.pithus.org/report/96601b7ec8ced18bf3896946ab43edde94b14e09b95e7787ea941b25ca02164b",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.tblenovo.setup",
+        "label": "SetupWizardExt",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tblenovo.soundrecorder",
+        "label": "Sound Recorder",
+        "description": "Sound recorder for lenovo devices.\n",
+        "web": [
+            "https://beta.pithus.org/report/94123a466486800a367ecbedd5bbded54886834e001c20871d95c2820a9ea172",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.tblenovo.whatsnewclient",
+        "label": "Lenovo Feature Update",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tblenovo.whatsnewhost",
+        "label": "Lenovo Feature Update Host",
+        "description": "",
+        "removal": "caution"
     },
     {
         "id": "com.tcl.faceunlock",
