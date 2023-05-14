@@ -428,8 +428,8 @@
         "label": "File Manager",
         "description": "Adware file manager aka 'CZ File Manager' that mostly came preinstalled on Lenovo Tablets.\nFile management is a basic necessity, make sure you install a third-party file manager for this purpose.\n",
         "web": [
-            "https://forums.lenovo.com/t5/Security-Malware/Tab4-Preinstalled-file-manager-has-Adware-trying-to-get-your/td-p/4355222"
-            "https://beta.pithus.org/report/02b0b4c60941960d3ac82177df0e5e93f61ee0f5c181ba50668d4ab0dae8d508",
+            "https://forums.lenovo.com/t5/Security-Malware/Tab4-Preinstalled-file-manager-has-Adware-trying-to-get-your/td-p/4355222",
+            "https://beta.pithus.org/report/02b0b4c60941960d3ac82177df0e5e93f61ee0f5c181ba50668d4ab0dae8d508"
         ],
         "removal": "replace",
         "warning": "You must allow 'location & phone calls' permission to run.",
@@ -1896,8 +1896,8 @@
         "label": "Lenovo Kid's Account",
         "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.\n",
         "web": [
-            "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa"
-            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection",
+            "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa",
+            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection"
         ],
         "removal": "delete"
     },
@@ -1909,9 +1909,9 @@
     {
         "id": "com.lenovo.agent0",
         "label": "OCZ_ProvisionAgent",
-        "description": "",
+        "description": "Not sure what it does.\n",
         "web": [
-            "https://beta.pithus.org/report/9ebdba931604f90815b8014cbba12b91521811ac49a292dab438006",
+            "https://beta.pithus.org/report/9ebdba931604f90815b8014cbba12b91521811ac49a292dab438006"
         ],
         "removal": "delete"
     },
@@ -1928,9 +1928,9 @@
     {
         "id": "com.lenovo.dagent",
         "label": "OCZ_DeployAgent",
-        "description": "",
+        "description": "Not sure what it does.\n",
         "web": [
-            "https://beta.pithus.org/report/d5bd860fb7c42078618118213913ea6d58fec2a51904728f2f429840386d0c70",
+            "https://beta.pithus.org/report/d5bd860fb7c42078618118213913ea6d58fec2a51904728f2f429840386d0c70"
         ],
         "removal": "delete"
     },
@@ -1949,7 +1949,7 @@
         "label": "LenovoLauncher",
         "description": "Lenovo's default device launcher.\n",
         "web": [
-            "https://beta.pithus.org/report/3cdd48fb6a9c94435fb1b46b41a19c553b96ae889aaa2d7285f28cd64d12363e",
+            "https://beta.pithus.org/report/3cdd48fb6a9c94435fb1b46b41a19c553b96ae889aaa2d7285f28cd64d12363e"
         ],
         "removal": "replace"
         "warning": "Make sure have installed another launcher before debloating this app"
@@ -1958,9 +1958,9 @@
     {
         "id": "com.lenovo.launcher.provider",
         "label": "LenovoLauncherProvider",
-        "description": "Related to lenovo launcher(com.lenovo.launcher)?\n",
+        "description": "Related to lenovo launcher(com.lenovo.launcher)?\nExactly not sure what it does.\n",
         "web": [
-            "https://beta.pithus.org/report/c94afd8d85adb4c139ca6e78cd0fe643ebe0d0046480f2b12235e698eeccaa51",
+            "https://beta.pithus.org/report/c94afd8d85adb4c139ca6e78cd0fe643ebe0d0046480f2b12235e698eeccaa51"
         ],
         "removal": "caution"
     },
@@ -1969,16 +1969,16 @@
         "label": "Lenovo ID",
         "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework\n",
         "web": [
-            "https://beta.pithus.org/report/f181581838c8898634160e5cceada5fd3e4032b6ad9eae39ff788e8cc2922db7",
+            "https://beta.pithus.org/report/f181581838c8898634160e5cceada5fd3e4032b6ad9eae39ff788e8cc2922db7"
         ],
         "removal": "delete"
     },
     {
         "id": "com.lenovo.lsf.device",
         "label": "Device Service",
-        "description": "",
+        "description": "lsf = Lenovo Service Framework.\nExactly not sure what it does.\n",
         "web": [
-            "https://beta.pithus.org/report/1cbd510ef561561b3d850583e9467f16b9ae2d94280c9b2a50bcb8cfbad6ccf9",
+            "https://beta.pithus.org/report/1cbd510ef561561b3d850583e9467f16b9ae2d94280c9b2a50bcb8cfbad6ccf9"
         ],
         "removal": "delete"
     },
@@ -1990,7 +1990,7 @@
     {
         "id": "com.lenovo.ocpl",
         "label": "OCZ_ClientDownloader",
-        "description": "",
+        "description": "Not sure what it does.\n",
         "web": [
             "https://forums.lenovo.com/t5/Lenovo-Android-based-Tablets-and-Phablets/OCZ-ClientDownloader/m-p/5090852?page=1#5396079",
             "https://beta.pithus.org/report/8a1884d7604d3c3ab7559d6dcffe88b77243e85bee38ff100f1331043b6d5e6f"
@@ -2014,7 +2014,7 @@
         "label": "UserExperience",
         "description": "User Experience Program\nAnalytics stuff. Displays an annoying notification after every reboot prompting you to join this user experience program.\n",
         "web": [
-            "https://beta.pithus.org/report/54cc80e774c0106e2b74b7b8d50981ad2108dad2f8d4b2c6a5115e14256807f6",
+            "https://beta.pithus.org/report/54cc80e774c0106e2b74b7b8d50981ad2108dad2f8d4b2c6a5115e14256807f6"
         ],
         "removal": "delete"
     },
@@ -2027,9 +2027,9 @@
     {
         "id": "com.lenovo.weather.theme.dreamlandPad",
         "label": "Lenovo Weather",
-        "description": "",
+        "description": "Adds widget for lenovo weather app(com.tblenovo.lewea)\n",
         "web": [
-            "https://beta.pithus.org/report/aff85db4566c53f4b0668f603aa99dfcae13dd165835cca4d6d0b59265145f18",
+            "https://beta.pithus.org/report/aff85db4566c53f4b0668f603aa99dfcae13dd165835cca4d6d0b59265145f18"
         ],
         "removal": "delete"
     },
@@ -6763,7 +6763,7 @@
         "id": "com.tblenovo.center",
         "description": "Useless dashboard related to the User Experience Program (com.lenovo.ue.device). Has 25 permissions, including ones you probably don't want to give to this kind of sketchy app.\n",
         "web": [
-            "https://beta.pithus.org/report/dcb4acac003896077eaaeb8c7dc770d3171891784d98f7127f8495a3dec9954d",
+            "https://beta.pithus.org/report/dcb4acac003896077eaaeb8c7dc770d3171891784d98f7127f8495a3dec9954d"
         ],
         "removal": "delete"
     },
@@ -6771,23 +6771,23 @@
         "id": "com.tblenovo.lenovotips",
         "description": "Useless Lenovo Tips app used by Lenovo to display un-dismissable and un-mutable ads in notifications.\n",
         "web": [
-            "https://news.ycombinator.com/item?id=28382081",
+            "https://news.ycombinator.com/item?id=28382081"
         ],
         "removal": "delete"
     },
     {
         "id": "com.tblenovo.lewea",
         "label": "Lenovo Weather",
-        "description": "",
+        "description": "Lenovo weather application",
         "web": [
-            "https://beta.pithus.org/report/96601b7ec8ced18bf3896946ab43edde94b14e09b95e7787ea941b25ca02164b",
+            "https://beta.pithus.org/report/96601b7ec8ced18bf3896946ab43edde94b14e09b95e7787ea941b25ca02164b"
         ],
         "removal": "delete"
     },
     {
         "id": "com.tblenovo.setup",
         "label": "SetupWizardExt",
-        "description": "",
+        "description": "Exactly not sure what it does.\n",
         "removal": "caution"
     },
     {
@@ -6795,20 +6795,26 @@
         "label": "Sound Recorder",
         "description": "Sound recorder for lenovo devices.\n",
         "web": [
-            "https://beta.pithus.org/report/94123a466486800a367ecbedd5bbded54886834e001c20871d95c2820a9ea172",
+            "https://beta.pithus.org/report/94123a466486800a367ecbedd5bbded54886834e001c20871d95c2820a9ea172"
         ],
         "removal": "delete"
     },
     {
         "id": "com.tblenovo.whatsnewclient",
         "label": "Lenovo Feature Update",
-        "description": "",
+        "description": "Exactly not sure what it does.\n",
+        "web": [
+            "https://beta.pithus.org/report/c1bf1b6a7b0bc987a654d8832274658251ba448858b34ce3b0a013309f9f0ade"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.tblenovo.whatsnewhost",
         "label": "Lenovo Feature Update Host",
-        "description": "",
+        "description": "Exactly not sure what it does.\n",
+        "web" [
+            "https://beta.pithus.org/report/e08b8712d07899653631f3a9ac12c0ed48ff7bdb699651724eba26871ac0ca2b"
+        ],
         "removal": "caution"
     },
     {
