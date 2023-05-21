@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "id": "com.iakmds.librecamera",
+        "label": "Libre Camera",
+        "source": "f",
+        "repo": "https://github.com/iakmds/librecamera"
+    },
+    {
+        "id": "net.sourceforge.opencamera",
+        "label": "Open Camera",
+        "source": "fg",
+        "repo": "https://sourceforge.net/projects/opencamera/"
+    }
+]
