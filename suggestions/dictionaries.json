@@ -1,9 +1,9 @@
 [
-  {
-    "id": "itkach.aard2",
-    "label": "Aard 2",
-    "reason": "Simple yet powerful dictionary reader that support multiple dictionaries with offline access.\nSLOB files https://github.com/itkach/slob/wiki/Dictionaries",
-    "source": "fg",
-    "repo": "https://github.com/itkach/aard2-android"
-  }
+    {
+        "id": "itkach.aard2",
+        "label": "Aard 2",
+        "reason": "Simple yet powerful dictionary reader that support multiple dictionaries with offline access.\nSLOB files https://github.com/itkach/slob/wiki/Dictionaries",
+        "source": "fg",
+        "repo": "https://github.com/itkach/aard2-android"
+    }
 ]
