@@ -1,0 +1,14 @@
+[
+    {
+        "id": "com.newsblur",
+        "label": "NewsBlur",
+        "source": "fg",
+        "repo": "https://github.com/samuelclay/NewsBlur"
+    }
+    {
+        "id": "com.nononsenseapps.feeder",
+        "label": "Feeder",
+        "source": "fg",
+        "repo": "https://gitlab.com/spacecowboy/Feeder"
+    }
+]
