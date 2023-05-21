@@ -1,14 +1,14 @@
 [
-  {
-    "id": "org.smc.inputmethod.indic",
-    "label": "Indic Keyboard",
-    "source": "fg",
-    "repo": "https://gitlab.com/indicproject/Indic-Keyboard"
-  }
-  {
-    "id": "dev.patrickgold.florisboard",
-    "label": "FlorisBoard",
-    "source": "f",
-    "repo": "https://github.com/florisboard/florisboard"
-  }
+    {
+        "id": "dev.patrickgold.florisboard",
+        "label": "FlorisBoard",
+        "source": "f",
+        "repo": "https://github.com/florisboard/florisboard"
+    },
+    {
+        "id": "org.smc.inputmethod.indic",
+        "label": "Indic Keyboard",
+        "source": "fg",
+        "repo": "https://gitlab.com/indicproject/Indic-Keyboard"
+    }
 ]
