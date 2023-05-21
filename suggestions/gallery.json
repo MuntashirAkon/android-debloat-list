@@ -1,14 +1,14 @@
 [
-  {
-    "id": "deckers.thibault.aves.libre",
-    "label": "Aves Libre",
-    "source": "f",
-    "repo": "https://github.com/deckerst/aves"
-  },
-  {
-    "id": "com.simplemobiletools.gallery.pro",
-    "label": "Simple Gallery Pro",
-    "source": "f",
-    "repo": "https://github.com/SimpleMobileTools/Simple-Gallery"
-  }
+    {
+        "id": "com.simplemobiletools.gallery.pro",
+        "label": "Simple Gallery Pro",
+        "source": "f",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Gallery"
+    },
+    {
+        "id": "deckers.thibault.aves.libre",
+        "label": "Aves Libre",
+        "source": "f",
+        "repo": "https://github.com/deckerst/aves"
+    }
 ]
