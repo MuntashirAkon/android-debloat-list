@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "org.jitsi.meet",
+        "label": "Jitsi Meet",
+        "source": "fg",
+        "repo": "https://github.com/jitsi/jitsi-meet"
+    }
+]
