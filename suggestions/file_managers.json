@@ -1,8 +1,8 @@
 [
-  {
-    "id": "me.zhanghai.android.files",
-    "label": "Material Files",
-    "source": "fg",
-    "repo": "https://github.com/zhanghai/MaterialFiles"
-  }
+    {
+        "id": "me.zhanghai.android.files",
+        "label": "Material Files",
+        "source": "fg",
+        "repo": "https://github.com/zhanghai/MaterialFiles"
+    }
 ]
