@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "de.danoeh.antennapod",
+        "label": "AntennaPod",
+        "source": "fg",
+        "repo": "https://github.com/AntennaPod/AntennaPod"
+    }
+]
