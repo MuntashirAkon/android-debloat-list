@@ -1,14 +1,14 @@
 [
-  {
-    "id": "eu.faircode.email",
-    "label": "FairEmail",
-    "source": "fg",
-    "repo": "https://github.com/M66B/FairEmail"
-  },
-  {
-    "id": "com.fsck.k9",
-    "label": "K-9 Mail",
-    "source": "fg",
-    "repo": "https://github.com/thundernest/k-9"
-  }
+    {
+        "id": "com.fsck.k9",
+        "label": "K-9 Mail",
+        "source": "fg",
+        "repo": "https://github.com/thundernest/k-9"
+    },
+    {
+        "id": "eu.faircode.email",
+        "label": "FairEmail",
+        "source": "fg",
+        "repo": "https://github.com/M66B/FairEmail"
+    }
 ]
