@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "app.organicmaps",
+        "label": "Organic Maps",
+        "source": "fg",
+        "repo": "https://github.com/organicmaps/organicmaps"
+    }
+]
