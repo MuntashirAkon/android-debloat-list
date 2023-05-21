@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "ws.xsoh.etar",
+        "label": "Etar",
+        "source": "fg",
+        "repo": "https://github.com/Etar-Group/Etar-Calendar"
+    }
+]
