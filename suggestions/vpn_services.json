@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "net.mullvad.mullvadvpn",
+        "label": "Mullvad VPN",
+        "reason": "https://mullvad.net/en/why-mullvad-vpn",
+        "source": "fg",
+        "repo": "https://github.com/mullvad/mullvadvpn-app"
+    }
+]
