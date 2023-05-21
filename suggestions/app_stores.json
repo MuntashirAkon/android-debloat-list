@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": "com.aurora.store",
+        "label": "Aurora Store",
+        "reason": "Aurora Store doesn't track your downloads or the apps you use.\nhttps://aurora-oss.vercel.app/faq/#aurora-store",
+        "source": "f",
+        "repo": "https://gitlab.com/AuroraOSS/AuroraStore"
+    },
+    {
+        "id": "com.looker.droidify",
+        "label": "Droid-ify",
+        "source": "f",
+        "repo": "https://github.com/Iamlooker/Droid-ify"
+    }
+]
