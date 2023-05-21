@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "eu.darken.sdmse",
+        "label": "SD Maid SE",
+        "source": "g",
+        "repo": "https://github.com/d4rken-org/sdmaid-se"
+    }
+]
