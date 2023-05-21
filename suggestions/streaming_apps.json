@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id": "com.github.libretube",
+        "label": "LibreTube",
+        "source": "f",
+        "repo": "https://github.com/libre-tube/LibreTube"
+    },
+    {
+        "id": "com.odysee.floss",
+        "label": "Odysee",
+        "source": "f",
+        "repo": "https://github.com/OdyseeTeam/odysee-android-floss"
+    },
+    {
+        "id": "org.schabi.newpipe",
+        "label": "NewPipe",
+        "source": "f",
+        "repo": "https://github.com/TeamNewPipe/NewPipe"
+    }
+]
