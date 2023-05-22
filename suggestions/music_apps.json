@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "id": "com.iven.musicplayergo",
+        "label": "Music Player GO",
+        "source": "fg",
+        "repo": "https://github.com/enricocid/Music-Player-GO"
+    },
+    {
+        "id": "com.shadow.blackhole",
+        "label": "BlackHole",
+        "source": "f",
+        "repo": "https://github.com/Sangwan5688/BlackHole",
+    }
+]
