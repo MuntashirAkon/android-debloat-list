@@ -4,7 +4,8 @@
         "label": "Google Chrome",
         "description": "Google Chrome: Slow & Painful\nOccasionally runs in the background, not to mention how it tracks everything.",
         "web": [
-            "https://play.google.com/store/apps/details?id=com.android.chrome"
+            "https://play.google.com/store/apps/details?id=com.android.chrome",
+            "https://privacytests.org/android.html"
         ],
         "removal": "replace",
         "suggestions": "browsers"
@@ -148,6 +149,9 @@
         "id": "com.google.android.apps.books",
         "label": "Google Play Books",
         "description": "Lets you buy and read ebooks, audiobooks, comics and manga.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.books"
+        ],
         "removal": "replace",
         "suggestions": "ebook_readers"
     },
@@ -337,7 +341,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.magazines"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.google.android.apps.maps",
@@ -400,7 +405,7 @@
     {
         "id": "com.google.android.apps.nbu.paisa.user",
         "label": "Google Pay",
-        "description": "Digital wallet and payment system.\nYou really should not trust Google not to sell your data (even if they claim the contrary).\nThe app itself has a LOT of permissions.",
+        "description": "Digital wallet and payment system.\nYou really should not trust Google not to sell your data (even if they claim the contrary).\nThe app itself has a LOT of permissions & login with your google account is mandatory to use the app\n",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user",
             "https://support.google.com/googlepay/answer/10223752?hl=en&co=GENIE.Platform%3DAndroid#zippy=%2Cinfo-that-google-may-collect",
@@ -412,7 +417,7 @@
     {
         "id": "com.google.android.apps.nexuslauncher",
         "label": "Pixel Launcher",
-        "description": "Used to be called Nexus Launcher (back when Google phones were called Nexus, not Pixel).\nA launcher is basically your homescreen.",
+        "description": "Used to be called Nexus Launcher (back when Google phones were called Nexus, not Pixel).\n",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher"
         ],
@@ -464,11 +469,11 @@
     {
         "id": "com.google.android.apps.podcasts",
         "label": "Google Podcasts",
-        "description": "Lets you explore, subscribe and play podcasts.",
+        "description": "Lets you explore, subscribe and play podcasts.\n",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.podcasts"
         ],
-        "removal": "delete",
+        "removal": "replace",
         "suggestions": "podcasts"
     },
     {
@@ -509,7 +514,7 @@
     {
         "id": "com.google.android.apps.searchlite",
         "label": "Google Go",
-        "description": "The Google app made for low-RAM devices.",
+        "description": "The Google search app made for low-RAM devices.\n",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.searchlite"
         ],
@@ -680,13 +685,15 @@
     },
     {
         "id": "com.google.android.backup",
-        "description": "Allows Android apps to back up their data on Google servers (on Android 4.2).",
-        "removal": "delete"
+        "description": "Allows Android apps to back up their data on Google servers (on Android 4.2).\n",
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.google.android.backuptransport",
-        "description": "Allows Android apps to back up their data on Google servers.",
-        "removal": "replace"
+        "description": "Allows Android apps to back up their data on Google servers.\n",
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.google.android.calculator",
@@ -719,28 +726,28 @@
     },
     {
         "id": "com.google.android.cellbroadcastreceiver",
-        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
+        "dependencies": [
+            "com.google.android.cellbroadcastservice"
+        ],
+        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.\n",
         "web": [
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
             "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
         ],
         "removal": "caution",
-        "dependencies": [
-            "com.google.android.cellbroadcastservice"
-        ]
     },
     {
         "id": "com.google.android.cellbroadcastservice",
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
+        "required_by": [
+            "com.google.android.cellbroadcastreceiver"
+        ],
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\n",
         "web": [
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
         ],
         "removal": "caution",
-        "required_by": [
-            "com.google.android.cellbroadcastreceiver"
-        ]
     },
     {
         "id": "com.google.android.configupdater",
@@ -895,11 +902,12 @@
     {
         "id": "com.google.android.inputmethod.latin",
         "label": "Gboard",
-        "description": "Sometimes the only keyboard app on a phone; Make sure you have another installed before you disable.\n",
+        "description": "Sometimes the only keyboard app on a phone.\n",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin"
         ],
         "removal": "replace",
+        "warning": "Make sure you have another installed before you disable.",
         "suggestions": "keyboards"
     },
     {
@@ -910,18 +918,29 @@
     },
     {
         "id": "com.google.android.instantapps.supervisor",
-        "description": "Lets you try new games directly on Google Play.\nhttps://www.zdnet.com/article/googles-instant-apps-goes-live-now-you-can-try-android-apps-before-installing-them/\n",
+        "label": "Instant Apps",
+        "description": "Lets you try new games directly on Google Play.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.instantapps.supervisor",
+            "https://www.zdnet.com/article/googles-instant-apps-goes-live-now-you-can-try-android-apps-before-installing-them/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.google.android.keep",
-        "description": "Google Keep (https://play.google.com/store/apps/details?id=com.google.android.keep)\n",
-        "removal": "delete"
+        "label": "Google Keep",
+        "description": "Note taking app from Google.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.keep"
+        ],
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.google.android.launcher",
         "description": "Google Now Launcher (https://play.google.com/store/apps/details?id=com.google.android.launcher)\nDO NOT REMOVE THIS IF YOU DON'T HAVE ANOTHER LAUNCHER INSTALLED.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "launchers"
     },
     {
         "id": "com.google.android.location",
@@ -950,11 +969,11 @@
     },
     {
         "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
-        "removal": "caution",
         "dependencies": [
             "com.google.android.cellbroadcastreceiver"
-        ]
+        ],
+        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
+        "removal": "caution"
     },
     {
         "id": "com.google.android.overlay.modules.documentsui",
@@ -1048,8 +1067,14 @@
     },
     {
         "id": "com.google.android.tts",
-        "description": "Speech Services by Google (https://play.google.com/store/apps/details?id=com.google.android.tts)\nDefault Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\n\nPithus analysis: https://beta.pithus.org/report/08f97758fbfae1e17c4a8e5ee1a1e6d2726ce6b0b4931d5452f2376d60f1b4fb\n\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services. Open-source TTS engines available on Android exists but, as of the end of 2022, there is only RHVoice (https://f-droid.org/en/packages/com.github.olga_yakovleva.rhvoice.android/) and it doesn't support a lot of languages. Mimic3 (https://mycroft.ai/mimic-3/) is probably the future of IoT open-source TTS engine but there is no Android support yet",
-        "removal": "replace"
+        "label": "Speech Services by Google",
+        "description": "Default Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.tts",
+            "https://beta.pithus.org/report/08f97758fbfae1e17c4a8e5ee1a1e6d2726ce6b0b4931d5452f2376d60f1b4fb"
+        ],
+        "removal": "replace",
+        "suggestions": "tts"
     },
     {
         "id": "com.google.android.tv.remote",
@@ -1095,7 +1120,8 @@
     {
         "id": "com.google.android.youtube",
         "description": "YouTube (https://play.google.com/store/apps/details?id=com.google.android.youtube)",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.google.ar.core",
@@ -1155,6 +1181,7 @@
     {
         "id": "com.google.zxing.client.android",
         "description": "Google Barcode Scanner (discontinued) (https://play.google.com/store/apps/details?id=com.google.zxing.client.android)",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "barcode_scanners"
     }
 ]
