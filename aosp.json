@@ -79,17 +79,15 @@
     {
         "id": "com.android.calculator2",
         "label": "Calculator",
-        "description": "The AOSP calculator app",
+        "description": "The AOSP calculator app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app\n",
         "removal": "replace",
-        "warning": "Some OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.",
         "suggestions": "calculators"
     },
     {
         "id": "com.android.calendar",
         "label": "Calendar",
-        "description": "The AOSP Calendar app",
+        "description": "The AOSP Calendar app.\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.\n",
         "removal": "replace",
-        "warning": "Some OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.",
         "suggestions": "calendars"
     },
     {
@@ -143,18 +141,18 @@
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
         "description": "Dark theme overlay for com.android.cellbroadcastreceiver",
-        "removal": "caution",
         "dependencies": [
             "com.android.cellbroadcastreceiver"
-        ]
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
         "description": "Light theme overlay for com.android.cellbroadcastreceiver",
-        "removal": "caution",
         "dependencies": [
             "com.android.cellbroadcastreceiver"
-        ]
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.cellbroadcastreceiver.overlay.common",
@@ -165,15 +163,14 @@
         "id": "com.android.companiondevicemanager",
         "label": "Companion Device Manager",
         "description": "This handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.",
-        "removal": "delete",
+        "removal": "caution",
         "warning": "Removing this package will result in the inability to read the SD card from your computer's file manager when connecting through USB"
     },
     {
         "id": "com.android.contacts",
         "label": "Contacts",
-        "description": "The AOSP Contacts app.",
+        "description": "The AOSP Contacts app\nSome OEMs (e.g. Xiaomi) use the same package name for their app.\n",
         "removal": "replace",
-        "warning": "Some OEMs (e.g. Xiaomi) use the same package name for their app.",
         "suggestions": "contacts"
     },
     {
@@ -189,9 +186,8 @@
     {
         "id": "com.android.deskclock",
         "label": "Clock",
-        "description": "The AOSP Clock app.",
+        "description": "The AOSP Clock app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.\n",
         "removal": "replace",
-        "warning": "Some OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.",
         "suggestions": "clocks"
     },
     {
@@ -206,15 +202,15 @@
         "label": "Files",
         "description": "Occasionally runs in the background.\nFile selector for other apps.",
         "removal": "unsafe",
-        "warning": "Storage Access Framework (SAF) will break if this is disabled."
+        "warning": "Storage Access Framework (SAF) will BREAK if this is disabled."
     },
     {
         "id": "com.android.documentsui.a_overlay",
         "description": "Some overlay for for \"Files\"?",
-        "removal": "caution",
         "dependencies": [
             "com.android.documentsui"
-        ]
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.dreams.basic",
@@ -321,8 +317,8 @@
     {
         "id": "com.android.inputmethod.latin",
         "label": "Android Keyboard (AOSP)",
-        "description": "The AOSP keyboard app",
-        "removal": "caution",
+        "description": "The AOSP keyboard app\nMake sure you have another installed before you disable.\n",
+        "removal": "replace",
         "suggestions": "keyboards"
     },
     {
@@ -431,19 +427,18 @@
     {
         "id": "com.android.managedprovisioning",
         "label": "Work Setup",
-        "description": "Work Setup/Work profile setup\nManages Android user account profiles.\nThe typical use-case is setting up a corporate profile that is controlled by the employer on an employee's personal device, to keep personal and work data separate.",
+        "description": "Work Setup/Work profile setup\nManages Android user account profiles.\nThe typical use-case is setting up a corporate profile that is controlled by the employer on an employee's personal device, to keep personal and work data separate.\n",
         "web": [
             "https://support.google.com/work/android/answer/6191949",
             "https://developers.google.com/android/work/requirements/work-profile"
         ],
-        "removal": "caution",
-        "warning": "Needed for sandbox apps such as Shelter or Insular/Island."
+        "removal": "replace",
+        "suggestions": "work_profile_apps"
     },
     {
         "id": "com.android.mms",
-        "description": "AOSP SMS app.\nOccasionally runs in the background.",
-        "removal": "delete",
-        "warning": "Some OEMs (like Huawei & Xiaomi) use the same package name for their app.",
+        "description": "AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app\n",
+        "removal": "replace",
         "suggestions": "sms"
     },
     {
@@ -645,13 +640,13 @@
         "web": [
             "https://web.archive.org/web/20200915164901/https://www.nowsms.com/doc/submitting-sms-messages/sending-wap-push-messages"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "sms"
     },
     {
         "id": "com.android.soundrecorder",
-        "description": "AOSP Sound recorder. OEMs often use their own solution.",
+        "description": "AOSP Sound recorder. OEMs often use their own solution.\nSome phones (Huawei and Xiaomi) also use this package name for their own recorder app\n",
         "removal": "replace",
-        "warning": "Some phones (Huawei and Xiaomi) also use this package name for their own recorder app",
         "suggestions": "audio_recorders"
     },
     {
@@ -744,9 +739,9 @@
     },
     {
         "id": "com.android.voicedialer",
-        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)",
+        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nOn some phones Huawei & Xiaomi also use this package name for their own voice dialer app\n",
         "removal": "replace",
-        "warning": "On some phones Huawei & Xiaomi also use this package name for their own voice dialer app"
+        "suggestions": "dialers"
     },
     {
         "id": "com.android.vpndialogs",
@@ -804,6 +799,7 @@
     {
         "id": "com.example.android.notepad",
         "description": "(Bad) notepad app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "notes"
     }
 ]
