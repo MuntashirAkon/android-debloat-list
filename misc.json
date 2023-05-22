@@ -16,8 +16,16 @@
     },
     {
         "id": "com.UCMobile.intl",
-        "description": "UC Browser by Alibaba (https://play.google.com/store/apps/details?id=com.UCMobile.intl)\n!! Unsecure chinese web browser !!\nhttps://www.quora.com/Whats-wrong-with-UC-Browser\nhttps://www.digitalinformationworld.com/2019/05/url-spoofing-uc-browser-android.html\n",
-        "removal": "delete"
+        "label": "UC Browser",
+        "description": "Unsecure chinese web browser from Alibaba, which is well know for its privacy & security issues.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.UCMobile.intl",
+            "https://citizenlab.ca/2015/05/a-chatty-squirrel-privacy-and-security-issues-with-uc-browser/",
+            "https://www.andmp.com/2019/05/advisory-unpatched-url-address-bar-vulnerability-in-latest-versions-of-UC-browers.html",
+            "https://www.zscaler.com/blogs/security-research/uc-browser-app-abuses-may-have-exposed-500-million-users"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.aaa.android.discounts",
@@ -635,8 +643,15 @@
     },
     {
         "id": "com.opera.mini.native",
-        "description": "Opera Mini web browser (https://play.google.com/store/apps/details?id=com.opera.mini.native)\n",
-        "removal": "delete"
+        "label": "Opera Mini",
+        "description": "Tracks your online activities, which are linked to your unique ID.\nIt has built-in VPN for 'free', which Restore Privacy describe as a 'data collection tool in disguise'.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.opera.mini.native",
+            "https://www.opera.com/privacy",
+            "https://restoreprivacy.com/vpn/reviews/opera-vpn/"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.opera.preinstall",
@@ -1106,8 +1121,14 @@
     },
     {
         "id": "com.talpa.hibrowser",
-        "description": "Hi Browser (https://play.google.com/store/apps/details?id=com.talpa.hibrowser)\nAwful browser with embedded trackers and ads (https://reports.exodus-privacy.eu.org/fr/reports/com.talpa.hibrowser/latest/)",
-        "removal": "delete"
+        "label": "Hi Browser",
+        "description": "Awful browser with embedded trackers and ads.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.talpa.hibrowser",
+            "https://reports.exodus-privacy.eu.org/fr/reports/com.talpa.hibrowser/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.talpa.share",
@@ -1201,8 +1222,14 @@
     },
     {
         "id": "com.ume.browser.northamerica",
-        "description": "UME Web Browser (https://play.google.com/store/apps/details?id=com.ume.browser.northamerica)\nTrackers and a LOT of permissions (https://reports.exodus-privacy.eu.org/en/reports/com.ume.browser.cust/latest/)\n",
-        "removal": "delete"
+        "label": "UME Web Browser",
+        "description": "It has trackers and a LOT of unnecessary permissions.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.ume.browser.northamerica",
+            "https://reports.exodus-privacy.eu.org/en/reports/com.ume.browser.cust/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.wb.goog.got.conquest",
