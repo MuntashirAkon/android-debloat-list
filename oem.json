@@ -1462,7 +1462,8 @@
     {
         "id": "com.huawei.android.launcher",
         "description": "Huawei launcher app.\nIt's basically the home screen, the way icons apps are organized and displayed.\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER !\nYou will maybe need this package for the recent apps feature to work (even if you have another launcher)\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "launchers"
     },
     {
         "id": "com.huawei.android.mirrorshare",
@@ -1542,7 +1543,8 @@
     {
         "id": "com.huawei.browser",
         "description": "Huawei Browser app. Don't expect privacy using it\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.huawei.browserhomepage",
@@ -1552,7 +1554,8 @@
     {
         "id": "com.huawei.calendar",
         "description": "Huawei Calendar app.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "com.huawei.compass",
@@ -1562,7 +1565,8 @@
     {
         "id": "com.huawei.contacts",
         "description": "Huawei Contacts app\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.huawei.contacts.sync",
@@ -1577,7 +1581,8 @@
     {
         "id": "com.huawei.deskclock",
         "description": "Huawei Clock App.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.huawei.desktop.explorer",
@@ -1587,7 +1592,8 @@
     {
         "id": "com.huawei.email",
         "description": "Huawei Email app.\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "email_clients"
     },
     {
         "id": "com.huawei.fastapp",
@@ -1650,7 +1656,8 @@
     {
         "id": "com.huawei.hidisk",
         "description": "Huawei File Manager app.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.huawei.hifolder",
@@ -1765,8 +1772,14 @@
     },
     {
         "id": "com.huawei.maps.app",
-        "description": "Petal Maps (https://play.google.com/store/apps/details?id=com.huawei.maps.app)\nHuawei map and navigation app with HMS (Huawei Mobile Services) trackers.\nPithus analysis: https://beta.pithus.org/report/d15349e7a998306012462484f270f93794141113d6680fa8512931c270adf830",
-        "removal": "replace"
+        "label": "Petal Maps",
+        "description": "Huawei map and navigation app with HMS (Huawei Mobile Services) trackers.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.huawei.maps.app",
+            "https://beta.pithus.org/report/d15349e7a998306012462484f270f93794141113d6680fa8512931c270adf830"
+        ],
+        "removal": "replace",
+        "suggestions": "maps"
     },
     {
         "id": "com.huawei.meetime",
@@ -1788,8 +1801,9 @@
     },
     {
         "id": "com.huawei.music",
-        "description": "Huawei Music app. Fat music player developed by Huawei (137Mo. Seriously?). There are a lof of better alternatives (e.g Metro on F-droid)",
-        "removal": "delete"
+        "description": "Huawei Music app. Fat music player developed by Huawei (137MB. Seriously?).\n",
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.huawei.mycenter",
@@ -1799,7 +1813,8 @@
     {
         "id": "com.huawei.ohos.inputmethod",
         "description": "Huawei default Keyboard\nWARNING: Before unistalling, make sure to have a third-party keyboard installed.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.huawei.parentcontrol",
@@ -1819,7 +1834,8 @@
     {
         "id": "com.huawei.photos",
         "description": "Huawei Gallery app.\nNote: The official camera app refuses to open photos in another gallery (you can't review your picture from the camera app)\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.huawei.powergenie",
@@ -1883,8 +1899,9 @@
     },
     {
         "id": "com.huawei.webview",
-        "description": "Huawei Webview.\nAllows Android apps to display content from the web directly inside the app.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly.\nBromite is an open-source, privacy-oriented Webview replacement: https://www.bromite.org/system_web_view",
-        "removal": "caution"
+        "description": "Huawei Webview.\nAllows Android apps to display content from the web directly inside the app.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly.\n",
+        "removal": "replace",
+        "suggestions": "webviews"
     },
     {
         "id": "com.iflytek.speechsuite",
@@ -2571,8 +2588,9 @@
     },
     {
         "id": "com.mi.webkit.core",
-        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content \nfrom the web directly inside an application. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly\n\n.An open-source privacy oriented Webview is Bromite (https://www.bromite.org/system_web_view)\n",
-        "removal": "delete"
+        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content \nfrom the web directly inside an application. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly\n",
+        "removal": "replace",
+        "suggestions": "webviews"
     },
     {
         "id": "com.milink.service",
@@ -2636,8 +2654,13 @@
     },
     {
         "id": "com.miui.calculator",
-        "description": "MIUI Calculator (https://play.google.com/store/apps/details?id=com.miui.calculator)\n",
-        "removal": "delete"
+        "label": "Calculator",
+        "description": "MIUI Calculator\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.miui.calculator"
+        ],
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.miui.cit",
@@ -2646,13 +2669,25 @@
     },
     {
         "id": "com.miui.cleaner",
-        "description": "Mi Cleaner\nShady Xiaomi cleaner app developed by Cheetah mobile which has previously been caught in ad fraud and user data theft with this app in 2018 (previously called com.miui.cleanmaster and banned from the PlayStore). This \"new\" app is still full of trackers\nhttps://www.gadgets360.com/apps/news/banned-security-app-clean-master-by-cheetah-mobile-collected-user-private-data-report-2189633\n\nPithus analysis: https://beta.pithus.org/report/f7f7ee425a8dc928db75105bd8f52e9b02f11dec3b398aac9fef1d42809d8ec1",
-        "removal": "delete"
+        "label": "Cleaner",
+        "description": "Shady Xiaomi cleaner app developed by Cheetah mobile which has previously been caught in ad fraud and user data theft with this app in 2018 (previously called com.miui.cleanmaster and banned from the PlayStore). This \"new\" app is still full of trackers\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.miui.cleaner",
+            "https://www.gadgets360.com/apps/news/banned-security-app-clean-master-by-cheetah-mobile-collected-user-private-data-report-2189633",
+            "https://beta.pithus.org/report/f7f7ee425a8dc928db75105bd8f52e9b02f11dec3b398aac9fef1d42809d8ec1"
+        ],
+        "removal": "replace",
+        "suggestions": "cleaners"
     },
     {
         "id": "com.miui.cleanmaster",
-        "description": "Mi Cleaner\nShady Xiaomi cleaner app developed by Cheetah mobile which has previously been caught in ad fraud and user data theft in 2018. The app has been banned from the PlayStore and then reintroduced under the package name 'com.miui.cleaner'.\n\nhttps://www.gadgets360.com/apps/news/banned-security-app-clean-master-by-cheetah-mobile-collected-user-private-data-report-2189633",
-        "removal": "delete"
+        "label": "Mi Cleaner",
+        "description": "Shady Xiaomi cleaner app developed by Cheetah mobile which has previously been caught in ad fraud and user data theft in 2018. The app has been banned from the PlayStore and then reintroduced under the package name 'com.miui.cleaner'.\n",
+        "web": [
+            "https://www.gadgets360.com/apps/news/banned-security-app-clean-master-by-cheetah-mobile-collected-user-private-data-report-2189633"
+        ],
+        "removal": "replace",
+        "suggestions": "cleaners"
     },
     {
         "id": "com.miui.cloudbackup",
@@ -2697,7 +2732,8 @@
     {
         "id": "com.miui.fm",
         "description": "MIUI FM Radio app\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.miui.fmservice",
@@ -2711,8 +2747,9 @@
     },
     {
         "id": "com.miui.gallery",
-        "description": "MIUI Gallery app.\nSimple Gallery is way better, lighter and open-source (https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/)\nNote: Removing the Gallery will break the send screenshot feature (swipe 3 fingers to show the screenshot preview)",
-        "removal": "replace"
+        "description": "MIUI Gallery app.\nNote: Removing the Gallery will break the send screenshot feature (swipe 3 fingers to show the screenshot preview)",
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.miui.global.packageinstaller",
@@ -2731,8 +2768,12 @@
     },
     {
         "id": "com.miui.home",
-        "description": "MIUI System Launcher\nIt's basically the home screen, the way icons apps are organized and displayed.\n\nNote: If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nhttps://web.archive.org/web/20220926221620/https://libreddit.spike.codes/r/Xiaomi/comments/o6vk5z/miui_12125_and_android_11_gestures/\n\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER!\n",
-        "removal": "caution"
+        "description": "MIUI System Launcher\nIt's basically the home screen, the way icons apps are organized and displayed.\n\nNote: If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER!\n",
+        "web": [
+            "https://web.archive.org/web/20220926221620/https://libreddit.spike.codes/r/Xiaomi/comments/o6vk5z/miui_12125_and_android_11_gestures/"
+        ],
+        "removal": "replace",
+        "suggestions": "launchers"
     },
     {
         "id": "com.miui.huanji",
@@ -2807,7 +2848,8 @@
     {
         "id": "com.miui.notes",
         "description": "Mi Notes\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.miui.notification",
@@ -2826,8 +2868,13 @@
     },
     {
         "id": "com.miui.player",
-        "description": "Mi Music (https://play.google.com/store/apps/details?id=com.miui.player)\n",
-        "removal": "delete"
+        "label": "Mi Music",
+        "description": "Mi Music player\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.miui.player"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.miui.powerkeeper",
@@ -2837,17 +2884,19 @@
     {
         "id": "com.miui.providers.weather",
         "description": "Provider for MI Weather app (com.miui.weather)\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "com.miui.qr",
         "description": "MUI Qr code scanner\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "barcode_scanners"
     },
     {
         "id": "com.miui.screenrecorder",
         "description": "Mi Screen Recorder\n",
-        "removal": "delete"
+        "removal": "replace"
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.miui.smsextra",
@@ -3349,8 +3398,12 @@
     },
     {
         "id": "com.oneplus.account",
-        "description": "OnePlus Account\nEnables Oneplus account login on device.\nProbably handles authentication for Oneplus apps. Safe to remove if you don't use them.",
-        "removal": "replace"
+        "label": "OnePlus Account",
+        "description": "Enables Oneplus account login on device.\nProbably handles authentication for Oneplus apps.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.account"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.account.basiccolorblack.overlay",
@@ -3405,17 +3458,22 @@
     {
         "id": "com.oneplus.appupgrader",
         "description": "Built-in App Updates\nBased on the name I'm guessing it's an upater for built-in Oneplus apps?\nSeems safe to disable, but only seems to run on boot, so there's little to be gained from disabling.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.backuprestore",
-        "description": "OnePlus Switch (https://play.google.com/store/apps/details?id=com.oneplus.backuprestore)\nLets you migrate contacts, text messages, photos, and other data from one device to another.\nCan also backup data as a compressed archive.",
-        "removal": "delete"
+        "label": "Clone Phone",
+        "description": "Lets you migrate contacts, text messages, photos, and other data from one device to another.\nCan also backup data as a compressed archive.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.backuprestore"
+        ],
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.oneplus.backuprestore.remoteservice",
         "description": "Likely a backend service for OnePlus Switch(com.oneplus.backuprestore).\nI've never seen it run in the background.\nProbably safe to disable.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.brickmode",
@@ -3429,8 +3487,9 @@
     },
     {
         "id": "com.oneplus.calculator",
-        "description": "Stock Oneplus Calculator app.",
-        "removal": "replace"
+        "description": "Stock Oneplus Calculator app.\n",
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.oneplus.calculator.basiccolorblack.overlay",
@@ -3449,8 +3508,9 @@
     },
     {
         "id": "com.oneplus.camera",
-        "description": "Camera\nThe stock Oneplus camera app.",
-        "removal": "replace"
+        "description": "Camera\nThe stock Oneplus camera app.\n",
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.oneplus.camera.service",
@@ -3534,13 +3594,14 @@
     },
     {
         "id": "com.oneplus.communication.data",
-        "description": "Oneplus call recorder service. Feature accessible from the stock dialer app",
-        "removal": "replace"
+        "description": "Oneplus call recorder service. Feature accessible from the stock dialer app.\n",
+        "removal": "replace",
+        "suggestions": "call_recorders"
     },
     {
         "id": "com.oneplus.config",
-        "description": "OPConfig\nOccasionally runs in the background.\nPackage source is: OPOnlineConfig.apk\nGuessing it might handle communication certificates and general network config for Oneplus apps.\nOnly has INTERNET and RECEIVE_BOOT_COMPLETED permissions.",
-        "removal": "replace"
+        "description": "OPConfig\nOccasionally runs in the background.\nPackage source is: OPOnlineConfig.apk\nGuessing it might handle communication certificates and general network config for Oneplus apps.\nHas INTERNET and RECEIVE_BOOT_COMPLETED permissions.\n",
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.contacts.basiccolorblack.overlay",
@@ -3589,8 +3650,9 @@
     },
     {
         "id": "com.oneplus.dialer",
-        "description": "OnePlus Dialer used in OxygenOS 11 and lower.\nNote: don't forget to download another phone dialer app before removing this package.",
-        "removal": "replace"
+        "description": "OnePlus Dialer used in OxygenOS 11 and lower.\nNote: don't forget to download another phone dialer app before removing this package.\n",
+        "removal": "replace",
+        "suggestions": "dialers"
     },
     {
         "id": "com.oneplus.dirac.simplemanager",
@@ -3629,31 +3691,45 @@
     },
     {
         "id": "com.oneplus.filemanager",
-        "description": "File manager\nStock OnePlus file manager app.",
-        "removal": "replace"
+        "label": "OnePlus File Manager",
+        "description": "Stock OnePlus file manager app.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.filemanager"
+        ],
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.oneplus.filemanager.black.overlay",
         "description": "Theme overlay for Oneplus File manager app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.filemanager.white.overlay",
         "description": "Theme overlay for Oneplus File manager app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.gallery",
-        "description": "Oneplus Gallery (https://play.google.com/store/apps/details?id=com.oneplus.gallery)\nOccasionally runs in the background. Some old versions of the app (like for Oneplus 3 on Android 9) don't run in the background.",
-        "removal": "replace"
+        "label": "OnePlus Gallery",
+        "description": "Occasionally runs in the background. Some old versions of the app (like for Oneplus 3 on Android 9) don't run in the background.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.gallery"
+        ],
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.oneplus.gamespace",
-        "description": "OnePlus Game Space\nOccasionally runs in the background as part of the system.\nAllows you to launch your game library, check game stats(such as playtime), activate game overlay features, change performance settings to tweak game/battery performance during gaming.\nThis is the only way to access the recording buffer functionality (records the last X seconds into RAM and saves them when you tap save), so keep enabled if you need that or any of the other features.",
-        "removal": "delete",
+        "label": "OnePlus Games",
         "dependencies": [
             "com.oplus.cosa"
-        ]
+        ],
+        "description": "Occasionally runs in the background as part of the system.\nAllows you to launch your game library, check game stats(such as playtime), activate game overlay features, change performance settings to tweak game/battery performance during gaming.\nThis is the only way to access the recording buffer functionality (records the last X seconds into RAM and saves them when you tap save), so keep enabled if you need that or any of the other features.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.gamespace"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.gamespace.black.overlay",
@@ -3697,8 +3773,14 @@
     },
     {
         "id": "com.oneplus.mms",
-        "description": "OnePlus Messages (https://play.google.com/store/apps/details?id=com.oneplus.mms)\nOnly used on OnePlus 8 / 8 Pro according to the description.\nProbably safe to remove, just make sure to install another SMS app to not lose that functionality; QKSMS is a good FOSS replacement for basic SMS functionality and Google Messages is an option if you need full RCS support.",
-        "removal": "replace"
+        "label": "OnePlus Messages",
+        "description": "Only used on OnePlus 8 / 8 Pro according to the description.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.mms"
+        ],
+        "removal": "replace",
+        "warning": "Make sure to install another SMS app to not lose that functionality",
+        "suggestions": "sms"
     },
     {
         "id": "com.oneplus.mms.basiccolorblack.overlay",
@@ -3712,18 +3794,23 @@
     },
     {
         "id": "com.oneplus.note",
+        "label": "OnePlus Notes",
         "description": "OnePlus Notes app\n",
-        "removal": "replace"
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.note"
+        ],
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.oneplus.note.black.overlay",
         "description": "Dark theme overlay for Oneplus Notes app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.note.white.overlay",
         "description": "Light theme overlay for Oneplus Notes app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.odmoverlay.android",
@@ -3818,17 +3905,18 @@
     {
         "id": "com.oneplus.screenrecord",
         "description": "Screen Recorder\nThe Android 11 screen recorder with some Oneplus modifications.\nRuns the \"SystemUITileService\" when you have it as one of the quicksettings tiles, but doesn't seem to run in the background outside of that.\nDoesn't have an app icon, but you can create a shortcut to it with the Activity Launcher app (to avoid the background service).\nhttps://f-droid.org/en/packages/de.szalkowski.activitylauncher/",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.oneplus.screenrecord.black.overlay",
         "description": "Theme overlay for Oneplus Screenrecord?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.screenrecord.white.overlay",
         "description": "Theme overlay for Oneplus Screenrecord?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.security",
@@ -3878,17 +3966,18 @@
     {
         "id": "com.oneplus.soundrecorder",
         "description": "Recorder\nOnePlus sound recording app.\nRequires turning on \"Allow modifying system settings\" to use for some reason? Probably tied to recording phone-calls.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.oneplus.soundrecorder.black.overlay",
         "description": "Theme overlay for Soundrecorder app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.soundrecorder.white.overlay",
         "description": "Theme overlay for Soundrecorder app?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.telephonyoptimization",
@@ -3937,11 +4026,14 @@
     },
     {
         "id": "com.oplus.cosa",
-        "description": "App Enhancement Services\nIf enabled, connects to OPPO servers (icosa-service-eu.allawnos.com) every time a new app is installed. Seems to be mostly focused on gaming performance optimisation according to the settings description:\n'[...] a service that optimises phone performance for specific apps and game scenarios. [...] frame rates, battery usage, touch sensitivity, network connection, vibration and gameplay assistance features.'\n\nCan be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> App Enhancement Services).\nNote: removing this package prevents the OnePlus Game Center to detect games.\n\nPithus analysis: https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde.",
-        "removal": "delete",
         "required_by": [
             "com.oneplus.gamespace"
-        ]
+        ],
+        "description": "App Enhancement Services\nIf enabled, connects to OPPO servers (icosa-service-eu.allawnos.com) every time a new app is installed. Seems to be mostly focused on gaming performance optimisation according to the settings description:\n'[...] a service that optimises phone performance for specific apps and game scenarios. [...] frame rates, battery usage, touch sensitivity, network connection, vibration and gameplay assistance features.'\n\nCan be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> App Enhancement Services).\nNote: removing this package prevents the OnePlus Game Center to detect games.\n",
+        "web": [
+            "https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.oplus.crashbox",
@@ -4033,7 +4125,7 @@
     },
     {
         "id": "com.oppo.logkit",
-        "description": "",
+        "description": "Not sure what it does.\n",
         "removal": "delete"
     },
     {
@@ -4048,8 +4140,13 @@
     },
     {
         "id": "com.oppo.music",
+        "label": "Music",
         "description": "Oppo Music app\n",
-        "removal": "delete"
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oppo.music"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.oppo.operationManual",
@@ -4130,7 +4227,8 @@
     {
         "id": "com.samsung.SMT",
         "description": "Samsung TTS (Text-to-speech)\nWorks with applications such as S Voice; translation apps, GPS that require Text-To-Speech (TTS) functionality and reads back text\nhttps://galaxystore.samsung.com/detail/com.samsung.SMT\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "tts"
     },
     {
         "id": "com.samsung.aasaservice",
@@ -4260,7 +4358,8 @@
     {
         "id": "com.samsung.android.app.contacts",
         "description": "Samsung contacts app\nSafe to debloat if you use another contacts app\nNOTE : If you do, you will no longer be able to access Contacts from the Samsung dialer app.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.samsung.android.app.dofviewer",
@@ -4304,8 +4403,9 @@
     },
     {
         "id": "com.samsung.android.app.memo",
-        "description": "Samsung Memo (was replaced by Samsung Notes app :\tcom.samsung.android.app.notes)\n",
-        "removal": "delete"
+        "description": "Samsung Memo (was replaced by Samsung Notes app com.samsung.android.app.notes)\n",
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.samsung.android.app.mhswrappertmo",
@@ -4334,8 +4434,13 @@
     },
     {
         "id": "com.samsung.android.app.notes",
-        "description": "Samsung Notes app (https://play.google.com/store/apps/details?id=com.samsung.android.app.notes)\n",
-        "removal": "delete"
+        "label": "Samsung Notes",
+        "description": "Samsung Notes app\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.app.notes"
+        ],
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.samsung.android.app.omcagent",
@@ -4684,8 +4789,13 @@
     },
     {
         "id": "com.samsung.android.honeyboard",
-        "description": "Samsung keyboard\nWARNING: do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nhttps://developer.android.com/training/articles/direct-boot\nSimple Keyboard and OpenBoard are FOSS, based on the AOSP keyboard and have direct boot support:\nhttps://f-droid.org/packages/rkr.simplekeyboard.inputmethod/\nhttps://f-droid.org/packages/org.dslul.openboard.inputmethod.latin/\nWARNING: Do NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nWARNING: Removing this packages breaks the Accessibility settings on Android 11.",
-        "removal": "caution"
+        "description": "Samsung keyboard\n",
+        "web": [
+            "https://developer.android.com/training/articles/direct-boot"
+        ],
+        "removal": "caution",
+        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.\n",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.samsung.android.icecone",
@@ -4801,6 +4911,7 @@
         "id": "com.samsung.android.messaging",
         "description": "Samsung Messaging app\n",
         "removal": "replace"
+        "suggestions": "sms"
     },
     {
         "id": "com.samsung.android.mfi",
@@ -5754,7 +5865,8 @@
     {
         "id": "com.sec.android.app.dictionary",
         "description": "Samsung Dictionary is is an app that enables you to manage all the dictionaries stored on your Samsung device.\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "dictionaries"
     },
     {
         "id": "com.sec.android.app.easysetup",
@@ -5769,7 +5881,8 @@
     {
         "id": "com.sec.android.app.fm",
         "description": "Samsung Radio\nListen to FM radio stations\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.sec.android.app.gamehub",
@@ -5783,8 +5896,14 @@
     },
     {
         "id": "com.sec.android.app.launcher",
-        "description": "Samsung One UI Home launcher (homescreen) (https://play.google.com/store/apps/details?id=com.sec.android.app.launcher)\nIt is also Samsung's TouchWiz default launcher\nWARNING: DO NOT REMOVE THIS IF YOU DON'T USE ANOTHER LAUNCHER !\n\nNote: Keep this package if you want swipe gestures to keep working.",
-        "removal": "caution"
+        "label": "Samsung One UI Home",
+        "description": "Samsung One UI Home launcher (homescreen) which is also Samsung's TouchWiz default launcher\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.launcher"
+        ],
+        "removal": "caution",
+        "warning": "DO NOT REMOVE THIS IF YOU DON'T USE ANOTHER LAUNCHER !\nNote: Keep this package if you want swipe gestures to keep working.\n",
+        "suggestions": "launchers"
     },
     {
         "id": "com.sec.android.app.magnifier",
@@ -5798,8 +5917,14 @@
     },
     {
         "id": "com.sec.android.app.myfiles",
-        "description": "Samsung file manager app (https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles)\nWARNING: If you remove this package on Android 10+, you will no longer be able to manage storage the same way as before. For example you will lose the ability to unmount or format the SD card from within the Settings app.",
-        "removal": "replace"
+        "label": "Samsung My Files",
+        "description": "Samsung file manager app\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles"
+        ],
+        "removal": "replace",
+        "warning": "If you remove this package on Android 10+, you will no longer be able to manage storage the same way as before. For example you will lose the ability to unmount or format the SD card from within the Settings app.\n",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.sec.android.app.ocr",
@@ -5818,8 +5943,13 @@
     },
     {
         "id": "com.sec.android.app.popupcalculator",
-        "description": "Samsung calculator app (https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator)\n",
-        "removal": "replace"
+        "label": "Samsung Calculator",
+        "description": "Samsung calculator app\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator"
+        ],
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.sec.android.app.quicktool",
@@ -5838,16 +5968,29 @@
     },
     {
         "id": "com.sec.android.app.samsungapps",
-        "description": "Samsung Galaxy Store\nSamsung app store.\nRequired for Samsung Pay feature to work.\n\nhttps://en.wikipedia.org/wiki/Samsung_Galaxy_Store\n",
-        "removal": "delete",
         "required_by": [
             "com.samsung.android.spay"
-        ]
+        ],
+        "description": "Samsung Galaxy Store\nSamsung app store.\nRequired for Samsung Pay feature to work.\n",
+        "web": [
+            "https://en.wikipedia.org/wiki/Samsung_Galaxy_Store",
+            "https://www.computerworld.com/article/3514999/samsung-selling-data.html",
+            "https://www.reddit.com/r/Android/comments/xtq9pq/samsungs_privacy_policy_for_oct_1st_is_crazy/"
+        ],
+        "removal": "replace",
+        "suggestions": "app_stores"
     },
     {
         "id": "com.sec.android.app.sbrowser",
-        "description": "Samsung web browser (https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser)\n\nDon't use this browser. In their privacy policy: \"The information we obtain [...] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet\"\nhttps://developer.samsung.com/internet/privacy-policy-us.html",
-        "removal": "delete"
+        "label": "Samsung Internet Browser",
+        "description": "From their privacy policy: \"The information we obtain [...] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet\"\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
+            "https://developer.samsung.com/internet/privacy-policy-us.html",
+            "https://privacytests.org/android.html"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.sec.android.app.sbrowser.lite",
@@ -5902,7 +6045,8 @@
     {
         "id": "com.sec.android.app.translator",
         "description": "Samsung Translater (S Translater)\nhttps://www.samsung.com/africa_en/support/mobile-devices/what-is-s-translator-and-how-does-it-work/\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "translators"
     },
     {
         "id": "com.sec.android.app.vepreload",
@@ -5911,8 +6055,13 @@
     },
     {
         "id": "com.sec.android.app.voicenote",
-        "description": "Samsung Voice recorder (https://play.google.com/store/apps/details?id=com.sec.android.app.voicenote)\n",
-        "removal": "delete"
+        "label": "Samsung Voice Recorder",
+        "description": "Samsung Voice recorder\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.voicenote"
+        ],
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.sec.android.app.withtv",
@@ -6472,22 +6621,25 @@
     {
         "id": "com.sonymobile.android.contacts",
         "description": "Sony contacts\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.sonymobile.android.contacts.res.overlay_305",
         "description": "Overlay for Sony contacts. Overlays are usually themes.",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.sonymobile.android.externalkeyboard",
         "description": "International keyboard layouts\nUseless if you use a latin keyboard\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.sonymobile.android.externalkeyboardjp",
         "description": "Japanese layout for Sony keyboard.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.sonymobile.androidapp.cameraaddon.areffect",
@@ -6527,7 +6679,8 @@
     {
         "id": "com.sonymobile.camera",
         "description": "Sony camera app\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.sonymobile.cameracommon.wearablebridge",
@@ -6561,8 +6714,9 @@
     },
     {
         "id": "com.sonymobile.email",
-        "description": "Sony Email app\nThere are better one (and FOSS)",
-        "removal": "delete"
+        "description": "Sony Email app\n",
+        "removal": "replace",
+        "suggestions": "email_clients"
     },
     {
         "id": "com.sonymobile.entrance",
