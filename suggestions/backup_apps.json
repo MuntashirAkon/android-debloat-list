@@ -1,0 +1,8 @@
+[
+    {
+        "id": "com.machiav3lli.backup",
+        "label": "Neo Backup",
+        "source": "f",
+        "repo": "https://github.com/NeoApplications/Neo-Backup"
+    }
+]
