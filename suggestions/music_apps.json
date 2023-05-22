@@ -8,7 +8,8 @@
     {
         "id": "com.shadow.blackhole",
         "label": "BlackHole",
+        "reason": "Stream & download high quality 320kbps songs, also supports offline local music.\nNo subscription or account login required.\n",
         "source": "f",
-        "repo": "https://github.com/Sangwan5688/BlackHole",
+        "repo": "https://github.com/Sangwan5688/BlackHole"
     }
 ]
