@@ -70,7 +70,7 @@
     },
     {
         "id": "com.asurion.home.sprint",
-        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)\n\nSprint Complete\nLets you call or chat with live tech experts! Maybe you will find the love of your life!",
+        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)\nSprint Complete\nLets you call or chat with live tech experts! Maybe you will find the love of your life!\n",
         "removal": "delete"
     },
     {
@@ -581,13 +581,15 @@
     },
     {
         "id": "com.sprint.android.musicplus2033",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
-        "removal": "delete"
+        "description": "Sprint Music Plus\nSprint’s official Music Store and player.\n",
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.sprint.android.musicplus2033.vpl",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
-        "removal": "delete"
+        "description": "Sprint Music Plus\nSprint’s official Music Store and player.\n",
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.sprint.care",
