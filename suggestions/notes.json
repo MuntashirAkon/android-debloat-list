@@ -1,0 +1,15 @@
+[
+    {
+        "id": "com.streetwriters.notesnook",
+        "label": "Notesnook",
+        "reason": "Privacy friendy, encrypted note taking app.\nRoadmap: https://notesnook.com/roadmap/\n",
+        "source": "g",
+        "repo": "https://github.com/streetwriters/notesnook"
+    },
+    {
+        "id": "io.github.quillpad",
+        "label": "Quillpad",
+        "source": "fg",
+        "repo": "https://github.com/quillpad/quillpad"
+    }
+]
