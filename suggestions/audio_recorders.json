@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "com.dimowner.audiorecorder",
+        "label": "Audio Recorder",
+        "source": "fg",
+        "repo": "https://github.com/Dimowner/AudioRecorder"
+    }
+]
