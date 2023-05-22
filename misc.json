@@ -160,12 +160,14 @@
     {
         "id": "com.cootek.smartinputv5.language.englishgb",
         "description": "TouchPal Keyboard by Cootek a chinese company.\nAdware (lots and lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.cootek.smartinputv5.language.spanishus",
         "description": "TouchPal Keyboard by Cootek a chinese company.\nAdware (lots lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.crowdcare.agent.k",
@@ -255,17 +257,30 @@
     {
         "id": "com.emoji.keyboard.touchpal",
         "description": "TouchPal Emoji Keyboard by Cootek a chinese company\nAdware (lots and lots of ads)\nWorth reading : https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.eterno",
-        "description": "Daily hunts News. (https://play.google.com/store/apps/details?id=com.eterno&hl=en)\n",
-        "removal": "delete"
+        "label": "Dailyhunt",
+        "description": "Daily hunt news aggregator\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.eterno"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.evernote",
-        "description": "Evernote app (https://play.google.com/store/apps/details?id=com.evernote)\n",
-        "removal": "delete"
+        "label": "Evernote",
+        "description": "Popular note taking app\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.evernote",
+            "https://evernote.com/privacy",
+            "https://privacy.commonsense.org/evaluation/evernote"
+        ],
+        "removal": "replace",
+        "suggestions": "notes"
     },
     {
         "id": "com.facebook.appmanager",
@@ -299,7 +314,7 @@
     },
     {
         "id": "com.galaxyfirsatlari",
-        "description": "Galaxy Fırsatları (https://play.google.com/store/apps/details?id=com.galaxyfirsatlari)\nSamsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nencourages consumption.\nExodus found 10 trackers and 17 permissions : https://reports.exodus-privacy.eu.org/fr/reports/143830/ \n",
+        "description": "Galaxy Fırsatlari (https://play.google.com/store/apps/details?id=com.galaxyfirsatlari)\nSamsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nencourages consumption.\nExodus found 10 trackers and 17 permissions : https://reports.exodus-privacy.eu.org/fr/reports/143830/ \n",
         "removal": "delete"
     },
     {
@@ -608,8 +623,13 @@
     },
     {
         "id": "com.nextradioapp.nextradio",
-        "description": "NextRadio (https://play.google.com/store/apps/details?id=com.nextradioapp.nextradio)\n3-party app which lets you experience live and local FM radio on your smartphone.\nhttps://nextradioapp.com/\n",
-        "removal": "delete"
+        "label": "NextRadio",
+        "description": "Adware FM radio\n3rd-party app which lets you experience live and local FM radio on your smartphone.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.nextradioapp.nextradio"
+        ],
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.niksoftware.snapseed",
@@ -619,7 +639,8 @@
     {
         "id": "com.nuance.swype.input",
         "description": "Swype keyboard by Nuance\nhttps://www.nuance.com/mobile/mobile-applications/swype/android.html\nhttps://en.wikipedia.org/wiki/Swype\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.opera.branding",
@@ -648,7 +669,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.opera.mini.native",
             "https://www.opera.com/privacy",
-            "https://restoreprivacy.com/vpn/reviews/opera-vpn/"
+            "https://restoreprivacy.com/vpn/reviews/opera-vpn/",
+            "https://privacytests.org/android.html"
         ],
         "removal": "replace",
         "suggestions": "browsers"
@@ -1106,8 +1128,14 @@
     },
     {
         "id": "com.spotify.music",
-        "description": "Spotify app (https://play.google.com/store/apps/details?id=com.spotify.music)\n",
-        "removal": "delete"
+        "label": "Spotify",
+        "description": "Popular music streaming app\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.spotify.music",
+            "https://www.spotify.com/privacy/"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.staplegames.blocksClassicSGGP",
@@ -1162,8 +1190,14 @@
     },
     {
         "id": "com.touchtype.swiftkey",
-        "description": "Swiftkey Keyboard (https://play.google.com/store/apps/details?id=com.touchtype.swiftkey)\nKeyboard app by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n4 Trackers + 11 Permissions: https://reports.exodus-privacy.eu.org/en/reports/com.touchtype.swiftkey/latest/\nNOTE: default keyboard on some Nokia and Huawei phones. Make sure you have another keyboard app before disabling this.\nSimple Keyboard is a good FOSS replacement based on the AOSP keyboard: https://f-droid.org/en/packages/rkr.simplekeyboard.inputmethod/",
-        "removal": "replace"
+        "label": "Swiftkey",
+        "description": "Keyboard app by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n4 Trackers + 11 Permissions\nNOTE: default keyboard on some Nokia and Huawei phones. Make sure you have another keyboard app before disabling this.\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.touchtype.swiftkey",
+            "https://reports.exodus-privacy.eu.org/en/reports/com.touchtype.swiftkey/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.touchtype.swiftkey.res.overlay",
@@ -1273,13 +1307,26 @@
     },
     {
         "id": "flipboard.app",
-        "description": "Flipboard News App (https://play.google.com/store/apps/details?id=flipboard.app)\n",
-        "removal": "delete"
+        "label": "Flipboard",
+        "description": "Flipboard News App\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=flipboard.app",
+            "https://about.flipboard.com/privacy-policy/",
+            "https://privacy.commonsense.org/privacy-report/Flipboard"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "flipboard.boxer.app",
-        "description": "Briefing app (https://play.google.com/store/apps/details?id=flipboard.boxer.app)\n",
-        "removal": "delete"
+        "label": "Briefing",
+        "description": "Briefing app from Flipboard\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=flipboard.boxer.app",
+            "https://about.flipboard.com/privacy-policy/"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "id.co.babe",
