@@ -70,7 +70,7 @@
     },
     {
         "id": "com.asurion.home.sprint",
-        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)\nSprint Complete\nLets you call or chat with live tech experts! Maybe you will find the love of your life!\n",
+        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)\nSprint Complete\nLets you call or chat with live tech experts! Maybe you will find the love of your life!",
         "removal": "delete"
     },
     {
@@ -152,13 +152,13 @@
     },
     {
         "id": "com.att.mobiletransfer",
-        "description": "AT&T Mobile Transfer\nLets you transfert user data from an older AT&T phone to a new one.\n",
+        "description": "AT&T Mobile Transfer\nLets you transfert user data from an older AT&T phone to a new one.",
         "removal": "delete"
     },
     {
         "id": "com.att.myWireless",
         "label": "myAT&T",
-        "description": "Lets you manage your AT&T account.\n",
+        "description": "Lets you manage your AT&T account.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.att.myWireless"
         ],
@@ -167,20 +167,23 @@
     {
         "id": "com.att.personalcloud",
         "label": "AT&T Personal Cloud",
-        "description": "It's a paid extra feature and data are obviously not E2EE (i.e AT&T can access them)\nDon't keep this app. It's a privacy nightmare and was poorly coded.",
+        "description": "It has paid extra features and data are obviously not E2EE (i.e AT&T can access them)\nPrivacy nightmare and was poorly coded.",
         "web": [
+            "https://play.google.com/store/apps/details?id=com.att.personalcloud",
             "https://beta.pithus.org/report/bc54b5e2446ace90d9f992278d0ec320befe4983a76cb4fdcf47e565366e67b6"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "cloud_services"
     },
     {
         "id": "com.att.tv",
         "label": "DIRECTV",
-        "description": "Lets you Stream TV live and on demand from your phone.\n",
+        "description": "Lets you Stream TV live and on demand from your phone.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.att.tv"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.att.tv.watchtv",
@@ -188,7 +191,8 @@
         "web": [
             "https://www.cordcuttersnews.com/att-tv-vs-att-tv-now-whats-the-difference/"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.aura.oobe.samsung",
@@ -231,7 +235,8 @@
         "web": [
             "https://www.reuters.com/companies/EDITol.SI"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.hyperlync.Sprint.CloudBinder",
@@ -253,7 +258,8 @@
             "https://www.vice.com/en_us/article/qjdkq7/avast-antivirus-sells-user-browsing-data-investigation",
             "https://www.pcmag.com/news/the-cost-of-avasts-free-antivirus-companies-can-spy-on-your-clicks"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "locators"
     },
     {
         "id": "com.locationlabs.finder.sprint.vpl",
@@ -262,7 +268,8 @@
             "https://www.vice.com/en_us/article/qjdkq7/avast-antivirus-sells-user-browsing-data-investigation",
             "https://www.pcmag.com/news/the-cost-of-avasts-free-antivirus-companies-can-spy-on-your-clicks"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "locators"
     },
     {
         "id": "com.matchboxmobile.wisp",
@@ -275,7 +282,8 @@
         "web": [
             "https://en.wikipedia.org/wiki/MobiTV"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.mobitv.client.tmobiletvhd",
@@ -284,7 +292,8 @@
             "https://en.wikipedia.org/wiki/MobiTV",
             "https://play.google.com/store/apps/details?id=nl.tmobiletv.vinson"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.mobolize.sprint.securewifi",
@@ -413,7 +422,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.orange.mail.fr"
         ],
-        "removal": "delete",
+        "removal": "replace",
         "suggestions": "email_clients"
     },
     {
@@ -551,7 +560,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.sfr.android.sfrcloud"
         ],
-        "removal": "delete",
+        "removal": "replace",
         "suggestions": "cloud_services"
     },
     {
@@ -561,7 +570,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.sfr.android.sfrmail"
         ],
-        "removal": "delete",
+        "removal": "replace",
         "suggestions": "email_clients"
     },
     {
@@ -581,13 +590,13 @@
     },
     {
         "id": "com.sprint.android.musicplus2033",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.\n",
+        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
         "removal": "replace",
         "suggestions": "music_apps"
     },
     {
         "id": "com.sprint.android.musicplus2033.vpl",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.\n",
+        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
         "removal": "replace",
         "suggestions": "music_apps"
     },
@@ -756,7 +765,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.vcast.mediamanager"
         ],
-        "removal": "delete",
+        "removal": "replace",
         "suggestions": "cloud_services"
     },
     {
@@ -785,11 +794,12 @@
     },
     {
         "id": "com.verizon.obdm",
-        "description": "It's a set of metrics-related modules. Google Play uses the version of the Telemetry module to determine\nif updates are available for metrics-related modules and which security patch version to display to the end user. \nThis module doesn’t contain active code and has no functionality on its own. \nRemoving modules-related packages may not be safe since Android 11.",
+        "description": "It's a set of metrics-related modules. Google Play uses the version of the Telemetry module to determine\nif updates are available for metrics-related modules and which security patch version to display to the end user.\nThis module doesn’t contain active code and has no functionality on its own.",
         "web": [
             "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/27#note_410012436"
         ],
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Removing modules-related packages may not be safe since Android 11."
     },
     {
         "id": "com.verizon.obdm_permissions",
@@ -811,7 +821,7 @@
     },
     {
         "id": "com.verizon.vzwavs",
-        "description": "Has a scary list of permissions. Does seems to break anything if removed.",
+        "description": "Has a scary list of permissions. Doesn't seems to break anything if removed.",
         "removal": "delete"
     },
     {
@@ -948,7 +958,7 @@
     },
     {
         "id": "us.com.dt.iq.appsource.tmobile",
-        "description": "App Source (discontinued)\nThis app aimed at organizing all of your existing apps on the phone by category and helping you discover \nnew apps through search and recommendations.\n",
+        "description": "App Source (discontinued)\nThis app aimed at organizing all of your existing apps on the phone by category and helping you discover \nnew apps through search and recommendations.",
         "removal": "delete"
     }
 ]
