@@ -1,5 +1,10 @@
 [
     {
+        "id": "app.grapheneos.camera",
+        "label": "Camera",
+        "repo": "https://github.com/GrapheneOS/Camera"
+    },
+    {
         "id": "com.iakmds.librecamera",
         "label": "Libre Camera",
         "source": "f",
