@@ -1,11 +1,5 @@
 [
     {
-        "id": "org.isoron.uhabits",
-        "label": "Habits",
-        "source": "fg",
-        "repo": "https://github.com/iSoron/uhabits"
-    },
-    {
         "id": "org.tasks",
         "label": "Tasks",
         "source": "fg",
