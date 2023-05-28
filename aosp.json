@@ -79,14 +79,14 @@
     {
         "id": "com.android.calculator2",
         "label": "Calculator",
-        "description": "The AOSP calculator app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app\n",
+        "description": "The AOSP calculator app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app",
         "removal": "replace",
         "suggestions": "calculators"
     },
     {
         "id": "com.android.calendar",
         "label": "Calendar",
-        "description": "The AOSP Calendar app.\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.\n",
+        "description": "The AOSP Calendar app.\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "calendars"
     },
@@ -169,7 +169,7 @@
     {
         "id": "com.android.contacts",
         "label": "Contacts",
-        "description": "The AOSP Contacts app\nSome OEMs (e.g. Xiaomi) use the same package name for their app.\n",
+        "description": "The AOSP Contacts app\nSome OEMs (e.g. Xiaomi) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "contacts"
     },
@@ -186,7 +186,7 @@
     {
         "id": "com.android.deskclock",
         "label": "Clock",
-        "description": "The AOSP Clock app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.\n",
+        "description": "The AOSP Clock app\nSome OEMs (e.g. Huawei and Xiaomi) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "clocks"
     },
@@ -317,8 +317,9 @@
     {
         "id": "com.android.inputmethod.latin",
         "label": "Android Keyboard (AOSP)",
-        "description": "The AOSP keyboard app\nMake sure you have another installed before you disable.\n",
+        "description": "The AOSP keyboard app",
         "removal": "replace",
+        "warning": "Mame sure you have another installed before you disable.",
         "suggestions": "keyboards"
     },
     {
@@ -427,17 +428,18 @@
     {
         "id": "com.android.managedprovisioning",
         "label": "Work Setup",
-        "description": "Work Setup/Work profile setup\nManages Android user account profiles.\nThe typical use-case is setting up a corporate profile that is controlled by the employer on an employee's personal device, to keep personal and work data separate.\n",
+        "description": "Work Setup/Work profile setup\nManages Android user account profiles.\nThe typical use-case is setting up a corporate profile that is controlled by the employer on an employee's personal device, to keep personal and work data separate.",
         "web": [
             "https://support.google.com/work/android/answer/6191949",
-            "https://developers.google.com/android/work/requirements/work-profile"
+            "https://developers.google.com/android/work/requirements/work-profile",
+            "https://beta.pithus.org/report/922fa478f5b2a8784e33626f04ff039d510b9dd7d5fd06db5c55002b5b5afae1"
         ],
-        "removal": "replace",
-        "suggestions": "work_profile_apps"
+        "removal": "caution",
+        "warning": "Needed for sandbox apps such as Shelter or Insular/Island."
     },
     {
         "id": "com.android.mms",
-        "description": "AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app\n",
+        "description": "AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app",
         "removal": "replace",
         "suggestions": "sms"
     },
@@ -494,7 +496,7 @@
     },
     {
         "id": "com.android.phasebeam",
-        "description": "\"Phase beam\" live wallpaper\n",
+        "description": "\"Phase beam\" live wallpaper",
         "removal": "delete"
     },
     {
@@ -596,13 +598,13 @@
     },
     {
         "id": "com.android.runintest.ddrtest",
-        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)\n",
+        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
         "removal": "delete"
     },
     {
         "id": "com.android.se",
         "label": "SecureElementApplication",
-        "description": "Runs in the background as part of the system.\nUnderlying implementation for the OMAPI SE service.\nEnables apps to use the OpenMobile API to access secure elements (SE) to enable smart-card payments and other secure services.\n\nAn SE is a special chip (e.g SIM-card) for storing cryptographic secrets in a way that makes illicit use hard.\nThe Open Mobile Alliance (OPA) is a standards organization which develops open standards for the mobile phone industry.",
+        "description": "Runs in the background as part of the system.\nUnderlying implementation for the OMAPI SE service.\nEnables apps to use the OpenMobile API to access secure elements (SE) to enable smart-card payments and other secure services.\nAn SE is a special chip (e.g SIM-card) for storing cryptographic secrets in a way that makes illicit use hard.\nThe Open Mobile Alliance (OPA) is a standards organization which develops open standards for the mobile phone industry.",
         "removal": "caution"
     },
     {
@@ -645,7 +647,7 @@
     },
     {
         "id": "com.android.soundrecorder",
-        "description": "AOSP Sound recorder. OEMs often use their own solution.\nSome phones (Huawei and Xiaomi) also use this package name for their own recorder app\n",
+        "description": "AOSP Sound recorder. OEMs often use their own solution.\nSome phones (Huawei and Xiaomi) also use this package name for their own recorder app",
         "removal": "replace",
         "suggestions": "audio_recorders"
     },
@@ -739,7 +741,7 @@
     },
     {
         "id": "com.android.voicedialer",
-        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nOn some phones Huawei & Xiaomi also use this package name for their own voice dialer app\n",
+        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nOn some phones Huawei & Xiaomi also use this package name for their own voice dialer app.",
         "removal": "replace",
         "suggestions": "dialers"
     },
@@ -751,7 +753,7 @@
     },
     {
         "id": "com.android.wallpaper.holospiral",
-        "description": "\"Holo spiral\" Live wallpaper.\n",
+        "description": "\"Holo spiral\" Live wallpaper.",
         "removal": "delete"
     },
     {
@@ -800,6 +802,6 @@
         "id": "com.example.android.notepad",
         "description": "(Bad) notepad app.",
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     }
 ]
