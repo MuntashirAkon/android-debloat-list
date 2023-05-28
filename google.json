@@ -395,7 +395,7 @@
     {
         "id": "com.google.android.apps.nbu.files",
         "label": "Files by Google",
-        "description": "Used to be for cleaning and sharing. But nowadays, it became a hybrid app. Runs in the background.",
+        "description": "Used to be for cleaning and sharing. But nowadays, it became a hybrid app. Runs in the background.\nFOSS alternative is https://github.com/TeamAmaze/AmazeFileUtilities",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files"
         ],
@@ -405,11 +405,12 @@
     {
         "id": "com.google.android.apps.nbu.paisa.user",
         "label": "Google Pay",
-        "description": "Digital wallet and payment system.\nYou really should not trust Google not to sell your data (even if they claim the contrary).\nThe app itself has a LOT of permissions & login with your google account is mandatory to use the app\n",
+        "description": "Digital wallet and payment system.\nYou really should not trust Google not to sell your data (even if they claim the contrary).\nThe app itself has a LOT of permissions & login with your google account is mandatory to use the app.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user",
             "https://support.google.com/googlepay/answer/10223752?hl=en&co=GENIE.Platform%3DAndroid#zippy=%2Cinfo-that-google-may-collect",
             "https://venturebeat.com/2020/11/20/probeat-google-will-eventually-sell-ads-against-your-financial-data/",
+            "https://www.bleepingcomputer.com/news/google/google-payment-privacy-settings-hidden-behind-special-url/",
             "https://beta.pithus.org/report/36b22c539b5f25c27a7699516c906351a25ba2daa2894eed08ae22f7a2a72c0e"
         ],
         "removal": "delete"
@@ -417,7 +418,7 @@
     {
         "id": "com.google.android.apps.nexuslauncher",
         "label": "Pixel Launcher",
-        "description": "Used to be called Nexus Launcher (back when Google phones were called Nexus, not Pixel).\n",
+        "description": "Used to be called Nexus Launcher (back when Google phones were called Nexus, not Pixel).",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher"
         ],
@@ -469,7 +470,7 @@
     {
         "id": "com.google.android.apps.podcasts",
         "label": "Google Podcasts",
-        "description": "Lets you explore, subscribe and play podcasts.\n",
+        "description": "Lets you explore, subscribe and play podcasts.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.podcasts"
         ],
@@ -514,7 +515,7 @@
     {
         "id": "com.google.android.apps.searchlite",
         "label": "Google Go",
-        "description": "The Google search app made for low-RAM devices.\n",
+        "description": "The Google search app made for low-RAM devices.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.searchlite"
         ],
@@ -685,13 +686,13 @@
     },
     {
         "id": "com.google.android.backup",
-        "description": "Allows Android apps to back up their data on Google servers (on Android 4.2).\n",
+        "description": "Allows Android apps to back up their data on Google servers (on Android 4.2).",
         "removal": "replace",
         "suggestions": "backup_apps"
     },
     {
         "id": "com.google.android.backuptransport",
-        "description": "Allows Android apps to back up their data on Google servers.\n",
+        "description": "Allows Android apps to back up their data on Google servers.",
         "removal": "replace",
         "suggestions": "backup_apps"
     },
@@ -729,7 +730,7 @@
         "dependencies": [
             "com.google.android.cellbroadcastservice"
         ],
-        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.\n",
+        "description": "Wireless emergency alerts\nCell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
         "web": [
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
@@ -742,7 +743,7 @@
         "required_by": [
             "com.google.android.cellbroadcastreceiver"
         ],
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\n",
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
         "web": [
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
@@ -789,8 +790,9 @@
     {
         "id": "com.google.android.documentsui",
         "label": "Files",
-        "description": "Files by Google.\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.\nSafe to disable, but will of course break file saving/loading functionality for some apps.",
-        "removal": "caution"
+        "description": "Files by Google.\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.",
+        "removal": "caution",
+        "warning": "Safe to disable, but will break file saving/loading functionality for some apps."
     },
     {
         "id": "com.google.android.email",
@@ -889,20 +891,20 @@
     },
     {
         "id": "com.google.android.inputmethod.japanese",
-        "description": "Google Keyboard + Japanese characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.japanese)\n",
+        "description": "Google Keyboard + Japanese characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.japanese)",
         "removal": "replace",
         "suggestions": "keyboards"
     },
     {
         "id": "com.google.android.inputmethod.korean",
-        "description": "Google Keyboard + Korean characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.korean)\n",
+        "description": "Google Keyboard + Korean characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.korean)",
         "removal": "replace",
         "suggestions": "keyboards"
     },
     {
         "id": "com.google.android.inputmethod.latin",
         "label": "Gboard",
-        "description": "Sometimes the only keyboard app on a phone.\n",
+        "description": "Sometimes the only keyboard app on a phone.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin"
         ],
@@ -912,14 +914,14 @@
     },
     {
         "id": "com.google.android.inputmethod.pinyin",
-        "description": "Google Keyboard + Pinyin (chinese) characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.pinyin)\n)\n",
+        "description": "Google Keyboard + Pinyin (chinese) characters (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.pinyin)",
         "removal": "replace",
         "suggestions": "keyboards"
     },
     {
         "id": "com.google.android.instantapps.supervisor",
         "label": "Instant Apps",
-        "description": "Lets you try new games directly on Google Play.\n",
+        "description": "Lets you try new games directly on Google Play.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.instantapps.supervisor",
             "https://www.zdnet.com/article/googles-instant-apps-goes-live-now-you-can-try-android-apps-before-installing-them/"
@@ -929,17 +931,22 @@
     {
         "id": "com.google.android.keep",
         "label": "Google Keep",
-        "description": "Note taking app from Google.\n",
+        "description": "Note taking app from Google.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.keep"
         ],
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.google.android.launcher",
-        "description": "Google Now Launcher (https://play.google.com/store/apps/details?id=com.google.android.launcher)\nDO NOT REMOVE THIS IF YOU DON'T HAVE ANOTHER LAUNCHER INSTALLED.\n",
+        "label": "Google Now Launcher",
+        "description": "Launcher app from google.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.launcher"
+        ],
         "removal": "replace",
+        "warning": "Make sure you have another installed before you disable.",
         "suggestions": "launchers"
     },
     {
@@ -949,12 +956,12 @@
     },
     {
         "id": "com.google.android.markup",
-        "description": "Google Markup app made for modifying pictures, shipped by default on every Pie+ device.\n",
+        "description": "Google Markup app made for modifying pictures, shipped by default on every Pie+ device.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.marvin.talkback",
-        "description": "Android Accessibility Suite (https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback)\nHelps blind and vision-impaired users.\n",
+        "description": "Android Accessibility Suite (https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback)\nHelps blind and vision-impaired users.",
         "removal": "delete"
     },
     {
@@ -964,7 +971,7 @@
     },
     {
         "id": "com.google.android.onetimeinitializer",
-        "description": "Provides first time setup, safe to remove.\n",
+        "description": "Provides first time setup, safe to remove.",
         "removal": "delete"
     },
     {
@@ -1002,12 +1009,12 @@
     },
     {
         "id": "com.google.android.pixel.setupwizard",
-        "description": "It's the basic configuration setup guides you through the basics of setting up Google features on your device.\nThe second package is only present on Pixel phones.\n",
+        "description": "It's the basic configuration setup guides you through the basics of setting up Google features on your device.\nThe second package is only present on Pixel phones.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.play.games",
-        "description": "Google Play Games (https://play.google.com/store/apps/details?id=com.google.android.play.games)\n",
+        "description": "Google Play Games (https://play.google.com/store/apps/details?id=com.google.android.play.games)",
         "removal": "delete"
     },
     {
@@ -1032,43 +1039,43 @@
     },
     {
         "id": "com.google.android.soundpicker",
-        "description": "Google Sounds. Removable if you already have another media select service.\n",
+        "description": "Google Sounds. Removable if you already have another media select service.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.street",
-        "description": "Google Street View (https://play.google.com/store/apps/details?id=com.google.android.street)\n",
+        "description": "Google Street View (https://play.google.com/store/apps/details?id=com.google.android.street)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.syncadapters.bookmarks",
-        "description": "Synchronisation for Google Chrome bookmarks\n",
+        "description": "Synchronisation for Google Chrome bookmarks",
         "removal": "delete"
     },
     {
         "id": "com.google.android.syncadapters.calendar",
-        "description": "Synchronisation for Google Calendar.\n",
+        "description": "Synchronisation for Google Calendar.",
         "removal": "replace"
     },
     {
         "id": "com.google.android.syncadapters.contacts",
-        "description": "Synchronisation for Google Contacts.\n",
+        "description": "Synchronisation for Google Contacts.",
         "removal": "replace"
     },
     {
         "id": "com.google.android.tag",
-        "description": "Support for NFC tags interactions (5 permissions : Contacts/Phone On by default).\nNFC Tags are for instance used in bus to let you validate your transport card with your phone\nOther example: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to an NFC device (e.g a speaker) if removed.\n",
+        "description": "Support for NFC tags interactions (5 permissions : Contacts/Phone On by default).\nNFC Tags are for instance used in bus to let you validate your transport card with your phone\nOther example: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to an NFC device (e.g a speaker) if removed.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.talk",
-        "description": "Google Hangouts (https://play.google.com/store/apps/details?id=com.google.android.talk)\n",
+        "description": "Google Hangouts (https://play.google.com/store/apps/details?id=com.google.android.talk)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.tts",
         "label": "Speech Services by Google",
-        "description": "Default Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services.\n",
+        "description": "Default Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.tts",
             "https://beta.pithus.org/report/08f97758fbfae1e17c4a8e5ee1a1e6d2726ce6b0b4931d5452f2376d60f1b4fb"
@@ -1078,12 +1085,12 @@
     },
     {
         "id": "com.google.android.tv.remote",
-        "description": "Android TV remote control (https://play.google.com/store/apps/details?id=com.google.android.tv.remote)\n",
+        "description": "Android TV remote control (https://play.google.com/store/apps/details?id=com.google.android.tv.remote)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.videoeditor",
-        "description": "Google Movie Studio (discontinued)\n",
+        "description": "Google Movie Studio (discontinued)",
         "removal": "delete"
     },
     {
@@ -1093,27 +1100,27 @@
     },
     {
         "id": "com.google.android.voicesearch",
-        "description": "Google Voice Search (Speech-To-Text)\n",
+        "description": "Google Voice Search (Speech-To-Text)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.vr.home",
-        "description": "Daydream (VR stuff) (https://play.google.com/store/apps/details?id=com.google.android.vr.home)\n",
+        "description": "Daydream (VR stuff) (https://play.google.com/store/apps/details?id=com.google.android.vr.home)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.vr.inputmethod",
-        "description": "Daydream virtual keyboard (VR stuff) (https://play.google.com/store/apps/details?id=com.google.android.vr.inputmethod)\n",
+        "description": "Daydream virtual keyboard (VR stuff) (https://play.google.com/store/apps/details?id=com.google.android.vr.inputmethod)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.wearable.app",
-        "description": "Wear OS Smartwatch (https://play.google.com/store/apps/details?id=com.google.android.wearable.app)\n",
+        "description": "Wear OS Smartwatch (https://play.google.com/store/apps/details?id=com.google.android.wearable.app)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.webview",
-        "description": "Android System WebView (https://play.google.com/store/apps/details?id=com.google.android.webview)\nAllows Android apps to display content from the web directly inside the app.\nBased on Chrome.\n",
+        "description": "Android System WebView (https://play.google.com/store/apps/details?id=com.google.android.webview)\nAllows Android apps to display content from the web directly inside the app.\nBased on Chrome.",
         "removal": "replace",
         "suggestions": "webviews"
     },
@@ -1130,52 +1137,52 @@
     },
     {
         "id": "com.google.ar.lens",
-        "description": "Google Lens (for AR too) (https://play.google.com/store/apps/details?id=com.google.ar.lens)\n",
+        "description": "Google Lens (for AR too) (https://play.google.com/store/apps/details?id=com.google.ar.lens)",
         "removal": "delete"
     },
     {
         "id": "com.google.audio.hearing.visualization.accessibility.scribe",
-        "description": "Live Transcribe & Sound Notifications (https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe)\nProvides push notifications for critical sounds around you. This feature can be helpful for people with hearing loss.\nhttps://blog.google/products/android/new-sound-notifications-on-android/\nWorks offline\n",
+        "description": "Live Transcribe & Sound Notifications (https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe)\nProvides push notifications for critical sounds around you. This feature can be helpful for people with hearing loss.\nhttps://blog.google/products/android/new-sound-notifications-on-android/\nWorks offline",
         "removal": "delete"
     },
     {
         "id": "com.google.chromeremotedesktop",
-        "description": "Chrome Remote Desktop (https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop)\n",
+        "description": "Chrome Remote Desktop (https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop)",
         "removal": "delete"
     },
     {
         "id": "com.google.earth",
-        "description": "Google Earth (https://play.google.com/store/apps/details?id=com.google.earth)\n",
+        "description": "Google Earth (https://play.google.com/store/apps/details?id=com.google.earth)",
         "removal": "delete"
     },
     {
         "id": "com.google.marvin.talkback",
-        "description": "Android Accessibility Suite (https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback)\n",
+        "description": "Android Accessibility Suite (https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback)",
         "removal": "delete"
     },
     {
         "id": "com.google.samples.apps.cardboarddemo",
-        "description": "Google Cardboard (VR stuff) (https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo)\n",
+        "description": "Google Cardboard (VR stuff) (https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo)",
         "removal": "delete"
     },
     {
         "id": "com.google.tango.measure",
-        "description": "Google Measure (https://play.google.com/store/apps/details?id=com.google.tango.measure)\n",
+        "description": "Google Measure (https://play.google.com/store/apps/details?id=com.google.tango.measure)",
         "removal": "delete"
     },
     {
         "id": "com.google.vr.cyclops",
-        "description": "Google Cardboard Camera (VR stuff) (https://play.google.com/store/apps/details?id=com.google.vr.cyclops)\n",
+        "description": "Google Cardboard Camera (VR stuff) (https://play.google.com/store/apps/details?id=com.google.vr.cyclops)",
         "removal": "delete"
     },
     {
         "id": "com.google.vr.expeditions",
-        "description": "Google Expedition (VR stuff) (https://play.google.com/store/apps/details?id=com.google.vr.expeditions)\n",
+        "description": "Google Expedition (VR stuff) (https://play.google.com/store/apps/details?id=com.google.vr.expeditions)",
         "removal": "delete"
     },
     {
         "id": "com.google.vr.vrcore",
-        "description": "Google VR services (https://play.google.com/store/apps/details?id=com.google.vr.vrcore)\n",
+        "description": "Google VR services (https://play.google.com/store/apps/details?id=com.google.vr.vrcore)",
         "removal": "replace"
     },
     {
