@@ -17,7 +17,7 @@
     {
         "id": "com.UCMobile.intl",
         "label": "UC Browser",
-        "description": "Insecure chinese web browser from Alibaba, which is well know for its privacy & security issues.",
+        "description": "Insecure chinese web browser from Alibaba, which is well-known for its privacy & security issues.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.UCMobile.intl",
             "https://citizenlab.ca/2015/05/a-chatty-squirrel-privacy-and-security-issues-with-uc-browser/",
@@ -1369,7 +1369,12 @@
     },
     {
         "id": "com.zhiliaoapp.musically",
-        "description": "Yelp (https://play.google.com/store/apps/details?id=com.yelp.android)\nYelp lets users post reviews and rate businesses.\nWorth reading : https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation\n\nTikTok App\nWorth reading : https://en.wikipedia.org/wiki/TikTok#Privacy,_cyberbullying_and_addiction_concerns",
+        "description": "Yelp lets users post reviews and rate businesses.\nTikTok App",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
+            "https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation",
+            "https://en.wikipedia.org/wiki/TikTok#Privacy,_cyberbullying_and_addiction_concerns"
+        ],
         "removal": "delete"
     },
     {
@@ -1412,7 +1417,13 @@
     },
     {
         "id": "in.mohalla.sharechat",
-        "description": "ShareChat (https://play.google.com/store/apps/details?id=in.mohalla.sharechat)\n",
+        "label": "ShareChat",
+        "description": "Multilingual India specific social media platform",
+        "web": [
+            "https://play.google.com/store/apps/details?id=in.mohalla.sharechat",
+            "https://en.wikipedia.org/wiki/ShareChat",
+            "https://help.sharechat.com/policies/privacy-policy/"
+        ],
         "removal": "delete"
     },
     {
@@ -1432,8 +1443,14 @@
     },
     {
         "id": "jp.gocro.smartnews.android",
-        "description": "SmartNews: Local Breaking News (https://play.google.com/store/apps/details?id=jp.gocro.smartnews.android)\nDelivers the top trending news stories from others publishers (NBC News, The Verges etc...)\n7 Trackers + 10 permissions (https://reports.exodus-privacy.eu.org/en/reports/jp.gocro.smartnews.android/latest/)\n",
-        "removal": "delete"
+        "label": "SmartNews",
+        "description": "Delivers the top trending news stories from other publishers (NBC News, The Verges etc...)\nIncludes 7 Trackers + 10 permissions",
+        "web": [
+            "https://play.google.com/store/apps/details?id=jp.gocro.smartnews.android",
+            "https://reports.exodus-privacy.eu.org/en/reports/jp.gocro.smartnews.android/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "msgplus.jibe.sca.vpl",
