@@ -17,7 +17,7 @@
     {
         "id": "com.UCMobile.intl",
         "label": "UC Browser",
-        "description": "Unsecure chinese web browser from Alibaba, which is well know for its privacy & security issues.\n",
+        "description": "Insecure chinese web browser from Alibaba, which is well know for its privacy & security issues.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.UCMobile.intl",
             "https://citizenlab.ca/2015/05/a-chatty-squirrel-privacy-and-security-issues-with-uc-browser/",
@@ -59,8 +59,14 @@
     },
     {
         "id": "com.amazon.avod.thirdpartyclient",
-        "description": "Amazon Prime Video (https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient)\nVOD service from Amazon.\nhttps://en.wikipedia.org/wiki/Prime_Video\n",
-        "removal": "delete"
+        "label": "Amazon Prime Video",
+        "description": "VOD service from Amazon.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient",
+            "nhttps://en.wikipedia.org/wiki/Prime_Video"
+        ],
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.amazon.clouddrive.photos",
@@ -74,8 +80,13 @@
     },
     {
         "id": "com.amazon.kindle",
-        "description": "Amazon Kindle (https://play.google.com/store/apps/details?id=com.amazon.kindle)\n",
-        "removal": "delete"
+        "label": "Amazon Kindle"
+        "description": "Kindle eBook reader app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.amazon.kindle"
+        ],
+        "removal": "replace",
+        "suggestions": "ebook_readers"
     },
     {
         "id": "com.amazon.mShop.android",
@@ -94,13 +105,19 @@
     },
     {
         "id": "com.amazon.mp3",
-        "description": "Amazon Music (https://play.google.com/store/apps/details?id=com.amazon.mp3)\nAmazon streaming app\n",
-        "removal": "delete"
+        "label": "Amazon Music"
+        "description": "Amazon Music streaming app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.amazon.mp3"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.amazon.venezia",
-        "description": "Amazon AppStore\n",
-        "removal": "delete"
+        "description": "Amazon AppStore",
+        "removal": "replace",
+        "suggestions": "app_stores"
     },
     {
         "id": "com.android.ld.appstore",
@@ -109,13 +126,19 @@
     },
     {
         "id": "com.aspiro.tidal",
-        "description": "Tidal Music (https://play.google.com/store/apps/details?id=com.aspiro.tidal)\nMusic streaming app\n",
-        "removal": "delete"
+        "label": "TIDAL Music"
+        "description": "Tidal Music streaming app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.aspiro.tidal"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.aspiro.tidal.vpl",
-        "description": "Tidal Music (https://play.google.com/store/apps/details?id=com.aspiro.tidal)\nMusic streaming app",
-        "removal": "delete"
+        "description": "Tidal Music streaming app",
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.audible.application",
@@ -149,8 +172,13 @@
     },
     {
         "id": "com.cnn.mobile.android.phone",
-        "description": "CNN Breaking US & World News app (https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone)\n",
-        "removal": "delete"
+        "label": "CNN Breaking US & World News"
+        "description": "News app from CNN",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.contextlogic.wish",
@@ -176,8 +204,14 @@
     },
     {
         "id": "com.devhd.feedly",
-        "description": "Feedly (https://play.google.com/store/apps/details?id=com.devhd.feedly)\nNews aggregator application (RSS)\nRSS aggregator are great but Feedly is really bad, especially privacy-wise.\nhttps://feedly.com/i/legal/privacy\nBetter Alternative : https://github.com/FreshRSS/FreshRSS\n",
-        "removal": "delete"
+        "label": "Feedly",
+        "description": "Popular news aggregator application (RSS)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.devhd.feedly",
+            "https://feedly.com/i/legal/privacy"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.digitalturbine.toolbar",
@@ -191,8 +225,14 @@
     },
     {
         "id": "com.directv.dvrscheduler",
-        "description": "DIRECTV (https://play.google.com/store/apps/details?id=com.directv.dvrscheduler)\nOffical app from DIRECTV (subsidiary of AT&T)\nLets you watch Live TV, recorded shows, VODs and schedule recordings on your DVR\nWorth reading : https://en.wikipedia.org/wiki/DirecTV#Consumer_protection_lawsuits_and_violations\n",
-        "removal": "delete"
+        "label": "DIRECTV on the Go",
+        "description": "Offical app from DIRECTV (subsidiary of AT&T)\nLets you watch Live TV, recorded shows, VODs and schedule recordings on your DVR",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.directv.dvrscheduler",
+            "https://en.wikipedia.org/wiki/DirecTV#Consumer_protection_lawsuits_and_violations"
+        ],
+        "removal": "replace",
+        "suggestions": "streaming_apps"
     },
     {
         "id": "com.discoveryscreen",
@@ -263,7 +303,7 @@
     {
         "id": "com.eterno",
         "label": "Dailyhunt",
-        "description": "Daily hunt news aggregator\n",
+        "description": "Daily hunt news aggregator",
         "web": [
             "https://play.google.com/store/apps/details?id=com.eterno"
         ],
@@ -273,14 +313,14 @@
     {
         "id": "com.evernote",
         "label": "Evernote",
-        "description": "Popular note taking app\n",
+        "description": "Popular note taking app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.evernote",
             "https://evernote.com/privacy",
             "https://privacy.commonsense.org/evaluation/evernote"
         ],
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.facebook.appmanager",
@@ -314,7 +354,11 @@
     },
     {
         "id": "com.galaxyfirsatlari",
-        "description": "Galaxy Fırsatlari (https://play.google.com/store/apps/details?id=com.galaxyfirsatlari)\nSamsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nencourages consumption.\nExodus found 10 trackers and 17 permissions : https://reports.exodus-privacy.eu.org/fr/reports/143830/ \n",
+        "label": "Galaxy Fırsatları"
+        "description": "Samsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nEncourages consumption.\nExodus found 10 trackers and 17 permissions : https://reports.exodus-privacy.eu.org/fr/reports/143830/",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.galaxyfirsatlari"
+        ],
         "removal": "delete"
     },
     {
@@ -533,7 +577,7 @@
     },
     {
         "id": "com.micredit.in",
-        "description": "Mi Credit (https://play.google.com/store/apps/details?id=com.micredit.in.gp)\nApp providing loans to MIUI users from India and China\n\nNote: https://web.archive.org/web/20221207193942/https://onsitego.com/blog/xiaomi-quietly-discontinues-mi-credit-mi-pay-india/",
+        "description": "Mi Credit (https://play.google.com/store/apps/details?id=com.micredit.in.gp)\nApp providing loans to MIUI users from India and China\nNote: https://web.archive.org/web/20221207193942/https://onsitego.com/blog/xiaomi-quietly-discontinues-mi-credit-mi-pay-india/",
         "removal": "delete"
     },
     {
@@ -563,8 +607,13 @@
     },
     {
         "id": "com.microsoft.office.onenote",
-        "description": "OneNote (https://play.google.com/store/apps/details?id=com.microsoft.office.onenote)\nMicrosoft and privacy you know... This app has a lot of permissions. For example it has access to phone state, including the phone number of the device, current cellular network information, the status of any ongoing calls...",
-        "removal": "delete"
+        "label": "Microsoft OneNote",
+        "description": "Note taking app from Microsoft.\nThis app has a lot of permissions. For example it has access to phone state, including the phone number of the device, current cellular network information, the status of any ongoing calls...",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.microsoft.office.onenote"
+        ],
+        "removal": "replace"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.microsoft.office.outlook",
@@ -583,8 +632,13 @@
     },
     {
         "id": "com.microsoft.skydrive",
-        "description": "Microsoft OneDrive (Cloud) (https://play.google.com/store/apps/details?id=com.microsoft.skydrive)\n",
-        "removal": "delete"
+        "label": "Microsoft OneDrive",
+        "description": "Cloud storage app from Microsoft",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.microsoft.skydrive"
+        ],
+        "removal": "replace",
+        "suggestions": "cloud_services"
     },
     {
         "id": "com.microsoft.translator",
@@ -665,7 +719,7 @@
     {
         "id": "com.opera.mini.native",
         "label": "Opera Mini",
-        "description": "Tracks your online activities, which are linked to your unique ID.\nIt has built-in VPN for 'free', which Restore Privacy describe as a 'data collection tool in disguise'.\n",
+        "description": "Tracks your online activities, which are linked to your unique ID.\nIt has built-in VPN for 'free', which Restore Privacy describe as a 'data collection tool in disguise'.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.opera.mini.native",
             "https://www.opera.com/privacy",
@@ -692,8 +746,14 @@
     },
     {
         "id": "com.particlenews.newsbreak",
-        "description": "News Break: Local & Breaking (https://play.google.com/store/apps/details?id=com.particlenews.newsbreak)\nNews provided by NewsBreak (https://www.newsbreak.com/)\n#\nFYI : https://reports.exodus-privacy.eu.org/en/reports/com.particlenews.newsbreak/latest/\n",
-        "removal": "delete"
+        "label": "NewsBreak",
+        "description": "News provided by NewsBreak (https://www.newsbreak.com/)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.particlenews.newsbreak",
+            "https://reports.exodus-privacy.eu.org/en/reports/com.particlenews.newsbreak/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.phonepe.app",
@@ -1108,13 +1168,19 @@
     },
     {
         "id": "com.skype.m2",
-        "description": "Skype Lite (https://play.google.com/store/apps/details?id=com.skype.m2)\n",
-        "removal": "delete"
+        "description": "Skype Lite: Voice & video calling app",
+        "removal": "replace",
+        "suggestions": "meeting_apps"
     },
     {
         "id": "com.skype.raider",
-        "description": "Skype (https://play.google.com/store/apps/details?id=com.skype.raider)\n",
-        "removal": "delete"
+        "label": "Skype",
+        "description": "Voice & video calling app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.skype.raider"
+        ],
+        "removal": "replace"
+        "suggestions": "meeting_apps"
     },
     {
         "id": "com.slacker.radio",
@@ -1129,7 +1195,7 @@
     {
         "id": "com.spotify.music",
         "label": "Spotify",
-        "description": "Popular music streaming app\n",
+        "description": "Popular music streaming app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.spotify.music",
             "https://www.spotify.com/privacy/"
@@ -1150,7 +1216,7 @@
     {
         "id": "com.talpa.hibrowser",
         "label": "Hi Browser",
-        "description": "Awful browser with embedded trackers and ads.\n",
+        "description": "Awful browser with embedded trackers and ads.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.talpa.hibrowser",
             "https://reports.exodus-privacy.eu.org/fr/reports/com.talpa.hibrowser/latest/"
@@ -1175,8 +1241,13 @@
     },
     {
         "id": "com.til.timesnews",
-        "description": "India News (https://play.google.com/store/apps/details?id=com.til.timesnews)",
-        "removal": "delete"
+        "label": "Newspoint",
+        "description": "India specific news app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.til.timesnews"
+        ],
+        "removal": "replace",
+        "suggestions": "rss_readers"
     },
     {
         "id": "com.tiqiaa.remote",
@@ -1191,12 +1262,13 @@
     {
         "id": "com.touchtype.swiftkey",
         "label": "Swiftkey",
-        "description": "Keyboard app by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n4 Trackers + 11 Permissions\nNOTE: default keyboard on some Nokia and Huawei phones. Make sure you have another keyboard app before disabling this.\n",
+        "description": "Keyboard app by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n4 Trackers + 11 Permissions",
         "web": [
             "https://play.google.com/store/apps/details?id=com.touchtype.swiftkey",
             "https://reports.exodus-privacy.eu.org/en/reports/com.touchtype.swiftkey/latest/"
         ],
         "removal": "replace",
+        "warning": "Default keyboard on some Nokia and Huawei phones. Make sure you have another keyboard app before disabling this.",
         "suggestions": "keyboards"
     },
     {
@@ -1257,7 +1329,7 @@
     {
         "id": "com.ume.browser.northamerica",
         "label": "UME Web Browser",
-        "description": "It has trackers and a LOT of unnecessary permissions.\n",
+        "description": "It has trackers and a LOT of unnecessary permissions.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.ume.browser.northamerica",
             "https://reports.exodus-privacy.eu.org/en/reports/com.ume.browser.cust/latest/"
@@ -1297,7 +1369,7 @@
     },
     {
         "id": "com.zhiliaoapp.musically",
-        "description": "Yelp (https://play.google.com/store/apps/details?id=com.yelp.android)\nYelp lets users post reviews and rate businesses. \nWorth reading : https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation\n\nTikTok App \nWorth reading : https://en.wikipedia.org/wiki/TikTok#Privacy,_cyberbullying_and_addiction_concerns\n",
+        "description": "Yelp (https://play.google.com/store/apps/details?id=com.yelp.android)\nYelp lets users post reviews and rate businesses.\nWorth reading : https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation\n\nTikTok App\nWorth reading : https://en.wikipedia.org/wiki/TikTok#Privacy,_cyberbullying_and_addiction_concerns",
         "removal": "delete"
     },
     {
@@ -1308,7 +1380,7 @@
     {
         "id": "flipboard.app",
         "label": "Flipboard",
-        "description": "Flipboard News App\n",
+        "description": "Flipboard News App",
         "web": [
             "https://play.google.com/store/apps/details?id=flipboard.app",
             "https://about.flipboard.com/privacy-policy/",
@@ -1320,7 +1392,7 @@
     {
         "id": "flipboard.boxer.app",
         "label": "Briefing",
-        "description": "Briefing app from Flipboard\n",
+        "description": "Briefing app from Flipboard",
         "web": [
             "https://play.google.com/store/apps/details?id=flipboard.boxer.app",
             "https://about.flipboard.com/privacy-policy/"
