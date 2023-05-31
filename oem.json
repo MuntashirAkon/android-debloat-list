@@ -1461,8 +1461,9 @@
     },
     {
         "id": "com.huawei.android.launcher",
-        "description": "Huawei launcher app.\nIt's basically the home screen, the way icons apps are organized and displayed.\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER !\nYou will maybe need this package for the recent apps feature to work (even if you have another launcher)\n",
+        "description": "Huawei launcher app.\nIt's basically the home screen, the way icons apps are organized and displayed.",
         "removal": "replace",
+        "warning": "Make sure you've another installed before you disable.\nMaybe you'll need this package for the recent apps feature to work (even if you have another launcher installed)",
         "suggestions": "launchers"
     },
     {
@@ -1812,8 +1813,9 @@
     },
     {
         "id": "com.huawei.ohos.inputmethod",
-        "description": "Huawei default Keyboard\nWARNING: Before unistalling, make sure to have a third-party keyboard installed.\n",
+        "description": "Huawei default Keyboard.",
         "removal": "replace",
+        "warning": "Make sure you've another installed before you disable.",
         "suggestions": "keyboards"
     },
     {
@@ -1899,8 +1901,9 @@
     },
     {
         "id": "com.huawei.webview",
-        "description": "Huawei Webview.\nAllows Android apps to display content from the web directly inside the app.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly.\n",
+        "description": "Huawei Webview.\nAllows Android apps to display content from the web directly inside the app.",
         "removal": "replace",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
@@ -1911,7 +1914,7 @@
     {
         "id": "com.kidoz.lenovo",
         "label": "Lenovo Kid's Account",
-        "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.\n",
+        "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.",
         "web": [
             "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa",
             "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection"
@@ -1926,7 +1929,7 @@
     {
         "id": "com.lenovo.agent0",
         "label": "OCZ_ProvisionAgent",
-        "description": "Not sure what it does.\n",
+        "description": "Not sure what it does.",
         "web": [
             "https://beta.pithus.org/report/9ebdba931604f90815b8014cbba12b91521811ac49a292dab438006"
         ],
@@ -1935,7 +1938,7 @@
     {
         "id": "com.lenovo.csdkplatform",
         "label": "PlatformApk",
-        "description": "CSDK = Commercial Software Development Kit (CSDK) for details see official video.\n",
+        "description": "CSDK = Commercial Software Development Kit (CSDK) for details see official video.",
         "web": [
             "https://videos.emea.lenovo.com/lenovo-commercial-software",
             "https://beta.pithus.org/report/130d7076019d7a4519a04c80dbd80fa3734542dc44ec1f5fba464569fb3f4adc"
@@ -1945,7 +1948,7 @@
     {
         "id": "com.lenovo.dagent",
         "label": "OCZ_DeployAgent",
-        "description": "Not sure what it does.\n",
+        "description": "Not sure what it does.",
         "web": [
             "https://beta.pithus.org/report/d5bd860fb7c42078618118213913ea6d58fec2a51904728f2f429840386d0c70"
         ],
@@ -1954,7 +1957,7 @@
     {
         "id": "com.lenovo.dsa",
         "label": "OCZ_DeployServiceApp",
-        "description": "Dynamic System Analysis (DSA) collects and analyzes system information to aid in diagnosing system problems.\n",
+        "description": "Dynamic System Analysis (DSA) collects and analyzes system information to aid in diagnosing system problems.",
         "web": [
             "https://support.lenovo.com/us/en/solutions/LNVO-DSA",
             "https://beta.pithus.org/report/2e4a0b3fa9ea4fb56a7bd90d1d2c9eb4cd7fffe481943e0f6bfb8a23554cb921"
@@ -1964,7 +1967,7 @@
     {
         "id": "com.lenovo.launcher",
         "label": "LenovoLauncher",
-        "description": "Lenovo's default device launcher.\n",
+        "description": "Lenovo's default device launcher.",
         "web": [
             "https://beta.pithus.org/report/3cdd48fb6a9c94435fb1b46b41a19c553b96ae889aaa2d7285f28cd64d12363e"
         ],
@@ -1975,7 +1978,7 @@
     {
         "id": "com.lenovo.launcher.provider",
         "label": "LenovoLauncherProvider",
-        "description": "Related to lenovo launcher(com.lenovo.launcher)?\nExactly not sure what it does.\n",
+        "description": "Related to lenovo launcher(com.lenovo.launcher)?\nExactly not sure what it does.",
         "web": [
             "https://beta.pithus.org/report/c94afd8d85adb4c139ca6e78cd0fe643ebe0d0046480f2b12235e698eeccaa51"
         ],
@@ -1984,7 +1987,7 @@
     {
         "id": "com.lenovo.lsf",
         "label": "Lenovo ID",
-        "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework\n",
+        "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework",
         "web": [
             "https://beta.pithus.org/report/f181581838c8898634160e5cceada5fd3e4032b6ad9eae39ff788e8cc2922db7"
         ],
@@ -1993,7 +1996,7 @@
     {
         "id": "com.lenovo.lsf.device",
         "label": "Device Service",
-        "description": "lsf = Lenovo Service Framework.\nExactly not sure what it does.\n",
+        "description": "lsf = Lenovo Service Framework.\nExactly not sure what it does.",
         "web": [
             "https://beta.pithus.org/report/1cbd510ef561561b3d850583e9467f16b9ae2d94280c9b2a50bcb8cfbad6ccf9"
         ],
@@ -2001,13 +2004,13 @@
     },
     {
         "id": "com.lenovo.lsf.user",
-        "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework.\n",
+        "description": "Lenovo ID adds an option in Settings>Accounts where you can login to a Lenovo ID account.\nFeatures include \"exclusive features directly from Lenovo and our partners\" and \"syncing users information across devices\"\nlsf = Lenovo Service Framework.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.ocpl",
         "label": "OCZ_ClientDownloader",
-        "description": "Not sure what it does.\n",
+        "description": "Not sure what it does.",
         "web": [
             "https://forums.lenovo.com/t5/Lenovo-Android-based-Tablets-and-Phablets/OCZ-ClientDownloader/m-p/5090852?page=1#5396079",
             "https://beta.pithus.org/report/8a1884d7604d3c3ab7559d6dcffe88b77243e85bee38ff100f1331043b6d5e6f"
@@ -2017,19 +2020,19 @@
     {
         "id": "com.lenovo.ota",
         "label": "System Update",
-        "description": "App for your Over-The-Air (OTA) system update.\n",
+        "description": "App for your Over-The-Air (OTA) system update.",
         "removal": "caution"
     },
     {
         "id": "com.lenovo.tab4_8plus",
         "label": "Lenovo TAB4 8 Plus",
-        "description": "App that shows TAB4 8 Plus device specifications.\n",
+        "description": "App that shows TAB4 8 Plus device specifications.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.ue.device",
         "label": "UserExperience",
-        "description": "User Experience Program\nAnalytics stuff. Displays an annoying notification after every reboot prompting you to join this user experience program.\n",
+        "description": "User Experience Program\nAnalytics stuff. Displays an annoying notification after every reboot prompting you to join this user experience program.",
         "web": [
             "https://beta.pithus.org/report/54cc80e774c0106e2b74b7b8d50981ad2108dad2f8d4b2c6a5115e14256807f6"
         ],
@@ -2038,13 +2041,13 @@
     {
         "id": "com.lenovo.wallpaper",
         "label": "Wallpapers",
-        "description": "Wallpaper manager app for lenovo devices.\n",
+        "description": "Wallpaper manager app for lenovo devices.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.weather.theme.dreamlandPad",
         "label": "Lenovo Weather",
-        "description": "Adds widget for lenovo weather app(com.tblenovo.lewea)\n",
+        "description": "Adds widget for lenovo weather app(com.tblenovo.lewea)",
         "web": [
             "https://beta.pithus.org/report/aff85db4566c53f4b0668f603aa99dfcae13dd165835cca4d6d0b59265145f18"
         ],
@@ -2588,8 +2591,9 @@
     },
     {
         "id": "com.mi.webkit.core",
-        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content \nfrom the web directly inside an application. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly\n",
+        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly",
         "suggestions": "webviews"
     },
     {
@@ -2747,8 +2751,9 @@
     },
     {
         "id": "com.miui.gallery",
-        "description": "MIUI Gallery app.\nNote: Removing the Gallery will break the send screenshot feature (swipe 3 fingers to show the screenshot preview)",
+        "description": "MIUI Gallery app.",
         "removal": "replace",
+        "warning": "Removing will break the send screenshot feature (swipe 3 fingers to show the screenshot preview)",
         "suggestions": "gallery"
     },
     {
@@ -2768,11 +2773,12 @@
     },
     {
         "id": "com.miui.home",
-        "description": "MIUI System Launcher\nIt's basically the home screen, the way icons apps are organized and displayed.\n\nNote: If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER!\n",
+        "description": "MIUI System Launcher\nIt's basically the home screen, the way icons apps are organized and displayed.",
         "web": [
             "https://web.archive.org/web/20220926221620/https://libreddit.spike.codes/r/Xiaomi/comments/o6vk5z/miui_12125_and_android_11_gestures/"
         ],
         "removal": "replace",
+        "warning": "If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nMake sure you've installed another launcher before you disable",
         "suggestions": "launchers"
     },
     {
@@ -2849,7 +2855,7 @@
         "id": "com.miui.notes",
         "description": "Mi Notes\n",
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.miui.notification",
@@ -3800,7 +3806,7 @@
             "https://play.google.com/store/apps/details?id=com.oneplus.note"
         ],
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.oneplus.note.black.overlay",
@@ -4029,11 +4035,12 @@
         "required_by": [
             "com.oneplus.gamespace"
         ],
-        "description": "App Enhancement Services\nIf enabled, connects to OPPO servers (icosa-service-eu.allawnos.com) every time a new app is installed. Seems to be mostly focused on gaming performance optimisation according to the settings description:\n'[...] a service that optimises phone performance for specific apps and game scenarios. [...] frame rates, battery usage, touch sensitivity, network connection, vibration and gameplay assistance features.'\n\nCan be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> App Enhancement Services).\nNote: removing this package prevents the OnePlus Game Center to detect games.\n",
+        "description": "App Enhancement Services\nIf enabled, connects to OPPO servers (icosa-service-eu.allawnos.com) every time a new app is installed. Seems to be mostly focused on gaming performance optimisation according to the settings description:\n'[...] a service that optimises phone performance for specific apps and game scenarios. [...] frame rates, battery usage, touch sensitivity, network connection, vibration and gameplay assistance features.'\nCan be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> App Enhancement Services).",
         "web": [
             "https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde"
         ],
         "removal": "delete"
+        "warning": "Removing this package prevents the OnePlus Game Center to detect games."
     },
     {
         "id": "com.oplus.crashbox",
@@ -4405,7 +4412,7 @@
         "id": "com.samsung.android.app.memo",
         "description": "Samsung Memo (was replaced by Samsung Notes app com.samsung.android.app.notes)\n",
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.samsung.android.app.mhswrappertmo",
@@ -4440,7 +4447,7 @@
             "https://play.google.com/store/apps/details?id=com.samsung.android.app.notes"
         ],
         "removal": "replace",
-        "suggestions": "notes"
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.samsung.android.app.omcagent",
@@ -4660,7 +4667,8 @@
     {
         "id": "com.samsung.android.calendar",
         "description": "Samsung Calendar App\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "com.samsung.android.cidmanager",
@@ -4669,8 +4677,9 @@
     },
     {
         "id": "com.samsung.android.contacts",
-        "description": "Samsung contacts app?",
-        "removal": "caution"
+        "description": "Samsung contacts app",
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.samsung.android.coreapps",
@@ -4709,8 +4718,13 @@
     },
     {
         "id": "com.samsung.android.email.provider",
-        "description": "Samsung email app (https://play.google.com/store/apps/details?id=com.samsung.android.email.provider)\n",
-        "removal": "delete"
+        "label": "Samsung Email",
+        "description": "Samsung email app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.email.provider"
+        ],
+        "removal": "replace",
+        "suggestions": "email_clients"
     },
     {
         "id": "com.samsung.android.emojiupdater",
