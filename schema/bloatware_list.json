@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://muntashirakon.github.io/android-debloat-list/bloatware_list.json",
+    "title": "Bloatware List",
+    "description": "Listing of Android bloatware",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "Bloatware package name",
+                "type": "string"
+            },
+            "label": {
+                "description": "Bloatware package label",
+                "type": "string"
+            },
+            "dependencies": {
+                "description": "Packages that this bloatware depends on",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+            },
+            "required_by": {
+                "description": "Packages that depend on this bloatware",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+            },
+            "tags": {
+                "description": "Predefined tags",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+            },
+            "description": {
+                "description": "Bloatware description",
+                "type": "string"
+            },
+            "web": {
+                "description": "Online references",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+            },
+            "removal": {
+                "description": "Bloatware removal type (delete, replace, caution, unsafe)",
+                "type": "string"
+            },
+            "suggestions": {
+                "description": "Suggestion ID for listing alternatives to this bloatware",
+                "type": "string"
+            }
+        },
+        "required": [ "id", "label", "description", "removal" ]
+    },
+    "uniqueItems": true
+}

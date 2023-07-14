@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://muntashirakon.github.io/android-debloat-list/suggestion_list.json",
+    "title": "Suggestion List",
+    "description": "Listing of suggestions for Android bloatware",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "Suggested package name",
+                "type": "string"
+            },
+            "label": {
+                "description": "Suggested package label",
+                "type": "string"
+            },
+            "reason": {
+                "description": "Reason for choosing this package if it violates some criteria",
+                "type": "string"
+            },
+            "source": {
+                "description": "Predefined list of app stores where this package might be located",
+                "type": "string"
+            },
+            "repo": {
+                "description": "Source code repository for this package",
+                "type": "string"
+            }
+        },
+        "required": [ "id", "label", "repo" ]
+    },
+    "uniqueItems": true
+}

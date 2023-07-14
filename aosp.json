@@ -126,7 +126,7 @@
         "id": "com.android.carrierdefaultapp",
         "label": "CarrierDefaultApp",
         "description": "This package is a generic solution that allows carriers to indicate when a device has run OOB (Out Of Balance). Android devices that are OOB need carrier mitigation protocols to allow select data through (like to notify users their data/balance is out, or allow them to buy more data through the carrier app).\nWill probably break that functionality if disabled, but is otherwise safe to disable (should only affect users that are out of data/balance?).",
-        "web" : [
+        "web": [
             "https://source.android.com/devices/tech/connect/oob-users"
         ],
         "removal": "caution"

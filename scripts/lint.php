@@ -154,7 +154,7 @@ function validate_bloatware_item(array $item): int {
         fprintf($lint_writer, "{$item['id']}: Expected `warning` field to be a string, found: " . gettype($item['warning']) . "\n");
         ++$error_count;
     }
-    // `warning` is an optional string
+    // `suggestions` is an optional string
     if (isset($item['suggestions'])) {
         if (gettype($item['suggestions']) != 'string') {
             fprintf($lint_writer, "{$item['id']}: Expected `suggestions` field to be a string, found: " . gettype($item['suggestions']) . "\n");
