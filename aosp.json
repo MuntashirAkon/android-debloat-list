@@ -843,5 +843,12 @@
         "description": "(Bad) notepad app.",
         "removal": "replace",
         "suggestions": "note_taking_apps"
+    },
+    {
+        "id": "com.google.android.email",
+        "label": "Email",
+        "description": "Newer versions of AOSP Mail are renamed to com.android.email and Gmail was migrated to com.google.android.gm",
+        "removal": "replace",
+        "suggestions": "email_clients"
     }
 ]
