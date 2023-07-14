@@ -59,6 +59,10 @@
                 "description": "Bloatware removal type (delete, replace, caution, unsafe)",
                 "type": "string"
             },
+            "warning": {
+                "description": "Possible consequences of removing the bloatware (for caution and unsafe), for others, useful information",
+                "type": "string"
+            },
             "suggestions": {
                 "description": "Suggestion ID for listing alternatives to this bloatware",
                 "type": "string"

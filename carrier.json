@@ -19,14 +19,17 @@
     },
     {
         "id": "com.aetherpal.attdh.se",
+        "label": "Device Help",
         "description": "Device Help for AT&T Samsung device.\nDeveloped by Aetherpal, a company which sells smart remote controls tools.\nI guess this app is used for tech support.",
         "web": [
+            "https://docs.samsungknox.com/CCMode/G935A_O.pdf",
             "https://en.wikipedia.org/wiki/AetherPal"
         ],
         "removal": "delete"
     },
     {
         "id": "com.aetherpal.attdh.zte",
+        "label": "Device Help",
         "description": "Device Help for AT&T ZTE devices.\nDeveloped by Aetherpal, a company which sells smart remote controls tools.\nI guess this app is used for tech support.",
         "web": [
             "https://en.wikipedia.org/wiki/AetherPal"
@@ -35,6 +38,7 @@
     },
     {
         "id": "com.android.sprint.hiddenmenuapp",
+        "label": "HiddenMenu",
         "description": "Lets you access hidden features tests/settings (you need to type a special code in the dialer).",
         "web": [
             "https://bestcellular.com/dial-codes/"
@@ -43,40 +47,74 @@
     },
     {
         "id": "com.asurion.android.mobilerecovery.att",
-        "description": "AT&T Protect Plus (discontinued. Replaced by AT&T ProTech : com.asurion.android.protech.att)\nHelp and support app. Lets you call or chat with a live U.S.-based AT&T ProTech support expert\nNote : This app is developped by Asurion, a US company whose business is to sell insurances.\nAll US carriers use Asurion for the phone insurances.",
-        "removal": "delete"
+        "label": "AT&T Protect Plus",
+        "description": "Discontinued and replaced by AT&T ProTech (com.asurion.android.protech.att)\nHelp and support app. Lets you call or chat with a live U.S.-based AT&T ProTech support expert.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.android.mobilerecovery.sprint",
-        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)",
-        "removal": "delete"
+        "label": "Sprint Protect",
+        "description": "Let you find a phone, secure from viruses, back up data, and more.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.android.mobilerecovery.sprint.vpl",
-        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)",
-        "removal": "delete"
+        "label": "Sprint Protect",
+        "description": "Let you find a phone, secure from viruses, back up data, and more.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.android.protech.att",
         "label": "AT&T ProTech",
-        "description": "Help and support app. Lets you call or chat with a live U.S.-based AT&T ProTech support \"expert\".\nNote : This app is developped by Asurion, a US company whose business is to sell insurances.\nAll US carriers use Asurion for the phone insurances.",
-        "removal": "delete"
+        "description": "Help and support app. Lets you call or chat with a live U.S.-based AT&T ProTech support \"expert\".",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.android.verizon.vms",
         "label": "Digital Secure",
-        "description": "This app is developped by Asurion, a US company whose business is to sell insurances.\nAll US carriers use Asurion for the phone insurances.",
-        "removal": "delete"
+        "description": "Verizon's one-stop suite of privacy and security tools that is supposed to protect your devices from online threats, connect to public Wi-Fi with a secure VPN, take control with always-on dark web monitoring, and get guidance on online security from \"security experts\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asurion.android.verizon.vms",
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.home.sprint",
-        "description": "Sprint Protect\nSupport app (see com.asurion.android.protech.att)\nSprint Complete\nLets you call or chat with live tech experts! Maybe you will find the love of your life!",
-        "removal": "delete"
+        "label": "Sprint Complete",
+        "description": "Lets you call or chat with live tech experts! Maybe you will find the love of your life!",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.asurion.home.sprint.vpl",
-        "description": "Tech Expert (for VPL devices/employees)?\nNow \"Sprint Complete\" (see below).\nNote : This app is developped by Asurion, a US company whose business is to sell insurances.\nAll US carriers use Asurion for the phone insurances.",
-        "removal": "delete"
+        "label": "Tech Expert",
+        "description": "Replaced by \"Sprint Complete\".",
+        "web": [
+            "https://en.wikipedia.org/wiki/Asurion"
+        ],
+        "removal": "delete",
+        "warning": "This app is developped by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.att.android.attsmartwifi",
@@ -92,11 +130,13 @@
     },
     {
         "id": "com.att.callprotect",
-        "description": "AT&T Call Protect\nSpam call blocking app provided by Hiya \nNOTE: You should never trust spam blocking apps.",
+        "label": "AT&T Call Protect",
+        "description": "Spam call blocking app provided by Hiya.",
         "web": [
             "https://itmunch.com/robocall-caught-sending-customers-confidential-data-without-consent/"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Never trust an app that automatically blocks spam calls."
     },
     {
         "id": "com.att.csoiam.mobilekey",
@@ -118,7 +158,8 @@
     },
     {
         "id": "com.att.dtv.shaderemote",
-        "description": "DIRECTV Remote App\nLets you control DIRECTV HD receivers in your home that are connected to Internet, from your phone.\nFYI: DIRECTV is a susbsidiary of AT&T.",
+        "label": "DIRECTV Remote App",
+        "description": "Lets you control DIRECTV HD receivers in your home that are connected to Internet, from your phone. DIRECTV is a susbsidiary of AT&T.",
         "web": [
             "https://en.wikipedia.org/wiki/DirecTV#Consumer_protection_lawsuits_and_violations"
         ],
@@ -126,8 +167,10 @@
     },
     {
         "id": "com.att.iqi",
-        "description": "Carrier IQ / Device Health.\nGathers, stores and forwards diagnostic measurements on its behalf.\nGreat! A rootkit.",
+        "label": "Device Health",
+        "description": "(AKA Carrier IQ) Gathers, stores and forwards diagnostic measurements on its behalf.\nGreat! A rootkit.",
         "web": [
+            "https://docs.samsungknox.com/CCMode/G935A_O.pdf",
             "https://en.wikipedia.org/wiki/Carrier_IQ#Rootkit_discovery_and_media_attention"
         ],
         "removal": "delete"
@@ -152,7 +195,8 @@
     },
     {
         "id": "com.att.mobiletransfer",
-        "description": "AT&T Mobile Transfer\nLets you transfert user data from an older AT&T phone to a new one.",
+        "label": "AT&T Mobile Transfer",
+        "description": "Lets you transfer user data from an older AT&T phone to a new one.",
         "removal": "delete"
     },
     {
@@ -187,7 +231,8 @@
     },
     {
         "id": "com.att.tv.watchtv",
-        "description": "AT&T WatchTV.\nLets you stream TV live and VOD form your phone.\nNo it's not the same thing than AT&T TV. Yes it's a mess.",
+        "label": "AT&T WatchTV",
+        "description": "Lets you stream TV live and VOD form your phone.\nNo it's not the same thing than AT&T TV. Yes, it's a mess.",
         "web": [
             "https://www.cordcuttersnews.com/att-tv-vs-att-tv-now-whats-the-difference/"
         ],
@@ -196,34 +241,40 @@
     },
     {
         "id": "com.aura.oobe.samsung",
-        "description": "AppCloud\nIt offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nDeveloped by IronSource, an Israeli advertising company.\nHas way too many permissions.",
+        "label": "AppCloud",
+        "description": "It offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nHas way too many permissions.",
         "web": [
             "https://en.wikipedia.org/wiki/IronSource",
             "https://aura.ironsrc.com/tools/drive-app-downloads/",
             "https://arxiv.org/pdf/2010.10088.pdf",
             "https://github.com/0x192/universal-android-debloater/issues/278"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "This app is developed by IronSource, an Israeli advertising company."
     },
     {
         "id": "com.aura.oobe.samsung.gl",
-        "description": "AppCloud\nIt offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nDeveloped by IronSource, an Israeli advertising company.\nHas way too many permissions.",
+        "label": "AppCloud",
+        "description": "AppCloud\nIt offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nHas way too many permissions.",
         "web": [
             "https://en.wikipedia.org/wiki/IronSource",
             "https://aura.ironsrc.com/tools/drive-app-downloads/",
             "https://arxiv.org/pdf/2010.10088.pdf",
             "https://github.com/0x192/universal-android-debloater/issues/278"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "This app is developed by IronSource, an Israeli advertising company."
     },
     {
         "id": "com.customermobile.preload.vzw",
+        "label": "Verizon Store Demo Mode",
         "description": "Verizon Store/Retail Demo Mode.",
         "removal": "delete"
     },
     {
         "id": "com.dti.att",
-        "description": "AT&T App Select\nI guess it lets you choose AT&T apps to install.\nIt has a LOT of permissions.",
+        "label": "Mobile Services Manager",
+        "description": "Formerly known as AT&T App Select.\nI guess it lets you choose AT&T apps to install.\nIt has a LOT of permissions.",
         "web": [
             "https://knowledge.protektoid.com/apps/com.dti.att/7a36d4f5f00bae044566221400719c75ea2f4f33bc2578a7f8210f36d718a8d6"
         ],
@@ -231,7 +282,8 @@
     },
     {
         "id": "com.hyperlync.Sprint.Backup",
-        "description": "Sprint Backup.\nLets you backup your phone’s content to your Sprint Backup account.\nFYI: This app is developped by Hyperlync Technologies an Israel-based company which provide cyber-security solutions.\nIt is now owned by Edition Ltd a big Singapore based company.",
+        "label": "Sprint Backup",
+        "description": "Lets you backup your phone’s content to your Sprint Backup account.\nThis app was developed by Hyperlync Technologies an Israel-based company which provides cyber-security solutions. It is now owned by Edition Ltd, a big Singapore based company.",
         "web": [
             "https://www.reuters.com/companies/EDITol.SI"
         ],
@@ -240,12 +292,17 @@
     },
     {
         "id": "com.hyperlync.Sprint.CloudBinder",
-        "description": "Sprint Cloud Binder.\nHub for all you cloud accounts.\nFYI: This app is developped by Hyperlync Technologies an Israel-based company which provide cyber-security solutions.\nIt is now owned by Edition Ltd a big Singapore based company.",
+        "label": "Sprint Cloud Binder",
+        "description": "Hub for all you cloud accounts.\nThis app was developed by Hyperlync Technologies an Israel-based company which provide cyber-security solutions.\nIt is now owned by Edition Ltd, a big Singapore based company.",
+        "web": [
+            "https://www.reuters.com/companies/EDITol.SI"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.locationlabs.cni.att",
-        "description": "AT&T Smart Limits\nParental Control tool.",
+        "label": "AT&T Smart Limits℠",
+        "description": "A parental Control app.",
         "web": [
             "https://m.att.com/shopmobile/wireless/features/smart-limits.html"
         ],
@@ -253,7 +310,8 @@
     },
     {
         "id": "com.locationlabs.finder.sprint",
-        "description": "Sprint Family Locator\nLets you locate any phone registered under the Sprint family plan\nLocation labs is owned by AGV which is owned by Avast.\nYou shouldn't trust Avast.",
+        "label": "Sprint Family Locator",
+        "description": "Lets you locate any phone registered under the Sprint family plan.\nLocation labs is owned by AGV which is owned by Avast.\nYou shouldn't trust Avast.",
         "web": [
             "https://www.vice.com/en_us/article/qjdkq7/avast-antivirus-sells-user-browsing-data-investigation",
             "https://www.pcmag.com/news/the-cost-of-avasts-free-antivirus-companies-can-spy-on-your-clicks"
@@ -263,7 +321,8 @@
     },
     {
         "id": "com.locationlabs.finder.sprint.vpl",
-        "description": "Sprint Family Locator.\nLets you locate any phone registered under the Sprint family plan\nLocation labs is owned by AGV which is owned by Avast.\nYou shouldn't trust Avast.",
+        "label": "Sprint Family Locator",
+        "description": "Lets you locate any phone registered under the Sprint family plan\nLocation labs is owned by AGV which is owned by Avast.\nYou shouldn't trust Avast.",
         "web": [
             "https://www.vice.com/en_us/article/qjdkq7/avast-antivirus-sells-user-browsing-data-investigation",
             "https://www.pcmag.com/news/the-cost-of-avasts-free-antivirus-companies-can-spy-on-your-clicks"
@@ -273,12 +332,17 @@
     },
     {
         "id": "com.matchboxmobile.wisp",
-        "description": "AT&T Hot Spots\nRun in background. Automatically connects you to a free AT&T wifi hotspot at one of their participating partner locations, such as Starbucks.",
+        "label": "AT&T Hot Spots",
+        "description": "Runs in background. Automatically connects you to a free AT&T wifi hotspot at one of their participating partner locations, such as Starbucks.",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/G935A_O.pdf"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.mobitv.client.sprinttvng",
-        "description": "Sprint TV & Movies provided by MobiTV\nLets you watch live TV and VOD.",
+        "label": "Sprint TV & Movies",
+        "description": "Provided by MobiTV. Lets you watch live TV and VOD.",
         "web": [
             "https://en.wikipedia.org/wiki/MobiTV"
         ],
@@ -287,7 +351,8 @@
     },
     {
         "id": "com.mobitv.client.tmobiletvhd",
-        "description": "T-Mobile TV (discontinued, replaced by nl.tmobiletv.vinson) provided by MobiTV.",
+        "label": "T-Mobile TV with Mobile HD",
+        "description": "Discontinued and replaced by nl.tmobiletv.vinson, provided by MobiTV.",
         "web": [
             "https://en.wikipedia.org/wiki/MobiTV",
             "https://play.google.com/store/apps/details?id=nl.tmobiletv.vinson"
@@ -304,6 +369,7 @@
     },
     {
         "id": "com.motorola.att.phone.extensions",
+        "label": "ATT Phone Extension",
         "description": "Provide access to AT&T extensions in you dialer. I'm not sure tho. It's only a supposition.",
         "web": [
             "https://asecare.att.com/tutorials/adding-and-deleting-an-extension-on-your-officehand-mobile-app-2990/?product=AT&T%20Office@Hand"
@@ -312,7 +378,8 @@
     },
     {
         "id": "com.motorola.attvowifi",
-        "description": "AT&T Wifi-calling.",
+        "label": "Wi-Fi Calling",
+        "description": "AT&T Wifi-calling app.",
         "web": [
             "https://www.att.com/shop/wireless/features/wifi-calling.html"
         ],
@@ -320,6 +387,7 @@
     },
     {
         "id": "com.motorola.ltebroadcastservices_vzw",
+        "label": "com.motorola.ltebroadcastservices_vzw",
         "description": "LTE Broadcast services from Verizon. Allows your phone to receive broadcast message from Verizon?",
         "removal": "delete"
     },
@@ -334,6 +402,7 @@
     },
     {
         "id": "com.motorola.omadm.sprint",
+        "label": "SprintDM",
         "description": "Configuration of the device (including first time use), enabling and disabling features provided by carriers.\nI believe it's only useful if you want to use a Sprint service with a non branded phone (not sure at all)\nDisplays annoying notifications if you unlocked your bootloader.",
         "web": [
             "https://www.androidpolice.com/2015/03/10/android-5-1-includes-new-carrier-provisioning-api-allows-carriers-easier-methods-of-setting-up-services-on-devices-they-dont-control/"
@@ -342,6 +411,7 @@
     },
     {
         "id": "com.motorola.omadm.vzw",
+        "label": "VzwDM",
         "description": "OMA Device Management for Verizon.\nHandles configuration of the device (including first time use), enabling and disabling features provided by carriers.\nI believe it's only useful if you want to use a Verizon service with a non branded phone (not sure at all)\nDisplays annoying notifications if you unlocked your bootloader.",
         "web": [
             "https://en.wikipedia.org/wiki/OMA_Device_Management",
@@ -351,30 +421,36 @@
     },
     {
         "id": "com.motorola.service.vzw.entitlement",
-        "description": "Deleting this package whill disable Hotspot functionality if you're a Verizon client.\nWhat you can do is preventing the phone from notifying the carrier about when you use hotspot.",
+        "label": "entitlement",
+        "description": "",
         "web": [
             "https://android.stackexchange.com/questions/226580/how-is-verizon-suddenly-tracking-my-hot-spot-usage-on-android-and-how-do-i-disab"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "warning": "Deleting this package whill disable Hotspot functionality if you're a Verizon client. What you can do is preventing the phone from notifying the carrier about when you use hotspot."
     },
     {
         "id": "com.motorola.sprintwfc",
+        "label": "print Wifi Calling",
         "description": "Sprint Wifi Calling\nProvides wifi calling to Sprint customers.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.visualvoicemail",
-        "description": "Verizon Visual Voicemail.\nOn non-Verizon phones it has a generic \"Voicemail\" name and icon, and doesn't seem to active.",
+        "label": "Verizon Visual Voicemail",
+        "description": "On non-Verizon phones it has a generic \"Voicemail\" name and icon, and doesn't seem to active.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.vzw.cloudsetup",
-        "description": "Cloud setup.",
+        "label": "Cloud setup",
+        "description": "The exact functionality is unknown.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.vzw.loader",
-        "description": "????\nDoesn't seem to break anything once removed.",
+        "label": "com.motorola.vzw.loader",
+        "description": "Exact functionality is unknown. Doesn't seem to break anything once removed.",
         "removal": "delete"
     },
     {
@@ -385,6 +461,7 @@
     },
     {
         "id": "com.motorola.vzw.pco.extensions.pcoreceiver",
+        "label": "PcoReceiver",
         "description": "Protocol Configuration Options.\nRelated to APN configuration.",
         "web": [
             "https://www.freshpatents.com/-dt20180607ptan20180159824.php"
@@ -393,17 +470,20 @@
     },
     {
         "id": "com.motorola.vzw.phone.extensions",
+        "label": "PhoneExtns",
         "description": "Free HD wallpaper from verizon",
         "removal": "delete"
     },
     {
         "id": "com.motorola.vzw.provider",
-        "description": "????\nDoesn't seem to break anything once removed.",
+        "label": "VzwUnifiedSettingsApp",
+        "description": "Exact functionality is unknown. Label might be incorrect. Doesn't seem to break anything once removed.",
         "removal": "delete"
     },
     {
         "id": "com.motricity.verizon.ssodownloadable",
-        "description": "Verizon Login by Motricity (now Voltari)\nVoltari provides relevance-driven mobile advertising, mobile marketing, mobile merchandising, and predictive analytics solutions.\nNeeded for My Verizon.",
+        "label": "Verizon Login",
+        "description": "Originally by Motricity, now Voltari.\nVoltari provides relevance-driven mobile advertising, mobile marketing, mobile merchandising, and predictive analytics solutions.\nNeeded for \"My Verizon\".",
         "web": [
             "https://en.wikipedia.org/wiki/Voltari",
             "https://www.lightreading.com/motricity-holds-on-to-verizon-account/d/d-id/678478"
@@ -412,7 +492,8 @@
     },
     {
         "id": "com.orange.aura.oobe",
-        "description": "Orange Manual Selector\nMakes unnecessary notifications",
+        "label": "Orange Manual Selector",
+        "description": "Makes unnecessary notifications",
         "removal": "delete"
     },
     {
@@ -481,11 +562,13 @@
     },
     {
         "id": "com.orange.update",
+        "label": "App Center",
         "description": "Handles Orange apps updates.",
         "removal": "delete"
     },
     {
         "id": "com.orange.update.OrangeUpdateApplication",
+        "label": "com.orange.update.OrangeUpdateApplication",
         "description": "Obviously related to update.",
         "removal": "delete"
     },
@@ -506,17 +589,23 @@
     },
     {
         "id": "com.samsung.attvvm",
-        "description": "Visual Voicemail\nSimple GUI for voicemail.",
+        "label": "Samsung AT&T Visual Voicemail",
+        "description": "A simple GUI for voicemail.",
         "removal": "delete"
     },
     {
         "id": "com.sec.android.app.ewidgetatt",
-        "description": "Entertainment Widget\nAT&T Widget for OneUI.",
+        "label": "Entertainment Widget",
+        "description": "AT&T Widget for One UI.",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/F707U_Q.pdf"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sec.omadm",
-        "description": "OMADM\nOpen Mobile Alliance Device Management. A protocol for management of mobile devices.",
+        "label": "OMADM",
+        "description": "Open Mobile Alliance Device Management. A protocol for management of mobile devices.",
         "web": [
             "https://en.wikipedia.org/wiki/OMA_Device_Management"
         ],
@@ -524,14 +613,17 @@
     },
     {
         "id": "com.sec.omadmspr.syncmlphoneif",
-        "description": "OMADM Phone Interface?\nOMADM = Open Mobile Alliance Device Management. A protocol for management of mobile devices.",
+        "label": "Sprint OMADM Phone Interface",
+        "description": "OMADM = Open Mobile Alliance Device Management. A protocol for management of mobile devices.",
         "web": [
+            "https://docs.samsungknox.com/CCMode/G950U1_P.pdf",
             "https://en.wikipedia.org/wiki/OMA_Device_Management"
         ],
         "removal": "caution"
     },
     {
         "id": "com.sec.sprint.wfcstub",
+        "label": "com.sec.sprint.wfcstub",
         "description": "Seems to be related to Wifi-Calling on Samsung phone.",
         "removal": "delete"
     },
@@ -590,13 +682,15 @@
     },
     {
         "id": "com.sprint.android.musicplus2033",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
+        "label": "Sprint Music Plus",
+        "description": "Sprint’s official Music Store and player.",
         "removal": "replace",
         "suggestions": "music_apps"
     },
     {
         "id": "com.sprint.android.musicplus2033.vpl",
-        "description": "Sprint Music Plus\nSprint’s official Music Store and player.",
+        "label": "Sprint Music Plus",
+        "description": "Sprint’s official Music Store and player.",
         "removal": "replace",
         "suggestions": "music_apps"
     },
@@ -611,7 +705,8 @@
     },
     {
         "id": "com.sprint.ce.updater",
-        "description": "Mobile Installer\nUsed by Sprint to (force) install/update Sprint apps.",
+        "label": "Mobile Installer (ソフトバンク)",
+        "description": "Used by Sprint to (force) install/update Sprint apps.",
         "web": [
             "https://community.sprint.com/t5/Samsung/How-to-stop-quot-Mobile-Installer-quot-from-pushing-apps-to/td-p/1036387"
         ],
@@ -619,7 +714,8 @@
     },
     {
         "id": "com.sprint.ecid",
-        "description": "Enhanced Caller ID\nEnable you to hide name and phone number when you make phone calls.",
+        "label": "Caller ID",
+        "description": "Enables you to hide name and phone number when you make phone calls.",
         "web": [
             "https://www.sprint.com/en/support/solutions/services/restrict-your-caller-id-information.html"
         ],
@@ -627,17 +723,20 @@
     },
     {
         "id": "com.sprint.fng",
-        "description": "Sprint Spot\nProvides Sprint customers a way to discover and access apps, services, games, TV & video, music, and more.",
+        "label": "Sprint Spot",
+        "description": "Provides Sprint postpaid customers a way to discover and access apps, services, games, TV & video, music, and more.",
         "removal": "delete"
     },
     {
         "id": "com.sprint.international.message",
-        "description": "Sprint Worldwide \nJust an help page for international travelers.",
+        "label": "Sprint Worldwide",
+        "description": "A help page for international travelers.",
         "removal": "delete"
     },
     {
         "id": "com.sprint.ms.cdm",
-        "description": "Sprint Device Manager\nMobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure your device is secure, know where it is, and remotely erase your data if the phone is stolen.",
+        "label": "Carrier Device Manager",
+        "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure your device is secure, know where it is, and remotely erase your data if the phone is stolen.",
         "web": [
             "https://onezero.medium.com/dont-put-your-work-email-on-your-personal-phone-ef7fef956c2f",
             "https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/"
@@ -647,7 +746,8 @@
     },
     {
         "id": "com.sprint.ms.cnap",
-        "description": "Caller ID\ncnap = Caller Name Presentation\nLets you change the name that is displayed on caller ID when making a call.\nStrange is it the same thing than \"com.sprint.ecid\" ?\n",
+        "label": "Caller ID",
+        "description": "CNAP = Caller Name Presentation\nLets you change the name that is displayed on caller ID when making a call.\nStrange is it the same thing than \"com.sprint.ecid\" ?\n",
         "web": [
             "https://en.wikipedia.org/wiki/Calling_Name_Presentation"
         ],
@@ -664,7 +764,8 @@
     },
     {
         "id": "com.sprint.psdg.sw",
-        "description": "Carrier Setup Wizard\nThe first time you turn your device on, a Welcome screen is displayed. It guides you through the basics of setting up your device.\nHere it handles the setup of Sprint features/services.\n",
+        "label": "Carrier Setup Wizard",
+        "description": "The first time you turn your device on, a Welcome screen is displayed. It guides you through the basics of setting up your device.\nHere it handles the setup of Sprint features/services.",
         "removal": "delete"
     },
     {
@@ -690,37 +791,44 @@
     },
     {
         "id": "com.sprint.topup",
+        "label": "Sprint World Top-Up",
         "description": "Doesn't exist anymore?",
         "removal": "delete"
     },
     {
         "id": "com.sprint.w.installer",
-        "description": "Sprint ID\nProvides mobile ID Packs featuring apps, ringers, wallpapers, widgets and more.\nCan (and do) force install apps you disabled.",
+        "label": "Mobile ID",
+        "description": "Formerly, Sprint ID. \nProvides mobile ID Packs featuring apps, ringers, wallpapers, widgets and more.\nCan (and do) force install apps you disabled.",
         "removal": "delete"
     },
     {
         "id": "com.sprint.w.v8",
+        "label": "Featured Apps",
         "description": "Old app Discover App (discontinued / new package name)\nLets you discover Sprint apps?",
         "removal": "delete"
     },
     {
         "id": "com.sprint.zone",
-        "description": "My Sprint Launcher?\nApparently helps the user find new apps, in addition to some carrier-specific functionality.",
+        "label": "Sprint Zone",
+        "description": "Helps the user find new apps, in addition to some carrier-specific functionality.",
         "removal": "delete"
     },
     {
         "id": "com.synchronoss.dcs.att.r2g",
-        "description": "AT&T Ready2Go (discontinued)\nIts purpose was to help you migrating your data to your new Android device.",
+        "label": "AT&T Ready2Go",
+        "description": "Discontinued. Its purpose was to help you migrating your data to your new Android device.",
         "removal": "delete"
     },
     {
         "id": "com.telecomsys.directedsms.android.SCG",
-        "description": "Verizon Location Agent\nLocation tracking (does not impact GPS function if deleted, don't worry)",
+        "label": "Verizon Location Agent",
+        "description": "Location tracking (does not impact GPS function if deleted, don't worry).",
         "removal": "delete"
     },
     {
         "id": "com.tmobile.pr.adapt",
-        "description": "Diagnostic tool.\nThis app can see all your installed apps, that you have allowed unknown sources on, that your rooted, and will deny your warranty saying your rooted. It constantly runs in the background.",
+        "label": "T-Mobile",
+        "description": "A diagnostic tool for T-Mobile. This app can see all your installed apps, that you have allowed unknown sources on, that your rooted, and will deny your warranty saying your rooted. It constantly runs in the background.",
         "removal": "delete"
     },
     {
@@ -735,15 +843,18 @@
     {
         "id": "com.tmobile.services.nameid",
         "label": "T-Mobile Scam Shield",
-        "description": "Name ID T-Mobile (powered by Hiya or cequint if on Samsung devices)\nNOTE : Never trust a company which promotes call ID/spam blocking features.",
+        "description": "Name ID T-Mobile (powered by Hiya or cequint if on Samsung devices).",
         "web": [
+            "https://play.google.com/store/apps/details?id=com.tmobile.services.nameid",
             "https://techcrunch.com/2019/08/09/many-robocall-blocking-apps-send-your-private-data-without-permission/"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Never trust a company which promotes call ID/spam blocking features."
     },
     {
         "id": "com.tmobile.simlock",
-        "description": "Device Unlock.\nAllows you to request and apply a mobile device unlock directly from the device.",
+        "label": "Device Unlock",
+        "description": "Allows you to request and apply a mobile device unlock directly from the device.",
         "web": [
             "https://support.t-mobile.com/docs/DOC-14011"
         ],
@@ -770,12 +881,17 @@
     },
     {
         "id": "com.verizon.llkagent",
+        "label": "Llkagent",
         "description": "Used for Verizon store demo mode.",
         "removal": "delete"
     },
     {
         "id": "com.verizon.loginengine.unbranded",
-        "description": "Carrier Login Engine\nNeeded for wifi-calling. (To be confirmed)",
+        "label": "Carrier Login Engine",
+        "description": "Needed for wifi-calling.",
+        "web": [
+            "https://forum.xda-developers.com/t/samsung-factory-unlocked-s9-s9-will-now-have-verizon-wi-fi-calling.3841547/"
+        ],
         "removal": "delete"
     },
     {
@@ -789,11 +905,13 @@
     },
     {
         "id": "com.verizon.mips.services",
-        "description": "My Verizon Services\nRelated to My Verizon app.\nRequired for hotspot.",
+        "label": "My Verizon Services",
+        "description": "Related to My Verizon app. Required for hotspot.",
         "removal": "delete"
     },
     {
         "id": "com.verizon.obdm",
+        "label": "D-MAT",
         "description": "It's a set of metrics-related modules. Google Play uses the version of the Telemetry module to determine\nif updates are available for metrics-related modules and which security patch version to display to the end user.\nThis module doesn’t contain active code and has no functionality on its own.",
         "web": [
             "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/27#note_410012436"
@@ -803,24 +921,28 @@
     },
     {
         "id": "com.verizon.obdm_permissions",
-        "description": "D-MAT.\nHas a LOT of permissions!\nDMAT Account ? It is used to hold shares and securities in dematerialised/electronic format.\nSeems weird that Verizon provide this so it's likely not this.",
-        "web": [
-            "https://knowledge.protektoid.com/apps/com.verizon.obdm/d48680955d8d58bade2e6620ccb1e30b9bf23cb8e50055e10de3466da558c0ee"
-        ],
+        "label": "OBDM_Permissions",
+        "description": "Has a LOT of permissions!\nIt is used to hold shares and securities in dematerialised/electronic format.\nSeems weird that Verizon provides this so it's likely not this.",
         "removal": "delete"
     },
     {
         "id": "com.verizon.permissions.appdirectedsms",
+        "label": "com.verizon.permissions.appdirectedsms",
         "description": "Custom permissions for some verizon stuff?",
         "removal": "delete"
     },
     {
         "id": "com.verizon.permissions.vzwappapn",
+        "label": "com.verizon.permissions.vzwappapn",
         "description": "Custom permissions used to set Verizon APN?",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/N900V.pdf"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.verizon.vzwavs",
+        "label": "VzwAVS",
         "description": "Has a scary list of permissions. Doesn't seems to break anything if removed.",
         "removal": "delete"
     },
@@ -835,12 +957,14 @@
     },
     {
         "id": "com.vznavigator.Generic",
+        "label": "VZ Navigator",
         "description": "VZ Navigator (GPS app)",
         "removal": "delete"
     },
     {
         "id": "com.vzw.apnlib",
-        "description": "Kind of library for Verizon APN ?",
+        "label": "apnlib",
+        "description": "Kind of library for Verizon APN?",
         "web": [
             "https://developer.android.com/reference/android/telephony/data/ApnSetting"
         ],
@@ -848,6 +972,7 @@
     },
     {
         "id": "com.vzw.apnservice",
+        "label": "VZWAPN",
         "description": "APN Services.",
         "web": [
             "https://developer.android.com/reference/android/telephony/data/ApnSetting"
@@ -874,7 +999,8 @@
     },
     {
         "id": "com.vzw.hss.widgets.infozone.large",
-        "description": "My InfoZone Widget\nGives weekly tips, access to device info and account information.",
+        "label": "My InfoZone™ Widget:Big Screen",
+        "description": "Gives weekly tips, access to device info and account information.",
         "web": [
             "https://www.droid-life.com/2013/02/12/verizon-introduces-my-infozone-widget-allows-easy-access-to-tips-device-info-and-account-information/"
         ],
@@ -882,6 +1008,7 @@
     },
     {
         "id": "com.vzw.qualitydatalog",
+        "label": "com.vzw.qualitydatalog",
         "description": "Logging stuff",
         "removal": "delete"
     },
@@ -897,7 +1024,8 @@
     },
     {
         "id": "com.whitepages.nameid.tmobile",
-        "description": "T-mobile NAME ID by WhitePages\nDiscontinued. Replaced by com.tmobile.services.nameid.",
+        "label": "T-Mobile Name ID",
+        "description": "By WhitePages. Discontinued and replaced by com.tmobile.services.nameid.",
         "web": [
             "https://www.whitepages.com/",
             "https://www.fiercewireless.com/wireless/t-mobile-to-offer-name-id-service-from-whitepages",
@@ -907,7 +1035,8 @@
     },
     {
         "id": "de.telekom.tsc",
-        "description": "AppEnabler\ntsc = Telecom Service Center\nUsed to display ads in notifications panel.",
+        "label": "AppEnabler",
+        "description": "TSC = Telecom Service Center. Used to display ads in notifications panel.",
         "removal": "delete"
     },
     {
@@ -936,12 +1065,14 @@
     },
     {
         "id": "fr.orange.cineday",
-        "description": "Orange cineday\nUseless app but cineday is pretty nice.\nEvery Tuesday you can invite the person of your choice in movies (within the limit of available seats).\nYou can just use https://cineday.orange.fr/cineday/",
+        "label": "Orange Cineday",
+        "description": "Useless app but Cineday is pretty nice.\nEvery Tuesday you can invite the person of your choice in movies (within the limit of available seats).\nYou can just use https://cineday.orange.fr/cineday/",
         "removal": "delete"
     },
     {
         "id": "net.aetherpal.device",
-        "description": "AT&T Remote Support provided by aetherpal (was acquired by VMware)\nAllows an AT&T Advanced Support representative to assist you by accessing your device remotely.",
+        "label": "AT&T Remote Support",
+        "description": "Provided by Aetherpal (was acquired by VMware). It allows an AT&T Advanced Support representative to assist you by accessing your device remotely.",
         "removal": "delete"
     },
     {
@@ -958,7 +1089,8 @@
     },
     {
         "id": "us.com.dt.iq.appsource.tmobile",
-        "description": "App Source (discontinued)\nThis app aimed at organizing all of your existing apps on the phone by category and helping you discover \nnew apps through search and recommendations.",
+        "label": "App Source",
+        "description": "Discontinued. This app aimed at organizing all of your existing apps on the phone by category and helping you discover new apps through search and recommendations.",
         "removal": "delete"
     }
 ]
