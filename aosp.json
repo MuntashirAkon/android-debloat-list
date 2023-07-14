@@ -21,6 +21,7 @@
     },
     {
         "id": "com.android.apps.tag",
+        "label": "Tags",
         "description": "Support for NFC tags interactions (5 permissions, Contacts/Phone On by default).\nNFC Tags are for instance used in buses to validate your transport card with your phone.\nOther example: https://en.wikipedia.org/wiki/TecTile\nYou will still be able to connect to a NFC device (e.g a speaker) with this disabled.",
         "removal": "replace"
     },
@@ -33,6 +34,7 @@
     },
     {
         "id": "com.android.bio.face.service",
+        "label": "com.android.bio.face.service",
         "description": "Handles facial recognition.",
         "removal": "caution"
     },
@@ -44,6 +46,7 @@
     },
     {
         "id": "com.android.bluetooth",
+        "label": "Bluetooth",
         "description": "Bluetooth service",
         "removal": "caution"
     },
@@ -73,6 +76,7 @@
     },
     {
         "id": "com.android.browser.provider",
+        "label": "com.android.browser.provider",
         "description": "Old package (2014). Chrome bookmarks provider? Injects Picasa URL (https://picasaweb.google.com) in the Chrome browser's bookmarks in the browser.",
         "removal": "delete"
     },
@@ -129,7 +133,7 @@
     },
     {
         "id": "com.android.cellbroadcastreceiver",
-        "label": "com.android.cellbroadcastreceiver",
+        "label": "Emergency alerts",
         "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISPs to send Emergency/Government alerts.\nRuns at boot time and is also triggered after exiting airplane mode.",
         "web": [
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
@@ -140,6 +144,7 @@
     },
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
+        "label": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
         "description": "Dark theme overlay for com.android.cellbroadcastreceiver",
         "dependencies": [
             "com.android.cellbroadcastreceiver"
@@ -148,6 +153,7 @@
     },
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
+        "label": "com.android.cellbroadcastreceiver.basiccolorwhite.overlay",
         "description": "Light theme overlay for com.android.cellbroadcastreceiver",
         "dependencies": [
             "com.android.cellbroadcastreceiver"
@@ -156,6 +162,7 @@
     },
     {
         "id": "com.android.cellbroadcastreceiver.overlay.common",
+        "label": "com.android.cellbroadcastreceiver.overlay.common",
         "description": "com.android.cellbroadcastreceiver Theme pack\nGuessing it's a pack of themes for the cellbroadcastreceiver, based on the name.",
         "removal": "caution"
     },
@@ -175,7 +182,8 @@
     },
     {
         "id": "com.android.cts.priv.ctsshim",
-        "description": "Compatibility Test Service. Verifies certain upgrade scenarios.\nA shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.",
+        "label": "Compatibility Test Suite",
+        "description": "Verifies certain upgrade scenarios.\nA shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.",
         "web": [
             "https://android.googlesource.com/platform/frameworks/base/+/51e458e/packages/CtsShim",
             "https://en.wikipedia.org/wiki/Shim_(computing)"
@@ -206,6 +214,7 @@
     },
     {
         "id": "com.android.documentsui.a_overlay",
+        "label": "com.android.documentsui.a_overlay",
         "description": "Some overlay for for \"Files\"?",
         "dependencies": [
             "com.android.documentsui"
@@ -229,6 +238,7 @@
     },
     {
         "id": "com.android.dreams.phototable.overlay",
+        "label": "com.android.dreams.phototable.overlay",
         "description": "Overlay for the phototable daydream? Overlays are usually themes, but not sure about this one.",
         "removal": "delete"
     },
@@ -240,13 +250,15 @@
     },
     {
         "id": "com.android.email",
-        "description": "Xiaomi closed-source email app based on the AOSP version. Really confusing package name.",
+        "label": "Email",
+        "description": "The AOSP Email app\nSome OEMs (e.g. Huawei, Xiaomi, Oppo) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "email_clients"
     },
     {
         "id": "com.android.email.partnerprovider",
-        "description": "Lets Google partners (OEM in most of the case) to customize the default email settings.\nThe manufacturer often changes the default signature displayed at the end of each of your mail (e.g \"Sent from my Nokia phone\")",
+        "label": "EmailPartnerProvider",
+        "description": "Lets Google partners (OEM in most of the case) customize the default email settings.\nThe manufacturer often changes the default signature displayed at the end of each of your mail (e.g \"Sent from my Nokia phone\")",
         "removal": "delete"
     },
     {
@@ -257,6 +269,7 @@
     },
     {
         "id": "com.android.exchange",
+        "label": "Exchange Services",
         "description": "Handles all aspects of starting, maintaining, and stopping the various sync adapters for the email accounts.\nIs it only needed for the email stock app?\n",
         "removal": "replace",
         "suggestions": "email_clients"
@@ -269,6 +282,7 @@
     },
     {
         "id": "com.android.facelock",
+        "label": "Trusted Face",
         "description": "Package for supporting the Face Unlock feature",
         "removal": "caution",
         "warning": "Do not remove if you use Face Unlock"
@@ -282,6 +296,7 @@
     },
     {
         "id": "com.android.galaxy4",
+        "label": "Black Hole",
         "description": "Built-in Dynamic wallpaper",
         "removal": "delete"
     },
@@ -294,6 +309,7 @@
     },
     {
         "id": "com.android.hotspot2",
+        "label": "OsuLogin",
         "description": "Provides wifi tethering i.e. lets you share your mobile device's Internet connection with other devices.",
         "web": [
             "https://en.wikipedia.org/wiki/Tethering"
@@ -354,6 +370,7 @@
     },
     {
         "id": "com.android.internal.display.cutout.emulation.noCutout",
+        "label": "Hide",
         "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
@@ -422,7 +439,8 @@
     },
     {
         "id": "com.android.magicsmoke",
-        "description": "\"Magic smoke\" Live wallpaper.",
+        "label": "Magic Smoke Wallpapers",
+        "description": "Bulit-in Live wallpaper.",
         "removal": "delete"
     },
     {
@@ -439,7 +457,8 @@
     },
     {
         "id": "com.android.mms",
-        "description": "AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app",
+        "label": "Messages",
+        "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app",
         "removal": "replace",
         "suggestions": "sms"
     },
@@ -451,22 +470,26 @@
     },
     {
         "id": "com.android.musicfx",
+        "label": "MusicFX",
         "description": "Audio EQ (equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
         "removal": "replace"
     },
     {
         "id": "com.android.musicvis",
-        "description": "Music Visualization Wallpapers",
+        "label": "Music Visualization Wallpapers",
+        "description": "Built-in live wallpaper",
         "removal": "delete"
     },
     {
         "id": "com.android.nfc",
-        "description": "NFC Service\nRuns in the background as part of the System.\nI assume NFC breaks when disabled.\nWill probably run even if disabled, like most system packages. So disabling/uninstalling is probably pointless.",
+        "label": "Nfc Service",
+        "description": "Runs in the background as part of the System.\nI assume NFC breaks when disabled.\nWill probably run even if disabled, like most system packages. So disabling/uninstalling is probably pointless.",
         "removal": "caution"
     },
     {
         "id": "com.android.noisefield",
-        "description": "\"Noise filed\" live wallpaper.",
+        "label": "Bubbles",
+        "description": "Built-in live wallpaper.",
         "removal": "delete"
     },
     {
@@ -482,7 +505,8 @@
     },
     {
         "id": "com.android.otaprovisioningclient",
-        "description": "OTA Access Point Configuration\nOTA (Over the air) is the method used by OEMs to push updates to your device.\nAn OTA access point is used to run system software updates over a special gateway. This package is most likely customized by your OEM.",
+        "label": "OTA Access Point Configuration",
+        "description": "OTA (Over the air) is the method used by OEMs to push updates to your device.\nAn OTA access point is used to run system software updates over a special gateway. This package is most likely customized by your OEM.",
         "removal": "caution"
     },
     {
@@ -496,19 +520,21 @@
     },
     {
         "id": "com.android.phasebeam",
-        "description": "\"Phase beam\" live wallpaper",
+        "label": "Phase beam",
+        "description": "Built-in live wallpaper",
         "removal": "delete"
     },
     {
         "id": "com.android.phone.recorder",
-        "description": "AOSP Call recorder function. Most of the time OEM use their own code for this.",
+        "label": "Recorder",
+        "description": "AOSP Call recorder function. Most of the time OEM use their own code for this.\nSome OEMs (like Huawei & Xiaomi) use the same package name for their app",
         "removal": "replace",
-        "warning": "Some OEMs (like Huawei & Xiaomi) use the same package name for their app",
         "suggestions": "call_recorders"
     },
     {
         "id": "com.android.printservice.recommendation",
-        "description": "Recommends 3rd-party print services apps in the PlayStore. Printing will probably still works without (by using the default print service).",
+        "label": "Print Service Recommendation Service",
+        "description": "Recommends 3rd-party print services apps in the PlayStore. Printing will probably still work without it (by using the default print service).",
         "removal": "replace"
     },
     {
@@ -520,7 +546,8 @@
     },
     {
         "id": "com.android.protips",
-        "description": "Home screen tips\nRuns on boot.\nThe tip popups you get on the homescreen.",
+        "label": "Home screen tips",
+        "description": "Runs on boot.\nThe tip popups you get on the homescreen.",
         "removal": "delete"
     },
     {
@@ -554,7 +581,8 @@
     },
     {
         "id": "com.android.providers.drm",
-        "description": "DRM Protected Content Storage\nManages DRM storage on the device?\nProbably required for some forms of DRM; disabling might break things like Netflix streaming, which relies on DRM to function.",
+        "label": "DRM Protected Content Storage",
+        "description": "Manages DRM storage on the device?\nProbably required for some forms of DRM; disabling might break things like Netflix streaming, which relies on DRM to function.",
         "web": [
             "https://en.wikipedia.org/wiki/Digital_rights_management"
         ],
@@ -562,7 +590,7 @@
     },
     {
         "id": "com.android.providers.media",
-        "label": "com.android.providers.media",
+        "label": "Media Storage",
         "description": "Provider of media files (images, videos and such).\nScans the device for media files and allows permitted apps access to them.\nContent providers encapsulate data, providing centralized management of data shared between apps.",
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
@@ -571,6 +599,7 @@
     },
     {
         "id": "com.android.providers.partnerbookmarks",
+        "label": "com.android.providers.partnerbookmarks",
         "description": "Provides bookmarks about partners of Google in Chrome.\n",
         "removal": "delete"
     },
@@ -593,12 +622,14 @@
     },
     {
         "id": "com.android.quicksearchbox",
-        "description": "Google quick search box.",
+        "label": "Quick Search",
+        "description": "Google quick search box. OEMs (e.g. Xiaomi) can modify this for their use.",
         "removal": "delete"
     },
     {
         "id": "com.android.runintest.ddrtest",
-        "description": "DDR Test\nRAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
+        "label": "DDRTest",
+        "description": "RAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
         "removal": "delete"
     },
     {
@@ -647,6 +678,7 @@
     },
     {
         "id": "com.android.soundrecorder",
+        "label": "Sound Recorder",
         "description": "AOSP Sound recorder. OEMs often use their own solution.\nSome phones (Huawei and Xiaomi) also use this package name for their own recorder app",
         "removal": "replace",
         "suggestions": "audio_recorders"
@@ -679,6 +711,7 @@
     },
     {
         "id": "com.android.systemui.theme.dark",
+        "label": "Dark",
         "description": "Enables you to use Android dark theme.",
         "removal": "caution"
     },
@@ -726,7 +759,8 @@
     },
     {
         "id": "com.android.timezone.updater",
-        "description": "Time Zone Updater\nAutomatically updates the clock to correspond to your current time zone.",
+        "label": "Time Zone Updater",
+        "description": "Automatically updates the clock to correspond to your current time zone.",
         "removal": "caution",
         "warning": "This may cause a bootloop if removed. Timezone packages often causes that."
     },
@@ -741,7 +775,8 @@
     },
     {
         "id": "com.android.voicedialer",
-        "description": "AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nOn some phones Huawei & Xiaomi also use this package name for their own voice dialer app.",
+        "label": "Voice Dialer",
+        "description": "The AOSP Voice dialer. Lets you call someone or open an app with your voice from the dialer.\nOEM often use their own code (embeded in their voice-controlled digital assistant)\nSome OEMs (Huawei, Sony, Xiaomi) also use this package name for their own voice dialer app.",
         "removal": "replace",
         "suggestions": "dialers"
     },
@@ -753,7 +788,8 @@
     },
     {
         "id": "com.android.wallpaper.holospiral",
-        "description": "\"Holo spiral\" Live wallpaper.",
+        "label": "Holo Spiral",
+        "description": "Built-in live wallpaper.",
         "removal": "delete"
     },
     {
@@ -765,11 +801,13 @@
     },
     {
         "id": "com.android.wallpaper.livepicker.overlay",
+        "label": "com.android.wallpaper.livepicker.overlay",
         "description": "Overlay for live wallpaper picker? Overlays are usually themes, but not sure about this one.",
         "removal": "delete"
     },
     {
         "id": "com.android.wallpaperbackup",
+        "label": "com.android.wallpaperbackup",
         "description": "Backup your wallapaper and load this backup instead of the original file in case you delete it.\nSafe to remove if you really want to.",
         "removal": "delete"
     },
@@ -781,6 +819,7 @@
     },
     {
         "id": "com.android.wallpaperpicker",
+        "label": "com.android.wallpaperpicker",
         "description": "Enables you to pick a wallpaper.",
         "removal": "caution"
     },
@@ -800,6 +839,7 @@
     },
     {
         "id": "com.example.android.notepad",
+        "label": "NotePad",
         "description": "(Bad) notepad app.",
         "removal": "replace",
         "suggestions": "note_taking_apps"
