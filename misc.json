@@ -80,7 +80,7 @@
     },
     {
         "id": "com.amazon.kindle",
-        "label": "Amazon Kindle"
+        "label": "Amazon Kindle",
         "description": "Kindle eBook reader app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.amazon.kindle"
@@ -105,7 +105,7 @@
     },
     {
         "id": "com.amazon.mp3",
-        "label": "Amazon Music"
+        "label": "Amazon Music",
         "description": "Amazon Music streaming app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.amazon.mp3"
@@ -126,7 +126,7 @@
     },
     {
         "id": "com.aspiro.tidal",
-        "label": "TIDAL Music"
+        "label": "TIDAL Music",
         "description": "Tidal Music streaming app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.aspiro.tidal"
@@ -172,7 +172,7 @@
     },
     {
         "id": "com.cnn.mobile.android.phone",
-        "label": "CNN Breaking US & World News"
+        "label": "CNN Breaking US & World News",
         "description": "News app from CNN",
         "web": [
             "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone"
@@ -354,7 +354,7 @@
     },
     {
         "id": "com.galaxyfirsatlari",
-        "label": "Galaxy Fırsatları"
+        "label": "Galaxy Fırsatları",
         "description": "Samsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nEncourages consumption.\nExodus found 10 trackers and 17 permissions : https://reports.exodus-privacy.eu.org/fr/reports/143830/",
         "web": [
             "https://play.google.com/store/apps/details?id=com.galaxyfirsatlari"
@@ -612,7 +612,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.onenote"
         ],
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "note_taking_apps"
     },
     {
@@ -1179,7 +1179,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.skype.raider"
         ],
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "meeting_apps"
     },
     {

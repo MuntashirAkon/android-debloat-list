@@ -1,0 +1,27 @@
+name: Lint
+
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+  pull_request:
+    paths-ignore:
+      - '*.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+      - name: Run lint
+        run: php ./scripts/lint.php
+      - name: Upload lint results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./build/lint-results.txt

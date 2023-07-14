@@ -28,7 +28,7 @@
     {
         "id": "com.android.soundpicker",
         "description": "Google Sounds. Needed to pick up a phone ringtone. No weird permissions.",
-        "label": [
+        "web": [
             "https://beta.pithus.org/report/f5f7c265c6d98666c78267b91643bbfb635021d5d4f85c93407079ba4aad88ee"
         ],
         "removal": "caution"
@@ -736,7 +736,7 @@
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
             "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
         ],
-        "removal": "caution",
+        "removal": "caution"
     },
     {
         "id": "com.google.android.cellbroadcastservice",
@@ -748,7 +748,7 @@
             "https://en.wikipedia.org/wiki/Cell_Broadcast",
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
         ],
-        "removal": "caution",
+        "removal": "caution"
     },
     {
         "id": "com.google.android.configupdater",

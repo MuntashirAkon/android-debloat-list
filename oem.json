@@ -1971,8 +1971,8 @@
         "web": [
             "https://beta.pithus.org/report/3cdd48fb6a9c94435fb1b46b41a19c553b96ae889aaa2d7285f28cd64d12363e"
         ],
-        "removal": "replace"
-        "warning": "Make sure have installed another launcher before debloating this app"
+        "removal": "replace",
+        "warning": "Make sure have installed another launcher before debloating this app",
         "suggestions": "launchers"
     },
     {
@@ -2901,7 +2901,7 @@
     {
         "id": "com.miui.screenrecorder",
         "description": "Mi Screen Recorder\n",
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "screen_recorders"
     },
     {
@@ -4039,7 +4039,7 @@
         "web": [
             "https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde"
         ],
-        "removal": "delete"
+        "removal": "delete",
         "warning": "Removing this package prevents the OnePlus Game Center to detect games."
     },
     {
@@ -4924,7 +4924,7 @@
     {
         "id": "com.samsung.android.messaging",
         "description": "Samsung Messaging app\n",
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "sms"
     },
     {
@@ -6980,7 +6980,7 @@
         "id": "com.tblenovo.whatsnewhost",
         "label": "Lenovo Feature Update Host",
         "description": "Exactly not sure what it does.\n",
-        "web" [
+        "web": [
             "https://beta.pithus.org/report/e08b8712d07899653631f3a9ac12c0ed48ff7bdb699651724eba26871ac0ca2b"
         ],
         "removal": "caution"
