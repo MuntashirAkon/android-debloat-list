@@ -527,7 +527,7 @@
         "description": "Displays unsolicited \"trending\" stories on Lockscreen",
         "web": [
             "https://play.google.com/store/apps/details?id=com.glance.internet"
-        ]
+        ],
         "removal": "delete"
     },
     {
@@ -536,7 +536,7 @@
         "description": "NFL related latest news, highlights, stats & more",
         "web": [
             "https://play.google.com/store/apps/details?id=com.gotv.nflgamecenter.us.lite"
-        ]
+        ],
         "removal": "delete"
     },
     {
@@ -561,7 +561,7 @@
         "description": "Forecasts alerts app (contain ads)",
         "web": [
             "https://play.google.com/store/apps/details?id=com.handmark.expressweather"
-        ]
+        ],
         "removal": "delete"
     },
     {
@@ -585,11 +585,11 @@
         ],
         "required_by": [
             "com.oplus.synergy"
-        ]
+        ],
         "description": "Accessory Framework\nQuick device connect feature. Can be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> Quick device connect) if not wanted.\nAllows you to search for nearby devices and connect to them without having to go through the Bluetooth or WiFi Direct settings' Ghosh! 32 permissions just for this?",
         "web": [
             "https://beta.pithus.org/report/cc0ba95f0d0867ba6d883275cd2f6c4aa252ebc874f15f1ee240bb5bac330578"
-        ]
+        ],
         "removal": "replace",
     },
     {
@@ -600,11 +600,11 @@
             "com.heytap.market",
             "com.oplus.synergy",
             "com.heytap.accessory"
-        ]
+        ],
         "description": "System messages\nMobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background",
         "web": [
             "https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e"
-        ]
+        ],
         "removal": "delete",
     },
     {
@@ -862,7 +862,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.micredit.in.gp",
             "https://web.archive.org/web/20221207193942/https://onsitego.com/blog/xiaomi-quietly-discontinues-mi-credit-mi-pay-india/"
-        ]
+        ],
         "removal": "delete"
     },
     {
@@ -871,7 +871,7 @@
         "description": "Microsoft app for synchronising your phone with a W10 PC.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.appmanager"
-        ]
+        ],
         "removal": "replace"
     },
     {
@@ -880,7 +880,7 @@
         "description": "Spreadsheets, business collaboration, charts and data analysis tool from Microsoft",
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.excel"
-        ]
+        ],
         "removal": "replace",
     },
     {
@@ -901,7 +901,7 @@
         "description": "Word, Excel,PowerPoint, PDF scanner/editor, Cloud services...all in one app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow"
-        ]
+        ],
         "removal": "replace",
     },
     {
@@ -1589,7 +1589,7 @@
         "label": "ORoaming",
         "dependencies": [
             "com.redteamobile.roaming.deamon"
-        ]
+        ],
         "description": "Lets you buy RedTeaMobile data plan to access Internet in foreign country with a virtual SIM card",
         "web": [
             "https://support.oppo.com/uk/answer/?aid=neu9139",
@@ -1602,7 +1602,7 @@
         "label": "ORoaming",
         "required_by": [
             "com.redteamobile.roaming"
-        ]
+        ],
         "description": "Redtea Roaming service deamon for com.redteamobile.roaming",
         "removal": "delete",
     },
