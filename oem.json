@@ -4022,6 +4022,7 @@
     },
     {
         "id": "com.oplus.apprecover",
+        "label": "Recover system apps",
         "description": "Provides the ability to restore system apps through settings.",
         "removal": "delete"
     },
