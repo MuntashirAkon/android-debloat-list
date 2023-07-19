@@ -572,7 +572,7 @@
     },
     {
         "id": "com.haoba.btsmart",
-        "label": "com.haoba.btsmart"
+        "label": "com.haoba.btsmart",
         "description": "Agui Unibuds",
         "removal": "delete",
         "warning": "May only be needed if you use Uniherts Ear Buds (Unibuds)"
@@ -1562,7 +1562,7 @@
         "id": "com.quicinc.fmradio",
         "label": "com.quicinc.fmradio",
         "description": "FM Radio app by Qualcomm\nquicinc = Qualcomm Innovation Center",
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "radios"
     },
     {
@@ -1785,7 +1785,7 @@
     },
     {
         "id": "com.swiftkey.swiftkeyconfigurator",
-        "id": "SwiftKey factory settings",
+        "label": "SwiftKey factory settings",
         "description": "Used by commercial swiftkey partners to configure the SwiftKey app.\nSwiftkey is a keyboard developed by TouchType, a Microsoft subsidiary",
         "web": [
             "https://en.wikipedia.org/wiki/SwiftKey"
@@ -1935,7 +1935,6 @@
             "https://www.synacktiv.com/posts/exploit/kinibi-tee-trusted-application-exploitation.html",
             "https://blog.quarkslab.com/introduction-to-trusted-execution-environment-arms-trustzone.html",
             "https://medium.com/taszksec/unbox-your-phone-part-i-331bbf44c30c",
-            "https://blog.quarkslab.com/introduction-to-trusted-execution-environment-arms-trustzone.html",
             "nhttps://www.gsd.inesc-id.pt/~nsantos/papers/pinto_acsur19.pdf"
         ],
         "removal": "caution"
@@ -2128,7 +2127,7 @@
     {
         "id": "in.playsimple.tripcross",
         "label": "Crossword Jam",
-        "description": "Preinstalled game on some Samsung phones. 12 permissions, 25 trackers : ",
+        "description": "Preinstalled game on some Samsung phones. 12 permissions, 25 trackers",
         "web": [
             "https://play.google.com/store/apps/details?id=in.playsimple.tripcross",
             "https://reports.exodus-privacy.eu.org/reports/in.playsimple.tripcross/latest/"
@@ -2258,7 +2257,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=tv.fubo.mobile"
         ],
-        "removal": "replace"
+        "removal": "replace",
         "suggestions": "streaming_apps"
     },
     {
