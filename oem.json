@@ -4023,7 +4023,7 @@
     {
         "id": "com.oplus.apprecover",
         "description": "Provides the ability to restore system apps through settings.",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "com.oplus.athena",
