@@ -57,7 +57,13 @@
             },
             "removal": {
                 "description": "Bloatware removal type (delete, replace, caution, unsafe)",
-                "type": "string"
+                "type": "string",
+                "enum": [
+                    "delete",
+                    "replace",
+                    "caution",
+                    "unsafe"
+                ]
             },
             "warning": {
                 "description": "Possible consequences of removing the bloatware (for caution and unsafe), for others, useful information",
@@ -68,7 +74,12 @@
                 "type": "string"
             }
         },
-        "required": [ "id", "label", "description", "removal" ]
+        "required": [
+            "id",
+            "label",
+            "description",
+            "removal"
+        ]
     },
     "uniqueItems": true
 }
