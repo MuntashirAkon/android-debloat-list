@@ -4021,6 +4021,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.oplus.apprecover",
+        "description": "Provides the ability to restore system apps through settings.",
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.athena",
         "description": "OnePlus background process manager. Removing it will solve the notification delay you can have but will disable the virtual ram expansion feature (swap RAM to disk) and the 'close all' button in the 'recent apps' page.\nRemoving this app may deteriorate battery performance.",
         "removal": "caution"
