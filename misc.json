@@ -409,6 +409,7 @@
     },
     {
         "id": "com.heytap.accessory",
+        "label": "Quick Connect",
         "description": "Accessory Framework\nQuick device connect feature. Can be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> Quick device connect) if not wanted.\nAllows you to search for nearby devices and connect to them without having to go through the Bluetooth or WiFi Direct settings' Ghosh! 32 permissions just for this?\n\nPithus analysis: https://beta.pithus.org/report/cc0ba95f0d0867ba6d883275cd2f6c4aa252ebc874f15f1ee240bb5bac330578",
         "removal": "replace",
         "dependencies": [
@@ -420,6 +421,7 @@
     },
     {
         "id": "com.heytap.mcs",
+        "label": "System Messages",
         "description": "System messages\n. Mobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background\nPithus analysis: https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e",
         "removal": "delete",
         "required_by": [
