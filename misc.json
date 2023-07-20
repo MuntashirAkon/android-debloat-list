@@ -6,6 +6,7 @@
     },
     {
         "id": "cci.usage",
+        "label": "My CC",
         "description": "My Consumer Cellular (https://play.google.com/store/apps/details?id=cci.usage)\nLets you manage your Consumer Cellular account, track your usage, pay your bill.\nConsumer Cellular is an American postpaid mobile virtual network operator\nhttps://en.wikipedia.org/wiki/Consumer_Cellular\n",
         "removal": "delete"
     },
@@ -29,6 +30,7 @@
     },
     {
         "id": "com.aaa.android.discounts",
+        "label": "AAA",
         "description": "AAA Mobile (https://play.google.com/store/apps/details?id=com.aaa.android.discounts)\nKind of GPS that helps you find Point of interest (POI) like hotels, restaurants, and car repair facilities from the AAA databases.\nNOTE : You’ll have to sign up for an AAA membership to enjoy all of the features and functionality of the Android app.\nAAA = American Automobile Association",
         "removal": "delete"
     },
@@ -44,6 +46,7 @@
     },
     {
         "id": "com.amazon.aa",
+        "label": "Amazon Assistant",
         "description": "Amazon Assistant app, a spyware.\nShows you recommended products available on Amazon and price compare as you shop across the web.\nNOTE : https://www.gadgetguy.com.au/amazon-assistant-spies-on-you/\n",
         "removal": "delete"
     },
@@ -70,6 +73,7 @@
     },
     {
         "id": "com.amazon.clouddrive.photos",
+        "label": "Amazon Photos",
         "description": "Amazon Photos (https://play.google.com/store/apps/details?id=com.amazon.clouddrive.photos)\n",
         "removal": "delete"
     },
@@ -90,16 +94,19 @@
     },
     {
         "id": "com.amazon.mShop.android",
+        "label": "Amazon Shopping",
         "description": "Amazon Shopping (https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping)\n",
         "removal": "delete"
     },
     {
         "id": "com.amazon.mShop.android.shopping",
+        "label": "Amazon Shopping",
         "description": "Amazon Shopping (https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping)\nSame package as com.amazon.mShop.android.\n",
         "removal": "delete"
     },
     {
         "id": "com.amazon.mShop.android.shopping.vpl",
+        "label": "Amazon Shopping",
         "description": "Amazon Shopping (https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping)\nSame package as com.amazon.mShop.android.\n",
         "removal": "delete"
     },
@@ -142,11 +149,13 @@
     },
     {
         "id": "com.audible.application",
+        "label": "Audible",
         "description": "Cover Audible Audiobooks (https://play.google.com/store/apps/details?id=com.audible.application)\n",
         "removal": "delete"
     },
     {
         "id": "com.bleacherreport.android.teamstream",
+        "label": "Bleacher Report",
         "description": "Bleacher Report (https://play.google.com/store/apps/details?id=com.bleacherreport.android.teamstream)\nSports news site\n",
         "removal": "delete"
     },
@@ -157,6 +166,7 @@
     },
     {
         "id": "com.booking",
+        "label": "Booking.com",
         "description": "Booking.com app (https://play.google.com/store/apps/details?id=com.booking)\nSeriously, you shouldn't use it !\nhttps://en.wikipedia.org/wiki/Booking.com\nhttps://blog.usejournal.com/why-i-would-never-trust-booking-com-again-so-you-should-too-a2ab535ed915?gi=7ebe86eaa880\nhttps://ro-che.info/articles/2017-09-17-booking-com-manipulation\n",
         "removal": "delete"
     },
@@ -182,6 +192,7 @@
     },
     {
         "id": "com.contextlogic.wish",
+        "label": "Wish",
         "description": "Wish Shopping (https://play.google.com/store/apps/details?id=com.contextlogic.wish)",
         "removal": "delete"
     },
@@ -236,6 +247,7 @@
     },
     {
         "id": "com.discoveryscreen",
+        "label": "Appflash",
         "description": "Appflash (https://play.google.com/store/apps/details?id=com.discoveryscreen)\nVerizon Spyware.\nhttps://www.eff.org/deeplinks/2017/04/update-verizons-appflash-pre-installed-spyware-still-spyware\n",
         "removal": "delete"
     },
@@ -261,6 +273,7 @@
     },
     {
         "id": "com.dsi.ant.plugins.antplus",
+        "label": "ANT+ plugin service",
         "description": "ANT+ plugin service (https://play.google.com/store/apps/details?id=com.dsi.ant.plugins.antplus)",
         "removal": "delete"
     },
@@ -276,6 +289,7 @@
     },
     {
         "id": "com.dsi.ant.service.socket",
+        "label": "ANT Radio Service",
         "description": "ANT Radio Service (https://play.google.com/store/apps/details?id=com.dsi.ant.service.socket)\nANT is a wireless protocol, similar to Bluetooth, that is mainly used for sport and fitness trackers.",
         "removal": "replace"
     },
@@ -286,6 +300,7 @@
     },
     {
         "id": "com.ebay.mobile",
+        "label": "eBay",
         "description": "Ebay app (https://play.google.com/store/apps/details?id=com.ebay.mobile)\n",
         "removal": "delete"
     },
@@ -329,11 +344,13 @@
     },
     {
         "id": "com.facebook.katana",
+        "label": "Facebook",
         "description": "Facebook app (https://play.google.com/store/apps/details?id=com.facebook.katana)\n",
         "removal": "delete"
     },
     {
         "id": "com.facebook.orca",
+        "label": "Messenger",
         "description": "Facebook Messenger (https://play.google.com/store/apps/details?id=com.facebook.orca)\n",
         "removal": "delete"
     },
@@ -349,6 +366,7 @@
     },
     {
         "id": "com.finshell.fin",
+        "label": "FinShell Pay",
         "description": "FinShell Pay (https://play.google.com/store/apps/details?id=com.finshell.fin)\nProvides various Payment and Financial Services. Pretty bad privacy policy: https://rwallet.finshell.co.in/html/user/privacy_policy.html",
         "removal": "delete"
     },
@@ -368,6 +386,7 @@
     },
     {
         "id": "com.generalmobi.go2pay",
+        "label": "Go2Pay",
         "description": "Go2Pay (https://play.google.com/store/apps/details?id=com.generalmobi.go2pay)\nPayment app that offers mobile pre-paid recharges and post-paid bill payment, data card recharges and bill payment, \nDTH recharges through cashless transactions.\nDTH = Direct To Home Television \n",
         "removal": "delete"
     },
@@ -378,11 +397,13 @@
     },
     {
         "id": "com.gotv.nflgamecenter.us.lite",
+        "label": "NFL",
         "description": "Football NFL (https://play.google.com/store/apps/details?id=com.gotv.nflgamecenter.us.lite)\n",
         "removal": "delete"
     },
     {
         "id": "com.groupon",
+        "label": "Groupon",
         "description": "Groupon (https://play.google.com/store/apps/details?id=com.groupon)\nOnline shopping deals and coupons.\nWorth reading : https://en.wikipedia.org/wiki/Groupon#Reception\n",
         "removal": "delete"
     },
@@ -393,6 +414,7 @@
     },
     {
         "id": "com.handmark.expressweather",
+        "label": "1Weather",
         "description": "1Weather (https://play.google.com/store/apps/details?id=com.handmark.expressweather)\nForecasts alerts app (contain ads)",
         "removal": "delete"
     },
@@ -409,6 +431,7 @@
     },
     {
         "id": "com.heytap.accessory",
+        "label": "Quick Connect",
         "description": "Accessory Framework\nQuick device connect feature. Can be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> Quick device connect) if not wanted.\nAllows you to search for nearby devices and connect to them without having to go through the Bluetooth or WiFi Direct settings' Ghosh! 32 permissions just for this?\n\nPithus analysis: https://beta.pithus.org/report/cc0ba95f0d0867ba6d883275cd2f6c4aa252ebc874f15f1ee240bb5bac330578",
         "removal": "replace",
         "dependencies": [
@@ -420,6 +443,7 @@
     },
     {
         "id": "com.heytap.mcs",
+        "label": "System Messages",
         "description": "System messages\n. Mobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background\nPithus analysis: https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e",
         "removal": "delete",
         "required_by": [
@@ -436,6 +460,7 @@
     },
     {
         "id": "com.hulu.plus",
+        "label": "Hulu",
         "description": "Hulu (https://play.google.com/store/apps/details?id=com.hulu.plus&hl)\nNetflix competitor.\nFYI : Hulu is owned by Disney.\nhttps://en.wikipedia.org/wiki/Hulu\nhttps://www.digitaltrends.com/home-theater/hulu-vs-disney-plus/\n",
         "removal": "delete"
     },
@@ -446,21 +471,25 @@
     },
     {
         "id": "com.ideashower.readitlater.pro",
+        "label": "Pocket",
         "description": "Pocket (https://play.google.com/store/apps/details?id=com.ideashower.readitlater.pro)\nAllows you to save an article or web page to remote servers for later reading\nWas purchased by Mozilla in 2017 but is still close source for now.\nhttps://getpocket.com/privacy\nOpen-source alternative : https://wallabag.org/\n",
         "removal": "delete"
     },
     {
         "id": "com.imdb.mobile",
+        "label": "IMDb",
         "description": "IMDb mobile app (https://play.google.com/store/apps/details?id=com.imdb.mobile)\n",
         "removal": "delete"
     },
     {
         "id": "com.infraware.polarisoffice5",
+        "label": "Polaris Office",
         "description": "Polaris Office from US Infraware Inc company (Microsoft Office like)\nhttps://en.wikipedia.org/wiki/Polaris_Office\nhttps://play.google.com/store/apps/details?id=com.infraware.office.link\n",
         "removal": "delete"
     },
     {
         "id": "com.instagram.android",
+        "label": "Instagram",
         "description": "Instagram  (https://play.google.com/store/apps/details?id=com.instagram.android)\n",
         "removal": "delete"
     },
@@ -476,26 +505,31 @@
     },
     {
         "id": "com.king.candycrush4",
+        "label": "Candy Crush Friends",
         "description": "Candy Crush Friends Saga (https://play.google.com/store/apps/details?id=com.king.candycrush4)\n",
         "removal": "delete"
     },
     {
         "id": "com.king.candycrushsaga",
+        "label": "Candy Crush Saga",
         "description": "Candy Crush Saga (https://play.google.com/store/apps/details?id=com.king.candycrushsaga)\nI don't understand why this game is so popular (I guess the fact it is pre-installed in a lot of phone helps)\n",
         "removal": "delete"
     },
     {
         "id": "com.king.candycrushsodasaga",
+        "label": "Candy Crush Soda",
         "description": "Candy Crush Soda Saga (https://play.google.com/store/apps/details?id=com.king.candycrushsodasaga)\n",
         "removal": "delete"
     },
     {
         "id": "com.linkedin.android",
+        "label": "Linkedin",
         "description": "Linkedin app (https://play.google.com/store/apps/details?id=com.linkedin.android)\n",
         "removal": "delete"
     },
     {
         "id": "com.lookout",
+        "label": "Lookout",
         "description": "Lookout Security & Antivirus (https://play.google.com/store/apps/details?id=com.lookout)\n",
         "removal": "delete"
     },
@@ -577,16 +611,19 @@
     },
     {
         "id": "com.micredit.in",
+        "label": "Mi Credit",
         "description": "Mi Credit (https://play.google.com/store/apps/details?id=com.micredit.in.gp)\nApp providing loans to MIUI users from India and China\nNote: https://web.archive.org/web/20221207193942/https://onsitego.com/blog/xiaomi-quietly-discontinues-mi-credit-mi-pay-india/",
         "removal": "delete"
     },
     {
         "id": "com.microsoft.appmanager",
+        "label": "Link to Windows",
         "description": "Your Phone Companion - Link to Windows (https://play.google.com/store/apps/details?id=com.microsoft.appmanager)\nMicrosoft app for synchronising your phone with a W10 PC.\n",
         "removal": "delete"
     },
     {
         "id": "com.microsoft.office.excel",
+        "label": "Microsoft Excel",
         "description": "Excel",
         "removal": "delete"
     },
@@ -602,6 +639,7 @@
     },
     {
         "id": "com.microsoft.office.officehubrow",
+        "label": "Microsoft 365 (Office)",
         "description": "Microsoft Mobile Office Beta\n",
         "removal": "delete"
     },
@@ -617,16 +655,19 @@
     },
     {
         "id": "com.microsoft.office.outlook",
+        "label": "Microsoft Outlook",
         "description": "Outlook",
         "removal": "delete"
     },
     {
         "id": "com.microsoft.office.powerpoint",
-        "description": "",
+        "label": "Microsoft PowerPoint",
+        "description": "Powerpoint",
         "removal": "delete"
     },
     {
         "id": "com.microsoft.office.word",
+        "label": "Microsoft Word",
         "description": "Word",
         "removal": "delete"
     },
@@ -642,6 +683,7 @@
     },
     {
         "id": "com.microsoft.translator",
+        "label": "Microsoft Translator",
         "description": "Microsoft Translator app (https://play.google.com/store/apps/details?id=com.microsoft.translator)\n)\n",
         "removal": "delete"
     },
@@ -667,6 +709,7 @@
     },
     {
         "id": "com.netflix.mediaclient",
+        "label": "Netflix",
         "description": "Netflix app (https://play.google.com/store/apps/details?id=com.netflix.mediaclient)\n",
         "removal": "delete"
     },
@@ -687,6 +730,7 @@
     },
     {
         "id": "com.niksoftware.snapseed",
+        "label": "Snapseed",
         "description": "Snapseed (https://play.google.com/store/apps/details?id=com.niksoftware.snapseed)\n",
         "removal": "delete"
     },
@@ -741,6 +785,7 @@
     },
     {
         "id": "com.pandora.android",
+        "label": "Pandora",
         "description": "Pandora (https://play.google.com/store/apps/details?id=com.pandora.android)\nVery intrusive music and podcasts app. 17 permissions and 14 trackers: https://reports.exodus-privacy.eu.org/reports/com.pandora.android/latest/",
         "removal": "delete"
     },
@@ -757,6 +802,7 @@
     },
     {
         "id": "com.phonepe.app",
+        "label": "PhonePe",
         "description": "PhonePe (https://play.google.com/store/apps/details?id=com.phonepe.app)\nPhonePe is a payment app that allows indian users to use BHIM UPI, your credit card and debit card or wallet to recharge your mobile phone, \npay your utility bills and also make instant payments at offline and online stores.\nPhonePe is an indian company (https://en.wikipedia.org/wiki/PhonePe)\nBHIM = Bharat Interface for Money : https://en.wikipedia.org/wiki/BHIM\nUPI = Unified Payement Interface : https://en.wikipedia.org/wiki/Unified_Payments_Interface\n",
         "removal": "delete"
     },
@@ -782,11 +828,13 @@
     },
     {
         "id": "com.pure.indosat.care",
+        "label": "myIM3",
         "description": "myIM3 (https://play.google.com/store/apps/details?id=com.pure.indosat.care)\nApp provided by Indosat Ooredoo, an Internet provider from Indonesia. \nEnables Indosat users to manage prepaid and postpaid numbers and check their credit and payments, purchase data packs, calls, SMS...\n",
         "removal": "delete"
     },
     {
         "id": "com.qti.confuridialer",
+        "label": "confuridialer",
         "description": "Conference URI dialer\nConference call service for digital signal(SIP / VoIP).\nhttps://devcondition.com/article/removing-unneeded-miui-applications/",
         "removal": "replace"
     },
@@ -852,6 +900,7 @@
     },
     {
         "id": "com.qualcomm.location",
+        "label": "LocationServices",
         "description": "LocationServices\nRuns in the background as part of the system. Runs even if disabled, so probably pointless to disable.\nPeriodically sends a unique software ID, location (lat, long, alt, and their uncertainty), nearby cellular towers and Wi-Fi hotspots and their signal strength to Qualcomm servers.\nhttps://www.qualcomm.com/site/privacy/services",
         "removal": "replace"
     },
@@ -887,6 +936,7 @@
     },
     {
         "id": "com.qualcomm.qti.cne",
+        "label": "CneApp",
         "description": "CneApp (Connectivity Engine)\nRuns in the background as part of the System.\nEnables seamless hand-off between mobile data and Wi-Fi networks. Can also dynamically measure network performance to prioritize using the best one (I think that's part of \"Intelligently select the best Wi-Fi\" in settings).\nProbably worth keeping on; I noticed connection reliability getting worse when I disabled it.\nhttps://www.qualcomm.com/news/onq/2013/07/02/qualcomms-cne-bringing-smarts-3g4g-wi-fi-seamless-interworking\nhttps://programmersought.com/article/35091829299/",
         "removal": "caution"
     },
@@ -927,11 +977,13 @@
     },
     {
         "id": "com.qualcomm.qti.performancemode",
+        "label": "Performance Mode",
         "description": "Performance Mode\nRuns on boot.\nProbably related to CPU/SoC performance profiles.\nOneplus 10 Pro has an option called \"High performance mode\" in Settings->Battery->Advanced, which has the description:\n\"The system always operates in a high performance mode, but it will increase power consumption.\"\nI'm guessing that option triggers this package. This is probably a feature on many Qualcomm chips, but I don't think all OEMs expose it in the settings.",
         "removal": "caution"
     },
     {
         "id": "com.qualcomm.qti.poweroffalarm",
+        "label": "PowerOffAlarm",
         "description": "Probably what enables alarms to start the device from an off state.\nRuns on boot and when you open a clock app.",
         "removal": "caution"
     },
@@ -982,6 +1034,7 @@
     },
     {
         "id": "com.qualcomm.qti.seccamservice",
+        "label": "SecCamService",
         "description": "SecCamService, stands for Secure Camera Service?\nSupposedly acts as a bridge between camera hardware and SoC. Seems like this package is what a Qualcomm SoC uses to access the camera hardware.\nWill probably break camera functionality if disabled.",
         "removal": "caution"
     },
@@ -1002,11 +1055,13 @@
     },
     {
         "id": "com.qualcomm.qti.uceShimService",
+        "label": "uceShimService",
         "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.\nhttps://fr.wikipedia.org/wiki/Session_Initiation_Protocol",
         "removal": "replace"
     },
     {
         "id": "com.qualcomm.qti.uceshimservice",
+        "label": "uceShimService",
         "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.\nhttps://fr.wikipedia.org/wiki/Session_Initiation_Protocol",
         "removal": "replace"
     },
@@ -1062,6 +1117,7 @@
     },
     {
         "id": "com.qualcomm.wfd.service",
+        "label": "Wfd Service",
         "description": "Wfd Service\nProvides a way to cast your screen to a TV (Miracast)\nhttps://en.wikipedia.org/wiki/Miracast",
         "removal": "caution"
     },
@@ -1077,6 +1133,7 @@
     },
     {
         "id": "com.quicinc.voice.activation",
+        "label": "Qualcomm Voice Assist",
         "description": "Qualcomm Voice Assist (https://play.google.com/store/apps/details?id=com.quicinc.voice.activation)\nAlways-on voice detection, so obviously always runs in the background.\nProbably worth keeping enabled for battery savings if you use Google Assistant regularly while your screen is off.",
         "removal": "delete"
     },
@@ -1113,6 +1170,7 @@
     },
     {
         "id": "com.rhapsody",
+        "label": "Napster",
         "description": "Napster Music (https://play.google.com/store/apps/details?id=com.rhapsody)\nNapster streaming app\nhttps://en.wikipedia.org/wiki/Napster\n",
         "removal": "delete"
     },
@@ -1123,6 +1181,7 @@
     },
     {
         "id": "com.rlk.weathers",
+        "label": "Weather",
         "description": "Daily Weather (https://play.google.com/store/apps/details?id=com.rlk.weathers)\nWeather app with ads and trackers. Can access phone calls and SMS.\nPithus analysis: https://beta.pithus.org/report/c3fa30c66192c458f93456401421d3c74f9122191b561781af142c42c24fe603",
         "removal": "delete"
     },
@@ -1138,6 +1197,7 @@
     },
     {
         "id": "com.s.antivirus",
+        "label": "AVG Protection",
         "description": "AVG Antivirus (https://play.google.com/store/apps/details?id=com.s.antivirus) for Sony Xperia.\n",
         "removal": "delete"
     },
@@ -1148,11 +1208,13 @@
     },
     {
         "id": "com.servicemagic.consumer",
+        "label": "Angi",
         "description": "HomeAdvisor: Contractors for Home Improvement (https://play.google.com/store/apps/details?id=com.servicemagic.consumer)\nHelps you find local contractors from the service Home Advisor network\nHomeAdvisor collects users data when a request is made and then sells that data to local contractors in exchange for money.\nWorth Reading: https://en.wikipedia.org/wiki/HomeAdvisor#Critism\n",
         "removal": "delete"
     },
     {
         "id": "com.setk.widget",
+        "label": "Bizz",
         "description": "Galaxy Bizz (https://play.google.com/store/apps/details?id=com.setk.widget)\nUseless app that recommands you stuff to do/buy nearby your area\n",
         "removal": "delete"
     },
@@ -1163,6 +1225,7 @@
     },
     {
         "id": "com.shopee.id",
+        "label": "Shopee",
         "description": "Shopee 2.2 (https://play.google.com/store/apps/details?id=com.shopee.id)\nofficial app from Shopee, an e-commerce online shopping platform in Southeast Asian.\n",
         "removal": "delete"
     },
@@ -1184,11 +1247,13 @@
     },
     {
         "id": "com.slacker.radio",
+        "label": "LiveOne",
         "description": "LiveXLive - Streaming Music and Live Events (https://play.google.com/store/apps/details?id=com.slacker.radio)\n",
         "removal": "delete"
     },
     {
         "id": "com.smithmicro.netwise.director.comcast.oem",
+        "label": "XFINIT WiFi Settings",
         "description": "XFINITY Wifi settings (https://play.google.com/store/apps/details?id=com.smithmicro.netwise.director.comcast.oem)\nAuto-connects you to XFINITY WiFi hotspot.\nXFINITY is a subsidiary of the Comcast Corporation (https://en.wikipedia.org/wiki/Xfinity)\n",
         "removal": "delete"
     },
@@ -1205,6 +1270,7 @@
     },
     {
         "id": "com.staplegames.blocksClassicSGGP",
+        "label": "Blocks",
         "description": "Block (https://play.google.com/store/apps/details?id=com.staplegames.blocksClassicSGGP)\nPreinstalled game on some Samsung phones. 9 permissions, 26 trackers: https://reports.exodus-privacy.eu.org/reports/com.staplegames.blocksClassicSGGP/latest/",
         "removal": "delete"
     },
@@ -1236,6 +1302,7 @@
     },
     {
         "id": "com.telenav.app.android.scout_us",
+        "label": "Scout",
         "description": "Scout GPS Navigation & Meet Up (https://play.google.com/store/apps/details?id=com.telenav.app.android.scout_us)\nBad GPS with bad chat features on top of that. \nhttps://www.scoutgps.com/\n",
         "removal": "delete"
     },
@@ -1251,6 +1318,7 @@
     },
     {
         "id": "com.tiqiaa.remote",
+        "label": "ZazaRemote",
         "description": "ZazaRemote (https://play.google.com/store/apps/details?id=com.tiqiaa.remote)\nA Universal infrared control app full of trackers and with unecessary permissions.\n\nPithus analysis: https://beta.pithus.org/report/93eed47a45c00998f2111907afc26b5697aaf7fb19c0efb6b42d46addf0e297c",
         "removal": "delete"
     },
@@ -1283,16 +1351,19 @@
     },
     {
         "id": "com.tripadvisor.tripadvisor",
+        "label": "Tripadvisor",
         "description": "Trip advisor (https://play.google.com/store/apps/details?id=com.tripadvisor.tripadvisor)\nYou should never trust and use trip advisor\nhttps://en.wikipedia.org/wiki/TripAdvisor (see 'Controversy and fraudulent reviews' section)\nhttps://nypost.com/2016/03/01/why-you-should-never-ever-trust-tripadvisor/\n",
         "removal": "delete"
     },
     {
         "id": "com.tripledot.solitaire",
+        "label": "Solitaire",
         "description": "Solitaire (https://play.google.com/store/apps/details?id=com.tripledot.solitaire)\nPreinstalled game on some Samsung phones. 30 permissions, 23 trackers: https://reports.exodus-privacy.eu.org/reports/com.tripledot.solitaire/latest/",
         "removal": "delete"
     },
     {
         "id": "com.tripledot.woodoku",
+        "label": "Woodoku",
         "description": "Woodoku (https://play.google.com/store/apps/details?id=com.tripledot.woodoku)\nPreinstalled game on some Samsung phones.28 permissions, 24 trackers: https://reports.exodus-privacy.eu.org/reports/com.tripledot.woodoku/latest/",
         "removal": "delete"
     },
@@ -1308,11 +1379,13 @@
     },
     {
         "id": "com.turner.cnvideoapp",
+        "label": "CN",
         "description": "Cartoon network App (https://play.google.com/store/apps/details?id=com.turner.cnvideoapp)\n",
         "removal": "delete"
     },
     {
         "id": "com.ubercab",
+        "label": "Uber",
         "description": "Uber (https://play.google.com/store/apps/details?id=com.ubercab)\nUber Driver (https://play.google.com/store/apps/details?id=com.ubercab.driver)\nUber Eats (https://play.google.com/store/apps/details?id=com.ubercab.eats)\nUber does not protect personal user data and has a questionable ethic.\nWorth reading : https://en.wikipedia.org/wiki/Uber#Criticism\n",
         "removal": "delete"
     },
@@ -1339,36 +1412,43 @@
     },
     {
         "id": "com.wb.goog.got.conquest",
+        "label": "GOT: Conquest",
         "description": "Game of Thrones: Conquest (https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest)\nMobile game\n",
         "removal": "delete"
     },
     {
         "id": "com.whatsapp",
+        "label": "WhatsApp",
         "description": "Whatsapp (https://play.google.com/store/apps/details?id=com.whatsapp)\n)\n",
         "removal": "delete"
     },
     {
         "id": "com.yahoo.mobile.client.android.liveweather",
+        "label": "Weather",
         "description": "Yahoo Weather (https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.weather)\nPlease boycott Yahoo ! (all of their services are crappy so it's not so difficult)\nIf you're not aware : https://en.wikipedia.org/wiki/Criticism_of_Yahoo!\n",
         "removal": "delete"
     },
     {
         "id": "com.yellowpages.android.ypmobile",
+        "label": "Yellow Pages",
         "description": "Yellow Pages (https://play.google.com/store/apps/details?id=com.yellowpages.android.ypmobile)\n",
         "removal": "delete"
     },
     {
         "id": "com.yelp.android",
+        "label": "Yelp",
         "description": "Yelp (https://play.google.com/store/apps/details?id=com.yelp.android)\nYelp lets users post reviews and rate businesses.\nWorth reading : https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation",
         "removal": "delete"
     },
     {
         "id": "com.zaz.translate",
+        "label": "Hi Translate",
         "description": "Hi Translate (https://play.google.com/store/apps/details?id=com.zaz.translate)\nBloated translation app with a lot of trackers and permissions (https://reports.exodus-privacy.eu.org/fr/reports/com.zaz.translate/latest/)\nIt has the Camera and microphone permissions and use the Google Translate API for the translations.\nPithus analysis: https://beta.pithus.org/report/fdd787d96c3e069f983320c84c32fc6b8cdf205df17244d190b181edf0c14f68",
         "removal": "delete"
     },
     {
         "id": "com.zhiliaoapp.musically",
+        "label": "TikTok",
         "description": "Yelp lets users post reviews and rate businesses.\nTikTok App",
         "web": [
             "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
@@ -1379,6 +1459,7 @@
     },
     {
         "id": "de.axelspringer.yana.zeropage",
+        "label": "upday",
         "description": "Upday news for Samsung (https://play.google.com/store/apps/details?id=de.axelspringer.yana)\n",
         "removal": "delete"
     },
@@ -1412,6 +1493,7 @@
     },
     {
         "id": "in.amazon.mShop.android.shopping",
+        "label": "Amazon",
         "description": "Amazon India (https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping)\n",
         "removal": "delete"
     },
@@ -1428,11 +1510,13 @@
     },
     {
         "id": "in.playsimple.tripcross",
+        "label": "CrossWord Jam",
         "description": "Crossword Jam (https://play.google.com/store/apps/details?id=in.playsimple.tripcross)\nPreinstalled game on some Samsung phones. 12 permissions, 25 trackers : https://reports.exodus-privacy.eu.org/reports/in.playsimple.tripcross/latest/",
         "removal": "delete"
     },
     {
         "id": "in.playsimple.wordtrip",
+        "label": "Word Trip",
         "description": "World Trip (https://play.google.com/store/apps/details?id=in.playsimple.wordtrip)\nWord Count & word streak puzzle game\n19 trackers + 11 permissions (https://reports.exodus-privacy.eu.org/en/reports/in.playsimple.wordtrip/latest/)\n",
         "removal": "delete"
     },
@@ -1464,11 +1548,13 @@
     },
     {
         "id": "net.sharewire.parkmobilev2",
+        "label": "ParkMobile",
         "description": "ParkMobile - Find Parking (https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2)\n",
         "removal": "delete"
     },
     {
         "id": "net.supertreat.solitaire",
+        "label": "Solitaire",
         "description": "Solitaire (https://play.google.com/store/apps/details?id=net.supertreat.solitaire)\nPreinstalled game on some Samsung phones. 8 permissions, 17 trackers: https://reports.exodus-privacy.eu.org/reports/net.supertreat.solitaire/latest/",
         "removal": "delete"
     },
@@ -1504,6 +1590,7 @@
     },
     {
         "id": "tv.fubo.mobile.vpl",
+        "label": "fuboTV",
         "description": "fuboTV (https://play.google.com/store/apps/details?id=tv.fubo.mobile)\nLets you Watch live Sports, TV Shows, Movies & News\n",
         "removal": "delete"
     },
