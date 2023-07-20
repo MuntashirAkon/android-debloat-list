@@ -1,12 +1,22 @@
 [
     {
         "id": "android.auto_generated_rro_product__",
-        "description": "",
+        "label": "android.auto_generated_rro_product__",
+        "description": "RRO = Runtime Resources Overlay. Used by OEMs to customize look and feel of certain applications.",
+        "web": [
+            "https://source.android.com/devices/architecture/rros",
+            "https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708"
+        ],
         "removal": "caution"
     },
     {
         "id": "android.auto_generated_rro_vendor__",
-        "description": "",
+        "label": "android.auto_generated_rro_vendor__",
+        "description": "RRO = Runtime Resources Overlay. Used by OEMs to customize look and feel of certain applications.",
+        "web": [
+            "https://source.android.com/devices/architecture/rros",
+            "https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708"
+        ],
         "removal": "caution"
     },
     {
@@ -26,13 +36,33 @@
     },
     {
         "id": "com.adups.fota",
-        "description": "",
-        "removal": "caution"
+        "label": "Wireless Update",
+        "description": "(AKA System Update) FOTA = Firmware Over-the-air. Has a history of spying its users. If the installed version is below 5.4.x, it must be uninstalled.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.adups.fota.sysoper",
-        "description": "",
-        "removal": "caution"
+        "label": "UpgradeSys",
+        "description": "FOTA = Firmware Over-the-air. Has a history of spying its users.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.fw.upgrade.sysoper",
+        "label": "UpgradeSys",
+        "description": "FOTA = Firmware Over-the-air. Has a history of spying its users.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.android.bluetooth.overlay.common",
@@ -67,14 +97,19 @@
     {
         "id": "com.android.hotspot2.osulogin",
         "label": "OsuLogin",
-        "description": "",
+        "description": "Provides wifi tethering i.e. lets you share your mobile device's Internet connection with other devices.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Tethering"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.android.launcher3",
-        "label": "System Launcher",
-        "description": "",
-        "removal": "caution"
+        "label": "Quickstep",
+        "description": "The AOSP launcher. OEMs frequently use this to deliver their own launcher.",
+        "removal": "caution",
+        "warning": "You need to install another launcher before removing it.",
+        "suggestions": "launchers"
     },
     {
         "id": "com.android.networkstack.inprocess",
@@ -754,33 +789,51 @@
     },
     {
         "id": "com.sec.android.smartfpsadjuster",
-        "description": "",
-        "removal": "caution"
+        "label": "SmartFPSAdjuster",
+        "description": "Adjusts FPS automatically in Samsung phones? Safe to delete.",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/G985F_Q.pdf"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.sec.android.systemupdate",
-        "description": "",
-        "removal": "caution"
+        "label": "SystemUpdate",
+        "description": "System updater for Samsung phones.",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/G985F_Q.pdf"
+        ],
+        "removal": "caution",
+        "warning": "Updates will stop working."
     },
     {
         "id": "com.sec.factory.cameralyzer",
-        "description": "",
-        "removal": "caution"
+        "label": "Cameralyzer",
+        "description": "A factory testing app that allows manufacturers to check for defects in the camera, had a security issue in the past",
+        "web": [
+            "https://techforesta.com/cameralyzer/",
+            "https://docs.samsungknox.com/CCMode/G985F_Q.pdf"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.sec.location.nfwlocationprivacy",
+        "label": "Service provider location",
         "description": "",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.sec.mhs.smarttethering",
+        "label": "SmartTethering",
         "description": "",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.sec.unifiedwfc",
-        "description": "",
-        "removal": "caution"
+        "label": "Samsung Wi-Fi Calling",
+        "description": "Wi-Fi calling app for Samsung.",
+        "removal": "caution",
+        "warning": "Wi-Fi calling may not work without the app"
     },
     {
         "id": "com.sonymobile.devicesecurity.service",
@@ -799,8 +852,9 @@
     },
     {
         "id": "com.srin.indramayu",
-        "description": "",
-        "removal": "caution"
+        "label": "Samsung Gift Indonesia",
+        "description": "Special application from Samsung that provides special offers and privileges for Indonesian users",
+        "removal": "delete"
     },
     {
         "id": "com.st.nfc.dta.mobile",
@@ -1134,8 +1188,10 @@
     },
     {
         "id": "com.tct.soundrecorder",
-        "description": "",
-        "removal": "caution"
+        "label": "Sound Recorder",
+        "description": "An audio and screen recorder, lets you change voice.",
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.tct.systemservice",
@@ -1154,18 +1210,23 @@
     },
     {
         "id": "com.tct.weather",
-        "description": "",
-        "removal": "caution"
+        "label": "Weather Forecast",
+        "description": "Weather forecasting app.",
+        "removal": "replace"
     },
     {
         "id": "com.tct.weather.a_overlay",
-        "description": "",
-        "removal": "caution"
+        "label": "com.tct.weather.a_overlay",
+        "description": "Overlay for com.tct.weather. Usage is not known.",
+        "removal": "delete"
     },
     {
         "id": "com.tct.wfcwebiew",
-        "description": "",
-        "removal": "caution"
+        "label": "WfcWebView",
+        "description": "WebView app for TCL",
+        "removal": "caution",
+        "warning": "Make sure to have another WebView before removing it.",
+        "suggestions": "webviews"
     },
     {
         "id": "com.ts.setupwizard.overlay.overlay",

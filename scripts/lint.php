@@ -22,12 +22,14 @@ foreach (scandir(REPO_DIR) as $filename) {
     }
     $file = REPO_DIR . '/' . $filename;
     $type = substr($filename, 0, -5);
-    $list = json_decode(file_get_contents($file), true);
-    if ($list === null) {
-        fprintf($lint_writer, "Malformed file: $file\n");
+    try {
+        $list = json_decode(file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
+    } catch (JsonException $e) {
+        fprintf($lint_writer, "Unable to parse %s: %s\n", $filename, $e->getMessage());
         ++$error_count;
         continue;
-    } else fprintf($lint_writer, "Adding $filename\n");
+    }
+    fprintf($lint_writer, "Adding $filename\n");
     foreach ($list as $item) {
         $error_count += validate_bloatware_item($item);
     }
@@ -39,12 +41,14 @@ foreach (scandir(SUGGESTIONS_DIR) as $filename) {
     }
     $suggestion_file = SUGGESTIONS_DIR . '/' . $filename;
     $suggestion_id = substr($filename, 0, -5);
-    $single_suggestion_list = json_decode(file_get_contents($suggestion_file), true);
-    if ($single_suggestion_list === null) {
-        fprintf($lint_writer, "Malformed file: $suggestion_file\n");
+    try {
+        $single_suggestion_list = json_decode(file_get_contents($suggestion_file), true, 512, JSON_THROW_ON_ERROR);
+    } catch (JsonException $e) {
+        fprintf($lint_writer, 'Unable to parse %s: %s', $filename, $e->getMessage());
         ++$error_count;
         continue;
-    } else fprintf($lint_writer, "Adding $filename\n");
+    }
+    fprintf($lint_writer, "Adding $filename\n");
     foreach ($single_suggestion_list as $suggestion) {
         $error_count += validate_suggestion_item($suggestion);
     }
@@ -73,9 +77,13 @@ function validate_bloatware_item(array $item): int {
         ++$error_count;
     }
     // `label` is an optional string
-    if (isset($item['label']) && gettype($item['label']) != 'string') {
-        fprintf($lint_writer, "{$item['id']}: Expected `label` field to be a string, found: " . gettype($item['label']) . "\n");
-        ++$error_count;
+    if (isset($item['label'])) {
+        if (gettype($item['label']) != 'string') {
+            fprintf($lint_writer, "{$item['id']}: Expected `label` field to be a string, found: " . gettype($item['label']) . "\n");
+            ++$error_count;
+        }
+    } else {
+        fprintf(STDERR, "{$item['id']}: Missing `label`\n");
     }
     // `dependencies` is an optional string[]
     if (isset($item['dependencies'])) {
