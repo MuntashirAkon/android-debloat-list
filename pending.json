@@ -66,11 +66,13 @@
     },
     {
         "id": "com.android.hotspot2.osulogin",
+        "label": "OsuLogin",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.android.launcher3",
+        "label": "System Launcher",
         "description": "",
         "removal": "caution"
     },
@@ -181,11 +183,13 @@
     },
     {
         "id": "com.google.android.connectivity.resources",
+        "label": "System Connectivity Resources",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.google.android.networkstack.tethering",
+        "label": "Tethering",
         "description": "Used for USB and/or Wi-Fi tethering?",
         "removal": "caution"
     },
@@ -221,6 +225,7 @@
     },
     {
         "id": "com.google.android.providers.media.module",
+        "label": "Media",
         "description": "Media Storage\nIn Android 11 this is literally what provides access to files.\nSafe to disable, but NOT recommended; breaks file browsers and other forms of file access.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
         "removal": "caution"
     },
@@ -356,6 +361,7 @@
     },
     {
         "id": "com.oneplus.screenshot",
+        "label": "Screenshot",
         "description": "",
         "removal": "caution"
     },
@@ -411,6 +417,7 @@
     },
     {
         "id": "com.qualcomm.qti.simcontacts",
+        "label": "SimContacts",
         "description": "",
         "removal": "caution"
     },
@@ -421,6 +428,7 @@
     },
     {
         "id": "com.qualcomm.qti.xrvd.service",
+        "label": "XRVD",
         "description": "Possibly related to Qualcomm Extended Reality (XR)\nhttps://www.qualcomm.com/products/xr-vr-ar",
         "removal": "caution"
     },
