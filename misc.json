@@ -590,7 +590,7 @@
         "web": [
             "https://beta.pithus.org/report/cc0ba95f0d0867ba6d883275cd2f6c4aa252ebc874f15f1ee240bb5bac330578"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.heytap.mcs",
@@ -605,7 +605,7 @@
         "web": [
             "https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e"
         ],
-        "removal": "delete",
+        "removal": "delete"
     },
     {
         "id": "com.huaqin.FM",
@@ -881,19 +881,19 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.excel"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.office.officehub",
         "label": "Microsoft Office Mobile",
         "description": "Includes the complete Word, PowerPoint, and Excel apps to offer a convenient office experience on the go.",
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.office.officehubhl",
         "label": "Office Mobile hub",
         "description": "Office Mobile hub (on Samsung Phone)\nIncludes the complete Word, PowerPoint, and Excel apps to offer a convenient office experience on the go.",
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.office.officehubrow",
@@ -902,7 +902,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.office.onenote",
@@ -931,7 +931,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.office.word",
@@ -940,7 +940,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.word"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "com.microsoft.skydrive",
@@ -1595,7 +1595,7 @@
             "https://support.oppo.com/uk/answer/?aid=neu9139",
             "https://beta.pithus.org/report/d017d4f6623bf8e71456e6bffe551ef6f3ff3095c62cef3df6d968354898c097"
         ],
-        "removal": "delete",
+        "removal": "delete"
     },
     {
         "id": "com.redteamobile.roaming.deamon",
@@ -1604,7 +1604,7 @@
             "com.redteamobile.roaming"
         ],
         "description": "Redtea Roaming service deamon for com.redteamobile.roaming",
-        "removal": "delete",
+        "removal": "delete"
     },
     {
         "id": "com.remotefairy4",
@@ -2069,7 +2069,7 @@
             "https://play.google.com/store/apps/details?id=de.axelspringer.yana.zeropage"
         ],
         "removal": "replace",
-        "suggestions": "rss_readers",
+        "suggestions": "rss_readers"
     },
     {
         "id": "flipboard.app",
@@ -2275,7 +2275,7 @@
             "https://en.wikipedia.org/wiki/CAcert.org"
         ],
         "removal": "unsafe",
-        "warning": "Probably a bad idea to disable; could mess with device security.",
+        "warning": "Probably a bad idea to disable; could mess with device security."
     },
     {
         "id": "zpub.res",
