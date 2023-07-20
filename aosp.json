@@ -2,7 +2,7 @@
     {
         "id": "android.auto_generated_rro__",
         "label": "android.auto_generated_rro__",
-        "description": "rro = Runtime Resources Overlay.\nChanges values of a package config, based in the overlay definitions. Overlays are heavily used by OEMs to customize the look and feel of Android.",
+        "description": "RRO = Runtime Resources Overlay. Changes values of a package config, based in the overlay definitions. Overlays are heavily used by OEMs to customize the look and feel of Android.",
         "web": [
             "https://source.android.com/devices/architecture/rros",
             "https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708"

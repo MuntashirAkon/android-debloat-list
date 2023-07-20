@@ -12,7 +12,7 @@
     {
         "id": "cci.usage",
         "label": "My Consumer Cellular",
-        "description": "Lets you manage your Consumer Cellular account, track your usage, pay your bill.\nConsumer Cellular is an American postpaid mobile virtual network operator",
+        "description": "AKA My CC. Lets you manage your Consumer Cellular account, track your usage, pay your bill.\nConsumer Cellular is an American postpaid mobile virtual network operator",
         "web": [
             "https://play.google.com/store/apps/details?id=cci.usage",
             "https://en.wikipedia.org/wiki/Consumer_Cellular"
@@ -64,7 +64,7 @@
     },
     {
         "id": "com.amazon.aa",
-        "label": "Amazon Assistant app",
+        "label": "Amazon Assistant",
         "description": "A spyware that shows you recommended products available on Amazon and price compare as you shop across the web.",
         "web": [
             "https://www.gadgetguy.com.au/amazon-assistant-spies-on-you/"
@@ -185,7 +185,7 @@
     },
     {
         "id": "com.audible.application",
-        "label": "Audible: Audio Entertainment",
+        "label": "Audible",
         "description": "Stream Audible Audiobooks and Podcasts",
         "web": [
             "https://play.google.com/store/apps/details?id=com.audible.application",
@@ -579,14 +579,14 @@
     },
     {
         "id": "com.heytap.accessory",
-        "label": "com.heytap.accessory",
+        "label": "Quick Connect",
         "dependencies": [
             "com.heytap.mcs"
         ],
         "required_by": [
             "com.oplus.synergy"
         ],
-        "description": "Accessory Framework\nQuick device connect feature. Can be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> Quick device connect) if not wanted.\nAllows you to search for nearby devices and connect to them without having to go through the Bluetooth or WiFi Direct settings' Ghosh! 32 permissions just for this?",
+        "description": "AKA Accessory Framework\nQuick device connect feature. Can be disabled via hidden setting (Settings -> Search 'App Enhancement Services' -> Quick device connect) if not wanted.\nAllows you to search for nearby devices and connect to them without having to go through the Bluetooth or WiFi Direct settings' Ghosh! 32 permissions just for this?",
         "web": [
             "https://beta.pithus.org/report/cc0ba95f0d0867ba6d883275cd2f6c4aa252ebc874f15f1ee240bb5bac330578"
         ],
@@ -594,14 +594,14 @@
     },
     {
         "id": "com.heytap.mcs",
-        "label": "com.heytap.mcs",
+        "label": "System Messages",
         "required_by": [
             "com.heytap.cloud",
             "com.heytap.market",
             "com.oplus.synergy",
             "com.heytap.accessory"
         ],
-        "description": "System messages\nMobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background",
+        "description": "Mobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background",
         "web": [
             "https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e"
         ],
@@ -654,7 +654,7 @@
     },
     {
         "id": "com.infraware.polarisoffice5",
-        "label": "com.infraware.polarisoffice5",
+        "label": "Polaris Office",
         "description": "Polaris Office from US Infraware Inc company (Microsoft Office like)\nhttps://play.google.com/store/apps/details?id=com.infraware.office.link",
         "web": [
             "https://en.wikipedia.org/wiki/Polaris_Office"
@@ -692,7 +692,7 @@
     },
     {
         "id": "com.king.candycrush4",
-        "label": "Candy Crush Friends Saga",
+        "label": "Candy Crush Friends",
         "description": "A Candy Crush game (com.king.candycrushsaga) variant app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.king.candycrush4",
@@ -714,7 +714,7 @@
     },
     {
         "id": "com.king.candycrushsodasaga",
-        "label": "Candy Crush Soda Saga",
+        "label": "Candy Crush Soda",
         "description": "A Candy Crush game (com.king.candycrushsaga) variant app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.king.candycrushsodasaga",
@@ -735,7 +735,7 @@
     },
     {
         "id": "com.lookout",
-        "label": "Lookout Security and Antivirus",
+        "label": "Lookout",
         "description": "Mobile Security & Antivirus by Lookout",
         "web": [
             "https://play.google.com/store/apps/details?id=com.lookout"
@@ -750,25 +750,25 @@
     },
     {
         "id": "com.mediatek.atmwifimeta",
-        "label": "com.mediatek.atmwifimeta",
+        "label": "ATMWifiMeta",
         "description": "wifi data logger you don't want",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.callrecorder",
-        "label": "com.mediatek.callrecorder",
+        "label": "Call Recorder",
         "description": "This is not the kind of feature expected from a Soc company.\nIf you remove this I guess you will not be able to record your calls from the stock dialer\nCan someone share the apk and verify this?",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.engineermode",
-        "label": "com.mediatek.engineermode",
+        "label": "EngineerMode",
         "description": "Engineer mode you can access by dialing a secret code (*#*#3646633#*#* on some Xiaomi phones for instance)\nIt enables you to access the debug/logged data and some hidden firmware settings.",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.gpslocationupdate",
-        "label": "com.mediatek.gpslocationupdate",
+        "label": "GPSLocationUpdate",
         "description": "I wonder if it is really only a logging app.\nCan someone try to remove it and use a GPS app to see if it still works?\nCan someone share the apk? (from a Xiaomi/Huawei phone)",
         "removal": "caution"
     },
@@ -790,7 +790,7 @@
     },
     {
         "id": "com.mediatek.location.lppe.main",
-        "label": "com.mediatek.location.lppe.main",
+        "label": "LPPe Service",
         "description": "LPPE = LTE Positioning Protocol enhancements/extensions (LTE = \"4G\")\nPositioning and assistance protocol between E-SMLC (mobile location center) and UE (User Equipement = phone)\nI don't know the app has the permission to read SMS",
         "web": [
             "https://www.gpsworld.com/wirelessexpert-advice-positioning-protocol-next-gen-cell-phones-11125/"
@@ -808,7 +808,7 @@
     },
     {
         "id": "com.mediatek.mtklogger",
-        "label": "com.mediatek.mtklogger",
+        "label": "MTKLogger",
         "description": "Logs debug data. Has a lot of permissions and run in background all the time.\nDon't keep useless apps: reduce the attack surface\nVulnerability found in this app in 2016",
         "web": [
             "https://nvd.nist.gov/vuln/detail/CVE-2016-10135"
@@ -823,7 +823,7 @@
     },
     {
         "id": "com.mediatek.omacp",
-        "label": "com.mediatek.omacp",
+        "label": "Omacp",
         "description": "omacp = OMA Client Provisioning. A protocol specified by the Open Mobile Alliance (OMA).\nConfiguration messages parser. Used for provisioning APN settings to devices via SMS.\nIn my case, it was automatic and I never needed configuration messages.\nMaybe it's useful if carriers change their APN. But you can still change the config manually, it's not difficult.\nDunno why Mediatek handles this kind of things. Safe to remove. At worst, you'll need to manually config your APN.\nOMACP can be abused.",
         "web": [
             "https://research.checkpoint.com/2019/advanced-sms-phishing-attacks-against-modern-android-based-smartphones/",
@@ -849,8 +849,9 @@
     {
         "id": "com.mediatek.wfo.impl",
         "label": "com.mediatek.wfo.impl",
-        "description": "According to olorin (https://www.olorin.me/2019/09/08/debloating-the-umidigi-f1-play/) it's a MediaTek’s default fingerprint app (and he removed it).\nCan someone confirm what this package does?\nRemember that any pre-installed apps you don't actually need just increase the surface attack.\nAny app co-located on the device could modify a system property through an exported interface without proper authorization.\nVulnerability found in 2019",
+        "description": "According to olorin, it's a MediaTek’s default fingerprint app (and he removed it).\nCan someone confirm what this package does?\nRemember that any pre-installed apps you don't actually need just increase the surface attack.\nAny app co-located on the device could modify a system property through an exported interface without proper authorization.\nVulnerability found in 2019",
         "web": [
+            "https://www.olorin.me/2019/09/08/debloating-the-umidigi-f1-play/",
             "https://nvd.nist.gov/vuln/detail/CVE-2019-15368"
         ],
         "removal": "delete"
@@ -898,7 +899,7 @@
     {
         "id": "com.microsoft.office.officehubrow",
         "label": "Microsoft 365 (Office)",
-        "description": "Word, Excel,PowerPoint, PDF scanner/editor, Cloud services...all in one app",
+        "description": "Word, Excel, PowerPoint, PDF scanner/editor, Cloud services...all in one app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow"
         ],
@@ -998,7 +999,7 @@
     },
     {
         "id": "com.netflix.partner.activation",
-        "label": "com.netflix.partner.activation",
+        "label": "PartnerNetflixActivation",
         "description": "Apk file name: By_3rd_NetflixActivationOverSeas\nSome form of activation of Netflix account, subscription or app? Might be what puts the Netflix app icon on the homescreen. Not sure.\nNetflix app works without this.",
         "removal": "delete"
     },
@@ -1083,7 +1084,7 @@
     },
     {
         "id": "com.pandora.android",
-        "label": "Pandora - Music & Podcasts",
+        "label": "Pandora",
         "description": "Very intrusive music and podcasts app.\nExodus report: 17 permissions and 14 trackers",
         "web": [
             "https://play.google.com/store/apps/details?id=com.pandora.android",
@@ -1149,7 +1150,7 @@
     {
         "id": "com.qti.confuridialer",
         "label": "Conference URI dialer",
-        "description": "Conference call service for digital signal(SIP / VoIP).",
+        "description": "Conference call service for digital signal (SIP/VoIP).",
         "web": [
             "https://devcondition.com/article/removing-unneeded-miui-applications/"
         ],
@@ -1359,13 +1360,13 @@
     },
     {
         "id": "com.qualcomm.qti.performancemode",
-        "label": "com.qualcomm.qti.performancemode",
-        "description": "Performance Mode\nRuns on boot.\nProbably related to CPU/SoC performance profiles.\nOneplus 10 Pro has an option called \"High performance mode\" in Settings->Battery->Advanced, which has the description:\n\"The system always operates in a high performance mode, but it will increase power consumption.\"\nI'm guessing that option triggers this package. This is probably a feature on many Qualcomm chips, but I don't think all OEMs expose it in the settings.",
+        "label": "Performance Mode",
+        "description": "Runs on boot. Probably related to CPU/SoC performance profiles.\nOneplus 10 Pro has an option called \"High performance mode\" in Settings->Battery->Advanced, which has the description:\n\"The system always operates in a high performance mode, but it will increase power consumption.\"\nI'm guessing that option triggers this package. This is probably a feature on many Qualcomm chips, but I don't think all OEMs expose it in the settings.",
         "removal": "caution"
     },
     {
         "id": "com.qualcomm.qti.poweroffalarm",
-        "label": "com.qualcomm.qti.poweroffalarm",
+        "label": "PowerOffAlarm",
         "description": "Probably what enables alarms to start the device from an off state.\nRuns on boot and when you open a clock app.",
         "removal": "caution"
     },
@@ -1436,8 +1437,8 @@
     },
     {
         "id": "com.qualcomm.qti.seccamservice",
-        "label": "com.qualcomm.qti.seccamservice",
-        "description": "SecCamService, stands for Secure Camera Service?\nSupposedly acts as a bridge between camera hardware and SoC. Seems like this package is what a Qualcomm SoC uses to access the camera hardware.\nWill probably break camera functionality if disabled.",
+        "label": "SecCamService",
+        "description": "Stands for Secure Camera Service?\nSupposedly acts as a bridge between camera hardware and SoC. Seems like this package is what a Qualcomm SoC uses to access the camera hardware.\nWill probably break camera functionality if disabled.",
         "removal": "caution"
     },
     {
@@ -1463,7 +1464,7 @@
     },
     {
         "id": "com.qualcomm.qti.uceShimService",
-        "label": "com.qualcomm.qti.uceShimService",
+        "label": "uceShimService",
         "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.",
         "web": [
             "https://fr.wikipedia.org/wiki/Session_Initiation_Protocol"
@@ -1472,7 +1473,7 @@
     },
     {
         "id": "com.qualcomm.qti.uceshimservice",
-        "label": "com.qualcomm.qti.uceshimservice",
+        "label": "uceShimService",
         "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.",
         "web": [
             "https://fr.wikipedia.org/wiki/Session_Initiation_Protocol"
@@ -1541,8 +1542,8 @@
     },
     {
         "id": "com.qualcomm.wfd.service",
-        "label": "com.qualcomm.wfd.service",
-        "description": "Wfd Service\nProvides a way to cast your screen to a TV (Miracast)",
+        "label": "Wfd Service",
+        "description": "Provides a way to cast your screen to a TV (Miracast)",
         "web": [
             "https://en.wikipedia.org/wiki/Miracast"
         ],
@@ -1628,7 +1629,7 @@
     },
     {
         "id": "com.rhapsody",
-        "label": "Napster Music",
+        "label": "Napster",
         "description": "Napster music streaming app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.rhapsody",
@@ -1652,7 +1653,7 @@
     },
     {
         "id": "com.rlk.weathers",
-        "label": "Daily Weather",
+        "label": "Weather",
         "description": "Weather app with ads and trackers. Can access phone calls and SMS.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.rlk.weathers",
@@ -1689,7 +1690,7 @@
     },
     {
         "id": "com.servicemagic.consumer",
-        "label": "Angi: Hire Home Service Pros",
+        "label": "Angi",
         "description": "HomeAdvisor: Contractors for Home Improvement\nHelps you find local contractors from the service Home Advisor network\nHomeAdvisor collects users data when a request is made and then sells that data to local contractors in exchange for money.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.servicemagic.consumer",
@@ -1699,7 +1700,7 @@
     },
     {
         "id": "com.setk.widget",
-        "label": "Galaxy Bizz",
+        "label": "Bizz",
         "description": "Recommands you stuff to do/buy in your nearby area",
         "web": [
             "https://play.google.com/store/apps/details?id=com.setk.widget"
@@ -1775,7 +1776,7 @@
     },
     {
         "id": "com.staplegames.blocksClassicSGGP",
-        "label": "Block Puzzle",
+        "label": "Blocks",
         "description": "Preinstalled game on some Samsung phones.\nExodus report: 9 permissions, 26 trackers",
         "web": [
             "https://play.google.com/store/apps/details?id=com.staplegames.blocksClassicSGGP",
@@ -1825,8 +1826,8 @@
     },
     {
         "id": "com.telenav.app.android.scout_us",
-        "label": "Scout Maps & GPS Navigation",
-        "description": "Bad GPS with on top of that bad chat features(USA only)",
+        "label": "Scout",
+        "description": "Bad GPS with on top of that bad chat features (USA only)",
         "web": [
             "https://play.google.com/store/apps/details?id=com.telenav.app.android.scout_us",
             "https://www.scoutgps.com/"
@@ -1847,7 +1848,7 @@
     },
     {
         "id": "com.tiqiaa.remote",
-        "label": "Universal TV Remote-ZaZa Remot",
+        "label": "Zaza Remote",
         "description": "A Universal infrared control app full of trackers and with unecessary permissions.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.tiqiaa.remote",
@@ -1941,7 +1942,7 @@
     },
     {
         "id": "com.turner.cnvideoapp",
-        "label": "Cartoon Network App",
+        "label": "CN",
         "description": "Award winning Cartoon Network App",
         "web": [
             "https://play.google.com/store/apps/details?id=com.turner.cnvideoapp",
@@ -1992,7 +1993,7 @@
     },
     {
         "id": "com.wb.goog.got.conquest",
-        "label": "Game of Thrones",
+        "label": "Game of Thrones: Conquest",
         "description": "Official GOT strategy building game",
         "web": [
             "https://play.google.com/store/apps/details?id=com.wb.goog.got.conquest"
@@ -2001,7 +2002,7 @@
     },
     {
         "id": "com.whatsapp",
-        "label": "WhatsApp Messenger",
+        "label": "WhatsApp",
         "description": "Popular messaging app from Meta",
         "web": [
             "https://play.google.com/store/apps/details?id=com.whatsapp",
@@ -2012,7 +2013,7 @@
     },
     {
         "id": "com.yahoo.mobile.client.android.liveweather",
-        "label": "Yahoo Weather",
+        "label": "Weather",
         "description": "All of their services are crappy so it's not so difficult to boycott",
         "web": [
             "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.weather",
@@ -2022,7 +2023,7 @@
     },
     {
         "id": "com.yellowpages.android.ypmobile",
-        "label": "YP - The Real Yellow Pages",
+        "label": "Yellow Pages",
         "description": "Business related app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.yellowpages.android.ypmobile"
@@ -2052,8 +2053,8 @@
     },
     {
         "id": "com.zhiliaoapp.musically",
-        "label": "Yelp",
-        "description": "Lets users post reviews and rate businesses.\nTikTok App",
+        "label": "TikTok",
+        "description": "(Previously, Yelp.) Lets users post reviews and rate businesses.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
             "https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation",
@@ -2063,8 +2064,8 @@
     },
     {
         "id": "de.axelspringer.yana.zeropage",
-        "label": "Upday news for Samsung",
-        "description": "New app preinstalled on Samsung smartphones",
+        "label": "upday",
+        "description": "News app preinstalled on some smartphones",
         "web": [
             "https://play.google.com/store/apps/details?id=de.axelspringer.yana.zeropage"
         ],
@@ -2106,7 +2107,7 @@
     },
     {
         "id": "in.amazon.mShop.android.shopping",
-        "label": "Amazon India Shop, Pay, miniTV",
+        "label": "Amazon",
         "description": "Amazon shopping app for India",
         "web": [
             "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping"
@@ -2126,7 +2127,7 @@
     },
     {
         "id": "in.playsimple.tripcross",
-        "label": "Crossword Jam",
+        "label": "CrossWord Jam",
         "description": "Preinstalled game on some Samsung phones. 12 permissions, 25 trackers",
         "web": [
             "https://play.google.com/store/apps/details?id=in.playsimple.tripcross",
@@ -2136,7 +2137,7 @@
     },
     {
         "id": "in.playsimple.wordtrip",
-        "label": "World Trip",
+        "label": "Word Trip",
         "description": "Word Count & word streak puzzle game. 19 trackers, 11 permissions",
         "web": [
             "https://play.google.com/store/apps/details?id=in.playsimple.wordtrip",
@@ -2192,7 +2193,7 @@
     },
     {
         "id": "net.supertreat.solitaire",
-        "label": "Solitaire Grand Harvest",
+        "label": "Solitaire",
         "description": "Preinstalled game on some Samsung phones. 8 permissions, 17 trackers",
         "web": [
             "https://play.google.com/store/apps/details?id=net.supertreat.solitaire",

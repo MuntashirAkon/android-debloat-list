@@ -31,6 +31,7 @@
     },
     {
         "id": "android.autoinstalls.config.oneplus",
+        "label": "Device configuration",
         "description": "Device configuration\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
@@ -3493,6 +3494,7 @@
     },
     {
         "id": "com.oneplus.calculator",
+        "label": "Calculator",
         "description": "Stock Oneplus Calculator app.\n",
         "removal": "replace",
         "suggestions": "calculators"
@@ -3636,6 +3638,7 @@
     },
     {
         "id": "com.oneplus.deskclock",
+        "label": "Clock",
         "description": "Clock\nThe stock Oneplus clock app.",
         "removal": "replace"
     },
@@ -4017,21 +4020,31 @@
     },
     {
         "id": "com.oplus.appplatform",
+        "label": "App Services",
         "description": "App Services\nMight be renamed package of com.heytap.appplatform which is related to Oppo's Heytap account services. Provides a RomUpdateService. Probably not safe to remove.\n\nPithus analysis: https://beta.pithus.org/report/2025ceb69d9379a01771de71ff00051eb0f0c7f44226a72c2066db9649b6dcd2",
         "removal": "caution"
     },
     {
+        "id": "com.oplus.apprecover",
+        "label": "Recover system apps",
+        "description": "Provides the ability to restore system apps through settings.",
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.athena",
+        "label": "Athena",
         "description": "OnePlus background process manager. Removing it will solve the notification delay you can have but will disable the virtual ram expansion feature (swap RAM to disk) and the 'close all' button in the 'recent apps' page.\nRemoving this app may deteriorate battery performance.",
         "removal": "caution"
     },
     {
         "id": "com.oplus.atlas",
+        "label": "atlasService",
         "description": "Atlas Service\nSeems to be a Sound provider. Performs a lot of actions upon audio related events. Still not clear if it is really necessary. Runs at boot and stay in background. Pithus analysis: https://beta.pithus.org/report/6d0f9433431cd34a8e9aaef99b329b3623118a1699033be36032f64653dab3d0",
         "removal": "replace"
     },
     {
         "id": "com.oplus.cosa",
+        "label": "App Enhancement Services",
         "required_by": [
             "com.oneplus.gamespace"
         ],
@@ -4044,16 +4057,19 @@
     },
     {
         "id": "com.oplus.crashbox",
+        "label": "CrashBox",
         "description": "Sends system failure data to developers. Automatically runs at boot.\n\nPithus analysis: https://beta.pithus.org/report/6031048af7434e9cfe3435244dd105ac70e3bfe1f25ecdcca9b2a40b356590a2",
         "removal": "delete"
     },
     {
         "id": "com.oplus.exsystemservice",
+        "label": "System Service",
         "description": "Lots of permissions. The screenshot function will stop working when the app is disabled.",
         "removal": "caution"
     },
     {
         "id": "com.oplus.games",
+        "label": "Game Assistant",
         "description": "Games (https://play.google.com/store/apps/details?id=com.oplus.games)\nOccasionally runs in the background as part of the system.\nAllows you to launch your game library, check game stats(such as playtime), activate game overlay features and performance settings to tweak game/battery performance during gaming.\nThis is the only way to access the recording buffer functionality (records the last X seconds into RAM and saves them when you tap save), so keep enabled if you need that or any of the other features.Note: new package name of com.oneplus.gamespace (since the merge between Oppo and OnePlus. Oplus = Oppo+OnePlus",
         "removal": "delete"
     },
@@ -4064,16 +4080,19 @@
     },
     {
         "id": "com.oplus.lfeh",
+        "label": "OplusLFEHer",
         "description": "Seems to be related to the the logging suite.\n\nPithus analysis: https://beta.pithus.org/report/0542dbdbe10fd3a868ea497ec92670619670f574bbce37d949975dc109cd316f",
         "removal": "delete"
     },
     {
         "id": "com.oplus.logkit",
+        "label": "Feedback",
         "description": "Logs service and bug reporting app\nSafe to remove if you don't report bugs to OEM",
         "removal": "delete"
     },
     {
         "id": "com.oplus.multiapp",
+        "label": "App Cloner",
         "description": "App Cloner. Allows to clone an app. Have access to all installed apps. Is bundled with OnePlus analytics\n\nPithus analysis: https://beta.pithus.org/report/8a1d0783debb405ebadb3fc52507de5f69ecb55f499732b7331dac74ad69ffd7",
         "removal": "replace"
     },
@@ -4089,11 +4108,13 @@
     },
     {
         "id": "com.oplus.securitykeyboard",
+        "label": "Secure Keyboard",
         "description": "Secure Keyboard\nKeyboard that appears only when typing a password on apps and webpages, if enabled on Keyboard and Input settings",
         "removal": "delete"
     },
     {
         "id": "com.oplus.sos",
+        "label": "Emergency SOS",
         "description": "Emergency Alert service by clicking power button 5 times. It will automatically call contacts (and/or send a SMS) you designated as emergency contacts",
         "removal": "replace"
     },
@@ -4104,6 +4125,7 @@
     },
     {
         "id": "com.oplus.stdid",
+        "label": "StdID",
         "description": "StdID\nNeeded for tracking battery usage on per app basis. Dependency for GameSpace\n\n [MORE INFO NEEDED / APK NEEDED]",
         "removal": "replace",
         "required_by": [
@@ -4113,6 +4135,7 @@
     },
     {
         "id": "com.oplus.synergy",
+        "label": "HeySynergy",
         "description": "HeySynergy\nProvides the screencasting feature and OPPO's PC Connect (https://connect.oppo.com/). Don't bother downloading 'PC Connect Desktop' if the 'Phone Connect' Quick Settings tile isn't available on your phone.\n\nPithus analysis: https://beta.pithus.org/report/16d9ea536683291fbffe46dedd3c655379b5fcfdb473ec1cab5290cf5af27fba",
         "removal": "replace",
         "dependencies": [
@@ -4122,6 +4145,7 @@
     },
     {
         "id": "com.oplus.wifibackuprestore",
+        "label": "WifiBackupRestore",
         "description": "Lets you backup your wifi credentials to the cloud. This app has obviously access to your wifi credential and have the INTERNET permission.\n\nPithus analysis: https://beta.pithus.org/report/76e43cf4dc55452f39d9b6117074f4072189d3c8ad9cb295a86e49438545f7aa",
         "removal": "delete"
     },
@@ -7457,6 +7481,7 @@
     },
     {
         "id": "net.oneplus.weather",
+        "label": "Weather",
         "description": "OnePlus Weather (https://play.google.com/store/apps/details?id=net.oneplus.weather)\nOccasionally runs in the background; I think it runs every now and then to change the app icon to current weather conditions.",
         "removal": "delete"
     },
