@@ -21,7 +21,7 @@
     },
     {
         "id": "co.sitic.pp",
-        "label": "co.sitic.pp",
+        "label": "SYSdll",
         "description": "Designed to remotely lock the phone (by sending a simple SMS) in case you don't pay your bill \nThis app was pre-installed on phone not served by that carrier (América Móvil) from South America.\nNormally you should not have this app anymore because it was removed by Nokia during an Android 10 update.\n",
         "web": [
             "https://www.reddit.com/r/Android/comments/fde3l6/3rd_party_telemetry_found_in_nokia_smartphones/fjh4zbx/?context=3"
@@ -43,7 +43,7 @@
     },
     {
         "id": "com.aaa.android.discounts",
-        "label": "AAA Mobile",
+        "label": "AAA",
         "description": "AAA = American Automobile Association\nKind of GPS that helps you find Point of interest (POI) like hotels, restaurants, and car repair facilities from the AAA databases.\nNOTE : You’ll have to sign up for an AAA membership to enjoy all of the features and functionality of the Android app.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.aaa.android.discounts"
@@ -52,7 +52,7 @@
     },
     {
         "id": "com.aaa.android.discounts.vpl",
-        "label": "com.aaa.android.discounts.vpl",
+        "label": "AAA",
         "description": "AAA = American Automobile Association\nKind of GPS that helps you find Point of interest (POI) like hotels, restaurants, and car repair facilities from the AAA databases.\nNOTE : You’ll have to sign up for an AAA membership to enjoy all of the features and functionality of the Android app.",
         "removal": "delete"
     },
@@ -82,8 +82,8 @@
     },
     {
         "id": "com.amazon.appmanager",
-        "label": "com.amazon.appmanager",
-        "description": "Mobile Device Information Provider\nSeems related to Kindle",
+        "label": "Mobile Device Information Provider",
+        "description": "Maybe related to Kindle",
         "removal": "delete"
     },
     {
@@ -231,8 +231,8 @@
     },
     {
         "id": "com.cequint.ecid",
-        "label": "com.cequint.ecid",
-        "description": "Caller ID from Cequint\nNever trust a company which promotes call ID/spam blocking features.\nCequint was acquired by TNS (https://tnsi.com/)",
+        "label": "City ID",
+        "description": "Caller ID from Cequint.\nNever trust a company which promotes call ID/spam blocking features.\nCequint was acquired by TNS (https://tnsi.com/)",
         "web": [
             "https://www.cequint.com/",
             "https://www.fiercewireless.com/wireless/t-mobile-to-launch-caller-id-service-from-cequint",
@@ -308,8 +308,11 @@
     },
     {
         "id": "com.diotek.sec.lookup.dictionary",
-        "label": "com.diotek.sec.lookup.dictionary",
-        "description": "Samsung dictionary from Diotek (Korean company)\nhttp://en.diotek.com/",
+        "label": "Samsung Dictionary",
+        "description": "Samsung dictionary from Diotek (Korean company)",
+        "web": [
+            "https://en.diotek.com/"
+        ],
         "removal": "delete"
     },
     {
@@ -344,8 +347,8 @@
     },
     {
         "id": "com.dolby.daxservice",
-        "label": "com.dolby.daxservice",
-        "description": "Dolby\nRuns in the background as part of the system. Runs even if disabled.\n\"Optimizes system audio performance\" or something like that. This is likely the backend audio service, possibly applying settings from com.oneplus.sound.tuner (\"Dolby Atmos\") to the audio processing.",
+        "label": "Dolby",
+        "description": "Runs in the background as part of the system. Runs even if disabled.\n\"Optimizes system audio performance\" or something like that. This is likely the backend audio service, possibly applying settings from com.oneplus.sound.tuner (\"Dolby Atmos\") to the audio processing.",
         "removal": "caution"
     },
     {
@@ -378,15 +381,15 @@
     },
     {
         "id": "com.dsi.ant.sample.acquirechannels",
-        "label": "com.dsi.ant.sample.acquirechannels",
+        "label": "ANT + DUT",
         "description": "I don't know why there is \"sample\" in the name. Is this package really useful to find ANT channels ? \n",
         "removal": "delete"
     },
     {
         "id": "com.dsi.ant.server",
-        "label": "com.dsi.ant.server",
-        "description": "ANT HAL(Hardware Abstraction Layer) Server\nANT is a wireless protocol, similar to Bluetooth, that is mainly used for sport and fitness trackers.",
-        "removal": "replace"
+        "label": "ANT Radio Service Test",
+        "description": "ANT HAL (Hardware Abstraction Layer) Server.\nANT is a wireless protocol, similar to Bluetooth, that is mainly used for sport and fitness trackers.",
+        "removal": "caution"
     },
     {
         "id": "com.dsi.ant.service.socket",
@@ -401,7 +404,8 @@
         "id": "com.ebay.carrier",
         "label": "com.ebay.carrier",
         "description": "Kind of weird ebay apps pre-installed by carriers.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.ebay.mobile",
@@ -420,8 +424,8 @@
     },
     {
         "id": "com.emoji.keyboard.touchpal",
-        "label": "com.emoji.keyboard.touchpal",
-        "description": "TouchPal Emoji Keyboard by Cootek a chinese company\nAdware (lots and lots of ads)",
+        "label": "TouchPal Emoji Keyboard",
+        "description": "Developed by Cootek a chinese company.\nAdware (lots and lots of ads)",
         "web": [
             "https://www.buzzfeednews.com/article/craigsilverman/google-banned-cootek-adware"
         ],
@@ -452,8 +456,8 @@
     },
     {
         "id": "com.facebook.appmanager",
-        "label": "com.facebook.appmanager",
-        "description": "Facebook app manager handles Facebook apps updates.",
+        "label": "Facebook App Manager",
+        "description": "Handles Facebook apps updates.",
         "removal": "delete"
     },
     {
@@ -508,7 +512,7 @@
     },
     {
         "id": "com.gd.mobicore.pa",
-        "label": "com.gd.mobicore.pa",
+        "label": "RootPA",
         "description": "Mobicore is now Trustonic\nTrustonic is a small OS running on the CPU providing a TEE, an isolated environment that runs in parallel with the operating system, guaranteeing code and data loaded inside to be protected.\nSounds great, but it's closed source and \"normal\" devs can't use it for their apps.\nSee \"com.trustonic.tuiservice\"",
         "removal": "caution"
     },
@@ -551,7 +555,7 @@
     },
     {
         "id": "com.hancom.office.editor.hidden",
-        "label": "com.hancom.office.editor.hidden",
+        "label": "Hancom Office Editor",
         "description": "Legacy Hancom Office Editor (Korean alternative to Microsoft Office). Featured in Samsung and LG phones",
         "removal": "delete"
     },
@@ -674,7 +678,7 @@
     },
     {
         "id": "com.ironsource.appcloud.oobe",
-        "label": "com.ironsource.appcloud.oobe",
+        "label": "AppCloud",
         "description": "AppCloud (discontinued) from ironSource, an advertising company",
         "web": [
             "https://en.wikipedia.org/wiki/IronSource"
@@ -683,8 +687,8 @@
     },
     {
         "id": "com.ironsource.appcloud.oobe.huawei",
-        "label": "com.ironsource.appcloud.oobe.huawei",
-        "description": "Essentials apps\nApp which promotes some other apps (and encourages you to install them)\nDeveloped by IronSource, a \"next-generation advertising company\" \nhttps://aura.ironsrc.com/ (app) | https://company.ironsrc.com/ (company)\nWhen you try to read their privacy policy you arrive to an outstanding blank PDF file!",
+        "label": "Essential",
+        "description": "An app that promotes some other apps (and encourages you to install them)\nDeveloped by IronSource, a \"next-generation advertising company\" \nhttps://aura.ironsrc.com/ (app) | https://company.ironsrc.com/ (company)\nWhen you try to read their privacy policy you arrive to an outstanding blank PDF file!",
         "web": [
             "http://www.ironsrc.com/wp-content/uploads/2019/03/ironSource-Privacy-Policy.pdf"
         ],
@@ -965,25 +969,25 @@
     },
     {
         "id": "com.monotype.android.font.chococooky",
-        "label": "com.monotype.android.font.chococooky",
+        "label": "ChocoEUKor font",
         "description": "Font",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.cooljazz",
-        "label": "com.monotype.android.font.cooljazz",
+        "label": "CoolEUKor font",
         "description": "Font",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.foundation",
-        "label": "com.monotype.android.font.foundation",
+        "label": "Foundation font",
         "description": "Font",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.rosemary",
-        "label": "com.monotype.android.font.rosemary",
+        "label": "RoseEUKor font",
         "description": "Font",
         "removal": "delete"
     },
@@ -1024,7 +1028,7 @@
     },
     {
         "id": "com.nuance.swype.input",
-        "label": "com.nuance.swype.input",
+        "label": "Swype",
         "description": "Swype keyboard by Nuance",
         "web": [
             "https://www.nuance.com/mobile/mobile-applications/swype/android.html",
@@ -1072,8 +1076,8 @@
     },
     {
         "id": "com.opera.preinstall",
-        "label": "com.opera.preinstall",
-        "description": "Opera Preinstall Data\nGenerates utm tracking stuff",
+        "label": "Opera Preinstall Data",
+        "description": "Generates utm tracking stuff",
         "removal": "delete"
     },
     {
@@ -1116,8 +1120,12 @@
     },
     {
         "id": "com.pinsight.dw",
-        "label": "com.pinsight.dw",
-        "description": "App Stack \nForce-installed app by Sprint. Pinsight is an advertising company (https://pinsightmedia.com/)\nNote : Sprint sold Pinsight to InMobi in 2018.\nhttps://www.fiercewireless.com/wireless/sprint-sells-mobile-ad-biz-pinsight-media-to-inmobi",
+        "label": "App Stack",
+        "description": "Force-installed app by Sprint. Pinsight is an advertising company\nNote: Sprint sold Pinsight to InMobi in 2018.",
+        "web": [
+            "https://pinsightmedia.com/",
+            "https://www.fiercewireless.com/wireless/sprint-sells-mobile-ad-biz-pinsight-media-to-inmobi"
+        ],
         "removal": "delete"
     },
     {
@@ -1160,48 +1168,55 @@
         "id": "com.qti.diagservices",
         "label": "com.qti.diagservices",
         "description": "Starts process when plugged into a PC (with debugging on, haven't tried off) and then runs until stopped.\nCan't find info on what it is. Probably has to do with diagnostics for Android debugging?\nNoticed no ill effects from having it disabled for weeks.",
-        "removal": "replace"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.dpmserviceapp",
         "label": "com.qti.dpmserviceapp",
         "description": "Data Power Manager for the radio.\nUsed to improve energy efficiency. Probably a bad idea to disable.",
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.ltebc",
-        "label": "com.qti.ltebc",
-        "description": "LTE Broadcast Manager\nRuns on boot, but not in the background beyond that.",
+        "label": "LTE Broadcast Manager",
+        "description": "Runs on boot, but not in the background beyond that.",
         "removal": "caution"
     },
     {
         "id": "com.qti.qualcomm.datastatusnotification",
         "label": "com.qti.qualcomm.datastatusnotification",
         "description": "Sends you a message when you reach a specified data limit?\nContains a service, but I've never it run. But I've also never run out of data or used the Android data warning system.",
-        "removal": "replace"
+        "web": [
+            "https://www.qualcomm.com/news/onq/2016/05/02/qualcomm-trupalette-brings-your-phones-display-life"
+        ],
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.qualcomm.deviceinfo",
-        "label": "com.qti.qualcomm.deviceinfo",
-        "description": "Device Info\nDisplays device information. Can be found in Settings->About phone.",
+        "label": "Device Info",
+        "description": "Displays device information. Can be found in Settings->About phone.",
         "removal": "caution"
     },
     {
         "id": "com.qti.service.colorservice",
         "label": "com.qti.service.colorservice",
         "description": "Something to do with colors?\nContains a \"ColorServiceApp\" service, but I've never seen it run. Might be tied to some Display setting?\nProbably safe to disable; noticed no changes, but I also doubt there's any benefit to disabling it.",
-        "removal": "replace"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.snapdragon.qdcm_ff",
-        "label": "com.qti.snapdragon.qdcm_ff",
-        "description": "Qualcomm Display Color Management tool\nAttempts to \"make colors look vibrant and true to life\". No idea if it actually does something useful or if it's only some garbage dynamic color tuning (they tend to destroy colors).\nContains a service, but I've never seen it run on my Oneplus 9. Could be tied to color \"improvement\" settings in Settings->Display (all of which are off for me).\nhttps://www.qualcomm.com/news/onq/2016/05/02/qualcomm-trupalette-brings-your-phones-display-life",
+        "label": "QDCM-FF",
+        "description": "Qualcomm Display Color Management tool\nAttempts to \"make colors look vibrant and true to life\". No idea if it actually does something useful or if it's only some garbage dynamic color tuning (they tend to destroy colors).\nContains a service, but I've never seen it run on my Oneplus 9. Could be tied to color \"improvement\" settings in Settings->Display (all of which are off for me).",
         "removal": "replace"
     },
     {
         "id": "com.qti.xdivert",
-        "label": "com.qti.xdivert",
-        "description": "Smart-Divert\nIf enabled, diverts your calls to another number.\nYou can choose to divert all calls, divert on no reply or divert when the line is busy.\nWhere can you enable/disable this feature?",
+        "label": "Smart-Divert",
+        "description": "If enabled, diverts your calls to another number.\nYou can choose to divert all calls, divert on no reply or divert when the line is busy.\nWhere can you enable/disable this feature?",
         "removal": "delete"
     },
     {
@@ -1211,12 +1226,13 @@
         "web": [
             "https://www.bleepingcomputer.com/news/security/smartphones-from-11-oems-vulnerable-to-attacks-via-hidden-at-commands/"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.cabl",
-        "label": "com.qualcomm.cabl",
-        "description": "Content Adaptative Backlight Settings\nCABL will try to adjust the image being displaye by changing the contrast/quality/image backlight depending on \nthe content on the screen.\nDownside to this is loss of dynamic range which results in some colors being washed out/clipped.\nCABL != Auto brightness (which doesn't change the content of the screen, only the brightness)\nNOTE: You may want to remove this. It does not work very well on many phones.",
+        "label": "Content Adaptive Backlight Settings",
+        "description": "This app will try to adjust the image being displaye by changing the contrast/quality/image backlight depending on \nthe content on the screen.\nDownside to this is loss of dynamic range which results in some colors being washed out/clipped.\nCABL != Auto brightness (which doesn't change the content of the screen, only the brightness)\nNOTE: You may want to remove this. It does not work very well on many phones.",
         "web": [
             "https://mobileinternist.com/disable-adaptive-brightness-android"
         ],
@@ -1253,11 +1269,12 @@
         "id": "com.qualcomm.qcrilmsgtunnel",
         "label": "com.qualcomm.qcrilmsgtunnel",
         "description": "Long-form name: Qualcomm Radio Interface Layer Message Tunnel.\nRuns in the background, both as part of user apps and as part of the system? It's an active system process even when disabled, but disabling seems to remove the user-side part of the process.\nDisabling yields no immediate consequences, but functionality may still be retained in the system process.\nActs as a bridge between Android framework services and the hardware? A tunnel between modem and Android framework?\nThe decompiled code shows nothing obvious. \"sendOemRilRequest\" seems like the only method name hinting at something.",
-        "removal": "replace"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.auth.fidocryptoservice",
-        "label": "com.qualcomm.qti.auth.fidocryptoservice",
+        "label": "FidoCryptoService",
         "description": "Qualcomm FIDO implementation.\nFido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.",
         "web": [
             "https://en.wikipedia.org/wiki/FIDO_Alliance",
@@ -1283,7 +1300,7 @@
     },
     {
         "id": "com.qualcomm.qti.callenhancement",
-        "label": "com.qualcomm.qti.callenhancement",
+        "label": "CallEnhancement",
         "description": "Supposed to enhance call quality (I'll let you test if it really does)\nThis can record your phone calls. A vulnerability was found in 2019, allowing unauthorized microphone audio recording by 3rd-party apps.",
         "web": [
             "https://nvd.nist.gov/vuln/detail/CVE-2019-15472"
@@ -1292,9 +1309,9 @@
     },
     {
         "id": "com.qualcomm.qti.callfeaturessetting",
-        "label": "com.qualcomm.qti.callfeaturessetting",
+        "label": "CallFeatureSetting",
         "description": "Not mandatory according to some XDA users.\nMore info needed.",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.qualcomm.qti.cne",
@@ -1308,9 +1325,9 @@
     },
     {
         "id": "com.qualcomm.qti.confdialer",
-        "label": "com.qualcomm.qti.confdialer",
-        "description": "ConfDialer\nLTE Conferencing Service.",
-        "removal": "replace"
+        "label": "ConfDialer",
+        "description": "LTE Conferencing Service.",
+        "removal": "caution"
     },
     {
         "id": "com.qualcomm.qti.dynamicddsservice",
@@ -1320,7 +1337,8 @@
             "https://www.qualcomm.com/news/releases/1996/05/07/qualcomm-introduces-new-high-speed-dual-direct-digital-synthesizer",
             "https://www.allaboutcircuits.com/technical-articles/direct-digital-synthesis/"
         ],
-        "removal": "replace"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.ims",
@@ -1329,7 +1347,8 @@
         "web": [
             "https://www.qualcomm.com/news/releases/2015/03/02/qualcomm-powers-mobile-and-home-connectivity-innovations-mobile-world"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.lpa",
@@ -1338,12 +1357,13 @@
         "web": [
             "https://developer.qualcomm.com/blog/rise-esims-and-isims-and-their-impact-iot\nhttps://source.android.com/devices/tech/connect/esim-overview"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.networksetting",
-        "label": "com.qualcomm.qti.networksetting",
-        "description": "Network operators (hidden settings menu)\nLets you select network modes like GSM only, WCDMA only, LTE only etc, toggle VoLTE On/Off...",
+        "label": "Network operators",
+        "description": "A hidden settings menu that lets you select network modes like GSM only, WCDMA only, LTE only etc, toggle VoLTE On/Off...",
         "removal": "caution"
     },
     {
@@ -1354,7 +1374,7 @@
     },
     {
         "id": "com.qualcomm.qti.perfdump",
-        "label": "com.qualcomm.qti.perfdump",
+        "label": "Perfdump",
         "description": "Performance dump (logging)\nEnable a more accurate overview of the running services (and maybe how much power/RAM they take?)",
         "removal": "delete"
     },
@@ -1372,13 +1392,13 @@
     },
     {
         "id": "com.qualcomm.qti.qcolor",
-        "label": "com.qualcomm.qti.qcolor",
+        "label": "QColor",
         "description": "Something to do with colors?\nContains no services and I've never seen it run as a process. Only has one permission: CONTROL_DISPLAY_COLOR_TRANSFORMS\nProbably safe to disable; noticed no changes, but I also doubt there's any benefit to disabling it.",
         "removal": "replace"
     },
     {
         "id": "com.qualcomm.qti.qdma",
-        "label": "com.qualcomm.qti.qdma",
+        "label": "QDMA",
         "description": "QDMA = Quadrature-Division Multiple Access\nIt's a radio protocol combining CDMA and QPSK.\nQDMA is used for local area networks, usually wireless short-range such as WiMax.",
         "web": [
             "https://en.wikipedia.org/wiki/Quadrature-division_multiple_access"
@@ -1387,7 +1407,7 @@
     },
     {
         "id": "com.qualcomm.qti.qmmi",
-        "label": "com.qualcomm.qti.qmmi",
+        "label": "QMMI",
         "description": "QMMI is a test app made by Qualcomm. It is used by service center to test the working of the various device components.",
         "web": [
             "https://community.phones.nokia.com/discussion/52566/android-10-on-nokia-8-1/p19\nUseless for end-users."
@@ -1402,15 +1422,16 @@
     },
     {
         "id": "com.qualcomm.qti.qms.service.telemetry",
-        "label": "com.qualcomm.qti.qms.service.telemetry",
-        "description": "Qualcomm Mobile Security\nTelemetry service. Obviously phones to Qualcomm.",
+        "label": "Qualcomm Mobile Security",
+        "description": "Telemetry service. Obviously phones to Qualcomm.",
         "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.qtisystemservice",
         "label": "com.qualcomm.qti.qtisystemservice",
         "description": "Seems to only log stuff related to telephony?\nA user removed this without noticing any issues.",
-        "removal": "replace"
+        "removal": "replace",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.rcsimsbootstraputil",
@@ -1431,7 +1452,7 @@
     },
     {
         "id": "com.qualcomm.qti.roamingsettings",
-        "label": "com.qualcomm.qti.roamingsettings",
+        "label": "Roaming Settings",
         "description": "Hidden settings menu for tweaking roaming settings? How exactly do you access this menu?",
         "removal": "caution"
     },
@@ -1484,7 +1505,8 @@
         "id": "com.qualcomm.qti.uim",
         "label": "com.qualcomm.qti.uim",
         "description": "Runs \"RemoteSimLockService\" in the background.\nThis might be the only remote SIM lock service, just called UIM because R-UIM(Removeable-UserIdentityModule) is a variant of SIM commonly used in Asia.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.uimGbaApp",
@@ -1496,7 +1518,8 @@
         "id": "com.qualcomm.qtil.aptxals",
         "label": "com.qualcomm.qtil.aptxals",
         "description": "Something to do with the AptX bluetooh audio streaming codec?\nRuns in the background as part of the system.",
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qtil.aptxalsOverlay",
@@ -1506,7 +1529,7 @@
     },
     {
         "id": "com.qualcomm.qtil.aptxui",
-        "label": "com.qualcomm.qtil.aptxui",
+        "label": "Bluetooth",
         "description": "Something to do with selecting codec for bluetooh audio streaming?\nRuns in the background as part of the system.",
         "removal": "caution"
     },
@@ -1532,13 +1555,15 @@
         "id": "com.qualcomm.uimremoteclient",
         "label": "com.qualcomm.uimremoteclient",
         "description": "Contains a service by the same name, but I've never seen it run.\nRelated to SIM/R-UIM functionality? (R-UIM is a type of SIM card mainly used in Asia)",
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.uimremoteserver",
         "label": "com.qualcomm.uimremoteserver",
         "description": "Contains a service by the same name, but I've never seen it run.\nRelated to SIM/R-UIM functionality? (R-UIM is a type of SIM card mainly used in Asia)",
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.wfd.service",
@@ -1561,7 +1586,7 @@
     },
     {
         "id": "com.quicinc.fmradio",
-        "label": "com.quicinc.fmradio",
+        "label": "FM Radio",
         "description": "FM Radio app by Qualcomm\nquicinc = Qualcomm Innovation Center",
         "removal": "replace",
         "suggestions": "radios"
@@ -1919,7 +1944,7 @@
     },
     {
         "id": "com.trustonic.teeservice",
-        "label": "com.trustonic.teeservice",
+        "label": "TeeService",
         "description": "TEE = Trusted Execution Environment",
         "removal": "caution"
     },
@@ -2203,7 +2228,7 @@
     },
     {
         "id": "org.codeaurora.bluetooth",
-        "label": "org.codeaurora.bluetooth",
+        "label": "Bluetooth extensions",
         "description": "More info needed",
         "web": [
             "https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth"
@@ -2220,11 +2245,12 @@
         "id": "org.codeaurora.ims",
         "label": "org.codeaurora.ims",
         "description": "IMS(Ip Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling).\nRuns in the background as part of the system, with Google's IMS(com.google.android.ims, \"Carrier Services\") disabled, I haven't checked if it'd run with Carrier Services enabled.",
-        "removal": "caution"
+        "removal": "caution",
+        "supress": "LabelSameAsId"
     },
     {
         "id": "org.simalliance.openmobileapi.service",
-        "label": "org.simalliance.openmobileapi.service",
+        "label": "SmartcardService",
         "description": "The SmartCard API is a reference implementation of the SIMalliance Open Mobile API specification that enables Android applications to communicate with Secure Elements, (SIM card, embedded Secure Elements, Mobile Security Card or others)\nSafe to remove if you think you don't need this",
         "web": [
             "https://github.com/seek-for-android/pool/wiki/SmartcardAPI"
@@ -2240,7 +2266,8 @@
             "https://arxiv.org/ftp/arxiv/papers/1601/1601.03027.pdf",
             "https://www.justaskgemalto.com/us/what-uicc-and-how-it-different-sim-card/"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "pl.zdunex25.updater",

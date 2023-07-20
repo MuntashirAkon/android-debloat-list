@@ -72,6 +72,10 @@
             "suggestions": {
                 "description": "Suggestion ID for listing alternatives to this bloatware",
                 "type": "string"
+            },
+            "suppress": {
+                "description": "Suppress a particular warning issued by the linter, separated by comma without space",
+                "type": "string"
             }
         },
         "required": [

@@ -41,7 +41,8 @@
         "id": "com.android.systemui.plugin.globalactions.wallet",
         "label": "com.android.systemui.plugin.globalactions.wallet",
         "description": "Apk file name: QuickAccessWallet. This is the Google Pay widget in the power menu(hold power button for 1sec to show this menu), below the Emergency, Power off and Reboot buttons.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.vending",
@@ -870,7 +871,8 @@
         "web": [
             "https://beta.pithus.org/report/60835b97f38d9e64d4f554a73dab71c892153486a8e0fd81461c3d85359d9fae"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.google.android.googlequicksearchbox",

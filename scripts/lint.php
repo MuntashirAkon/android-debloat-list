@@ -3,6 +3,8 @@
 
 const SUPPORTED_REMOVAL_TYPES = ['delete', 'replace', 'caution', 'unsafe'];
 const SUPPORTED_TAGS = [];
+const SUPPRESS_LINT_CONST_LABEL_SAME_AS_ID = 'LabelSameAsId';
+const SUPPRESS_LINT_CONSTS = [SUPPRESS_LINT_CONST_LABEL_SAME_AS_ID];
 const REPO_DIR = __DIR__ . "/..";
 const SUGGESTIONS_DIR = REPO_DIR . '/suggestions';
 const LINT_DIR = __DIR__ . "/../build";
@@ -70,6 +72,7 @@ if ($error_count != 0) {
 
 function validate_bloatware_item(array $item): int {
     global $lint_writer;
+    $suppressed = isset($item['suppress']) ? parse_suppress($item['suppress']) : [];
     $error_count = 0;
     // `id` is a string
     if (gettype($item['id']) != 'string') {
@@ -81,6 +84,10 @@ function validate_bloatware_item(array $item): int {
         if (gettype($item['label']) != 'string') {
             fprintf($lint_writer, "{$item['id']}: Expected `label` field to be a string, found: " . gettype($item['label']) . "\n");
             ++$error_count;
+        } else if ($item['label'] == $item['id']) {
+            if (!in_array(SUPPRESS_LINT_CONST_LABEL_SAME_AS_ID, $suppressed)) {
+                fprintf(STDERR, "{$item['id']}: `label` is the same as ID.\n");
+            }
         }
     } else {
         fprintf(STDERR, "{$item['id']}: Missing `label`\n");
@@ -212,4 +219,9 @@ function validate_suggestion_item(array $item): int {
         ++$error_count;
     }
     return $error_count;
+}
+
+function parse_suppress(?string $str): array {
+    if ($str == null) return [];
+    return preg_split("/,\\s*/", $str);
 }

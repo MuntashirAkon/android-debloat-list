@@ -7,7 +7,8 @@
             "https://source.android.com/devices/architecture/rros",
             "https://code.tutsplus.com/tutorials/quick-tip-theme-android-with-the-runtime-resource-overlay-framework--cms-29708"
         ],
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "android.auto_generated_vendor_",
@@ -17,7 +18,8 @@
             "https://www.android.com/intl/en_en/auto/"
         ],
         "removal": "delete",
-        "warning": "You may need this if you use Android Auto"
+        "warning": "You may need this if you use Android Auto",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.apps.tag",
@@ -30,7 +32,8 @@
         "label": "com.android.backupconfirm",
         "description": "Restores Google settings with Google Backup restore.\nDisplays confirmation popup when doing ADB backup.",
         "removal": "caution",
-        "warning": "Disabling this package breaks ADB Backup"
+        "warning": "Disabling this package breaks ADB Backup",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.bio.face.service",
@@ -78,7 +81,8 @@
         "id": "com.android.browser.provider",
         "label": "com.android.browser.provider",
         "description": "Old package (2014). Chrome bookmarks provider? Injects Picasa URL (https://picasaweb.google.com) in the Chrome browser's bookmarks in the browser.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.calculator2",
@@ -120,7 +124,8 @@
             "https://source.android.com/devices/tech/config/carrier",
             "https://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.carrierdefaultapp",
@@ -501,7 +506,8 @@
             "https://developer.android.com/reference/android/telephony/AvailableNetworkInfo",
             "https://cs.android.com/android/platform/superproject/+/master:frameworks/base/telephony/java/android/telephony/AvailableNetworkInfo.java"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.otaprovisioningclient",
@@ -601,7 +607,8 @@
         "id": "com.android.providers.partnerbookmarks",
         "label": "com.android.providers.partnerbookmarks",
         "description": "Provides bookmarks about partners of Google in Chrome.\n",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.providers.userdictionary",
@@ -655,7 +662,8 @@
         "web": [
             "https://blog.mindorks.com/understanding-the-scoped-storage-in-android"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.simappdialog",
@@ -674,7 +682,8 @@
             "https://web.archive.org/web/20200915164901/https://www.nowsms.com/doc/submitting-sms-messages/sending-wap-push-messages"
         ],
         "removal": "replace",
-        "suggestions": "sms"
+        "suggestions": "sms",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.soundrecorder",
@@ -809,19 +818,22 @@
         "id": "com.android.wallpaperbackup",
         "label": "com.android.wallpaperbackup",
         "description": "Backup your wallapaper and load this backup instead of the original file in case you delete it.\nSafe to remove if you really want to.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.wallpapercropper",
         "label": "com.android.wallpapercropper",
         "description": "Wallpaper cropper.",
-        "removal": "delete"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.wallpaperpicker",
         "label": "com.android.wallpaperpicker",
         "description": "Enables you to pick a wallpaper.",
-        "removal": "caution"
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.android.webview",
