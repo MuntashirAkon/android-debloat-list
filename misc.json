@@ -659,7 +659,7 @@
         "web": [
             "https://en.wikipedia.org/wiki/Polaris_Office"
         ],
-        "removal": "Replace"
+        "removal": "replace"
     },
     {
         "id": "com.instagram.android",
@@ -1634,7 +1634,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.rhapsody",
             "https://en.wikipedia.org/wiki/Napster",
-            "http://napster.com/privacy "
+            "http://napster.com/privacy"
         ],
         "removal": "replace",
         "suggestions": "music_apps"
@@ -1646,7 +1646,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.rhapsody",
             "https://en.wikipedia.org/wiki/Napster",
-            "http://napster.com/privacy "
+            "http://napster.com/privacy"
         ],
         "removal": "replace",
         "suggestions": "music_apps"
