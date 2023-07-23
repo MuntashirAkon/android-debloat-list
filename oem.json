@@ -4043,6 +4043,12 @@
         "removal": "replace"
     },
     {
+        "id": "com.oplus.camera",
+        "label": "Camera",
+        "description": "Stock Oppo/Oneplus camera app",
+        "removal": "replace"
+    },
+    {
         "id": "com.oplus.cosa",
         "label": "App Enhancement Services",
         "required_by": [
