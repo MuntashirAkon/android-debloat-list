@@ -1,11 +1,5 @@
 [
     {
-        "id": "com.github.olga_yakovleva.rhvoice.android",
-        "label": "RHVoice",
-        "source": "f",
-        "repo": "https://github.com/RHVoice/RHVoice"
-    },
-    {
         "id": "com.reecedunn.espeak",
         "label": "eSpeak",
         "source": "f",
