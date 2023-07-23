@@ -4125,6 +4125,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.oplus.screenshot",
+        "label": "Screenshot",
+        "description": "Oppo/OnePlus screenshot, the screenshot function still works without it",
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.securitykeyboard",
         "label": "Secure Keyboard",
         "description": "Secure Keyboard\nKeyboard that appears only when typing a password on apps and webpages, if enabled on Keyboard and Input settings",
