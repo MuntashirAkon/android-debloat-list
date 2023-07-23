@@ -4,5 +4,11 @@
         "label": "TTS Util",
         "source": "fg",
         "repo": "https://github.com/Danesprite/tts-util-app"
+    },
+    {
+        "id": "com.github.olga_yakovleva.rhvoice.android",
+        "label": "RHVoice",
+        "source": "f",
+        "repo": "https://github.com/RHVoice/RHVoice"
     }
 ]
