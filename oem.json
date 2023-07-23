@@ -4062,6 +4062,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.oplus.deepthinker",
+        "label": "Intelligent Services",
+        "description": "No clue what is it for, acesses location",
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.exsystemservice",
         "label": "System Service",
         "description": "Lots of permissions. The screenshot function will stop working when the app is disabled.",
