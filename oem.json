@@ -2870,7 +2870,7 @@
     },
     {
         "id": "com.miui.phrase",
-        "description": "MIUI context menu tool for pre-made text responses while chatting.",
+        "description": "MIUI context menu tool for pre-made text responses while chatting.\nIt has access to internet, is linked to MiCloud and contains a weird CloudTelephonyManager java class in his code.",
         "removal": "caution",
         "warning": "Disabling causes a crash when touching the \"Frequent phrases\" item."
     },
