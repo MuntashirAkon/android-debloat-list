@@ -1,14 +1,16 @@
 [
     {
-        "id": "com.danefinlay.ttsutil",
-        "label": "TTS Util",
-        "source": "fg",
-        "repo": "https://github.com/Danesprite/tts-util-app"
-    },
-    {
         "id": "com.github.olga_yakovleva.rhvoice.android",
         "label": "RHVoice",
+        "reason": "No same/better alternative is available right now",
         "source": "f",
         "repo": "https://github.com/RHVoice/RHVoice"
+    },
+    {
+        "id": "com.reecedunn.espeak",
+        "label": "eSpeak",
+        "reason":"No same/better alternative is available right now",
+        "source": "f",
+        "repo": "https://github.com/espeak-ng/espeak-ng"
     }
 ]
