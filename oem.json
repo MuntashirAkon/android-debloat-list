@@ -4119,6 +4119,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.oplus.qualityprotect",
+        "label": "QualityProtect",
+        "description": "Probably Oppo/OnePlus analytics",
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.securitykeyboard",
         "label": "Secure Keyboard",
         "description": "Secure Keyboard\nKeyboard that appears only when typing a password on apps and webpages, if enabled on Keyboard and Input settings",
