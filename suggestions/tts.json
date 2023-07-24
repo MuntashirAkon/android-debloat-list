@@ -1,8 +1,9 @@
 [
     {
-        "id": "com.danefinlay.ttsutil",
-        "label": "TTS Util",
+        "id": "com.reecedunn.espeak",
+        "label": "eSpeak",
         "source": "fg",
-        "repo": "https://github.com/Danesprite/tts-util-app"
+        "repo": "https://github.com/espeak-ng/espeak-ng",
+        "reason": "Speech quality is not very good and sounds more robotic."
     }
 ]
