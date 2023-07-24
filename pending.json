@@ -419,7 +419,8 @@
         "id": "com.oplus.aod",
         "label": "Aod",
         "description": "Multiple sources say that AOD doesnt work without tons of extra services, but on some devices it works without extra services",
-        "web": "https://droidwin.com/remove-bloatware-debloat-oneplus-10-pro-no-root/#OnePlus_10_Pro_List_of_Bloatware_Apps"
+        "web": "https://droidwin.com/remove-bloatware-debloat-oneplus-10-pro-no-root/#OnePlus_10_Pro_List_of_Bloatware_Apps",
+        "removal": "delete"
     },
     {
         "id": "com.oplus.deepthinker",
