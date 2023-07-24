@@ -4128,7 +4128,7 @@
     {
         "id": "com.oplus.safecenter",
         "label": "Security center",
-        "description": "Don't know what is it for. Every security function works without it",
+        "description": "Breaks app lock feature when disabled/deleted, all other features work",
         "removal": "delete"
     },
     {
