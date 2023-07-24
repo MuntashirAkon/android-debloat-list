@@ -1,5 +1,12 @@
 [
     {
+        "id": "com.github.olga_yakovleva.rhvoice.android",
+        "label": "RHVoice",
+        "source": "f",
+        "repo": "https://github.com/RHVoice/RHVoice",
+        "reason": "Good voice quality, but most voices are non-free as they prohibit commercial use."
+    },
+    {
         "id": "com.reecedunn.espeak",
         "label": "eSpeak",
         "source": "fg",
