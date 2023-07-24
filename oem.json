@@ -4069,13 +4069,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.oplus.deepthinker",
-        "label": "Intelligent Services",
-        "description": "Probably enables the '* is draining battery' notification, kills battery",
-        "web": "https://www.reddit.com/r/Realme/comments/u7rfgs/comment/i5vpy9u/",
-        "removal": "delete"
-    },
-    {
         "id": "com.oplus.exsystemservice",
         "label": "System Service",
         "description": "Lots of permissions. The screenshot function will stop working when the app is disabled.",
