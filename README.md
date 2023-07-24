@@ -61,21 +61,23 @@ the following format:
 ## Contributing
 
 The repository is divided into several folders to make it easier for the first-time contributors as well as those who
-do not have access to a personal computer.
+do not have access to a personal computer. However, we encourage you to [create a new issue](https://github.com/MuntashirAkon/android-debloat-list/issues/new/choose)
+if you are not willing to investigate your proposed changes.
 
-Each json file represents a list of debloatling materials for a category. For example, `aosp.json` contains a list of
-apps that comes prebuilt with the AOSP itself, `oem.json` contains a list of apps from all the vendors or OEMs. The list
-names are very generic, and if you have a new idea for a list, it has to be generic too. For example, apps related to
-productivity can be separated from `misc.json` under a new json file. All entries must appear in the alphabetic order
-based on their `id`.
+Each json file represents a list of bloatware for a category. For example, `aosp.json` contains a list of apps that
+comes prebuilt with the AOSP itself, `oem.json` contains a list of apps from all the vendors or OEMs. The list names
+are very generic, and if you have a new idea for a list, it has to be generic too. For example, apps related to
+productivity can be separated from `misc.json` under a new json file. _All entries must appear in the alphabetic order
+based on their `id`._ You should avoid contributing to the `pending.json` file as it is kept for compatibility reasons
+only and shall be removed in the future.
 
 `suggestions` folder contains a list of suggestions for a certain category. The filename of each list is considered its
 _ID_ and should not contain any non-ASCII or whitespace characters. It is done this way because multiple apps could be
 assigned the same set of suggestions.
 
-To contribute, read the schema section above and make a pull request with the desired changes. Minor changes should be
-accepted without much review, but major changes such as the addition of a new package require a review. The review
-process is decided by the maintainer based on the type of change.
+To contribute, read the JSON schema section above and create a pull request with the desired changes. Minor changes
+should be accepted without much review, but major changes such as the addition of a new package require a review. The
+review process is decided by the maintainers based on the type of change.
 
 ## License
 

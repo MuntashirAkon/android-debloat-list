@@ -1,0 +1,51 @@
+name: Request changes in the existing bloatware
+description: Request maintainers to change the documentation of the existing bloatware
+labels: [documentation]
+
+body:
+  - type: checkboxes
+    attributes:
+       label: Please check before submitting an issue
+       description: Checking the items below help us determine how to set priorities
+       options:
+          - label: The bloatware in my proposal are present in the list
+            required: true
+          - label: I have investigated the bloatware to confirm my concerns
+            required: false
+
+  - type: textarea
+    attributes:
+        label: Source
+        description: Device information, or a link from where the information were obtained
+        placeholder: Samsung SM-M017F (One UI 5.0)
+    validations:
+        required: true
+
+  - type: textarea
+    attributes:
+        label: Affected packages
+        description: List the bloatware packages, one line per bloatware
+        placeholder: |
+          - com.sec.readershub
+          - com.sec.smartcard.manager
+          - com.sec.usbsettings
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+        label: Reports
+        description: Describe your concern for each bloatware you've added above
+        placeholder: |
+          1. com.sec.readershub: This package has been discontinued and is safe to delete. 
+             Source: https://www.appbrain.com/app/samsung-books/com.sec.readershub
+          2. com.sec.smartcard.manager: A warning should be placed for this package:
+             > Do not remove the app if you use Smart Card features.
+          3. com.sec.usbsettings: This package is harmless and should be removed from the list.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+        label: Additional context
+        description: Add any other context about your proposal here.
