@@ -2873,7 +2873,7 @@
         "label": "Frequent phrases",
         "description": "MIUI context menu tool for pre-made text responses while chatting. It has access to the Internet, is linked to MiCloud and contains a weird CloudTelephonyManager class in its code.",
         "removal": "caution",
-        "warning": "Disabling causes a crash when touching the \"Frequent phrases\" item."
+        "warning": "Disabling causes a crash when touching the \"Frequent phrases\" item. (The crash occurs in the application that invoked the context menu with this item)"
     },
     {
         "id": "com.miui.player",
