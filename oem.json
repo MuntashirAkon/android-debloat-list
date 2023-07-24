@@ -4117,14 +4117,18 @@
         "id": "com.oplus.qualityprotect",
         "label": "QualityProtect",
         "description": "Probably Oppo/OnePlus analytics, no effects after disabling/deleting",
-        "web": "https://forum.xda-developers.com/t/list-of-applications-that-can-be-uninstalled-with-adb-commands.4392267/post-86573217",
+        "web": [
+            "https://forum.xda-developers.com/t/list-of-applications-that-can-be-uninstalled-with-adb-commands.4392267/post-86573217"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.oplus.safecenter",
         "label": "Security center",
         "description": "Breaks app lock feature when disabled/deleted, all other features work",
-        "web": "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315",
+        "web": [
+            "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
+        ],
         "removal": "delete"
     },
     {
