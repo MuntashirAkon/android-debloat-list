@@ -4134,7 +4134,7 @@
     {
         "id": "com.oplus.screenshot",
         "label": "Screenshot",
-        "description": "Oppo/OnePlus screenshot, the screenshot function still works without it",
+        "description": "Enables quick settings screenshot option, the power+volume down screenshot feature works without it",
         "removal": "delete"
     },
     {
