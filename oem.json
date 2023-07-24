@@ -4046,7 +4046,8 @@
         "id": "com.oplus.camera",
         "label": "Camera",
         "description": "Stock Oppo/Oneplus camera app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.oplus.cosa",
