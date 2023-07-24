@@ -4122,7 +4122,7 @@
     {
         "id": "com.oplus.qualityprotect",
         "label": "QualityProtect",
-        "description": "Probably Oppo/OnePlus analytics",
+        "description": "Probably Oppo/OnePlus analytics, no effects after disabling/deleting",
         "removal": "delete"
     },
     {
