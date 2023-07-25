@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "id": "com.bnyro.translate",
+        "label": "Translate You",
+        "repo": "https://github.com/Bnyro/TranslateYou"
+    }
+]
