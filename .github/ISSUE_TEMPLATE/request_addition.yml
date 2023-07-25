@@ -1,0 +1,54 @@
+name: Request addition of new bloatware
+description: Request maintainers to add one or more bloatware
+labels: [enhancement]
+
+body:
+  - type: checkboxes
+    attributes:
+       label: Please check before submitting an issue
+       description: Checking the items below help us determine how to set priorities
+       options:
+          - label: The bloatware in my proposal are not present in the list
+            required: true
+          - label: I have tested the bloatware in my device
+            required: true
+          - label: I have investigated the bloatware and created a report
+            required: false
+
+  - type: textarea
+    attributes:
+        label: Source
+        description: Device information, or a link from where the list was obtained
+        placeholder: Samsung SM-M017F (One UI 5.0)
+    validations:
+        required: true
+
+  - type: textarea
+    attributes:
+        label: New packages
+        description: List the bloatware packages with label in brackets, one line per bloatware
+        placeholder: |
+          - com.sec.readershub (Samsung Books)
+          - com.sec.smartcard.manager (Smart Card Manager)
+          - com.sec.usbsettings (USBSettings)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+        label: Reports
+        description: Describe each bloatware added above. Fill this only if you have selected the third option above.
+        placeholder: |
+          1. com.sec.readershub: (AKA Readers Hub) Discontinued and safe to delete. All-in-one e-Reading solution that
+             offers instant access to thousands of e-reading contents.
+             https://www.appbrain.com/app/samsung-books/com.sec.readershub
+          2. com.sec.smartcard.manager: Safe to delete if you're not using smart card features. Smart Card enables
+             communication with Secure Elements (SIM card, embedded Secure Elements, Mobile Security Card...). These
+             packages seem to be Samsung implementation.
+          3. com.sec.usbsettings: Safe to delete. Hidden settings. Lets you choose from ADB, MTP, RNDIS, ACM, DM (dial
+             *#0808# to open). It runs at startup.
+
+  - type: textarea
+    attributes:
+        label: Additional context
+        description: Add any other context about your proposal here.

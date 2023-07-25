@@ -2870,8 +2870,10 @@
     },
     {
         "id": "com.miui.phrase",
-        "description": "Frequent Phrases\nNot sure how exactly it can be used but it is supposed to predict phrases you'll want to write.\nI don't know why it isn't handled in the keyboard app. This seems to be something else.\nIn any case it has access to internet, is linked to MiCloud and contains a weird CloudTelephonyManager java class in his code.\n",
-        "removal": "delete"
+        "label": "Frequent phrases",
+        "description": "MIUI context menu tool for pre-made text responses while chatting. It has access to the Internet, is linked to MiCloud and contains a weird CloudTelephonyManager class in its code.",
+        "removal": "caution",
+        "warning": "Disabling causes a crash when touching the \"Frequent phrases\" item. (The crash occurs in the application that invoked the context menu with this item)"
     },
     {
         "id": "com.miui.player",
