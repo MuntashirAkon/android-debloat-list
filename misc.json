@@ -1137,7 +1137,7 @@
     {
         "id": "com.pivotmobile.android.metrics",
         "label": "com.pivotmobile.android.metrics",
-        "description": "Pivot Mobile is a popular game developer famously known for its Swimmy Turtle game.\nUsed for data consumption & ad tracking of third-party apps, in some cases silently installs apps without your permission.\nCommonly found in Lenovo & Motorola devices.\nNot a system app.",
+        "description": "Pivot Mobile is a popular game developer famously known for its Swimmy Turtle game.\nSub-downloaded by third-party apps; used for 'data consumption & ad' tracking.\nCommonly found in Lenovo & Motorola devices.",
         "web": [
             "https://howtofixapp.com/com-pivotmobile-android-metrics/",
             "https://basicknowledgehub.com/com-pivotmobile-android-metrics/",
