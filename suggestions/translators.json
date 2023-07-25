@@ -2,6 +2,7 @@
     {
         "id": "com.bnyro.translate",
         "label": "Translate You",
+        "source": "f",
         "repo": "https://github.com/Bnyro/TranslateYou"
     }
 ]
