@@ -4,5 +4,11 @@
         "label": "Etar",
         "source": "fg",
         "repo": "https://github.com/Etar-Group/Etar-Calendar"
+    },
+    {
+        "id": "com.simplemobiletools.calendar.pro",
+        "label": "Simple Calendar Pro",
+        "source": "fg",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Calendar"
     }
 ]
