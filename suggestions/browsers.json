@@ -16,7 +16,7 @@
         "label": "Firefox",
         "source": "g",
         "repo": "https://github.com/mozilla-mobile/firefox-android",
-        "reason": "The browser made by Mozilla, developed with user in mind.\nUses their homemade browser engine: GeckoView, and has a native support for extensions."
+        "reason": "The browser made by Mozilla, developed with user in mind.\nUses their homemade browser engine: GeckoView, and has a native support for extensions.\nContains telemetry bits that can be disabled in settings"
     },
     {
         "id": "org.mozilla.fennec_fdroid",
