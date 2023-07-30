@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "com.simplemobiletools.contacts.pro",
+        "label": "Simple Contacts Pro",
+        "source": "fg",
+        "reason": "Contacts address book for managing recent contacts and vcf contact backups",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Contacts"
+    },
+    {
+        "id": "com.bnyro.contacts",
+        "label": "Connect You",
+        "source": "f",
+        "reason": "Modern contacts app using Material Design 3 (You) and Jetpack Compose",
+        "repo": "https://github.com/Bnyro/ConnectYou"
+    }
+]
