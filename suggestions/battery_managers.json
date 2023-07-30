@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "io.github.domi04151309.batterytool",
+        "label": "Battery Tool | Hibernate Unused Apps",
+        "source": "fg",
+        "repo": "https://github.com/Domi04151309/BatteryTool"
+    }
+]
