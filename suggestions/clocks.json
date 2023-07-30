@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "id": "com.simplemobiletools.clock",
+        "label": "Simple Clock",
+        "source": "fg",
+        "reason": "Combination of a beautiful clock widget, alarm clock, stopwatch, timer",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Clock"
+    },
+    {
+        "id": "com.bnyro.clock",
+        "label": "Clock You",
+        "source": "f",
+        "reason": "Clock and alarms app featuring awesome widgets using Material You",
+        "repo": "https://github.com/Bnyro/ClockYou"
+    },
+    {
+        "id": "com.best.deskclock",
+        "label": "New Clock",
+        "source": "f",
+        "reason": "New Clock is an updated version of the AOSP desk clock, including alarms, clock, timer and stopwatch",
+        "repo": "https://github.com/qw123wh/new-clock-fdroid"
+    }
+]
