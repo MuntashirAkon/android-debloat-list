@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "org.y20k.transistor",
+        "label": "Transistor",
+        "source": "f",
+        "reason": "Transistor is a really minimalistic app for listening to radio stations over the internet",
+        "repo": "https://codeberg.org/y20k/transistor"
+    },
+    {
+        "id": "community.peers.internetradio",
+        "label": "Internet Radio",
+        "source": "f",
+        "reason": "Small application to search Internet radio stations, and listen to them.\nRadio stations list maintained by RadioBrowser (https://www.radio-browser.info/)",
+        "repo": "https://notabug.org/zplus/InternetRadio"
+    }
+]
