@@ -5,5 +5,40 @@
         "reason": "https://mullvad.net/en/why-mullvad-vpn",
         "source": "fg",
         "repo": "https://github.com/mullvad/mullvadvpn-app"
+    },
+    {
+        "id": "network.mysterium.vpn",
+        "label": "Mysterium VPN",
+        "source": "fg",
+        "reason": "The Mysterium Network is an open-source project fighting censorship, surveillance and cybercrime through decentralized technology",
+        "repo": "https://github.com/mysteriumnetwork/mysterium-vpn-mobile"
+    },
+    {
+        "id": "com.windscribe.vpn",
+        "label": "Windscribe",
+        "source": "fg",
+        "reason": "VPN free to use which offers up to 10GB of bandwidth per month",
+        "repo": "https://github.com/Windscribe/Android-App"
+    },
+    {
+        "id": "one.librem.tunnel",
+        "label": "Librem Tunnel",
+        "source": "fg",
+        "reason": "VPN Service included in the Librem One subscription",
+        "repo": "https://source.puri.sm/liberty/tunnel/android"
+    },
+    {
+        "id": "ch.protonvpn.android",
+        "label": "ProtonVPN",
+        "source": "fg",
+        "reason": "High-speed Swiss VPN that safeguards your privacy",
+        "repo": "https://github.com/ProtonVPN/android-app"
+    },
+    {
+        "id": "org.calyxinstitute.vpn",
+        "label": "Calyx VPN",
+        "source": "f",
+        "reason": "Completely free VPN service provided by The Calyx Institute",
+        "repo": "https://gitlab.com/CalyxOS/bitmask_android"
     }
 ]
