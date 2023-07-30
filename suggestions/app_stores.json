@@ -11,5 +11,19 @@
         "label": "Droid-ify",
         "source": "f",
         "repo": "https://github.com/Iamlooker/Droid-ify"
+    },
+    {
+        "id": "com.aurora.adroid",
+        "label": "Aurora Droid",
+        "reason": "An alternative F-droid client following the same design guidelines as Aurora Store",
+        "source": "f",
+        "repo": "https://gitlab.com/AuroraOSS/auroradroid"
+    },
+    {
+        "id": "com.machiav3lli.fdroid",
+        "label": "Neo Store",
+        "source": "f",
+        "reason": "A modern F-droid client with a material design interface. Forked from Droid-ify",
+        "repo": "https://github.com/NeoApplications/Neo-Store"
     }
 ]
