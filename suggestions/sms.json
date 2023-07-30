@@ -4,5 +4,12 @@
         "label": "QKSMS",
         "source": "fg",
         "repo": "https://github.com/moezbhatti/qksms"
+    },
+    {
+        "id": "com.simplemobiletools.smsmessenger",
+        "label": "Simple SMS Messenger",
+        "source": "fg",
+        "reason": "SMS messaging and MMS messaging app for Android, send messages fast, nice UI",
+        "repo": "https://github.com/SimpleMobileTools/Simple-SMS-Messenger"
     }
 ]
