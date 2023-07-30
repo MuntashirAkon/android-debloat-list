@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "id": "com.darkempire78.opencalculator",
+        "label": "OpenCalc",
+        "source": "fg",
+        "reason": "A simple, lightweight and beautiful calculator for Android",
+        "repo": "https://github.com/Darkempire78/OpenCalc"
+    },
+    {
+        "id": "yetzio.yetcalc",
+        "label": "yetCalc",
+        "source": "f",
+        "reason": "Calculator with advanced options and units converter",
+        "repo": "https://github.com/Yet-Zio/yetCalc"
+    },
+    {
+        "id": "com.simplemobiletools.calculator",
+        "label": "Simple Calculator",
+        "source": "fg",
+        "reason": "A simple but powerful calculator for android",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Calculator"
+    },
+    {
+        "id": "com.inator.calculator",
+        "label": "Calculator-inator",
+        "source": "f",
+        "reason": "Calculator and unit & devise converter app inspired from Google's Calculator",
+        "repo": "https://github.com/prathameshmm02/calculator-inator"
+    },
+    {
+        "id": "bored.codebyk.mintcalc",
+        "label": "Mint Calculator",
+        "source": "f",
+        "reason": "Simple calculator and unit converter inspired by Windows Calculator",
+        "repo": "https://github.com/boredcodebyk/mintcalc"
+    },
+    {
+        "id": "com.xlythe.calculator.material",
+        "label": "AOSP Calculator",
+        "source": "f",
+        "reason": "The AOSP Calculator app, packaged in an application",
+        "repo": "https://github.com/Xlythe/android_packages_apps_Calculator"
+    },
+    {
+        "id": "com.sadellie.unitto",
+        "label": "Unitto",
+        "source": "f",
+        "reason": "A calculator and unit converter with Material You theming",
+        "repo": "https://github.com/sadellie/unitto"
+    },
+    {
+        "id": "com.neumorphic.calculator",
+        "label": "Neumorphic Calculator",
+        "source": "f",
+        "reason": "A calculator with a unique design, made with Flutter",
+        "repo": "https://github.com/belelaritra/Neumorphic_Calculator"
+    }
+]
