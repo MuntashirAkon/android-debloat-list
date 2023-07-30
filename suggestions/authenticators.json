@@ -4,5 +4,26 @@
         "label": "Aegis",
         "source": "fg",
         "repo": "https://github.com/beemdevelopment/Aegis"
+    },
+    {
+        "id": "me.jmh.authenticatorpro",
+        "label": "Authenticator Pro",
+        "source": "g",
+        "reason": "Open source Authenticator app featuring modern design, and compatibility with WearOS.\nNot available on F-droid yet because it is a Xamarin app (https://github.com/jamie-mh/AuthenticatorPro/issues/2#issuecomment-835407250)",
+        "repo": "https://github.com/jamie-mh/AuthenticatorPro"
+    },
+    {
+        "id": "io.ente.auth",
+        "label": "ente Authenticator",
+        "source": "f",
+        "reason": "2FA app made by ente. Requires a paid subscription to their service (or free trial)",
+        "repo": "https://github.com/ente-io/auth/"
+    },
+    {
+        "id": "com.xinto.mauth",
+        "label": "Mauth",
+        "source": "f",
+        "reason": "Material You Authenticator app",
+        "repo": "https://github.com/X1nto/Mauth"
     }
 ]
