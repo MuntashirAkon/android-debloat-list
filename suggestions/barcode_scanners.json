@@ -4,5 +4,24 @@
         "label": "Binary Eye",
         "source": "fg",
         "repo": "https://github.com/markusfisch/BinaryEye"
+    },
+    {
+        "id": "com.example.barcodescanner",
+        "label": "QR & Barcode Scanner",
+        "source": "fg",
+        "repo": "https://github.com/wewewe718/QrAndBarcodeScanner"
+    },
+    {
+        "id": "com.atharok.barcodescanner",
+        "label": "Barcode Scanner",
+        "source": "fga",
+        "reason": "QR & Barcode scanner which enables you to scan, generate and even fetch product informations from QR and barcodes",
+        "repo": "https://gitlab.com/Atharok/BarcodeScanner"
+    },
+    {
+        "id": "com.google.zxing.client.android",
+        "label": "ZXing Barcode Scanner",
+        "source": "fg",
+        "repo": "https://github.com/zxing/zxing"
     }
 ]
