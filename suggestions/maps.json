@@ -4,5 +4,12 @@
         "label": "Organic Maps",
         "source": "fg",
         "repo": "https://github.com/organicmaps/organicmaps"
+    },
+    {
+        "id": "net.osmand.plus",
+        "label": "OsmAnd~",
+        "source": "fg",
+        "reason": "Global Mobile Map Viewing & Navigation for Offline and Online OSM Maps. Has telemetry bits that can be disabled in settings",
+        "repo": "https://github.com/osmandapp/Osmand"
     }
 ]
