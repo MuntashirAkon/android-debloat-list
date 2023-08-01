@@ -601,7 +601,7 @@
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.providers.partnerbookmarks",
