@@ -1,14 +1,21 @@
 [
     {
-        "id": "org.bromite.bromite",
-        "label": "Bromite",
-        "source": "f",
-        "repo": "https://github.com/bromite/bromite"
-    },
-    {
         "id": "org.chromium.chrome",
         "label": "Vanadium",
         "repo": "https://github.com/GrapheneOS/Vanadium",
         "reason": "GrapheneOS only"
+    },
+    {
+        "id": "org.cromite.cromite",
+        "label": "Cromite",
+        "source": "f",
+        "repo": "https://github.com/uazo/cromite"
+    },
+    {
+        "id": "us.spotco.fennec_dos",
+        "label": "Mull",
+        "source": "f",
+        "repo": "https://gitlab.com/divested-mobile/mull-fenix",
+        "reason": "Hardened Firefox browser without any proprietary blobs"
     }
 ]
