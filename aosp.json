@@ -215,7 +215,7 @@
         "label": "Files",
         "description": "Occasionally runs in the background.\nFile selector for other apps.",
         "removal": "unsafe",
-        "warning": "Storage Access Framework (SAF) will BREAK if this is disabled."
+        "warning": "Storage Access Framework (SAF) will break if this is disabled."
     },
     {
         "id": "com.android.documentsui.a_overlay",
@@ -601,7 +601,7 @@
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.providers.partnerbookmarks",

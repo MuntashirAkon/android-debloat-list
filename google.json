@@ -809,9 +809,9 @@
     {
         "id": "com.google.android.documentsui",
         "label": "Files",
-        "description": "Files by Google.\nOccasionally runs in the background.\nFile selector for other apps. Another file browser can replace most of the functionality, but not all apps support that.",
-        "removal": "caution",
-        "warning": "Safe to disable, but will break file saving/loading functionality for some apps."
+        "description": "Occasionally runs in the background.\nFile selector for other apps.",
+        "removal": "unsafe",
+        "warning": "Storage Access Framework (SAF) will break if this is disabled."
     },
     {
         "id": "com.google.android.ext.shared",

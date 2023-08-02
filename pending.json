@@ -261,8 +261,12 @@
     {
         "id": "com.google.android.providers.media.module",
         "label": "Media",
-        "description": "Media Storage\nIn Android 11 this is literally what provides access to files.\nSafe to disable, but NOT recommended; breaks file browsers and other forms of file access.\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
-        "removal": "unsafe"
+        "description": "Provider of media files (images, videos and such).\nContent providers encapsulate data, providing centralized management of data shared between apps.",
+        "web": [
+            "https://developer.android.com/guide/topics/providers/content-providers.html"
+        ],
+        "removal": "unsafe",
+        "warning": "Breaks file browsers and other forms of file access."
     },
     {
         "id": "com.gsma.rcs",
