@@ -4131,7 +4131,7 @@
         "web": [
             "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
         ],
-        "removal": "delete"
+        "removal": "warning"
     },
     {
         "id": "com.oplus.screenshot",
