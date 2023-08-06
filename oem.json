@@ -4127,11 +4127,12 @@
     {
         "id": "com.oplus.safecenter",
         "label": "Security center",
-        "description": "Breaks app lock feature when disabled/deleted, all other features work",
+        "description": "Enhances privacy features on Oneplus/Oppo devices",
+        "warning": "Breaks app lock feature when disabled/deleted, all other features work",
         "web": [
             "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
         ],
-        "removal": "warning"
+        "removal": "delete"
     },
     {
         "id": "com.oplus.screenshot",
