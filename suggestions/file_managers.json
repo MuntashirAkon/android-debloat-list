@@ -4,12 +4,5 @@
         "label": "Material Files",
         "source": "fg",
         "repo": "https://github.com/zhanghai/MaterialFiles"
-    },
-    {
-        "id": "com.simplemobiletools.filemanager.pro",
-        "label": "Simple File Manager Pro",
-        "source": "fg",
-        "reason": "Handy file explorer for easily searching or organizing your files and folders",
-        "repo": "https://github.com/SimpleMobileTools/Simple-File-Manager"
     }
 ]
