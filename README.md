@@ -40,22 +40,27 @@ the following format:
 
 - `id` (string) - Package name of the app.
 - `label` (string) - The readable name of the app in English.
-- `reason` (string) _optional_ - Why this is suggested, under 100 words.
+- `reason` (string) _optional_ - Why this is suggested, under 100 words. This value must only be filled for cases where
+  no valid alternative exists.
 - `source` (string) _optional_ - Source of the app. This is a predefined value, could be `fgas` where `f` stands for
   F-Droid, `g` for Google Play Store, `a` for Amazon Appstore and `s` for Samsung Galaxy Store.
 - `repo` (string) - Link to the project repository.
 
 #### Criteria for suggestions
 
-1. It has to be free and open source having an OSI approved license.
-2. Interface or functions (UI/UX) should be very or nearly similar to the original app or even better. If no such
-   alternative is available right now, the `reason` must be included.
-3. For crucial apps, for example, messaging apps, only audited apps might be listed. Unaudited yet popularly used apps
-   should contain sufficient warning in the `reason` section.
-4. The app should not contain any trackers. If it does contain any reasonable tracker such as crash reporting framework,
-   it should be disabled by default. If there are no such alternative, the `reason` section must be updated with
-   sufficient warning.
-5. No credits or endorsement is allowed. If a suggested app contain or advertise its inclusion in this list, the app
+1. There does not already exist a suggestion for the _Suggestion ID_ that offers similar or better features. A new
+   suggestion without a `reason` is preferable over an existing suggestion with `reason`.
+2. Both source code and software have to be free (libre) and open source having an OSI approved license. Use of non-free
+   assets or resources (that is, non-source code) in a software is permissible. But the `reason` must be included for
+   such cases.
+3. Interface or functions (UI/UX) should be very or nearly similar to the original app or even better. If no such
+   alternative is available right now, `reason` must be included.
+4. For crucial apps, such as instant messaging or password manager apps, only an audited app might be listed. Unaudited 
+   yet popular apps should contain sufficient warning in the `reason` section.
+5. The suggested app should not contain any trackers. If it does contain any reasonable tracker such as crash reporting
+   framework, it should be disabled (that is, opt-out) by default. If there exists no such alternatives, the `reason`
+   section must be updated with sufficient warning.
+6. No credits or endorsement is allowed. If a suggested app contain or advertise its inclusion in this list, the app
    will be removed from the list in immediate effect.
 
 ## Contributing
@@ -64,6 +69,13 @@ The repository is divided into several folders to make it easier for the first-t
 do not have access to a personal computer. However, we encourage you to [create a new issue](https://github.com/MuntashirAkon/android-debloat-list/issues/new/choose)
 if you are not willing to investigate your proposed changes.
 
+To contribute, read the JSON schema section above and the next subsections and then, create a pull request with the
+desired changes. Minor changes should be accepted without much review, but major changes such as the addition of a new
+package require a review. The review process is decided by the maintainers based on the type of change. Third-party
+reviews are welcome but the mere approval does not count, the reviewer must leave helpful comments for authors as well
+as the maintainers. 
+
+### Adding or Amending a Bloatware
 Each json file represents a list of bloatware for a category. For example, `aosp.json` contains a list of apps that
 comes prebuilt with the AOSP itself, `oem.json` contains a list of apps from all the vendors or OEMs. The list names
 are very generic, and if you have a new idea for a list, it has to be generic too. For example, apps related to
@@ -71,13 +83,16 @@ productivity can be separated from `misc.json` under a new json file. _All entri
 based on their `id`._ You should avoid contributing to the `pending.json` file as it is kept for compatibility reasons
 only and shall be removed in the future.
 
+### Adding or Amending a Suggestion
 `suggestions` folder contains a list of suggestions for a certain category. The filename of each list is considered its
 _ID_ and should not contain any non-ASCII or whitespace characters. It is done this way because multiple apps could be
-assigned the same set of suggestions.
-
-To contribute, read the JSON schema section above and create a pull request with the desired changes. Minor changes
-should be accepted without much review, but major changes such as the addition of a new package require a review. The
-review process is decided by the maintainers based on the type of change.
+assigned the same set of suggestions. Here are a few things to remember before making a suggestion:
+1. The number of suggestions for _Suggestion ID_ must be as small as possible. This project does not aim at cataloguing
+   all the alternatives available in the wild, rather it attempts to make it easy for a user to get started with a
+   viable alternative.
+2. If you have a better suggestion than the existing ones, you must present supporting arguments for it.
+3. Each suggested app is thoroughly reviewed, therefore, separate issues/PRs should be created for each suggestion.
+   Otherwise, the PR might be discarded due to the lack of reviewer.
 
 ## License
 
