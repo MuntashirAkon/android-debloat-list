@@ -4,17 +4,5 @@
         "label": "Audio Recorder",
         "source": "fg",
         "repo": "https://github.com/Dimowner/AudioRecorder"
-    },
-    {
-        "id": "com.bnyro.recorder",
-        "label": "Record You",
-        "source": "f",
-        "repo": "https://github.com/Bnyro/RecordYou"
-    },
-    {
-        "id": "com.simplemobiletools.voicerecorder",
-        "label": "Simple Voice Recorder",
-        "source": "fg",
-        "repo": "https://github.com/SimpleMobileTools/Simple-Voice-Recorder"
     }
 ]
