@@ -6,13 +6,6 @@
         "repo": "https://gitlab.com/spacecowboy/Feeder"
     },
     {
-        "id": "me.ash.reader",
-        "label": "Read You",
-        "source": "f",
-        "reason": "A modern and elegant RSS reader with Material You design",
-        "repo": "https://github.com/Ashinch/ReadYou"
-    },
-    {
         "id": "com.nunti",
         "label": "Nunti",
         "source": "f",
