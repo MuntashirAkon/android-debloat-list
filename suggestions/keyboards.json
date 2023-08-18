@@ -9,6 +9,7 @@
         "id": "org.smc.inputmethod.indic",
         "label": "Indic Keyboard",
         "source": "fg",
+        "reason": "Enhanced keyboard support for Indian languages",
         "repo": "https://gitlab.com/indicproject/Indic-Keyboard"
     }
 ]

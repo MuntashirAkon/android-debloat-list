@@ -3,12 +3,7 @@
         "id": "com.fsck.k9",
         "label": "K-9 Mail",
         "source": "fg",
+        "reason": "https://blog.thunderbird.net/2023/07/k-9-mail-collaborates-with-ostif-and-7asecurity-security-audit/",
         "repo": "https://github.com/thundernest/k-9"
-    },
-    {
-        "id": "eu.faircode.email",
-        "label": "FairEmail",
-        "source": "fg",
-        "repo": "https://github.com/M66B/FairEmail"
     }
 ]
