@@ -337,6 +337,16 @@
         "removal": "delete"
     },
     {
+        "id": "com.disney.disneyplus",
+        "label": "Disney+",
+        "description": "Streaming app from Disney and co. (Pixar, Marvel, Star Wars, and National Geographic).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.disney.disneyplus"
+        ],
+        "removal": "replace",
+        "suggestions": "streaming_apps"
+    },
+    {
         "id": "com.dna.solitaireapp",
         "label": "Solitaire – Classic Card Game",
         "description": "Solitaire Game app from DNA company ?",
@@ -724,6 +734,15 @@
             "https://play.google.com/store/apps/details?id=com.king.candycrushsodasaga",
             "https://www.king.com/privacyPolicy",
             "https://en.wikipedia.org/wiki/Candy_Crush_Saga"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.kwai.video",
+        "label": "Kwai",
+        "description": "Just another one of the useless short video apps. Depending on the phone model, it may not be possible to uninstall properly but safe to disable. (Even disabled it still runs in the background).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.kwai.video"
         ],
         "removal": "delete"
     },
@@ -1753,9 +1772,18 @@
         "removal": "delete"
     },
     {
+        "id": "com.shopee.br",
+        "label": "Shopee",
+        "description": "An e-commerce online shopping platform for Brazil.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.shopee.br"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.shopee.id",
         "label": "Shopee",
-        "description": "An e-commerce online shopping platform in Southeast Asian.",
+        "description": "An e-commerce online shopping platform for Indonesia.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.shopee.id"
         ],
@@ -1796,6 +1824,15 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.smithmicro.netwise.director.comcast.oem",
             "https://en.wikipedia.org/wiki/Xfinity"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.snapchat.android",
+        "label": "Snapchat",
+        "description": "Snapchat is a social media app that allows users to share photos and videos that disappear after a short period of time.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.snapchat.android"
         ],
         "removal": "delete"
     },
