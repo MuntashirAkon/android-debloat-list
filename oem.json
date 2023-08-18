@@ -4045,6 +4045,13 @@
         "removal": "replace"
     },
     {
+        "id": "com.oplus.camera",
+        "label": "Camera",
+        "description": "Stock Oppo/Oneplus camera app",
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
         "id": "com.oplus.cosa",
         "label": "App Enhancement Services",
         "required_by": [
@@ -4106,6 +4113,31 @@
     {
         "id": "com.oplus.pay",
         "description": "Secure Payment\nLets you pay with your phone. Privacy issue aside, you should probably not trust their security: https://www.bitdefender.com/blog/hotforsecurity/hackers-attack-oneplus-again-this-time-stealing-customer-details",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.qualityprotect",
+        "label": "QualityProtect",
+        "description": "Probably Oppo/OnePlus analytics, no effects after disabling/deleting",
+        "web": [
+            "https://forum.xda-developers.com/t/list-of-applications-that-can-be-uninstalled-with-adb-commands.4392267/post-86573217"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.safecenter",
+        "label": "Security center",
+        "description": "Enhances privacy features on Oneplus/Oppo devices",
+        "warning": "Breaks app lock feature when disabled/deleted, all other features work",
+        "web": [
+            "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.oplus.screenshot",
+        "label": "Screenshot",
+        "description": "Enables quick settings screenshot option, the power+volume down screenshot feature works without it",
         "removal": "delete"
     },
     {
