@@ -283,7 +283,8 @@
         "id": "com.android.externalstorage",
         "label": "External Storage",
         "description": "Needed by apps to access external storage such as memory cards.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Storage Access Framework (SAF) will break if this is disabled."
     },
     {
         "id": "com.android.facelock",
@@ -601,7 +602,8 @@
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Breaks features related to media storage (images, videos, music, etc.) if disabled"
     },
     {
         "id": "com.android.providers.partnerbookmarks",
