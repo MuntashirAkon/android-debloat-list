@@ -68,12 +68,14 @@
     },
     {
         "id": "cn.oneplus.opmms",
-        "description": "OPMmsLocation\nDetermines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
+        "label": "OPMmsLocation",
+        "description": "Determines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
         "removal": "delete"
     },
     {
         "id": "cn.oneplus.photos",
-        "description": "Shot On OnePlus\nAccessible through the Wallpapers selection menu.\nProvides photos uploaded by OnePlus users, allowing you to set them as your wallpaper.\nEach day, one new photo appears within the application.",
+        "label": "Shot On OnePlus",
+        "description": "Accessible through the Wallpapers selection menu.\nProvides photos uploaded by OnePlus users, allowing you to set them as your wallpaper.\nEach day, one new photo appears within the application.",
         "removal": "delete"
     },
     {
@@ -2616,12 +2618,17 @@
     },
     {
         "id": "com.mipay.wallet.in",
-        "description": "Mi Pay (https://play.google.com/store/apps/details?id=com.mipay.in.wallet)\nContactless NFC-based mobile payment system that supports credit, debit and public transportation cards in China.\nhttps://www.mi-pay.com/\n#\n.in = Mi Pay for India\n.id = My Pay for Indonesia\n",
+        "label": "Mi Pay",
+        "description": "Contactless NFC-based mobile payment system that supports credit, debit and public transportation cards in China.\nhttps://www.mi-pay.com/\n#\n.in = Mi Pay for India\n.id = My Pay for Indonesia",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mipay.in.wallet"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.miui.accessibility",
-        "description": "Mi Ditto\nAccesibility feature. Dictation (TTS) and speech output, \nmaking mobile devices more convenient for people who have difficulties using conventionally designed smartphones. \n",
+        "label": "Mi Ditto",
+        "description": "Accesibility feature. Dictation (TTS) and speech output, \nmaking mobile devices more convenient for people who have difficulties using conventionally designed smartphones.",
         "removal": "delete"
     },
     {
@@ -3146,7 +3153,7 @@
     },
     {
         "id": "com.motorola.android.settings.modemdebug",
-        "description": "Provide modem debug settings menu ?\nNo longer in Android 10 image\n",
+        "description": "Provide modem debug settings menu ?\nNo longer in Android 10 image",
         "removal": "delete"
     },
     {
@@ -3416,17 +3423,25 @@
     },
     {
         "id": "com.motorola.genie",
-        "description": "Device Help (previously Moto Help) (https://play.google.com/store/apps/details?id=com.motorola.genie)\nAn app that checks hardware status and gives the user contacts for support.\n",
+        "label": "Device Help",
+        "description": "Previously Moto Help\nAn app that checks hardware status and gives the user contacts for support.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.genie"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.gesture",
-        "description": "Gesture navigation tutorial added in Android 10.\n",
+        "description": "Gesture navigation tutorial added in Android 10.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.help",
-        "description": "Moto feedback (https://play.google.com/store/apps/details?id=com.motorola.help)\nLets you rate your device and share feedback with Motorola.\n",
+        "label": "Moto feedback",
+        "description": "Lets you rate your device and share feedback with Motorola.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.help"
+        ],
         "removal": "delete"
     },
     {
@@ -3437,12 +3452,16 @@
     },
     {
         "id": "com.motorola.hiddenmenuapp",
-        "description": "Added in Android 10. Safe to remove.\n",
+        "description": "Added in Android 10. Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.imagertuning_lake",
-        "description": "Imager Tuning (https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene)\nNaming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
+        "label": "Imager Tuning",
+        "description": "Naming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene"
+        ],
         "removal": "replace"
     },
     {
@@ -3541,7 +3560,12 @@
     },
     {
         "id": "com.motorola.motodisplay",
-        "description": "Moto Display (https://play.google.com/store/apps/details?id=com.motorola.motodisplay)\nDisplays notifications with the screen off (like the Always On Display feature from other OEMs)\nhttps://support.motorola.com/uk/en/solution/ms108519",
+        "label": "Moto Display",
+        "description": "Displays notifications with the screen off (like the Always On Display feature from other OEMs)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.motodisplay",
+            "https://support.motorola.com/uk/en/solution/ms108519"
+        ],
         "removal": "delete"
     },
     {
@@ -3566,7 +3590,7 @@
     },
     {
         "id": "com.motorola.nfc",
-        "description": "Support for NFC protocol.\n",
+        "description": "Support for NFC protocol.",
         "removal": "replace"
     },
     {
@@ -3601,7 +3625,8 @@
     },
     {
         "id": "com.motorola.programmenu",
-        "description": "Programming Menu\nHidden menu (accessible by typing  ##7764726 in the dialer) providing additionnal features for developers.\n",
+        "label": "Programming Menu",
+        "description": "Hidden menu (accessible by typing  ##7764726 in the dialer) providing additionnal features for developers.",
         "removal": "delete"
     },
     {
@@ -3661,15 +3686,15 @@
     },
     {
         "id": "com.nearme.deamon",
-        "description": "Package needed by com.nearme.statistics.rom to run service in background at every boot even though the app has been uninstalled",
-        "removal": "delete",
         "required_by": [
             "com.nearme.statistics.rom"
-        ]
+        ],
+        "description": "Package needed by com.nearme.statistics.rom to run service in background at every boot even though the app has been uninstalled",
+        "removal": "delete"
     },
     {
         "id": "com.nearme.instant.platform",
-        "description": "",
+        "description": "Not sure what it does.",
         "removal": "delete"
     },
     {
@@ -3798,18 +3823,23 @@
     },
     {
         "id": "com.oneplus.brickmode",
-        "description": "OnePlus Zen Mode (https://play.google.com/store/apps/details?id=com.oneplus.brickmode)\nZen Mode helps you put down your phone and enjoy your life.\nIn Zen Mode you will only be able to take photos and answer calls.",
+        "label": "OnePlus Zen Mode",
+        "description": "Zen Mode helps you put down your phone and enjoy your life.\nIn Zen Mode you will only be able to take photos and answer calls.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.brickmode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.oneplus.bttestmode",
-        "description": "OnePlus Bluetooth test mode\nType *#*#232339#*#* in the OnePlus dialer to access this hidden test menu.\n",
+        "label": "OnePlus Bluetooth test mode",
+        "description": "Type *#*#232339#*#* in the OnePlus dialer to access this hidden test menu.",
         "removal": "delete"
     },
     {
         "id": "com.oneplus.calculator",
         "label": "Calculator",
-        "description": "Stock Oneplus Calculator app.\n",
+        "description": "Stock Oneplus Calculator app.",
         "removal": "replace",
         "suggestions": "calculators"
     },
@@ -3861,7 +3891,10 @@
     },
     {
         "id": "com.oneplus.chargingpilar",
-        "description": "Geolocates the phone to find OnePlus charging stations nearby. Connects to 'gateway.oneplus.net'\n\nPithus analysis: https://beta.pithus.org/report/8c157eeec2931d3d1140aa8c452d7afa570e04c9d51e6cd5987dbb3ec43df4f9",
+        "description": "Geolocates the phone to find OnePlus charging stations nearby. Connects to 'gateway.oneplus.net'.",
+        "web": [
+            "https://beta.pithus.org/report/8c157eeec2931d3d1140aa8c452d7afa570e04c9d51e6cd5987dbb3ec43df4f9"
+        ],
         "removal": "delete"
     },
     {
@@ -7847,7 +7880,7 @@
         "web": [
             "https://play.google.com/store/apps/details?id=net.oneplus.weather"
         ],
-        "removal": "replace",
+        "removal": "replace"
     },
     {
         "id": "net.oneplus.weather.basiccolorblack.overlay",
