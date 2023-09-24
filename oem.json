@@ -26,7 +26,8 @@
     },
     {
         "id": "android.autoinstalls.config.motorola.layout",
-        "description": "Device configuration for Motorola\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).\nA layout?",
+        "label": "Device configuration",
+        "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).\nA layout?",
         "removal": "delete"
     },
     {
@@ -1716,11 +1717,12 @@
     },
     {
         "id": "com.huawei.hwvoipservice",
-        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime)",
-        "removal": "delete",
+        "label": "com.huawei.hwvoipservice",
         "required_by": [
             "com.huawei.meetime"
-        ]
+        ],
+        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime)",
+        "removal": "delete"
     },
     {
         "id": "com.huawei.iaware",
@@ -3039,32 +3041,102 @@
     },
     {
         "id": "com.motorola.actions",
-        "description": "Moto Actions (https://play.google.com/store/apps/details?id=com.motorola.actions)\nAllows you to perform specific gestures to perform certain tasks. Frontend to change settings provided by \"com.motorola.moto\".\n",
+        "label": "Moto Actions & Gestures",
+        "description": "Allows you to perform specific gestures to perform certain tasks. Frontend to change settings provided by \"com.motorola.moto\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.actions",
+            "https://beta.pithus.org/report/5c26c2865ec9692efba4377598f8130c25f66706901144f49438230a11590f01"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.actions.overlay",
+        "label": "com.motorola.actions.overlay",
+        "description": "Overlay package for \"com.motorola.actions\".",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.aiservices",
+        "label": "Moto AI Services",
+        "description": "Service to supply artificial intelligence models to Motorola apps. Not sure where the AI services are integrated.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.aiservices",
+            "https://beta.pithus.org/report/effeb339cfeb3d8fcbf2023b6ccdec77e012d9417ee0579cf998bcb090741362"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.fmradio",
-        "description": "FMRadioService \nRequired by \"com.motorola.fmplayer\"\n",
+        "label": "FMRadioService",
+        "dependencies": [
+            "com.motorola.fmplayer"
+        ],
+        "description": "Required for Motorola FM Radio",
         "removal": "delete"
     },
     {
+        "id": "com.motorola.android.fota",
+        "label": "Software update",
+        "description": "Required for OTA updates which are ssential part of keeping your device secure and up to date with regular security patchs.\nFOTA = firmware over the air",
+        "removal": "caution",
+        "warning": "Breaks OTA updates"
+    },
+    {
         "id": "com.motorola.android.jvtcmd",
-        "description": "Java Tcmd Helper\ntcmd = commandes types. Seems to be a tools wich help find Java commands types.\nUseless for normal user.\n",
+        "label": "Java Tcmd Helper",
+        "description": "Seems to be a tools wich help find Java commands types.\ntcmd = commandes types",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.nativedropboxagent",
-        "description": "Native DropBox Agent.\nIt is not related to Cloud Dropbox company but to Android logging. It is used during development.\nhttps://stackoverflow.com/questions/4434192/dropboxmanager-use-cases\n",
+        "label": "NativeDropBoxAgent",
+        "description": "It is not related to Cloud Dropbox company but to Android logging. It is used during development.",
+        "web": [
+            "https://stackoverflow.com/questions/4434192/dropboxmanager-use-cases",
+            "https://beta.pithus.org/report/b7376e9ca607e856c9b39eb93e5aa420dab7f32424b61c5325f55faa03d2a97f"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.android.overlay.payjoy",
+        "label": "com.motorola.android.overlay.payjoy",
+        "description": "Overlay for 'com.payjoy.access'",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.providers.chromehomepage",
-        "description": "Seems to provide the \"Home\"-button functionality in Chrome.\nhttps://forum.xda-developers.com/android/apps-games/app-chrome-homepage-t3695804",
+        "label": "com.motorola.android.providers.chromehomepage",
+        "description": "Seems to provide the \"Home\"-button functionality in Chrome.",
+        "web": [
+            "https://forum.xda-developers.com/android/apps-games/app-chrome-homepage-t3695804"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.android.providers.settings",
+        "label": "Settings storage",
+        "description": "Seems to required for device settings.",
+        "removal": "caution",
+        "warning": "Device settings will crash continuously"
+    },
+    {
+        "id": "com.motorola.android.providers.settings.auto_generated_rro_product__",
+        "label": "com.motorola.android.providers.settings.auto_generated_rro_product__",
+        "description": "RRO = runtime resource overlay.\nUsed for various system settings customizations.",
+        "web": [
+            "https://www.phonecheck.com/blog/what-is-android-auto-generated-rro",
+            "https://beta.pithus.org/report/ecc311a58af6143697c69fba7d1387892f778386db96303ddf518411a7f41598"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.provisioning",
-        "description": "OMA Client Provisioning\nIt is a protocol specified by the Open Mobile Alliance (OMA).\nIt is used by carrier to send \"configuration SMS\" which can setup network settings (such as APN).\nIn my case, it was automatic and I never needed configuration messages. I'm pretty sure that in France this package is useless.\nMaybe it's useful if carriers change their APN... but you still can change it manually, it's not difficult.\n#\nNote : These special \"confirguration SMS\" can be abused : \nhttps://www.zdnet.fr/actualites/les-smartphones-samsung-huawei-lg-et-sony-vulnerables-a-des-attaques-par-provisioning-39890045.htm\nhttps://www.csoonline.com/article/3435729/sms-based-provisioning-messages-enable-advanced-phishing-on-android-phones.html\n",
+        "label": "OMA client provisioning",
+        "description": "It is a protocol specified by the Open Mobile Alliance (OMA).\nIt is used by carrier to send \"configuration SMS\" which can setup network settings (such as APN).\nIn my case, it was automatic and I never needed configuration messages. I'm pretty sure that in France this package is useless.\nMaybe it's useful if carriers change their APN... but you still can change it manually, it's not difficult.\nNote : These special \"confirguration SMS\" can be abused.",
+        "web": [
+            "https://www.zdnet.fr/actualites/les-smartphones-samsung-huawei-lg-et-sony-vulnerables-a-des-attaques-par-provisioning-39890045.html",
+            "https://www.csoonline.com/article/3435729/sms-based-provisioning-messages-enable-advanced-phishing-on-android-phones.html"
+        ],
         "removal": "replace"
     },
     {
@@ -3079,33 +3151,97 @@
     },
     {
         "id": "com.motorola.appdirectedsmsproxy",
-        "description": "An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port. \nApps need to listen to this port to get the SMS message.\nI don't know if this package allows port directed SMS or if it just provide a proxy feature.\n",
+        "label": "Motorola Message Service",
+        "description": "An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port.\nApps need to listen to this port to get the SMS message.\nI don't know if this package allows port directed SMS or if it just provide a proxy feature.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.appforecast",
+        "label": "Performance",
+        "description": "Seems to be always running in background.Not sure what it does.",
+        "web": [
+            "https://beta.pithus.org/report/54ae099575a10e12e59064e2999373332b0b6d2eb76b56964697f87700db1dbb"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.bach.modemstats",
-        "description": "ModemStatsService\nStatistics and events logs from the modem activity.\n",
-        "removal": "delete"
+        "label": "Modem Service",
+        "description": "Statistics and events logs from the modem activity.\nResponsible for opening the network services on your Verizon phone.",
+        "web": [
+            "https://internet-access-guide.com/what-is-motorola-modem-service/"
+        ],
+        "removal": "caution",
+        "warning": "It will adversely influence the data usage and connectivity if disabled."
     },
     {
         "id": "com.motorola.brapps",
-        "description": "Motorola App Box (https://play.google.com/store/apps/details?id=com.motorola.brapps)\nOffers you a selection of applications developed by Brazilians and also apps selected for you.\n",
-        "removal": "delete"
+        "label": "App Box",
+        "description": "Offers you a selection of applications developed by Brazilians and also apps selected for you.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.brapps",
+            "https://beta.pithus.org/report/842d17e1944d748a7813ee8deb072224fd0665cf6c0504a0d90e46568d4c444d"
+        ],
+        "removal": "replace",
+        "suggestions": "app_stores"
     },
     {
         "id": "com.motorola.bug2go",
-        "description": "Bugs reporting app that sends info about crash report.\n",
+        "label": "com.motorola.bug2go",
+        "description": "Bugs reporting app that sends info about various crash reports and logs.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.callredirectionservice",
-        "description": "Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it (when someone call.\nSee https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/140542\nhttps://en.wikipedia.org/wiki/Call_forwarding\n",
+        "label": "com.motorola.callredirectionservice",
+        "description": "Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it.",
+        "web": [
+            "https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/140542",
+            "https://en.wikipedia.org/wiki/Call_forwarding"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.camera2",
-        "description": "Moto Camera 2 (https://play.google.com/store/apps/details?id=com.motorola.camera)\n",
-        "removal": "replace"
+        "label": "Moto Camera 2",
+        "description": "Moto camera 2 is optimized for Moto devices and integrated with Google Photos.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera2"
+        ],
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
+        "id": "com.motorola.camera3",
+        "label": "Moto Camera 3",
+        "description": "Moto redesigned camera only compatible with select devices launched in 2020 and beyond.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera3"
+        ],
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
+        "id": "com.motorola.camera3.content.ai",
+        "label": "Moto Camera Content 3",
+        "dependencies": [
+            "com.motorola.camera3"
+        ],
+        "description": "Provides AI related features to 'com.motorola.camera3'",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera3.content.ai",
+            "https://beta.pithus.org/report/0b0a4e3d19819faf9f7448817b88172b33d83973334b2ba5fd99a814aae5575b"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.carrierconfig",
+        "label": "Carrier Services",
+        "description": "Related to various communication related actions.",
+        "web": [
+            "https://source.android.com/docs/core/connect/carrier"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.motorola.carriersettingsext",
@@ -3114,23 +3250,35 @@
     },
     {
         "id": "com.motorola.ccc.devicemanagement",
-        "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure \nyour device is secure, know where it is, and remotely erase your data if the phone is stolen.\nYou should NEVER install a MDM tool on your phone. Never.\nhttps://onezero.medium.com/dont-put-your-work-email-on-your-personal-phone-ef7fef956c2f\nhttps://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/\n",
+        "label": "Device Management",
+        "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure your device is secure, know where it is, and remotely erase your data if the phone is stolen.",
+        "web": [
+            "https://onezero.medium.com/dont-put-your-work-email-on-your-personal-phone-ef7fef956c2f",
+            "https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.mainplm",
-        "description": "plm = Product Lifecycle Management ? No noticeable consequences after removal\n",
+        "label": "Motorola Services Main",
+        "description": "plm = Product Lifecycle Management ? No noticeable consequences after removal",
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.notification",
-        "description": "Motorola Notifications (https://play.google.com/store/apps/details?id=com.motorola.ccc.notification)\nIf you opt-in, it sends periodic product-related information, including notifications on software updates, tips & tricks, survey and information\nabout new Motorola products and services.\n",
+        "label": "Motorola Notifications",
+        "description": "If you opt-in, it sends periodic product-related information, including notifications on software updates, tips & tricks, survey and information about new Motorola products and services.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.ccc.notification"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.ota",
-        "description": "Motorola Update Services\nProvide OTA system updates.\nOTA (Over-The-Air) updates allow manufacturers to remotely install new software updates, features and services.\n",
-        "removal": "caution"
+        "label": "Motorola software update",
+        "description": "Provide OTA system updates.\nOTA (Over-The-Air) updates allow manufacturers to remotely install new software updates, features and services.",
+        "removal": "caution",
+        "warning": "Breaks OTA updates"
     },
     {
         "id": "com.motorola.comcast.settings.extensions",
@@ -3139,7 +3287,7 @@
     },
     {
         "id": "com.motorola.comcastext",
-        "description": "See above. Provides special (useless) features from Comcast? App title is \"Activation\". Safe to remove (tested only on non-Comcast phone).\n",
+        "description": "See above. Provides special (useless) features from Comcast? App title is \"Activation\". Safe to remove (tested only on non-Comcast phone).",
         "removal": "delete"
     },
     {
@@ -3149,37 +3297,83 @@
     },
     {
         "id": "com.motorola.contacts.preloadcontacts",
-        "description": "Preloaded Contacts\nProvides contacts preset by carriers.\n",
+        "description": "Preloaded Contacts\nProvides contacts preset by carriers.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.coresettingsext",
-        "description": "Core Settings extension\nSafe to remove (no bootloop) but its usefulness remains unkown.\n",
+        "label": "Core Settings extension",
+        "description": "Its usefulness remains unkown.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.dciservice",
+        "label": "Moto DCI Service",
+        "description": "Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.demo",
-        "description": "Moto Demo Mode\nEnable retail demonstration mode.\nhttps://source.android.com/devices/tech/display/retail-mode\n",
+        "label": "Demo mode",
+        "description": "Enable retail demonstration mode.",
+        "web": [
+            "https://source.android.com/devices/tech/display/retail-mode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.demo.env",
-        "description": "Needed for Moto Demo Mode\nenv = environment\n",
+        "description": "Needed for Moto Demo Mode\nenv = environment",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.discovery",
+        "label": "Moto Discovery",
+        "description": "Not sure what it does",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.dolby.dolbyui",
+        "label": "Dolby Atmos",
+        "description": "Dolby helps you rich and engaging sound.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.dynamicvolume",
+        "label": "Adaptive volume",
+        "description": "Used to control the Multi-Volume feature, where apps can have their own volume level set. It can also automatically mute apps that you always mute manually.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.easyprefix",
-        "description": "Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)\nAuto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\n\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire)",
+        "label": "Easy Prefix",
+        "description": "Auto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.easyprefix"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.email",
-        "description": "Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)\nAuto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\n\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire)\n\nMoto Email (https://play.google.com/store/apps/details?id=com.motorola.email)\n",
+        "description": "Auto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.email"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.enterprise.service",
+        "label": "Moto Thinkshield-MM",
+        "description": "Provides various security to Moto devices",
+        "web": [
+            "https://www.motorola.com/business/thinkshield/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.entitlement",
-        "description": "Enable WiFi tethering/hotspot functionality. \nWhat you can do is preventing the phone from notifying the carrier about when you use hotspot. It will bypass mobile carriers tethering restrictions.\nFrom an ADB shell : settings put global tether_dun_required 0\n",
+        "label": "Entitlement",
+        "description": "Enable WiFi tethering/hotspot functionality.\nWhat you can do is preventing the phone from notifying the carrier about when you use hotspot. It will bypass mobile carriers tethering restrictions.\nFrom an ADB shell : settings put global tether_dun_required 0",
         "removal": "caution"
     },
     {
@@ -3194,12 +3388,30 @@
     },
     {
         "id": "com.motorola.fmplayer",
-        "description": "FM Radio (https://play.google.com/store/apps/details?id=com.motorola.fmplayer)\nRadio app\n",
-        "removal": "delete"
+        "label": "FM Radio",
+        "required_by": [
+            "com.motorola.android.fmradio"
+        ],
+        "description": "FM Radio for Motorola devices",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.fmplayer",
+            "https://beta.pithus.org/report/0113cb712cc43c94f904601120c9100640a65b3043a41b7efe63b340bdae4995"
+        ],
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.motorola.frameworks.singlehand",
         "description": "Provide the Single/One hand mode\nI don't know why frameworks appears in the package name because it's not only the framework.\nhttps://support.motorola.com/us/en/documents/MS116403/\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.gamemode",
+        "label": "Moto Gametime",
+        "description": "Find your downloaded games here and discover new games.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.gamemode"
+        ],
         "removal": "delete"
     },
     {
@@ -3218,6 +3430,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.help.extlog",
+        "label": "Extended Log",
+        "description": "Not sure what it does",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.hiddenmenuapp",
         "description": "Added in Android 10. Safe to remove.\n",
         "removal": "delete"
@@ -3228,9 +3446,22 @@
         "removal": "replace"
     },
     {
+        "id": "com.motorola.imagertuning_V2",
+        "label": "Camera Tuner",
+        "description": "Applies improvements to the camera hardware so that any app that uses the camera will be improved.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_V2"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.invisiblenet",
-        "description": "Invisible net\nHard to find info about this one. I only found something from a patent: http://www.freepatentsonline.com/5469497.html\nIt's a Google patent and Google owned Motorola so maybe it is that's it.\nIt seems to implement the ICMS local area network. ICMS means Interactive Call Management Subsystems. Couldn't find more info about ICMS. It's strange that this is so badly documented.",
-        "removal": "replace"
+        "label": "Invisible Net",
+        "description": "Hard to find info about this one. I only found something from a patent: http://www.freepatentsonline.com/5469497.html\nIt's a Google patent and Google owned Motorola so maybe it is that's it.\nIt seems to implement the ICMS local area network. ICMS means Interactive Call Management Subsystems. Couldn't find more info about ICMS. It's strange that this is so badly documented.",
+        "web": [
+            "https://beta.pithus.org/report/233f65c9c8935eb7b970512e5a427149ba21ff6ea9f694c7f79d197797a14214"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.motorola.launcher.secondarydisplay",
@@ -3250,6 +3481,30 @@
     {
         "id": "com.motorola.lifetimedata",
         "description": "Not 100% sure but it's most likely the Total Call Timer or more generally it handles info like the date of manufacture of your device,\nusage time since first boot etc... \nTotal Call Timer gives you the time you spent calling.\nI don't know how to access to these info. It's surely a hidden menu (and may be accessible through the dialer with a special code)\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3",
+        "label": "Interactive wallpapers",
+        "description": "Live wallpapers from Moto",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.livewallpaper3"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.mobiledesktop.core",
+        "label": "Ready For engine",
+        "description": "Let's you connect-control-view on android TV and PC.",
+        "web": [
+            "https://www.motorola.in/ready-for/"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.motcameradesktop",
+        "label": "Camera Desktop Settings",
+        "description": "Video call effects for moto camera",
         "removal": "delete"
     },
     {
@@ -3273,6 +3528,18 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.motointelligence",
+        "label": "Moto Intelligence",
+        "description": "Not sure what it does",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.motointelligence.overlay",
+        "label": "com.motorola.motointelligence.overlay",
+        "description": "Overlay for 'com.motorola.motointelligence'",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.motodisplay",
         "description": "Moto Display (https://play.google.com/store/apps/details?id=com.motorola.motodisplay)\nDisplays notifications with the screen off (like the Always On Display feature from other OEMs)\nhttps://support.motorola.com/uk/en/solution/ms108519",
         "removal": "delete"
@@ -3281,6 +3548,21 @@
         "id": "com.motorola.motosignature.app",
         "description": "Appears safe to remove.\nMaybe it's the service which check whether app's signature is trusted or not.\nNot useful if you know what you're doing (malwares apps are in PlayStore. This package will not protect you)\nMaybe I'm mistaken and this package does not handles app signatures. Can someone test it?\n",
         "removal": "replace"
+    },
+    {
+        "id": "com.motorola.mototour",
+        "label": "Moto Tour",
+        "description": "Helps you learn about essential Moto features and customizations.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.mototour"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.msimsettings",
+        "label": "Dual SIM settings",
+        "description": "I'm guessing it helps you regarding your dual SIM management.",
+        "removal": "caution"
     },
     {
         "id": "com.motorola.nfc",
@@ -3298,8 +3580,23 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.personalize",
+        "label": "Personalise",
+        "description": "Helps you personalise your themes, icons, fonts, sounds etc...",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.pgmsystem2",
         "description": "Appears safe to remove\nPGM System\nI didn't find info about this package. \nFor Me PGM = Peak Gate Power (for MOSFET transistor) but I'm not convinced it has this meaning here.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.photoeditor",
+        "label": "Moto Photo Editor",
+        "description": "On Motorola phones that feature Cutout mode, you can replace the background of your photos and resize & move selected portions.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.photoeditor"
+        ],
         "removal": "delete"
     },
     {
@@ -3310,6 +3607,21 @@
     {
         "id": "com.motorola.ptt.prip",
         "description": "Prip (https://play.google.com/store/apps/details?id=com.motorola.ptt.prip)\nPush-To-Talk app. Allows to you send calls over any wireless carrier’s 3G or 4G networks or a WiFi connection.\nIt offers unlimited calling between other users and Nextel phone owners, rather than universal calling credit, \nand works on a monthly subscription basis.\nhttps://prip.me/#get\nNo longer in Android 10 image\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.screenshoteditor",
+        "label": "Screenshot editor",
+        "description": "Moto default screenshot app that supports longer screenshots & gif.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.screenshoteditor"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.settings",
+        "label": "System update",
+        "description": "Exactly not sure what it does",
         "removal": "delete"
     },
     {
@@ -4206,7 +4518,7 @@
     {
         "id": "com.oppo.music",
         "label": "Music",
-        "description": "Oppo Music app\n",
+        "description": "Oppo Music app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.oppo.music"
         ],
@@ -4258,6 +4570,12 @@
         "id": "com.osp.app.signin",
         "description": "Samsung Account app\nLots of trackers in this app.\nHas a huge list of permissions. It is an essential app for a lot of samsung apps (which will be removed with the default selection in this list)\nSettings apps will crash if removed on Android 11/OneUI 3.0 (https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/39)\nThis issue happens only if you are running Android 11. If not, you can can (and should) remove this package!\n",
         "removal": "caution"
+    },
+    {
+        "id": "com.payjoy.access",
+        "labrl": "PayJoy Access",
+        "description": "Access is PayJoy's firmware product which OEMs optionally use to enable automatic setup (“provisioning”) and device management to enable PayJoy's Lock to work “out of the box” to minimize the number of steps for the user and store clerk to get started.",
+        "removal": "delete"
     },
     {
         "id": "com.policydm",
@@ -5857,6 +6175,15 @@
     {
         "id": "com.samsung.vvm.se",
         "description": "Samsung Verizon Voicemail \nAllows you to review and manage your voicemail directly from your smartphone, eliminating the need to dial into your mailbox.\nYou can scroll through your messages, pick the ones you want to listen to, and erase them right from your device's screen.\nhttps://mobile.spectrum.com/support/article/360001296667/samsung-visual-voicemail\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.satispay.promotion",
+        "label": "Satispay Promotion",
+        "description": "Cashbacks and promotional related app",
+        "web": [
+            "https://beta.pithus.org/report/d2aced319e53ccf9de03b47be1bdb11bfb6b1ccd0cc15e5279e34697e23db338"
+        ],
         "removal": "delete"
     },
     {
@@ -7516,8 +7843,11 @@
     {
         "id": "net.oneplus.weather",
         "label": "Weather",
-        "description": "OnePlus Weather (https://play.google.com/store/apps/details?id=net.oneplus.weather)\nOccasionally runs in the background; I think it runs every now and then to change the app icon to current weather conditions.",
-        "removal": "delete"
+        "description": "Occasionally runs in the background; I think it runs every now and then to change the app icon to current weather conditions.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=net.oneplus.weather"
+        ],
+        "removal": "replace",
     },
     {
         "id": "net.oneplus.weather.basiccolorblack.overlay",
@@ -7531,22 +7861,29 @@
     },
     {
         "id": "net.oneplus.widget",
-        "description": "OnePlus Widget\nLets you use OnePlus widgets on the home screen.\n",
+        "label": "OnePlus Widget",
+        "description": "Lets you use OnePlus widgets on the home screen.",
         "removal": "delete"
     },
     {
         "id": "org.ifaa.aidl.manager",
-        "description": "IfaaManagerService\nIFAA = (China’s) Internet Finance Authentication Alliance\nProvides biometric authentication for Alipay. Probably safe to disable if you don't use it.",
+        "label": "IfaaManagerService",
+        "description": "IFAA = (China’s) Internet Finance Authentication Alliance\nProvides biometric authentication for Alipay. Probably safe to disable if you don't use it.",
         "removal": "delete"
     },
     {
         "id": "se.dirac.acs",
-        "description": "Dirac Control Service\nSound-system backend?\nRuns in the background as part of the system. Runs even if disabled.",
+        "label": "Dirac Control Service",
+        "description": "Sound-system backend?\nRuns in the background as part of the system. Runs even if disabled.",
         "removal": "caution"
     },
     {
         "id": "tv.peel.samsung.app",
-        "description": "Peel Smart Remote (WatchON)\nIt's an application that turns your smart phone or tablet into a TV remote. \nThe app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions. \nhttps://www.samsung.com/za/support/mobile-devices/what-is-the-peel-smart-remote-application/\n",
+        "label": "Peel Smart Remote (WatchON)",
+        "description": "It's an application that turns your smart phone or tablet into a TV remote.\nThe app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions.",
+        "web": [
+            "https://www.samsung.com/za/support/mobile-devices/what-is-the-peel-smart-remote-application/"
+        ],
         "removal": "delete"
     }
 ]
