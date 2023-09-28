@@ -1,5 +1,486 @@
 [
     {
+        "id": "android.aosp.overlay",
+        "label": "android.aosp.overlay",
+        "description": "Default wallpaper and some important settings have included to android.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.overlay.common",
+        "label": "android.overlay.common",
+        "description": "It have some important settings configurations to android.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.overlay.target",
+        "label": "android.overlay.target",
+        "description": "It have some important settings configurations to android.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.qvaoverlay.common",
+        "label": "android.qvaoverlay.common",
+        "description": "It have nothing. This app is without code and safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.networkstack.tethering.inprocess.overlay",
+        "label": "com.android.networkstack.tethering.inprocess.overlay",
+        "description": "Its something about usb tethering but better keep this.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.overlay.gmstelecomm",
+        "label": "com.android.overlay.gmstelecomm",
+        "description": "Location and dialer things.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.overlay.gmstelephony",
+        "label": "com.android.overlay.gmstelephony",
+        "description": "Location and dialer things.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.phone.overlay.common",
+        "label": "com.android.phone.overlay.common",
+        "description": "Location and dialer things.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.server.NetworkPermissionConfig",
+        "label": "com.android.server.NetworkPermissionConfig",
+        "description": "Network configurations.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.server.telecom.overlay.common",
+        "label": "com.android.server.telecom.overlay.common",
+        "description": "Location and dialer things.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.systemui.gesture.line.overlay",
+        "label": "com.android.systemui.gesture.line.overlay",
+        "description": "Configurations to navigation bar.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.systemui.navigation.bar.overlay",
+        "label": "com.android.systemui.navigation.bar.overlay",
+        "description": "Configurations to navigation bar.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.systemui.overlay.common",
+        "label": "com.android.systemui.overlay.common",
+        "description": "Have something about to wellbeing.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.internal.systemui.onehanded.gestural",
+        "label": "com.android.internal.systemui.onehanded.gestural",
+        "description": "one-handed mode will not work. Safe to remove if you dont use these setting.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.networkstack.overlay",
+        "label": "com.android.networkstack.overlay",
+        "description": "Configures captive portal network, dhcp.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.theme.font.notoserifsource",
+        "label": "com.android.theme.font.notoserifsource",
+        "description": "Pre-installed font to android from AOSP.\nSome apps using it maybe.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.wifi.dialog",
+        "label": "com.android.wifi.dialog",
+        "description": "Needed for wifi dialogs.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.overlay.gmscontactprovider",
+        "label": "com.android.overlay.gmscontactprovider",
+        "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nlmao google. No effects after remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.overlay.gmssettingprovider",
+        "label": "com.android.overlay.gmssettingprovider",
+        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.networkstack.tethering.overlay",
+        "label": "com.google.android.networkstack.tethering.overlay",
+        "description": "Its needed for tethering?. I found: arrays.xml\narray name (config_tether_usb_regexs)\nitem "rndis\d"\nitem "usb\d"",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.dynsystem",
+        "label": "Dynamic System Updates",
+        "description": "Runs on boot, but doesn't seem to run in the background beyond that.\nTreble gives the ability to boot an AOSP Generic System Image (GSI) on any supported device.\nDynamic System Updates allows to boot into a Generic System Image (GSI) without interfering with the current installation.\nThat means the bootloader doesn’t need to be unlocked and the user data doesn’t need to be wiped.",
+        "web": [
+            "https://developer.android.com/topic/dsu",
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.carrierconfig.overlay.common",
+        "label": "com.android.carrierconfig.overlay.common",
+        "description": "Needed for (com.android.carrierconfig).",
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.cellbroadcastservice",
+        "label": "Cell broadcast service",
+        "description": "is designed to deliver messages to multiple users in an area.\nThis is notably used by ISPs to send Emergency/Government alerts.\nRuns in the background.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.theme.color.black",
+        "label": "com.android.theme.color.black",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.cinnamon",
+        "label": "com.android.theme.color.cinnamon",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.green",
+        "label": "com.android.theme.color.green",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.ocean",
+        "label": "com.android.theme.color.ocean",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.orchid",
+        "label": "com.android.theme.color.orchid",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.purple",
+        "label": "com.android.theme.color.purple",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.space",
+        "label": "com.android.theme.color.space",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.roundedrect",
+        "label": "com.android.theme.icon.roundedrect",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.squircle",
+        "label": "com.android.theme.icon.squircle",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.teardrop",
+        "label": "com.android.theme.icon.teardrop",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.android",
+        "label": "com.android.icon_pack.circular.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.launcher",
+        "label": "com.android.icon_pack.circular.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.settings",
+        "label": "com.android.icon_pack.circular.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.systemui",
+        "label": "com.android.icon_pack.circular.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.themepicker",
+        "label": "com.android.icon_pack.circular.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.android",
+        "label": "com.android.icon_pack.filled.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.launcher",
+        "label": "com.android.icon_pack.filled.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.settings",
+        "label": "com.android.icon_pack.filled.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.systemui",
+        "label": "com.android.icon_pack.filled.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.themepicker",
+        "label": "com.android.icon_pack.filled.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.android",
+        "label": "com.android.icon_pack.rounded.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.launcher",
+        "label": "com.android.icon_pack.rounded.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.settings",
+        "label": "com.android.icon_pack.rounded.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.camera",
+        "label": "Camera",
+        "description": "On xiaomi you should keep it, because google camera is not better.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.adservices.api",
+        "label": "com.google.android.adservices.api",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nbut its crap and doesnt help privacy.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices",
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.sdksandbox",
+        "label": "com.google.android.sdksandbox",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy...",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices",
+        ],
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.remoteprovisioner",
+        "label": "RemoteProvisioner",
+        "description": "Have random stuff: security, notifications, accessibility, test modes, data usage, metrics, logs.\nIts something new introduced in android 13.\nAt this time this app is not available for users.\nAnd looks very useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.managedprovisioning",
+        "label": "com.google.android.overlay.managedprovisioning",
+        "description": "In code I have seen lists of some system apps and stuff of managedprovisioning user.\nSafe to remove if you removed (com.android.managedprovisioning).\nBut problably it doesnt affect on anything.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.theme.icon.round",
+        "label": "com.android.theme.icon.round",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.amethyst",
+        "label": "com.android.theme.color.amethyst",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.aquamarine",
+        "label": "com.android.theme.color.aquamarine",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.darklake",
+        "label": "com.android.theme.color.darklake",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.dorange",
+        "label": "com.android.theme.color.dorange",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.dpurple",
+        "label": "com.android.theme.color.dpurple",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.lgreen",
+        "label": "com.android.theme.color.lgreen",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.parasailing",
+        "label": "com.android.theme.color.parasailing",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.saffron",
+        "label": "com.android.theme.color.saffron",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.sand",
+        "label": "com.android.theme.color.sand",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.slate",
+        "label": "com.android.theme.color.slate",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.tangerine",
+        "label": "com.android.theme.color.tangerine",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.android",
+        "label": "com.android.theme.icon_pack.kai.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.launcher",
+        "label": "com.android.theme.icon_pack.kai.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.settings",
+        "label": "com.android.theme.icon_pack.kai.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.systemui",
+        "label": "com.android.theme.icon_pack.kai.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.themepicker",
+        "label": "com.android.theme.icon_pack.kai.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.android",
+        "label": "com.android.theme.icon_pack.sam.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.launcher",
+        "label": "com.android.theme.icon_pack.sam.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.settings",
+        "label": "com.android.theme.icon_pack.sam.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.systemui",
+        "label": "com.android.theme.icon_pack.sam.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.themepicker",
+        "label": "com.android.theme.icon_pack.sam.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.android",
+        "label": "com.android.theme.icon_pack.victor.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.launcher",
+        "label": "com.android.theme.icon_pack.victor.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.settings",
+        "label": "com.android.theme.icon_pack.victor.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.systemui",
+        "label": "com.android.theme.icon_pack.victor.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.themepicker",
+        "label": "com.android.theme.icon_pack.victor.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
         "id": "android.auto_generated_rro__",
         "label": "android.auto_generated_rro__",
         "description": "RRO = Runtime Resources Overlay. Changes values of a package config, based in the overlay definitions. Overlays are heavily used by OEMs to customize the look and feel of Android.",
@@ -145,7 +626,7 @@
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
             "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
         ],
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
@@ -168,8 +649,8 @@
     {
         "id": "com.android.cellbroadcastreceiver.overlay.common",
         "label": "com.android.cellbroadcastreceiver.overlay.common",
-        "description": "com.android.cellbroadcastreceiver Theme pack\nGuessing it's a pack of themes for the cellbroadcastreceiver, based on the name.",
-        "removal": "caution"
+        "description": "In code I found unused things: show_brazil_settings, show_cmas_settings, show_etws_settings.\nIts unavailable and useless.",
+        "removal": "replace"
     },
     {
         "id": "com.android.companiondevicemanager",
@@ -181,7 +662,11 @@
     {
         "id": "com.android.contacts",
         "label": "Contacts",
-        "description": "The AOSP Contacts app\nSome OEMs (e.g. Xiaomi) use the same package name for their app.",
+        "description": "AOSP Contacts app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi & more) use the same package name for their app.\nAlternative (not for aosp) for privacy:",
+        "web": [
+            "https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/",
+            "https://f-droid.org/en/packages/opencontacts.open.com.opencontacts/",
+        ],
         "removal": "replace",
         "suggestions": "contacts"
     },
@@ -347,62 +832,62 @@
     {
         "id": "com.android.internal.display.cutout.emulation.corner",
         "label": "Corner cutout",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.display.cutout.emulation.double",
         "label": "Double cutout",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.display.cutout.emulation.hole",
         "label": "Punch Hole cutout",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.display.cutout.emulation.noCutout",
         "label": "Hide",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.display.cutout.emulation.tall",
         "label": "Tall cutout",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.display.cutout.emulation.waterfall",
         "label": "Waterfall cutout",
-        "description": "Display cutout variant.",
+        "description": "Display cutout variant. Cause bootloop after remove.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "caution"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.internal.systemui.navbar.gestural",
@@ -464,7 +949,10 @@
     {
         "id": "com.android.mms",
         "label": "Messages",
-        "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app",
+        "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app\nAlternative (not for aosp) for privacy:",
+        "web": [
+            "https://f-droid.org/en/packages/com.simplemobiletools.smsmessenger/",
+        ],
         "removal": "replace",
         "suggestions": "sms"
     },
@@ -574,7 +1062,7 @@
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.android.providers.contacts",
