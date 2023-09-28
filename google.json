@@ -1,13 +1,182 @@
 [
     {
-        "id": "com.android.chrome",
-        "label": "Google Chrome",
-        "description": "Google Chrome: Slow & Painful\nOccasionally runs in the background, not to mention how it tracks everything.",
+        "id": "com.google.android.safetycenter.resources",
+        "label": "Google Safety Center",
+        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
         "web": [
-            "https://play.google.com/store/apps/details?id=com.android.chrome",
-            "https://privacytests.org/android.html"
+            "https://safety.google"
         ],
         "removal": "replace",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig",
+        "label": "com.google.android.overlay.gmsconfig",
+        "description": "Useless configurations about webview, wifi and bluethooth to scan for better location.\neverything works without it.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.settingsProvider",
+        "label": "com.google.android.overlay.settingsProvider",
+        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.gsa",
+        "label": "com.google.android.overlay.gmsconfig.gsa",
+        "description": "configures default assistant? And have config to allow disabling assist disclosure?\nI think it doesnt affect on anything.\nSafe to remove if you removed (com.google.android.googlequicksearchbox).",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.common",
+        "label": "com.google.android.overlay.gmsconfig.common",
+        "description": "Useless configurations about webview, location, lists google apps.\neverything works without it.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.comms",
+        "label": "com.google.android.overlay.gmsconfig.comms",
+        "description": "Useless configurations dialer, sms, contacts Google(GApps)\neverything works without it.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.geotz",
+        "label": "com.google.android.overlay.gmsconfig.geotz",
+        "description": "Provides Geolocation Time Zone detection.\nand its used by (com.google.android.overlay.gmsconfig.common)?\nNo effects after remove.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.nearby.halfsheet",
+        "label": "com.google.android.nearby.halfsheet",
+        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.as.oss",
+        "label": "Private Compute Services",
+        "description": "Its another component of\nAndroid System Intelligence (previously Device Personalization Services)",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.asi",
+        "label": "com.google.android.overlay.gmsconfig.asi",
+        "description": "Its another component of\nAndroid System Intelligence (previously Device Personalization Services)",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.modules.captiveportallogin.forframework",
+        "label": "com.google.android.overlay.modules.captiveportallogin.forframework",
+        "description": "Configs default captiveportallogin. (aosp have it already)\nNo effects after remove.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.mainline.telemetry",
+        "label": "com.google.mainline.telemetry",
+        "description": "Contains data on which versions of modules are installed. Google Play uses this data to determine if updates are available for the modules, and to show which security patch is installed.\nThis module doesn’t contain active code and has no functionality on its own.\nAnyway I wont trust it when adservices are also in mainline.",
+        "web": [
+            "https://www.xda-developers.com/android-project-mainline-modules-explanation/",
+            "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/27#note_410012436"
+        ],
+        "removal": "replace",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.ww",
+        "label": "com.google.android.overlay.gmsconfig.ww",
+        "description": "useless unused overlay gmsconfig to family link.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.apps.gcs",
+        "label": "Google Connectivity Services",
+        "description": "It have things like wifi assistant and require google play services.\nUseless.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.apps.tycho",
+        "label": "Google Fi Wireless",
+        "description": "Google Fi Wireless",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.tycho"
+        ],
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.accessibility.soundamplifier",
+        "label": "Accessibility sound amplifier",
+        "description": "Accessibility sound amplifier",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier"
+        ],
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.gms.supervision",
+        "label": "Family Link parental controls",
+        "description": "It has something to Family Link parental controls.\nIntroduced in android 13.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.gms.supervision"
+        ],
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchselector",
+        "label": "com.google.android.overlay.gmsconfig.searchselector",
+        "description": "Not needed for (com.google.android.apps.setupwizard.searchselector).",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.personalsafety",
+        "label": "com.google.android.overlay.gmsconfig.personalsafety",
+        "description": "Not needed for (com.google.android.apps.safetyhub).",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.ondevicepersonalization.services",
+        "label": "com.google.android.ondevicepersonalization.services",
+        "description": "OnDevicePersonalization. Another thing to AdServices privacy sandbox.\nGoogle will be more spying on you.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.mainline.adservices",
+        "label": "com.google.mainline.adservices",
+        "description": "Adservices Train Version Package. AdServices too.\nbut its crap and doesnt help privacy.\nuses ondevicepersonalization.\nIntroduced in Android 13",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.federatedcompute",
+        "label": "com.google.android.federatedcompute",
+        "description": "Another component of OnDevicePersonalization. But this app learns things about users.\nGoogle will be more spying on you.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.photos",
+        "label": "com.google.android.overlay.gmsconfig.photos",
+        "description": "overlay to\nconfig_systemGallery to com.google.android.apps.photos in motorola. Useless.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchlauncherqs",
+        "label": "com.google.android.overlay.gmsconfig.searchlauncherqs",
+        "description": "Useless gmsconfig. Its config default launcher but not needed.",
+        "removal": "delete",
+    },
+    {
+        "id": "com.android.chrome",
+        "label": "Google Chrome",
+        "description": "Google Chrome: Slow & Painful\nOccasionally runs in the background, not to mention how it tracks everything.\nBetter use brave or iceraven(its firefox with more extensions!) and search engine startpage.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.android.chrome",
+            "https://privacytests.org/android.html",
+            "https://brave.com/download",
+            "https://github.com/fork-maintainers/iceraven-browser/releases"
+        ],
+        "removal": "replace",
+        "warning": "NOTE: disabling or uninstalling Chrome breaks functionality for creating and storing passkeys (https://fidoalliance.org/passkeys/) on your phone, so keep this enabled if you want to use that form of authentication.",
         "suggestions": "browsers"
     },
     {
@@ -196,7 +365,7 @@
     {
         "id": "com.google.android.apps.docs",
         "label": "Google Drive",
-        "description": "The drive where no personal data should ever be kept unencrypted.",
+        "description": "The drive where no personal data should ever be kept unencrypted.\nYou can use better alternative like MEGA.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.docs"
         ],
@@ -392,7 +561,7 @@
         ],
         "removal": "replace",
         "warning": "Removing this may cause issues with receiving 2FA verification text messages and calls from Google on some devices. Please let us know your experience with this on https://github.com/0x192/universal-android-debloater/pull/250 (give your phone model + Android version)",
-        "suggestions": "sms"
+        "suggestions": "Alternative for privacy: https://f-droid.org/en/packages/com.simplemobiletools.smsmessenger/"
     },
     {
         "id": "com.google.android.apps.navlite",
@@ -413,6 +582,7 @@
         ],
         "removal": "delete",
         "warning": "Android itself provides the options to clean up your device in Settings."
+        "suggestions": "The best alternatives may be ZArchiver and mixplorer"
     },
     {
         "id": "com.google.android.apps.nbu.paisa.user",
@@ -457,9 +627,10 @@
     {
         "id": "com.google.android.apps.photos",
         "label": "Google Photos",
-        "description": "Allows Google to scan and catalog all your photos so that it knows you and your relations more than you do.",
+        "description": "Allows Google to scan and catalog all your photos so that it knows you and your relations more than you do.\nAlternative privacy when you dont have other: (it will not sync photos to google)",
         "web": [
-            "https://play.google.com/store/apps/details?id=com.google.android.apps.photos"
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
+            "https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/"
         ],
         "removal": "replace",
         "suggestions": "gallery"
@@ -785,7 +956,7 @@
             "https://play.google.com/store/apps/details?id=com.google.android.contacts"
         ],
         "removal": "replace",
-        "suggestions": "contacts"
+        "suggestions": "Alternative for privacy: https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/, Saving contacts on OpenContacts can prevent from leaking. https://f-droid.org/en/packages/opencontacts.open.com.opencontacts/"
     },
     {
         "id": "com.google.android.deskclock",
@@ -804,7 +975,7 @@
             "https://www.virustotal.com/gui/file/a978d90f27d5947dca33ed59b73bd8efbac67253f9ef7a343beb9197c8913d1a/details"
         ],
         "removal": "replace",
-        "suggestions": "dialers"
+        "suggestions": "Alternative for privacy: https://f-droid.org/en/packages/com.simplemobiletools.dialer/"
     },
     {
         "id": "com.google.android.documentsui",
@@ -858,10 +1029,7 @@
     {
         "id": "com.google.android.gms.location.history",
         "label": "Google Location History",
-        "description": "I'm guessing this runs in the background unless you have this setting turned off in your Google account. I have the setting turned off and I've never seen this package run.",
-        "web": [
-            "https://support.google.com/accounts/answer/3118687?hl=en"
-        ],
+        "description": "This app have nothing. Only useless png logo google and name.",
         "removal": "delete"
     },
     {
@@ -882,6 +1050,7 @@
             "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox"
         ],
         "removal": "delete"
+        "suggestions": "Better do the same thing like with chrome. I mean move to brave or iceraven and search engine use startpage, these browsers also have widget to search."
     },
     {
         "id": "com.google.android.gsf",
@@ -1211,7 +1380,7 @@
     {
         "id": "com.google.android.youtube",
         "label": "YouTube",
-        "description": "The YouTube app",
+        "description": "The YouTube app\nBetter use youtube vanced(discontinued?)\nor more private: libretube(because supports invidious).",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.youtube"
         ],
