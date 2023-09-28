@@ -1,5 +1,11 @@
 [
     {
+        "id": "com.google.android.ext.shared",
+        "label": "Android Shared Library",
+        "description": "Maybe people thinking its safe to remove or its useless because its empty.\nbut it cause bootloop on my miui 14.",
+        "removal": "unsafe",
+    },
+    {
         "id": "com.google.android.safetycenter.resources",
         "label": "Google Safety Center",
         "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
