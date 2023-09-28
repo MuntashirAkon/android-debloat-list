@@ -32,7 +32,7 @@
     {
         "id": "com.qualcomm.qti.qcom_accesslogkit",
         "label": "com.qualcomm.qti.qcom_accesslogkit",
-        "description": "Theres nothing about logs. I only found in receivers "c Broadcast Receiver"\nand some useless png, text files. Useless.",
+        "description": "Theres nothing about logs. I only found in receivers (c Broadcast Receiver)\nand some useless png, text files. Useless.",
         "removal": "delete"
     },
     {
