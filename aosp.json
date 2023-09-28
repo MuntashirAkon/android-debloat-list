@@ -116,7 +116,7 @@
     {
         "id": "com.google.android.networkstack.tethering.overlay",
         "label": "com.google.android.networkstack.tethering.overlay",
-        "description": "Its needed for tethering?. I found: arrays.xml\narray name (config_tether_usb_regexs)\nitem "rndis\d"\nitem "usb\d"",
+        "description": "Its needed for tethering?. I found: arrays.xml\narray name (config_tether_usb_regexs)\nitem rndis d\nitem usb d",
         "removal": "unsafe"
     },
     {
