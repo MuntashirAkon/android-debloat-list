@@ -124,7 +124,7 @@
         "label": "Dynamic System Updates",
         "description": "Runs on boot, but doesn't seem to run in the background beyond that.\nTreble gives the ability to boot an AOSP Generic System Image (GSI) on any supported device.\nDynamic System Updates allows to boot into a Generic System Image (GSI) without interfering with the current installation.\nThat means the bootloader doesn’t need to be unlocked and the user data doesn’t need to be wiped.",
         "web": [
-            "https://developer.android.com/topic/dsu",
+            "https://developer.android.com/topic/dsu"
         ],
         "removal": "caution"
     },
@@ -293,7 +293,7 @@
         "label": "com.google.android.adservices.api",
         "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nbut its crap and doesnt help privacy.",
         "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices",
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
         ],
         "removal": "delete"
     },
@@ -302,7 +302,7 @@
         "label": "com.google.android.sdksandbox",
         "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy...",
         "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices",
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
         ],
         "removal": "unsafe"
     },
