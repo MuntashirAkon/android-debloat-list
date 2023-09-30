@@ -169,11 +169,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.google.android.apps.carrier.carrierwifi",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.google.android.connectivity.resources",
         "label": "System Connectivity Resources",
         "description": "",
@@ -222,16 +217,6 @@
     },
     {
         "id": "com.jrd.verizonuriintentservice",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.Elabel",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.jrdcom.Elabel.a_overlay",
         "description": "",
         "removal": "caution"
     },
@@ -362,15 +347,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.oplus.deepthinker",
-        "label": "Intelligent Services",
-        "description": "Probably enables the '* is draining battery' notification, kills battery",
-        "web": [
-            "https://www.reddit.com/r/Realme/comments/u7rfgs/comment/i5vpy9u/"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "com.qti.pasrservice",
         "description": "Have logs, debug, screen filter things.\nalso have something to power but not sure.\nMaybe needed for google fit or mi fit.",
         "removal": "caution"
@@ -430,32 +406,12 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.accessibility.talkback",
-        "description": "\n",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.app.earphonetypec",
-        "description": "Samsung USB-C headset - not required unless you have a Samsung DAC or Samsung Type-C earphones (for firmware updates)",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.app.sharelive",
-        "description": "samsung Quick Share",
-        "removal": "delete"
-    },
-    {
         "id": "com.samsung.android.app.telephonyui",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.samsung.android.appseparation",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.brightnessbackupservice",
         "description": "",
         "removal": "caution"
     },
@@ -475,39 +431,14 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.cidmanager",
-        "description": "Cid Manager is a tool enabling secure, real-time management of the company number service Telia Cid.\nCid Manager makes it possible to view and edit information on Cid numbers and their users.",
-        "removal": "delete"
-    },
-    {
         "id": "com.samsung.android.cmfa.framework",
         "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.coldwalletservice",
-        "description": "Samsung Blockchain Keystore.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.container",
-        "description": "ContainerService. Creates container.\nMaybe not very useful.\nsomeone can test?",
         "removal": "caution"
     },
     {
         "id": "com.samsung.android.dialer",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.digitalkey",
-        "description": "I found on this app only:Using your phone as key to open doors. Coming soon!\nUseless. Not available digital key for users.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.dsms",
-        "description": "Dual Messenger related.",
-        "removal": "delete"
     },
     {
         "id": "com.samsung.android.hdmapp",
@@ -523,11 +454,6 @@
         "id": "com.samsung.android.localeoverlaymanager",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.mapsagent",
-        "description": "Samsung App Recommendations, a lot of spying code.\nI guess its app from first-boot setup.",
-        "removal": "delete"
     },
     {
         "id": "com.samsung.android.mcfds",
@@ -608,26 +534,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.smartsuggestions",
-        "description": "Smart suggestions",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.uwb",
-        "description": "Its used for SmartThings and new Smart Tags. This app is bloated. Drains battery a lot.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.vtcamerasettings",
-        "description": "Video call effects.\nKeep the focus on you during video calls by blurring the background or covering it with an image or color.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.samsung.android.wifi.resources",
-        "description": "Better keep this for wifi.",
-        "removal": "unsafe"
-    },
-    {
         "id": "com.samsung.android.wifi.softap.resources",
         "description": "",
         "removal": "delete"
@@ -638,11 +544,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.euicc",
-        "description": "Have samsung analytics, logs, lpa service needed for UIM, eSIM Profiles.",
-        "removal": "delete"
-    },
-    {
         "id": "com.samsung.gamedriver.ex2100",
         "description": "",
         "removal": "caution"
@@ -651,11 +552,6 @@
         "id": "com.samsung.gamedriver.sm8250",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.samsung.gpuwatchapp",
-        "description": "In this app I only found gpu dumping mode, dev mode, game debugging.",
-        "removal": "delete"
     },
     {
         "id": "com.samsung.huxplatform",
@@ -703,24 +599,9 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.qosindicator",
-        "description": "QOS - quality of service, but its only for diagnostics.",
-        "removal": "delete"
-    },
-    {
         "id": "com.samsung.sait.sohservice",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.samsung.sec.android.teegris.tui_service",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.slsi.audiologging",
-        "description": "Its hidden Audiologging.",
-        "removal": "delete"
     },
     {
         "id": "com.samsung.vklayer.sm8250",
@@ -731,21 +612,6 @@
         "id": "com.sec.android.Cdfs",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.sec.android.app.uwbtest",
-        "description": "UwbTest - for testing UWB in the factory",
-        "removal": "delete"
-    },
-    {
-        "id": "com.sec.android.app.volumemonitorprovider",
-        "description": "VolumeMonitorProvider - used in Digital Wellbeing to average the dB heard through earphones and display it.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.sec.android.autodoodle.service",
-        "description": "App used to put doodles on images etc",
-        "removal": "replace"
     },
     {
         "id": "com.sec.android.smartfpsadjuster",
@@ -783,12 +649,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.sec.mhs.smarttethering",
-        "label": "SmartTethering",
-        "description": "",
-        "removal": "delete"
-    },
-    {
         "id": "com.sec.unifiedwfc",
         "label": "Samsung Wi-Fi Calling",
         "description": "Wi-Fi calling app for Samsung.",
@@ -819,21 +679,6 @@
     {
         "id": "com.st.nfc.dta.mobile",
         "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tcl.android.launcher",
-        "description": "Stock Launcher app",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tcl.android.launcher.a_overlay",
-        "description": "Another useless chinese bookmarks icon overlay.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tcl.android.launchertheme.res",
-        "description": "Launcher theme resources. Its needed for themes problably and not sure if its important app.",
         "removal": "caution"
     },
     {
@@ -882,21 +727,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.tcl.fmradio",
-        "description": "Stock Radio app",
-        "removal": "replace"
-    },
-    {
-        "id": "com.tcl.fmradio.a_overlay",
-        "description": "Another useless icon overlay.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tcl.fota.system",
-        "description": "System Update",
-        "removal": "caution"
-    },
-    {
         "id": "com.tcl.fota.system.a_overlay",
         "description": "",
         "removal": "caution"
@@ -905,11 +735,6 @@
         "id": "com.tcl.healthy",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.tcl.logger.a_overlay",
-        "description": "Another useless icon overlay.",
-        "removal": "delete"
     },
     {
         "id": "com.tcl.mibc.tclplus",
@@ -952,29 +777,14 @@
         "removal": "caution"
     },
     {
-        "id": "com.tcl.token",
-        "description": "Token. Its for ECID number but its safe to remove. Secret code 7383243.",
-        "removal": "delete"
-    },
-    {
         "id": "com.tcl.usercare",
         "description": "Support Centre, alcatel support. Safe to remove",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tcl.usercare.a_overlay",
-        "description": "Another useless icon overlay.",
         "removal": "delete"
     },
     {
         "id": "com.tcl.vzwintents",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.tclhz.gallery",
-        "description": "Stock Gallery app",
-        "removal": "replace"
     },
     {
         "id": "com.tclhz.gallery.a_overlay",
@@ -987,42 +797,12 @@
         "removal": "caution"
     },
     {
-        "id": "com.tct.aio",
-        "description": "TCT All in One Configuration. It have something to partner bookmarks problably collects some data\nand CheckForUpdateTask OTA.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tct.android.secureinput",
-        "description": "Useless secure input for keycode.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tct.applock",
-        "description": "App lock. Its just app lock with password or pin.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tct.batterywarning",
-        "description": "Battery warning. Displays only messages about low battery or too high temperature.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tct.calculator",
-        "description": "Stock Calculator app",
-        "removal": "replace"
-    },
-    {
         "id": "com.tct.calculator.a_overlay",
         "description": "",
         "removal": "caution"
     },
     {
         "id": "com.tct.cellular.arda",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tct.contacts.transfer",
         "description": "",
         "removal": "caution"
     },
@@ -1037,33 +817,13 @@
         "removal": "caution"
     },
     {
-        "id": "com.tct.dialer",
-        "description": "Stock Phone app",
-        "removal": "replace"
-    },
-    {
         "id": "com.tct.dialer.a_overlay",
         "description": "",
         "removal": "caution"
     },
     {
-        "id": "com.tct.gamemode",
-        "description": "Game box. Game Turbo. not sure if its worth keep that or not.",
-        "removal": "caution"
-    },
-    {
         "id": "com.tct.gdpr",
         "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.tct.music",
-        "description": "Stock Music app",
-        "removal": "replace"
-    },
-    {
-        "id": "com.tct.onetouchbooster",
-        "description": "Power saving",
         "removal": "caution"
     },
     {
@@ -1077,29 +837,9 @@
         "removal": "caution"
     },
     {
-        "id": "com.tct.privatespace",
-        "description": "Private Space. Only password things.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tct.retaildemo",
-        "description": "Demo Mode is intended for use on shop demo devices only\nand it should never be activated in a normal user's device.\nThanks for explain TCL.",
-        "removal": "delete"
-    },
-    {
         "id": "com.tct.retaildemo.a_overlay",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "com.tct.setupwizard",
-        "description": "Its needed only for first-boot setup.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.tct.simplelauncher",
-        "description": "Simple Launcher. Its not needed for Stock launcher and have sos and other not needed stuff.",
-        "removal": "delete"
     },
     {
         "id": "com.tct.simplelauncher.a_overlay",
@@ -1132,16 +872,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.tct.smart.notes",
-        "description": "Stock Notes app",
-        "removal": "replace"
-    },
-    {
-        "id": "com.tct.smart.switchphone",
-        "description": "Switch Phone",
-        "removal": "delete"
-    },
-    {
         "id": "com.tct.smart.switchphone.service",
         "description": "",
         "removal": "caution"
@@ -1152,11 +882,6 @@
         "description": "An audio and screen recorder, lets you change voice.",
         "removal": "replace",
         "suggestions": "audio_recorders"
-    },
-    {
-        "id": "com.tct.systemservice",
-        "description": "It should be safe to remove. Only secret code to info about system but not sure.",
-        "removal": "caution"
     },
     {
         "id": "com.tct.video",
@@ -1217,11 +942,6 @@
         "id": "com.wtk.stresstest",
         "description": "",
         "removal": "caution"
-    },
-    {
-        "id": "ma.android.com.mafactory",
-        "description": "Factory test. Its for hardware components testing.",
-        "removal": "delete"
     },
     {
         "id": "vendor.qti.iwlan",
