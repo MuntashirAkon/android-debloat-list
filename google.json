@@ -20,43 +20,36 @@
     },
     {
         "id": "com.google.android.overlay.gmsconfig",
-        "label": "com.google.android.overlay.gmsconfig",
         "description": "Useless configurations about webview, wifi and bluethooth to scan for better location.\neverything works without it.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.settingsProvider",
-        "label": "com.google.android.overlay.settingsProvider",
         "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.gsa",
-        "label": "com.google.android.overlay.gmsconfig.gsa",
         "description": "configures default assistant? And have config to allow disabling assist disclosure?\nI think it doesnt affect on anything.\nSafe to remove if you removed (com.google.android.googlequicksearchbox).",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.common",
-        "label": "com.google.android.overlay.gmsconfig.common",
         "description": "Useless configurations about webview, location, lists google apps.\neverything works without it.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.comms",
-        "label": "com.google.android.overlay.gmsconfig.comms",
         "description": "Useless configurations dialer, sms, contacts Google(GApps)\neverything works without it.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.geotz",
-        "label": "com.google.android.overlay.gmsconfig.geotz",
         "description": "Provides Geolocation Time Zone detection.\nand its used by (com.google.android.overlay.gmsconfig.common)?\nNo effects after remove.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.nearby.halfsheet",
-        "label": "com.google.android.nearby.halfsheet",
         "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
         "removal": "delete"
     },
@@ -68,19 +61,16 @@
     },
     {
         "id": "com.google.android.overlay.gmsconfig.asi",
-        "label": "com.google.android.overlay.gmsconfig.asi",
         "description": "Its another component of\nAndroid System Intelligence (previously Device Personalization Services)",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.modules.captiveportallogin.forframework",
-        "label": "com.google.android.overlay.modules.captiveportallogin.forframework",
         "description": "Configs default captiveportallogin. (not needed)\nNo effects after remove.",
         "removal": "delete"
     },
     {
         "id": "com.google.mainline.telemetry",
-        "label": "com.google.mainline.telemetry",
         "description": "Contains data on which versions of modules are installed. Google Play uses this data to determine if updates are available for the modules, and to show which security patch is installed.\nThis module doesn’t contain active code and has no functionality on its own.\nAnyway I wont trust it when adservices are also in mainline.",
         "web": [
             "https://www.xda-developers.com/android-project-mainline-modules-explanation/",
@@ -90,7 +80,6 @@
     },
     {
         "id": "com.google.android.overlay.gmsconfig.ww",
-        "label": "com.google.android.overlay.gmsconfig.ww",
         "description": "useless unused overlay gmsconfig to family link.",
         "removal": "delete"
     },
@@ -129,19 +118,16 @@
     },
     {
         "id": "com.google.android.overlay.gmsconfig.searchselector",
-        "label": "com.google.android.overlay.gmsconfig.searchselector",
         "description": "Not needed for (com.google.android.apps.setupwizard.searchselector).",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.personalsafety",
-        "label": "com.google.android.overlay.gmsconfig.personalsafety",
         "description": "Not needed for (com.google.android.apps.safetyhub).",
         "removal": "delete"
     },
     {
         "id": "com.google.android.ondevicepersonalization.services",
-        "label": "com.google.android.ondevicepersonalization.services",
         "description": "OnDevicePersonalization. Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
         "web": [
             "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
@@ -150,13 +136,11 @@
     },
     {
         "id": "com.google.mainline.adservices",
-        "label": "com.google.mainline.adservices",
         "description": "Adservices Train Version Package. AdServices too.\nuses ondevicepersonalization.\nIntroduced in Android 13\nNOTE: This package is a mandatory mainline module, which is also not documented. I don't trust it when it comes to adservices.",
         "removal": "replace"
     },
     {
         "id": "com.google.android.federatedcompute",
-        "label": "com.google.android.federatedcompute",
         "description": "Another component of OnDevicePersonalization. But this app learns things about users.\nIntroduced in Android 13.",
         "web": [
             "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
@@ -165,13 +149,11 @@
     },
     {
         "id": "com.google.android.overlay.gmsconfig.photos",
-        "label": "com.google.android.overlay.gmsconfig.photos",
         "description": "overlay to\nconfig_systemGallery to com.google.android.apps.photos in motorola. Useless.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.searchlauncherqs",
-        "label": "com.google.android.overlay.gmsconfig.searchlauncherqs",
         "description": "Useless gmsconfig. Its config default launcher but not needed.",
         "removal": "delete"
     },
@@ -201,7 +183,6 @@
     },
     {
         "id": "com.android.partnerbrowsercustomizations.chromeHomepage",
-        "label": "com.android.partnerbrowsercustomizations.chromeHomepage",
         "description": "Horrible stuff for Google Chrome. This package bypass your DNS settings (for letting pass Google ads).",
         "removal": "delete"
     },
@@ -216,7 +197,6 @@
     },
     {
         "id": "com.android.systemui.plugin.globalactions.wallet",
-        "label": "com.android.systemui.plugin.globalactions.wallet",
         "description": "Apk file name: QuickAccessWallet. This is the Google Pay widget in the power menu(hold power button for 1sec to show this menu), below the Emergency, Power off and Reboot buttons.",
         "removal": "delete",
         "suppress": "LabelSameAsId"
@@ -910,7 +890,6 @@
     },
     {
         "id": "com.google.android.carrierconfig",
-        "label": "com.google.android.carrierconfig",
         "description": "Same as com.android.carrierconfig? Here's that description:\nDynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM card?",
         "web": [
             "https://source.android.com/devices/tech/config/carrier",
@@ -1040,7 +1019,6 @@
     },
     {
         "id": "com.google.android.gms.policy_sidecar_aps",
-        "label": "com.google.android.gms.policy_sidecar_aps",
         "description": "Not sure what purpose it has, but it gets some network and phone data and connects to some Google domains, but never on its own; it has no permissions and never runs on its own, it likely exists as a helper package for other Google services.\nDoesn't seem to exist in newer versions of Android; it's not in Android 11, but it is in 9.\nNeeds a Google Account and Google Play Services to work.\nGiven its name it could be related to Android auto?\nSeems safe to remove, noticed no breakage (didn't test Android Auto though).",
         "web": [
             "https://beta.pithus.org/report/60835b97f38d9e64d4f554a73dab71c892153486a8e0fd81461c3d85359d9fae"
@@ -1182,7 +1160,6 @@
     },
     {
         "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "label": "com.google.android.overlay.modules.cellbroadcastreceiver",
         "dependencies": [
             "com.google.android.cellbroadcastreceiver"
         ],
@@ -1194,30 +1171,23 @@
     },
     {
         "id": "com.google.android.overlay.modules.documentsui",
-        "label": "com.google.android.overlay.modules.documentsui",
-        "description": "Files Theme pack. Guessing it's a pack of themes for the stock Android File Browser, based on the name.",
-        "web": [
-            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
-        ],
-        "removal": "caution"
+        "description": "In code only found: `is_launcher_enabled` false\nOn pixel phones this app overlay not exist.\nIts only maded to hide app icon (com.google.android.documentsui)\nNo effects after remove(so icon will be not back), its useless.",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.modules.ext.services",
-        "label": "com.google.android.overlay.modules.ext.services",
-        "description": "Android System Theme pack. The package name is pretty self-explanatory.",
-        "removal": "caution"
+        "description": "Cause bootloop. It depends on (com.google.android.ext.services)",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.modules.permissioncontroller",
-        "label": "com.google.android.overlay.modules.permissioncontroller",
-        "description": "Permission controller Theme pack. Guessing it's a pack of themes for the Permission Controller based on the name.",
-        "removal": "caution"
+        "description": "I only detect on this app: help_app_permissions https://support.google.com/googleplay/answer/6270602\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "label": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "description": "Android System Theme pack. Guessing it's a pack of themes for the Android system framework permission controller based on the name.",
-        "removal": "caution"
+        "description": "config_incidentReportApproverPackage\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.partnersetup",
@@ -1267,7 +1237,6 @@
     },
     {
         "id": "com.google.android.setupwizard.a_overlay",
-        "label": "com.google.android.setupwizard.a_overlay",
         "description": "Overlay for setupwizard?",
         "removal": "delete"
     },
