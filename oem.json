@@ -9909,7 +9909,7 @@
     {
         "id": "com.miui.player",
         "label": "Mi Music",
-        "description": "Mi Music player\n",
+        "description": "Mi Music player\nHas a lot trackers better use alternative.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.miui.player"
         ],
@@ -9918,8 +9918,8 @@
     },
     {
         "id": "com.miui.powerkeeper",
-        "description": "Battery and Performance\n(aggressive) MIUI power management (https://dontkillmyapp.com/xiaomi)\nThat's a weird app that also contains a DRM Manager and a service related to Cloud Backup\nHas obviously a lot of dangerous permissions.\nI guess removing this package will decrease the battery performance. Is it that noticeable? Can someone try?\n",
-        "removal": "replace"
+        "description": "Battery and Performance\n(aggressive) MIUI power management (https://dontkillmyapp.com/xiaomi)\nHidden power tools, Extreme Battery Saver, sleep mode and more.\nIts not unneccesary app. Keep it for powersaving.\nOn miui 14 it can bootloop but not sure if its true.",
+        "removal": "caution"
     },
     {
         "id": "com.miui.providers.weather",
@@ -9995,7 +9995,7 @@
     },
     {
         "id": "com.miui.video",
-        "description": "IMO it's needed by com.miui.videoplayer (confirmation needed)\n",
+        "description": "Mi Video. With a lot trackers and youtube integrated. Good alternative replacement: VLC",
         "removal": "delete"
     },
     {
@@ -14255,8 +14255,8 @@
     },
     {
         "id": "com.xiaomi.powerchecker",
-        "description": "Power Detector\nSecurity> Battery> Activity Control. \nDetects abnormal power usage by apps (not all. Some Xiaomi apps are whitelisted)\nNeeded for 'com.miui.powerkeeper' to work.\n",
-        "removal": "replace"
+        "description": "Power Detector\nSecurity> Battery> Activity Control. \nDetects abnormal power usage by apps (not all. Some Xiaomi apps are whitelisted)\nNeeded for 'com.miui.powerkeeper' to work.\nIts not unneccesary app. Keep it for powersaving.\nOn miui 14 it can bootloop but not sure if its true.",
+        "removal": "caution"
     },
     {
         "id": "com.xiaomi.providers.appindex",
