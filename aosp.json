@@ -1,5 +1,45 @@
 [
     {
+        "id": "com.android.sdksandbox",
+        "label": "com.android.sdksandbox",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy...",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.ondevicepersonalization.services",
+        "description": "OnDevicePersonalization. Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.nearby.halfsheet",
+        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.safetycenter.resources",
+        "label": "Google Safety Center",
+        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
+        "web": [
+            "https://safety.google"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.adservices.api",
+        "label": "Android AdServices",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nbut its crap and doesnt help privacy.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "android.aosp.overlay",
         "label": "android.aosp.overlay",
         "description": "Default wallpaper and some important settings have included to android.",
