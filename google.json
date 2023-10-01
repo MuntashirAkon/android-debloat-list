@@ -1,5 +1,33 @@
 [
     {
+        "id": "com.google.android.turboadapter",
+        "label": "Device Health Services Adapter",
+        "description": "Another app for Device Health Services(discontinued)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.security.securityhub",
+        "description": "Security Hub",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.security.securityhub"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.audio.hearing.visualization.accessibility.scribe",
+        "description": "Live Transcribe & Notification",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.pixel.setupwizard",
+        "label": "Pixel Setup",
+        "description": "Its only needed on first-boot setup",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.captiveportallogin",
         "label": "CaptivePortalLogin",
         "description": "Its the same as(com.android.captiveportallogin). Support for captive portal.\nA captive portal login is a web page where the users have to input their login information or accept the displayed terms of use. \nSome networks (typically public wifi network) use the captive portal login to block access until the user inputs \nsome necessary information\nNOTE : This package is a now a mandatory mainline module",
@@ -1178,6 +1206,11 @@
         "id": "com.google.android.overlay.modules.ext.services",
         "description": "Cause bootloop. It depends on (com.google.android.ext.services)",
         "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.overlay.permissioncontroller",
+        "description": "I only detect on this app: help_app_permissions https://support.google.com/googleplay/answer/6270602\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.modules.permissioncontroller",
