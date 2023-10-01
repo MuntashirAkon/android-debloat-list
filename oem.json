@@ -2647,6 +2647,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.bluethooth.bthelper",
+        "description": "BtHelper. Its only for Apple Air Pods. Its used to check the battery level of AirPods headphones.",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.iqimotmetrics",
         "description": "Hidden privacy policy: network diagnostics data.",
         "removal": "delete"
@@ -4552,227 +4557,252 @@
     {
         "id": "com.android.providers.contacts.auto_generated_rro_product__",
         "description": "Incorrect named thing to sync metadata gms?\nmetadata_sync_pacakge com.google.android.gms\nlmao google. No effects after remove.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.omadm.service.auto_generated_rro_product__",
         "description": "Useless config metrics code",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.omadm.service.auto_generated_rro_vendor__",
         "description": "Useless devinfo model",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.flipendo.auto_generated_rro_product__",
         "description": "Data connection 5G? its for extreme battery saver.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.flipendo.auto_generated_rro_vendor__",
         "description": "Data connection 5G? its for extreme battery saver.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.googleconfig",
-        "description": "Once configs all default things to google.",
-        "removal": "Recommanded"
+        "description": "Once configs all default things to google. Bricks google login functionality.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.googlewebview",
-        "description": "Once configs webview default to google.",
-        "removal": "Recommanded"
+        "description": "Once configs webview default to google. Bricks google login functionality.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.android.bips.overlay.pixel",
+        "description": "its overlay only to icon color.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.captiveportallogin.overlay",
+        "description": "its overlay only to icon color.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.flipendo",
+        "description": "Unused colors to 5G",
+        "removal": "caution"
+    },
+    {
+        "id": "com.android.traceur.overlay.pixel",
+        "description": "Unused colors to 5G",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.providers.contacts.overlay.pixel",
+        "description": "in overlay found: metadata_sync_pacakge: com.google.android.gms. Not needed.",
+        "removal": "delete"
     },
     {
         "id": "com.android.hbmsvmanager.auto_generated_rro_product__",
         "description": "unused png files, calibration. its from (com.android.hbmsvmanager)",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.managedprovisioning.overlay",
         "description": "Random useless code to com.android.managedprovisioning",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.networkstack.overlay",
         "description": "Random useless code to com.android.networkstack",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.nfc.auto_generated_rro_product__",
         "description": "Random useless code to com.android.nfc",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.nfc.auto_generated_rro_vendor__",
         "description": "Random useless code to com.android.nfc",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.pixelconfig2018",
-        "description": "Useless default configs",
-        "removal": "Recommanded"
+        "description": "Useless default configs? You can lose some basic functionality so its not worth touching it.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.pixelconfig2019",
-        "description": "Useless default configs",
-        "removal": "Recommanded"
+        "description": "Useless default configs? You can lose some basic functionality so its not worth touching it.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.pixelconfig2019midyear",
-        "description": "Useless default configs",
-        "removal": "Recommanded"
+        "description": "Useless default configs? You can lose some basic functionality so its not worth touching it.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.overlay.pixelconfigcommon",
-        "description": "Useless default configs",
-        "removal": "Recommanded"
+        "description": "Useless default configs? You can lose some basic functionality so its not worth touching it.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.connectivity.resources.overlay",
         "description": "Useless default configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.pixel.setupwizard.auto_generated_rro_product__",
         "description": "Useless first-boot setup configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.pixel.setupwizard.overlay2019",
         "description": "Useless first-boot setup configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.pixel.setupwizard.overlay2021",
         "description": "Useless first-boot setup configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.pixel.setupwizard.overlay",
         "description": "Useless first-boot setup configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.networkstack.tethering.overlay2021",
         "description": "Useless hotspot configs",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.safetyregulatoryinfo.auto_generated_rro_product__",
         "description": "Useless unused chinese images.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.settings.auto_generated_rro_product__",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.auto_generated_rro_vendor__",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.SettingsFuture",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.pixel2021",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.g1azg",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.gb17l",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.gb62z",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.gx7as",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.providers.settings.auto_generated_rro_product__",
         "description": "Useless overlay to Backup google. Backup works without it.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.simappdialog.auto_generated_rro_product__",
         "description": "Useless overlay to simappdialog.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.storagemanager.auto_generated_rro_product__",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.storagemanager.auto_generated_rro_vendor__",
         "description": "Configs to settings auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.systemui.auto_generated_rro_product__",
         "description": "Configs to systemui auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.systemui.auto_generated_rro_vendor__",
         "description": "Configs to systemui auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.systemui.gxoverlay",
         "description": "Configs to systemui auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.server.telecom.auto_generated_rro_product__",
         "description": "Configs to server telecom auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.providers.telephony.auto_generated_rro_product__",
         "description": "Configs to providers telephony auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.phone.auto_generated_rro_product__",
         "description": "Configs to phone auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.phone.auto_generated_rro_vendor__",
         "description": "Configs to phone auto generated but better keep.",
-        "removal": "Unsafe"
+        "removal": "unsafe"
     },
     {
         "id": "com.android.traceur.auto_generated_rro_product__",
         "description": "useless configs to traceur auto generated.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.android.traceur.auto_generated_rro_vendor__",
         "description": "useless configs to traceur auto generated.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.google.android.overlay.udfpsoverlay",
         "description": "useless configs to fingerprints FRP auto generated.",
-        "removal": "Recommanded"
+        "removal": "delete"
     },
     {
         "id": "com.oppoex.afterservice",
