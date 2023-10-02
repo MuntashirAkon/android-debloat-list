@@ -705,7 +705,7 @@
         "description": "AOSP Contacts app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi & more) use the same package name for their app.\nAlternative (not for aosp) for privacy:",
         "web": [
             "https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/",
-            "https://f-droid.org/en/packages/opencontacts.open.com.opencontacts/",
+            "https://f-droid.org/en/packages/opencontacts.open.com.opencontacts/"
         ],
         "removal": "replace",
         "suggestions": "contacts"
@@ -991,7 +991,7 @@
         "label": "Messages",
         "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app\nAlternative (not for aosp) for privacy:",
         "web": [
-            "https://f-droid.org/en/packages/com.simplemobiletools.smsmessenger/",
+            "https://f-droid.org/en/packages/com.simplemobiletools.smsmessenger/"
         ],
         "removal": "replace",
         "suggestions": "sms"
