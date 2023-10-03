@@ -165,6 +165,7 @@
     },
     {
         "id": "com.fingerprints.serviceext",
+        "label": "Fingerprint test",
         "description": "Fingerprint test, fingerprint authentication.",
         "removal": "delete"
     },
@@ -237,11 +238,13 @@
     },
     {
         "id": "com.mediatek.batterywarning",
-        "description": "Low battery or hot battery warning. You dont need it anyway.",
+        "label": "com.mediatek.batterywarning",
+        "description": "Issues warning when the battery is low or when the battery temperature is high.",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.calendarimporter",
+        "label": "com.mediatek.calendarimporter",
         "description": "Useful in China where Google isn’t available, but not needed for Google users.",
         "removal": "delete"
     },
@@ -252,16 +255,19 @@
     },
     {
         "id": "com.mediatek.dataprotection",
+        "label": "com.mediatek.dataprotection",
         "description": "It have stuff about encrypt, decrypt user partition.\nMy device works flawlesly without it.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.mediatek.gba",
-        "description": "Generic Bootstrapping Architecture. A ‘common ground’ of code used for many MediaTek apps,\nbut since we’ve removed everything that GBA depends on, this can be removed too.",
+        "label": "com.mediatek.gba",
+        "description": "Generic Bootstrapping Architecture. A ‘common ground’ of code used for many MediaTek apps.\nCan be removed if all other MediaTek apps are removed.",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.gnssdebugreport",
+        "label": "com.mediatek.gnssdebugreport",
         "description": "Hidden debug stuff.",
         "removal": "delete"
     },
@@ -278,8 +284,9 @@
     },
     {
         "id": "com.mediatek.mdmlsample",
+        "label": "com.mediatek.mdmlsample",
         "description": "It looks like debugging app.\nBut I found some words SUBSCRIBE_TRAP, OTA, VoLTE\nOther data is a lot of debugging code so its not needed.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.mediatek.mms.appservice",
@@ -288,16 +295,19 @@
     },
     {
         "id": "com.mediatek.thermalmanager",
+        "label": "com.mediatek.thermalmanager",
         "description": "Hidden testing or logging app.",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.ygps",
+        "label": "YGPS",
         "description": "GPS test and bug report utilities, accessed via Engineer Mode. Not needed.",
         "removal": "delete"
     },
     {
         "id": "com.oem.rftoolkit",
+        "label": "RfToolkit",
         "description": "Testing things like Wi-Fi, lots of Chinese words",
         "removal": "delete"
     },
@@ -348,16 +358,19 @@
     },
     {
         "id": "com.qti.pasrservice",
+        "label": "com.qti.pasrservice",
         "description": "Have logs, debug, screen filter things.\nalso have something to power but not sure.\nMaybe needed for google fit or mi fit.",
         "removal": "caution"
     },
     {
         "id": "com.qualcomm.qti.devicestatisticsservice",
+        "label": "com.qualcomm.qti.devicestatisticsservice",
         "description": "Device statistics service Statistics of the phone's usage:data, Wifi, battery, the use of various software, number of SMS and emails sent, etc.\nis not very useful, can be removed.",
         "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.improvetouch.service",
+        "label": "com.qualcomm.qti.improvetouch.service",
         "description": "In code I found only something about touchprocessor and its not looks useless,\nits just should improve touch but not sure if its only for developers.",
         "removal": "caution"
     },
@@ -376,12 +389,13 @@
         "id": "com.qualcomm.qti.services.secureui",
         "label": "Qualcomm Secure UI Service",
         "description": "It collects your data about screen:gravity, orientation, id, layout_width.\nhave Wifi Display Service. QC_WFD\nnot runs in the background",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.services.systemhelper",
+        "label": "System Helper Service",
         "description": "System Helper Service\nRuns \"SysHelperService\" in the background as part of the system.\nPermissions: DEVICE_POWER, READ_PHONE_STATE, READ_PRIVILEGED_PHONE_STATE, RECEIVE_BOOT_COMPLETED, WRITE_SETTINGS, WAKE_LOCK and ACCESS_SURFACE_FLINGER.\nAndroid simple network firewall utility service, not much to it.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.simcontacts",
@@ -391,6 +405,7 @@
     },
     {
         "id": "com.qualcomm.qti.workloadclassifier",
+        "label": "com.qualcomm.qti.workloadclassifier",
         "description": "Runs \"WLCService\" in the background.\nI assume this has to do with CPU scheduling. Probably important for efficiency, if not basic operation.\nIn code I found: its for performance and security? it categorize apps maybe for optimization.\nIts named workloadclassifier so it should do that. reads the list of installed applications, storage space.\nIts still unknown.",
         "removal": "caution"
     },
@@ -492,7 +507,8 @@
     },
     {
         "id": "com.samsung.android.rajaampat",
-        "description": "Samsung Pay",
+        "label": "Samsung Pay",
+        "description": "Samsung Pay Services for Indonesia.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.samsung.android.rajaampat"
         ],
@@ -657,7 +673,8 @@
     },
     {
         "id": "com.sonymobile.devicesecurity.service",
-        "description": "DeviceSecurityService. Useless, collects sim and network data.",
+        "id": "DeviceSecurityService",
+        "description": "Not needed. Collects sim and network data.",
         "removal": "delete"
     },
     {
@@ -778,6 +795,7 @@
     },
     {
         "id": "com.tcl.usercare",
+        "label": "Support Centre",
         "description": "Support Centre, alcatel support. Safe to remove",
         "removal": "delete"
     },
