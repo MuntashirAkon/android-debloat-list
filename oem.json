@@ -1,5 +1,281 @@
 [
     {
+        "id": "com.android.theme.color.black",
+        "label": "com.android.theme.color.black",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.cinnamon",
+        "label": "com.android.theme.color.cinnamon",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.green",
+        "label": "com.android.theme.color.green",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.ocean",
+        "label": "com.android.theme.color.ocean",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.orchid",
+        "label": "com.android.theme.color.orchid",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.purple",
+        "label": "com.android.theme.color.purple",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.space",
+        "label": "com.android.theme.color.space",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.roundedrect",
+        "label": "com.android.theme.icon.roundedrect",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.squircle",
+        "label": "com.android.theme.icon.squircle",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.teardrop",
+        "label": "com.android.theme.icon.teardrop",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.circle",
+        "label": "Circle",
+        "description": "Android icons pack [Circle].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.pebble",
+        "label": "Pebble",
+        "description": "Android icons pack [Pebble].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.square",
+        "label": "Square",
+        "description": "Android icons pack [Square].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.taperedrect",
+        "label": "Tapered Rect",
+        "description": "Android icons pack [Taperedrect].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.vessel",
+        "label": "Vessel",
+        "description": "Android icons pack [Vessel].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.rounded.systemui",
+        "label": "Rounded",
+        "description": "Android icons pack [Rounded].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.rounded.themepicker",
+        "label": "Rounded",
+        "description": "Obviously related to the \"rounded\" icon pack but the full package is strange. A themepicker class only for a specific icon package?\nSafe to remove if you don't use them, but there's no point in doing so.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon.round",
+        "label": "com.android.theme.icon.round",
+        "description": "Android icon shape only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.amethyst",
+        "label": "com.android.theme.color.amethyst",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.aquamarine",
+        "label": "com.android.theme.color.aquamarine",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.darklake",
+        "label": "com.android.theme.color.darklake",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.dorange",
+        "label": "com.android.theme.color.dorange",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.dpurple",
+        "label": "com.android.theme.color.dpurple",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.lgreen",
+        "label": "com.android.theme.color.lgreen",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.parasailing",
+        "label": "com.android.theme.color.parasailing",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.saffron",
+        "label": "com.android.theme.color.saffron",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.sand",
+        "label": "com.android.theme.color.sand",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.slate",
+        "label": "com.android.theme.color.slate",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.color.tangerine",
+        "label": "com.android.theme.color.tangerine",
+        "description": "Android color accent only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.android",
+        "label": "com.android.theme.icon_pack.kai.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.launcher",
+        "label": "com.android.theme.icon_pack.kai.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.settings",
+        "label": "com.android.theme.icon_pack.kai.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.systemui",
+        "label": "com.android.theme.icon_pack.kai.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.kai.themepicker",
+        "label": "com.android.theme.icon_pack.kai.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.android",
+        "label": "com.android.theme.icon_pack.sam.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.launcher",
+        "label": "com.android.theme.icon_pack.sam.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.settings",
+        "label": "com.android.theme.icon_pack.sam.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.systemui",
+        "label": "com.android.theme.icon_pack.sam.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.sam.themepicker",
+        "label": "com.android.theme.icon_pack.sam.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.android",
+        "label": "com.android.theme.icon_pack.victor.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.launcher",
+        "label": "com.android.theme.icon_pack.victor.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.settings",
+        "label": "com.android.theme.icon_pack.victor.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.systemui",
+        "label": "com.android.theme.icon_pack.victor.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.theme.icon_pack.victor.themepicker",
+        "label": "com.android.theme.icon_pack.victor.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.overlay.gmscontactprovider",
+        "label": "com.android.overlay.gmscontactprovider",
+        "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nNo effects after remove.\n(detected on miui 14 with android 13 phones)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.overlay.gmssettingprovider",
+        "label": "com.android.overlay.gmssettingprovider",
+        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.\n(detected on miui 14 with android 13 phones)",
+        "removal": "delete"
+    },
+    {
         "id": "com.android.cameraextensions",
         "label": "CameraExtensionsProxy",
         "description": "camera-related Third-party apps can call Android camera extensions such as Portrait, Night Mode, and HDR, which doesn't seem to work significantly on MIUI.",
@@ -13,14 +289,16 @@
     },
     {
         "id": "com.modemdebug",
+        "label": "com.modemdebug",
         "description": "Hidden running in the background debugs for data traffic and all that, not useful for the average person.",
         "removal": "delete"
     },
     {
         "id": "com.fido.asm",
         "label": "FIDO UAF1.0 ASM",
-        "description": "Related to app fingerprint unlocking and payments.\nSafe to remove if you don't use password-less authentification to access online services.",
-        "removal": "replace"
+        "description": "Related to app fingerprint unlocking and payments.",
+        "removal": "replace",
+        "warning": "Safe to remove if you don't use password-less authentification to access online services."
     },
     {
         "id": "com.mi.emapal",
@@ -43,6 +321,9 @@
     {
         "id": "com.miui.face.overlay.miui",
         "description": "Face Unlock feature will be unavailable.",
+        "dependencies": [
+            "com.miui.face"
+        ],
         "removal": "replace"
     },
     {
@@ -103,6 +384,7 @@
     },
     {
         "id": "com.google.android.cellbroadcastreceiver.overlay.miui",
+        "label": "com.google.android.cellbroadcastreceiver.overlay.miui",
         "description": "Disable opt out dialog to cellbroadcastreceiver? I never seen that. Unused.",
         "removal": "delete"
     },
@@ -381,21 +663,25 @@
     },
     {
         "id": "com.android.updater",
-        "description": "Mi Updater, Provides system updates.(ITS SAFE TO REMOVE ONLY ON MIUI 14, ON OTHERS IT CAUSE BOOTLOOP)",
-        "removal": "caution"
+        "description": "Mi Updater, Provides system updates.",
+        "removal": "caution",
+        "warning": "Its safe to remove only on MIUI 14, on others it cause BOOTLOOP."
     },
     {
         "id": "com.android.frameworkhwext.dark",
         "description": "Required components of the androidhwext.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.android.frameworkhwext.honor",
         "description": "Required components of the androidhwext.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.android.partnerbrowsercustomizations.tmobile",
+        "label": "com.android.partnerbrowsercustomizations.tmobile",
         "description": "Partner Homepage Provider T-Mobile? Maybe it's for Google Chrome? Useless.",
         "removal": "delete"
     },
@@ -447,8 +733,8 @@
     {
         "id": "com.huawei.camera",
         "label": "Huawei Camera App",
-        "description": "Safe to remove (but not recommended)",
-        "removal": "caution"
+        "description": "Safe to remove, but not recommended, as other camera apps are not much better than this one.",
+        "removal": "replace"
     },
     {
         "id": "com.huawei.hiview",
@@ -479,11 +765,13 @@
     },
     {
         "id": "com.huawei.indexsearch",
+        "label": "com.huawei.indexsearch",
         "description": "Index search works without it.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.indexsearch.observer",
+        "label": "com.huawei.indexsearch.observer",
         "description": "Index search works without it.",
         "removal": "delete"
     },
@@ -541,27 +829,32 @@
         "id": "com.huawei.systemmanager",
         "label": "System manager app",
         "description": "DO NOT REMOVE THIS. You lose phone functionality.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.huawei.systemserver",
         "description": "It depends on (com.huawei.systemmanager). DO NOT REMOVE THIS. You lose phone functionality.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.huawei.trustcircle",
-        "description": "Its very unknown app but remove it if you have removed (com.huawei.hwid), (com.huawei.appmarket). \nThis is what I found on this app files: Huawei Mobile Services?, installing,updating apps AppGallery.\nSo it looks like you will not have access to huawei hwid account if you remove it.",
-        "removal": "delete"
+        "description": "The app's usage is unknown, but it can be removed if apps such as com.huawei.hwid, com.huawei.appmarket are also removed. This is what I found while exploring the APK: Huawei Mobile Services?, managing installation and updates of AppGallery.",
+        "removal": "delete",
+        "warning": "Huawei HWID account may be inaccessible without this app."
     },
     {
         "id": "com.huawei.wifieapsimplmn",
-        "description": "WiFi will not work if you remove it!!!",
-        "removal": "unsafe"
+        "description": "Needed for WiFi to work properly",
+        "removal": "unsafe",
+        "warning": "WiFi will not work."
     },
     {
         "id": "com.huawei.wifiprobqeservice",
-        "description": "WiFi will not work if you remove it!!!",
-        "removal": "unsafe"
+        "description": "Needed for WiFi to work properly",
+        "removal": "unsafe",
+        "warning": "WiFi will not work."
     },
     {
         "id": "com.qeexo.smartshot",
