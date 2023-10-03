@@ -772,53 +772,6 @@
         "suggestions": "calendars"
     },
     {
-        "id": "com.google.android.captiveportallogin",
-        "label": "CaptivePortalLogin",
-        "description": "Its the same as(com.android.captiveportallogin). Support for captive portal.\nA captive portal login is a web page where the users have to input their login information or accept the displayed terms of use. \nSome networks (typically public wifi network) use the captive portal login to block access until the user inputs \nsome necessary information\nNOTE : This package is a now a mandatory mainline module",
-        "web": [
-            "https://en.wikipedia.org/wiki/Captive_portal",
-            "https://www.xda-developers.com/android-project-mainline-modules-explanation"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.carrierconfig",
-        "label": "com.google.android.carrierconfig",
-        "description": "Same as com.android.carrierconfig? Here's that description:\nDynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM card?",
-        "web": [
-            "https://source.android.com/devices/tech/config/carrier",
-            "https://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.google.android.cellbroadcastreceiver",
-        "label": "Wireless emergency alerts",
-        "dependencies": [
-            "com.google.android.cellbroadcastservice"
-        ],
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Cell_Broadcast",
-            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
-            "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
-        ],
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.cellbroadcastservice",
-        "label": "Cell Broadcast Service",
-        "required_by": [
-            "com.google.android.cellbroadcastreceiver"
-        ],
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Cell_Broadcast",
-            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
-        ],
-        "removal": "caution"
-    },
-    {
         "id": "com.google.android.configupdater",
         "label": "ConfigUpdater",
         "description": "Occasionally runs in the background.\nAuto updates certificates for TLS connection, firewall configuration, etc.\nMainly used for Google services? Might be fine to disable if you don't use Google services. Disabling might mess with security if you do use them though.",
@@ -855,29 +808,6 @@
         ],
         "removal": "replace",
         "suggestions": "dialers"
-    },
-    {
-        "id": "com.google.android.documentsui",
-        "label": "Files",
-        "description": "Occasionally runs in the background.\nFile selector for other apps.",
-        "removal": "unsafe",
-        "warning": "Storage Access Framework (SAF) will break if this is disabled."
-    },
-    {
-        "id": "com.google.android.ext.shared",
-        "label": "Android Shared Library",
-        "description": "Maybe people thinking its safe to remove or its useless because its empty.\nbut it cause bootloop on my miui 14.",
-        "removal": "unsafe",
-        "warning": "Cause BOOTLOOP."
-    },
-    {
-        "id": "com.google.android.federatedcompute",
-        "label": "com.google.android.federatedcompute",
-        "description": "Another component of OnDevicePersonalization. But this app learns things about users.\nIntroduced in Android 13.",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
-        ],
-        "removal": "delete"
     },
     {
         "id": "com.google.android.feedback",
@@ -1067,21 +997,6 @@
         "suggestions": "music_apps"
     },
     {
-        "id": "com.google.android.nearby.halfsheet",
-		"label": "com.google.android.nearby.halfsheet",
-        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.ondevicepersonalization.services",
-		"label": "com.google.android.ondevicepersonalization.services",
-        "description": "OnDevicePersonalization. Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "com.google.android.onetimeinitializer",
         "label": "Google One Time Init",
         "description": "Provides first time setup, safe to remove.",
@@ -1154,67 +1069,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.captiveportallogin.forframework",
-		"label": "com.google.android.overlay.modules.captiveportallogin.forframework",
-        "description": "Configs default captiveportallogin. (not needed)\nNo effects after remove.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "label": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "dependencies": [
-            "com.google.android.cellbroadcastreceiver"
-        ],
-        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
-        "web": [
-            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
-        ],
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.overlay.modules.documentsui",
-        "label": "com.google.android.overlay.modules.documentsui",
-        "description": "In code only found: `is_launcher_enabled` false\nOn pixel phones this app overlay not exist.\nIts only maded to hide app icon (com.google.android.documentsui)\nNo effects after remove(so icon will be not back), its useless.",
-        "web": [
-            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.overlay.modules.ext.services",
-        "label": "com.google.android.overlay.modules.ext.services",
-        "dependencies": [
-            "com.google.android.ext.services"
-        ],
-        "description": "Its overlay that depends on (com.google.android.ext.services)",
-        "removal": "unsafe",
-        "warning": "Cause bootloop."
-    },
-    {
-        "id": "com.google.android.overlay.permissioncontroller",
-        "label": "com.google.android.overlay.permissioncontroller",
-        "description": "I only detect on this app: help_app_permissions (link below)\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
-        "web": [
-            "https://support.google.com/googleplay/answer/6270602"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.overlay.modules.permissioncontroller",
-        "label": "com.google.android.overlay.modules.permissioncontroller",
-        "description": "I only detect on this app: help_app_permissions (link below)\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
-        "web": [
-            "https://support.google.com/googleplay/answer/6270602"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "label": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "description": "config_incidentReportApproverPackage\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
-        "removal": "delete"
-    },
-    {
         "id": "com.google.android.overlay.settingsProvider",
 		"label": "com.google.android.overlay.settingsProvider",
         "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
@@ -1242,12 +1096,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.google.android.printservice.recommendation",
-        "label": "Print Service Recommendation Service",
-        "description": "I think this has to do with recommending a printservice app you can get from the Play store. I think printing still works with this off.",
-        "removal": "delete"
-    },
-    {
         "id": "com.google.android.projection.gearhead",
         "label": "Android Auto",
         "description": "Smart driving companion.",
@@ -1255,15 +1103,6 @@
             "https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead"
         ],
         "removal": "delete"
-    },
-    {
-        "id": "com.google.android.safetycenter.resources",
-        "label": "Google Safety Center",
-        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
-        "web": [
-            "https://safety.google"
-        ],
-        "removal": "replace"
     },
     {
         "id": "com.google.android.setupwizard",
