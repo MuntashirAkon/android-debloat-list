@@ -1,524 +1,10 @@
 [
     {
-        "id": "com.android.sdksandbox",
-        "label": "com.android.sdksandbox",
-        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy...",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices"
-        ],
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.ondevicepersonalization.services",
-        "description": "OnDevicePersonalization. Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.nearby.halfsheet",
-        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.safetycenter.resources",
-        "label": "Google Safety Center",
-        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
-        "web": [
-            "https://safety.google"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.android.adservices.api",
-        "label": "Android AdServices",
-        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nbut its crap and doesnt help privacy.",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "android.aosp.overlay",
         "label": "android.aosp.overlay",
         "description": "Default wallpaper and some important settings have included to android.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "android.overlay.common",
-        "label": "android.overlay.common",
-        "description": "It have some important settings configurations to android.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "android.overlay.target",
-        "label": "android.overlay.target",
-        "description": "It have some important settings configurations to android.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "android.qvaoverlay.common",
-        "label": "android.qvaoverlay.common",
-        "description": "It have nothing. This app is without code and safe to remove.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.networkstack.tethering.inprocess.overlay",
-        "label": "com.android.networkstack.tethering.inprocess.overlay",
-        "description": "Its something about usb tethering but better keep this.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.overlay.gmstelecomm",
-        "label": "com.android.overlay.gmstelecomm",
-        "description": "Location and dialer things.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.overlay.gmstelephony",
-        "label": "com.android.overlay.gmstelephony",
-        "description": "Location and dialer things.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.phone.overlay.common",
-        "label": "com.android.phone.overlay.common",
-        "description": "Location and dialer things.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.server.NetworkPermissionConfig",
-        "label": "com.android.server.NetworkPermissionConfig",
-        "description": "Network configurations.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.server.telecom.overlay.common",
-        "label": "com.android.server.telecom.overlay.common",
-        "description": "Location and dialer things.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.systemui.gesture.line.overlay",
-        "label": "com.android.systemui.gesture.line.overlay",
-        "description": "Configurations to navigation bar.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.systemui.navigation.bar.overlay",
-        "label": "com.android.systemui.navigation.bar.overlay",
-        "description": "Configurations to navigation bar.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.systemui.overlay.common",
-        "label": "com.android.systemui.overlay.common",
-        "description": "Have something about to wellbeing.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.internal.systemui.onehanded.gestural",
-        "label": "com.android.internal.systemui.onehanded.gestural",
-        "description": "one-handed mode will not work. Safe to remove if you dont use these setting.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.networkstack.overlay",
-        "label": "com.android.networkstack.overlay",
-        "description": "Configures captive portal network, dhcp.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.theme.font.notoserifsource",
-        "label": "com.android.theme.font.notoserifsource",
-        "description": "Pre-installed font to android from AOSP.\nSome apps using it maybe.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.wifi.dialog",
-        "label": "com.android.wifi.dialog",
-        "description": "Needed for wifi dialogs.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.overlay.gmscontactprovider",
-        "label": "com.android.overlay.gmscontactprovider",
-        "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nlmao google. No effects after remove.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.overlay.gmssettingprovider",
-        "label": "com.android.overlay.gmssettingprovider",
-        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.networkstack.tethering.overlay",
-        "label": "com.google.android.networkstack.tethering.overlay",
-        "description": "Its needed for tethering?. I found: arrays.xml\narray name (config_tether_usb_regexs)\nitem rndis d\nitem usb d",
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.dynsystem",
-        "label": "Dynamic System Updates",
-        "description": "Runs on boot, but doesn't seem to run in the background beyond that.\nTreble gives the ability to boot an AOSP Generic System Image (GSI) on any supported device.\nDynamic System Updates allows to boot into a Generic System Image (GSI) without interfering with the current installation.\nThat means the bootloader doesn’t need to be unlocked and the user data doesn’t need to be wiped.",
-        "web": [
-            "https://developer.android.com/topic/dsu"
-        ],
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.carrierconfig.overlay.common",
-        "label": "com.android.carrierconfig.overlay.common",
-        "description": "Needed for (com.android.carrierconfig).",
-        "removal": "replace"
-    },
-    {
-        "id": "com.android.cellbroadcastservice",
-        "label": "Cell broadcast service",
-        "description": "is designed to deliver messages to multiple users in an area.\nThis is notably used by ISPs to send Emergency/Government alerts.\nRuns in the background.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Cell_Broadcast",
-            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.android.theme.color.black",
-        "label": "com.android.theme.color.black",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.cinnamon",
-        "label": "com.android.theme.color.cinnamon",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.green",
-        "label": "com.android.theme.color.green",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.ocean",
-        "label": "com.android.theme.color.ocean",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.orchid",
-        "label": "com.android.theme.color.orchid",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.purple",
-        "label": "com.android.theme.color.purple",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.space",
-        "label": "com.android.theme.color.space",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.roundedrect",
-        "label": "com.android.theme.icon.roundedrect",
-        "description": "Android icon shape only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.squircle",
-        "label": "com.android.theme.icon.squircle",
-        "description": "Android icon shape only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.teardrop",
-        "label": "com.android.theme.icon.teardrop",
-        "description": "Android icon shape only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.circular.android",
-        "label": "com.android.icon_pack.circular.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.circular.launcher",
-        "label": "com.android.icon_pack.circular.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.circular.settings",
-        "label": "com.android.icon_pack.circular.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.circular.systemui",
-        "label": "com.android.icon_pack.circular.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.circular.themepicker",
-        "label": "com.android.icon_pack.circular.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.filled.android",
-        "label": "com.android.icon_pack.filled.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.filled.launcher",
-        "label": "com.android.icon_pack.filled.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.filled.settings",
-        "label": "com.android.icon_pack.filled.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.filled.systemui",
-        "label": "com.android.icon_pack.filled.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.filled.themepicker",
-        "label": "com.android.icon_pack.filled.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.rounded.android",
-        "label": "com.android.icon_pack.rounded.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.rounded.launcher",
-        "label": "com.android.icon_pack.rounded.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.icon_pack.rounded.settings",
-        "label": "com.android.icon_pack.rounded.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.camera",
-        "label": "Camera",
-        "description": "On xiaomi you should keep it, because google camera is not better.",
-        "removal": "replace"
-    },
-    {
-        "id": "com.google.android.adservices.api",
-        "label": "com.google.android.adservices.api",
-        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nbut its crap and doesnt help privacy.",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices"
-        ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.sdksandbox",
-        "label": "com.google.android.sdksandbox",
-        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy...",
-        "web": [
-            "https://source.android.com/docs/core/ota/modular-system/adservices"
-        ],
-        "removal": "unsafe"
-    },
-    {
-        "id": "com.android.remoteprovisioner",
-        "label": "RemoteProvisioner",
-        "description": "Have random stuff: security, notifications, accessibility, test modes, data usage, metrics, logs.\nIts something new introduced in android 13.\nAt this time this app is not available for users.\nAnd looks very useless.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.overlay.managedprovisioning",
-        "label": "com.google.android.overlay.managedprovisioning",
-        "description": "In code I have seen lists of some system apps and stuff of managedprovisioning user.\nSafe to remove if you removed (com.android.managedprovisioning).\nBut problably it doesnt affect on anything.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.theme.icon.round",
-        "label": "com.android.theme.icon.round",
-        "description": "Android icon shape only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.amethyst",
-        "label": "com.android.theme.color.amethyst",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.aquamarine",
-        "label": "com.android.theme.color.aquamarine",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.darklake",
-        "label": "com.android.theme.color.darklake",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.dorange",
-        "label": "com.android.theme.color.dorange",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.dpurple",
-        "label": "com.android.theme.color.dpurple",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.lgreen",
-        "label": "com.android.theme.color.lgreen",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.parasailing",
-        "label": "com.android.theme.color.parasailing",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.saffron",
-        "label": "com.android.theme.color.saffron",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.sand",
-        "label": "com.android.theme.color.sand",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.slate",
-        "label": "com.android.theme.color.slate",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.tangerine",
-        "label": "com.android.theme.color.tangerine",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.android",
-        "label": "com.android.theme.icon_pack.kai.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.launcher",
-        "label": "com.android.theme.icon_pack.kai.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.settings",
-        "label": "com.android.theme.icon_pack.kai.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.systemui",
-        "label": "com.android.theme.icon_pack.kai.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.themepicker",
-        "label": "com.android.theme.icon_pack.kai.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.android",
-        "label": "com.android.theme.icon_pack.sam.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.launcher",
-        "label": "com.android.theme.icon_pack.sam.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.settings",
-        "label": "com.android.theme.icon_pack.sam.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.systemui",
-        "label": "com.android.theme.icon_pack.sam.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.themepicker",
-        "label": "com.android.theme.icon_pack.sam.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.android",
-        "label": "com.android.theme.icon_pack.victor.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.launcher",
-        "label": "com.android.theme.icon_pack.victor.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.settings",
-        "label": "com.android.theme.icon_pack.victor.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.systemui",
-        "label": "com.android.theme.icon_pack.victor.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.themepicker",
-        "label": "com.android.theme.icon_pack.victor.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
     },
     {
         "id": "android.auto_generated_rro__",
@@ -541,6 +27,41 @@
         "removal": "delete",
         "warning": "You may need this if you use Android Auto",
         "suppress": "LabelSameAsId"
+    },
+    {
+        "id": "android.overlay.common",
+        "label": "android.overlay.common",
+        "description": "It have some important settings configurations to android.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "android.overlay.target",
+        "label": "android.overlay.target",
+        "description": "It have some important settings configurations to android.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "android.qvaoverlay.common",
+        "label": "android.qvaoverlay.common",
+        "description": "It have nothing. This app is without code and safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.nearby.halfsheet",
+        "label": "com.android.nearby.halfsheet",
+        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.adservices.api",
+        "label": "Android AdServices",
+        "description": "Introduced in Android 13 privacy sandbox beta components disabled on default.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.android.apps.tag",
@@ -629,6 +150,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.camera",
+        "label": "Camera",
+        "description": "On xiaomi you should keep it, because google camera is not better.",
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
         "id": "com.android.captiveportallogin",
         "label": "CaptivePortalLogin",
         "description": "Support for captive portal logins.\nA captive portal login is a web page where users have to log in or accept terms of use. Common for public wifi networks.",
@@ -649,6 +177,15 @@
         "suppress": "LabelSameAsId"
     },
     {
+        "id": "com.android.carrierconfig.overlay.common",
+        "label": "com.android.carrierconfig.overlay.common",
+        "description": "Needed for (com.android.carrierconfig).",
+        "dependencies": [
+            "com.android.carrierconfig"
+        ],
+        "removal": "replace"
+    },
+    {
         "id": "com.android.carrierdefaultapp",
         "label": "CarrierDefaultApp",
         "description": "This package is a generic solution that allows carriers to indicate when a device has run OOB (Out Of Balance). Android devices that are OOB need carrier mitigation protocols to allow select data through (like to notify users their data/balance is out, or allow them to buy more data through the carrier app).\nWill probably break that functionality if disabled, but is otherwise safe to disable (should only affect users that are out of data/balance?).",
@@ -666,7 +203,7 @@
             "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
             "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
         ],
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.android.cellbroadcastreceiver.basiccolorblack.overlay",
@@ -690,7 +227,17 @@
         "id": "com.android.cellbroadcastreceiver.overlay.common",
         "label": "com.android.cellbroadcastreceiver.overlay.common",
         "description": "In code I found unused things: show_brazil_settings, show_cmas_settings, show_etws_settings.\nIts unavailable and useless.",
-        "removal": "replace"
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.cellbroadcastservice",
+        "label": "Cell broadcast service",
+        "description": "is designed to deliver messages to multiple users in an area.\nThis is notably used by ISPs to send Emergency/Government alerts.\nRuns in the background.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.companiondevicemanager",
@@ -702,11 +249,7 @@
     {
         "id": "com.android.contacts",
         "label": "Contacts",
-        "description": "AOSP Contacts app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi & more) use the same package name for their app.\nAlternative (not for aosp) for privacy:",
-        "web": [
-            "https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/",
-            "https://f-droid.org/en/packages/opencontacts.open.com.opencontacts/"
-        ],
+        "description": "AOSP Contacts app.\nOccasionally runs in the background.\nSome OEMs (like Huawei & Xiaomi & more) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "contacts"
     },
@@ -765,6 +308,15 @@
         "label": "Photo Screensavers",
         "description": "Daydream stuff, see com.android.dreams.basic",
         "removal": "delete"
+    },
+    {
+        "id": "com.android.dynsystem",
+        "label": "Dynamic System Updates",
+        "description": "Runs on boot, but doesn't seem to run in the background beyond that.\nTreble gives the ability to boot an AOSP Generic System Image (GSI) on any supported device.\nDynamic System Updates allows to boot into a Generic System Image (GSI) without interfering with the current installation.\nThat means the bootloader doesn’t need to be unlocked and the user data doesn’t need to be wiped.",
+        "web": [
+            "https://developer.android.com/topic/dsu"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.dreams.phototable.overlay",
@@ -855,6 +407,84 @@
         "warning": "Removing this causes a bootloop on some MIUI 12.5.4+ phones."
     },
     {
+        "id": "com.android.icon_pack.circular.android",
+        "label": "com.android.icon_pack.circular.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.launcher",
+        "label": "com.android.icon_pack.circular.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.settings",
+        "label": "com.android.icon_pack.circular.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.systemui",
+        "label": "com.android.icon_pack.circular.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.circular.themepicker",
+        "label": "com.android.icon_pack.circular.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.android",
+        "label": "com.android.icon_pack.filled.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.launcher",
+        "label": "com.android.icon_pack.filled.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.settings",
+        "label": "com.android.icon_pack.filled.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.systemui",
+        "label": "com.android.icon_pack.filled.systemui",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.filled.themepicker",
+        "label": "com.android.icon_pack.filled.themepicker",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.android",
+        "label": "com.android.icon_pack.rounded.android",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.launcher",
+        "label": "com.android.icon_pack.rounded.launcher",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.icon_pack.rounded.settings",
+        "label": "com.android.icon_pack.rounded.settings",
+        "description": "Android icon pack only for google pixel or aosp",
+        "removal": "delete"
+    },
+    {
         "id": "com.android.inputdevices",
         "label": "Input Devices",
         "description": "Only contains a receiver named \"Android keyboard\", possibly for an external keyboard.\nLocates available keyboard layouts. Apps can offer additional keyboard layouts to the user by declaring a suitable broadcast receiver in their manifest.",
@@ -872,62 +502,68 @@
     {
         "id": "com.android.internal.display.cutout.emulation.corner",
         "label": "Corner cutout",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.display.cutout.emulation.double",
         "label": "Double cutout",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.display.cutout.emulation.hole",
         "label": "Punch Hole cutout",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.display.cutout.emulation.noCutout",
         "label": "Hide",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.display.cutout.emulation.tall",
         "label": "Tall cutout",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.display.cutout.emulation.waterfall",
         "label": "Waterfall cutout",
-        "description": "Display cutout variant. Cause bootloop after remove.",
+        "description": "Display cutout variant.",
         "web": [
             "https://developer.android.com/guide/topics/display-cutout",
             "https://source.android.com/devices/tech/display/display-cutouts"
         ],
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Cause bootloop after removal."
     },
     {
         "id": "com.android.internal.systemui.navbar.gestural",
@@ -969,6 +605,13 @@
         "removal": "caution"
     },
     {
+        "id": "com.android.internal.systemui.onehanded.gestural",
+        "label": "com.android.internal.systemui.onehanded.gestural",
+        "description": "one-handed mode, which can be found in the settings.",
+        "removal": "delete",
+        "warning": "one-handed mode will not work. Safe to remove if you dont use these setting."
+    },
+    {
         "id": "com.android.magicsmoke",
         "label": "Magic Smoke Wallpapers",
         "description": "Bulit-in Live wallpaper.",
@@ -989,10 +632,7 @@
     {
         "id": "com.android.mms",
         "label": "Messages",
-        "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app\nAlternative (not for aosp) for privacy:",
-        "web": [
-            "https://f-droid.org/en/packages/com.simplemobiletools.smsmessenger/"
-        ],
+        "description": "The AOSP SMS app.\nOccasionally runs in the background.\nSome OEMs (like Huawei, Xiaomi, Vivo, Oppo) use the same package name for their app",
         "removal": "replace",
         "suggestions": "sms"
     },
@@ -1015,6 +655,20 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.networkstack.overlay",
+        "label": "com.android.networkstack.overlay",
+        "description": "Configures captive portal network, dhcp.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "com.android.networkstack.tethering.inprocess.overlay",
+        "label": "com.android.networkstack.tethering.inprocess.overlay",
+        "description": "Its something about usb tethering but better keep this.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
         "id": "com.android.nfc",
         "label": "Nfc Service",
         "description": "Runs in the background as part of the System.\nI assume NFC breaks when disabled.\nWill probably run even if disabled, like most system packages. So disabling/uninstalling is probably pointless.",
@@ -1024,6 +678,15 @@
         "id": "com.android.noisefield",
         "label": "Bubbles",
         "description": "Built-in live wallpaper.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.ondevicepersonalization.services",
+        "label": "OnDevicePersonalization",
+        "description": "Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
         "removal": "delete"
     },
     {
@@ -1045,6 +708,20 @@
         "removal": "caution"
     },
     {
+        "id": "com.android.overlay.gmstelecomm",
+        "label": "com.android.overlay.gmstelecomm",
+        "description": "Location and dialer things.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "com.android.overlay.gmstelephony",
+        "label": "com.android.overlay.gmstelephony",
+        "description": "Location and dialer things.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
         "id": "com.android.pacprocessor",
         "label": "PacProcessor",
         "description": "PAC (Proxy Auto-Config) is a file which defines how an app can automatically find the correct proxy server for fetching an URL.\nShould be safe to remove if you don't use Auto-proxy (with PAC file config).",
@@ -1058,6 +735,13 @@
         "label": "Phase beam",
         "description": "Built-in live wallpaper",
         "removal": "delete"
+    },
+    {
+        "id": "com.android.phone.overlay.common",
+        "label": "com.android.phone.overlay.common",
+        "description": "Location and dialer things.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
     },
     {
         "id": "com.android.phone.recorder",
@@ -1088,7 +772,7 @@
     {
         "id": "com.android.providers.blockednumber",
         "label": "Blocked Numbers Storage",
-        "description": "Handles blocked number storage.\nOn some devices this seems to be tied to the recent apps menu.\nContent providers encapsulate data, providing centralized management of data shared between apps.",
+        "description": "Handles blocked number storage.\nOn some devices this seems to be tied to the recent apps menu.\nContent providers encapsulate data, providing centralized management of data shared between apps.(Can be removed if Block numbers feature are not used)",
         "web": [
             "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/6",
             "https://developer.android.com/guide/topics/providers/content-providers.html"
@@ -1098,11 +782,11 @@
     {
         "id": "com.android.providers.calendar",
         "label": "Calendar Storage",
-        "description": "Necessary for the stock Calendar app to work correctly.\nContent providers encapsulate data, providing centralized management of data shared between apps.",
+        "description": "Necessary for the stock Calendar app to work correctly.\nContent providers encapsulate data, providing centralized management of data shared between apps.(Can be removed if Calendar app are not used)",
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.android.providers.contacts",
@@ -1164,16 +848,55 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.remoteprovisioner",
+        "label": "RemoteProvisioner",
+        "description": "Have random stuff: security, notifications, accessibility, test modes, data usage, metrics, logs.\nIts something new introduced in android 13.\nAt this time this app is not available for users.\nAnd looks very useless.",
+        "removal": "delete"
+    },
+    {
         "id": "com.android.runintest.ddrtest",
         "label": "DDRTest",
         "description": "RAM Stress tester\nCan be run from the bootloader\nNOTE: I'm not sure it's really from AOSP (seen in TCL Plex phone)",
         "removal": "delete"
     },
     {
+        "id": "com.android.safetycenter.resources",
+        "label": "Google Safety Center",
+        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
+        "web": [
+            "https://safety.google"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.android.sdksandbox",
+        "label": "com.android.sdksandbox",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy... (I think its for testing privacy sandbox using Android Studio.)",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "unsafe",
+        "warning": "Cause BOOTLOOP."
+    },
+    {
         "id": "com.android.se",
         "label": "SecureElementApplication",
         "description": "Runs in the background as part of the system.\nUnderlying implementation for the OMAPI SE service.\nEnables apps to use the OpenMobile API to access secure elements (SE) to enable smart-card payments and other secure services.\nAn SE is a special chip (e.g SIM-card) for storing cryptographic secrets in a way that makes illicit use hard.\nThe Open Mobile Alliance (OPA) is a standards organization which develops open standards for the mobile phone industry.",
         "removal": "caution"
+    },
+    {
+        "id": "com.android.server.NetworkPermissionConfig",
+        "label": "com.android.server.NetworkPermissionConfig",
+        "description": "Network configurations.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "com.android.server.telecom.overlay.common",
+        "label": "com.android.server.telecom.overlay.common",
+        "description": "Location and dialer things.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
     },
     {
         "id": "com.android.settings.intelligence",
@@ -1249,52 +972,37 @@
         "warning": "Vulnerable to hacking, should be disabled."
     },
     {
+        "id": "com.android.systemui.gesture.line.overlay",
+        "label": "com.android.systemui.gesture.line.overlay",
+        "description": "Configurations to navigation bar.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "com.android.systemui.navigation.bar.overlay",
+        "label": "com.android.systemui.navigation.bar.overlay",
+        "description": "Configurations to navigation bar.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
+        "id": "com.android.systemui.overlay.common",
+        "label": "com.android.systemui.overlay.common",
+        "description": "Have something about to wellbeing.",
+        "removal": "caution"
+    },
+    {
         "id": "com.android.systemui.theme.dark",
         "label": "Dark",
         "description": "Enables you to use Android dark theme.",
         "removal": "caution"
     },
     {
-        "id": "com.android.theme.icon.circle",
-        "label": "Circle",
-        "description": "Android icons pack [Circle].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.pebble",
-        "label": "Pebble",
-        "description": "Android icons pack [Pebble].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.square",
-        "label": "Square",
-        "description": "Android icons pack [Square].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.taperedrect",
-        "label": "Tapered Rect",
-        "description": "Android icons pack [Taperedrect].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon.vessel",
-        "label": "Vessel",
-        "description": "Android icons pack [Vessel].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.rounded.systemui",
-        "label": "Rounded",
-        "description": "Android icons pack [Rounded].\nSafe to remove if you don't use them, but there's no point in doing so as they are simple data containers with no permissions.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.rounded.themepicker",
-        "label": "Rounded",
-        "description": "Obviously related to the \"rounded\" icon pack but the full package is strange. A themepicker class only for a specific icon package?\nSafe to remove if you don't use them, but there's no point in doing so.",
-        "removal": "delete"
+        "id": "com.android.theme.font.notoserifsource",
+        "label": "Noto Serif / Source Sans Pro",
+        "description": "Pre-installed font to android from AOSP. No effects after remove(safe to remove).",
+        "removal": "caution",
+        "warning": "Some apps may use these fonts."
     },
     {
         "id": "com.android.timezone.updater",
@@ -1374,6 +1082,13 @@
         "suggestions": "webviews"
     },
     {
+        "id": "com.android.wifi.dialog",
+        "label": "com.android.wifi.dialog",
+        "description": "Needed for wifi dialogs.",
+        "removal": "unsafe",
+        "warning": "Can brick basic functionality android."
+    },
+    {
         "id": "com.android.wifi.resources",
         "label": "System Wi-Fi Resources",
         "description": "System Wi-Fi resources.",
@@ -1387,10 +1102,202 @@
         "suggestions": "note_taking_apps"
     },
     {
+        "id": "com.google.android.adservices.api",
+        "label": "com.google.android.adservices.api",
+        "description": "Introduced in Android 13 privacy sandbox beta components disabled on default.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.captiveportallogin",
+        "label": "CaptivePortalLogin",
+        "description": "Its the same as(com.android.captiveportallogin). Support for captive portal.\nA captive portal login is a web page where the users have to input their login information or accept the displayed terms of use. \nSome networks (typically public wifi network) use the captive portal login to block access until the user inputs \nsome necessary information\nNOTE : This package is a now a mandatory mainline module",
+        "web": [
+            "https://en.wikipedia.org/wiki/Captive_portal",
+            "https://www.xda-developers.com/android-project-mainline-modules-explanation"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.carrierconfig",
+        "label": "com.google.android.carrierconfig",
+        "description": "Same as com.android.carrierconfig? Here's that description:\nDynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM card?",
+        "web": [
+            "https://source.android.com/devices/tech/config/carrier",
+            "https://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.cellbroadcastreceiver",
+        "label": "Wireless emergency alerts",
+        "dependencies": [
+            "com.google.android.cellbroadcastservice"
+        ],
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
+            "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.cellbroadcastservice",
+        "label": "Cell Broadcast Service",
+        "required_by": [
+            "com.google.android.cellbroadcastreceiver"
+        ],
+        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Cell_Broadcast",
+            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.documentsui",
+        "label": "Files",
+        "description": "Occasionally runs in the background.\nFile selector for other apps.",
+        "removal": "unsafe",
+        "warning": "Storage Access Framework (SAF) will break if this is disabled."
+    },
+    {
         "id": "com.google.android.email",
         "label": "Email",
         "description": "Newer versions of AOSP Mail are renamed to com.android.email and Gmail was migrated to com.google.android.gm",
         "removal": "replace",
         "suggestions": "email_clients"
+    },
+    {
+        "id": "com.google.android.ext.shared",
+        "label": "Android Shared Library",
+        "description": "Maybe people thinking its safe to remove or its useless because its empty.\nbut it cause bootloop on my miui 14.",
+        "removal": "unsafe",
+        "warning": "Cause BOOTLOOP."
+    },
+    {
+        "id": "com.google.android.federatedcompute",
+        "label": "FederatedCompute",
+        "description": "Another component of OnDevicePersonalization. But this app learns things about users.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.nearby.halfsheet",
+		"label": "com.google.android.nearby.halfsheet",
+        "description": "Useless frameworks to wifi connection, usb tethering, auto, usage.\nevery version have random code and app not running in the background.\nlooks like a very useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.networkstack.tethering.overlay",
+        "label": "com.google.android.networkstack.tethering.overlay",
+        "description": "Its needed for tethering?. I found: arrays.xml\narray name (config_tether_usb_regexs)\nitem rndis d\nitem usb d",
+        "removal": "unsafe"
+    },
+    {
+        "id": "com.google.android.ondevicepersonalization.services",
+		"label": "OnDevicePersonalization",
+        "description": "Another thing to AdServices privacy sandbox.\nIntroduced in Android 13.",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/ondevicepersonalization"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.managedprovisioning",
+        "label": "com.google.android.overlay.managedprovisioning",
+        "description": "In code I have seen lists of some system apps and stuff of managedprovisioning user.\nSafe to remove if you removed (com.android.managedprovisioning).\nBut problably it doesnt affect on anything.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.modules.captiveportallogin.forframework",
+		"label": "com.google.android.overlay.modules.captiveportallogin.forframework",
+        "description": "Configs default captiveportallogin. (not needed)\nNo effects after remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
+        "label": "com.google.android.overlay.modules.cellbroadcastreceiver",
+        "dependencies": [
+            "com.google.android.cellbroadcastreceiver"
+        ],
+        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.modules.documentsui",
+        "label": "com.google.android.overlay.modules.documentsui",
+        "description": "In code only found: `is_launcher_enabled` false\nOn pixel phones this app overlay not exist.\nIts only maded to hide app icon (com.google.android.documentsui)\nNo effects after remove(so icon will be not back), its useless.",
+        "web": [
+            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.modules.ext.services",
+        "label": "com.google.android.overlay.modules.ext.services",
+        "dependencies": [
+            "com.google.android.ext.services"
+        ],
+        "description": "Its overlay that depends on (com.google.android.ext.services)",
+        "removal": "unsafe",
+        "warning": "Cause bootloop."
+    },
+    {
+        "id": "com.google.android.overlay.modules.permissioncontroller",
+        "label": "com.google.android.overlay.modules.permissioncontroller",
+        "description": "I only detect on this app: help_app_permissions (link below)\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "web": [
+            "https://support.google.com/googleplay/answer/6270602"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
+        "label": "com.google.android.overlay.modules.permissioncontroller.forframework",
+        "description": "config_incidentReportApproverPackage\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.permissioncontroller",
+        "label": "com.google.android.overlay.permissioncontroller",
+        "description": "I only detect on this app: help_app_permissions (link below)\nIt looks very useless.\nNot needed, it doesnt affect on (com.google.android.permissioncontroller)",
+        "web": [
+            "https://support.google.com/googleplay/answer/6270602"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.printservice.recommendation",
+        "label": "Print Service Recommendation Service",
+        "description": "I think this has to do with recommending a printservice app you can get from the Play store. I think printing still works with this off.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.safetycenter.resources",
+        "label": "Google Safety Center",
+        "description": "Probably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.",
+        "web": [
+            "https://safety.google"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.sdksandbox",
+        "label": "com.google.android.sdksandbox",
+        "description": "Introduced in Android 13 privacy sandbox beta disabled on default.\nCauses bootloop. Maybe this component is not only for privacy... (I think its for testing privacy sandbox using Android Studio.)",
+        "web": [
+            "https://source.android.com/docs/core/ota/modular-system/adservices"
+        ],
+        "removal": "unsafe",
+        "warning": "Cause BOOTLOOP."
     }
 ]
