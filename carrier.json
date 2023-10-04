@@ -393,6 +393,7 @@
             "https://source.android.com/docs/core/connect/carrier"
         ],
         "removal": "caution"
+        "warning": "You might experience various network related issues, remember to enable this if face any issue."
     },
     {
         "id": "com.motorola.ltebroadcastservices_vzw",
@@ -756,7 +757,7 @@
     {
         "id": "com.sprint.ms.cnap",
         "label": "Caller ID",
-        "description": "CNAP = Caller Name Presentation\nLets you change the name that is displayed on caller ID when making a call.\nStrange is it the same thing than \"com.sprint.ecid\" ?\n",
+        "description": "CNAP = Caller Name Presentation\nLets you change the name that is displayed on caller ID when making a call.\nStrange is it the same thing than \"com.sprint.ecid\" ?",
         "web": [
             "https://en.wikipedia.org/wiki/Calling_Name_Presentation"
         ],
