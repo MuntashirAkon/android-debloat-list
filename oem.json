@@ -266,13 +266,13 @@
     {
         "id": "com.android.overlay.gmscontactprovider",
         "label": "com.android.overlay.gmscontactprovider",
-        "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nNo effects after remove.\n(detected on miui 14 with android 13 phones)",
+        "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nNo effects after remove.\n(detected on miui 14 with android 13 phones)\nIts a unused overlay.",
         "removal": "delete"
     },
     {
         "id": "com.android.overlay.gmssettingprovider",
         "label": "com.android.overlay.gmssettingprovider",
-        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.\n(detected on miui 14 with android 13 phones)",
+        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.\n(detected on miui 14 with android 13 phones)\nIts a unused overlay.",
         "removal": "delete"
     },
     {
@@ -320,6 +320,7 @@
     },
     {
         "id": "com.miui.face.overlay.miui",
+        "label": "com.miui.face.overlay.miui",
         "description": "Face Unlock feature will be unavailable.",
         "dependencies": [
             "com.miui.face"
@@ -352,21 +353,25 @@
     },
     {
         "id": "com.miui.miwallpaper.overlay",
+        "label": "com.miui.miwallpaper.overlay",
         "description": "app that doesnt do anything, no code. Safe to remove.\n You will need remove it 2 times.",
         "removal": "delete"
     },
     {
         "id": "com.miui.miwallpaper.overlay.customize",
+        "label": "com.miui.miwallpaper.overlay.customize",
         "description": "app that doesnt do anything, no code. Safe to remove.",
         "removal": "delete"
     },
     {
         "id": "com.miui.wallpaper.overlay",
+        "label": "com.miui.wallpaper.overlay",
         "description": "app that doesnt do anything, no code. Safe to remove.\n You will need remove it 2 times.",
         "removal": "delete"
     },
     {
         "id": "com.miui.wallpaper.overlay.customize",
+        "label": "com.miui.wallpaper.overlay.customize",
         "description": "app that doesnt do anything, no code. Safe to remove.",
         "removal": "delete"
     },
@@ -390,11 +395,13 @@
     },
     {
         "id": "com.google.android.cellbroadcastservice.overlay.miui",
+        "label": "com.google.android.cellbroadcastservice.overlay.miui",
         "description": "cross sim duplicate detection disable? I never seen this. Unused.",
         "removal": "delete"
     },
     {
         "id": "com.android.thememanager.gliobal_config.config.overlay",
+        "label": "com.android.thememanager.gliobal_config.config.overlay",
         "description": "Blacklist of some wallpaper names. Useless.\nThis app is not exist on miui china rom.",
         "removal": "delete"
     },
@@ -502,6 +509,7 @@
     },
     {
         "id": "com.xiaomi.aiasst.vision",
+        "label": "AiasstVision",
         "description": "Not needed if you removed AI Call Assistant.",
         "removal": "delete"
     },
@@ -519,11 +527,13 @@
     },
     {
         "id": "com.miui.catcherpatch",
+        "label": "com.miui.catcherpatch",
         "description": "Needed for Application Extension Service (com.miui.contentcatcher).",
         "removal": "delete"
     },
     {
         "id": "com.miui.core.internal.assistant",
+        "label": "com.miui.core.internal.assistant",
         "description": "Needed for Chinese Mi AI (com.miui.voiceassist).",
         "removal": "delete"
     },
@@ -658,23 +668,28 @@
     },
     {
         "id": "com.android.connectivity.resources",
-        "description": "Causes bootloop.",
-        "removal": "unsafe"
+        "label": "com.android.connectivity.resources",
+        "description": "Network connectivity resources.",
+        "removal": "unsafe",
+        "warning": "cause BOOTLOOP."
     },
     {
         "id": "com.android.updater",
-        "description": "Mi Updater, Provides system updates.",
+        "label": "Mi Updater",
+        "description": "Provides system updates.",
         "removal": "caution",
         "warning": "Its safe to remove only on MIUI 14, on others it cause BOOTLOOP."
     },
     {
         "id": "com.android.frameworkhwext.dark",
+        "label": "com.android.frameworkhwext.dark",
         "description": "Required components of the androidhwext.",
         "removal": "unsafe",
         "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.android.frameworkhwext.honor",
+        "label": "com.android.frameworkhwext.honor",
         "description": "Required components of the androidhwext.",
         "removal": "unsafe",
         "warning": "Basic functionality of Huawei Phones."
@@ -688,7 +703,7 @@
     {
         "id": "com.android.supl",
         "label": "SUPL20Service",
-        "description": "GPS still works without it. Chinese location probably. Consumes a lot of battery for some people.",
+        "description": "GPS still works without it. Problably needed to location in China.",
         "removal": "delete"
     },
     {
@@ -699,18 +714,22 @@
     },
     {
         "id": "com.huawei.android.dsdscardmanager",
+        "label": "Dual card management",
         "description": "Its sim card management in huawei settings.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "After remove sim card managment in settings will not work."
     },
     {
         "id": "com.huawei.android.hwaps",
-        "description": "Intelligent Resolution will be not available and changing screen resolution in settings.",
-        "removal": "caution"
+        "label": "HwAps",
+        "description": "Manages Intelligent Resolution and changing screen resolution in settings.",
+        "removal": "caution",
+        "warning": "Intelligent Resolution will be not available and changing screen resolution in settings."
     },
     {
         "id": "com.huawei.android.hwupgradeguide",
         "label": "hwupgradeguide",
-        "description": "Its useless menu at first start AppGallery.",
+        "description": "Its guide menu at first start AppGallery.",
         "removal": "delete"
     },
     {
@@ -724,6 +743,7 @@
     },
     {
         "id": "com.huawei.behaviorauth",
+        "label": "BehaviorAuth",
         "description": "It seems to be related to verifying the authenticity of user behavior and enhancing password security. User can disable it so its safe to remove.",
         "web": [
             "https://www.android-hilfe.de/forum/huawei-p30-p30-pro-p30-lite.3510/was-ist-die-behaviorauth-app-fuer-das-p30.1008750.html"
@@ -745,7 +765,7 @@
     {
         "id": "com.huawei.iconnect",
         "label": "iConnect",
-        "description": "Hidden menu 'install PCAssistant' when connected to PC? I have never seen it. Useless.",
+        "description": "Hidden menu 'install PCAssistant' when connected to PC? I have never seen it. Safe to remove.",
         "removal": "delete"
     },
     {
@@ -778,7 +798,7 @@
     {
         "id": "com.huawei.lbs",
         "label": "HwLBService",
-        "description": "Location Service? After removal, location still works, so no one knows what this app does.",
+        "description": "Chinese Location Services(Baidu) only for China. After removal, location still works.",
         "removal": "delete"
     },
     {
@@ -790,17 +810,22 @@
     {
         "id": "com.huawei.motionservice",
         "label": "Gesture Service",
-        "description": "Useless gestures available in settings.",
+        "description": "Not very useful gestures available in settings.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.nearby",
         "label": "HwNearby",
-        "description": "Needed for Huawei Share (com.huawei.android.instantshare).",
-        "removal": "delete"
+        "description": "Needed for Huawei Share features. (com.huawei.android.instantshare)",
+        "dependencies": [
+            "com.huawei.android.instantshare"
+        ],
+        "removal": "delete",
+        "warning": "Huawei Share features may not work after remove."
     },
     {
         "id": "com.huawei.omacp",
+        "label": "Provisioning message",
         "description": "Used for provisioning APN settings to devices via SMS. I think you shouldnt touch it if you want sms messages.",
         "removal": "caution"
     },
@@ -834,127 +859,146 @@
     },
     {
         "id": "com.huawei.systemserver",
+        "label": "Huawei System Services",
         "description": "It depends on (com.huawei.systemmanager). DO NOT REMOVE THIS. You lose phone functionality.",
         "removal": "unsafe",
         "warning": "Basic functionality of Huawei Phones."
     },
     {
         "id": "com.huawei.trustcircle",
+        "label": "Device authentication service",
         "description": "The app's usage is unknown, but it can be removed if apps such as com.huawei.hwid, com.huawei.appmarket are also removed. This is what I found while exploring the APK: Huawei Mobile Services?, managing installation and updates of AppGallery.",
         "removal": "delete",
         "warning": "Huawei HWID account may be inaccessible without this app."
     },
     {
         "id": "com.huawei.wifieapsimplmn",
+        "label": "PredefinedEapSim",
         "description": "Needed for WiFi to work properly",
         "removal": "unsafe",
         "warning": "WiFi will not work."
     },
     {
         "id": "com.huawei.wifiprobqeservice",
+        "label": "HwWifiproBqeService",
         "description": "Needed for WiFi to work properly",
         "removal": "unsafe",
         "warning": "WiFi will not work."
     },
     {
         "id": "com.qeexo.smartshot",
+        "label": "Smart Screenshots",
         "description": "Smart Screenshots? Disable it doesnt affecting normal screenshots.",
         "removal": "delete"
     },
     {
         "id": "huawei.android.widget",
+        "label": "huawei.android.widget",
         "description": "App that actually doesnt do anything? Remove it doesnt affect on your widgets.",
         "removal": "delete"
     },
     {
         "id": "com.android.settings.overlay.common",
+        "label": "com.android.settings.overlay.common",
         "description": "Color mode config you can find it in settings\nits something about: natural, boosted, saturated, adaptive.",
         "removal": "unsafe"
     },
     {
         "id": "com.android.wifi.resources.xiaomi",
+        "label": "com.android.wifi.resources.xiaomi",
         "description": "Have some configs to network about: disconnected scan interval schedule\nwifi11axsupportoverride, config_wifi_tcp_buffers\nyou should keep this because its maybe from settings.",
         "removal": "unsafe"
     },
     {
         "id": "com.mi.android.globallauncher",
-        "description": "Poco Launcher. Without it, the drawer of recent apps didn't work.",
-        "removal": "caution"
+        "label": "Poco Launcher",
+        "description": "It's basically the home screen, the way icons apps are organized and displayed.",
+        "removal": "caution",
+        "warning": "Without Poco Launcher, the drawer of recent apps didn't work."
     },
     {
         "id": "com.miui.core.internal.editor.services",
+        "label": "com.miui.core.internal.editor.services",
         "description": "I only found: config_enableHapticTextHandle true\nWhat is this mean? Its used to permission MIUIOP 10008 in some apps.\nMIUIOP = miui optimization? Its useless or important?",
         "removal": "caution"
     },
     {
         "id": "com.miui.core.internal.services",
+        "label": "com.miui.core.internal.services",
         "description": "I only found: array name= config_deviceSpecificSystemServices\nitem: com.miui.me.server.auto_install.InstallService\nWhat is this mean? I have must to check com.miui.core what it does\nand its for ota updates but I'm not sure. (yes miui core have ota updates components)",
         "removal": "caution"
     },
     {
         "id": "com.google.android.overlay.modules.modulemetadata.forframework",
+        "label": "com.google.android.overlay.modules.modulemetadata.forframework",
         "description": "config_defaultModuleMetadataProvider\nIt looks like useless module metadata from google\nNot needed, it doesnt affect on (com.google.android.modulemetadata)",
         "removal": "delete"
     },
     {
         "id": "com.android.server.telecom.overlay.miui",
+        "label": "com.android.server.telecom.overlay.miui",
         "description": "Manage calls. Its used for manage calls ui.",
         "removal": "unsafe"
     },
     {
         "id": "com.huaqin.btlogger",
+        "label": "btlogger",
         "description": "cit bluethooth logging",
         "removal": "delete"
     },
     {
         "id": "com.android.systemui.miui.optimization.overlay",
-        "description": "I only found navigationcolor to red?\nUnused overlay.",
+        "label": "com.android.systemui.miui.optimization.overlay",
+        "description": "In the code founded: navigationcolor to red.\nUnused overlay.",
         "removal": "delete"
     },
     {
         "id": "com.android.systemui.notch.overlay",
+        "label": "com.android.systemui.notch.overlay",
         "description": "It have something to Display Cutout. Better dont touch it.",
         "removal": "unsafe"
     },
     {
         "id": "com.android.settings.overlay.miui",
-        "description": "It have nothing. This app is without code and safe to remove.",
+        "label": "com.android.settings.overlay.miui",
+        "description": "This app is without code and safe to remove.",
         "removal": "delete"
     },
     {
         "id": "com.android.wifi.resources.overlay.target",
-        "description": "It have nothing and on some devices important? wifi configs.",
+        "label": "com.android.wifi.resources.overlay.target",
+        "description": "In code founded wifi configs.",
         "removal": "unsafe"
     },
     {
         "id": "com.xiaomi.location.fused",
-        "description": "It have a lot of china code, ads & analytics.\nYou dont need it for location.",
+        "label": "com.xiaomi.location.fused",
+        "description": "It has china location, ads & analytics.\nYou dont need it for location.",
         "removal": "delete"
     },
     {
         "id": "com.miui.systemui.carriers.overlay",
+        "label": "com.miui.systemui.carriers.overlay",
         "description": "You will lose LTE.",
         "removal": "unsafe"
     },
     {
         "id": "com.silead.fingerprint",
-        "description": "fingerprint silead manager not available for users.",
+        "label": "Fingerprint silead manager",
+        "description": "Hidden app for testing Fingerprint things. Not needed for normal users.",
         "removal": "delete"
     },
     {
         "id": "com.miui.easygo",
+        "label": "com.miui.easygo",
         "description": "For me, this app means nothing.\nA lot of useless code that you can't use.",
         "removal": "delete"
     },
     {
         "id": "com.android.systemui.icon.overlay",
-        "description": "Configs icon mask.",
+        "label": "com.android.systemui.icon.overlay",
+        "description": "In code found configs icon mask.",
         "removal": "caution"
-    },
-    {
-        "id": "com.miui.dmregservice",
-        "description": "Its spying on you. It collects and uploads the installed package list in a request.\nAlso has something to do with calling in China.",
-        "removal": "delete"
     },
     {
         "id": "com.miui.maintenancemode",
@@ -964,148 +1008,178 @@
     },
     {
         "id": "com.xiaomi.otrpbroker",
-        "description": "OTRP Protocol Negotiation Program (Internet of Things)\nNot useful if you are not in China.",
+        "label": "TAMservice",
+        "description": "OTRP Protocol Negotiation Program (Internet of Things)\nOnly useful in China.",
         "removal": "delete"
     },
     {
         "id": "com.miui.newhome",
         "label": "Content Service",
-        "description": "A lot bloated.\nNot useful.",
+        "description": "A lot bloated.\nOnly useful in China.",
         "removal": "delete"
     },
     {
         "id": "com.miui.miwallpaper.overlay.qr",
+        "label": "com.miui.miwallpaper.overlay.qr",
         "description": "Useless app to default lock wallpaper path? Problably unused. Safe to remove.",
         "removal": "delete"
     },
     {
         "id": "com.miui.miwallpaper.telcel.overlay",
+        "label": "com.miui.miwallpaper.telcel.overlay",
         "description": "Useless app to telcel wallpaper? Problably unused. Safe to remove.",
         "removal": "delete"
     },
     {
         "id": "com.asus.alwayson",
-        "description": "Always-on Display",
+        "label": "Always-on Display",
+        "description": "AOD will be not available after remove.",
         "removal": "delete"
     },
     {
         "id": "com.asus.alwayson.res.overlay",
-        "description": "Useless gif to Always-on Display",
+        "label": "com.asus.alwayson.res.overlay",
+        "description": "Not needed gif to Always-on Display",
         "removal": "delete"
     },
     {
         "id": "com.asus.appupdater",
-        "description": "ASUS Config Updater. It may have something to do with app updater but no activities.",
-        "removal": "replace"
+        "label": "ASUS Config Updater",
+        "description": "It may have something to do with app updater but no activities.",
+        "removal": "caution"
     },
     {
         "id": "com.asus.asusbacktap",
-        "description": "Back tap",
-        "removal": "delete"
+        "label": "Back tap",
+        "description": "Its for Accessibility component feature.",
+        "removal": "delete",
+        "warning": "Back tap will not be available in settings after remove."
     },
     {
         "id": "com.asus.system.api",
+        "label": "AsusBoost",
         "description": "It's probably an important app. It has booster services and memory cleaner service.",
         "removal": "caution"
     },
     {
         "id": "com.asus.camera",
-        "description": "Stock ASUS camera app. It has Google Analytics, so better disable internet for this app?",
-        "removal": "caution"
-    },
-    {
-        "id": "com.asus.configupdater",
-        "description": "ASUS Config Updater. Some people have removed this.",
+        "label": "ASUS Camera",
+        "description": "Stock ASUS camera app. It has Google Analytics, so better disable internet for this app.",
         "removal": "replace"
     },
     {
+        "id": "com.asus.configupdater",
+        "label": "ASUS Config Updater",
+        "description": "Some people have removed this. Needed for ASUS autoupdate apps problably, also found debugging code.",
+        "removal": "delete"
+    },
+    {
         "id": "com.asus.contacts",
-        "description": "ASUS Contacts. Contains Google trackers. Better alternative: https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/",
+        "label": "ASUS Contacts",
+        "description": "Stock ASUS Contacts app. Contains Google trackers.",
         "removal": "replace"
     },
     {
         "id": "com.futuredial.asusdatatransfer",
-        "description": "ASUS Phone Clone",
+        "label": "ASUS Phone Clone",
+        "description": "Its app to move your data to new or old phone.",
         "removal": "delete"
     },
     {
         "id": "com.asus.livedemoservice",
-        "description": "Demo Mode. Enables retail demonstration mode.",
+        "label": "Demo Mode",
+        "description": "Enables retail demonstration mode. Its not a feature for normal users.",
         "removal": "delete"
     },
     {
         "id": "com.asus.deskclock",
-        "description": "Stock Clock app. Its bad when there is google analytics.",
+        "label": "ASUS Digital Clock & Widget",
+        "description": "Stock Clock app. Contains google analytics.",
         "removal": "replace"
     },
     {
         "id": "com.asus.dialer",
-        "description": "ASUS Dialer. Contains Google trackers. Better alternative: https://f-droid.org/en/packages/com.simplemobiletools.dialer/",
+        "label": "ASUS Dialer",
+        "description": "Stock ASUS Dialer app. Contains Google trackers.",
         "removal": "replace"
     },
     {
         "id": "com.asus.faceunlockservice",
+        "label": "ASUS Face Unlock Service",
         "description": "Face unlock service. Needed for face unlock.",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Face unlock will not work after remove.",
     },
     {
         "id": "com.asus.gallery",
-        "description": "Gallery. Contains Google Analytics.\nBetter alternative: https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/",
+        "id": "Gallery",
+        "description": "Stock Gallery app. Contains Google Analytics.",
         "removal": "replace"
     },
     {
         "id": "com.asus.ephotoburst",
+        "label": "ASUS Burst shot viewer",
         "description": "ASUS Photo viewer, Trim Service. Contains Google Analytics.",
         "removal": "delete"
     },
     {
         "id": "com.asus.hbm",
-        "description": "High Brightness Mode",
+        "label": "High Brightness Mode",
+        "description": "It can be found problably in settings. Still unknown.",
         "removal": "caution"
     },
     {
         "id": "com.asus.launcher",
+        "label": "ASUS Launcher",
         "description": "Stock ASUS launcher. Contains Google Firebase Analytics.",
         "removal": "caution"
     },
     {
         "id": "com.futuredial.asuslocalbackup",
-        "description": "ASUS Device backup. Contains Google Analytics and numerous permissions.",
+        "id": "ASUS Device backup",
+        "description": "Contains Google Analytics and numerous permissions.",
         "removal": "delete"
     },
     {
         "id": "com.asus.asusoptiflex",
-        "description": "ASUS Opti Flex. Its something for settings?",
+        "id": "ASUS Opti Flex",
+        "description": "Its something for settings? Still unknown.",
         "removal": "caution"
     },
     {
         "id": "android.autoinstalls.config.asus.pai",
+        "label": "PlayAutoInstalls",
         "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "com.asus.asussettingsbackuphelper",
-        "description": "Settings ASUS Backup",
+        "label": "Settings ASUS Backup",
+        "description": "Can be removed if ASUS Backup are not used.",
         "removal": "delete"
     },
     {
         "id": "com.asus.setupwizard",
+        "label": "Setup Wizard",
         "description": "It's needed only for first-boot setup.",
         "removal": "delete"
     },
     {
         "id": "com.asus.smartcover",
-        "description": "SmartCover. Used for smart features.",
+        "label": "SmartCover",
+        "description": "Used for smart features.",
         "removal": "delete"
     },
     {
         "id": "com.asus.smartkey",
-        "description": "Smart key. Used for smart features.",
+        "label": "Smart key",
+        "description": "Used for smart features.",
         "removal": "delete"
     },
     {
         "id": "com.asus.splendid",
-        "description": "Asus Splendid",
+        "id": "Asus Splendid",
+        "description": "Optional app for adjust your screen for your own viewing pleasure.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.asus.splendid"
         ],
@@ -1113,101 +1187,124 @@
     },
     {
         "id": "com.asus.systemcolor",
+        "label": "System color scheme",
         "description": "Needed for changing wallpapers?",
         "removal": "caution"
     },
     {
         "id": "com.asus.themeservice",
+        "label": "com.asus.themeservice",
         "description": "Needed for change theme apps?",
         "removal": "caution"
     },
     {
         "id": "com.asus.tips",
+        "label": "Tips",
         "description": "Tips for smart features and more.",
         "removal": "delete"
     },
     {
         "id": "com.asus.visualmaster",
-        "description": "For color modes.",
+        "label": "Tru2Life",
+        "description": "Its app for color modes.",
         "removal": "caution"
     },
     {
         "id": "com.asus.audiowizard",
-        "description": "For sound effects.",
+        "label": "ASUS AudioWizard",
+        "description": "Needed for sound effects.",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.benchmarkblocker",
-        "description": "Useless debugs and benchmark blocker.",
+        "label": "com.asus.ims.benchmarkblocker",
+        "description": "Founded debugs and benchmark blocker.",
         "removal": "delete"
     },
     {
         "id": "blibli.mobile.commerce",
+        "label": "Blibli Belanja Online Mall",
         "description": "Chinese payment blipay",
+        "web": [
+            "https://play.google.com/store/apps/details?id=blibli.mobile.commerce"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.dirac.acs",
-        "description": "Dirac Control Service. For audio control, not sure if it's useful.",
+        "label": "Dirac Control Service",
+        "description": "For audio control, not sure if it's useful.",
         "removal": "caution"
     },
     {
         "id": "com.asus.dm",
-        "description": "System update",
+        "label": "System update",
+        "description": "System updates for ASUS",
         "removal": "caution"
     },
     {
         "id": "com.asus.filemanager",
-        "description": "It's not the best file manager.\nBetter alternative: https://www.zarchiver.pro/zarchiver-download/",
+        "label": "ASUS File Manager",
+        "description": "Stock ASUS file manager app.",
         "removal": "replace"
     },
     {
         "id": "com.monotype.android.font.felbridge",
-        "description": "Flipfont",
+        "label": "Felbridge FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.manroperegular",
-        "description": "Flipfont",
+        "label": "ManropeRegular FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.mfinancehkbold",
-        "description": "Flipfont",
+        "label": "MfinancehkBold FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.myinghei18030m",
-        "description": "Flipfont",
+        "label": "Myinghei18030m FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.myuppymediumtc",
-        "description": "Flipfont",
+        "label": "Myuppymediumtc FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.oxaniumregular",
-        "description": "Flipfont",
+        "label": "OxaniumRegular FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.rajdhanimedium",
-        "description": "Flipfont",
+        "label": "RajdhaniMedium FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.monotype.android.font.syndor",
-        "description": "Flipfont",
+        "label": "Syndor FlipFont",
+        "description": "Changes the user interface font on your phone.",
         "removal": "delete"
     },
     {
         "id": "com.asus.focusapplistener",
+        "label": "Focus app",
         "description": "Focus app. Needed for optimization, problably.",
         "removal": "caution"
     },
     {
         "id": "com.asus.gamewidget",
+        "label": "Game genie",
         "description": "Game genie\nits problably useful for gaming.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.asus.gamewidget"
@@ -1216,142 +1313,170 @@
     },
     {
         "id": "com.asus.gamewidget.service",
+        "label": "Game genie service",
         "description": "Game genie service needed for (com.asus.gamewidget)\nits problably useful for gaming.",
         "removal": "caution"
     },
     {
         "id": "com.asus.hardwarestub",
+        "label": "HardwareStub Services",
         "description": "HardwareStub Services.\nHas components for optimization game.",
         "removal": "caution"
     },
     {
         "id": "jp.co.daj.consumer.ifilter.aflauncher",
+        "label": "jp.co.daj.consumer.ifilter.aflauncher",
         "description": "Something Japanese with useless code.",
         "removal": "delete"
     },
     {
         "id": "com.asus.imagesearch",
+        "id": "Image search",
         "description": "Image search. Its so bloated.",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.configmanager",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.configmanager",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.devicepolicymanager",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.devicepolicymanager",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.evtlog",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.evtlog",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.forcedark",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.forcedark",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.observer",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.observer",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.packageinstallerproxy",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.packageinstallerproxy",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.pointerproxy",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.pointerproxy",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.powerctrl",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.powerctrl",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.extdispctrl",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.extdispctrl",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.freeform",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.freeform",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.brightnessservice",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.brightnessservice",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.phykeyctrl",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.phykeyctrl",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.rogproxy",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.rogproxy",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.smartread",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.smartread",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.twinapps",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.twinapps",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.ims.watermark",
-        "description": "Useless frameworks",
+        "label": "com.asus.ims.watermark",
+        "description": "Not needed, unused frameworks",
         "removal": "delete"
     },
     {
         "id": "com.asus.inadvertentTouch",
-        "description": "Useless 'Do not cover the top of the screen'",
+        "label": "com.asus.inadvertentTouch",
+        "description": "Not needed 'Do not cover the top of the screen'",
         "removal": "delete"
     },
     {
         "id": "com.asus.key_status",
+        "label": "KeyStatusTool",
         "description": "KeyStatusTool? All of this code means nothing.",
         "removal": "delete"
     },
     {
         "id": "com.asus.lockscreen2",
-        "description": "Lockscreen. It might be something important.",
+        "label": "Lockscreen",
+        "description": "It should be important for lockscreen.",
         "removal": "caution"
     },
     {
         "id": "com.asus.loguploader",
+        "label": "Log Tool",
         "description": "Captured logs, Generate Log, Report Log.",
         "removal": "delete"
     },
     {
         "id": "com.asus.loguploaderproxy",
-        "description": "Bug Reporter Proxy. Logs without activity.\nYou don't need another from loguploader.",
+        "label": "Bug Reporter Proxy",
+        "description": "Logs without activity.\nNot needed another logs from loguploader.",
         "removal": "delete"
     },
     {
         "id": "jp.co.yahoo.android.ebookjapan.preinstall",
-        "description": "Useless eBookJapan",
+        "label": "eBookJapan",
+        "description": "Not needed japanese.",
         "removal": "delete"
     },
     {
         "id": "com.asus.mlmodel",
-        "description": "Useless frameworks? AI optimization?\nResources have vision_model and something encrypted.\nThis app is large (338MB).",
+        "label": "com.asus.mlmodel",
+        "description": "Unused frameworks? AI optimization?\nResources have vision_model and something encrypted.\nThis app is large (338MB).",
         "removal": "caution"
     },
     {
         "id": "com.asus.mobilemanager",
-        "description": "Mobile Manager. Not sure if you should keep this or not.",
+        "label": "Mobile Manager",
+        "description": "Not sure to keep it or not.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.asus.mobilemanager"
         ],
@@ -1359,306 +1484,369 @@
     },
     {
         "id": "com.asus.mobilemanagerservice",
-        "description": "Mobile Manager Service. Looks like a useless framework, but not sure.",
+        "label": "Mobile Manager Service",
+        "description": "Looks like a unused framework, but not sure.",
         "removal": "caution"
     },
     {
         "id": "jp.co.radius.neplayer_asus",
+        "label": "NePLAYER",
         "description": "Japanese NePLAYER Lite for ASUS",
         "removal": "delete"
     },
     {
         "id": "com.asus.nextapp",
-        "description": "Useless frameworks? It have something to training maybe AI? everything is encrypted.",
-        "removal": "replace"
+        "label": "NextApp",
+        "description": "Unused frameworks? It has something to training AI? everything is encrypted.",
+        "removal": "caution"
     },
     {
         "id": "com.asus.nextappcore",
-        "description": "Useless frameworks? It have something to training maybe AI? everything is encrypted.",
-        "removal": "replace"
+        "label": "NextAppCore",
+        "description": "Useless frameworks? It has something to training AI? everything is encrypted.",
+        "removal": "caution"
     },
     {
         "id": "com.asus.openbeta2",
-        "description": "OpenBeta2. Beta program server that collects a lot of data.",
+        "label": "OpenBeta2",
+        "description": "Beta program server that collects a lot of data.",
         "removal": "delete"
     },
     {
         "id": "com.asus.powersaver",
+        "label": "Power Master",
         "description": "It's for power-saving and may be important.",
         "removal": "unsafe"
     },
     {
         "id": "com.asus.sarprotection",
-        "description": "SAR Protection. Security thing.",
+        "label": "SAR Protection",
+        "description": "Security thing.",
         "removal": "delete"
     },
     {
         "id": "com.asus.screenrecorder",
-        "description": "Screen recorder",
+        "label": "Screen recorder",
+        "description": "App for screen recording.",
         "removal": "delete"
     },
     {
         "id": "com.asus.smartreading",
-        "description": "It's for smart reading",
+        "label": "Smart Reading",
+        "description": "It's app for smart reading",
         "removal": "delete"
     },
     {
         "id": "com.asus.atd.smmitest",
+        "label": "SMMI TEST",
         "description": "Testing hardware things.",
         "removal": "delete"
     },
     {
         "id": "com.asus.stitchimage.service",
-        "description": "Stitch image. It's for the stock gallery app.",
+        "label": "Stitch image",
+        "description": "It's for the stock gallery app.",
         "removal": "delete"
     },
     {
         "id": "com.asus.sysmonitor",
+        "label": "Device Health",
         "description": "Device Health? It collects your data.",
         "removal": "delete"
     },
     {
         "id": "com.asus.taskwidget",
+        "label": "ASUS Task Manager widget",
         "description": "Task manager widget to System optimization",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.asus.twinapps",
+        "label": "Twin Apps",
         "description": "Twin Apps for duplicate apps.",
         "removal": "delete"
     },
     {
         "id": "com.asus.twinappsservice",
-        "description": "Twin Apps Service.",
+        "label": "Twin Apps Service",
+        "description": "Needed for Twin Apps for duplicate apps.",
         "removal": "delete"
     },
     {
         "id": "com.asus.launcher.twinviewmode",
-        "description": "Twin View Mode launcher",
+        "label": "Twin View Mode launcher",
+        "description": "Its for duplicated apps.",
         "removal": "delete"
     },
     {
         "id": "com.asus.UpdateLauncher",
-        "description": "Updater Launcher?\nRemove if you dont need it",
-        "removal": "replace"
+        "label": "Updater Launcher",
+        "description": "Updater Launcher?\nRemove if you dont need it Launcher updates.",
+        "removal": "delete"
     },
     {
         "id": "com.asus.weathertime",
-        "description": "Its for weather. Have Firebase Analytics.\nbetter alternative: https://f-droid.org/en/packages/cz.martykan.forecastie/",
+        "label": "ASUS Weather",
+        "description": "Its for weather. Have Firebase Analytics.",
         "removal": "replace"
     },
     {
         "id": "com.asus.zenmotion",
-        "description": "Its for Gestures.",
+        "label": "Gestures",
+        "description": "Needed for Gestures.",
         "removal": "delete"
     },
     {
         "id": "com.asu",
-        "description": "ZF10 Live Wallpaper",
+        "label": "ZF10 Live Wallpaper",
+        "description": "Live Wallpaper",
         "removal": "delete"
     },
     {
         "id": "com.asus.theme.color.asusui",
-        "description": "Theme AsusUI",
-        "removal": "unsafe"
+        "label": "Theme AsusUI",
+        "description": "Stock System Theme",
+        "removal": "unsafe",
+        "warning": "System may not work after removing it."
     },
     {
         "id": "com.asus.theme.color.rog",
-        "description": "Rog Theme",
-        "removal": "unsafe"
+        "label": "Rog Theme",
+        "description": "Stock System Theme",
+        "removal": "unsafe",
+        "warning": "System may not work after removing it."
     },
     {
         "id": "com.asus.cellbroadcastreceiver.overlay",
+        "label": "com.asus.cellbroadcastreceiver.overlay",
         "description": "useless overlay for cellbroadcast",
         "removal": "delete"
     },
     {
         "id": "com.asus.cellbroadcastservice.overlay",
+        "label": "com.asus.cellbroadcastservice.overlay",
         "description": "useless overlay for cellbroadcast",
         "removal": "delete"
     },
     {
         "id": "asusims.overlay.common",
+        "label": "asusims.overlay.common",
         "description": "It have important configs better dont risk.",
         "removal": "unsafe"
     },
     {
         "id": "asusims.overlay.aosp.documentsui",
-        "description": "useless overlay for hide documentsui icon. No effects after remove.",
+        "label": "asusims.overlay.aosp.documentsui",
+        "description": "Not needed overlay for hide documentsui icon. No effects after remove.",
         "removal": "delete"
     },
     {
         "id": "asusims.overlay.documentsui",
-        "description": "useless overlay for hide documentsui icon. No effects after remove.",
+        "label": "asusims.overlay.documentsui",
+        "description": "Not needed overlay for hide documentsui icon. No effects after remove.",
         "removal": "delete"
     },
     {
         "id": "com.asus.teleserv.overlay.odm",
+        "label": "com.asus.teleserv.overlay.odm",
         "description": "overlay to default config ims.",
         "removal": "caution"
     },
     {
         "id": "com.asus.wifi.resources.overlay",
+        "label": "com.asus.wifi.resources.overlay",
         "description": "overlay to wifi configs better dont risk.",
         "removal": "unsafe"
     },
     {
         "id": "com.huawei.autoinstallapkfrommcc",
+        "label": "Auto Install apk from mcc",
         "description": "Auto Install apk from mcc? Its only information and logs.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.firstbootinfo",
+        "label": "Get city info service",
         "description": "Get city info service? Needed by your phone in order to sync with Huawei servers\nand check for apps updates, software updates and other access for your phone.",
         "removal": "caution"
     },
     {
         "id": "com.hisi.supl",
-        "description": "SUPL20Services. Not needed for location and dont have code.",
+        "label": "SUPL20Services",
+        "description": "Not needed for location and dont have code.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.hff",
-        "description": "HFF? It dont have any code.",
+        "label": "HFF",
+        "description": "HFF? It has not any code.",
         "removal": "delete"
     },
     {
         "id": "com.android.huawei.HiMediaEngine",
-        "description": "Useless frameworks.",
+        "label": "com.android.huawei.HiMediaEngine",
+        "description": "Unused frameworks.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.assetsync",
-        "description": "HwAssetSync? AppGallery updates? its needed for hisync problably?\nit dont have any code so its useless.",
+        "label": "com.huawei.assetsync",
+        "description": "HwAssetSync? AppGallery updates? its needed for hisync problably?\nit dont have any code so it can be removed.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.assetsyncservice",
-        "description": "Useless frameworks. Code means nothing.",
+        "label": "com.huawei.assetsyncservice",
+        "description": "Unused frameworks. Code means nothing.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.multimedia.audioengine",
-        "description": "HwAssetSync? AppGallery updates? its needed for hisync problably?\nIts for Huawei Mobile services? it have in code analytics and assistant so yeah its spyware.",
+        "label": "com.huawei.multimedia.audioengine",
+        "description": "HwAssetSync? AppGallery updates? its needed for hisync problably?\nIts for Huawei Mobile services? it have in code analytics and assistant so its for spying.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.camerakit.impl",
+        "label": "HwCameraKit",
         "description": "CameraKit? Its needed for camera because it have some modes and resolutions?\nidk what I would say by code.",
         "removal": "caution"
     },
     {
         "id": "com.android.systemui.feature_cover",
+        "label": "com.android.systemui.feature_cover",
         "description": "It looks like a very important app.",
         "removal": "unsafe"
     },
     {
         "id": "com.huawei.androidx",
+        "label": "com.huawei.androidx",
         "description": "It have something to MediaPlayer but by name app it looks like important.\nSomeone will need to check if it bootloop or not because this app dont have code.",
         "removal": "caution"
     },
     {
         "id": "com.huawei.desktop.systemui",
-        "description": "huawei desktop mode switching.\nNot sure if it bricks phone. It have also Take Screenshot Service.",
+        "label": "huawei desktop mode switching",
+        "description": "Not sure if it bricks phone. It have also Take Screenshot Service.",
         "removal": "caution"
     },
     {
         "id": "com.huawei.sarlevel",
-        "description": "Mobile phone Sar. Hidden SAR Level Activity.",
+        "label": "Mobile phone SAR",
+        "description": "Hidden SAR Level Activity.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.securityserver",
-        "description": "Useless app without code and useless assets to spying apps.",
+        "label": "HwSecurityServer",
+        "description": "Not needed app without code and useless assets to spying apps.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.sos",
+        "label": "SOS",
         "description": "Emergency things.",
         "removal": "replace"
     },
     {
         "id": "com.huawei.indiacalendar",
-        "description": "Indian Calendar",
+        "label": "Indian Calendar",
+        "description": "HUAWEI Calendar",
         "removal": "replace"
     },
     {
         "id": "com.huawei.tmecustomize",
+        "label": "TME",
         "description": "Tme Activity. Hidden carrier config sim.\nI think its useless but you need to test.",
         "removal": "replace"
     },
     {
         "id": "com.android.huawei.projectmenu",
-        "description": "ProjectMenu. Hidden settings not available for users. Its useless.",
+        "label": "ProjectMenu",
+        "description": "Hidden settings not available for users. Its useless.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.runningtestii",
+        "label": "com.huawei.runningtestii",
         "description": "Testing hardware things like Audio, Camera, VideoPlayer, etc.",
         "removal": "delete"
     },
     {
         "id": "com.baidu.map.location",
-        "description": "Chinese Network location baidu. Not needed if you have google or other.",
+        "label": "Baidu Map Location",
+        "description": "Chinese Network location baidu. Only for China.",
         "removal": "delete"
     },
     {
         "id": "com.example.calibrationmaster",
+        "label": "com.example.calibrationmaster",
         "description": "Chinese hidden camera calibration.",
         "removal": "delete"
     },
     {
         "id": "com.zui.net.data.monitor",
+        "label": "com.zui.net.data.monitor",
         "description": "Needed for Network control",
         "removal": "caution"
     },
     {
         "id": "com.zui.deviceidservice",
+        "label": "com.zui.deviceidservice",
         "description": "Analytics and logs.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.leos.appstore",
+        "label": "Lenovo Application Center (应用中心)",
         "description": "Lenovo chinese app store",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.levoice_agent",
+        "label": "Voice unlock screen",
         "description": "Voice unlock screen? Another chinese accessibility things.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.levoice.caption",
-        "description": "AI Live Caption. Caption Settings.",
+        "label": "AI Live Caption",
+        "description": "Caption Settings.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.levoice_notes",
-        "description": "AI Notes. Another AI things lenovo.",
+        "label": "AI Notes",
+        "description": "Another AI things lenovo.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.levoice.trigger",
+        "label": "com.lenovo.levoice.trigger",
         "description": "Wake up with voice",
         "removal": "delete"
     },
     {
         "id": "com.zui.tassistent",
+        "label": "com.zui.tassistent",
         "description": "Assistant Tracking, Logs.",
         "removal": "delete"
     },
     {
         "id": "com.zui.tuface",
+        "label": "com.zui.tuface",
         "description": "It's for faceid and probably needed for face unlock lock screen.",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.weathercenter",
-        "description": "Widget Weather",
+        "label": "Widget Weather",
+        "description": "Lenovo ZUI Weather center",
         "removal": "delete"
     },
     {
         "id": "com.lenovo.leos.cloud.sync",
+        "label": "SYNCit",
         "description": "Lenovo cloud",
         "removal": "delete"
     },
@@ -4778,11 +4966,6 @@
         "removal": "replace"
     },
     {
-        "id": "com.google.android.apps.security.securityhub",
-        "description": "Security Hub. Useless frameworks.",
-        "removal": "delete"
-    },
-    {
         "id": "com.shannon.rcsservice",
         "description": "Needed for RCS, IMS settings.",
         "removal": "replace"
@@ -5662,17 +5845,20 @@
     },
     {
         "id": "com.idea.questionnaire",
-        "description": "Qusetionnaire. Logs and testing things.",
+        "label": "Qusetionnaire",
+        "description": "Logs and testing things.",
         "removal": "delete"
     },
     {
         "id": "com.transsion.ossettingsext",
-        "description": "OSSettings. Its needed for some settings and problably its important app.",
+        "label": "OSSettings",
+        "description": "Its needed for some settings and problably its important app.",
         "removal": "caution"
     },
     {
         "id": "tech.palm.id",
-        "description": "TECNO ID. Its for account? A lot bloated.",
+        "label": "TECNO ID",
+        "description": "Its for account? A lot bloated.",
         "removal": "delete"
     },
     {
@@ -5687,7 +5873,8 @@
     },
     {
         "id": "com.scorpio.securitycom",
-        "description": "SecurityPlugin. It cant be uninstalled.",
+        "label": "SecurityPlugin",
+        "description": "It cant be uninstalled.",
         "removal": "unsafe"
     },
     {
@@ -5822,18 +6009,21 @@
     },
     {
         "id": "com.transsion.zahooc",
-        "description": "Za-Hooc. Its for secure card and Theft Alert. Useless.",
+        "label": "Za-Hooc",
+        "description": "Its for secure card and Theft Alert.",
         "removal": "delete"
     },
     {
         "id": "com.transsion.childmode.resoverlay",
-        "description": "Useless overlay to childmode.",
+        "label": "com.transsion.childmode.resoverlay",
+        "description": "Unused overlay to childmode.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.abe",
-        "description": "Audio EQ(equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
-        "removal": "replace"
+        "label": "Audio EQ(equalizer)",
+        "description": "Some 3rd-party music apps can use it to provide you EQ features.",
+        "removal": "delete"
     },
     {
         "id": "com.bbk.cloud",
@@ -5867,6 +6057,7 @@
     },
     {
         "id": "com.vivo.bsptest",
+        "label": "BSPTest",
         "description": "Hidden app for testing things.",
         "removal": "delete"
     },
@@ -5877,16 +6068,19 @@
     },
     {
         "id": "com.vivo.contentcatcher",
-        "description": "Useless frameworks.",
+        "label": "com.vivo.contentcatcher",
+        "description": "Unused frameworks.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.devicereg",
+        "label": "com.vivo.devicereg",
         "description": "Hidden debugging app ims.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.doubleinstance",
+        "label": "App Clone",
         "description": "It's for clone app.",
         "removal": "delete"
     },
@@ -5902,81 +6096,97 @@
     },
     {
         "id": "com.vivo.epm",
+        "label": "EPM",
         "description": "Useless crash app notify.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.ewarranty",
-        "description": "E-warranty card. Something for China.",
+        "label": "E-warranty card",
+        "description": "Only for China.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.faceui",
+        "label": "FaceUI",
         "description": "It's used for face unlock.",
         "removal": "caution"
     },
     {
         "id": "com.vivo.faceunlock",
+        "label": "Facial recognition",
         "description": "It's used for face unlock.",
         "removal": "caution"
     },
     {
         "id": "com.bbk.facewake",
+        "label": "FaceWake",
         "description": "It's used for face unlock.",
         "removal": "caution"
     },
     {
         "id": "com.vivo.favorite",
+        "label": "Favorites",
         "description": "It's used to add text from the clipboard to favorites. Probably requires cloud. Contains untranslated Chinese things.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.findphone",
+        "label": "Find",
         "description": "It's used for finding the phone. Log out from account before removing.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.fingerprintengineer",
-        "description": "Fingerprint test.",
+        "label": "Fingerprint test",
+        "description": "Hidden Fingerprint testing not available for normal users.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.fingerprint",
-        "description": "Fingerprint settings.",
+        "label": "Fingerprints and passwords",
+        "description": "Needed for fingerprint settings.",
         "removal": "caution"
     },
     {
         "id": "com.vivo.fingerprintui",
+        "label": "FingerprintUI",
         "description": "Fingerprint test? Contains payment functionality for China. May be needed for fingerprint lockscreen.",
         "removal": "caution"
     },
     {
         "id": "com.vivo.floatingball",
-        "description": "Floating ball. Contains a lot of Chinese code.",
+        "label": "Floating ball",
+        "description": "Contains a lot of Chinese code.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.fuelsummary",
+        "label": "FuelSummary",
         "description": "Battery testing.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.gamecube",
+        "label": "Ultra Game Mode",
         "description": "Used for game optimization. Questionable if anyone is using this.",
         "removal": "caution"
     },
     {
         "id": "com.vivo.gamewatch",
-        "description": "Contains a lot of useless Chinese code.",
+        "label": "GameWatch",
+        "description": "Contains a lot of Chinese code and its hidden?",
         "removal": "delete"
     },
     {
         "id": "com.vivo.heduohao",
+        "label": "com.vivo.heduohao",
         "description": "Used for Chinese SIM.",
         "removal": "delete"
     },
     {
         "id": "com.vivo.iotserver",
+        "label": "com.vivo.iotserver",
         "description": "Related to Jovi Chinese.",
         "removal": "delete"
     },
