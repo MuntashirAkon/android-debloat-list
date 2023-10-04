@@ -456,7 +456,7 @@
         "label": "E-warranty card",
         "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to 'esa-reg-eup.myoppo.com'. Has a lot of permissions and run at boot.",
         "web": [
-            "https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
+            "https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88"
         ],
         "removal": "caution"
     },
@@ -515,7 +515,7 @@
         "label": "My Files",
         "description": "OPPO's official file management app",
         "removal": "replace",
-        "suggestions" "file_managers"
+        "suggestions": "file_managers"
     },
     {
         "id": "com.coloros.findmyphone",
@@ -630,7 +630,7 @@
         "label": "System Cloner",
         "description": "Creates multiple users on device",
         "removal": "replace",
-        "suggestions" "sandboxing_apps"
+        "suggestions": "sandboxing_apps"
     },
     {
         "id": "com.coloros.video",
@@ -3335,15 +3335,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.motorola.carrierconfig",
-        "label": "Carrier Services",
-        "description": "Related to various communication related actions.",
-        "web": [
-            "https://source.android.com/docs/core/connect/carrier"
-        ],
-        "removal": "caution"
-    },
-    {
         "id": "com.motorola.carriersettingsext",
         "description": "Seems safe to remove for now.\nCarrier settings ext\next = extension ?\nCarrier settings contains APN settings for instance.\n",
         "removal": "delete"
@@ -3613,7 +3604,7 @@
         "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?",
         "removal": "replace",
         "warning": "Don't remove this, unless you install another launcher.",
-        "suggestions" "launchers"
+        "suggestions": "launchers"
     },
     {
         "id": "com.motorola.lifetimedata",
