@@ -445,157 +445,235 @@
         "removal": "delete"
     },
     {
+        "id": "com.codeaurora.fmradio",
+        "label": "FM Radio",
+        "description": "Default FM app for lenovo devices.",
+        "removal": "replace",
+        "suggestions": "radios"
+    },
+    {
         "id": "com.coloros.activation",
-        "description": "E-warranty card\nLets you check if your registered phone is still under warranty (will send your IMEI to esa-reg-eup.myoppo.com. Has a lot of permissions and run at boot\n\nPithus analysis: https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
+        "label": "E-warranty card",
+        "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to 'esa-reg-eup.myoppo.com'. Has a lot of permissions and run at boot.",
+        "web": [
+            "https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
+        ],
         "removal": "caution"
     },
     {
         "id": "com.coloros.appmanager",
-        "description": "",
+        "label": "com.coloros.appmanager",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.assistantscreen",
-        "description": "",
+        "label": "com.coloros.assistantscreen",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.backuprestore",
-        "description": "Most likely Oppo backup/restore feature \n",
-        "removal": "delete"
+        "label": "OPPO Clone Phone",
+        "description": "Oppo backup/restore tool.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.coloros.backuprestore"
+        ],
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.coloros.childrenspace",
-        "description": "",
+        "label": "com.coloros.childrenspace",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.cloud",
-        "description": "Oppo Cloud\n",
-        "removal": "delete"
+        "label": "Oppo Cloud",
+        "description": "Oppo cloud storage?",
+        "removal": "replace",
+        "suggestion": "cloud_services"
     },
     {
         "id": "com.coloros.compass2",
-        "description": "ColorOS default compass app\nKeep in mind that by using this app you give your location to the weather Oppo servers.\nPithus analysis: https://beta.pithus.org/report/9a965f5587fa6ee21c526612f3d72c50ef3cc53679b741260298387c44f5a3dc",
+        "label": "com.coloros.compass2",
+        "description": "ColorOS default compass app\nKeep in mind that by using this app you give your location to the weather Oppo servers.",
+        "web": [
+            "https://beta.pithus.org/report/9a965f5587fa6ee21c526612f3d72c50ef3cc53679b741260298387c44f5a3dc"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.coloros.directui",
-        "description": "",
+        "label": "com.coloros.directui",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.filemanager",
-        "description": "ColorOS File Manager\n",
-        "removal": "replace"
+        "label": "My Files",
+        "description": "OPPO's official file management app",
+        "removal": "replace",
+        "suggestions" "file_managers"
     },
     {
         "id": "com.coloros.findmyphone",
-        "description": "Find my phone service\n",
+        "label": "com.coloros.findmyphone",
+        "description": "Oppo find my phone service.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.gamespace",
-        "description": "Game Space\nHub for your Games + some performance optimizations\nhttps://community.coloros.com/thread-9962-1-1.html\n",
+        "label": "Game Space",
+        "description": "Hub for your Games + some performance optimizations",
+        "web": [
+            "https://community.coloros.com/thread-9962-1-1.html"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.gamespaceui",
-        "description": "GameSpace\nGaming utility aiming at 'optimizing your gaming experience'. Has a lot of permissions. For instance, it has internet access, will scans all the apps you have on your phones (to find games), can performs Bluetooth scan and has access to the metadata of your media files (e.g the place where you took a picture).",
+        "label": "GameSpace",
+        "description": "Gaming utility aiming at 'optimizing your gaming experience'. Has a lot of permissions. For instance, it has internet access, will scans all the apps you have on your phones (to find games), can performs Bluetooth scan and has access to the metadata of your media files (e.g the place where you took a picture).",
         "removal": "delete"
     },
     {
         "id": "com.coloros.healthcheck",
-        "description": "",
+        "label": "com.coloros.healthcheck",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.mcs",
-        "description": "",
+        "label": "System Messages",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.ocrscanner",
-        "description": "ColorOS Optical character recognition scanner\n",
-        "removal": "delete"
+        "label": "com.coloros.ocrscanner",
+        "description": "ColorOS Optical character recognition scanner",
+        "removal": "replace"
     },
     {
         "id": "com.coloros.onekeylockscreen",
-        "description": "Lock your phone if you click on the app icon. Completely useless unless your physical power button is damaged.\nThis app still has the permission to list all the apps installed on the phone.\n\nPithus analysis: https://beta.pithus.org/report/ece4088357c0a47dffd96bdc46a7b535d448c1a3619d995f7032df3be6cb0a38",
+        "label": "com.coloros.onekeylockscreen",
+        "description": "Lock your phone if you click on the app icon. Completely useless unless your physical power button is damaged.\nThis app still has the permission to list all the apps installed on the phone.",
+        "web": [
+            "https://beta.pithus.org/report/ece4088357c0a47dffd96bdc46a7b535d448c1a3619d995f7032df3be6cb0a38"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.oppomultiapp",
-        "description": "",
+        "label": "com.coloros.oppomultiapp",
+        "description": "More info needed",
         "removal": "delete"
     },
     {
         "id": "com.coloros.oshare",
-        "description": "Oppo Share\nFile sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).\nWARNING: removing this app will break the functionality to share photos directly from ColorOS Photos app and break the 'share with' prompt after taking a screenshot.\n\nPithus analysis: https://beta.pithus.org/report/170f4a14be24a2e2135cd956a038aae9e2f78c845f3161b84c5545dbec03fad9",
-        "removal": "replace"
+        "label": "Oppo Share",
+        "description": "File sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).",
+        "web": [
+            "https://beta.pithus.org/report/170f4a14be24a2e2135cd956a038aae9e2f78c845f3161b84c5545dbec03fad9"
+        ],
+        "removal": "caution",
+        "warning": "Removing this app will break the functionality to share photos directly from ColorOS Photos app and break the 'share with' prompt after taking a screenshot."
     },
     {
         "id": "com.coloros.phonemanager",
-        "description": "Phone Manager\nProvides so called 'optimization tools' and various security scanning services.\nThese virus scanning services may have privacy implications.\n\nPithus analysis: https://beta.pithus.org/report/6b7d9e117ffb600b852f3785ede4f3773385fc291376e94a061bf7ed787dec48",
+        "label": "Phone Manager",
+        "description": "Provides so called 'optimization tools' and various security scanning services.\nThese virus scanning services may have privacy implications.",
+        "web": [
+            "https://beta.pithus.org/report/6b7d9e117ffb600b852f3785ede4f3773385fc291376e94a061bf7ed787dec48"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.phonenoareainquire",
-        "description": "Number Origin\n",
+        "label": "Number Origin",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.securepay",
-        "description": "Payment system from Oppo allowing you to pay with your phone\n\nPithus analysis: https://beta.pithus.org/report/65246664d3795a5ac1b402d28456903e1b3bd76176de8298b3ea96c6c592ae9a",
+        "label": "Securepay",
+        "description": "Payment system from Oppo allowing you to pay with your phone.",
+        "web": [
+            "https://beta.pithus.org/report/65246664d3795a5ac1b402d28456903e1b3bd76176de8298b3ea96c6c592ae9a"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.smartdrive",
-        "description": "",
+        "label": "SmartDrive",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.soundrecorder",
-        "description": "ColorOS Sound Recorder",
-        "removal": "replace"
+        "label": "SoundRecorder",
+        "description": "ColorOS default Sound Recorder",
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.coloros.speechassist",
-        "description": "ColorOS Speech Assistant\n",
-        "removal": "delete"
+        "label": "Speech Assistant",
+        "description": "ColorOS default Speech Assistant",
+        "removal": "replace",
+        "suggestions": "tts"
     },
     {
         "id": "com.coloros.systemclone",
-        "description": "System Cloner\nCreates multiple users on device",
-        "removal": "replace"
+        "label": "System Cloner",
+        "description": "Creates multiple users on device",
+        "removal": "replace",
+        "suggestions" "sandboxing_apps"
     },
     {
         "id": "com.coloros.video",
-        "description": "Video Player\nDefault Oppo video player with too much permissions (21) for a video player! \nNote: using inbuilt screen recorder you won't be able to open the recorded video from the notification view.\n\nPithus analysis: https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "Default Oppo video player with too much permissions (21) for a video player!",
+        "web": [
+            "https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9"
+        ],
+        "removal": "caution",
+        "warning": "Using inbuilt screen recorder you won't be able to open the recorded video from the notification view."
     },
     {
         "id": "com.coloros.wallet",
-        "description": "Oppo Wallet\n",
+        "label": "com.coloros.wallet",
+        "description": "Oppo default Wallet app.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.weather2",
-        "description": "ColorOS weather app. Removal seems to trigger a bootloop on some phones. You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+\nSee: https://github.com/0x192/universal-android-debloater/issues/211",
-        "removal": "caution"
+        "label": "Weather",
+        "description": "ColorOS weather app.  You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.coloros.weather2",
+            "https://github.com/0x192/universal-android-debloater/issues/211"
+        ],
+        "removal": "unsafe",
+        "warning": "Removal seems to trigger a bootloop on some phones."
     },
     {
         "id": "com.coloros.widget.smallweather",
-        "description": "",
+        "label": "com.coloros.widget.smallweather",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coremobility.app.vnotes",
+        "label": "com.coremobility.app.vnotes",
         "description": "Voicemail App?",
         "removal": "replace"
     },
     {
         "id": "com.data.overlay.base.s600ww",
+        "label": "com.data.overlay.base.s600ww",
         "description": "Some kind of theme overlay for Nokia devices?\nSome users claim to not see any differences when removed.",
         "removal": "caution"
     },
@@ -611,22 +689,37 @@
     },
     {
         "id": "com.duokan.phone.remotecontroller",
-        "description": "Mi Remote Controller (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller)\nControl your electric appliances with your phone using Mi Remote.\n",
+        "label": "Mi Remote Controller",
+        "description": "Control your electric appliances with your phone using Mi Remote.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.duokan.phone.remotecontroller.peel.plugin",
-        "description": "Peel Mi Remote (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin)\nPeel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".\n",
+        "label": "Peel Mi Remote",
+        "description": "Peel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.elephanttek.faceunlock",
-        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy:\nhttps://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/\nhttps://www.kaspersky.com/blog/face-unlock-insecurity/21618/\nhttps://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/",
+        "label": "com.elephanttek.faceunlock",
+        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.",
+        "web": [
+            "https://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/",
+            "https://www.kaspersky.com/blog/face-unlock-insecurity/21618/",
+            "https://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.enhance.gameservice",
-        "description": "Legacy game Optimizing Service (was replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.\n",
+        "label": "com.enhance.gameservice",
+        "description": "Legacy game Optimizing Service (was replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.",
         "removal": "delete"
     },
     {
@@ -3123,8 +3216,8 @@
         "id": "com.motorola.android.providers.settings",
         "label": "Settings storage",
         "description": "Seems to required for device settings.",
-        "removal": "caution",
-        "warning": "Device settings will crash continuously"
+        "removal": "unsafe",
+        "warning": "Some* of the device settings will crash continuously."
     },
     {
         "id": "com.motorola.android.providers.settings.auto_generated_rro_product__",
@@ -3294,17 +3387,20 @@
     },
     {
         "id": "com.motorola.comcastext",
-        "description": "See above. Provides special (useless) features from Comcast? App title is \"Activation\". Safe to remove (tested only on non-Comcast phone).",
+        "label": "Activation",
+        "description": "See above. Provides special features from Comcast? Probably safe to remove (tested only on non-Comcast phone).",
         "removal": "delete"
     },
     {
         "id": "com.motorola.config.wifi",
-        "description": "Appears safe to remove.\nWPA config App\nWi-Fi not affected after removal.\n",
+        "label": "com.motorola.config.wifi",
+        "description": "Appears safe to remove.\nWPA config App\nWi-Fi not affected after removal.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.contacts.preloadcontacts",
-        "description": "Preloaded Contacts\nProvides contacts preset by carriers.",
+        "label": "Preloaded Contacts Loader",
+        "description": "Provides contacts preset by carriers.",
         "removal": "delete"
     },
     {
@@ -3330,6 +3426,7 @@
     },
     {
         "id": "com.motorola.demo.env",
+        "label": "com.motorola.demo.env",
         "description": "Needed for Moto Demo Mode\nenv = environment",
         "removal": "delete"
     },
@@ -3371,9 +3468,10 @@
     {
         "id": "com.motorola.enterprise.service",
         "label": "Moto Thinkshield-MM",
-        "description": "Provides various security to Moto devices",
+        "description": "Provides various security to Moto devices. More info needed.",
         "web": [
-            "https://www.motorola.com/business/thinkshield/"
+            "https://www.motorola.com/business/thinkshield/",
+            "https://beta.pithus.org/report/db140841cffe28643367bd1d595c885a02852d06136086b0ffc41aab79db5ff0"
         ],
         "removal": "delete"
     },
@@ -3385,12 +3483,23 @@
     },
     {
         "id": "com.motorola.faceunlock",
-        "description": "Moto Face Unlock (https://play.google.com/store/apps/details?id=com.motorola.faceunlock)\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy:\nhttps://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/\nhttps://www.kaspersky.com/blog/face-unlock-insecurity/21618/\nhttps://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/",
+        "label": "Moto Face Unlock",
+        "description": "Unlock your device by simply looking at the display.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.faceunlock",
+            "https://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/",
+            "https://www.kaspersky.com/blog/face-unlock-insecurity/21618/",
+            "https://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.motorola.faceunlocktrustagent",
-        "description": "Motorola Face Unlock Agent\nTrust agent is a service that notifies the system about whether it believes the environment of the device is trusted.\nThe meaning of 'trusted' is up to the trust agent to define.\nThe system lockscreen listens for trust events, it can change its behaviour based on the trust state of the current user (e.g detection of a trusted face)\nhttps://nelenkov.blogspot.com/2014/12/dissecting-lollipops-smart-lock.html",
+        "label": "Motorola Face Unlock Agent",
+        "description": "Trust agent is a service that notifies the system about whether it believes the environment of the device is trusted.\nThe meaning of 'trusted' is up to the trust agent to define.\nThe system lockscreen listens for trust events, it can change its behaviour based on the trust state of the current user (e.g detection of a trusted face)",
+        "web": [
+            "https://nelenkov.blogspot.com/2014/12/dissecting-lollipops-smart-lock.html"
+        ],
         "removal": "replace"
     },
     {
@@ -3409,7 +3518,11 @@
     },
     {
         "id": "com.motorola.frameworks.singlehand",
-        "description": "Provide the Single/One hand mode\nI don't know why frameworks appears in the package name because it's not only the framework.\nhttps://support.motorola.com/us/en/documents/MS116403/\n",
+        "label": "com.motorola.frameworks.singlehand",
+        "description": "Provide the Single/One hand mode\nI don't know why frameworks appears in the package name because it's not only the framework.",
+        "web": [
+            "https://support.motorola.com/us/en/documents/MS116403/"
+        ],
         "removal": "delete"
     },
     {
@@ -3432,6 +3545,7 @@
     },
     {
         "id": "com.motorola.gesture",
+        "label": "Gesture navigation tutorial",
         "description": "Gesture navigation tutorial added in Android 10.",
         "removal": "delete"
     },
@@ -3452,6 +3566,7 @@
     },
     {
         "id": "com.motorola.hiddenmenuapp",
+        "label": "HiddenMenu",
         "description": "Added in Android 10. Not sure what it does.",
         "removal": "delete"
     },
@@ -3489,13 +3604,16 @@
     },
     {
         "id": "com.motorola.launcher3",
-        "description": "Motorola system launcher\nA default home screen app, provides a layout and display for app icons and listing.\nWARNING: Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher).",
-        "removal": "caution"
+        "description": "Motorola system launcher\nA default home screen app, provides a layout and display for app icons and listing.",
+        "removal": "unsafe",
+        "warning": "Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher)."
     },
     {
         "id": "com.motorola.launcherconfig",
-        "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER!\n",
-        "removal": "replace"
+        "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?",
+        "removal": "replace",
+        "warning": "Don't remove this, unless you install another launcher.",
+        "suggestions" "launchers"
     },
     {
         "id": "com.motorola.lifetimedata",
@@ -3646,43 +3764,57 @@
     {
         "id": "com.motorola.settings",
         "label": "System update",
-        "description": "Exactly not sure what it does",
-        "removal": "delete"
+        "description": "Exactly not sure what it does.",
+        "removal": "caution"
     },
     {
         "id": "com.motorola.setup",
-        "description": "Related to Motorola Account setup (only during first boot ?)\nSafe to remove according to xda users.\n",
+        "label": "Setup",
+        "description": "Related to Motorola Account setup (only during first boot?)\nSafe to remove according to xda users.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.slpc_sys",
-        "description": "Motorola Slpc System\nWould be weird if it's not related to Motorola Modality Services (https://play.google.com/store/apps/details?id=com.motorola.slpc)\nHelps your Motorola phone respond more intelligently to motion, phone orientation (e.g. face up/down) and stowed state (e.g in/out-of-pocket).\nHas a noticeable impact on battery ? (https://forum.xda-developers.com/moto-x-2014/help/location-modality-services-battery-t2982752)\nFYI : It uses location services.\n",
+        "label": "Motorola Slpc System",
+        "description": "Would be weird if it's not related to Motorola Modality Services (https://play.google.com/store/apps/details?id=com.motorola.slpc)\nHelps your Motorola phone respond more intelligently to motion, phone orientation (e.g. face up/down) and stowed state (e.g in/out-of-pocket).\nHas a noticeable impact on battery?\nFYI : It uses location services.",
+        "web": [
+            "https://forum.xda-developers.com/moto-x-2014/help/location-modality-services-battery-t2982752"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.systemserver",
-        "description": "Appears safe to remove. Maybe it's only needed for Motorola apps?\n",
+        "label": "com.motorola.systemserver",
+        "description": "Appears safe to remove. Maybe it's only needed for Motorola apps?",
         "removal": "delete"
     },
     {
         "id": "com.motorola.timeweatherwidget",
-        "description": "Provides time/weather widget on the home screen.\nhttps://en.wikipedia.org/wiki/Widget\n",
+        "label": "com.motorola.timeweatherwidget",
+        "description": "Provides time/weather widget on the home screen.",
         "removal": "delete"
     },
     {
         "id": "com.mygalaxy",
-        "description": "My Galaxy (https://play.google.com/store/apps/details?id=com.mygalaxy)\nEntertainment hub and life-services application.\nLets you access videos, music and gaming and gives quick access to services such as cabs, movies, recharge, bill payment, food ordering, travel, hyper local deals and Samsung Care, among others.",
+        "label": "My Galaxy",
+        "description": "Entertainment hub and life-services application.\nLets you access videos, music and gaming and gives quick access to services such as cabs, movies, recharge, bill payment, food ordering, travel, hyper local deals and Samsung Care, among others.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mygalaxy"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.nearme.atlas",
-        "description": "Secure payment\n",
+        "label": "Secure payment",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.nearme.browser",
-        "description": "Default web browser\n",
-        "removal": "delete"
+        "label": "com.nearme.browser",
+        "description": "Default web browser",
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.nearme.deamon",
@@ -3694,13 +3826,20 @@
     },
     {
         "id": "com.nearme.instant.platform",
+        "label": "com.nearme.instant.platform",
         "description": "Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.nearme.statistics.rom",
-        "description": "User Experience Program\n Collect user data and sends them to Oppo. Intrusive and starts at boot\nSee https://support.oppo.com/uk/answer/?aid=neu105\n\nNote: removing it may break the search feature in the settings on some ColorOS versions.\n\nPithus analysis: https://beta.pithus.org/report/5e06191ac6f8aefd39642f6341ee4897039815f5059dbe093a7bd2fe1e20c038",
-        "removal": "delete"
+        "label": "User Experience Program",
+        "description": "Collect user data and sends them to Oppo. Intrusive and starts at boot.",
+        "web": [
+            "https://support.oppo.com/uk/answer/?aid=neu105",
+            "https://beta.pithus.org/report/5e06191ac6f8aefd39642f6341ee4897039815f5059dbe093a7bd2fe1e20c038"
+        ],
+        "removal": "caution",
+        "warning": "Removing it may break the search feature in the settings on some ColorOS versions."
     },
     {
         "id": "com.nearme.themestore",
