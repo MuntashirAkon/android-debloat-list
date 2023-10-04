@@ -386,6 +386,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.carrierconfig",
+        "label": "Carrier Services",
+        "description": "Related to various communication related actions.",
+        "web": [
+            "https://source.android.com/docs/core/connect/carrier"
+        ],
+        "removal": "caution"
+    },
+    {
         "id": "com.motorola.ltebroadcastservices_vzw",
         "label": "com.motorola.ltebroadcastservices_vzw",
         "description": "LTE Broadcast services from Verizon. Allows your phone to receive broadcast message from Verizon?",
