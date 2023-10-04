@@ -46,6 +46,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.wifi.resources.overlay.WifiVodafoneOverlay",
+        "label": "com.android.wifi.resources.overlay.WifiVodafoneOverlay",
+        "description": "Not sure what it does",
+        "web": [
+            "https://beta.pithus.org/report/d8b19f854eb85ea97fbaeafb8c11842cf9b27f169b08d3e8b2659f52db9dd408"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.asurion.android.mobilerecovery.att",
         "label": "AT&T Protect Plus",
         "description": "Discontinued and replaced by AT&T ProTech (com.asurion.android.protech.att)\nHelp and support app. Lets you call or chat with a live U.S.-based AT&T ProTech support expert.",
@@ -392,7 +401,7 @@
         "web": [
             "https://source.android.com/docs/core/connect/carrier"
         ],
-        "removal": "caution"
+        "removal": "caution",
         "warning": "You might experience various network related issues, remember to enable this if face any issue."
     },
     {
