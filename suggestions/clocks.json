@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "com.simplemobiletools.clock",
+        "label": "Simple Clock",
+        "source": "fg",
+        "reason": "Good replacement for Google, ASUS clock.",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Clock"
+    }
+]
