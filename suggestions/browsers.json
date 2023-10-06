@@ -17,5 +17,18 @@
         "source": "f",
         "repo": "https://gitlab.com/divested-mobile/mull-fenix",
         "reason": "Hardened Firefox browser without any proprietary blobs"
+    },
+    {
+        "id": "com.brave.browser",
+        "label": "Brave",
+        "source": "g",
+        "repo": "https://github.com/brave/brave-browser",
+        "reason": "Chromium based browser focused on privacy"
+    },
+    {
+        "id": "io.github.forkmaintainers.iceraven",
+        "label": "Iceraven",
+        "repo": "https://github.com/fork-maintainers/iceraven-browser",
+        "reason": "Firefox with more extensions, more customizable."
     }
 ]
