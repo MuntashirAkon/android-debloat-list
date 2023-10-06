@@ -30,5 +30,12 @@
         "label": "Iceraven",
         "repo": "https://github.com/fork-maintainers/iceraven-browser",
         "reason": "Firefox with more extensions, more customizable."
+    },
+    {
+        "id": "de.marmaro.krt.ffupdater",
+        "label": "FFUpdater",
+        "source": "f",
+        "repo": "https://github.com/Tobi823/ffupdater",
+        "reason": "Updater for privacy friendly browsers"
     }
 ]
