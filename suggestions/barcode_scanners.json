@@ -4,5 +4,11 @@
         "label": "Binary Eye",
         "source": "fg",
         "repo": "https://github.com/markusfisch/BinaryEye"
+    },
+    {
+        "id": "com.atharok.barcodescanner",
+        "label": "Barcode Scanner",
+        "source": "f",
+        "repo": "https://gitlab.com/Atharok/BarcodeScanner"
     }
 ]
