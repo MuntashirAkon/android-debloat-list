@@ -102,168 +102,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.android.theme.icon.round",
-        "label": "com.android.theme.icon.round",
-        "description": "Android icon shape only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.amethyst",
-        "label": "com.android.theme.color.amethyst",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.aquamarine",
-        "label": "com.android.theme.color.aquamarine",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.darklake",
-        "label": "com.android.theme.color.darklake",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.dorange",
-        "label": "com.android.theme.color.dorange",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.dpurple",
-        "label": "com.android.theme.color.dpurple",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.lgreen",
-        "label": "com.android.theme.color.lgreen",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.parasailing",
-        "label": "com.android.theme.color.parasailing",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.saffron",
-        "label": "com.android.theme.color.saffron",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.sand",
-        "label": "com.android.theme.color.sand",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.slate",
-        "label": "com.android.theme.color.slate",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.color.tangerine",
-        "label": "com.android.theme.color.tangerine",
-        "description": "Android color accent only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.android",
-        "label": "com.android.theme.icon_pack.kai.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.launcher",
-        "label": "com.android.theme.icon_pack.kai.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.settings",
-        "label": "com.android.theme.icon_pack.kai.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.systemui",
-        "label": "com.android.theme.icon_pack.kai.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.kai.themepicker",
-        "label": "com.android.theme.icon_pack.kai.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.android",
-        "label": "com.android.theme.icon_pack.sam.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.launcher",
-        "label": "com.android.theme.icon_pack.sam.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.settings",
-        "label": "com.android.theme.icon_pack.sam.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.systemui",
-        "label": "com.android.theme.icon_pack.sam.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.sam.themepicker",
-        "label": "com.android.theme.icon_pack.sam.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.android",
-        "label": "com.android.theme.icon_pack.victor.android",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.launcher",
-        "label": "com.android.theme.icon_pack.victor.launcher",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.settings",
-        "label": "com.android.theme.icon_pack.victor.settings",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.systemui",
-        "label": "com.android.theme.icon_pack.victor.systemui",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
-        "id": "com.android.theme.icon_pack.victor.themepicker",
-        "label": "com.android.theme.icon_pack.victor.themepicker",
-        "description": "Android icon pack only for google pixel or aosp",
-        "removal": "delete"
-    },
-    {
         "id": "com.android.overlay.gmscontactprovider",
         "label": "com.android.overlay.gmscontactprovider",
         "description": "Incorrect named thing to sync metadata contacts or gms?\nmetadata_sync_pacakge com.google.android.gms\nNo effects after remove.\n(detected on miui 14 with android 13 phones)\nIts a unused overlay.",
@@ -615,8 +453,9 @@
     {
         "id": "com.miui.packageinstaller",
         "label": "Package installer",
-        "description": "Hardcoded in xiaomi china rom. Causes bootloop.",
-        "removal": "unsafe"
+        "description": "Hardcoded in xiaomi china rom.",
+        "removal": "unsafe",
+        "warning": "Cause BOOTLOOP."
     },
     {
         "id": "com.xiaomi.gnss.polaris",
@@ -752,9 +591,10 @@
     },
     {
         "id": "com.huawei.camera",
-        "label": "Huawei Camera App",
+        "label": "Camera",
         "description": "Safe to remove, but not recommended, as other camera apps are not much better than this one.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.huawei.hiview",
@@ -848,7 +688,8 @@
         "id": "com.huawei.screenrecorder",
         "label": "screen recorder",
         "description": "Not sure if it's an app, but I can't find it on my phone. Safe to remove.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.huawei.systemmanager",
@@ -901,13 +742,15 @@
         "id": "com.android.settings.overlay.common",
         "label": "com.android.settings.overlay.common",
         "description": "Color mode config you can find it in settings\nits something about: natural, boosted, saturated, adaptive.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its important overlay to colors."
     },
     {
         "id": "com.android.wifi.resources.xiaomi",
         "label": "com.android.wifi.resources.xiaomi",
         "description": "Have some configs to network about: disconnected scan interval schedule\nwifi11axsupportoverride, config_wifi_tcp_buffers\nyou should keep this because its maybe from settings.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its important overlay to WiFi."
     },
     {
         "id": "com.mi.android.globallauncher",
@@ -936,9 +779,10 @@
     },
     {
         "id": "com.android.server.telecom.overlay.miui",
-        "label": "com.android.server.telecom.overlay.miui",
-        "description": "Manage calls. Its used for manage calls ui.",
-        "removal": "unsafe"
+        "label": "Manage calls",
+        "description": "Its used for manage calls ui.",
+        "removal": "unsafe",
+        "warning": "Its important overlay to calling."
     },
     {
         "id": "com.huaqin.btlogger",
@@ -956,7 +800,8 @@
         "id": "com.android.systemui.notch.overlay",
         "label": "com.android.systemui.notch.overlay",
         "description": "It have something to Display Cutout. Better dont touch it.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to display."
     },
     {
         "id": "com.android.settings.overlay.miui",
@@ -968,7 +813,8 @@
         "id": "com.android.wifi.resources.overlay.target",
         "label": "com.android.wifi.resources.overlay.target",
         "description": "In code founded wifi configs.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to WiFi."
     },
     {
         "id": "com.xiaomi.location.fused",
@@ -980,7 +826,8 @@
         "id": "com.miui.systemui.carriers.overlay",
         "label": "com.miui.systemui.carriers.overlay",
         "description": "You will lose LTE.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important overlay to LTE connection."
     },
     {
         "id": "com.silead.fingerprint",
@@ -1065,7 +912,8 @@
         "id": "com.asus.camera",
         "label": "ASUS Camera",
         "description": "Stock ASUS camera app. It has Google Analytics, so better disable internet for this app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.asus.configupdater",
@@ -1077,7 +925,8 @@
         "id": "com.asus.contacts",
         "label": "ASUS Contacts",
         "description": "Stock ASUS Contacts app. Contains Google trackers.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.futuredial.asusdatatransfer",
@@ -1095,26 +944,29 @@
         "id": "com.asus.deskclock",
         "label": "ASUS Digital Clock & Widget",
         "description": "Stock Clock app. Contains google analytics.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.asus.dialer",
         "label": "ASUS Dialer",
         "description": "Stock ASUS Dialer app. Contains Google trackers.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "dialers"
     },
     {
         "id": "com.asus.faceunlockservice",
         "label": "ASUS Face Unlock Service",
         "description": "Face unlock service. Needed for face unlock.",
         "removal": "delete",
-        "warning": "Face unlock will not work after remove.",
+        "warning": "Face unlock will not work after remove."
     },
     {
         "id": "com.asus.gallery",
-        "id": "Gallery",
+        "label": "Gallery",
         "description": "Stock Gallery app. Contains Google Analytics.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.asus.ephotoburst",
@@ -1136,13 +988,13 @@
     },
     {
         "id": "com.futuredial.asuslocalbackup",
-        "id": "ASUS Device backup",
+        "label": "ASUS Device backup",
         "description": "Contains Google Analytics and numerous permissions.",
         "removal": "delete"
     },
     {
         "id": "com.asus.asusoptiflex",
-        "id": "ASUS Opti Flex",
+        "label": "ASUS Opti Flex",
         "description": "Its something for settings? Still unknown.",
         "removal": "caution"
     },
@@ -1178,7 +1030,7 @@
     },
     {
         "id": "com.asus.splendid",
-        "id": "Asus Splendid",
+        "label": "Asus Splendid",
         "description": "Optional app for adjust your screen for your own viewing pleasure.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.asus.splendid"
@@ -1246,7 +1098,8 @@
         "id": "com.asus.filemanager",
         "label": "ASUS File Manager",
         "description": "Stock ASUS file manager app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.monotype.android.font.felbridge",
@@ -1331,7 +1184,7 @@
     },
     {
         "id": "com.asus.imagesearch",
-        "id": "Image search",
+        "label": "Image search",
         "description": "Image search. Its so bloated.",
         "removal": "delete"
     },
@@ -1516,7 +1369,8 @@
         "id": "com.asus.powersaver",
         "label": "Power Master",
         "description": "It's for power-saving and may be important.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important app to powersaving."
     },
     {
         "id": "com.asus.sarprotection",
@@ -1528,7 +1382,8 @@
         "id": "com.asus.screenrecorder",
         "label": "Screen recorder",
         "description": "App for screen recording.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.asus.smartreading",
@@ -1632,7 +1487,8 @@
         "id": "asusims.overlay.common",
         "label": "asusims.overlay.common",
         "description": "It have important configs better dont risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to android."
     },
     {
         "id": "asusims.overlay.aosp.documentsui",
@@ -1656,7 +1512,8 @@
         "id": "com.asus.wifi.resources.overlay",
         "label": "com.asus.wifi.resources.overlay",
         "description": "overlay to wifi configs better dont risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to WiFi."
     },
     {
         "id": "com.huawei.autoinstallapkfrommcc",
@@ -1716,7 +1573,8 @@
         "id": "com.android.systemui.feature_cover",
         "label": "com.android.systemui.feature_cover",
         "description": "It looks like a very important app.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to android?"
     },
     {
         "id": "com.huawei.androidx",
@@ -1752,7 +1610,8 @@
         "id": "com.huawei.indiacalendar",
         "label": "Indian Calendar",
         "description": "HUAWEI Calendar",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "com.huawei.tmecustomize",
@@ -1860,7 +1719,8 @@
         "id": "com.zui.deskclock",
         "label": "Lenovo ZUI Clock",
         "description": "Stock Lenovo clock app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.zui.camera.avatar",
@@ -1872,7 +1732,8 @@
         "id": "com.zui.browser",
         "label": "Lenovo Browser",
         "description": "Stock Lenovo Browser with Chinese trackers.",
-        "removal": "delete"
+        "removal": "delete",
+        "suggestions": "browsers"
     },
     {
         "id": "com.zui.bugtogo",
@@ -1890,10 +1751,12 @@
         "id": "com.zui.camera",
         "label": "Lenovo ZUI Camera",
         "description": "Lenovo Stock Camera App",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.zui.camera.assistant",
+        "label": "com.zui.camera.assistant",
         "description": "It's for camera app or WiFi calling?",
         "removal": "replace"
     },
@@ -1901,10 +1764,12 @@
         "id": "com.zui.contacts",
         "label": "Lenovo Contacts",
         "description": "Stock Lenovo Contacts app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "com.zui.davdroid",
+        "label": "com.zui.davdroid",
         "description": "Login to iCloud and sync contacts, calendars.",
         "removal": "delete"
     },
@@ -1916,6 +1781,7 @@
     },
     {
         "id": "com.zui.cores",
+        "label": "com.zui.cores",
         "description": "Removing will affect a lot of other ZUI functions like the game assistant, etc. so it's a bad idea.",
         "removal": "caution"
     },
@@ -1929,7 +1795,8 @@
         "id": "com.zui.filemanager",
         "label": "File manager",
         "description": "File manager app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.zui.wifip2p",
@@ -1951,9 +1818,10 @@
     },
     {
         "id": "com.zui.gallery",
-        "label": "Lenovo ZUI Gallery",
+        "label": "Gallery",
         "description": "Stock Gallery app for lenovo phones.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.zui.wallpapercropper",
@@ -1963,6 +1831,7 @@
     },
     {
         "id": "com.zui.game.service",
+        "label": "com.zui.game.service",
         "description": "A lot of login things and Chinese.",
         "removal": "delete"
     },
@@ -1974,6 +1843,7 @@
     },
     {
         "id": "com.zui.launcher",
+        "label": "Launcher",
         "description": "Lenovo Launcher ZUI HOME.",
         "removal": "caution"
     },
@@ -1985,31 +1855,38 @@
     },
     {
         "id": "com.zui.mms",
+        "label": "Messages",
         "description": "Stock Messaging App",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "sms"
     },
     {
         "id": "com.zui.networkaclr",
+        "label": "com.zui.networkaclr",
         "description": "Network manager?",
         "removal": "caution"
     },
     {
         "id": "com.zui.radioinfo",
+        "label": "com.zui.radioinfo",
         "description": "Hidden testing hardware things.",
         "removal": "delete"
     },
     {
         "id": "com.zui.resolver",
+        "label": "Lenovo Share",
         "description": "Lenovo Share for Chinese",
         "removal": "delete"
     },
     {
         "id": "com.zui.sdac",
+        "label": "com.zui.sdac",
         "description": "Not needed for notifications and it's probably testing notification.",
         "removal": "delete"
     },
     {
         "id": "com.zui.safecenter",
+        "label": "Security Center",
         "description": "Useless security app? You will lose optimization probably.",
         "removal": "caution"
     },
@@ -2022,7 +1899,7 @@
     {
         "id": "com.zui.simcontacts",
         "label": "com.zui.simcontacts",
-        "description": "It should be named com.qualcomm.simcontacts.\nIt's useless and not available for users.",
+        "description": "It should be named com.qualcomm.simcontacts.\nIt's hidden and not available for users.",
         "removal": "delete"
     },
     {
@@ -2039,31 +1916,37 @@
     },
     {
         "id": "com.zui.thirdparty.sdk",
+        "label": "com.zui.thirdparty.sdk",
         "description": "Third party useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "com.zui.udevice",
+        "label": "com.zui.udevice",
         "description": "Useless preview activity to earphones.",
         "removal": "delete"
     },
     {
         "id": "com.zui.userexperience",
+        "label": "com.zui.userexperience",
         "description": "It's for spying: app usage, device usage.",
         "removal": "delete"
     },
     {
         "id": "com.zui.wallet",
+        "label": "com.zui.wallet",
         "description": "Chinese payment",
         "removal": "delete"
     },
     {
         "id": "com.zui.wallpapersetting",
+        "label": "com.zui.wallpapersetting",
         "description": "Needed for wallpaper settings",
         "removal": "replace"
     },
     {
         "id": "com.zui.weather",
+        "label": "Weather",
         "description": "Stock weather app.",
         "removal": "replace"
     },
@@ -2161,7 +2044,8 @@
         "id": "com.zui.android.overlay.product",
         "label": "com.zui.android.overlay.product",
         "description": "Config to refresh rate 120? Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to refresh rate."
     },
     {
         "id": "com.zui.deskclock.overlay.lime",
@@ -2201,242 +2085,296 @@
     },
     {
         "id": "com.lge.gallery.aodimagewidget",
+        "label": "Always-on display image",
         "description": "LG Always-on display image",
         "removal": "delete"
     },
     {
         "id": "com.lge.arcamera",
+        "label": "ARCamera",
         "description": "This application requires google play services for ar. Not sure what for it is but probably for VR.",
         "removal": "delete"
     },
     {
         "id": "com.arcsoft.lg_avatar_resource",
-        "description": "LGAvatarReource. It's probably for arcamera and it's for avatars. People removed that.",
+        "label": "LGAvatarReource",
+        "description": "It's probably for arcamera and it's for avatars. People removed that.",
         "removal": "delete"
     },
     {
         "id": "com.lge.ims.chatbotinfoprovider",
+        "label": "com.lge.ims.chatbotinfoprovider",
         "description": "It's a component of (com.lge.ims), not very useful because it's for debugging app.",
         "removal": "delete"
     },
     {
         "id": "com.lge.cinemagraph",
-        "description": "Cine shot. I think it's an optional app.",
+        "label": "Cine shot",
+        "description": "I think it's an optional app.",
         "removal": "delete"
     },
     {
         "id": "com.lge.sui.widget",
+        "label": "com.lge.sui.widget",
         "description": "It's probably a clock widget but in the code, I see it's for calendar widgets.",
         "removal": "delete"
     },
     {
         "id": "com.lge.secondlauncher",
+        "label": "com.lge.secondlauncher",
         "description": "It's needed for wallpaper choose and multi-app.",
         "removal": "replace"
     },
     {
         "id": "com.lge.covertools",
-        "description": "Dual Screen Tool. Needed for dual-screen I guess.",
-        "removal": "replace"
+        "label": "Dual Screen Tool",
+        "description": "Needed for dual-screen I guess.",
+        "removal": "delete"
     },
     {
         "id": "com.lge.dualscreenfirmware",
-        "description": "Useless error dialog for dual-screen firmware update.",
+        "label": "com.lge.dualscreenfirmware",
+        "description": "Shows error dialog for dual-screen firmware update.",
         "removal": "delete"
     },
     {
         "id": "com.lge.ellievision",
-        "description": "Smart Cam & AI Tips. Delete if not using default camera.",
+        "label": "Smart Cam & AI Tips",
+        "description": "Delete if not using default camera.",
         "removal": "replace"
     },
     {
         "id": "com.lge.animal.resource",
-        "description": "AnimalResource. Another thing for avatars.",
+        "label": "AnimalResource",
+        "description": "Another thing for avatars.",
         "removal": "delete"
     },
     {
         "id": "com.lge.smartenabler",
+        "label": "com.lge.smartenabler",
         "description": "It's for OTA Updates.",
         "removal": "caution"
     },
     {
         "id": "com.lge.entitlementcheckservice",
+        "label": "com.lge.entitlementcheckservice",
         "description": "It's for miracast and wifi hotspot probably.",
         "removal": "caution"
     },
     {
         "id": "com.lge.eula.downloader",
-        "description": "Privacy Policy Update.",
+        "label": "Privacy Policy Update",
+        "description": "Not tested but problably safe to remove.",
         "removal": "caution"
     },
     {
         "id": "com.hy.system.fontserver",
-        "description": "Font Server. Needed for fonts?",
+        "label": "Font Server",
+        "description": "Needed for fonts?",
         "removal": "caution"
     },
     {
         "id": "com.lge.gallery.studio",
-        "description": "GalleryStudio. It's needed for gallery app probably.",
+        "label": "GalleryStudio",
+        "description": "It's needed for gallery app probably.",
         "removal": "replace"
     },
     {
         "id": "com.lge.gamepad",
-        "description": "LG Game Pad.",
+        "label": "LG Game Pad",
+        "description": "Its problably for TV. Not useful for game.",
         "removal": "caution"
     },
     {
         "id": "com.lge.gametools",
-        "description": "GameTools.",
+        "label": "GameTools",
+        "description": "Not tested but its for problably useful for games.",
         "removal": "caution"
     },
     {
         "id": "com.lge.gdec.client",
+        "label": "com.lge.gdec.client",
         "description": "Another component of OTA Updates but here I found it's for App Updates.",
         "removal": "caution"
     },
     {
         "id": "com.lge.gnsslogsetting",
+        "label": "com.lge.gnsslogsetting",
         "description": "GNSS LOG LEVEL SETTING. It's for debug.",
         "removal": "delete"
     },
     {
         "id": "com.lge.hotspotprovision",
+        "label": "com.lge.hotspotprovision",
         "description": "Needed for hotspot 3G?",
-        "removal": "caution"
+        "removal": "caution",
+        "warning": "Hotspot may not work after remove."
     },
     {
         "id": "com.lge.icecontacts",
+        "label": "com.lge.icecontacts",
         "description": "Emergency and video calling things.",
         "removal": "replace"
     },
     {
         "id": "com.lge.ims",
-        "description": "LG IMS. It's not a good app because it has a lot of debugging stuff.",
+        "label": "LG IMS",
+        "description": "It's not a good app because it has a lot of debugging stuff.",
         "removal": "delete"
     },
     {
         "id": "com.lge.imsvt",
-        "description": "Video Call, another component of com.lge.ims.",
+        "label": "com.lge.imsvt",
+        "description": "Video Call, another component of com.lge.ims = debugging app.",
         "removal": "delete"
     },
     {
         "id": "com.lge.leccp",
-        "description": "LG Connectivity Service. It has only Alert Dialogs.",
+        "label": "LG Connectivity Service",
+        "description": "It has only Alert Dialogs.",
         "removal": "delete"
     },
     {
         "id": "com.lge.android.atservice",
-        "description": "Software Update. It's probably the only component of software updates.",
+        "label": "Software Update",
+        "description": "It's probably the only component of software updates.",
         "removal": "caution"
     },
     {
         "id": "com.lge.bluethoothsetting",
+        "label": "com.lge.bluethoothsetting",
         "description": "Needed for Bluetooth.",
         "removal": "caution"
     },
     {
         "id": "com.lge.lgbroadcastradioservice",
+        "label": "com.lge.lgbroadcastradioservice",
         "description": "Broadcast radio? No one needs that.",
         "removal": "delete"
     },
     {
         "id": "com.lge.calligraphydictionary",
-        "description": "Calligraphy dictionary. Looks useless.",
+        "label": "Calligraphy dictionary",
+        "description": "Looks useless.",
         "removal": "delete"
     },
     {
         "id": "com.lge.camera",
+        "label": "Camera",
         "description": "Stock camera app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.lge.camerasolution",
+        "label": "com.lge.camerasolution",
         "description": "Needed for Stock camera app.",
         "removal": "replace"
     },
     {
         "id": "com.lge.cmas",
-        "description": "Emergency Alerts.",
+        "label": "Emergency Alerts",
+        "description": "Its only for alerts so its safe to remove.",
         "removal": "replace"
     },
     {
         "id": "com.lge.lgcontentsetting",
-        "description": "Wallpaper & theme. Needed for theme settings.",
+        "label": "Wallpaper & theme",
+        "description": "Needed for theme settings.",
         "removal": "replace"
     },
     {
         "id": "com.lge.lgdataphone",
+        "label": "com.lge.lgdataphone",
         "description": "It's for test and debug Data connection.",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "product.lge.data.server.LgDataServiceMain",
+        "label": "product.lge.data.server.LgDataServiceMain",
         "description": "Needed for iwlan? Very unknown app.",
         "removal": "caution"
     },
     {
         "id": "com.lge.displayfingerprint",
-        "description": "It's fingerprint testing I guess. Secret code 346437.",
+        "label": "com.lge.displayfingerprint",
+        "description": "It's fingerprint testing. Secret code 346437.",
         "removal": "delete"
     },
     {
         "id": "com.lge.dsmanager",
-        "description": "Dual Screen Updater.",
+        "label": "Dual Screen Updater",
+        "description": "If you dont use dual screen feature then its safe to remove?",
         "removal": "caution"
     },
     {
         "id": "com.lge.lgfota.permission",
+        "label": "com.lge.lgfota.permission",
         "description": "FOTA Test.",
         "removal": "delete"
     },
     {
         "id": "com.lge.gametools.gamerecorder",
-        "description": "Screen recording.",
-        "removal": "replace"
+        "label": "Screen recording",
+        "description": "Screen recording for game tools.",
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.lge.effect",
+        "label": "com.lge.effect",
         "description": "It's for lock screen effect.",
         "removal": "delete"
     },
     {
         "id": "com.lge.livemessage",
-        "description": "Draw chat.",
+        "label": "Draw chat",
+        "description": "Not needed for chats.",
         "removal": "delete"
     },
     {
         "id": "com.lge.lockscreensettings",
+        "label": "LockScreenSettings",
         "description": "Lock Screen Settings.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important settings to LG phones."
     },
     {
         "id": "com.lge.provider.lockscreensettings",
+        "label": "com.lge.provider.lockscreensettings",
         "description": "Needed for lock screen.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important settings to LG phones."
     },
     {
         "id": "com.lge.musiccontroller",
+        "label": "com.lge.musiccontroller",
         "description": "Music controller widget also Test activity.",
         "removal": "delete"
     },
     {
         "id": "com.lge.musicpicker",
-        "description": "Audio. It has Drm Popup, Music Picker, Audio Preview.",
-        "removal": "replace"
+        "label": "Audio",
+        "description": "It has Drm Popup, Music Picker, Audio Preview.",
+        "removal": "delete"
     },
     {
         "id": "com.lge.networksettings",
-        "description": "Sim network settings.",
-        "removal": "unsafe"
+        "label": "Sim network settings",
+        "description": "It can be found in settings.",
+        "removal": "unsafe",
+        "warning": "Important settings to LG phones."
     },
     {
         "id": "com.lge.nextcapture",
+        "label": "com.lge.nextcapture",
         "description": "Needed for screenshots?",
         "removal": "caution"
     },
     {
         "id": "com.lge.penprime",
-        "description": "Pen settings.",
+        "label": "Pen settings",
+        "description": "No one using them.",
         "removal": "delete"
     },
     {
@@ -2447,56 +2385,69 @@
     },
     {
         "id": "com.android.settingaccessibility",
-        "description": "Accessibility settings.",
-        "removal": "delete"
+        "label": "Accessibility settings",
+        "description": "It should be important for settings.",
+        "removal": "caution"
     },
     {
         "id": "com.lge.provider.signboard",
+        "label": "com.lge.provider.signboard",
         "description": "Needed for Always on display.",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Always on display may not work after remove this app."
     },
     {
         "id": "com.lge.systemservice",
-        "description": "Looks like an important app.",
-        "removal": "unsafe"
+        "label": "System Server",
+        "description": "Not sure if iths important app.",
+        "removal": "caution"
     },
     {
         "id": "com.lge.provider.systemui",
-        "description": "Looks like an important app.",
-        "removal": "unsafe"
+        "label": "com.lge.provider.systemui",
+        "description": "Not sure if iths important app.",
+        "removal": "caution"
     },
     {
         "id": "com.lge.themeinstaller",
+        "label": "com.lge.themeinstaller",
         "description": "Needed to install themes.",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.lge.themeservice",
+        "label": "com.lge.themeservice",
         "description": "Needed to apply themes.",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.lge.lms2",
-        "description": "Needed for LG account, it's useless.",
-        "removal": "replace"
+        "label": "com.lge.lms2",
+        "description": "Needed for LG account.",
+        "removal": "caution"
     },
     {
         "id": "com.lge.wallpaperpicker",
+        "label": "Wallpaper",
         "description": "Needed for wallpaper preview.",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.lge.wifisettings",
-        "description": "WiFi settings.",
-        "removal": "unsafe"
+        "label": "WiFi settings",
+        "description": "It can be found in settings.",
+        "removal": "unsafe",
+        "warning": "Needed for WiFi."
     },
     {
         "id": "com.lge.ia.task.informant",
+        "label": "com.lge.ia.task.informant",
         "description": "I only found that it's for feed favorite contacts and this app uses Korean language. Hidden, useless.",
         "removal": "delete"
     },
     {
         "id": "com.lge.onehandcontroller",
+        "label": "com.lge.onehandcontroller",
         "description": "Needed for One-Handed Controller, Miniview.",
         "removal": "delete"
     },
@@ -2508,91 +2459,110 @@
     },
     {
         "id": "com.android.voicemailomtp",
+        "label": "Voicemail",
         "description": "Voicemail? I think no one uses that.",
         "removal": "delete"
     },
     {
         "id": "com.lge.NfcSettings",
-        "description": "NFC settings.",
-        "removal": "delete"
+        "label": "NFC settings",
+        "description": "Problably its in the settings.",
+        "removal": "caution"
     },
     {
         "id": "com.lge.operator.hiddenmenu",
-        "description": "Operator HiddenMenu. Hidden tests.",
+        "label": "Operator HiddenMenu",
+        "description": "Hidden tests.",
         "removal": "delete"
     },
     {
         "id": "com.lge.pickme",
+        "label": "PickMe",
         "description": "Needed for camera app or face unlock?",
         "removal": "caution"
     },
     {
         "id": "com.lge.quicktools",
+        "label": "Quick Tools",
         "description": "Quick Tools widget configure.",
         "removal": "delete"
     },
     {
         "id": "com.lge.ims.rcsprovider",
-        "description": "Needed for IMS, RCS.",
-        "removal": "replace"
+        "label": "com.lge.ims.rcsprovider",
+        "description": "Needed for IMS, RCS but com.lge.ims = debugging app.",
+        "removal": "delete"
     },
     {
         "id": "com.lge.appwidget.runningtaskbar",
+        "label": "com.lge.appwidget.runningtaskbar",
         "description": "Recent Task App Widget.",
         "removal": "delete"
     },
     {
         "id": "com.lge.screenplus.touchpad",
-        "description": "Screen+. Desktop Touchpad.",
+        "label": "Screen+",
+        "description": "Desktop Touchpad.",
         "removal": "delete"
     },
     {
         "id": "com.lge.screenplus.uiservice",
-        "description": "Screen+. I don't know what Screen+ probably connects to PC screen.",
+        "label": "Screen+",
+        "description": "I don't know what Screen+ probably connects to PC screen.",
         "removal": "delete"
     },
     {
         "id": "com.lge.sdencryption",
+        "label": "com.lge.sdencryption",
         "description": "Encryption devices like SD card.",
         "removal": "delete"
     },
     {
         "id": "com.lge.seamlesswallpaper.circular.reactive.space",
+        "label": "com.lge.seamlesswallpaper.circular.reactive.space",
         "description": "Live wallpapers resources.",
         "removal": "replace"
     },
     {
         "id": "com.lge.seamlesswallpaper.circular.reactive.darkspace",
+        "label": "com.lge.seamlesswallpaper.circular.reactive.darkspace",
         "description": "Live wallpapers resources.",
         "removal": "replace"
     },
     {
         "id": "com.lge.servicemenu",
+        "label": "com.lge.servicemenu",
         "description": "Hidden testing hardware things.",
         "removal": "delete"
     },
     {
         "id": "com.lge.auto_generated_rro_product__",
+        "label": "com.lge.auto_generated_rro_product__",
         "description": "It has important configs. Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configurations to LG phone."
     },
     {
         "id": "com.activate.activatephone",
+        "label": "com.activate.activatephone",
         "description": "Useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.activeviewlivewallpaper",
+        "label": "com.meizu.activeviewlivewallpaper",
         "description": "Needed for live wallpapers",
         "removal": "replace"
     },
     {
         "id": "com.meizu.alphame",
+        "label": "com.meizu.alphame",
         "description": "for digital health work",
         "removal": "delete"
     },
     {
         "id": "com.flyme.aod",
+        "label": "com.flyme.aod",
         "description": "AlwaysOnDisplay",
         "removal": "delete"
     },
@@ -2604,31 +2574,38 @@
     },
     {
         "id": "com.meizu.pps",
-        "description": "One Mind. Discharge schedule in the security annex.",
+        "label": "One Mind",
+        "description": "Discharge schedule in the security annex.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.assistant",
-        "description": "Aicy Glance meizu assistant",
+        "label": "Aicy Glance meizu assistant",
+        "description": "problably chinese assistant.",
         "removal": "delete"
     },
     {
         "id": "com.android.flyme.bridge.softsim",
+        "label": "com.android.flyme.bridge.softsim",
         "description": "Its for softsim? No activities, looks like a useless framework.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.media.camera",
+        "label": "Camera",
         "description": "Stock Camera app meizu.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.meizu.customizecenter",
+        "label": "com.meizu.customizecenter",
         "description": "Needed for themes but its so bloated.",
         "removal": "replace"
     },
     {
         "id": "com.meizu.dataservice",
+        "label": "com.meizu.dataservice",
         "description": "A lot of permissions and collects user data.",
         "removal": "delete"
     },
@@ -2640,36 +2617,45 @@
     },
     {
         "id": "com.meizu.ems",
+        "label": "com.meizu.ems",
         "description": "Useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.facerecognition",
+        "label": "com.meizu.facerecognition",
         "description": "Needed for face recognition, face unlock lock screen.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.media.gallery",
-        "description": "Meizu gallery app.\nbetter alternative: https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/",
-        "removal": "delete"
+        "label": "Gallery",
+        "description": "Meizu gallery app.",
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.meizu.flymelab",
-        "description": "Flyme Lab. Its something for video window or full screen.",
+        "label": "Flyme Lab",
+        "description": "Its something for video window or full screen.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.flyme.launcher",
-        "description": "System launcher. Needed for launcher.",
+        "label": "System launcher",
+        "description": "Needed for launcher.",
         "removal": "caution"
     },
     {
         "id": "com.meizu.media.music",
+        "label": "Music",
         "description": "Stock Music app.",
-        "removal": "delete"
+        "removal": "delete",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.meizu.mznfcpay",
+        "label": "com.meizu.mznfcpay",
         "description": "Meizu chinese payment.",
         "removal": "delete"
     },
@@ -2688,46 +2674,55 @@
     },
     {
         "id": "com.meizu.battery",
+        "label": "com.meizu.battery",
         "description": "Needed for Battery Manager.",
         "removal": "caution"
     },
     {
         "id": "com.meizu.callsetting",
+        "label": "com.meizu.callsetting",
         "description": "Additional call settings.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.cloud",
+        "label": "com.meizu.cloud",
         "description": "Useless push service",
         "removal": "delete"
     },
     {
         "id": "com.meizu.account.pay",
+        "label": "com.meizu.account.pay",
         "description": "Pay Center chinese payment.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.flyme.service.find",
-        "description": "Phone locating service (log out before remove)",
+        "label": "Phone locating service",
+        "description": "This app will probably help you find the device.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.safe",
+        "label": "com.meizu.safe",
         "description": "Looks like an important app. It has more things than security.",
         "removal": "caution"
     },
     {
         "id": "com.meizu.setup",
+        "label": "com.meizu.setup",
         "description": "It's needed only on first-boot setup.",
         "removal": "delete"
     },
     {
         "id": "com.meizu.share",
+        "label": "com.meizu.share",
         "description": "It's maybe useful for Bluetooth",
         "removal": "caution"
     },
     {
         "id": "com.meizu.mzsyncservice",
+        "label": "com.meizu.mzsyncservice",
         "description": "Flyme cloud service",
         "removal": "delete"
     },
@@ -2741,15 +2736,18 @@
         "id": "com.meizu.net.nativelockscreen",
         "label": "NativeLockScreen",
         "description": "I guess it's needed for lockscreen.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Needed for lockscreen."
     },
     {
         "id": "com.flyme.netadmin",
+        "label": "com.flyme.netadmin",
         "description": "Speedtest and security things.",
         "removal": "delete"
     },
     {
         "id": "org.codeaurora.qti.nrNetworkSettingApp",
+        "label": "org.codeaurora.qti.nrNetworkSettingApp",
         "description": "Needed for 5G?",
         "removal": "caution"
     },
@@ -2767,16 +2765,19 @@
     },
     {
         "id": "com.meizu.powersave",
+        "label": "com.meizu.powersave",
         "description": "Power Saving Mode.",
         "removal": "caution"
     },
     {
         "id": "com.meizu.flyme.sdkstage",
+        "label": "com.meizu.flyme.sdkstage",
         "description": "It's for Night Mode settings. Not sure if it's important.",
         "removal": "caution"
     },
     {
         "id": "com.meizu.net.search",
+        "leabel": "com.meizu.net.search",
         "description": "Chinese Search",
         "removal": "delete"
     },
@@ -2788,8 +2789,10 @@
     },
     {
         "id": "com.sohu.inputmethod.sogou.meizu",
+        "label": "com.sohu.inputmethod.sogou.meizu",
         "description": "Chinese keyboard closed-source",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.meizu.suggestion",
@@ -2822,6 +2825,7 @@
     },
     {
         "id": "com.meizu.media.video",
+        "label": "Video Player",
         "description": "Stock Video Player app",
         "removal": "delete"
     },
@@ -2865,7 +2869,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.motorola.camera3"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.motorola.motcameradesktop",
@@ -2901,7 +2906,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.motorola.audiorecorder"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.motorola.mototour",
@@ -2980,6 +2986,7 @@
     },
     {
         "id": "com.motorola.photoeditor",
+        "label": "Photo Editor",
         "description": "Moto Photo Editor.",
         "removal": "replace"
     },
@@ -3003,6 +3010,7 @@
     },
     {
         "id": "com.motorola.smart5g",
+        "label": "com.motorola.smart5g",
         "description": "Battery saving for 5G.",
         "removal": "caution"
     },
@@ -3039,32 +3047,38 @@
     },
     {
         "id": "com.motorola.personalize",
+        "label": "com.motorola.personalize",
         "description": "Needed for theme edit.",
         "removal": "replace"
     },
     {
         "id": "com.motorola.rcsConfigService",
-        "description": "RCS Config Service",
+        "label": "RCS Config Service",
+        "description": "Needed for IMS, RCS. WiFi Calling.",
         "removal": "replace"
     },
     {
         "id": "com.android.service.ims",
+        "label": "com.android.service.ims",
         "description": "It's for subscribing to the presence information using RCS.",
         "removal": "replace"
     },
     {
         "id": "com.motorola.revoker.services",
+        "label": "com.motorola.revoker.services",
         "description": "It's another component of setup wizard only used on first-boot setup.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.telprov",
+        "label": "com.motorola.telprov",
         "description": "It's needed for carrier O2 so it's useless for others.",
         "removal": "replace"
     },
     {
         "id": "com.motorola.attvowifi",
-        "description": "Wi-Fi Calling.",
+        "label": "Wi-Fi Calling",
+        "description": "Needed for IMS, RCS. WiFi Calling.",
         "web": [
             "https://www.att.com/wificalling"
         ],
@@ -3084,41 +3098,49 @@
     },
     {
         "id": "com.android.theme.font.Exo2Regular",
+        "label": "com.android.theme.font.Exo2Regular",
         "description": "Font Exo2Regular",
         "removal": "delete"
     },
     {
         "id": "com.android.theme.font.RobotoSlabRegular",
+        "label": "com.android.theme.font.RobotoSlabRegular",
         "description": "Font RobotoSlabRegular",
         "removal": "delete"
     },
     {
         "id": "com.android.theme.font.RookeryRegular",
+        "label": "com.android.theme.font.RookeryRegular",
         "description": "Font RookeryRegular",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.systemui.overlay.att",
+        "label": "com.motorola.android.systemui.overlay.att",
         "description": "This overlay needed for (com.motorola.attvowifi) I guess. It's for WiFi Calling.",
         "removal": "replace"
     },
     {
         "id": "com.motorola.android.systemui.overlay.sprint",
+        "label": "com.motorola.android.systemui.overlay.sprint",
         "description": "Needed for Moto Stats WiFi, it's useless.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.systemui.overlay.tmo",
+        "label": "com.motorola.android.systemui.overlay.tmo",
         "description": "Needed for Moto Stats WiFi, it's useless.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.systemui.overlay.usc",
+        "label": "com.motorola.android.systemui.overlay.usc",
         "description": "Needed for Moto Stats WiFi, it's useless.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.systemui.overlay.vzw",
+        "label": "com.motorola.android.systemui.overlay.vzw",
         "description": "Needed for Moto Stats WiFi, it's useless.",
         "removal": "delete"
     },
@@ -3130,73 +3152,92 @@
     },
     {
         "id": "com.motorola.actions.overlay",
+        "label": "com.motorola.actions.overlay",
         "description": "Useless overlay config default to Moto Actions (com.motorola.actions)",
         "removal": "delete"
     },
     {
         "id": "com.motorola.overlay.launcher3",
+        "label": "com.motorola.overlay.launcher3",
         "description": "Useless overlay config default to Launcher3 default launcher Moto (com.motorola.launcher3)",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.coresettingsext.overlay.doubletap",
+        "label": "com.motorola.android.coresettingsext.overlay.doubletap",
         "description": "Double tap to put display to sleep",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.coresettingsext.overlay.dubai",
+        "label": "com.motorola.android.coresettingsext.overlay.dubai",
         "description": "Needed for support other refresh rate value?",
         "removal": "caution"
     },
     {
         "id": "com.motorola.android.overlay.common",
+        "label": "com.motorola.android.overlay.common",
         "description": "It has some important configs. Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to android."
     },
     {
         "id": "com.motorola.android.overlay.crystaltalkai",
+        "label": "com.motorola.android.overlay.crystaltalkai",
         "description": "Enable crystal talk AI settings? I've never seen that.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.overlay.gabutton",
+        "label": "com.motorola.android.overlay.gabutton",
         "description": "\"Double press on power behavior\" 0\nNot sure if useful, maybe it's another gesture.",
         "removal": "caution"
     },
     {
         "id": "com.motorola.android.overlay.wfd",
+        "label": "com.motorola.android.overlay.wfd",
         "description": "It has config to enable wifi display.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its needed for WiFi."
     },
     {
         "id": "com.android.wifi.resources.overlay.WifiResSoftap80211axEnable",
+        "label": "com.android.wifi.resources.overlay.WifiResSoftap80211axEnable",
         "description": "Important configs to wifi.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its needed for WiFi."
     },
     {
         "id": "com.android.wifi.resources.overlay.WifiRes6GhzEnable",
+        "label": "com.android.wifi.resources.overlay.WifiRes6GhzEnable",
         "description": "Config to support wifi 6 Ghz? Any wifi have this?\nIf you don't have 6 Ghz wifi then it's safe to disable.",
-        "removal": "delete"
+        "removal": "delete",
+        "warning": "Its needed for WiFi 6Ghz."
     },
     {
         "id": "com.motorola.setup.auto_generated_rro_vendor__",
-        "description": "I found it's \"no sim anim\". It's another component of Motorola first-boot setup. Useless.",
+        "label": "com.motorola.setup.auto_generated_rro_vendor__",
+        "description": "I found it's \"no sim anim\". It's another component of Motorola first-boot setup.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.settings.overlay.fps.display",
+        "label": "com.motorola.android.settings.overlay.fps.display",
         "description": "Overlay to fps display.",
         "removal": "replace"
     },
     {
         "id": "com.motorola.safetycenter.resources.overlay",
+        "label": "com.motorola.safetycenter.resources.overlay",
         "description": "Useless overlay to com.google.android.safetycenter.resources\nNetwork protection, ThinkShield.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.connectivity.resources.overlay",
+        "label": "com.motorola.android.connectivity.resources.overlay",
         "description": "Configs to bad wifi better keep it.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its needed for WiFi."
     },
     {
         "id": "com.motorola.gamemode",
@@ -3210,7 +3251,7 @@
     {
         "id": "com.android.theme.icon.round",
         "label": "com.android.theme.icon.round",
-        "description": "Android icon shape only for Google Pixel or AOSP",
+        "description": "Android icon shape only for Google Pixel or AOSP or Motorola",
         "removal": "delete"
     },
     {
@@ -3239,6 +3280,7 @@
     },
     {
         "id": "com.motorola.iqimotmetrics",
+        "label": "com.motorola.iqimotmetrics",
         "description": "Hidden privacy policy: network diagnostics data.",
         "removal": "delete"
     },
@@ -3256,7 +3298,8 @@
     },
     {
         "id": "com.android.wallpaper",
-        "description": "Styles editor",
+        "label": "Styles editor",
+        "description": "Needed for editing style UI",
         "removal": "replace"
     },
     {
@@ -3423,56 +3466,67 @@
     },
     {
         "id": "com.motorola.contacts.preloadcontacts.overlay.vzw",
+        "label": "com.motorola.contacts.preloadcontacts.overlay.vzw",
         "description": "Useless icon to Verizon Wireless app.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.setup.overlay.amx",
+        "label": "com.motorola.setup.overlay.amx",
         "description": "Useless component of (com.motorola.setup)",
         "removal": "delete"
     },
     {
         "id": "com.motorola.setup.overlay.pai",
+        "label": "com.motorola.setup.overlay.pai",
         "description": "Useless component of (com.motorola.setup)",
         "removal": "delete"
     },
     {
         "id": "com.motorola.setup.overlay.tracfone",
+        "label": "com.motorola.setup.overlay.tracfone",
         "description": "Useless component of (com.motorola.setup)",
         "removal": "delete"
     },
     {
         "id": "com.motorola.setup.overlay.gabuttonrighttop",
+        "label": "com.motorola.setup.overlay.gabuttonrighttop",
         "description": "Useless component of (com.motorola.setup)",
         "removal": "delete"
     },
     {
         "id": "com.android.providers.telephony.overlay.carriersettings",
+        "label": "com.android.providers.telephony.overlay.carriersettings",
         "description": "Useless overlay to (com.google.android.carrier)\nAnyway, this app doesn't exist on your phone I guess.",
         "removal": "delete"
     },
     {
         "id": "com.android.phone.overlay.carriersettings",
+        "label": "com.android.phone.overlay.carriersettings",
         "description": "Useless overlay to (com.google.android.carrier)\nAnyway, this app doesn't exist on your phone I guess.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.handwritingcalculator",
-        "description": "Handwriting calculator",
+        "label": "Handwriting calculator",
+        "description": "Its not needed.",
         "removal": "delete"
     },
     {
         "id": "com.nt.diagswitch",
+        "label": "com.nt.diagswitch",
         "description": "Hidden USB Diag Switch, adb diagnostics.",
         "removal": "delete"
     },
     {
         "id": "com.nt.facerecognition",
+        "label": "com.nt.facerecognition",
         "description": "Needed for face recognition.",
         "removal": "delete"
     },
     {
         "id": "com.tools.cit",
+        "label": "com.tools.cit",
         "description": "Hidden testing hardware things.",
         "removal": "delete"
     },
@@ -3484,26 +3538,31 @@
     },
     {
         "id": "com.nothing.glyphnotification",
+        "label": "com.nothing.glyphnotification",
         "description": "Needed for glyph notifications?",
         "removal": "caution"
     },
     {
         "id": "com.nt.grantpermission",
+        "label": "com.nt.grantpermission",
         "description": "Hidden grant permissions. You can get it by typing in dialer: *#*#3424*#*#",
         "removal": "delete"
     },
     {
         "id": "com.goodix",
+        "label": "com.goodix",
         "description": "Hidden tests sensors, fingerprint.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.apps.healthdata",
+        "label": "com.google.android.apps.healthdata",
         "description": "Useless frameworks and it's not needed for Health Connect.",
         "removal": "delete"
     },
     {
         "id": "com.android.imsserviceentitlement",
+        "label": "com.android.imsserviceentitlement",
         "description": "It's needed for WiFi calling.",
         "removal": "caution"
     },
@@ -3515,27 +3574,32 @@
     },
     {
         "id": "com.nothing.logkit",
+        "label": "com.nothing.logkit",
         "description": "Hidden tool for logs.",
         "removal": "delete"
     },
     {
         "id": "com.nothing.agreement",
+        "label": "com.nothing.agreement",
         "description": "Nothing agreement privacy policy. I'm not sure when it will be needed.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.nothing.appservice",
-        "description": "Not sure if you need this. Nothing System Service",
+        "label": "Nothing System Service",
+        "description": "Not sure if you need this.",
         "removal": "caution"
     },
     {
         "id": "com.nothing.bpf",
+        "label": "com.nothing.bpf",
         "description": "Needed for connection?",
         "removal": "caution"
     },
     {
         "id": "com.nothing.hearthstone",
-        "description": "Nothing Widgets",
+        "label": "Nothing Widgets",
+        "description": "Widgets that can be found in homescreen.",
         "removal": "replace"
     },
     {
@@ -3546,36 +3610,43 @@
     },
     {
         "id": "com.nothing.dirac",
+        "label": "com.nothing.dirac",
         "description": "Audio EQ (equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
         "removal": "replace"
     },
     {
         "id": "com.nothing.dirac.DMP",
+        "label": "com.nothing.dirac.DMP",
         "description": "Audio EQ (equalizer). Some 3rd-party music apps can use it to provide you EQ features.",
         "removal": "replace"
     },
     {
         "id": "com.nothing.enginnerservice",
+        "label": "com.nothing.enginnerservice",
         "description": "Hidden diagnostics without activity frameworks with Qualcomm.",
         "removal": "delete"
     },
     {
         "id": "com.nothing.experience",
+        "label": "com.nothing.experience",
         "description": "Useless frameworks and collection data.",
         "removal": "delete"
     },
     {
         "id": "com.nothing.experimental",
+        "label": "com.nothing.experimental",
         "description": "Experimental features like CONNECT TO TESLA",
         "removal": "delete"
     },
     {
         "id": "com.nothing.launcher",
+        "label": "Launcher",
         "description": "Stock launcher",
         "removal": "caution"
     },
     {
         "id": "com.nothing.OfflineOTAUpgradeApp",
+        "label": "com.nothing.OfflineOTAUpgradeApp",
         "description": "Hidden offline OTA update. You can get it by typing in dialer: *#*#682*#*#",
         "removal": "delete"
     },
@@ -3587,6 +3658,7 @@
     },
     {
         "id": "com.nothing.proxy",
+        "label": "com.nothing.proxy",
         "description": "It's for battery optimization",
         "removal": "caution"
     },
@@ -3598,36 +3670,45 @@
     },
     {
         "id": "com.nothing.soundrecorder",
+        "label": "Sound recorder",
         "description": "Sound recorder app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.google.android.apps.customization.pixel",
+        "label": "com.google.android.apps.customization.pixel",
         "description": "Basic 4 colors",
         "removal": "caution"
     },
     {
         "id": "com.nothing.wallpapersstub",
+        "label": "com.nothing.wallpapersstub",
         "description": "Needed for basic wallpapers",
         "removal": "replace"
     },
     {
         "id": "com.nothing.weather",
+        "label": "Weather",
         "description": "Nothing Weather",
         "removal": "delete"
     },
     {
         "id": "com.nothing.applocker",
-        "description": "App locker",
+        "label": "App locker",
+        "description": "Optional app for locking apps.",
         "removal": "delete"
     },
     {
         "id": "com.nothing.camera",
+        "label": "Camera",
         "description": "Nothing stock camera",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.nothing.thirdparty",
+        "label": "com.nothing.thirdparty",
         "description": "Third party things. Useless frameworks.",
         "removal": "delete"
     },
@@ -3641,13 +3722,15 @@
         "id": "com.nothing.systemuitool",
         "label": "com.nothing.systemuitool",
         "description": "I think it's an important app",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "can cause bootloop?"
     },
     {
         "id": "com.android.carrierconfig.overlay.product",
         "label": "com.android.carrierconfig.overlay.product",
         "description": "Better keep this for LTE network.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to Network"
     },
     {
         "id": "android.overlay.common.all_devices",
@@ -3659,13 +3742,15 @@
         "id": "android.overlay.common.pong",
         "label": "android.overlay.common.pong",
         "description": "Brightness, screen configs. Better don't risk",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to sceen"
     },
     {
         "id": "android.overlay.common.spacewar",
         "label": "android.overlay.common.spacewar",
         "description": "Brightness, screen configs. Better don't risk",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to sceen"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.healthconnect",
@@ -3689,7 +3774,8 @@
         "id": "com.android.connectivity.resources.nt.overlay",
         "label": "com.android.connectivity.resources.nt.overlay",
         "description": "WiFi configs. Better don't risk",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to WiFi"
     },
     {
         "id": "com.nt.android.overlay.gmsconfig.safetycenter",
@@ -3743,7 +3829,8 @@
         "id": "com.google.android.permissioncontroller.overlay.nothing",
         "label": "com.google.android.permissioncontroller.overlay.nothing",
         "description": "Better keep this for permissioncontroller. Better don't risk",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Its important for permissioncontroller"
     },
     {
         "id": "com.android.settings.overlay.personalsafety",
@@ -3767,25 +3854,29 @@
         "id": "com.android.providers.settings.overlay.common",
         "label": "com.android.providers.settings.overlay.common",
         "description": "Better keep this for acceleration? Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to acceleration?"
     },
     {
         "id": "com.android.systemui.overlay.pong",
         "label": "com.android.systemui.overlay.pong",
         "description": "Better keep this for config temperature? Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to temperature?"
     },
     {
         "id": "com.android.systemui.overlay.spacewar",
         "label": "com.android.systemui.overlay.spacewar",
         "description": "Better keep this for config temperature? Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to temperature?"
     },
     {
         "id": "com.android.wifi.resources.overlay.taro",
         "label": "com.android.wifi.resources.overlay.taro",
         "description": "Better keep this for config wifi? Better don't risk.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to WiFi."
     },
     {
         "id": "cn.nubia.advanced",
@@ -3795,11 +3886,13 @@
     },
     {
         "id": "cn.nubia.diyaod",
-        "description": "Always on display",
+        "label": "Always on display",
+        "description": "It can be found in settings",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.applockmanager",
+        "label": "cn.nubia.applockmanager",
         "description": "App Lock, Add Eyeprint",
         "removal": "delete"
     },
@@ -3811,43 +3904,54 @@
     },
     {
         "id": "cn.nubia.behaviordetection",
+        "label": "cn.nubia.behaviordetection",
         "description": "Chinese useless frameworks.\nUsed to collect application behavior data to understand users.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.bluethooth.opp",
+        "label": "cn.nubia.bluethooth.opp",
         "description": "Needed for Bluetooth",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.contacts",
+        "label": "Contacts",
         "description": "Stock Nubia Contacts",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "contacts"
     },
     {
         "id": "cn.nubia.controlcenter",
+        "label": "control center",
         "description": "Provides a control panel for controlling the switching of\nimportant functions in the system, such as data services, WiFi and other switches.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Provides important settings."
     },
     {
         "id": "com.dts.dtsxultra",
+        "label": "com.dts.dtsxultra",
         "description": "Audio Effect for car, headphones. You don't need that.",
         "removal": "delete"
     },
     {
         "id": "android.ext.services",
         "description": "Looks like useless BUT you risk bootloop phone.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Provides Basic funtionality android."
     },
     {
         "id": "cn.nubia.factory",
+        "label": "cn.nubia.factory",
         "description": "Hidden hardware tests.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.filebrowser",
+        "label": "File browser",
         "description": "It's for file browser probably. Has Chinese components.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "cn.nubia.fileobserver",
@@ -3857,31 +3961,37 @@
     },
     {
         "id": "cn.nubia.gallery3d",
-        "description": "Stock gallery with Chinese trackers.\nBetter alternative: https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/",
+        "label": "Gallery",
+        "description": "Stock gallery with Chinese trackers.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.apptimelock",
-        "description": "Healthy time management. App time limit.",
+        "label": "Healthy time management",
+        "description": "App time limit.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.harassintercept",
+        "label": "cn.nubia.harassintercept",
         "description": "Mainly used to intercept harassing and fraudulent phone calls and text messages,\nwhile the user can also customize the way to intercept.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.identity",
+        "label": "cn.nubia.identity",
         "description": "It's for personalized recommendations.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.jobdispatcher",
+        "label": "cn.nubia.jobdispatcher",
         "description": "Mainly through the network to modify the basic data and functions of the self-developed application\nmodule part of the cell phone system in the background. Also has neopush.",
         "removal": "caution"
     },
     {
         "id": "com.ibimuyu.lockscreen",
+        "label": "Dynamic theme service lockscree",
         "description": "Dynamic theme service lockscreen? Some people recommend removing that.",
         "removal": "replace"
     },
@@ -3893,26 +4003,31 @@
     },
     {
         "id": "cn.nubia.antivirus",
+        "label": "cn.nubia.antivirus",
         "description": "We don't need antivirus if we have Play Protect.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.cloud",
+        "label": "cn.nubia.cloud",
         "description": "Nubia Cloud Manager",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.error.dialog",
+        "label": "cn.nubia.error.dialog",
         "description": "It's just a system error dialog. It doesn't send data anywhere.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.gallerylockscreen",
+        "label": "cn.nubia.gallerylockscreen",
         "description": "Wallpapers are displayed on the lock screen.",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.powersaving",
+        "label": "cn.nubia.powersaving",
         "description": "Better keep this for power saving?",
         "removal": "caution"
     },
@@ -3926,276 +4041,335 @@
         "id": "cn.nubia.accounts",
         "label": "ZAccountService",
         "description": "It's for Nubia Account.",
-        "removal": "delete"
+        "removal": "delete",
         "warning": "Nubia Account will be unavailable after remove."
     },
     {
         "id": "cn.nubia.browser",
-        "description": "You should use Brave or Iceraven instead of this Chinese browser.",
-        "removal": "delete"
+        "label": "Browser",
+        "description": "Stock Nubia Chinese browser.",
+        "removal": "delete",
+        "suggestions": "browsers"
     },
     {
         "id": "cn.nubia.calendar.preset",
+        "label": "Calendar",
         "description": "Stock Calendar app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "cn.nubia.clock.widget.preset",
-        "description": "ClockWidget. It has more permissions than it should have and DaemonService",
+        "label": "ClockWidget",
+        "description": "It has more permissions than it should have and DaemonService",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.databackup",
-        "description": "Backup. It's not the best choice for backup. Read Nubia privacy policy before.",
+        "label": "Backup",
+        "description": "It's not the best choice for backup. Read Nubia privacy policy before.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.deskclock.preset",
-        "description": "Stock Clock app",
-        "removal": "replace"
+        "label": "Clock",
+        "description": "Stock Clock app for manage alarms.",
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "cn.nubia.dynamicwallpaper",
+        "label": "cn.nubia.dynamicwallpaper",
         "description": "Needed for video wallpapers",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.gamehelpmodule",
+        "label": "cn.nubia.gamehelpmodule",
         "description": "It's a macro for the game. I think it's very useful if you're playing games.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.gamehighlights",
-        "description": "Red Magic Moment game recorder. I think it's very useful if you're playing games.",
+        "label": "Red Magic Moment game recorder",
+        "description": "I think it's very useful if you're playing games.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.gamelauncher",
-        "description": "Game Space Nubia. I think it's very useful if you're playing games.",
+        "label": "Game Space Nubia",
+        "description": "I think it's very useful if you're playing games.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.launcher",
+        "label": "Launcher",
         "description": "Stock Nubia Launcher.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.myfile",
+        "label": "File Manager",
         "description": "Nubia File Manager.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "cn.nubia.security2",
+        "label": "cn.nubia.security2",
         "description": "It's not only security but it has a lot of useful settings.\nBetter keep this.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.hybrid",
+        "label": "cn.nubia.hybrid",
         "description": "Quick Apps Preview for ads 3d. Has a lot of Chinese components.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.paycomponent",
+        "label": "cn.nubia.paycomponent",
         "description": "Chinese pay Nubia",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.quickappwebserver",
+        "label": "cn.nubia.quickappwebserver",
         "description": "Another component of Quick Apps Preview for ads 3d.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.neostore",
+        "label": "App Store",
         "description": "Nubia App Store",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.phonemanualintegrate.preset",
+        "label": "cn.nubia.phonemanualintegrate.preset",
         "description": "Useless User Guide",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.smartrecognition",
+        "label": "cn.nubia.smartrecognition",
         "description": "It's for smart things",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.thememanager",
+        "label": "Theme Manager",
         "description": "Stock Nubia Theme Manager",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.touping",
+        "label": "cn.nubia.touping",
         "description": "Needed for screen cast",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.upgradeservice",
+        "label": "cn.nubia.upgradeservice",
         "description": "Needed for upgrade service.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.voiceassist",
-        "description": "Nubia Voice. Assistant things.",
+        "label": "Nubia Voice",
+        "description": "Assistant things.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.aftersale",
+        "label": "cn.nubia.aftersale",
         "description": "Has location permissions and it's for debugging, logs.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.extcard",
+        "label": "cn.nubia.extcard",
         "description": "Nubia Chinese pay",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.faceid",
+        "label": "cn.nubia.faceid",
         "description": "Face unlock lock screen.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.gamepi",
+        "label": "cn.nubia.gamepi",
         "description": "Needed for game optimization probably and also has something for Game Space",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.musicpicker.preset",
-        "description": "Ringtones. Music Picker",
+        "label": "Ringtones",
+        "description": "Music Picker for nubia phones.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.packageoptimization",
+        "label": "Nubia Package Optimization",
         "description": "Nubia Package Optimization? Cleans cache and more",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "cn.nubia.neopush",
+        "label": "cn.nubia.neopush",
         "description": "Not needed for notifications. Has a lot of permissions.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.ramdisk",
+        "label": "cn.nubia.ramdisk",
         "description": "Probably it's for optimization",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.share",
-        "description": "Nubia share video",
+        "label": "share video",
+        "description": "Nubia share video. You can share video by this app problably.",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.video",
+        "label": "Video Player",
         "description": "Nubia Video Player",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.owlsystem",
+        "label": "cn.nubia.owlsystem",
         "description": "Nubia data collection. It has a lot of permissions and it's spyware!",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.persist",
+        "label": "PersistService",
         "description": "PersistService? In code I found it's for logs.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.photoeditor",
+        "label": "Photo Editor",
         "description": "Photo Editor. It has Baidu location so better turn off network for this app.",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.processmanager",
+        "label": "cn.nubia.processmanager",
         "description": "Useless frameworks",
         "removal": "delete"
     },
     {
         "id": "com.redteamobile.virtual.softsim",
+        "label": "com.redteamobile.virtual.softsim",
         "description": "It's for vsim = virtual sim",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.forbid.selfstart.provider",
+        "label": "cn.nubia.forbid.selfstart.provider",
         "description": "Mainly used to manage application self-startup, convenient for users to adjust the policy of application self-startup.",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.supersnap",
+        "label": "cn.nubia.supersnap",
         "description": "Super Snap Shot, Screenshot",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.systemupdate",
-        "description": "System Update Nubia",
+        "label": "System Update",
+        "description": "Provides system updates for nubia",
         "removal": "caution"
     },
     {
         "id": "com.tencent.android.location",
+        "label": "com.tencent.android.location",
         "description": "Useless Tencent Chinese location",
         "removal": "delete"
     },
     {
         "id": "com.sohu.inputmethod.sogou.nubia",
+        "label": "com.sohu.inputmethod.sogou.nubia",
         "description": "Chinese keyboard Closed-source (install other keyboard before removing this)\nBetter alternative: https://f-droid.org/en/packages/dev.patrickgold.florisboard/",
         "removal": "delete"
     },
     {
         "id": "com.yulore.framework",
+        "label": "com.yulore.framework",
         "description": "Chinese payment things.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.woodpecker",
+        "label": "cn.nubia.woodpecker",
         "description": "Another tool for logs.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.zappdatabackup",
+        "label": "cn.nubia.zappdatabackup",
         "description": "Backup App, Restore App",
         "removal": "delete"
     },
     {
         "id": "com.android.providers.applications",
+        "label": "com.android.providers.applications",
         "description": "It's needed for searching applications, right?",
         "removal": "replace"
     },
     {
         "id": "cn.nubia.bootanimationinfo",
-        "description": "Boot Animation Info. Probably it's unsafe to remove.",
-        "removal": "unsafe"
+        "label": "Boot Animation Info",
+        "description": "Probably it's unsafe to remove.",
+        "removal": "unsafe",
+        "warning": "Problably can cause BOOTLOOP."
     },
     {
         "id": "cn.nubia.doubleapp",
-        "description": "App duplicator",
+        "label": "App duplicator",
+        "description": "Its duplicating app feature that can be found in settings",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.ziconunity",
+        "label": "Icon handling",
         "description": "Icon handling? It's for theme icons probably",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.edge",
+        "label": "Smart Service Card",
         "description": "Smart Service Card, Smart sidebar.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.sensor",
+        "label": "cn.nubia.sensor",
         "description": "Hidden sensor calibration.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.quicksearchbox",
+        "label": "cn.nubia.quicksearchbox",
         "description": "Useless quick search box",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.setupwizard",
+        "label": "Setup Wizard",
         "description": "You don't need it after first-boot setup.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.theme.apply",
+        "label": "cn.nubia.theme.apply",
         "description": "Needed for theme apply",
         "removal": "replace"
     },
@@ -4231,58 +4405,69 @@
     },
     {
         "id": "cn.nubia.garbagecleanwidget",
-        "description": "Useless widget One-tap Cleanup. Useless frameworks.",
+        "label": "Widget One-tap Cleanup",
+        "description": "Useless Widget One-tap Cleanup. Useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.keymapcenter",
+        "label": "cn.nubia.keymapcenter",
         "description": "It's for gaming right? Useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.virtualgamehandle",
+        "label": "Virtual joystick",
         "description": "Virtual joystick? Useless logs, tracking. Useless frameworks.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.gamenotes",
-        "description": "Game Notes?",
+        "label": "Game Notes",
+        "description": "Game Notes? Problably its optional thing.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.fan",
+        "label": "cn.nubia.fan",
         "description": "It has cooling fan activities.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.fastpair",
+        "label": "cn.nubia.fastpair",
         "description": "Ultra low latency? It's something for Nubia earphones.",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.gif",
+        "label": "cn.nubia.gif",
         "description": "It's for creating GIFs",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.gpu.drivers",
+        "label": "cn.nubia.gpu.drivers",
         "description": "It has GPU settings so better keep that.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.heartrate",
+        "label": "cn.nubia.heartrate",
         "description": "Hidden? Heart Rate Detection",
         "removal": "delete"
     },
     {
         "id": "cn.nubia.monitor",
+        "label": "cn.nubia.monitor",
         "description": "Better keep this for gaming.",
         "removal": "caution"
     },
     {
         "id": "cn.nubia.sar",
+        "label": "PersistService",
         "description": "PersistService? In code I found it's for logs.",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.store",
@@ -4475,32 +4660,38 @@
     },
     {
         "id": "com.opos.ads",
+        "label": "com.opos.ads",
         "description": "Chinese ads click tracking",
         "removal": "delete"
     },
     {
         "id": "com.heytap.appplatform",
+        "label": "com.heytap.appplatform",
         "description": "Needed for OTA Updates also can brick phone but not confirmed",
         "removal": "caution"
     },
     {
         "id": "com.coloros.assistantscreen",
-        "description": "Smart assistant",
+        "label": "Smart assistant",
+        "description": "Assistant that can be found in homescreen.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.athena",
+        "label": "com.coloros.athena",
         "description": "Memory management, maybe useful, maybe not",
         "removal": "caution"
     },
     {
         "id": "com.coloros.blacklistapp",
-        "description": "Block list contacts, blocking calling.",
+        "label": "Blacklist Contacts",
+        "description": "Black list contacts, blocking calling.",
         "removal": "caution"
     },
     {
         "id": "com.heytap.yoli",
-        "description": "Video player with Chinese tracking. Better alternative: https://f-droid.org/en/packages/org.videolan.vlc/",
+        "label": "com.heytap.yoli",
+        "description": "Video player with Chinese tracking.",
         "removal": "delete"
     },
     {
@@ -4511,176 +4702,212 @@
     },
     {
         "id": "com.oplus.location",
+        "label": "com.oplus.location",
         "description": "Chinese location. Have China MCC. Useless",
         "removal": "delete"
     },
     {
         "id": "com.coloros.childrenspace",
-        "description": "Kid space",
+        "labelid": "Kid space",
+        "description": "Limit time spending on apps for kids.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.codebook",
-        "description": "Password manager",
+        "label": "Password manager",
+        "description": "App where you can keep passwords.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.accessibilityassistant",
+        "label": "com.coloros.accessibilityassistant",
         "description": "Another thing for smart assistant",
         "removal": "delete"
     },
     {
         "id": "com.coloros.colordirectservice",
-        "description": "Boo awareness screen, also have something to Brenoo touch",
+        "label": "Boo awareness screen",
+        "description": "Smart things, also have something to Brenoo touch",
         "removal": "delete"
     },
     {
         "id": "com.coloros.directui",
-        "description": "Brenoo touch",
+        "label": "Brenoo touch",
+        "description": "Smart things it can be found in settings problably.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.eyeprotect",
+        "label": "com.coloros.eyeprotect",
         "description": "It's the only eye protection option",
         "removal": "delete"
     },
     {
         "id": "com.heytap.colorfulengine",
+        "label": "com.heytap.colorfulengine",
         "description": "Useless frameworks for theming. Maybe needed for premium",
         "removal": "delete"
     },
     {
         "id": "com.coloros.screenrecorder",
-        "description": "Screen recorder",
-        "removal": "delete"
+        "label": "Screen recorder",
+        "description": "Stock screen recording app.",
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.coloros.screenshot",
-        "description": "Screenshot",
+        "label": "Screenshot",
+        "description": "Needed for screenshots. Very useful app.",
         "removal": "caution"
     },
     {
         "id": "com.color.uiengine",
+        "label": "com.color.uiengine",
         "description": "Needed for themes",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.oplus.oca",
+        "label": "com.oplus.oca",
         "description": "Has something related to wallet smart card",
         "removal": "delete"
     },
     {
         "id": "com.oppo.ctautoregist",
+        "label": "com.oppo.ctautoregist",
         "description": "Has something related to IMS SMS",
         "removal": "replace"
     },
     {
         "id": "com.oplus.customize.coreapp",
+        "label": "com.oplus.customize.coreapp",
         "description": "Useless frameworks",
         "removal": "delete"
     },
     {
         "id": "com.heytap.datamigration",
+        "label": "com.heytap.datamigration",
         "description": "Some tools for stock browser (not Chrome), but it's Chinese and probably unused",
         "removal": "delete"
     },
     {
         "id": "com.coloros.digitalwellbeing",
-        "description": "App usage time",
+        "label": "com.coloros.digitalwellbeing",
+        "description": "App usage time that can be found in settings.",
         "removal": "replace"
     },
     {
         "id": "com.finshell.wallet",
-        "description": "Finshell wallet",
+        "label": "Finshell wallet",
+        "description": "Wallet app by Finshell.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.floatassistant",
+        "label": "com.coloros.floatassistant",
         "description": "GA ball, Assistive ball feature.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.focusmode",
-        "description": "Focus mode",
+        "label": "Focus mode",
+        "description": "Its option that can be found in settings.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.healthcheck",
-        "description": "Health check? No one needs it",
+        "label": "Health check",
+        "description": "Health check? Problably hidden.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.healthservice",
+        "label": "Health service",
         "description": "Another thing related to health check",
         "removal": "delete"
     },
     {
         "id": "com.heytap.synergy",
+        "label": "HeySynergy",
         "description": "Another thing related to broadcast",
         "removal": "caution"
     },
     {
         "id": "com.nearme.instant.platform",
+        "label": "com.nearme.instant.platform",
         "description": "A lot of tracking for demo game ads",
         "removal": "delete"
     },
     {
         "id": "com.oppo.instant.local.service",
+        "label": "com.oppo.instant.local.service",
         "description": "A lot of tracking for demo game ads",
         "removal": "delete"
     },
     {
         "id": "com.oplus.appdetail",
+        "label": "com.oplus.appdetail",
         "description": "Secure app installation",
         "removal": "delete"
     },
     {
         "id": "com.coloros.launcher.layout",
+        "label": "com.coloros.launcher.layout",
         "description": "Useless code that means nothing for the launcher",
         "removal": "delete"
     },
     {
         "id": "com.coloros.mapcom.frame",
+        "label": "com.coloros.mapcom.frame",
         "description": "Useless frameworks",
         "removal": "delete"
     },
     {
         "id": "com.heytap.mcs",
+        "label": "com.heytap.mcs",
         "description": "System messages with trackers",
         "removal": "delete"
     },
     {
         "id": "com.coloros.apprecover",
+        "label": "com.coloros.apprecover",
         "description": "Used for app recovery?",
         "removal": "delete"
     },
     {
         "id": "com.heytap.mydevices",
+        "label": "My devices",
         "description": "My devices (showing headphones and such)",
         "removal": "caution"
     },
     {
         "id": "com.amap.android.location",
+        "label": "com.amap.android.location",
         "description": "Chinese location. Not needed for location.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.notificationmanager",
+        "label": "com.coloros.notificationmanager",
         "description": "Needed for notification manager and scheduled do not disturb.",
         "removal": "caution"
     },
     {
         "id": "com.coloros.ocrservice",
+        "label": "com.coloros.ocrservice",
         "description": "Extract text from images.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.ocs.opencapabilityservice",
+        "label": "com.coloros.ocs.opencapabilityservice",
         "description": "Security things and something related to Chinese payment",
         "removal": "delete"
     },
     {
         "id": "com.oppo.atlas",
+        "label": "com.oppo.atlas",
         "description": "Useless frameworks",
         "removal": "delete"
     },
@@ -4694,7 +4921,8 @@
         "id": "com.oppo.camera",
         "label": "Camera",
         "description": "Oppo stock camera app",
-        "removal": "caution"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.coloros.dirrecord",
@@ -4735,8 +4963,9 @@
     {
         "id": "com.coloros.gallery3d",
         "label": "Gallery",
-        "description": "Stock gallery app. Optionally, you can use an alternative like https://f-droid.org/en/packages/com.simplemobiletools.gallery.pro/",
-        "removal": "caution"
+        "description": "Stock gallery app.",
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.coloros.oppoguardelf",
@@ -4885,7 +5114,7 @@
     {
         "id": "com.coloros.video",
         "label": "Video Player",
-        "description": "Default Oppo video player with too many permissions (21) for a video player! Note: Using the inbuilt screen recorder, you won't be able to open the recorded video from the notification view. Better alternative: https://f-droid.org/en/packages/org.videolan.vlc/",
+        "description": "Default Oppo video player with too many permissions (21) for a video player! Note: Using the inbuilt screen recorder, you won't be able to open the recorded video from the notification view.",
         "removal": "delete"
     },
     {
@@ -4958,13 +5187,15 @@
         "id": "com.android.wifi.resources.overlay.oplus",
         "label": "com.android.wifi.resources.overlay.oplus",
         "description": "Wi-Fi configs",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to WiFi."
     },
     {
         "id": "oplus.frameworkres.overlay.display.product",
         "label": "oplus.frameworkres.overlay.display.product",
         "description": "Keep this for display cutout. Has only 4 PNG files",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to display."
     },
     {
         "id": "com.coloros.logkit.plugin.upload",
@@ -5117,12 +5348,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.coloros.providers.downloads.ui",
-        "label": "Downloads",
-        "description": "User interface for downloads.",
-        "removal": "unsafe"
-    },
-    {
         "id": "com.svox.pico",
         "label": "Pico TTS",
         "description": "Hidden sample voice data. Useless.",
@@ -5142,6 +5367,7 @@
     },
     {
         "id": "com.oplus.onet",
+        "label": "ONet",
         "description": "Useless frameworks. To secure keyboard, grant permissions. It's not needed.",
         "removal": "delete"
     },
@@ -5165,11 +5391,13 @@
     },
     {
         "id": "com.google.android.apps.internal.betterbug",
+        "label": "betterbug",
         "description": "betterbug? All of these code means nothing.\nalso have a lot of permissions and nexuslogger permission.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.carriersetup",
+        "label": "com.google.android.carriersetup",
         "description": "Its only needed on first-boot setup",
         "removal": "delete"
     },
@@ -5181,11 +5409,13 @@
     },
     {
         "id": "com.google.android.apps.cbrsnetworkmonitor",
+        "label": "com.google.android.apps.cbrsnetworkmonitor",
         "description": "Its used for spying on you. (citizen broadband network monitor)\nRequire google play services and have location permission.",
         "removal": "delete"
     },
     {
         "id": "com.google.android.connectivitythermalpowermanager",
+        "label": "com.google.android.connectivitythermalpowermanager",
         "description": "powersaving?",
         "removal": "caution"
     },
@@ -5221,6 +5451,7 @@
     },
     {
         "id": "com.google.euiccpixel",
+        "label": "com.google.euiccpixel",
         "description": "NFC, eSE, eSIM firmware updater",
         "removal": "replace"
     },
@@ -5235,7 +5466,7 @@
         "label": "Extreme Battery Saver",
         "description": "It can be found in settings, lets you to choose which app are important to you to use when this feature is enabled.",
         "removal": "caution",
-        "warning": "Extreme Battery Saver feature in the settings will be not available.",
+        "warning": "Extreme Battery Saver feature in the settings will be not available."
     },
     {
         "id": "com.google.android.apps.helprtc",
@@ -5305,12 +5536,6 @@
         "label": "Carrier Setup",
         "description": "Needed for IMS, WiFi calling and have emergency things.",
         "removal": "replace"
-    },
-    {
-        "id": "com.android.captiveportallogin.overlay",
-        "label": "com.android.captiveportallogin.overlay",
-        "description": "Useless app icon background color code in color.xml",
-        "removal": "delete"
     },
     {
         "id": "com.android.cellbroadcastreceiver.overlay.pixel",
@@ -5937,12 +6162,13 @@
         "label": "com.kidsedu",
         "description": "Another Kids Mode.",
         "removal": "delete"
-    }.
+    },
     {
         "id": "com.tct.smart.notes",
         "label": "Smart Notes",
         "description": "Stock Notes app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.tct.batterywarning",
@@ -5954,43 +6180,49 @@
         "id": "com.tct.calculator",
         "label": "Calculator",
         "description": "Stock Calculator app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.tct.camera",
         "label": "Camera",
         "description": "Stock Camera app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.tct.compass",
         "label": "Compass",
         "description": "Stock Compass app",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.tct.dialer",
         "label": "Phone",
         "description": "Stock Phone app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "dialers"
     },
     {
         "id": "com.tcl.tct.filemanager",
         "label": "File Manager",
         "description": "Stock File Manager app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.tcl.fmradio",
         "label": "Radio",
         "description": "Stock Radio app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.tclhz.gallery",
         "label": "Gallery",
         "description": "Stock Gallery app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.tct.gpdr",
@@ -6008,7 +6240,8 @@
         "id": "com.tct.music",
         "label": "Music",
         "description": "Stock Music app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.tct.phone",
@@ -6031,7 +6264,8 @@
     {
         "id": "com.tct.screenrecorder",
         "description": "Screen Recorder",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "screen_recorders"
     },
     {
         "id": "com.tct.screenshotex",
@@ -6078,8 +6312,9 @@
     {
         "id": "com.tct.android.browser",
         "label": "Browser",
-        "description": "Better use other browser like brave or iceraven.",
-        "removal": "delete"
+        "description": "Better use other browser.",
+        "removal": "delete",
+        "suggestions": "browsers"
     },
     {
         "id": "com.tcl.tct.weather",
@@ -6175,7 +6410,8 @@
         "id": "android.rro_product",
         "label": "android.rro_product",
         "description": "Better don't touch it.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Important configs to android."
     },
     {
         "id": "com.tcl.fmradio.a_overlay",
@@ -6251,21 +6487,26 @@
     },
     {
         "id": "com.transsion.livewallpaper.wakeup_mirror",
-        "description": "Needed for Live wallpapers.",
+        "label": "com.transsion.livewallpaper.wakeup_mirror",
+        "description": "Specific Live Wallpaper.",
         "removal": "replace"
     },
     {
         "id": "com.facemoji.lite.transsion",
-        "description": "Emoji Keyboard have ads and its not good for privacy.\nBetter alternative: https://f-droid.org/en/packages/dev.patrickgold.florisboard/",
-        "removal": "delete"
+        "label": "Emoji Keyboard",
+        "description": "Have ads and its not good for privacy.",
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.transsion.repaircard",
-        "description": "E-warranty Card. Its another things for china!",
+        "label": "E-warranty Card",
+        "description": "Its another things for china!",
         "removal": "delete"
     },
     {
         "id": "com.transsion.faceid",
+        "label": "com.transsion.faceid",
         "description": "Needed for Face Unlock lock screen.",
         "removal": "delete"
     },
@@ -6279,7 +6520,8 @@
         "id": "com.funbase.xradio",
         "label": "WOW FM",
         "description": "App for FMRadio",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.transsion.os.typeface",
@@ -6370,11 +6612,13 @@
     },
     {
         "id": "android.autoinstalls.config.transsion.device",
+        "label": "PlayAutoInstalls",
         "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "com.transsion.sk",
+        "label": "Secure Keyboard",
         "description": "Useless Secure Keyboard.",
         "removal": "delete"
     },
@@ -6382,22 +6626,27 @@
         "id": "com.scorpio.securitycom",
         "label": "SecurityPlugin",
         "description": "It cant be uninstalled.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "can't uninstall"
     },
     {
         "id": "com.sh.smart.caller",
+        "label": "com.sh.smart.caller",
         "description": "Bloated Phone caller app with a lot of features.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "dialers"
     },
     {
         "id": "com.transsion.smartmessage",
         "description": "Bloated Messages app with a lot of features.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "sms"
     },
     {
         "id": "com.transsion.scanningrecharger",
         "description": "Smart Scanner",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "barcode_scanners"
     },
     {
         "id": "com.transsion.statisticalsales",
@@ -6451,31 +6700,36 @@
         "id": "com.transsion.calculator",
         "label": "Calculator",
         "description": "Stock Calculator app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.transsion.calendar",
         "label": "Calendar",
         "description": "Stock Calendar app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "com.transsion.camera",
         "label": "Camera",
         "description": "Stock camera app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.transsion.deskclock",
         "label": "Clock",
         "description": "Can manage alarms by this app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.transsion.fmradio",
         "label": "WOW FM",
         "description": "App for FM RADIO.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.transsion.quicktools",
@@ -6487,13 +6741,15 @@
         "id": "com.transsion.notebook",
         "label": "Notepad",
         "description": "Notepad app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.transsion.soundrecorder",
         "label": "Sound Recorder",
         "description": "Stock sound recorder app.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.transsion.tips",
@@ -6582,7 +6838,8 @@
         "id": "com.android.BBKClock",
         "label": "Clock",
         "description": "Vivo clock app. App for manage alarms.",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.vivo.weather.provider",
@@ -6748,7 +7005,7 @@
         "label": "Small screen mode",
         "description": "This feature is available on settings.",
         "removal": "delete",
-        "warning": "Small screen mode will not work after remove.",
+        "warning": "Small screen mode will not work after remove."
     },
     {
         "id": "com.vivo.motionrecognition",
@@ -6934,7 +7191,8 @@
         "id": "com.vivo.gallery",
         "label": "Gallery",
         "description": "Vivo gallery app with Chinese trackers.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.vivo.vivokaraoke",
@@ -7060,7 +7318,8 @@
         "id": "com.vivo.notes",
         "label": "Notes",
         "description": "Vivo notes",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "note_taking_apps"
     },
     {
         "id": "com.vivo.phoneinstructions",
@@ -7072,7 +7331,8 @@
         "id": "com.vivo.soundrecorder",
         "label": "Recorder",
         "description": "Vivo sound recorder",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.vivo.weather",
@@ -7090,7 +7350,8 @@
         "id": "com.vivo.calculator",
         "label": "Calculator",
         "description": "Vivo calculator app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.vivo.widget.cleanspeed",
@@ -7102,7 +7363,7 @@
         "id": "com.vivo.compass",
         "label": "Compass",
         "description": "Vivo compass app",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.vivo.desktopstickers",
@@ -7289,7 +7550,7 @@
         "label": "android.overlay.vrro",
         "description": "This overlay has display configs",
         "removal": "unsafe",
-        "warning": "Important configs to vivo phone.",
+        "warning": "Important configs to vivo phone."
     },
     {
         "id": "android.overlay.vivoresrro",
@@ -7301,7 +7562,8 @@
         "id": "zte.com.cn.alarmclock",
         "label": "Clock",
         "description": "Stock ZTE Clock App",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.mifavor.callsetting",
@@ -7343,7 +7605,8 @@
         "id": "zte.com.cn.filer",
         "label": "File Manager",
         "description": "Stock File Manager",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.ztefingerprint.service",
@@ -7415,7 +7678,8 @@
         "id": "com.zte.powersavemode",
         "label": "com.zte.powersavemode",
         "description": "Has battery settings.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Bricks important settings"
     },
     {
         "id": "com.zte.privacyzone",
@@ -7517,8 +7781,8 @@
         "id": "com.android.ztescreenshot",
         "label": "ScreenCapture",
         "description": "Needed for screenshots.",
-        "removal": "caution"
-        "warning": "Screenshots will not work without this app.",
+        "removal": "caution",
+        "warning": "Screenshots will not work without this app."
     },
     {
         "id": "com.facemoji.lite.xiaomi",
@@ -7941,7 +8205,8 @@
         "id": "com.coloros.safecenter",
         "label": "Security Center",
         "description": "It breaks 'display over other apps' permission!",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "Bricks important settings."
     },
     {
         "id": "com.oplus.romupdate",
@@ -7999,102 +8264,126 @@
     },
     {
         "id": "com.oplus.healthservice",
+        "label": "healthservice",
         "description": "Some health function, needed for correct work of fitness trackers and pedometer from realme. When deleted, it does not seem to affect the operation of the phone.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.melody",
+        "label": "Wireless Earphones",
         "description": "Wireless headset advanced configuration related (after uninstallation some Bluetooth headset setting options will be missing items, if you do not have headset setting problems, it is recommended to uninstall)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oplus.melody"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.oplus.eid",
+        "label": "Eid-Service",
         "description": "It's something about card chips or online identity? Useless. China.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.hamlet",
-        "description": "Vision Enhance. Useless things about color maybe to wallpaper?",
+        "label": "Vision Enhance",
+        "description": "Useless things about color maybe to wallpaper?",
         "removal": "delete"
     },
     {
         "id": "com.oplus.interconnectcollectkit",
-        "description": "It may have something to do with the device's fast connection by name. BUT I see only it collects system logs and it has something to com.heytap.accessory. So it should be to Quick device connect?",
-        "removal": "caution"
+        "label": "InterconnectCollectKit",
+        "description": "It may have something to do with the device's fast connection by name. BUT I see only it collects system logs and it has something to com.heytap.accessory.",
+        "removal": "delete"
     },
     {
         "id": "com.oplus.linker",
+        "label": "OPSynergy",
         "description": "Used for the Synergy app to link your phone to your PC (It doesn't work well beyond controlling your phone from your PC).",
         "removal": "delete"
     },
     {
         "id": "com.oplus.locationproxy",
+        "label": "Carrier Location Services",
         "description": "Extra location telemetry, not related to any GPS functions.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.nhs",
+        "label": "NetworkHealthService",
         "description": "(Uninstallation may cause the power saving mode optimization option of turning off 5G to be disabled, only briefly, after which it will automatically return to 5G) needs more testing.",
         "removal": "caution"
     },
     {
         "id": "com.oplus.obrain",
+        "label": "OBrain",
         "description": "Log component, domestic special, the key to a MIDAS service, looking at the dex content is also to catch log.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.ocs",
+        "label": "OpenCapabilityService",
         "description": "Chinese unique identifier privacy hazard.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.olc",
+        "label": "Olc",
         "description": "Logger, a new appearance in F.05, the domestic special, and all say that they are log core.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.onetrace",
+        "label": "OneTrace",
         "description": "Logging component, may be used for feedback toolkit log capture, domestic specials.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.portrait",
+        "label": "Canvas",
         "description": "An additional feature for AOD that allows you to further personalize the disabled screen. If not used, you can delete it.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.powermonitor",
+        "label": "Power monitor",
         "description": "Logging component to upload temperature control logs.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.sauhelper",
+        "label": "SAUHelper",
         "description": "It's very much a placeholder app with no real functionality, but it can't be uninstalled or deactivated, and it can be SUSPENDED.",
         "removal": "delete"
     },
     {
         "id": "com.oplus.securitypermission",
+        "label": "Permission manager",
         "description": "If removed, in some players (and not only), it will not be possible to enable picture-in-picture capability due to lack of customization: Settings -> Manage apps -> Top of other apps.",
-        "removal": "unsafe"
+        "removal": "unsafe",
+        "warning": "After remove you lose important settings."
     },
     {
         "id": "com.oplus.smartengine",
+        "label": "com.oplus.smartengine",
         "description": "It appears to be an app used for testing, no internet access, very few intents, shouldn't have self-started, should run on demand. Some people have reported it as a support component for speedcards, some speedcards won't load after uninstalling.",
         "removal": "caution"
     },
     {
         "id": "com.oplus.stdsp",
-        "description": "Device Security Service is a basic service module that helps users discover security risks in their devices and generate appropriate security policies. Detect xposed, and log suite related, needless to say, deactivate.",
-        "removal": "caution"
+        "label": "Device Security Service",
+        "description": "Its a basic service module that helps users discover security risks in their devices and generate appropriate security policies. Detect xposed, and log suite related, needless to say, deactivate.",
+        "removal": "delete"
     },
     {
         "id": "com.oplus.wifitest",
+        "label": "wifitest",
         "description": "Just a testing mode accessed through phone dialing code.",
         "removal": "delete"
     },
     {
         "id": "com.oneplus.membership",
-        "description": "Red Cable Club Useless. Battery drain if account added.",
+        "label": "Red Cable Club",
+        "description": "Battery drain if account added.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.oneplus.membership"
         ],
@@ -8122,13 +8411,15 @@
         "id": "com.vivo.hiboard",
         "label": "Smart Launcher",
         "description": "Keyboard app with 62 permissions.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.vivo.email",
         "label": "Email",
         "description": "closed-source Email app",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "email_clients"
     },
     {
         "id": "com.vivo.livewallpaper.coralsea",
@@ -8186,14 +8477,16 @@
     },
     {
         "id": "com.vivo.globalsearch",
-        "description": "Global Search.",
-        "removal": "caution"
+        "label": "Global Search",
+        "description": "Its chinese searching.",
+        "removal": "delete"
     },
     {
         "id": "com.android.bbkmusic",
         "label": "i Music",
-        "description": "Music app with Chinese trackers. Alternative for privacy: https://f-droid.org/en/packages/com.simplemobiletools.musicplayer/ Or use VLC. https://f-droid.org/en/packages/org.videolan.vlc/",
-        "removal": "caution"
+        "description": "Music app with Chinese trackers.",
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.vivo.smartLife",
@@ -8451,31 +8744,37 @@
     },
     {
         "id": "android.autoinstalls.config.TCL.PAI",
+        "label": "PlayAutoInstalls",
         "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.autoinstalls.config.Xiaomi.cactus",
+        "label": "PlayAutoInstalls",
         "description": "Cactus is the device codename.\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.autoinstalls.config.Xiaomi.cepheus",
+        "label": "PlayAutoInstalls",
         "description": "Cepheus is the device codename.\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.autoinstalls.config.Xiaomi.daisy",
+        "label": "PlayAutoInstalls",
         "description": "Daisy is the device codename.\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.autoinstalls.config.Xiaomi.dipper",
+        "label": "PlayAutoInstalls",
         "description": "Dipper is the device codename.\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.autoinstalls.config.motorola.layout",
+        "label": "PlayAutoInstalls",
         "description": "Device configuration for Motorola\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).\nA layout?",
         "removal": "delete"
     },
@@ -8487,22 +8786,26 @@
     },
     {
         "id": "android.autoinstalls.config.samsung",
+        "label": "PlayAutoInstalls",
         "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).",
         "removal": "delete"
     },
     {
         "id": "android.romstats",
-        "description": "Misleading package name. This is a Xiaomi-only package.\nCan someone provide the .apk?\nTelemetry stuff\n",
+        "label": "android.romstats",
+        "description": "New charge in the battery consumption logger.",
         "removal": "delete"
     },
     {
         "id": "android.telephony.overlay.cmcc",
+        "label": "android.telephony.overlay.cmcc",
         "description": "Likely overlay themes from China Mobile Communications Corporation(CMCC) or China Telecom(CT).",
         "removal": "caution"
     },
     {
         "id": "cn.oneplus.nvbackup",
-        "description": "NVBackupUI\nRuns in the background on some phones.\nHandles things related to OTA system updates?\nSafe to disable, but might break OTA updates.",
+        "label": "NVBackupUI",
+        "description": "Runs in the background on some phones.\nHandles things related to OTA system updates?\nSafe to disable, but might break OTA updates.",
         "removal": "caution"
     },
     {
@@ -8517,7 +8820,8 @@
     },
     {
         "id": "cn.oneplus.opmms",
-        "description": "OPMmsLocation\nDetermines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
+        "label": "OPMmsLocation",
+        "description": "Determines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
         "removal": "delete"
     },
     {
@@ -8527,7 +8831,8 @@
     },
     {
         "id": "cn.wps.xiaomi.abroad.lite",
-        "description": "Mi Doc viewer\nDocuments (*.doc/docx, *.ppt/pptx, *.xls/xlsx, *.pdf, *.wps, and *.txt) viewer powered by WPS Office\nFYI: WPS is a Chinese closed-source software. It's as bad as Microsoft Office (privacy-wise)\nhttps://www.wps.com/privacy-policy\n",
+        "label": "Mi Doc viewer",
+        "description": "Documents (*.doc/docx, *.ppt/pptx, *.xls/xlsx, *.pdf, *.wps, and *.txt) viewer powered by WPS Office\nFYI: WPS is a Chinese closed-source software. It's as bad as Microsoft Office (privacy-wise)\nhttps://www.wps.com/privacy-policy\n",
         "removal": "delete"
     },
     {
@@ -8542,7 +8847,8 @@
     },
     {
         "id": "com.agui.app.memtester",
-        "description": "Memory tester\nHidden test menu. Used in diagnostics, normally invoked by MMI(Man-Machine Interface) Codes\n",
+        "label": "Memory tester",
+        "description": "Hidden test menu. Used in diagnostics, normally invoked by MMI(Man-Machine Interface) Codes\n",
         "removal": "delete"
     },
     {
@@ -8614,7 +8920,8 @@
     {
         "id": "com.android.camera2",
         "description": "Xiaomi Camera (I don't know why they kept this package name. It's really confusing.)\nIt's a proprietary app based on the AOSP sources:\nhttps://android.googlesource.com/platform/packages/apps/Camera2/+/master/src/com/android/camera\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.android.cellbroadcastreceiver.overlay.base.s600ww",
@@ -8636,8 +8943,10 @@
     },
     {
         "id": "com.android.fileexplorer",
+        "label": "File Manager",
         "description": "Xiaomi/Mi File Explorer (Again it's a really poor choice for a package name considering it is not the AOSP File explorer)\nIt's a Closed-source app based on the AOSP version.\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.android.globalFileexplorer",
@@ -8652,7 +8961,8 @@
     {
         "id": "com.android.incallui",
         "description": "Xiaomi (and OnePlus) Phone dialer (here we go again! Another confusing package name)\n\nClosed-source app built on top of the AOSP package.\nThe name is doubly misleading because this package is the whole dialer. It does not only provide the 'in call' screen.",
-        "removal": "caution"
+        "removal": "replace",
+        "suggestions": "dialers"
     },
     {
         "id": "com.android.keyguard",
@@ -8662,16 +8972,19 @@
     {
         "id": "com.android.mediacenter",
         "description": "Huawei music app. (Yeah they messed up with the package name)\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.android.messaging",
         "description": "Android default messaging app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "sms"
     },
     {
         "id": "com.android.midrive",
-        "description": "Mi Drive \nMisleading package name. It is indeed a closed-source Xiaomi application.\nAllow for cloud storage (on Mi Cloud) and syncing across multiple Android devices.\n",
+        "label": "Mi Drive",
+        "description": "Misleading package name. It is indeed a closed-source Xiaomi application.\nAllow for cloud storage (on Mi Cloud) and syncing across multiple Android devices.\n",
         "removal": "delete"
     },
     {
@@ -8756,37 +9069,64 @@
     },
     {
         "id": "com.asus.calculator",
-        "description": "Calculator - unit converter (https://play.google.com/store/apps/details?id=com.asus.calculator)\nHas more permissions than a Calculator app reasonably should have.\nConnects to a few Google and currency exchange-rate servers.\nhttps://beta.pithus.org/report/817514371bbdb76ec52da4c8456bbc116deec179603099deabbe6fcce6f6ccdb",
-        "removal": "delete"
+        "label": "Calculator",
+        "description": "Calculator - unit converter\nHas more permissions than a Calculator app reasonably should have.\nConnects to a few Google and currency exchange-rate servers.\nhttps://beta.pithus.org/report/817514371bbdb76ec52da4c8456bbc116deec179603099deabbe6fcce6f6ccdb",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asus.calculator"
+        ],
+        "removal": "replace",
+        "suggestions": "calculators"
     },
     {
         "id": "com.asus.easylauncher",
-        "description": "Asus Easy Mode (https://play.google.com/store/apps/details?id=com.asus.easylauncher)\nAlternative launcher with bigger icons and simpler interface",
+        "label": "Asus Easy Mode",
+        "description": "Alternative launcher with bigger icons and simpler interface",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asus.easylauncher"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.asus.ia.asusapp",
-        "description": "My Asus (https://play.google.com/store/apps/details?id=com.asus.ia.asusapp)\nAsus service center (support + store)",
+        "label": "My Asus",
+        "description": "Asus service center (support + store)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asus.ia.asusapp"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.asus.soundrecorder",
-        "description": "ASUS Sound recorder (https://play.google.com/store/apps/details?id=com.asus.soundrecorder)\nConnects to Google Analytics and some Asus servers, which is a bit sketchy for a sound recording app..\nhttps://beta.pithus.org/report/f4cf38e1c35a04c3579fa198d2abd3ef1ff7be79633d6d3f2bc69c8a69164e1d",
-        "removal": "delete"
+        "label": "ASUS Sound recorder",
+        "description": "Connects to Google Analytics and some Asus servers, which is a bit sketchy for a sound recording app..\nhttps://beta.pithus.org/report/f4cf38e1c35a04c3579fa198d2abd3ef1ff7be79633d6d3f2bc69c8a69164e1d",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asus.soundrecorder"
+        ],
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.asus.userfeedback",
-        "description": "ZenUI Help (https://play.google.com/store/apps/details?id=com.asus.userfeedback)\nCustomer service app that provides FAQs, Mobile care service, user feedback, and public forums.\nLots of telemetry (insecure on top of that):\nhttps://beta.pithus.org/report/e80a1fa70adc097fc9817720b5c8c81cfd156a76e6d062759b2bc3d6937a97e7",
+        "label": "ZenUI Help",
+        "description": "Customer service app that provides FAQs, Mobile care service, user feedback, and public forums.\nLots of telemetry (insecure on top of that):\nhttps://beta.pithus.org/report/e80a1fa70adc097fc9817720b5c8c81cfd156a76e6d062759b2bc3d6937a97e7",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.asus.userfeedback"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.aura.oobe.kbdi",
-        "description": "Appcloud\nPersistent notification until you click on it and agree to install games. Sort of game cloud pre-installed in some Xiaomi phones\nSafe to remove.",
+        "label": "Appcloud",
+        "description": "Persistent notification until you click on it and agree to install games. Sort of game cloud pre-installed in some Xiaomi phones\nSafe to remove.",
         "removal": "delete"
     },
     {
         "id": "com.autonavi.minimap",
-        "description": "高德地图 (Yeah no english translation) (https://play.google.com/store/apps/details?id=com.autonavi.minimap)\nXiaomi GPS\n",
+        "label": "高德地图",
+        "description": "(Yeah no english translation)\nXiaomi GPS\n",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.autonavi.minimap"
+        ],
         "removal": "delete"
     },
     {
@@ -8797,37 +9137,57 @@
     {
         "id": "com.baidu.input_huawei",
         "description": "Woh! 51 permissions! \nHuawei chinese stock input keyboard. You probably shouldn't trust this closed-source keyboard with this much permissions...NOTE: Make sure to have another keyboard installed before removing this package!\n",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.baidu.input_mi",
-        "description": "Baidu IME (Baidu keyboard)\nYOU SHOULD NEVER USE A CLOSED-SOURCE KEYBOARD ! \nhttps://www.techrepublic.com/blog/asian-technology/japanese-government-warns-baidu-ime-is-spying-on-users/\nArchive : https://web.archive.org/save/https://www.techrepublic.com/blog/asian-technology/japanese-government-warns-baidu-ime-is-spying-on-users/\nNOTE: Make sure you have installed another keyboard before removing this package.\n",
-        "removal": "replace"
+        "label": "Baidu IME",
+        "description": "Chinese keyboard baidu. YOU SHOULD NEVER USE A CLOSED-SOURCE KEYBOARD!",
+        "web": [
+            "https://www.techrepublic.com/blog/asian-technology/japanese-government-warns-baidu-ime-is-spying-on-users/",
+            "https://web.archive.org/save/https://www.techrepublic.com/blog/asian-technology/japanese-government-warns-baidu-ime-is-spying-on-users/"
+        ],
+        "removal": "replace",
+        "suggestions": "keyboards",
+        "warning": "Make sure you have installed another keyboard before removing this package."
     },
     {
         "id": "com.baidu.input_vivo",
         "description": "Default keyboard (Baidu IME customized for Vivo devices).\nThe number of requested permissions for this keyboard is terrifying. You really should use another keyboard. Pithus analysis: https://beta.pithus.org/report/d4cdf8fedcd94436ade720cb8df9b4ef32aca6c7822cae6c8698937d68e20363",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.baidu.searchbox",
-        "description": "百度 (https://play.google.com/store/apps/details?id=com.baidu.searchbox)\nBaidu App search engine.\n",
+        "label": "百度",
+        "description": "Baidu App search engine.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.baidu.searchbox"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.bbk.account",
-        "description": "Vivo account\nVivo privacy policy is really bad: https://privacy.vivo.com/privacy\nNote: Removing this will obviously break fuctions that require Vivo account authentication: accessibility, data backup etc.",
+        "label": "Vivo account",
+        "description": "Vivo privacy policy is really bad: https://privacy.vivo.com/privacy\nNote: Removing this will obviously break fuctions that require Vivo account authentication: accessibility, data backup etc.",
         "removal": "caution"
     },
     {
         "id": "com.bbk.appstore",
-        "description": "Vivo app store.\nNote: apps from this store can still be upgraded with the built-in check upgrade feature even with this package removed",
+        "label": "Vivo app store",
+        "description": "apps from this store can still be upgraded with the built-in check upgrade feature even with this package removed",
         "removal": "replace"
     },
     {
         "id": "com.bbk.calendar",
-        "description": "Default calendar app.\n50 permissions for a calendar app. What could go wrong?\n\nPithus analysis: https://beta.pithus.org/report/db107cb828a1ec9b7cbcd9fd86542da877fdf4cf947c18c8a48a2b09e568ad10",
-        "removal": "replace"
+        "label": "Calendar",
+        "description": "Default calendar app.\n50 permissions for a calendar app. What could go wrong?\n\nPithus analysis:",
+        "web": [
+            "https://beta.pithus.org/report/db107cb828a1ec9b7cbcd9fd86542da877fdf4cf947c18c8a48a2b09e568ad10"
+        ],
+        "removal": "replace",
+        "suggestions": "calendars"
     },
     {
         "id": "com.bbk.iqoo.logsystem",
@@ -8863,17 +9223,20 @@
     },
     {
         "id": "com.cnn.mobile.android.phone.edgepanel",
-        "description": "CNN Edge panel. Twitter trends, and news from CNN.\n",
+        "label": "CNN Edge panel",
+        "description": "Twitter trends, and news from CNN.\n",
         "removal": "delete"
     },
     {
         "id": "com.coloros.activation",
-        "description": "E-warranty card\nLets you check if your registered phone is still under warranty (will send your IMEI to esa-reg-eup.myoppo.com. Has a lot of permissions and run at boot\n\nPithus analysis: https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
+        "label": "E-warranty card",
+        "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to esa-reg-eup.myoppo.com. Has a lot of permissions and run at boot\n\nPithus analysis: https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
         "removal": "delete"
     },
     {
         "id": "com.coloros.appmanager",
-        "description": "",
+        "label": "Permanent process management",
+        "description": "Problably unused.",
         "removal": "delete"
     },
     {
@@ -8894,7 +9257,8 @@
     {
         "id": "com.coloros.filemanager",
         "description": "ColorOS File Manager\n",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.coloros.gamespace",
@@ -8944,7 +9308,8 @@
     {
         "id": "com.coloros.soundrecorder",
         "description": "ColorOS Sound Recorder",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.coloros.speechassist",
@@ -8993,12 +9358,20 @@
     },
     {
         "id": "com.duokan.phone.remotecontroller",
-        "description": "Mi Remote Controller (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller)\nControl your electric appliances with your phone using Mi Remote.\n",
+        "label": "Mi Remote Controller",
+        "description": "Control your electric appliances with your phone using Mi Remote.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.duokan.phone.remotecontroller.peel.plugin",
-        "description": "Peel Mi Remote (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin)\nPeel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".\n",
+        "label": "Peel Mi Remote",
+        "description": "Peel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin"
+        ],
         "removal": "delete"
     },
     {
@@ -9134,32 +9507,32 @@
     {
         "id": "com.evenwell.SetupWizard.overlay.base",
         "description": "Theme overlay for Setup Wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.SetupWizard.overlay.base.s600ww",
         "description": "Theme overlay for Setup Wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.SetupWizard.overlay.d.base.s600ww",
         "description": "Theme overlay for Setup Wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.UsageStatsLogReceiver",
         "description": "Logging stuff",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.UsageStatsLogReceiver.data.overlay.back.s600id",
         "description": "Theme overlay for Usage Stats Log?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600ww",
         "description": "Theme overlay for Usage Stats Log?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.apnwidget.overlay.base.s600ww",
@@ -9204,22 +9577,22 @@
     {
         "id": "com.evenwell.batteryprotect.overlay.base",
         "description": "Theme overlay for Battery Protect?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.batteryprotect.overlay.base.s600id",
         "description": "Theme overlay for Battery Protect?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.batteryprotect.overlay.base.s600ww",
         "description": "Theme overlay for Battery Protect?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.batteryprotect.overlay.d.base.s600e0",
         "description": "Theme overlay for Battery Protect?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.bboxsbox",
@@ -9309,12 +9682,12 @@
     {
         "id": "com.evenwell.factorywizard.overlay.base",
         "description": "Theme overlay for setup wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.factorywizard.overlay.base.s600ww",
         "description": "Theme overlay for setup wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.fmradio.overlay.base.s600ww",
@@ -9409,17 +9782,17 @@
     {
         "id": "com.evenwell.partnerbrowsercustomizations.overlay.base",
         "description": "Theme overlay for some browser customization?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.partnerbrowsercustomizations.overlay.base.s600id",
         "description": "Theme overlay for some browser customization?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.partnerbrowsercustomizations.overlay.base.s600ww",
         "description": "Theme overlay for some browser customization?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.permissiondetection",
@@ -9469,7 +9842,7 @@
     {
         "id": "com.evenwell.providers.weather.overlay.base.s600ww",
         "description": "Theme overlay for weather provider?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.pushagent",
@@ -9479,17 +9852,17 @@
     {
         "id": "com.evenwell.pushagent.overlay.base",
         "description": "Theme overlay for pushagent?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.pushagent.overlay.base.s600id",
         "description": "Theme overlay for pushagent?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.pushagent.overlay.base.s600ww",
         "description": "Theme overlay for pushagent?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.retaildemoapp",
@@ -9499,17 +9872,17 @@
     {
         "id": "com.evenwell.retaildemoapp.overlay.base",
         "description": "Theme overlay for Nokia retail demonstration mode?\nhttps://en.wikipedia.org/wiki/Demo_mode",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.retaildemoapp.overlay.base.s600id",
         "description": "Theme overlay for Nokia retail demonstration mode?\nhttps://en.wikipedia.org/wiki/Demo_mode",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.retaildemoapp.overlay.base.s600ww",
         "description": "Theme overlay for Nokia retail demonstration mode?\nhttps://en.wikipedia.org/wiki/Demo_mode",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.screenlock.overlay.base.s600ww",
@@ -9529,7 +9902,7 @@
     {
         "id": "com.evenwell.setupwizard.btl.s600ww.overlay",
         "description": "Theme overlay for Setup Wizard?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.stbmonitor",
@@ -9539,17 +9912,17 @@
     {
         "id": "com.evenwell.stbmonitor.data.overlay.base",
         "description": "Theme overlay for STB Monitor?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.stbmonitor.data.overlay.base.s600id",
         "description": "Theme overlay for STB Monitor?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.stbmonitor.data.overlay.base.s600ww",
         "description": "Theme overlay for STB Monitor?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.evenwell.telecom.data.overlay.base",
@@ -9579,7 +9952,7 @@
     {
         "id": "com.evenwell.weatherservice.overlay.base.s600ww",
         "description": "Theme overlay for weather service?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.example.wifirftest",
@@ -9639,12 +10012,19 @@
     {
         "id": "com.fp.camera",
         "description": "Fairphone Camera app",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.gallery20",
-        "description": "AI Gallery (https://play.google.com/store/apps/details?id=com.gallery20)\nStock gallery app with picture editing (filters, crop, add text, watermark, frame, bloor. Sends analytics to api.meishesdk.com\nPithus analysis: https://beta.pithus.org/report/d9cf633450ed90d2c89c941c5c202845b2789ceffe6d6337ecf772d223d157de",
-        "removal": "replace"
+        "label": "AI Gallery",
+        "description": "Stock gallery app with picture editing (filters, crop, add text, watermark, frame, bloor. Sends analytics to api.meishesdk.com\nPithus analysis:",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.gallery20",
+            "https://beta.pithus.org/report/d9cf633450ed90d2c89c941c5c202845b2789ceffe6d6337ecf772d223d157de"
+        ],
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.google.android.apps.wearable.retailattractloop",
@@ -9688,12 +10068,15 @@
     },
     {
         "id": "com.heytap.browser",
-        "description": "Oppo Browser\nRebranded HeyTap browser for Oppo. Full of ads and spams you in notifications. You should never use this browser\nHeyTap terrible privacy policy: https://brand.heytap.com/eu/privacy.html",
-        "removal": "delete"
+        "label": "Oppo Browser",
+        "description": "Rebranded HeyTap browser for Oppo. Full of ads and spams you in notifications. You should never use this browser\nHeyTap terrible privacy policy: https://brand.heytap.com/eu/privacy.html",
+        "removal": "delete",
+        "suggestions": "browsers"
     },
     {
         "id": "com.heytap.cloud",
-        "description": "HeyTap Cloud\nBad privacy policy: https://muc.heytap.com/document/heytap/oversea/privacyPolicy/privacyPolicy_en-US.html\nWhy does the app need `REQUEST_INSTALL_PACKAGES` (can install packages)?\nPithus analysis: https://beta.pithus.org/report/dbf265db47f8632453bb83ef51ea1d921413c02a8d24c989345896de83704a75",
+        "label": "HeyTap Cloud",
+        "description": "Bad privacy policy: https://muc.heytap.com/document/heytap/oversea/privacyPolicy/privacyPolicy_en-US.html\nWhy does the app need `REQUEST_INSTALL_PACKAGES` (can install packages)?\nPithus analysis: https://beta.pithus.org/report/dbf265db47f8632453bb83ef51ea1d921413c02a8d24c989345896de83704a75",
         "removal": "delete",
         "dependencies": [
             "com.heytap.mcs"
@@ -9715,7 +10098,8 @@
     {
         "id": "com.heytap.music",
         "description": "Default Oppo Music App with insecure WebView Implementation (execution of user controlled code in WebView is an important security hole.\nHas also weird permissions (QUERY_ALL_PACKAGES and BLUETOOTH ?)\n\nhttps://beta.pithus.org/report/befa0ec0616c553632379f069453b0ca74ee29fd1428b9fce19c1657e6f97d8b",
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.heytap.pictorial",
@@ -9763,12 +10147,12 @@
     {
         "id": "com.hmdglobal.datago.overlay.base",
         "description": "Theme overlay for a Nokia telemetry package?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.hmdglobal.datago.overlay.base.s600ww",
         "description": "Theme overlay for a Nokia telemetry package?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.hmdglobal.support",
@@ -10022,7 +10406,8 @@
     },
     {
         "id": "com.huawei.hiassistantoversea",
-        "description": "HiVoice. Huawei's voice assistant to replace \"Hey Google\"\n",
+        "label": "HiVoice",
+        "description": "Huawei's voice assistant to replace \"Hey Google\"\n",
         "removal": "delete"
     },
     {
@@ -10486,8 +10871,9 @@
     },
     {
         "id": "com.lge.email",
-        "description": "LG Email app\n",
-        "removal": "delete"
+        "description": "LG Email app",
+        "removal": "replace",
+        "suggestions": "email_clients"
     },
     {
         "id": "com.lge.equalizer",
@@ -10516,8 +10902,9 @@
     },
     {
         "id": "com.lge.filemanager",
-        "description": "Stock file manager\n",
-        "removal": "replace"
+        "description": "Stock file manager",
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.lge.floatingbar",
@@ -10912,8 +11299,13 @@
     },
     {
         "id": "com.mi.android.globalFileexplorer",
-        "description": "Xiaomi Files Manager (https://play.google.com/store/apps/details?id=com.mi.android.globalFileexplorer)\n",
-        "removal": "replace"
+        "label": "Mi File Manager",
+        "description": "Xiaomi Files Manager",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mi.android.globalFileexplorer"
+        ],
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.mi.android.globalminusscreen",
@@ -10943,7 +11335,8 @@
     {
         "id": "com.mi.globalbrowser",
         "description": "Mi Browser\nPrivacy nightmare. You really should use something else.\nhttps://www.xda-developers.com/xiaomi-mi-web-browser-pro-mint-collecting-browsing-data-incognito-mode/\n\nNote: Since MIUI 12, you can no longer uninstall this app. Disabling it still works fine.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.mi.globallayout",
@@ -11141,7 +11534,8 @@
     {
         "id": "com.miui.guardprovider",
         "description": "Guard Provider security app\nThe app includes 3 different antivirus brands built in that the user can choose (Avast, AVL and Tencent). \nThis app notably perform a virus scan of any apps you want to install. \nA serious vulnerability was found in 2019\nWorth reading : https://research.checkpoint.com/2019/vulnerability-in-xiaomi-pre-installed-security-app/\nYou may want to remove this app from a privacy stance.\nhttps://beta.pithus.org/report/797a7e405bc8e767deebbbcab3e06a19b05156de44292c918b582dff3078d7b8\nIMPORTANT NOTE: Removing this package will very likely break any app installation/update.\n",
-        "removal": "caution"
+        "removal": "delete",
+        "warning": "Disable Security scan things on Security app before remove."
     },
     {
         "id": "com.miui.home",
@@ -11220,7 +11614,7 @@
     },
     {
         "id": "com.miui.notes",
-        "description": "Mi Notes\n",
+        "description": "Mi Notes",
         "removal": "replace",
         "suggestions": "note_taking_apps"
     },
@@ -11695,13 +12089,14 @@
     },
     {
         "id": "com.nearme.atlas",
-        "description": "Secure payment\n",
+        "description": "Secure payment",
         "removal": "delete"
     },
     {
         "id": "com.nearme.browser",
-        "description": "Default web browser\n",
-        "removal": "delete"
+        "description": "Default web browser",
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.nearme.deamon",
@@ -11768,12 +12163,12 @@
     {
         "id": "com.oneplus.account.basiccolorblack.overlay",
         "description": "Dark theme for Oneplus Account?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.account.basiccolorwhite.overlay",
         "description": "Light theme for Oneplus Account?",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.aod",
@@ -11783,12 +12178,12 @@
     {
         "id": "com.oneplus.aod.basiccolorblack.overlay",
         "description": "Theme overlay for AOD? (Always On Display)",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.aod.basiccolorwhite.overlay",
         "description": "Theme overlay for AOD? (Always On Display)",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.oneplus.applocker",
@@ -11849,7 +12244,8 @@
     },
     {
         "id": "com.oneplus.camera",
-        "description": "Camera\nThe stock Oneplus camera app.\n",
+        "label": "Camera",
+        "description": "The stock Oneplus camera app.",
         "removal": "replace",
         "suggestions": "cameras"
     },
@@ -11932,18 +12328,19 @@
     {
         "id": "com.oneplus.deskclock",
         "label": "Clock",
-        "description": "Clock\nThe stock Oneplus clock app.",
-        "removal": "replace"
+        "description": "The stock Oneplus clock app.",
+        "removal": "replace",
+        "suggestions": "clocks"
     },
     {
         "id": "com.oneplus.deskclock.black.overlay",
         "description": "Theme overlay for Oneplus Clock app?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.deskclock.white.overlay",
         "description": "Theme overlay for Oneplus Clock app?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.diagnosemanager",
@@ -11964,12 +12361,12 @@
     {
         "id": "com.oneplus.dirac.simplemanager.basiccolorblack.overlay",
         "description": "Theme overlay for Dirac?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.dirac.simplemanager.basiccolorwhite.overlay",
         "description": "Theme overlay for Dirac?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.engmode",
@@ -12087,12 +12484,12 @@
     {
         "id": "com.oneplus.mms.basiccolorblack.overlay",
         "description": "Dark theme overlay for Oneplus Messages app?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.mms.basiccolorwhite.overlay",
         "description": "Light theme overlay for Oneplus Messages app?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.note",
@@ -12193,12 +12590,12 @@
     {
         "id": "com.oneplus.security.black.overlay",
         "description": "Dark theme overlay for com.oneplus.security?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.security.white.overlay",
         "description": "Light theme overlay for com.oneplus.security?",
-        "removal": "caution"
+        "removal": "replace"
     },
     {
         "id": "com.oneplus.ses",
@@ -12399,7 +12796,7 @@
     {
         "id": "com.oplus.securitykeyboard",
         "label": "Secure Keyboard",
-        "description": "Secure Keyboard\nKeyboard that appears only when typing a password on apps and webpages, if enabled on Keyboard and Input settings",
+        "description": "Keyboard that appears only when typing a password on apps and webpages, if enabled on Keyboard and Input settings",
         "removal": "delete"
     },
     {
@@ -13573,7 +13970,7 @@
     {
         "id": "com.samsung.android.watch.alarm",
         "description": "Samsung Alarm app.",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "com.samsung.android.watch.cameracontroller",
@@ -15412,12 +15809,17 @@
     },
     {
         "id": "com.vivo.browser",
-        "description": "Vivo browser full of trackers (https://play.google.com/store/apps/details?id=com.vivo.browser)\n",
-        "removal": "delete"
+        "description": "Vivo browser full of trackers",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.vivo.browser"
+        ],
+        "removal": "delete",
+        "suggestions": "browsers"
     },
     {
         "id": "com.vivo.hybrid",
-        "description": "Quick App\nProvides Quick App support. Quick Apps are Javascript+CSS apps that don't need any installation. This technology has its uses but I'm personally not a huge fan on having to rely on a JS engine to run an application\nThis system app has a lot of permissions (including SEND_SMS, CAMERA, READ_EXTERNAL_STORAGE, RECORD_AUDIO... why?)\nMore information: https://www.xda-developers.com/huawei-quick-apps-alternative-google-instant-apps/\n OW2 Quick App whitepaper: https://quick-app-initiative.ow2.io/docs/Quick_App_White_Paper.pdf",
+        "label": "Quick App",
+        "description": "Provides Quick App support. Quick Apps are Javascript+CSS apps that don't need any installation. This technology has its uses but I'm personally not a huge fan on having to rely on a JS engine to run an application\nThis system app has a lot of permissions (including SEND_SMS, CAMERA, READ_EXTERNAL_STORAGE, RECORD_AUDIO... why?)\nMore information: https://www.xda-developers.com/huawei-quick-apps-alternative-google-instant-apps/\n OW2 Quick App whitepaper: https://quick-app-initiative.ow2.io/docs/Quick_App_White_Paper.pdf",
         "removal": "replace"
     },
     {
@@ -15645,7 +16047,7 @@
     },
     {
         "id": "com.zte.assistant",
-        "description": "ZTE Voice Assistant\n",
+        "description": "ZTE Voice Assistant",
         "removal": "delete"
     },
     {
@@ -15685,7 +16087,11 @@
     },
     {
         "id": "net.oneplus.forums",
-        "description": "OnePlus Community (https://play.google.com/store/apps/details?id=net.oneplus.forums)\nLiterally just their forum... in an app.\nJust use a Browser if you wanna access the forums.",
+        "label": "OnePlus Community",
+        "description": "Literally just their forum... in an app.\nJust use a Browser if you wanna access the forums.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=net.oneplus.forums"
+        ],
         "removal": "delete"
     },
     {
