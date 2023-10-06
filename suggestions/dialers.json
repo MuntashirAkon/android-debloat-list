@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "com.simplemobiletools.dialer",
+        "label": "Simple Dialer",
+        "source": "fg",
+        "reason": "Alternative based on AOSP.",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Dialer"
+    }
+]
