@@ -8,7 +8,7 @@
     {
         "id": "com.simplemobiletools.smsmessenger",
         "label": "Simple SMS Messenger",
-        "reason": "Closely emulates stock SMS with support for message archives, delayed sending, AOSP blocklist integration, recycle bin, backups, etc. No app unlocks needed."
+        "reason": "Closely emulates stock SMS with support for message archives, delayed sending, AOSP blocklist integration, recycle bin, backups, etc. No app unlocks needed.",
         "source": "fg",
         "repo": "https://github.com/SimpleMobileTools/Simple-SMS-Messenger"
     }
