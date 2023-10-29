@@ -454,7 +454,7 @@
     {
         "id": "com.coloros.activation",
         "label": "E-warranty card",
-        "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to 'esa-reg-eup.myoppo.com'. Has a lot of permissions and run at boot.",
+        "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to 'esa-reg-eup.myoppo.com'). Has a lot of permissions and run at boot.",
         "web": [
             "https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88"
         ],
@@ -521,7 +521,8 @@
         "id": "com.coloros.findmyphone",
         "label": "com.coloros.findmyphone",
         "description": "Oppo find my phone service.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "locators"
     },
     {
         "id": "com.coloros.gamespace",
@@ -639,8 +640,9 @@
         "web": [
             "https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9"
         ],
-        "removal": "caution",
-        "warning": "Using inbuilt screen recorder you won't be able to open the recorded video from the notification view."
+        "removal": "replace",
+        "warning": "Using inbuilt screen recorder you won't be able to open the recorded video from the notification view.",
+        "suggestions": "video_players"
     },
     {
         "id": "com.coloros.wallet",
@@ -689,7 +691,7 @@
     },
     {
         "id": "com.duokan.phone.remotecontroller",
-        "label": "Mi Remote Controller",
+        "label": "Mi Remote",
         "description": "Control your electric appliances with your phone using Mi Remote.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller"
@@ -708,7 +710,7 @@
     {
         "id": "com.elephanttek.faceunlock",
         "label": "com.elephanttek.faceunlock",
-        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.",
+        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy.",
         "web": [
             "https://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/",
             "https://www.kaspersky.com/blog/face-unlock-insecurity/21618/",
@@ -2569,12 +2571,18 @@
     },
     {
         "id": "com.lge.videoplayer",
-        "description": "LG Video Player\nNB : This is a bad one. VLC is much better.\n",
-        "removal": "delete"
+        "label": "com.lge.videoplayer",
+        "description": "LG Video Player",
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.lge.videostudio",
-        "description": "Quick Video Editor\nAllows you to create and edit video files using the videos (and photos) stored on the phone.\nhttps://www.lg.com/us/mobile-phones/VS980/Userguide/281.html\n",
+        "label": "Quick Video Editor",
+        "description": "Allows you to create and edit video files using the videos (and photos) stored on the phone.",
+        "web": [
+            "https://www.lg.com/us/mobile-phones/VS980/Userguide/281.html"
+        ],
         "removal": "delete"
     },
     {
@@ -3217,7 +3225,7 @@
         "label": "Settings storage",
         "description": "Seems to required for device settings.",
         "removal": "unsafe",
-        "warning": "Some* of the device settings will crash continuously."
+        "warning": "Some of the device settings will crash continuously."
     },
     {
         "id": "com.motorola.android.providers.settings.auto_generated_rro_product__",
@@ -4021,6 +4029,7 @@
     },
     {
         "id": "com.oneplus.chargingpilar",
+        "label": "Nearby Charging Stations",
         "description": "Geolocates the phone to find OnePlus charging stations nearby. Connects to 'gateway.oneplus.net'.",
         "web": [
             "https://beta.pithus.org/report/8c157eeec2931d3d1140aa8c452d7afa570e04c9d51e6cd5987dbb3ec43df4f9"
@@ -5778,11 +5787,16 @@
     },
     {
         "id": "com.samsung.android.video",
-        "description": "Samsung Video Player\nhttps://galaxystore.samsung.com/prepost/000003980724?appId=com.samsung.android.video\n",
-        "removal": "replace",
+        "label": "Samsung Video Player",
         "dependencies": [
             "com.samsung.android.smartmirroring"
-        ]
+        ],
+        "description": "Default video Player for Samsung devices.",
+        "web": [
+            "https://galaxystore.samsung.com/prepost/000003980724?appId=com.samsung.android.video"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.samsung.android.visionarapps",
@@ -7620,8 +7634,13 @@
     },
     {
         "id": "com.transsion.magicshow",
-        "description": "(Bad) video Player with Ads and weak security (including an unsecured WebView implementation that can lead to XSS attacks.\nPithus analysis: https://beta.pithus.org/report/33cd478cc18f3a2c0d5f7fd33c7350127ee2cff7acdf87f70641ca21dd2b2dcb",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "(Bad) video Player with Ads and weak security (including an unsecured WebView implementation that can lead to XSS attacks.",
+        "web": [
+            "https://beta.pithus.org/report/33cd478cc18f3a2c0d5f7fd33c7350127ee2cff7acdf87f70641ca21dd2b2dcb"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.transsion.microintelligence",
@@ -7945,13 +7964,19 @@
     },
     {
         "id": "com.zte.videoplayer",
-        "description": "ZTE Video Player with INTERNET and ACCESS_NETWORK_STATE permissions\nPithus analysis: https://beta.pithus.org/report/caf2da956d33c5550e42d4250b0fa31dc605f39545c2eff36438fd88a0fc7c28",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "ZTE Video Player with INTERNET and ACCESS_NETWORK_STATE permissions.",
+        "web": [
+            "https://beta.pithus.org/report/caf2da956d33c5550e42d4250b0fa31dc605f39545c2eff36438fd88a0fc7c28"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.zte.weather",
+        "label": "com.zte.weather",
         "description": "ZTE Weather app.",
-        "removal": "delete"
+        "removal": "replace"
     },
     {
         "id": "net.oneplus.commonlogtool",
