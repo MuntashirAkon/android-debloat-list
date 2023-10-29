@@ -402,7 +402,7 @@
             "https://source.android.com/docs/core/connect/carrier"
         ],
         "removal": "caution",
-        "warning": "You might experience various network related issues, remember to enable this if face any issue."
+        "warning": "Disabling this app may cause network-related issues"
     },
     {
         "id": "com.motorola.ltebroadcastservices_vzw",
