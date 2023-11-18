@@ -653,19 +653,21 @@
     {
         "id": "com.coloros.weather2",
         "label": "Weather",
-        "description": "ColorOS weather app.  You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+.",
+        "description": "ColorOS weather app.You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.coloros.weather2",
             "https://github.com/0x192/universal-android-debloater/issues/211"
         ],
         "removal": "unsafe",
-        "warning": "Removal seems to trigger a bootloop on some phones."
+        "warning": "Removal seems to trigger a bootloop on some phones.",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.coloros.widget.smallweather",
         "label": "com.coloros.widget.smallweather",
         "description": "More info needed.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.coremobility.app.vnotes",
@@ -2014,10 +2016,13 @@
     {
         "id": "com.kidoz.lenovo",
         "label": "Lenovo Kid's Account",
-        "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.",
+        "description": "Partnered with COPPA Certified (https://cert.privo.com/#/companies/kidoz18) KIDOZ Inc.\nProvides kids friendly relevant services based on their 'usage behaviour'.\nAccording to EFF sends device model, brand, country, timezone, screen size, view events, click events, logtime of events, and a unique “KID ID information to Kidoz.",
         "web": [
             "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa",
-            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection"
+            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection",
+            "https://www.eff.org/deeplinks/2023/11/low-budget-should-not-mean-high-risk-kids-tablet-came-preloaded-sketchyware",
+            "https://www.privo.com/kidoz-case-study",
+            "https://kidoz.net/privacy-policies"
         ],
         "removal": "delete"
     },
@@ -2481,12 +2486,14 @@
     },
     {
         "id": "com.lge.sizechangable.weather",
-        "description": "Music widget\nNot sure if it only manages Music widget for the launcher or also for the lockscreen.\n\nWeather widget for the home screen.\n",
+        "label": "Music widget",
+        "description": "Not sure if it only manages Music widget for the launcher or also for the lockscreen.\nWeather widget for the home screen.",
         "removal": "delete"
     },
     {
         "id": "com.lge.sizechangable.weather.platform",
-        "description": "Weather Service\nProvide weather data for the weather app/widget.\n",
+        "label": "Weather Service",
+        "description": "Provide weather data for the weather app/widget.",
         "removal": "delete"
     },
     {
@@ -2496,8 +2503,11 @@
     },
     {
         "id": "com.lge.smartdoctor.webview",
-        "description": "Smart Doctor Webview\nREMINDER : A WebView is acomponent that allows Android apps to display content from the web directly inside an application.\n",
-        "removal": "delete"
+        "label": "Smart Doctor Webview",
+        "description": "A WebView is acomponent that allows Android apps to display content from the web directly inside an application.",
+        "removal": "replace",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
+        "suggestions": "webviews"
     },
     {
         "id": "com.lge.smartshare",
@@ -2697,9 +2707,10 @@
     },
     {
         "id": "com.mi.webkit.core",
-        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
+        "label": "MI WebView",
+        "description": "Xiaomi alternative to Google WebView\nIt is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
-        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
@@ -2888,7 +2899,7 @@
         "web": [
             "https://web.archive.org/web/20220926221620/https://libreddit.spike.codes/r/Xiaomi/comments/o6vk5z/miui_12125_and_android_11_gestures/"
         ],
-        "removal": "replace",
+        "removal": "unsafe",
         "warning": "If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nMake sure you've installed another launcher before you disable",
         "suggestions": "launchers"
     },
@@ -2959,7 +2970,8 @@
     },
     {
         "id": "com.miui.nextpay",
-        "description": "Next Pay \n???\n",
+        "label": "Next Pay",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
@@ -3104,13 +3116,20 @@
     },
     {
         "id": "com.miui.weather2",
-        "description": "Mi Weather app\n",
-        "removal": "delete"
+        "label": "Weather",
+        "description": "Weather app By Xiaomi.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.miui.weather2"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.miui.wmsvc",
-        "description": "WMService\nRuns at boot, has access to internet + GPS\nI quickly looked at the decompiled code and saw some unsanitized SQL inputs, which is BAD! (vulnerable to SQL injection)\nTries to get your android unique Google advertising ID from Google Play Services.\nFeeds and launches the spying/analytics app \"com.miui.hybrid\".\nDoesn't seem to do anything important, only tracking.\nWARNING: Some people said removing this package causes bootloop, others said it doesn't. Can someone check this? I think it should be okay to remove if you remove all other dependent Xiaomi packages(bloat).",
-        "removal": "replace"
+        "label": "WMService",
+        "description": "Runs at boot, has access to internet + GPS\nI quickly looked at the decompiled code and saw some unsanitized SQL inputs, which is BAD! (vulnerable to SQL injection)\nTries to get your android unique Google advertising ID from Google Play Services.\nFeeds and launches the spying/analytics app \"com.miui.hybrid\".\nDoesn't seem to do anything important, only tracking.",
+        "removal": "unsafe",
+        "warning": "Some people said removing this package causes bootloop, others said it doesn't. Can someone check this? I think it should be okay to remove if you remove all other dependent Xiaomi packages(bloat)."
     },
     {
         "id": "com.miui.yellowpage",
@@ -4545,7 +4564,7 @@
         "web": [
             "https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde"
         ],
-        "removal": "delete",
+        "removal": "caution",
         "warning": "Removing this package prevents the OnePlus Game Center to detect games."
     },
     {
@@ -4612,11 +4631,11 @@
         "id": "com.oplus.safecenter",
         "label": "Security center",
         "description": "Enhances privacy features on Oneplus/Oppo devices",
-        "warning": "Breaks app lock feature when disabled/deleted, all other features work",
         "web": [
             "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
         ],
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Breaks app lock feature when disabled/deleted, all other features work"
     },
     {
         "id": "com.oplus.screenshot",
@@ -4734,8 +4753,10 @@
     },
     {
         "id": "com.oppo.webview",
-        "description": "Oppo Webview\nA WebView is a system component for the Android operating system (OS) that allows Android apps to display content \nfrom the web directly inside an application. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly\nOn open-source privacy oriented Webview is Bromite (https://www.bromite.org/system_web_view)\n",
+        "label": "Oppo Webview",
+        "description": "A WebView is a system component for the Android operating system (OS) that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
+        "warning": "Make to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
@@ -4923,8 +4944,10 @@
     },
     {
         "id": "com.samsung.android.app.dressroom",
-        "description": "Samsung Wallpapers\nWallaper manager. Needed to pick up a wallpaper on Android 10+.\nHas INTERNET permission and ACCESS_MEDIA_LOCATION\nBefore Android 10, you should still be able to set a wallpaper from the Samsung gallery without this package.\nWARNING: Removing this app will prevent you to set a new wallpaper on Android 10+ (even from the Gallery) or changing the Material You palette on Android 12+.",
-        "removal": "replace"
+        "label": "Samsung Wallpapers",
+        "description": "Wallaper manager. Needed to pick up a wallpaper on Android 10+.\nHas INTERNET permission and ACCESS_MEDIA_LOCATION\nBefore Android 10, you should still be able to set a wallpaper from the Samsung gallery without this package.",
+        "removal": "unsafe",
+        "warning": "Removing this app will prevent you to set a new wallpaper on Android 10+ (even from the Gallery) or changing the Material You palette on Android 12+."
     },
     {
         "id": "com.samsung.android.app.episodes",
@@ -5346,17 +5369,21 @@
     },
     {
         "id": "com.samsung.android.homemode",
-        "description": "Daily Board (https://play.google.com/store/apps/details?id=com.samsung.android.homemode)\nShow a slideshow of your favourite pictures while your device is charging.\n",
+        "label": "Daily Board",
+        "description": "Show a slideshow of your favourite pictures while your device is charging.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.homemode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.honeyboard",
-        "description": "Samsung keyboard\n",
+        "description": "Samsung keyboard",
         "web": [
             "https://developer.android.com/training/articles/direct-boot"
         ],
         "removal": "caution",
-        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.\n",
+        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.",
         "suggestions": "keyboards"
     },
     {
@@ -5426,8 +5453,16 @@
     },
     {
         "id": "com.samsung.android.lool",
-        "description": "Samsung Device Care (phone optimizer) (https://play.google.com/store/apps/details?id=com.samsung.android.lool)\nThis package phone home (China, Qihoo 360)\nThe clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)\nhttps://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/\nhttps://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details\n\nWARNING:Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices\nNOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access\n",
-        "removal": "replace"
+        "label": "Device Care",
+        "description": "Samsung Device Care (phone optimizer)\nThis package phone home (China, Qihoo 360)\nThe clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)\nNOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.lool",
+            "https://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details",
+            "https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/"
+            
+        ],
+        "removal": "caution",
+        "": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices"
     },
     {
         "id": "com.samsung.android.mateagent",
@@ -5461,8 +5496,13 @@
     },
     {
         "id": "com.samsung.android.mdx.quickboard",
-        "description": "Media & Devices feature\nKind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nhttps://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.\nWARNING: Removing this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait)\n",
-        "removal": "replace"
+        "label": "Media and Devices",
+        "description": "Media & Devices feature\nKind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
+        "web": [
+            "https://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/"
+        ],
+        "removal": "replace",
+        "warning": "BRemoving this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait)"
     },
     {
         "id": "com.samsung.android.mediacontroller",
@@ -5512,8 +5552,10 @@
     },
     {
         "id": "com.samsung.android.provider.filterprovider",
-        "description": "FilterProvider dependency to Samsung Camera\nProvides access to filters (when you swipe right from the camera app)\nWARNING : Samsung camera will crash if this package is deleted.\n",
-        "removal": "replace"
+        "label": "com.samsung.android.provider.filterprovider",
+        "description": "FilterProvider dependency to Samsung Camera\nProvides access to filters (when you swipe right from the camera app)",
+        "removal": "caution",
+        "warning": "Samsung camera will crash if this package is deleted."
     },
     {
         "id": "com.samsung.android.provider.shootingmodeprovider",
@@ -6035,8 +6077,10 @@
     },
     {
         "id": "com.samsung.android.watch.weather",
+        "label": "com.samsung.android.watch.weather",
         "description": "Weather application from Samsung.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.samsung.android.watch.worldclock",
@@ -6080,8 +6124,13 @@
     },
     {
         "id": "com.samsung.android.weather",
-        "description": "Samsung Weather\nLets you see updates on the weather at all times, specific to your current location. \nYou can also check the weather in other areas even\nDependency: \"com.sec.android.daemonapp\"\n",
-        "removal": "delete"
+        "label": "Samsung Weather",
+        "dependencies": [
+            "com.sec.android.daemonapp"
+        ],
+        "description": "Lets you see updates on the weather at all times, specific to your current location.\nEven you can also check the weather in other areas.",
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.samsung.android.wellbeing",
@@ -7476,8 +7525,13 @@
     },
     {
         "id": "com.sonymobile.xperiaweather",
-        "description": "Sony weather app (https://play.google.com/store/apps/details?id=com.sonymobile.xperiaweather)\nNote : Not all location are supported.\n",
-        "removal": "delete"
+        "label": "com.sonymobile.xperiaweather",
+        "description": "Sony weather app\nNote : Not all location are supported.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sonymobile.xperiaweather"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.sonymobile.xperiaxlivewallpaper",
@@ -7512,7 +7566,8 @@
         "web": [
             "https://beta.pithus.org/report/96601b7ec8ced18bf3896946ab43edde94b14e09b95e7787ea941b25ca02164b"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.tblenovo.setup",
@@ -7694,8 +7749,10 @@
     },
     {
         "id": "com.vivo.dream.weather",
+        "label": "com.vivo.dream.weather",
         "description": "Vivo weather app",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.vivo.hybrid",
@@ -7974,9 +8031,13 @@
     },
     {
         "id": "com.zte.weather",
-        "label": "com.zte.weather",
+        "label": "Weather",
         "description": "ZTE Weather app.",
-        "removal": "replace"
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.zte.weather"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "net.oneplus.commonlogtool",
@@ -8035,7 +8096,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=net.oneplus.weather"
         ],
-        "removal": "replace"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "net.oneplus.weather.basiccolorblack.overlay",
