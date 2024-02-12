@@ -32,7 +32,7 @@
         "label": "com.android.backupconfirm",
         "description": "Restores Google settings with Google Backup restore.\nDisplays confirmation popup when doing ADB backup.",
         "removal": "caution",
-        "warning": "Disabling this package breaks ADB Backup and crashes Google account adding",
+        "warning": "Disabling this package breaks ADB Backup and crashes on attempting to add a Google account",
         "suppress": "LabelSameAsId"
     },
     {
