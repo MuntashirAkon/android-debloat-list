@@ -1,5 +1,128 @@
 [
     {
+        "id": "com.aura.oobe.vodafone",
+        "label": "Vodafone AppBox",
+        "description": "It is some kind of post-install recommended apps setup from the carrier.\nAsks for your age and gender and then recommends you to install popular apps.\nDevelopped by IronSource, an Israeli advertising company.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ironsource.appcloud.oobe.hutchison",
+        "label": "AppCloud",
+        "description": "AppCloud (discontinued) from ironSource, an advertising company.\nWorth reading:",
+        "web": [
+            "https://en.wikipedia.org/wiki/IronSource"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.bouyguestelecom",
+        "label": "Bouygues AppCloud",
+        "description": "Its problably for install apps but its useless and have ads and a lot permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.altice.android.myapps",
+        "label": "MyApps",
+        "description": "Its problably for install apps but its useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sfr.android.sfrjeux",
+        "label": "My Games",
+        "description": "Its not useful app for games and better uninstall it",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfc",
+        "label": "com.felicanetworks.mfc",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfm.main",
+        "label": "com.felicanetworks.mfm.main",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfs",
+        "label": "com.felicanetworks.mfs",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfw.a.boot",
+        "label": "com.felicanetworks.mfw.a.boot",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.aura.oobe.motorola",
+        "label": "MotoApps",
+        "description": "It's something to install apps, but it's an advertising company.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.motorola",
+        "label": "Mobile Services Manager",
+        "description": "Its something for install apps but its useless and a lot permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.claroColombia.contenedor",
+        "label": "Claro",
+        "description": "It's something to install apps, but it's an advertising company.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.cricket",
+        "label": "com.dti.cricket",
+        "description": "Its app for installing recommanded apps? Its only used on first-boot setup and its useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.cricketwireless.minus",
+        "label": "com.cricketwireless.minus",
+        "description": "Cricket partner tab? better remove it. It problably have news or partner customization to chrome.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.att.deviceunlock",
+        "label": "Device Unlock",
+        "description": "Useless app from AT&T. Its only for unlock device.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oem.euiccpartnerapp",
+        "label": "EuiccPartnerApp",
+        "description": "Needed for eSIM (eUICC)?\nI think its useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oem.euiccpartnerapp",
+        "label": "EuiccPartnerApp",
+        "description": "Needed for eSIM (eUICC)?\nI think its useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.inmobi.installer",
+        "label": "com.inmobi.installer",
+        "description": "Its installer advertising company app.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.verizon.services",
+        "label": "AppDirectedSMS",
+        "description": "OMA Device Management for Verizon.\nIts for wifi calling, sms",
+        "removal": "replace"
+    },
+    {
+        "id": "com.dti.amx",
+        "label": "com.dti.amx",
+        "description": "Its used to choose app install? A lot trackers, permissions.\nUseless.",
+        "removal": "delete"
+    },
+    {
         "id": "ca.bell.wt.android.tunesappswidget",
         "label": "App Widget",
         "description": "Developped by Bell Canada, it is a home screen widget which shows advertisements, promotions, news, sports & entertainment.",
