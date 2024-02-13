@@ -8,6 +8,7 @@
             "https://privacytests.org/android.html"
         ],
         "removal": "replace",
+        "warning": "Disabling or uninstalling Chrome breaks functionality for creating and storing passkeys (https://fidoalliance.org/passkeys/) on your phone, so keep this enabled if you want to use that form of authentication.",
         "suggestions": "browsers"
     },
     {
@@ -93,6 +94,15 @@
         ],
         "removal": "replace",
         "suggestions": "cameras"
+    },
+    {
+        "id": "com.google.android.accessibility.soundamplifier",
+        "label": "Accessibility sound amplifier",
+        "description": "Accessibility sound amplifier",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.google.android.apps.access.wifi.consumer",
@@ -280,6 +290,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.apps.gcs",
+        "label": "Google Connectivity Services",
+        "description": "It have things like wifi assistant and require google play services.\nNot needed.",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.giant",
         "label": "Google Analytics",
         "description": "Lets you monitor all of your Analytics properties so that you can keep track of your business while you're on the go.",
@@ -407,7 +423,7 @@
     {
         "id": "com.google.android.apps.nbu.files",
         "label": "Files by Google",
-        "description": "Used to be for cleaning and sharing. But nowadays, it became a hybrid app. Runs in the background.\nFOSS alternative is https://github.com/TeamAmaze/AmazeFileUtilities",
+        "description": "Used to be for cleaning and sharing. But nowadays, it became a hybrid app. Runs in the background.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files"
         ],
@@ -534,6 +550,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.apps.security.securityhub",
+		"label": "Security Hub",
+        "description": "Checks security your phone(you can find it in settings). Not very useful.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.security.securityhub"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.setupwizard.searchselector",
         "label": "Search Engine Selector",
         "description": "The search selection screen in the setupwizard you see on new/factory reset phones. Runs on boot, but doesn't seem to run in the background beyond that.",
@@ -591,6 +616,15 @@
         "description": "Discontinued.",
         "removal": "delete",
         "suggestions": "battery_managers"
+    },
+    {
+        "id": "com.google.android.apps.tycho",
+        "label": "Google Fi Wireless",
+        "description": "Google Fi Wireless",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.apps.tycho"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.google.android.apps.uploader",
@@ -698,6 +732,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.as.oss",
+        "label": "Private Compute Services",
+        "description": "Its another component of\nAndroid System Intelligence (previously Device Personalization Services)",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.backup",
         "label": "Google Backup Transport",
         "description": "Allows Android apps to back up their data on Google servers (on Android 4.2).",
@@ -730,43 +770,6 @@
         ],
         "removal": "replace",
         "suggestions": "calendars"
-    },
-    {
-        "id": "com.google.android.carrierconfig",
-        "label": "com.google.android.carrierconfig",
-        "description": "Same as com.android.carrierconfig? Here's that description:\nDynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM card?",
-        "web": [
-            "https://source.android.com/devices/tech/config/carrier",
-            "https://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.google.android.cellbroadcastreceiver",
-        "label": "Wireless emergency alerts",
-        "dependencies": [
-            "com.google.android.cellbroadcastservice"
-        ],
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.\nRuns at boot and is also triggered after exiting airplane mode.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Cell_Broadcast",
-            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know",
-            "https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/refs/heads/master/src/com/android/cellbroadcastreceiver"
-        ],
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.cellbroadcastservice",
-        "label": "Cell Broadcast Service",
-        "required_by": [
-            "com.google.android.cellbroadcastreceiver"
-        ],
-        "description": "Cell broadcast is designed to deliver messages to multiple users in an area.\nThis is notably used by ISP to send Emergency/Government alerts.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Cell_Broadcast",
-            "https://www.androidcentral.com/amber-alerts-and-android-what-you-need-know"
-        ],
-        "removal": "caution"
     },
     {
         "id": "com.google.android.configupdater",
@@ -807,19 +810,6 @@
         "suggestions": "dialers"
     },
     {
-        "id": "com.google.android.documentsui",
-        "label": "Files",
-        "description": "Occasionally runs in the background.\nFile selector for other apps.",
-        "removal": "unsafe",
-        "warning": "Storage Access Framework (SAF) will break if this is disabled."
-    },
-    {
-        "id": "com.google.android.ext.shared",
-        "label": "Android Shared Library",
-        "description": "Used to share common code between apps. It's empty, so this package is useless?",
-        "removal": "delete"
-    },
-    {
         "id": "com.google.android.feedback",
         "label": "Market Feedback Agent",
         "description": "This is the package that sends crash-report feedback to the Play Store? The crash pop-up still happens with this disabled.\nDoesn't seem to run on its own.\nHas permission to access system logs and package usage stats. Only connects to 4 Google domains. App developers likely have to go through the Play Store to access any sent data.",
@@ -858,10 +848,7 @@
     {
         "id": "com.google.android.gms.location.history",
         "label": "Google Location History",
-        "description": "I'm guessing this runs in the background unless you have this setting turned off in your Google account. I have the setting turned off and I've never seen this package run.",
-        "web": [
-            "https://support.google.com/accounts/answer/3118687?hl=en"
-        ],
+        "description": "This app has nothing in the code. Only png logo google and name.",
         "removal": "delete"
     },
     {
@@ -873,6 +860,15 @@
         ],
         "removal": "delete",
         "suppress": "LabelSameAsId"
+    },
+    {
+        "id": "com.google.android.gms.supervision",
+        "label": "Family Link parental controls",
+        "description": "It has something to Family Link parental controls.\nIntroduced in android 13.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.gms.supervision"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.google.android.googlequicksearchbox",
@@ -1007,43 +1003,76 @@
         "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "label": "com.google.android.overlay.modules.cellbroadcastreceiver",
-        "dependencies": [
-            "com.google.android.cellbroadcastreceiver"
-        ],
-        "description": "Overlay (theme/notification) module for com.google.android.cellbroadcastreceiver",
-        "web": [
-            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
-        ],
-        "removal": "caution"
+        "id": "com.google.android.overlay.gmsconfig",
+		"label": "com.google.android.overlay.gmsconfig",
+        "description": "Useless configurations about webview, wifi and bluethooth to scan for better location.\neverything works without it.",
+        "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.documentsui",
-        "label": "com.google.android.overlay.modules.documentsui",
-        "description": "Files Theme pack. Guessing it's a pack of themes for the stock Android File Browser, based on the name.",
-        "web": [
-            "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
-        ],
-        "removal": "caution"
+        "id": "com.google.android.overlay.gmsconfig.asi",
+		"label": "com.google.android.overlay.gmsconfig.asi",
+        "description": "Its another component of\nAndroid System Intelligence (previously Device Personalization Services)",
+        "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.ext.services",
-        "label": "com.google.android.overlay.modules.ext.services",
-        "description": "Android System Theme pack. The package name is pretty self-explanatory.",
-        "removal": "caution"
+        "id": "com.google.android.overlay.gmsconfig.common",
+		"label": "com.google.android.overlay.gmsconfig.common",
+        "description": "Useless configurations about webview, location, lists google apps.\neverything works without it.",
+        "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.permissioncontroller",
-        "label": "com.google.android.overlay.modules.permissioncontroller",
-        "description": "Permission controller Theme pack. Guessing it's a pack of themes for the Permission Controller based on the name.",
-        "removal": "caution"
+        "id": "com.google.android.overlay.gmsconfig.comms",
+		"label": "com.google.android.overlay.gmsconfig.comms",
+        "description": "Useless configurations dialer, sms, contacts Google(GApps)\neverything works without it.",
+        "removal": "delete"
     },
     {
-        "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "label": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "description": "Android System Theme pack. Guessing it's a pack of themes for the Android system framework permission controller based on the name.",
-        "removal": "caution"
+        "id": "com.google.android.overlay.gmsconfig.geotz",
+		"label": "com.google.android.overlay.gmsconfig.geotz",
+        "description": "Provides Geolocation Time Zone detection.\nand its used by (com.google.android.overlay.gmsconfig.common)?\nNo effects after remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.gsa",
+		"label": "com.google.android.overlay.gmsconfig.gsa",
+        "description": "configures default assistant? And have config to allow disabling assist disclosure?\nI think it doesnt affect on anything.\nSafe to remove if you removed (com.google.android.googlequicksearchbox).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.personalsafety",
+		"label": "com.google.android.overlay.gmsconfig.personalsafety",
+        "description": "Not needed for (com.google.android.apps.safetyhub).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.photos",
+        "label": "com.google.android.overlay.gmsconfig.photos",
+        "description": "overlay to\nconfig_systemGallery to com.google.android.apps.photos in motorola. Useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchlauncherqs",
+        "label": "com.google.android.overlay.gmsconfig.searchlauncherqs",
+        "description": "Useless gmsconfig. Its config default launcher but not needed.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchselector",
+        "label": "com.google.android.overlay.gmsconfig.searchselector",
+        "description": "Not needed for (com.google.android.apps.setupwizard.searchselector).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.ww",
+		"label": "com.google.android.overlay.gmsconfig.ww",
+        "description": "useless unused overlay gmsconfig to family link.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.settingsProvider",
+		"label": "com.google.android.overlay.settingsProvider",
+        "description": "Have some stuff about google gms: backup.BackupTransportService.\nUseless backup things, without it backup and cloud work.\nMaybe its used for backup settings, but probably not, and if its, I don't think you need it.",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.partnersetup",
@@ -1064,12 +1093,6 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.play.games"
         ],
-        "removal": "delete"
-    },
-    {
-        "id": "com.google.android.printservice.recommendation",
-        "label": "Print Service Recommendation Service",
-        "description": "I think this has to do with recommending a printservice app you can get from the Play store. I think printing still works with this off.",
         "removal": "delete"
     },
     {
@@ -1149,6 +1172,12 @@
         ],
         "removal": "replace",
         "suggestions": "tts"
+    },
+    {
+        "id": "com.google.android.turboadapter",
+        "label": "Device Health Services Adapter",
+        "description": "Another app for Device Health Services(discontinued)",
+        "removal": "delete"
     },
     {
         "id": "com.google.android.tv.remote",
@@ -1265,6 +1294,22 @@
             "https://play.google.com/store/apps/details?id=com.google.earth"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.google.mainline.adservices",
+        "label": "com.google.mainline.adservices",
+        "description": "Adservices Train Version Package. AdServices too.\nuses ondevicepersonalization.\nIntroduced in Android 13\nNOTE: This package is a mandatory mainline module, which is also not documented. I don't trust it when it comes to adservices.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.mainline.telemetry",
+		"label": "com.google.mainline.telemetry",
+        "description": "Contains data on which versions of modules are installed. Google Play uses this data to determine if updates are available for the modules, and to show which security patch is installed.\nThis module doesn’t contain active code and has no functionality on its own.\nAnyway I wont trust it when adservices are also in mainline.",
+        "web": [
+            "https://www.xda-developers.com/android-project-mainline-modules-explanation/",
+            "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/27#note_410012436"
+        ],
+        "removal": "replace"
     },
     {
         "id": "com.google.marvin.talkback",
