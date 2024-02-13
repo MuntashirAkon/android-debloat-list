@@ -4,5 +4,12 @@
         "label": "Feeder",
         "source": "fg",
         "repo": "https://gitlab.com/spacecowboy/Feeder"
+    },
+    {
+        "id": "com.nunti",
+        "label": "Nunti",
+        "source": "f",
+        "reason": "A smart RSS reader that learns from your preferences to offer you better article suggestions",
+        "repo": "https://gitlab.com/ondrejfoltyn/nunti"
     }
 ]

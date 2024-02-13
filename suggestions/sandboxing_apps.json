@@ -4,5 +4,12 @@
         "label": "Insular",
         "source": "f",
         "repo": "https://gitlab.com/secure-system/Insular"
+    },
+    {
+        "id": "net.typeblog.shelter",
+        "label": "Shelter",
+        "source": "f",
+        "reason": "Isolate and run multiple instances of apps using Work Profiles",
+        "repo": "https://gitea.angry.im/PeterCxy/Shelter"
     }
 ]

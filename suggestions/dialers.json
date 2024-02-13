@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "com.simplemobiletools.dialer",
+        "label": "Simple Dialer",
+        "source": "fg",
+        "reason": "Manage phone calls with this simple phone dialer app with phonebook",
+        "repo": "https://github.com/SimpleMobileTools/Simple-Dialer"
+    },
+    {
+        "id": "com.chooloo.www.koler",
+        "label": "Koler",
+        "source": "f",
+        "reason": "Uniquely stylized phone app with customizable features",
+        "repo": "https://github.com/Chooloo/koler"
+    }
+]

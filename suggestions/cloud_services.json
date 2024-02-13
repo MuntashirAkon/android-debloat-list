@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "com.nextcloud.client",
+        "label": "Nextcloud",
+        "source": "fg",
+        "reason": "Can be self-hosted or hosted by third-party\nhttps://nextcloud.com/",
+        "repo": "https://github.com/nextcloud/android"
+    }
+]

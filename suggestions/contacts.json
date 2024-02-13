@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "de.ritscher.simplemobiletools.contacts.pro",
+        "label": "Simple Contacts Pro SE",
+        "source": "f",
+        "reason": "Contacts address book for managing recent contacts and vcf contact backups.\nSupports separate address fields",
+        "repo": "https://github.com/stephanritscher/Simple-Contacts"
+    },
+    {
+        "id": "com.bnyro.contacts",
+        "label": "Connect You",
+        "source": "f",
+        "reason": "Modern contacts app using Material Design 3 (You) and Jetpack Compose",
+        "repo": "https://github.com/Bnyro/ConnectYou"
+    }
+]

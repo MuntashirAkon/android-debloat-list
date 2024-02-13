@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "com.callrecorder.android",
+        "label": "Call recorder for Android",
+        "source": "f",
+        "reason": "Should work with devices running Android 4.1 (Jelly Bean) and above",
+        "repo": "https://github.com/riul88/call-recorder-for-android"
+    },
+    {
+        "id": "com.github.axet.callrecorder",
+        "label": "Call Recorder",
+        "source": "f",
+        "reason": "Call Recorder with custom recording folder",
+        "repo": "https://gitlab.com/axet/android-call-recorder"
+    }
+]

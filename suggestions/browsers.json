@@ -6,6 +6,34 @@
         "reason": "GrapheneOS only"
     },
     {
+        "id": "org.mozilla.firefox",
+        "label": "Firefox",
+        "source": "g",
+        "repo": "https://github.com/mozilla-mobile/firefox-android",
+        "reason": "The browser made by Mozilla, developed with user in mind.\nUses their homemade browser engine: GeckoView, and has a native support for extensions.\nContains telemetry bits that can be disabled in settings"
+    },
+    {
+        "id": "org.mozilla.fennec_fdroid",
+        "label": "Fennec F-Droid",
+        "source": "f",
+        "repo": "https://gitlab.com/relan/fennecbuild",
+        "reason": "The Firefox you know, but with proprietary bits and telemetry removed"
+    },
+    {
+        "id": "com.duckduckgo.mobile.android",
+        "label": "DuckDuckGo Privacy Browser",
+        "source": "fg",
+        "repo": "https://github.com/duckduckgo/Android",
+        "reason": "The browser developed by the team that made the DuckDuckGo search engine.\nOffers off-browser features like Email and App tracking protections."
+    },
+    {
+        "id": "com.brave.browser",
+        "label": "Brave Browser",
+        "source": "g",
+        "repo": "https://github.com/brave/brave-browser",
+        "reason": "The Brave Browser offers a full set of privacy tools out-of-the-box, like an ad blocker, a VPN, and an integrated TOR Browser"
+    },
+    {
         "id": "org.cromite.cromite",
         "label": "Cromite",
         "source": "f",
