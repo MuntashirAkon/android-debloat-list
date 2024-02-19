@@ -1,0 +1,8 @@
+[
+    {
+        "id": "org.videolan.vlc",
+        "label": "VLC",
+        "source": "fg",
+        "repo": "https://code.videolan.org/videolan/vlc-android"
+    }
+]
