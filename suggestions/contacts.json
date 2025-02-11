@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "com.simplemobiletools.contacts.pro",
+    "label": "Simple Contacts",
+    "reason": "Simple contacts app with the basic features plus contact photos, favorites, automatic backup, and private contacts",
+    "source": "fg",
+    "repo": "https://github.com/SimpleMobileTools/Simple-Contacts"
+  }
+]

@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "com.simplemobiletools.dialer",
+    "label": "Simple Dialer",
+    "reason": "Lightweight dialer app with all the basics plus call log import and export.",
+    "source": "fg",
+    "repo": "https://github.com/SimpleMobileTools/Simple-Dialer"
+  }
+]
