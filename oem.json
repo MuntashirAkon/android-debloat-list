@@ -26,7 +26,8 @@
     },
     {
         "id": "android.autoinstalls.config.motorola.layout",
-        "description": "Device configuration for Motorola\nAutoInstalls a set of OEM apps on device setup (first boot/factory reset).\nA layout?",
+        "label": "Device configuration",
+        "description": "AutoInstalls a set of OEM apps on device setup (first boot/factory reset).\nA layout?",
         "removal": "delete"
     },
     {
@@ -67,12 +68,14 @@
     },
     {
         "id": "cn.oneplus.opmms",
-        "description": "OPMmsLocation\nDetermines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
+        "label": "OPMmsLocation",
+        "description": "Determines your location when sending SMS/MMS?\nChina-only? (\"cn\" is China's country code)",
         "removal": "delete"
     },
     {
         "id": "cn.oneplus.photos",
-        "description": "Shot On OnePlus\nAccessible through the Wallpapers selection menu.\nProvides photos uploaded by OnePlus users, allowing you to set them as your wallpaper.\nEach day, one new photo appears within the application.",
+        "label": "Shot On OnePlus",
+        "description": "Accessible through the Wallpapers selection menu.\nProvides photos uploaded by OnePlus users, allowing you to set them as your wallpaper.\nEach day, one new photo appears within the application.",
         "removal": "delete"
     },
     {
@@ -442,157 +445,239 @@
         "removal": "delete"
     },
     {
+        "id": "com.codeaurora.fmradio",
+        "label": "FM Radio",
+        "description": "Default FM app for lenovo devices.",
+        "removal": "replace",
+        "suggestions": "radios"
+    },
+    {
         "id": "com.coloros.activation",
-        "description": "E-warranty card\nLets you check if your registered phone is still under warranty (will send your IMEI to esa-reg-eup.myoppo.com. Has a lot of permissions and run at boot\n\nPithus analysis: https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88",
+        "label": "E-warranty card",
+        "description": "Lets you check if your registered phone is still under warranty (will send your IMEI to 'esa-reg-eup.myoppo.com'). Has a lot of permissions and run at boot.",
+        "web": [
+            "https://beta.pithus.org/report/2a1dc5caedd2347fa009563e9b4d1c11b1cb42726f9046151934c456fdd77d88"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.coloros.appmanager",
-        "description": "",
+        "label": "com.coloros.appmanager",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.assistantscreen",
-        "description": "",
+        "label": "com.coloros.assistantscreen",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.backuprestore",
-        "description": "Most likely Oppo backup/restore feature \n",
-        "removal": "delete"
+        "label": "OPPO Clone Phone",
+        "description": "Oppo backup/restore tool.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.coloros.backuprestore"
+        ],
+        "removal": "replace",
+        "suggestions": "backup_apps"
     },
     {
         "id": "com.coloros.childrenspace",
-        "description": "",
+        "label": "com.coloros.childrenspace",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.cloud",
-        "description": "Oppo Cloud\n",
-        "removal": "delete"
+        "label": "Oppo Cloud",
+        "description": "Oppo cloud storage?",
+        "removal": "replace",
+        "suggestion": "cloud_services"
     },
     {
         "id": "com.coloros.compass2",
-        "description": "ColorOS default compass app\nKeep in mind that by using this app you give your location to the weather Oppo servers.\nPithus analysis: https://beta.pithus.org/report/9a965f5587fa6ee21c526612f3d72c50ef3cc53679b741260298387c44f5a3dc",
+        "label": "com.coloros.compass2",
+        "description": "ColorOS default compass app\nKeep in mind that by using this app you give your location to the weather Oppo servers.",
+        "web": [
+            "https://beta.pithus.org/report/9a965f5587fa6ee21c526612f3d72c50ef3cc53679b741260298387c44f5a3dc"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.coloros.directui",
-        "description": "",
+        "label": "com.coloros.directui",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.filemanager",
-        "description": "ColorOS File Manager\n",
-        "removal": "replace"
+        "label": "My Files",
+        "description": "OPPO's official file management app",
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.coloros.findmyphone",
-        "description": "Find my phone service\n",
-        "removal": "delete"
+        "label": "com.coloros.findmyphone",
+        "description": "Oppo find my phone service.",
+        "removal": "replace",
+        "suggestions": "locators"
     },
     {
         "id": "com.coloros.gamespace",
-        "description": "Game Space\nHub for your Games + some performance optimizations\nhttps://community.coloros.com/thread-9962-1-1.html\n",
+        "label": "Game Space",
+        "description": "Hub for your Games + some performance optimizations",
+        "web": [
+            "https://community.coloros.com/thread-9962-1-1.html"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.gamespaceui",
-        "description": "GameSpace\nGaming utility aiming at 'optimizing your gaming experience'. Has a lot of permissions. For instance, it has internet access, will scans all the apps you have on your phones (to find games), can performs Bluetooth scan and has access to the metadata of your media files (e.g the place where you took a picture).",
+        "label": "GameSpace",
+        "description": "Gaming utility aiming at 'optimizing your gaming experience'. Has a lot of permissions. For instance, it has internet access, will scans all the apps you have on your phones (to find games), can performs Bluetooth scan and has access to the metadata of your media files (e.g the place where you took a picture).",
         "removal": "delete"
     },
     {
         "id": "com.coloros.healthcheck",
-        "description": "",
+        "label": "com.coloros.healthcheck",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.mcs",
-        "description": "",
+        "label": "System Messages",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.ocrscanner",
-        "description": "ColorOS Optical character recognition scanner\n",
-        "removal": "delete"
+        "label": "com.coloros.ocrscanner",
+        "description": "ColorOS Optical character recognition scanner",
+        "removal": "replace"
     },
     {
         "id": "com.coloros.onekeylockscreen",
-        "description": "Lock your phone if you click on the app icon. Completely useless unless your physical power button is damaged.\nThis app still has the permission to list all the apps installed on the phone.\n\nPithus analysis: https://beta.pithus.org/report/ece4088357c0a47dffd96bdc46a7b535d448c1a3619d995f7032df3be6cb0a38",
+        "label": "com.coloros.onekeylockscreen",
+        "description": "Lock your phone if you click on the app icon. Completely useless unless your physical power button is damaged.\nThis app still has the permission to list all the apps installed on the phone.",
+        "web": [
+            "https://beta.pithus.org/report/ece4088357c0a47dffd96bdc46a7b535d448c1a3619d995f7032df3be6cb0a38"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.oppomultiapp",
-        "description": "",
+        "label": "com.coloros.oppomultiapp",
+        "description": "More info needed",
         "removal": "delete"
     },
     {
         "id": "com.coloros.oshare",
-        "description": "Oppo Share\nFile sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).\nWARNING: removing this app will break the functionality to share photos directly from ColorOS Photos app and break the 'share with' prompt after taking a screenshot.\n\nPithus analysis: https://beta.pithus.org/report/170f4a14be24a2e2135cd956a038aae9e2f78c845f3161b84c5545dbec03fad9",
-        "removal": "replace"
+        "label": "Oppo Share",
+        "description": "File sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).",
+        "web": [
+            "https://beta.pithus.org/report/170f4a14be24a2e2135cd956a038aae9e2f78c845f3161b84c5545dbec03fad9"
+        ],
+        "removal": "caution",
+        "warning": "Removing this app will break the functionality to share photos directly from ColorOS Photos app and break the 'share with' prompt after taking a screenshot."
     },
     {
         "id": "com.coloros.phonemanager",
-        "description": "Phone Manager\nProvides so called 'optimization tools' and various security scanning services.\nThese virus scanning services may have privacy implications.\n\nPithus analysis: https://beta.pithus.org/report/6b7d9e117ffb600b852f3785ede4f3773385fc291376e94a061bf7ed787dec48",
+        "label": "Phone Manager",
+        "description": "Provides so called 'optimization tools' and various security scanning services.\nThese virus scanning services may have privacy implications.",
+        "web": [
+            "https://beta.pithus.org/report/6b7d9e117ffb600b852f3785ede4f3773385fc291376e94a061bf7ed787dec48"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.phonenoareainquire",
-        "description": "Number Origin\n",
+        "label": "Number Origin",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.securepay",
-        "description": "Payment system from Oppo allowing you to pay with your phone\n\nPithus analysis: https://beta.pithus.org/report/65246664d3795a5ac1b402d28456903e1b3bd76176de8298b3ea96c6c592ae9a",
+        "label": "Securepay",
+        "description": "Payment system from Oppo allowing you to pay with your phone.",
+        "web": [
+            "https://beta.pithus.org/report/65246664d3795a5ac1b402d28456903e1b3bd76176de8298b3ea96c6c592ae9a"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.coloros.smartdrive",
-        "description": "",
+        "label": "SmartDrive",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.soundrecorder",
-        "description": "ColorOS Sound Recorder",
-        "removal": "replace"
+        "label": "SoundRecorder",
+        "description": "ColorOS default Sound Recorder",
+        "removal": "replace",
+        "suggestions": "audio_recorders"
     },
     {
         "id": "com.coloros.speechassist",
-        "description": "ColorOS Speech Assistant\n",
-        "removal": "delete"
+        "label": "Speech Assistant",
+        "description": "ColorOS default Speech Assistant",
+        "removal": "replace",
+        "suggestions": "tts"
     },
     {
         "id": "com.coloros.systemclone",
-        "description": "System Cloner\nCreates multiple users on device",
-        "removal": "replace"
+        "label": "System Cloner",
+        "description": "Creates multiple users on device",
+        "removal": "replace",
+        "suggestions": "sandboxing_apps"
     },
     {
         "id": "com.coloros.video",
-        "description": "Video Player\nDefault Oppo video player with too much permissions (21) for a video player! \nNote: using inbuilt screen recorder you won't be able to open the recorded video from the notification view.\n\nPithus analysis: https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "Default Oppo video player with too much permissions (21) for a video player!",
+        "web": [
+            "https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9"
+        ],
+        "removal": "replace",
+        "warning": "Using inbuilt screen recorder you won't be able to open the recorded video from the notification view.",
+        "suggestions": "video_players"
     },
     {
         "id": "com.coloros.wallet",
-        "description": "Oppo Wallet\n",
+        "label": "com.coloros.wallet",
+        "description": "Oppo default Wallet app.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.weather2",
-        "description": "ColorOS weather app. Removal seems to trigger a bootloop on some phones. You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+\nSee: https://github.com/0x192/universal-android-debloater/issues/211",
-        "removal": "caution"
+        "label": "Weather",
+        "description": "ColorOS weather app.You should try, several users removed this app without any trouble on Oppo/Realme device with Android 11+.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.coloros.weather2",
+            "https://github.com/0x192/universal-android-debloater/issues/211"
+        ],
+        "removal": "unsafe",
+        "warning": "Removal seems to trigger a bootloop on some phones.",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.coloros.widget.smallweather",
-        "description": "",
-        "removal": "delete"
+        "label": "com.coloros.widget.smallweather",
+        "description": "More info needed.",
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.coremobility.app.vnotes",
+        "label": "com.coremobility.app.vnotes",
         "description": "Voicemail App?",
         "removal": "replace"
     },
     {
         "id": "com.data.overlay.base.s600ww",
+        "label": "com.data.overlay.base.s600ww",
         "description": "Some kind of theme overlay for Nokia devices?\nSome users claim to not see any differences when removed.",
         "removal": "caution"
     },
@@ -608,22 +693,37 @@
     },
     {
         "id": "com.duokan.phone.remotecontroller",
-        "description": "Mi Remote Controller (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller)\nControl your electric appliances with your phone using Mi Remote.\n",
+        "label": "Mi Remote",
+        "description": "Control your electric appliances with your phone using Mi Remote.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.duokan.phone.remotecontroller.peel.plugin",
-        "description": "Peel Mi Remote (https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin)\nPeel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".\n",
+        "label": "Peel Mi Remote",
+        "description": "Peel Mi Remote is a TV guide extension for Xiaomi Mi Remote by \"Peel Smart Remote\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.duokan.phone.remotecontroller.peel.plugin"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.elephanttek.faceunlock",
-        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy:\nhttps://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/\nhttps://www.kaspersky.com/blog/face-unlock-insecurity/21618/\nhttps://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/",
+        "label": "com.elephanttek.faceunlock",
+        "description": "Standard FaceUnlock functionality?\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy.",
+        "web": [
+            "https://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/",
+            "https://www.kaspersky.com/blog/face-unlock-insecurity/21618/",
+            "https://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.enhance.gameservice",
-        "description": "Legacy game Optimizing Service (was replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.\n",
+        "label": "com.enhance.gameservice",
+        "description": "Legacy game Optimizing Service (was replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.",
         "removal": "delete"
     },
     {
@@ -1716,11 +1816,12 @@
     },
     {
         "id": "com.huawei.hwvoipservice",
-        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime)",
-        "removal": "delete",
+        "label": "com.huawei.hwvoipservice",
         "required_by": [
             "com.huawei.meetime"
-        ]
+        ],
+        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime)",
+        "removal": "delete"
     },
     {
         "id": "com.huawei.iaware",
@@ -1915,10 +2016,13 @@
     {
         "id": "com.kidoz.lenovo",
         "label": "Lenovo Kid's Account",
-        "description": "Partnered with https://kidoz.net/.\nProvides kids friendly relevant services based on their 'usage behaviour'.",
+        "description": "Partnered with COPPA Certified (https://cert.privo.com/#/companies/kidoz18) KIDOZ Inc.\nProvides kids friendly relevant services based on their 'usage behaviour'.\nAccording to EFF sends device model, brand, country, timezone, screen size, view events, click events, logtime of events, and a unique “KID ID information to Kidoz.",
         "web": [
             "https://beta.pithus.org/report/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa",
-            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection"
+            "https://www.virustotal.com/gui/file/af6c3674c3bdcacda3590eb657fef61c1b3b44100c7c6ae051309d5196104efa/detection",
+            "https://www.eff.org/deeplinks/2023/11/low-budget-should-not-mean-high-risk-kids-tablet-came-preloaded-sketchyware",
+            "https://www.privo.com/kidoz-case-study",
+            "https://kidoz.net/privacy-policies"
         ],
         "removal": "delete"
     },
@@ -2382,12 +2486,14 @@
     },
     {
         "id": "com.lge.sizechangable.weather",
-        "description": "Music widget\nNot sure if it only manages Music widget for the launcher or also for the lockscreen.\n\nWeather widget for the home screen.\n",
+        "label": "Music widget",
+        "description": "Not sure if it only manages Music widget for the launcher or also for the lockscreen.\nWeather widget for the home screen.",
         "removal": "delete"
     },
     {
         "id": "com.lge.sizechangable.weather.platform",
-        "description": "Weather Service\nProvide weather data for the weather app/widget.\n",
+        "label": "Weather Service",
+        "description": "Provide weather data for the weather app/widget.",
         "removal": "delete"
     },
     {
@@ -2397,8 +2503,11 @@
     },
     {
         "id": "com.lge.smartdoctor.webview",
-        "description": "Smart Doctor Webview\nREMINDER : A WebView is acomponent that allows Android apps to display content from the web directly inside an application.\n",
-        "removal": "delete"
+        "label": "Smart Doctor Webview",
+        "description": "A WebView is acomponent that allows Android apps to display content from the web directly inside an application.",
+        "removal": "replace",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
+        "suggestions": "webviews"
     },
     {
         "id": "com.lge.smartshare",
@@ -2472,12 +2581,18 @@
     },
     {
         "id": "com.lge.videoplayer",
-        "description": "LG Video Player\nNB : This is a bad one. VLC is much better.\n",
-        "removal": "delete"
+        "label": "com.lge.videoplayer",
+        "description": "LG Video Player",
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.lge.videostudio",
-        "description": "Quick Video Editor\nAllows you to create and edit video files using the videos (and photos) stored on the phone.\nhttps://www.lg.com/us/mobile-phones/VS980/Userguide/281.html\n",
+        "label": "Quick Video Editor",
+        "description": "Allows you to create and edit video files using the videos (and photos) stored on the phone.",
+        "web": [
+            "https://www.lg.com/us/mobile-phones/VS980/Userguide/281.html"
+        ],
         "removal": "delete"
     },
     {
@@ -2592,9 +2707,10 @@
     },
     {
         "id": "com.mi.webkit.core",
-        "description": "MI WebView\nXiaomi alternative to Google WebView\nREMINDER : It is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
+        "label": "MI WebView",
+        "description": "Xiaomi alternative to Google WebView\nIt is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
-        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly",
+        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
@@ -2614,12 +2730,17 @@
     },
     {
         "id": "com.mipay.wallet.in",
-        "description": "Mi Pay (https://play.google.com/store/apps/details?id=com.mipay.in.wallet)\nContactless NFC-based mobile payment system that supports credit, debit and public transportation cards in China.\nhttps://www.mi-pay.com/\n#\n.in = Mi Pay for India\n.id = My Pay for Indonesia\n",
+        "label": "Mi Pay",
+        "description": "Contactless NFC-based mobile payment system that supports credit, debit and public transportation cards in China.\nhttps://www.mi-pay.com/\n#\n.in = Mi Pay for India\n.id = My Pay for Indonesia",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mipay.in.wallet"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.miui.accessibility",
-        "description": "Mi Ditto\nAccesibility feature. Dictation (TTS) and speech output, \nmaking mobile devices more convenient for people who have difficulties using conventionally designed smartphones. \n",
+        "label": "Mi Ditto",
+        "description": "Accesibility feature. Dictation (TTS) and speech output, \nmaking mobile devices more convenient for people who have difficulties using conventionally designed smartphones.",
         "removal": "delete"
     },
     {
@@ -2778,7 +2899,7 @@
         "web": [
             "https://web.archive.org/web/20220926221620/https://libreddit.spike.codes/r/Xiaomi/comments/o6vk5z/miui_12125_and_android_11_gestures/"
         ],
-        "removal": "replace",
+        "removal": "unsafe",
         "warning": "If you remove this package on devices based on MIUI 12+ with Android 11+, you will loose navigation gestures and recent apps view EVEN with a 3rd party launcher...\nMake sure you've installed another launcher before you disable",
         "suggestions": "launchers"
     },
@@ -2849,7 +2970,8 @@
     },
     {
         "id": "com.miui.nextpay",
-        "description": "Next Pay \n???\n",
+        "label": "Next Pay",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
@@ -2994,13 +3116,20 @@
     },
     {
         "id": "com.miui.weather2",
-        "description": "Mi Weather app\n",
-        "removal": "delete"
+        "label": "Weather",
+        "description": "Weather app By Xiaomi.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.miui.weather2"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.miui.wmsvc",
-        "description": "WMService\nRuns at boot, has access to internet + GPS\nI quickly looked at the decompiled code and saw some unsanitized SQL inputs, which is BAD! (vulnerable to SQL injection)\nTries to get your android unique Google advertising ID from Google Play Services.\nFeeds and launches the spying/analytics app \"com.miui.hybrid\".\nDoesn't seem to do anything important, only tracking.\nWARNING: Some people said removing this package causes bootloop, others said it doesn't. Can someone check this? I think it should be okay to remove if you remove all other dependent Xiaomi packages(bloat).",
-        "removal": "replace"
+        "label": "WMService",
+        "description": "Runs at boot, has access to internet + GPS\nI quickly looked at the decompiled code and saw some unsanitized SQL inputs, which is BAD! (vulnerable to SQL injection)\nTries to get your android unique Google advertising ID from Google Play Services.\nFeeds and launches the spying/analytics app \"com.miui.hybrid\".\nDoesn't seem to do anything important, only tracking.",
+        "removal": "unsafe",
+        "warning": "Some people said removing this package causes bootloop, others said it doesn't. Can someone check this? I think it should be okay to remove if you remove all other dependent Xiaomi packages(bloat)."
     },
     {
         "id": "com.miui.yellowpage",
@@ -3039,32 +3168,102 @@
     },
     {
         "id": "com.motorola.actions",
-        "description": "Moto Actions (https://play.google.com/store/apps/details?id=com.motorola.actions)\nAllows you to perform specific gestures to perform certain tasks. Frontend to change settings provided by \"com.motorola.moto\".\n",
+        "label": "Moto Actions & Gestures",
+        "description": "Allows you to perform specific gestures to perform certain tasks. Frontend to change settings provided by \"com.motorola.moto\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.actions",
+            "https://beta.pithus.org/report/5c26c2865ec9692efba4377598f8130c25f66706901144f49438230a11590f01"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.actions.overlay",
+        "label": "com.motorola.actions.overlay",
+        "description": "Overlay package for \"com.motorola.actions\".",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.aiservices",
+        "label": "Moto AI Services",
+        "description": "Service to supply artificial intelligence models to Motorola apps. Not sure where the AI services are integrated.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.aiservices",
+            "https://beta.pithus.org/report/effeb339cfeb3d8fcbf2023b6ccdec77e012d9417ee0579cf998bcb090741362"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.fmradio",
-        "description": "FMRadioService \nRequired by \"com.motorola.fmplayer\"\n",
+        "label": "FMRadioService",
+        "dependencies": [
+            "com.motorola.fmplayer"
+        ],
+        "description": "Required for Motorola FM Radio",
         "removal": "delete"
     },
     {
+        "id": "com.motorola.android.fota",
+        "label": "Software update",
+        "description": "Required for OTA updates which are ssential part of keeping your device secure and up to date with regular security patchs.\nFOTA = firmware over the air",
+        "removal": "caution",
+        "warning": "Breaks OTA updates"
+    },
+    {
         "id": "com.motorola.android.jvtcmd",
-        "description": "Java Tcmd Helper\ntcmd = commandes types. Seems to be a tools wich help find Java commands types.\nUseless for normal user.\n",
+        "label": "Java Tcmd Helper",
+        "description": "Seems to be a tools wich help find Java commands types.\ntcmd = commandes types",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.nativedropboxagent",
-        "description": "Native DropBox Agent.\nIt is not related to Cloud Dropbox company but to Android logging. It is used during development.\nhttps://stackoverflow.com/questions/4434192/dropboxmanager-use-cases\n",
+        "label": "NativeDropBoxAgent",
+        "description": "It is not related to Cloud Dropbox company but to Android logging. It is used during development.",
+        "web": [
+            "https://stackoverflow.com/questions/4434192/dropboxmanager-use-cases",
+            "https://beta.pithus.org/report/b7376e9ca607e856c9b39eb93e5aa420dab7f32424b61c5325f55faa03d2a97f"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.android.overlay.payjoy",
+        "label": "com.motorola.android.overlay.payjoy",
+        "description": "Overlay for 'com.payjoy.access'",
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.providers.chromehomepage",
-        "description": "Seems to provide the \"Home\"-button functionality in Chrome.\nhttps://forum.xda-developers.com/android/apps-games/app-chrome-homepage-t3695804",
+        "label": "com.motorola.android.providers.chromehomepage",
+        "description": "Seems to provide the \"Home\"-button functionality in Chrome.",
+        "web": [
+            "https://forum.xda-developers.com/android/apps-games/app-chrome-homepage-t3695804"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.android.providers.settings",
+        "label": "Settings storage",
+        "description": "Seems to required for device settings.",
+        "removal": "unsafe",
+        "warning": "Some of the device settings will crash continuously."
+    },
+    {
+        "id": "com.motorola.android.providers.settings.auto_generated_rro_product__",
+        "label": "com.motorola.android.providers.settings.auto_generated_rro_product__",
+        "description": "RRO = runtime resource overlay.\nUsed for various system settings customizations.",
+        "web": [
+            "https://www.phonecheck.com/blog/what-is-android-auto-generated-rro",
+            "https://beta.pithus.org/report/ecc311a58af6143697c69fba7d1387892f778386db96303ddf518411a7f41598"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.android.provisioning",
-        "description": "OMA Client Provisioning\nIt is a protocol specified by the Open Mobile Alliance (OMA).\nIt is used by carrier to send \"configuration SMS\" which can setup network settings (such as APN).\nIn my case, it was automatic and I never needed configuration messages. I'm pretty sure that in France this package is useless.\nMaybe it's useful if carriers change their APN... but you still can change it manually, it's not difficult.\n#\nNote : These special \"confirguration SMS\" can be abused : \nhttps://www.zdnet.fr/actualites/les-smartphones-samsung-huawei-lg-et-sony-vulnerables-a-des-attaques-par-provisioning-39890045.htm\nhttps://www.csoonline.com/article/3435729/sms-based-provisioning-messages-enable-advanced-phishing-on-android-phones.html\n",
+        "label": "OMA client provisioning",
+        "description": "It is a protocol specified by the Open Mobile Alliance (OMA).\nIt is used by carrier to send \"configuration SMS\" which can setup network settings (such as APN).\nIn my case, it was automatic and I never needed configuration messages. I'm pretty sure that in France this package is useless.\nMaybe it's useful if carriers change their APN... but you still can change it manually, it's not difficult.\nNote : These special \"confirguration SMS\" can be abused.",
+        "web": [
+            "https://www.zdnet.fr/actualites/les-smartphones-samsung-huawei-lg-et-sony-vulnerables-a-des-attaques-par-provisioning-39890045.html",
+            "https://www.csoonline.com/article/3435729/sms-based-provisioning-messages-enable-advanced-phishing-on-android-phones.html"
+        ],
         "removal": "replace"
     },
     {
@@ -3074,38 +3273,93 @@
     },
     {
         "id": "com.motorola.android.settings.modemdebug",
-        "description": "Provide modem debug settings menu ?\nNo longer in Android 10 image\n",
+        "description": "Provide modem debug settings menu ?\nNo longer in Android 10 image",
         "removal": "delete"
     },
     {
         "id": "com.motorola.appdirectedsmsproxy",
-        "description": "An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port. \nApps need to listen to this port to get the SMS message.\nI don't know if this package allows port directed SMS or if it just provide a proxy feature.\n",
+        "label": "Motorola Message Service",
+        "description": "An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port.\nApps need to listen to this port to get the SMS message.\nI don't know if this package allows port directed SMS or if it just provide a proxy feature.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.appforecast",
+        "label": "Performance",
+        "description": "Seems to be always running in background.Not sure what it does.",
+        "web": [
+            "https://beta.pithus.org/report/54ae099575a10e12e59064e2999373332b0b6d2eb76b56964697f87700db1dbb"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.bach.modemstats",
-        "description": "ModemStatsService\nStatistics and events logs from the modem activity.\n",
-        "removal": "delete"
+        "label": "Modem Service",
+        "description": "Statistics and events logs from the modem activity.\nResponsible for opening the network services on your Verizon phone.",
+        "web": [
+            "https://internet-access-guide.com/what-is-motorola-modem-service/"
+        ],
+        "removal": "caution",
+        "warning": "It will adversely influence the data usage and connectivity if disabled."
     },
     {
         "id": "com.motorola.brapps",
-        "description": "Motorola App Box (https://play.google.com/store/apps/details?id=com.motorola.brapps)\nOffers you a selection of applications developed by Brazilians and also apps selected for you.\n",
-        "removal": "delete"
+        "label": "App Box",
+        "description": "Offers you a selection of applications developed by Brazilians and also apps selected for you.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.brapps",
+            "https://beta.pithus.org/report/842d17e1944d748a7813ee8deb072224fd0665cf6c0504a0d90e46568d4c444d"
+        ],
+        "removal": "replace",
+        "suggestions": "app_stores"
     },
     {
         "id": "com.motorola.bug2go",
-        "description": "Bugs reporting app that sends info about crash report.\n",
+        "label": "com.motorola.bug2go",
+        "description": "Bugs reporting app that sends info about various crash reports and logs.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.callredirectionservice",
-        "description": "Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it (when someone call.\nSee https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/140542\nhttps://en.wikipedia.org/wiki/Call_forwarding\n",
+        "label": "com.motorola.callredirectionservice",
+        "description": "Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it.",
+        "web": [
+            "https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/140542",
+            "https://en.wikipedia.org/wiki/Call_forwarding"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.camera2",
-        "description": "Moto Camera 2 (https://play.google.com/store/apps/details?id=com.motorola.camera)\n",
-        "removal": "replace"
+        "label": "Moto Camera 2",
+        "description": "Moto camera 2 is optimized for Moto devices and integrated with Google Photos.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera2"
+        ],
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
+        "id": "com.motorola.camera3",
+        "label": "Moto Camera 3",
+        "description": "Moto redesigned camera only compatible with select devices launched in 2020 and beyond.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera3"
+        ],
+        "removal": "replace",
+        "suggestions": "cameras"
+    },
+    {
+        "id": "com.motorola.camera3.content.ai",
+        "label": "Moto Camera Content 3",
+        "dependencies": [
+            "com.motorola.camera3"
+        ],
+        "description": "Provides AI related features to 'com.motorola.camera3'",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.camera3.content.ai",
+            "https://beta.pithus.org/report/0b0a4e3d19819faf9f7448817b88172b33d83973334b2ba5fd99a814aae5575b"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.motorola.carriersettingsext",
@@ -3114,23 +3368,35 @@
     },
     {
         "id": "com.motorola.ccc.devicemanagement",
-        "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure \nyour device is secure, know where it is, and remotely erase your data if the phone is stolen.\nYou should NEVER install a MDM tool on your phone. Never.\nhttps://onezero.medium.com/dont-put-your-work-email-on-your-personal-phone-ef7fef956c2f\nhttps://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/\n",
+        "label": "Device Management",
+        "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure your device is secure, know where it is, and remotely erase your data if the phone is stolen.",
+        "web": [
+            "https://onezero.medium.com/dont-put-your-work-email-on-your-personal-phone-ef7fef956c2f",
+            "https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.mainplm",
-        "description": "plm = Product Lifecycle Management ? No noticeable consequences after removal\n",
+        "label": "Motorola Services Main",
+        "description": "plm = Product Lifecycle Management ? No noticeable consequences after removal",
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.notification",
-        "description": "Motorola Notifications (https://play.google.com/store/apps/details?id=com.motorola.ccc.notification)\nIf you opt-in, it sends periodic product-related information, including notifications on software updates, tips & tricks, survey and information\nabout new Motorola products and services.\n",
+        "label": "Motorola Notifications",
+        "description": "If you opt-in, it sends periodic product-related information, including notifications on software updates, tips & tricks, survey and information about new Motorola products and services.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.ccc.notification"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.ccc.ota",
-        "description": "Motorola Update Services\nProvide OTA system updates.\nOTA (Over-The-Air) updates allow manufacturers to remotely install new software updates, features and services.\n",
-        "removal": "caution"
+        "label": "Motorola software update",
+        "description": "Provide OTA system updates.\nOTA (Over-The-Air) updates allow manufacturers to remotely install new software updates, features and services.",
+        "removal": "caution",
+        "warning": "Breaks OTA updates"
     },
     {
         "id": "com.motorola.comcast.settings.extensions",
@@ -3139,98 +3405,215 @@
     },
     {
         "id": "com.motorola.comcastext",
-        "description": "See above. Provides special (useless) features from Comcast? App title is \"Activation\". Safe to remove (tested only on non-Comcast phone).\n",
+        "label": "Activation",
+        "description": "See above. Provides special features from Comcast? Probably safe to remove (tested only on non-Comcast phone).",
         "removal": "delete"
     },
     {
         "id": "com.motorola.config.wifi",
-        "description": "Appears safe to remove.\nWPA config App\nWi-Fi not affected after removal.\n",
+        "label": "com.motorola.config.wifi",
+        "description": "Appears safe to remove.\nWPA config App\nWi-Fi not affected after removal.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.contacts.preloadcontacts",
-        "description": "Preloaded Contacts\nProvides contacts preset by carriers.\n",
+        "label": "Preloaded Contacts Loader",
+        "description": "Provides contacts preset by carriers.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.coresettingsext",
-        "description": "Core Settings extension\nSafe to remove (no bootloop) but its usefulness remains unkown.\n",
+        "label": "Core Settings extension",
+        "description": "Its usefulness remains unkown.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.dciservice",
+        "label": "Moto DCI Service",
+        "description": "Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.demo",
-        "description": "Moto Demo Mode\nEnable retail demonstration mode.\nhttps://source.android.com/devices/tech/display/retail-mode\n",
+        "label": "Demo mode",
+        "description": "Enable retail demonstration mode.",
+        "web": [
+            "https://source.android.com/devices/tech/display/retail-mode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.demo.env",
-        "description": "Needed for Moto Demo Mode\nenv = environment\n",
+        "label": "com.motorola.demo.env",
+        "description": "Needed for Moto Demo Mode\nenv = environment",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.discovery",
+        "label": "Moto Discovery",
+        "description": "Not sure what it does",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.dolby.dolbyui",
+        "label": "Dolby Atmos",
+        "description": "Dolby helps you rich and engaging sound.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.dynamicvolume",
+        "label": "Adaptive volume",
+        "description": "Used to control the Multi-Volume feature, where apps can have their own volume level set. It can also automatically mute apps that you always mute manually.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.easyprefix",
-        "description": "Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)\nAuto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\n\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire)",
+        "label": "Easy Prefix",
+        "description": "Auto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.easyprefix"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.email",
-        "description": "Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)\nAuto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\n\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire)\n\nMoto Email (https://play.google.com/store/apps/details?id=com.motorola.email)\n",
+        "description": "Auto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.email"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.enterprise.service",
+        "label": "Moto Thinkshield-MM",
+        "description": "Provides various security to Moto devices. More info needed.",
+        "web": [
+            "https://www.motorola.com/business/thinkshield/",
+            "https://beta.pithus.org/report/db140841cffe28643367bd1d595c885a02852d06136086b0ffc41aab79db5ff0"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.entitlement",
-        "description": "Enable WiFi tethering/hotspot functionality. \nWhat you can do is preventing the phone from notifying the carrier about when you use hotspot. It will bypass mobile carriers tethering restrictions.\nFrom an ADB shell : settings put global tether_dun_required 0\n",
+        "label": "Entitlement",
+        "description": "Enable WiFi tethering/hotspot functionality.\nWhat you can do is preventing the phone from notifying the carrier about when you use hotspot. It will bypass mobile carriers tethering restrictions.\nFrom an ADB shell : settings put global tether_dun_required 0",
         "removal": "caution"
     },
     {
         "id": "com.motorola.faceunlock",
-        "description": "Moto Face Unlock (https://play.google.com/store/apps/details?id=com.motorola.faceunlock)\nUnlock your device by simply looking at the display.\nFace unlock is bad for security and privacy:\nhttps://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/\nhttps://www.kaspersky.com/blog/face-unlock-insecurity/21618/\nhttps://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/",
+        "label": "Moto Face Unlock",
+        "description": "Unlock your device by simply looking at the display.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.faceunlock",
+            "https://www.ubergizmo.com/2017/03/galaxy-s8-facial-unlock-photograph/",
+            "https://www.kaspersky.com/blog/face-unlock-insecurity/21618/",
+            "https://www.freecodecamp.org/news/why-you-should-never-unlock-your-phone-with-your-face-79c07772a28/"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.motorola.faceunlocktrustagent",
-        "description": "Motorola Face Unlock Agent\nTrust agent is a service that notifies the system about whether it believes the environment of the device is trusted.\nThe meaning of 'trusted' is up to the trust agent to define.\nThe system lockscreen listens for trust events, it can change its behaviour based on the trust state of the current user (e.g detection of a trusted face)\nhttps://nelenkov.blogspot.com/2014/12/dissecting-lollipops-smart-lock.html",
+        "label": "Motorola Face Unlock Agent",
+        "description": "Trust agent is a service that notifies the system about whether it believes the environment of the device is trusted.\nThe meaning of 'trusted' is up to the trust agent to define.\nThe system lockscreen listens for trust events, it can change its behaviour based on the trust state of the current user (e.g detection of a trusted face)",
+        "web": [
+            "https://nelenkov.blogspot.com/2014/12/dissecting-lollipops-smart-lock.html"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.motorola.fmplayer",
-        "description": "FM Radio (https://play.google.com/store/apps/details?id=com.motorola.fmplayer)\nRadio app\n",
-        "removal": "delete"
+        "label": "FM Radio",
+        "required_by": [
+            "com.motorola.android.fmradio"
+        ],
+        "description": "FM Radio for Motorola devices",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.fmplayer",
+            "https://beta.pithus.org/report/0113cb712cc43c94f904601120c9100640a65b3043a41b7efe63b340bdae4995"
+        ],
+        "removal": "replace",
+        "suggestions": "radios"
     },
     {
         "id": "com.motorola.frameworks.singlehand",
-        "description": "Provide the Single/One hand mode\nI don't know why frameworks appears in the package name because it's not only the framework.\nhttps://support.motorola.com/us/en/documents/MS116403/\n",
+        "label": "com.motorola.frameworks.singlehand",
+        "description": "Provide the Single/One hand mode\nI don't know why frameworks appears in the package name because it's not only the framework.",
+        "web": [
+            "https://support.motorola.com/us/en/documents/MS116403/"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.gamemode",
+        "label": "Moto Gametime",
+        "description": "Find your downloaded games here and discover new games.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.gamemode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.genie",
-        "description": "Device Help (previously Moto Help) (https://play.google.com/store/apps/details?id=com.motorola.genie)\nAn app that checks hardware status and gives the user contacts for support.\n",
+        "label": "Device Help",
+        "description": "Previously Moto Help\nAn app that checks hardware status and gives the user contacts for support.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.genie"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.gesture",
-        "description": "Gesture navigation tutorial added in Android 10.\n",
+        "label": "Gesture navigation tutorial",
+        "description": "Gesture navigation tutorial added in Android 10.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.help",
-        "description": "Moto feedback (https://play.google.com/store/apps/details?id=com.motorola.help)\nLets you rate your device and share feedback with Motorola.\n",
+        "label": "Moto feedback",
+        "description": "Lets you rate your device and share feedback with Motorola.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.help"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.help.extlog",
+        "label": "Extended Log",
+        "description": "Not sure what it does",
         "removal": "delete"
     },
     {
         "id": "com.motorola.hiddenmenuapp",
-        "description": "Added in Android 10. Safe to remove.\n",
+        "label": "HiddenMenu",
+        "description": "Added in Android 10. Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.imagertuning_lake",
-        "description": "Imager Tuning (https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene)\nNaming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
+        "label": "Imager Tuning",
+        "description": "Naming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene"
+        ],
         "removal": "replace"
     },
     {
+        "id": "com.motorola.imagertuning_V2",
+        "label": "Camera Tuner",
+        "description": "Applies improvements to the camera hardware so that any app that uses the camera will be improved.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_V2"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.invisiblenet",
-        "description": "Invisible net\nHard to find info about this one. I only found something from a patent: http://www.freepatentsonline.com/5469497.html\nIt's a Google patent and Google owned Motorola so maybe it is that's it.\nIt seems to implement the ICMS local area network. ICMS means Interactive Call Management Subsystems. Couldn't find more info about ICMS. It's strange that this is so badly documented.",
-        "removal": "replace"
+        "label": "Invisible Net",
+        "description": "Hard to find info about this one. I only found something from a patent: http://www.freepatentsonline.com/5469497.html\nIt's a Google patent and Google owned Motorola so maybe it is that's it.\nIt seems to implement the ICMS local area network. ICMS means Interactive Call Management Subsystems. Couldn't find more info about ICMS. It's strange that this is so badly documented.",
+        "web": [
+            "https://beta.pithus.org/report/233f65c9c8935eb7b970512e5a427149ba21ff6ea9f694c7f79d197797a14214"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.motorola.launcher.secondarydisplay",
@@ -3239,17 +3622,44 @@
     },
     {
         "id": "com.motorola.launcher3",
-        "description": "Motorola system launcher\nA default home screen app, provides a layout and display for app icons and listing.\nWARNING: Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher).",
-        "removal": "caution"
+        "description": "Motorola system launcher\nA default home screen app, provides a layout and display for app icons and listing.",
+        "removal": "unsafe",
+        "warning": "Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher)."
     },
     {
         "id": "com.motorola.launcherconfig",
-        "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?\nDON'T REMOVE THIS IF YOU DIDN'T INSTALL ANOTHER LAUNCHER!\n",
-        "removal": "replace"
+        "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?",
+        "removal": "replace",
+        "warning": "Don't remove this, unless you install another launcher.",
+        "suggestions": "launchers"
     },
     {
         "id": "com.motorola.lifetimedata",
         "description": "Not 100% sure but it's most likely the Total Call Timer or more generally it handles info like the date of manufacture of your device,\nusage time since first boot etc... \nTotal Call Timer gives you the time you spent calling.\nI don't know how to access to these info. It's surely a hidden menu (and may be accessible through the dialer with a special code)\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3",
+        "label": "Interactive wallpapers",
+        "description": "Live wallpapers from Moto",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.livewallpaper3"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.mobiledesktop.core",
+        "label": "Ready For engine",
+        "description": "Let's you connect-control-view on android TV and PC.",
+        "web": [
+            "https://www.motorola.in/ready-for/"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.motcameradesktop",
+        "label": "Camera Desktop Settings",
+        "description": "Video call effects for moto camera",
         "removal": "delete"
     },
     {
@@ -3273,8 +3683,25 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.motointelligence",
+        "label": "Moto Intelligence",
+        "description": "Not sure what it does",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.motointelligence.overlay",
+        "label": "com.motorola.motointelligence.overlay",
+        "description": "Overlay for 'com.motorola.motointelligence'",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.motodisplay",
-        "description": "Moto Display (https://play.google.com/store/apps/details?id=com.motorola.motodisplay)\nDisplays notifications with the screen off (like the Always On Display feature from other OEMs)\nhttps://support.motorola.com/uk/en/solution/ms108519",
+        "label": "Moto Display",
+        "description": "Displays notifications with the screen off (like the Always On Display feature from other OEMs)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.motodisplay",
+            "https://support.motorola.com/uk/en/solution/ms108519"
+        ],
         "removal": "delete"
     },
     {
@@ -3283,8 +3710,23 @@
         "removal": "replace"
     },
     {
+        "id": "com.motorola.mototour",
+        "label": "Moto Tour",
+        "description": "Helps you learn about essential Moto features and customizations.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.mototour"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.msimsettings",
+        "label": "Dual SIM settings",
+        "description": "I'm guessing it helps you regarding your dual SIM management.",
+        "removal": "caution"
+    },
+    {
         "id": "com.motorola.nfc",
-        "description": "Support for NFC protocol.\n",
+        "description": "Support for NFC protocol.",
         "removal": "replace"
     },
     {
@@ -3298,13 +3740,29 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.personalize",
+        "label": "Personalise",
+        "description": "Helps you personalise your themes, icons, fonts, sounds etc...",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.pgmsystem2",
         "description": "Appears safe to remove\nPGM System\nI didn't find info about this package. \nFor Me PGM = Peak Gate Power (for MOSFET transistor) but I'm not convinced it has this meaning here.\n",
         "removal": "delete"
     },
     {
+        "id": "com.motorola.photoeditor",
+        "label": "Moto Photo Editor",
+        "description": "On Motorola phones that feature Cutout mode, you can replace the background of your photos and resize & move selected portions.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.photoeditor"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.programmenu",
-        "description": "Programming Menu\nHidden menu (accessible by typing  ##7764726 in the dialer) providing additionnal features for developers.\n",
+        "label": "Programming Menu",
+        "description": "Hidden menu (accessible by typing  ##7764726 in the dialer) providing additionnal features for developers.",
         "removal": "delete"
     },
     {
@@ -3313,57 +3771,93 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.screenshoteditor",
+        "label": "Screenshot editor",
+        "description": "Moto default screenshot app that supports longer screenshots & gif.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.screenshoteditor"
+        ],
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.settings",
+        "label": "System update",
+        "description": "Exactly not sure what it does.",
+        "removal": "caution"
+    },
+    {
         "id": "com.motorola.setup",
-        "description": "Related to Motorola Account setup (only during first boot ?)\nSafe to remove according to xda users.\n",
+        "label": "Setup",
+        "description": "Related to Motorola Account setup (only during first boot?)\nSafe to remove according to xda users.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.slpc_sys",
-        "description": "Motorola Slpc System\nWould be weird if it's not related to Motorola Modality Services (https://play.google.com/store/apps/details?id=com.motorola.slpc)\nHelps your Motorola phone respond more intelligently to motion, phone orientation (e.g. face up/down) and stowed state (e.g in/out-of-pocket).\nHas a noticeable impact on battery ? (https://forum.xda-developers.com/moto-x-2014/help/location-modality-services-battery-t2982752)\nFYI : It uses location services.\n",
+        "label": "Motorola Slpc System",
+        "description": "Would be weird if it's not related to Motorola Modality Services (https://play.google.com/store/apps/details?id=com.motorola.slpc)\nHelps your Motorola phone respond more intelligently to motion, phone orientation (e.g. face up/down) and stowed state (e.g in/out-of-pocket).\nHas a noticeable impact on battery?\nFYI : It uses location services.",
+        "web": [
+            "https://forum.xda-developers.com/moto-x-2014/help/location-modality-services-battery-t2982752"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.motorola.systemserver",
-        "description": "Appears safe to remove. Maybe it's only needed for Motorola apps?\n",
+        "label": "com.motorola.systemserver",
+        "description": "Appears safe to remove. Maybe it's only needed for Motorola apps?",
         "removal": "delete"
     },
     {
         "id": "com.motorola.timeweatherwidget",
-        "description": "Provides time/weather widget on the home screen.\nhttps://en.wikipedia.org/wiki/Widget\n",
+        "label": "com.motorola.timeweatherwidget",
+        "description": "Provides time/weather widget on the home screen.",
         "removal": "delete"
     },
     {
         "id": "com.mygalaxy",
-        "description": "My Galaxy (https://play.google.com/store/apps/details?id=com.mygalaxy)\nEntertainment hub and life-services application.\nLets you access videos, music and gaming and gives quick access to services such as cabs, movies, recharge, bill payment, food ordering, travel, hyper local deals and Samsung Care, among others.",
+        "label": "My Galaxy",
+        "description": "Entertainment hub and life-services application.\nLets you access videos, music and gaming and gives quick access to services such as cabs, movies, recharge, bill payment, food ordering, travel, hyper local deals and Samsung Care, among others.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.mygalaxy"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.nearme.atlas",
-        "description": "Secure payment\n",
+        "label": "Secure payment",
+        "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.nearme.browser",
-        "description": "Default web browser\n",
-        "removal": "delete"
+        "label": "com.nearme.browser",
+        "description": "Default web browser",
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.nearme.deamon",
-        "description": "Package needed by com.nearme.statistics.rom to run service in background at every boot even though the app has been uninstalled",
-        "removal": "delete",
         "required_by": [
             "com.nearme.statistics.rom"
-        ]
+        ],
+        "description": "Package needed by com.nearme.statistics.rom to run service in background at every boot even though the app has been uninstalled",
+        "removal": "delete"
     },
     {
         "id": "com.nearme.instant.platform",
-        "description": "",
+        "label": "com.nearme.instant.platform",
+        "description": "Not sure what it does.",
         "removal": "delete"
     },
     {
         "id": "com.nearme.statistics.rom",
-        "description": "User Experience Program\n Collect user data and sends them to Oppo. Intrusive and starts at boot\nSee https://support.oppo.com/uk/answer/?aid=neu105\n\nNote: removing it may break the search feature in the settings on some ColorOS versions.\n\nPithus analysis: https://beta.pithus.org/report/5e06191ac6f8aefd39642f6341ee4897039815f5059dbe093a7bd2fe1e20c038",
-        "removal": "delete"
+        "label": "User Experience Program",
+        "description": "Collect user data and sends them to Oppo. Intrusive and starts at boot.",
+        "web": [
+            "https://support.oppo.com/uk/answer/?aid=neu105",
+            "https://beta.pithus.org/report/5e06191ac6f8aefd39642f6341ee4897039815f5059dbe093a7bd2fe1e20c038"
+        ],
+        "removal": "caution",
+        "warning": "Removing it may break the search feature in the settings on some ColorOS versions."
     },
     {
         "id": "com.nearme.themestore",
@@ -3486,18 +3980,23 @@
     },
     {
         "id": "com.oneplus.brickmode",
-        "description": "OnePlus Zen Mode (https://play.google.com/store/apps/details?id=com.oneplus.brickmode)\nZen Mode helps you put down your phone and enjoy your life.\nIn Zen Mode you will only be able to take photos and answer calls.",
+        "label": "OnePlus Zen Mode",
+        "description": "Zen Mode helps you put down your phone and enjoy your life.\nIn Zen Mode you will only be able to take photos and answer calls.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.oneplus.brickmode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.oneplus.bttestmode",
-        "description": "OnePlus Bluetooth test mode\nType *#*#232339#*#* in the OnePlus dialer to access this hidden test menu.\n",
+        "label": "OnePlus Bluetooth test mode",
+        "description": "Type *#*#232339#*#* in the OnePlus dialer to access this hidden test menu.",
         "removal": "delete"
     },
     {
         "id": "com.oneplus.calculator",
         "label": "Calculator",
-        "description": "Stock Oneplus Calculator app.\n",
+        "description": "Stock Oneplus Calculator app.",
         "removal": "replace",
         "suggestions": "calculators"
     },
@@ -3549,7 +4048,11 @@
     },
     {
         "id": "com.oneplus.chargingpilar",
-        "description": "Geolocates the phone to find OnePlus charging stations nearby. Connects to 'gateway.oneplus.net'\n\nPithus analysis: https://beta.pithus.org/report/8c157eeec2931d3d1140aa8c452d7afa570e04c9d51e6cd5987dbb3ec43df4f9",
+        "label": "Nearby Charging Stations",
+        "description": "Geolocates the phone to find OnePlus charging stations nearby. Connects to 'gateway.oneplus.net'.",
+        "web": [
+            "https://beta.pithus.org/report/8c157eeec2931d3d1140aa8c452d7afa570e04c9d51e6cd5987dbb3ec43df4f9"
+        ],
         "removal": "delete"
     },
     {
@@ -4061,7 +4564,7 @@
         "web": [
             "https://beta.pithus.org/report/f55e935357865f4647e59c98afb5a3a46aba22a48844d80d2819d122781e3fde"
         ],
-        "removal": "delete",
+        "removal": "caution",
         "warning": "Removing this package prevents the OnePlus Game Center to detect games."
     },
     {
@@ -4128,11 +4631,11 @@
         "id": "com.oplus.safecenter",
         "label": "Security center",
         "description": "Enhances privacy features on Oneplus/Oppo devices",
-        "warning": "Breaks app lock feature when disabled/deleted, all other features work",
         "web": [
             "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
         ],
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Breaks app lock feature when disabled/deleted, all other features work"
     },
     {
         "id": "com.oplus.screenshot",
@@ -4206,7 +4709,7 @@
     {
         "id": "com.oppo.music",
         "label": "Music",
-        "description": "Oppo Music app\n",
+        "description": "Oppo Music app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.oppo.music"
         ],
@@ -4250,14 +4753,22 @@
     },
     {
         "id": "com.oppo.webview",
-        "description": "Oppo Webview\nA WebView is a system component for the Android operating system (OS) that allows Android apps to display content \nfrom the web directly inside an application. It's based on Chrome.\nWARNING: Make to have another Webview before uninstalling it or some apps may not work properly\nOn open-source privacy oriented Webview is Bromite (https://www.bromite.org/system_web_view)\n",
+        "label": "Oppo Webview",
+        "description": "A WebView is a system component for the Android operating system (OS) that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
+        "warning": "Make to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
         "id": "com.osp.app.signin",
         "description": "Samsung Account app\nLots of trackers in this app.\nHas a huge list of permissions. It is an essential app for a lot of samsung apps (which will be removed with the default selection in this list)\nSettings apps will crash if removed on Android 11/OneUI 3.0 (https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/39)\nThis issue happens only if you are running Android 11. If not, you can can (and should) remove this package!\n",
         "removal": "caution"
+    },
+    {
+        "id": "com.payjoy.access",
+        "labrl": "PayJoy Access",
+        "description": "Access is PayJoy's firmware product which OEMs optionally use to enable automatic setup (“provisioning”) and device management to enable PayJoy's Lock to work “out of the box” to minimize the number of steps for the user and store clerk to get started.",
+        "removal": "delete"
     },
     {
         "id": "com.policydm",
@@ -4433,8 +4944,10 @@
     },
     {
         "id": "com.samsung.android.app.dressroom",
-        "description": "Samsung Wallpapers\nWallaper manager. Needed to pick up a wallpaper on Android 10+.\nHas INTERNET permission and ACCESS_MEDIA_LOCATION\nBefore Android 10, you should still be able to set a wallpaper from the Samsung gallery without this package.\nWARNING: Removing this app will prevent you to set a new wallpaper on Android 10+ (even from the Gallery) or changing the Material You palette on Android 12+.",
-        "removal": "replace"
+        "label": "Samsung Wallpapers",
+        "description": "Wallaper manager. Needed to pick up a wallpaper on Android 10+.\nHas INTERNET permission and ACCESS_MEDIA_LOCATION\nBefore Android 10, you should still be able to set a wallpaper from the Samsung gallery without this package.",
+        "removal": "unsafe",
+        "warning": "Removing this app will prevent you to set a new wallpaper on Android 10+ (even from the Gallery) or changing the Material You palette on Android 12+."
     },
     {
         "id": "com.samsung.android.app.episodes",
@@ -4856,17 +5369,21 @@
     },
     {
         "id": "com.samsung.android.homemode",
-        "description": "Daily Board (https://play.google.com/store/apps/details?id=com.samsung.android.homemode)\nShow a slideshow of your favourite pictures while your device is charging.\n",
+        "label": "Daily Board",
+        "description": "Show a slideshow of your favourite pictures while your device is charging.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.homemode"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.honeyboard",
-        "description": "Samsung keyboard\n",
+        "description": "Samsung keyboard",
         "web": [
             "https://developer.android.com/training/articles/direct-boot"
         ],
         "removal": "caution",
-        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.\n",
+        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.",
         "suggestions": "keyboards"
     },
     {
@@ -4936,8 +5453,16 @@
     },
     {
         "id": "com.samsung.android.lool",
-        "description": "Samsung Device Care (phone optimizer) (https://play.google.com/store/apps/details?id=com.samsung.android.lool)\nThis package phone home (China, Qihoo 360)\nThe clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)\nhttps://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/\nhttps://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details\n\nWARNING:Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices\nNOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access\n",
-        "removal": "replace"
+        "label": "Device Care",
+        "description": "Samsung Device Care (phone optimizer)\nThis package phone home (China, Qihoo 360)\nThe clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)\nNOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.lool",
+            "https://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details",
+            "https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/"
+            
+        ],
+        "removal": "caution",
+        "": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices"
     },
     {
         "id": "com.samsung.android.mateagent",
@@ -4971,8 +5496,13 @@
     },
     {
         "id": "com.samsung.android.mdx.quickboard",
-        "description": "Media & Devices feature\nKind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nhttps://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.\nWARNING: Removing this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait)\n",
-        "removal": "replace"
+        "label": "Media and Devices",
+        "description": "Media & Devices feature\nKind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
+        "web": [
+            "https://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/"
+        ],
+        "removal": "replace",
+        "warning": "BRemoving this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait)"
     },
     {
         "id": "com.samsung.android.mediacontroller",
@@ -5022,8 +5552,10 @@
     },
     {
         "id": "com.samsung.android.provider.filterprovider",
-        "description": "FilterProvider dependency to Samsung Camera\nProvides access to filters (when you swipe right from the camera app)\nWARNING : Samsung camera will crash if this package is deleted.\n",
-        "removal": "replace"
+        "label": "com.samsung.android.provider.filterprovider",
+        "description": "FilterProvider dependency to Samsung Camera\nProvides access to filters (when you swipe right from the camera app)",
+        "removal": "caution",
+        "warning": "Samsung camera will crash if this package is deleted."
     },
     {
         "id": "com.samsung.android.provider.shootingmodeprovider",
@@ -5297,11 +5829,16 @@
     },
     {
         "id": "com.samsung.android.video",
-        "description": "Samsung Video Player\nhttps://galaxystore.samsung.com/prepost/000003980724?appId=com.samsung.android.video\n",
-        "removal": "replace",
+        "label": "Samsung Video Player",
         "dependencies": [
             "com.samsung.android.smartmirroring"
-        ]
+        ],
+        "description": "Default video Player for Samsung devices.",
+        "web": [
+            "https://galaxystore.samsung.com/prepost/000003980724?appId=com.samsung.android.video"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.samsung.android.visionarapps",
@@ -5540,8 +6077,10 @@
     },
     {
         "id": "com.samsung.android.watch.weather",
+        "label": "com.samsung.android.watch.weather",
         "description": "Weather application from Samsung.",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.samsung.android.watch.worldclock",
@@ -5585,8 +6124,13 @@
     },
     {
         "id": "com.samsung.android.weather",
-        "description": "Samsung Weather\nLets you see updates on the weather at all times, specific to your current location. \nYou can also check the weather in other areas even\nDependency: \"com.sec.android.daemonapp\"\n",
-        "removal": "delete"
+        "label": "Samsung Weather",
+        "dependencies": [
+            "com.sec.android.daemonapp"
+        ],
+        "description": "Lets you see updates on the weather at all times, specific to your current location.\nEven you can also check the weather in other areas.",
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.samsung.android.wellbeing",
@@ -5857,6 +6401,15 @@
     {
         "id": "com.samsung.vvm.se",
         "description": "Samsung Verizon Voicemail \nAllows you to review and manage your voicemail directly from your smartphone, eliminating the need to dial into your mailbox.\nYou can scroll through your messages, pick the ones you want to listen to, and erase them right from your device's screen.\nhttps://mobile.spectrum.com/support/article/360001296667/samsung-visual-voicemail\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.satispay.promotion",
+        "label": "Satispay Promotion",
+        "description": "Cashbacks and promotional related app",
+        "web": [
+            "https://beta.pithus.org/report/d2aced319e53ccf9de03b47be1bdb11bfb6b1ccd0cc15e5279e34697e23db338"
+        ],
         "removal": "delete"
     },
     {
@@ -6972,8 +7525,13 @@
     },
     {
         "id": "com.sonymobile.xperiaweather",
-        "description": "Sony weather app (https://play.google.com/store/apps/details?id=com.sonymobile.xperiaweather)\nNote : Not all location are supported.\n",
-        "removal": "delete"
+        "label": "com.sonymobile.xperiaweather",
+        "description": "Sony weather app\nNote : Not all location are supported.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sonymobile.xperiaweather"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.sonymobile.xperiaxlivewallpaper",
@@ -7008,7 +7566,8 @@
         "web": [
             "https://beta.pithus.org/report/96601b7ec8ced18bf3896946ab43edde94b14e09b95e7787ea941b25ca02164b"
         ],
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.tblenovo.setup",
@@ -7130,8 +7689,13 @@
     },
     {
         "id": "com.transsion.magicshow",
-        "description": "(Bad) video Player with Ads and weak security (including an unsecured WebView implementation that can lead to XSS attacks.\nPithus analysis: https://beta.pithus.org/report/33cd478cc18f3a2c0d5f7fd33c7350127ee2cff7acdf87f70641ca21dd2b2dcb",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "(Bad) video Player with Ads and weak security (including an unsecured WebView implementation that can lead to XSS attacks.",
+        "web": [
+            "https://beta.pithus.org/report/33cd478cc18f3a2c0d5f7fd33c7350127ee2cff7acdf87f70641ca21dd2b2dcb"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.transsion.microintelligence",
@@ -7185,8 +7749,10 @@
     },
     {
         "id": "com.vivo.dream.weather",
+        "label": "com.vivo.dream.weather",
         "description": "Vivo weather app",
-        "removal": "delete"
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "com.vivo.hybrid",
@@ -7455,13 +8021,23 @@
     },
     {
         "id": "com.zte.videoplayer",
-        "description": "ZTE Video Player with INTERNET and ACCESS_NETWORK_STATE permissions\nPithus analysis: https://beta.pithus.org/report/caf2da956d33c5550e42d4250b0fa31dc605f39545c2eff36438fd88a0fc7c28",
-        "removal": "delete"
+        "label": "Video Player",
+        "description": "ZTE Video Player with INTERNET and ACCESS_NETWORK_STATE permissions.",
+        "web": [
+            "https://beta.pithus.org/report/caf2da956d33c5550e42d4250b0fa31dc605f39545c2eff36438fd88a0fc7c28"
+        ],
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.zte.weather",
+        "label": "Weather",
         "description": "ZTE Weather app.",
-        "removal": "delete"
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.zte.weather"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "net.oneplus.commonlogtool",
@@ -7516,8 +8092,12 @@
     {
         "id": "net.oneplus.weather",
         "label": "Weather",
-        "description": "OnePlus Weather (https://play.google.com/store/apps/details?id=net.oneplus.weather)\nOccasionally runs in the background; I think it runs every now and then to change the app icon to current weather conditions.",
-        "removal": "delete"
+        "description": "Occasionally runs in the background; I think it runs every now and then to change the app icon to current weather conditions.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=net.oneplus.weather"
+        ],
+        "removal": "replace",
+        "suggestions": "weather_apps"
     },
     {
         "id": "net.oneplus.weather.basiccolorblack.overlay",
@@ -7531,22 +8111,29 @@
     },
     {
         "id": "net.oneplus.widget",
-        "description": "OnePlus Widget\nLets you use OnePlus widgets on the home screen.\n",
+        "label": "OnePlus Widget",
+        "description": "Lets you use OnePlus widgets on the home screen.",
         "removal": "delete"
     },
     {
         "id": "org.ifaa.aidl.manager",
-        "description": "IfaaManagerService\nIFAA = (China’s) Internet Finance Authentication Alliance\nProvides biometric authentication for Alipay. Probably safe to disable if you don't use it.",
+        "label": "IfaaManagerService",
+        "description": "IFAA = (China’s) Internet Finance Authentication Alliance\nProvides biometric authentication for Alipay. Probably safe to disable if you don't use it.",
         "removal": "delete"
     },
     {
         "id": "se.dirac.acs",
-        "description": "Dirac Control Service\nSound-system backend?\nRuns in the background as part of the system. Runs even if disabled.",
+        "label": "Dirac Control Service",
+        "description": "Sound-system backend?\nRuns in the background as part of the system. Runs even if disabled.",
         "removal": "caution"
     },
     {
         "id": "tv.peel.samsung.app",
-        "description": "Peel Smart Remote (WatchON)\nIt's an application that turns your smart phone or tablet into a TV remote. \nThe app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions. \nhttps://www.samsung.com/za/support/mobile-devices/what-is-the-peel-smart-remote-application/\n",
+        "label": "Peel Smart Remote (WatchON)",
+        "description": "It's an application that turns your smart phone or tablet into a TV remote.\nThe app uses the IR Blaster of your device, so devices not equipped with that feature will not be able to use all of Peel Smart Remote's functions.",
+        "web": [
+            "https://www.samsung.com/za/support/mobile-devices/what-is-the-peel-smart-remote-application/"
+        ],
         "removal": "delete"
     }
 ]
