@@ -188,11 +188,6 @@
         ]
     },
     {
-        "id": "com.android.cts.ctsshim",
-        "description": "Compatibility Test Service. Used by developers to identify and resolve compatibility issues with Android apps.\nA shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nhttps://android.googlesource.com/platform/frameworks/base/+/51e458e/packages/CtsShim\nhttps://en.wikipedia.org/wiki/Shim_(computing)",
-        "removal": "replace"
-    },
-    {
         "id": "com.android.email.partnerprovider.overlay",
         "description": "Theme overlay for partnerprovider?",
         "removal": "caution"
@@ -208,6 +203,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.android.hotspot2.osulogin",
+        "label": "OsuLogin",
+        "description": "Provides wifi tethering i.e. lets you share your mobile device's Internet connection with other devices.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Tethering"
+        ],
+        "removal": "caution"
+    },
+    {
         "id": "com.android.hwmirror",
         "description": "Mirror\nLets you use your phone as a mirror...\n",
         "removal": "delete"
@@ -219,8 +223,16 @@
     },
     {
         "id": "com.android.keyguard",
-        "description": "I NEVER HAD AN HUAWEI DEVICE ON HAND. THIS LIST WAS MADE POSSIBLE BY @REDSKULL23\nhttps://forum.xda-developers.com/honor-6x/how-to/guide-list-bloat-software-emui-safe-to-t3700814\nAdditional informaton were taken from https://forum.xda-developers.com/huawei-p40-pro/how-to/adb-debloating-t4088633\nYet, those documentations are not precise enough. If you have additional information, please contribute to this list\nI use [MORE INFO NEEDED] tag as a marker.\nIf you have EMUI 10 or older, check the AOSP file, as Huawei uses AOSP package name for their own app.\n\nHUAWEI magazine unlock (The package name is really confusing)\nIt's a proprietary app based on the AOSP package called com.android.keyguard. That's not clever at all.\nhttps://consumer.huawei.com/en/support/content/en-us00206571/\nLets you customize your lock screen wallpapers\n",
-        "removal": "delete"
+        "label": "HUAWEI magazine unlock",
+        "description": "It's a proprietary app based on the AOSP package called com.android.keyguard. Lets you customize your lock screen wallpapers.\nIf you have EMUI 10 or older, check the AOSP file, as Huawei uses AOSP package name for their own app.",
+        "web": [
+            "https://consumer.huawei.com/en/support/content/en-us00206571/",
+            "https://forum.xda-developers.com/honor-6x/how-to/guide-list-bloat-software-emui-safe-to-t3700814",
+            "https://forum.xda-developers.com/huawei-p40-pro/how-to/adb-debloating-t4088633",
+            "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/issues/330"
+        ],
+        "removal": "caution",
+        "warning": "Breaks home and recents button on Xiaomi Mi Pad"
     },
     {
         "id": "com.android.mediacenter",
@@ -418,11 +430,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.bkk.theme",
-        "description": "Vivo theme (https://play.google.com/store/apps/details?id=com.bbk.theme)\nLets you add new themes, fonts and wallpapers.\nIt has annoying notifications that cannot be disabled by going to the app settings. This app use 50 permissions and can install packages (REQUEST_INSTALL_PACKAGES)\nNote: Removing this app will prevent you to change themes.\n\nPithus analysis: https://beta.pithus.org/report/0f15055131637d3dbc55d3a49b8e79b4f76ca09871abf9eb43b5f88afde11800",
-        "removal": "delete"
-    },
-    {
         "id": "com.bsp.catchlog",
         "description": "bsp = Board support package\nUsed to catch log files obviously.\n",
         "removal": "delete"
@@ -462,14 +469,15 @@
     },
     {
         "id": "com.coloros.appmanager",
-        "label": "com.coloros.appmanager",
-        "description": "More info needed.",
-        "removal": "delete"
+        "label": "Permanent process management",
+        "description": "Used to uninstall applications, but uninstalling apps works nonetheless, even after uninstalling this package.",
+        "removal": "caution",
+        "warning": "GameSpace's game assistant does not work after uninstalling this package."
     },
     {
         "id": "com.coloros.assistantscreen",
-        "label": "com.coloros.assistantscreen",
-        "description": "More info needed.",
+        "label": "Shelf",
+        "description": "Previously Breeno, developed by HeyTap. More info needed",
         "removal": "delete"
     },
     {
@@ -484,20 +492,20 @@
     },
     {
         "id": "com.coloros.childrenspace",
-        "label": "com.coloros.childrenspace",
+        "label": "Kid Space",
         "description": "More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.cloud",
-        "label": "Oppo Cloud",
+        "label": "OPPO Cloud",
         "description": "Oppo cloud storage?",
         "removal": "replace",
         "suggestion": "cloud_services"
     },
     {
         "id": "com.coloros.compass2",
-        "label": "com.coloros.compass2",
+        "label": "Compass",
         "description": "ColorOS default compass app\nKeep in mind that by using this app you give your location to the weather Oppo servers.",
         "web": [
             "https://beta.pithus.org/report/9a965f5587fa6ee21c526612f3d72c50ef3cc53679b741260298387c44f5a3dc"
@@ -506,7 +514,7 @@
     },
     {
         "id": "com.coloros.directui",
-        "label": "com.coloros.directui",
+        "label": "Breeno Touch",
         "description": "More info needed.",
         "removal": "delete"
     },
@@ -519,15 +527,15 @@
     },
     {
         "id": "com.coloros.findmyphone",
-        "label": "com.coloros.findmyphone",
-        "description": "Oppo find my phone service.",
+        "label": "Find My",
+        "description": "Previously Find My Phone Service. Oppo's find my phone service.",
         "removal": "replace",
         "suggestions": "locators"
     },
     {
         "id": "com.coloros.gamespace",
         "label": "Game Space",
-        "description": "Hub for your Games + some performance optimizations",
+        "description": "Previously APP Enhancement Services. Hub for your Games + some performance optimizations",
         "web": [
             "https://community.coloros.com/thread-9962-1-1.html"
         ],
@@ -535,14 +543,14 @@
     },
     {
         "id": "com.coloros.gamespaceui",
-        "label": "GameSpace",
+        "label": "Game Space",
         "description": "Gaming utility aiming at 'optimizing your gaming experience'. Has a lot of permissions. For instance, it has internet access, will scans all the apps you have on your phones (to find games), can performs Bluetooth scan and has access to the metadata of your media files (e.g the place where you took a picture).",
         "removal": "delete"
     },
     {
         "id": "com.coloros.healthcheck",
-        "label": "com.coloros.healthcheck",
-        "description": "More info needed.",
+        "label": "Diagnostics",
+        "description": "Previously Quick Check. More info needed.",
         "removal": "delete"
     },
     {
@@ -553,13 +561,13 @@
     },
     {
         "id": "com.coloros.ocrscanner",
-        "label": "com.coloros.ocrscanner",
+        "label": "Breeno Scan",
         "description": "ColorOS Optical character recognition scanner",
         "removal": "replace"
     },
     {
         "id": "com.coloros.onekeylockscreen",
-        "label": "com.coloros.onekeylockscreen",
+        "label": "Screen Lock",
         "description": "Lock your phone if you click on the app icon. Completely useless unless your physical power button is damaged.\nThis app still has the permission to list all the apps installed on the phone.",
         "web": [
             "https://beta.pithus.org/report/ece4088357c0a47dffd96bdc46a7b535d448c1a3619d995f7032df3be6cb0a38"
@@ -568,14 +576,14 @@
     },
     {
         "id": "com.coloros.oppomultiapp",
-        "label": "com.coloros.oppomultiapp",
+        "label": "App Cloner",
         "description": "More info needed",
         "removal": "delete"
     },
     {
         "id": "com.coloros.oshare",
-        "label": "Oppo Share",
-        "description": "File sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).",
+        "label": "OnePlus Share",
+        "description": "Previously OPPO Share. File sharing app to transfer data from/to Oppo devices only. Seems to use weak crypto (AES ECB mode) and has weird permissions (such as `READ_CONTACTS`).",
         "web": [
             "https://beta.pithus.org/report/170f4a14be24a2e2135cd956a038aae9e2f78c845f3161b84c5545dbec03fad9"
         ],
@@ -599,7 +607,7 @@
     },
     {
         "id": "com.coloros.securepay",
-        "label": "Securepay",
+        "label": "Payment Protection",
         "description": "Payment system from Oppo allowing you to pay with your phone.",
         "web": [
             "https://beta.pithus.org/report/65246664d3795a5ac1b402d28456903e1b3bd76176de8298b3ea96c6c592ae9a"
@@ -608,20 +616,19 @@
     },
     {
         "id": "com.coloros.smartdrive",
-        "label": "SmartDrive",
-        "description": "More info needed.",
+        "label": "Driving mode",
+        "description": "Previously Breeno Driving, and Smart Driving. More info needed.",
         "removal": "delete"
     },
     {
         "id": "com.coloros.soundrecorder",
-        "label": "SoundRecorder",
+        "label": "Recorder",
         "description": "ColorOS default Sound Recorder",
         "removal": "replace",
         "suggestions": "audio_recorders"
     },
     {
         "id": "com.coloros.speechassist",
-        "label": "Speech Assistant",
         "description": "ColorOS default Speech Assistant",
         "removal": "replace",
         "suggestions": "tts"
@@ -635,7 +642,7 @@
     },
     {
         "id": "com.coloros.video",
-        "label": "Video Player",
+        "label": "Video",
         "description": "Default Oppo video player with too much permissions (21) for a video player!",
         "web": [
             "https://beta.pithus.org/report/4ceb96c23ad0e26ee8eceab293d251f8b1bddaf4a901741ee467e0bb867db6e9"
@@ -664,15 +671,15 @@
     },
     {
         "id": "com.coloros.widget.smallweather",
-        "label": "com.coloros.widget.smallweather",
+        "label": "Clock",
         "description": "More info needed.",
         "removal": "replace",
         "suggestions": "weather_apps"
     },
     {
         "id": "com.coremobility.app.vnotes",
-        "label": "com.coremobility.app.vnotes",
-        "description": "Voicemail App?",
+        "label": "Sprint Voicemail",
+        "description": "More info needed.",
         "removal": "replace"
     },
     {
@@ -722,8 +729,8 @@
     },
     {
         "id": "com.enhance.gameservice",
-        "label": "com.enhance.gameservice",
-        "description": "Legacy game Optimizing Service (was replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.",
+        "label": "Samsung Game Optimizing Service",
+        "description": "Previously GameMode.\nLegacy game Optimizing Service (is replaced by com.samsung.android.game.gos)\nIs supposed to \"improve\" game performance.",
         "removal": "delete"
     },
     {
@@ -1358,8 +1365,14 @@
     },
     {
         "id": "com.gallery20",
-        "description": "AI Gallery (https://play.google.com/store/apps/details?id=com.gallery20)\nStock gallery app with picture editing (filters, crop, add text, watermark, frame, bloor. Sends analytics to api.meishesdk.com\nPithus analysis: https://beta.pithus.org/report/d9cf633450ed90d2c89c941c5c202845b2789ceffe6d6337ecf772d223d157de",
-        "removal": "replace"
+        "label": "AI Gallery",
+        "description": "Stock gallery app with picture editing (filters, crop, add text, watermark, frame, blur). Sends analytics to api.meishesdk.com",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.gallery20",
+            "https://beta.pithus.org/report/d9cf633450ed90d2c89c941c5c202845b2789ceffe6d6337ecf772d223d157de"
+        ],
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.google.android.apps.wearable.retailattractloop",
@@ -1408,8 +1421,13 @@
     },
     {
         "id": "com.heytap.browser",
-        "description": "Oppo Browser\nRebranded HeyTap browser for Oppo. Full of ads and spams you in notifications. You should never use this browser\nHeyTap terrible privacy policy: https://brand.heytap.com/eu/privacy.html",
-        "removal": "delete"
+        "label": "Internet Browser",
+        "description": "Rebranded HeyTap browser for Oppo. Full of ads and spams you in notifications. You should never use this browser.",
+        "web": [
+            "https://brand.heytap.com/eu/privacy.html"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.heytap.cloud",
@@ -1434,8 +1452,13 @@
     },
     {
         "id": "com.heytap.music",
-        "description": "Default Oppo Music App with insecure WebView Implementation (execution of user controlled code in WebView is an important security hole.\nHas also weird permissions (QUERY_ALL_PACKAGES and BLUETOOTH ?)\n\nhttps://beta.pithus.org/report/befa0ec0616c553632379f069453b0ca74ee29fd1428b9fce19c1657e6f97d8b",
-        "removal": "replace"
+        "label": "Music",
+        "description": "Default Oppo Music App with insecure WebView Implementation (execution of user controlled code in WebView is an important security hole).\nHas also weird permissions (QUERY_ALL_PACKAGES and BLUETOOTH ?).",
+        "web": [
+            "https://beta.pithus.org/report/befa0ec0616c553632379f069453b0ca74ee29fd1428b9fce19c1657e6f97d8b"
+        ],
+        "removal": "replace",
+        "suggestions": "music_apps"
     },
     {
         "id": "com.heytap.pictorial",
@@ -1459,8 +1482,8 @@
     },
     {
         "id": "com.hisi.mapcon",
-        "description": "Provides wifi calling feature (call or text on Wi-Fi networks using your SIM card)\nNOTE: Instant messaging video/voice call does not use this \"wifi calling\" feature. \nBtw, you should use a E2EE messaging app like Signal/Session/Element(https://element.io/) instead of the non-secure wifi-calling feature\nprovided by your carrier.\n",
-        "removal": "delete"
+        "description": "Uses Location permissions for VoWifi Special, rtc wifi signal.",
+        "removal": "replace"
     },
     {
         "id": "com.hiya.star",
@@ -1542,7 +1565,8 @@
     },
     {
         "id": "com.huawei.android.instantonline",
-        "description": "no noticable consequences\n",
+        "label": "HwInstantOnline",
+        "description": "No noticable consequences",
         "removal": "delete"
     },
     {
@@ -1552,8 +1576,10 @@
     },
     {
         "id": "com.huawei.android.internal.app",
-        "description": "Component of Huawei sharing. I read someone saying \"Do not remove or you won't be able to send files to apps\".\nCan someone test it ? \n",
-        "removal": "replace"
+        "label": "Android HwResolver",
+        "description": "Component of Huawei sharing.",
+        "removal": "replace",
+        "warning": "This may break the sharing function in some apps causing them to crash."
     },
     {
         "id": "com.huawei.android.karaoke",
@@ -1584,8 +1610,10 @@
     },
     {
         "id": "com.huawei.android.thememanager",
-        "description": "Themes (https://play.google.com/store/apps/details?id=com.huawei.android.thememanager)\nLets you download and use Huawei themes.\nSetting Wallpapers directly will no longer work, but the Wallpaper entry in the Settings app will still let you choose wallpapers.",
-        "removal": "caution"
+        "label": "Themes",
+        "description": "Lets you download and use Huawei themes.",
+        "removal": "caution",
+        "warning": "After uninstalling the app, setting wallpapers directly will no longer work, but the wallpaper entry in the Settings app will still let you choose wallpapers. Without this package, you may no longer be able to change a notification sound."
     },
     {
         "id": "com.huawei.android.tips",
@@ -1707,13 +1735,20 @@
     },
     {
         "id": "com.huawei.fido.uafclient",
-        "description": "UAF client for FIDO.\nFido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.\nhttps://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html\nhttps://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html\nThe UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device to the online service and using a local authentication mechanism such as iris or fingerprint recognition.\nhttps://developers.google.com/identity/fido/android/native-apps\nSafe to remove if you don't use password-less authentification to access online servics.",
-        "removal": "delete"
+        "label": "FIDO UAF Client",
+        "description": "Fido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.\nThe UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device to the online service and using a local authentication mechanism such as iris or fingerprint recognition.\nSafe to remove if you don't use password-less authentification to access online servics.",
+        "web": [
+            "https://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html",
+            "https://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html",
+            "https://developers.google.com/identity/fido/android/native-apps"
+        ],
+        "removal": "replace"
     },
     {
         "id": "com.huawei.game.kitserver",
-        "description": "Probably safe to remove if you don't play games\n",
-        "removal": "delete"
+        "label": "HUAWEI Game KitServer",
+        "description": "Probably safe to remove if you don't play games\nHas window show, keybind set and more things.",
+        "removal": "replace"
     },
     {
         "id": "com.huawei.gameassistant",
@@ -1727,17 +1762,23 @@
     },
     {
         "id": "com.huawei.health",
-        "description": "Huawei Health (https://play.google.com/store/apps/details?id=com.huawei.health)\nConnect Huawei wearables to your phone and all sorts of stats like all fitness tracking apps.\n",
+        "label": "Huawei Health",
+        "description": "Connect Huawei wearables to your phone and all sorts of stats like all fitness tracking apps.",
+        "dependencies": [
+            "com.huawei.hwid"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.huawei.hiaction",
-        "description": "no noticable consequences\n",
+        "label": "HiAction",
+        "description": "No noticable consequences",
         "removal": "delete"
     },
     {
         "id": "com.huawei.hiai",
-        "description": "no noticable consequences\n",
+        "label": "HUAWEI HiAI Engine",
+        "description": "No noticable consequences",
         "removal": "delete"
     },
     {
@@ -1747,7 +1788,8 @@
     },
     {
         "id": "com.huawei.hicard",
-        "description": "Huawei Cards, no noticable consequences\n",
+        "label": "HiCard",
+        "description": "Huawei Cards. No noticable consequences",
         "removal": "delete"
     },
     {
@@ -1768,8 +1810,10 @@
     },
     {
         "id": "com.huawei.himovie.overseas",
-        "description": "Huawei stock video application (https://play.google.com/store/apps/details?id=com.huawei.himovie.overseas). Replace with VLC, which integrates well with the stock gallery.\n",
-        "removal": "delete"
+        "label": "HUAWEI Video",
+        "description": "Huawei stock video application. Has a lot of trackers.",
+        "removal": "replace",
+        "suggestions": "video_players"
     },
     {
         "id": "com.huawei.hitouch",
@@ -1778,35 +1822,50 @@
     },
     {
         "id": "com.huawei.hiviewtunnel",
-        "description": "This displays details/attributes of pictures in the gallery (ISO, exposure time, etc.).\n",
-        "removal": "delete"
+        "label": "HiViewTunnel",
+        "description": "This displays details/attributes of pictures in the gallery (ISO, exposure time, etc.).",
+        "removal": "replace",
+        "suggestions": "gallery"
     },
     {
         "id": "com.huawei.hwasm",
-        "description": "FIDO UAF Autenthicator-Specific Module.\nSee 'com.huawei.fido.uafclient' for FIDO explaination.\nThe UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.\nhttps://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html",
-        "removal": "delete"
+        "label": "FIDO UAF ASM",
+        "description": "FIDO UAF Autenthicator-Specific Module.\nSee 'com.huawei.fido.uafclient' for FIDO explaination.\nThe UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.",
+        "web": [
+            "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html"
+        ],
+        "removal": "replace"
     },
     {
         "id": "com.huawei.hwblockchain",
-        "description": "Probably blockchain related, no noticable consequences when removed\n",
+        "label": "HwBlockChain",
+        "description": "Probably blockchain related. No noticable consequences when removed",
         "removal": "delete"
     },
     {
         "id": "com.huawei.hwdetectrepair",
-        "description": "Huawei Smart diagnosis (https://play.google.com/store/apps/details?id=com.huawei.hwdetectrepair)\nUseless features and run in background.\n",
+        "label": "Smart diagnosis",
+        "description": "(Discontinued?) Useless features and run in background.\n",
         "removal": "delete"
     },
     {
         "id": "com.huawei.hwid",
-        "description": "Huawei Mobile Services (https://play.google.com/store/apps/details?id=com.huawei.hwid)\nHuawei’s alternative to Google Play Services. Needed to access advanced Huawei features.\nA Huawei ID is required to access services, like Themes, Mobile Cloud, HiCare, Huawei Wear, Huawei Health\nSee more: https://www.xda-developers.com/huawei-hms-core-android-alternative-google-play-services-gms/",
-        "removal": "delete",
+        "label": "HMS Core",
+        "description": "Huawei Mobile Services\nHuawei’s alternative to Google Play Services. Needed to access advanced Huawei features.\nA Huawei ID is required to access services, like Themes, Mobile Cloud, HiCare, Huawei Wear, Huawei Health.",
+        "web": [
+            "https://www.xda-developers.com/huawei-hms-core-android-alternative-google-play-services-gms/",
+            "https://github.com/0x192/universal-android-debloater/issues/477"
+        ],
+        "removal": "replace",
         "required_by": [
             "com.huawei.fastapp"
-        ]
+        ],
+        "warning" : "This may break apps like InPost Mobile"
     },
     {
         "id": "com.huawei.hwsearch",
-        "description": "Petal Search widget. Used for finding apps/apks on serveral online sources (introduced after Google Mobile Services Ban).\n",
+        "label": "Petal Search",
+        "description": "Huawei search widget. Used for finding apps/apks on serveral online sources (introduced after Google Mobile Services Ban).",
         "removal": "delete"
     },
     {
@@ -1816,17 +1875,21 @@
     },
     {
         "id": "com.huawei.hwvoipservice",
-        "label": "com.huawei.hwvoipservice",
+        "label": "MeeTime Service",
+        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime). Only works with EMUI 9.1+ Huawei phones.\nHuawei claims they use E2EE but this wasn't verified and there is no whitepaper, so don't trust them.\nThey also collect metadata.",
+        "web": [
+            "https://consumer.huawei.com/en/support/content/en-us00956296/"
+        ],
+        "removal": "replace",
         "required_by": [
             "com.huawei.meetime"
         ],
-        "description": "Voice over IP service for Huawei MeeTime (com.huawei.meetime)",
-        "removal": "delete"
+        "suggestions": "instant_messaging_apps"
     },
     {
         "id": "com.huawei.iaware",
-        "description": "App Prioritizer. Prioritizes apps to avoid slowdown\nUp to you but there is apparently no noticeable difference when deleted.\n",
-        "removal": "delete"
+        "description": "App Prioritizer. Prioritizes apps to avoid slowdown\nUp to you but there is apparently no noticeable difference when deleted?\nSystem will start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
+        "removal": "caution"
     },
     {
         "id": "com.huawei.ihealth",
@@ -1910,14 +1973,19 @@
     },
     {
         "id": "com.huawei.mycenter",
-        "description": "Huawei Member Center\n Gives reward offers and news to Huawei users. Very intrusive app : 68 permissions inclusing CAMERA, ACCESS_FINE_LOCATIONtion, REQUEST_INSTALL_PACKAGES. Can run in the background and just after boot even if you haven't unlock your phone yet. Phones home.\nPithus analysis: https://beta.pithus.org/report/3af49c621aefeef0dca86a4f79b5f007d73698fa979d3ba1ac7d6f1ccaea9cdf",
+        "label": "My Center",
+        "description": "Huawei Member Center\nGives reward offers and news to Huawei users. Very intrusive app: 68 permissions inclusing CAMERA, ACCESS_FINE_LOCATION, REQUEST_INSTALL_PACKAGES. Can run in the background and just after boot even if you haven't unlock your phone yet. Phones home.",
+        "web": [
+            "https://beta.pithus.org/report/3af49c621aefeef0dca86a4f79b5f007d73698fa979d3ba1ac7d6f1ccaea9cdf"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.huawei.ohos.inputmethod",
+        "label": "Celia Keyboard",
         "description": "Huawei default Keyboard.",
         "removal": "replace",
-        "warning": "Make sure you've another installed before you disable.",
+        "warning": "Make sure to have another keyboard app installed before uninstalling it",
         "suggestions": "keyboards"
     },
     {
@@ -1932,19 +2000,22 @@
     },
     {
         "id": "com.huawei.phoneservice",
-        "description": "HiCare (https://play.google.com/store/apps/details?id=com.huawei.phoneservice)\nProvides you common online services including customer services, issue feedback, user guides, service centers and self-service. \n",
+        "label": "HiCare",
+        "description": "Provides you common online services including customer services, issue feedback, user guides, service centers and self-service.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.photos",
+        "label": "Gallery",
         "description": "Huawei Gallery app.\nNote: The official camera app refuses to open photos in another gallery (you can't review your picture from the camera app)\n",
         "removal": "replace",
         "suggestions": "gallery"
     },
     {
         "id": "com.huawei.powergenie",
-        "description": "Task killer app in EMUI 9+ (Android 9+).\nTask killer apps tend to do more harm than help as they clear cached RAM for no good reason, removing the battery and time savings involved in caching. In addition to the obvious issues with background functionality like notifications.\nFrom issue#104.",
-        "removal": "delete"
+        "label": "Power Genius",
+        "description": "Task killer app in EMUI 9+ (Android 9+).\nTask killer apps tend to do more harm than help as they clear cached RAM for no good reason, removing the battery and time savings involved in caching. In addition to the obvious issues with background functionality like notifications. However, system may start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
+        "removal": "caution"
     },
     {
         "id": "com.huawei.scanner",
@@ -1953,12 +2024,17 @@
     },
     {
         "id": "com.huawei.search",
-        "description": "HiSearch\nAllows you to search through settings, files, contacts and notes while keeping a record of your search history.\nHi Search is really annonying because it's triggered as soon as you wipe down from the middle part of the home.\n",
+        "label": "HUAWEI HiSearch",
+        "description": "Allows you to search through settings, files, contacts and notes while keeping a record of your search history.\nHi Search is really annonying because it's triggered as soon as you wipe down from the middle part of the home.",
         "removal": "delete"
     },
     {
         "id": "com.huawei.securitymgr",
-        "description": "PrivateSpace\nLets you store private information in a hidden space within your device that can only be accessed \nwith your fingerprint or password.\nTODO: Data at rest encryption? If not, this is useless\nhttps://consumer.huawei.com/en/support/content/en-us00754246/\n)\n",
+        "label": "PrivateSpace",
+        "description": "Lets you store private information in a hidden space within your device that can only be accessed with your fingerprint or password.\nThis is the password vault or manager too.",
+        "web": [
+            "https://consumer.huawei.com/en/support/content/en-us00754246/"
+        ],
         "removal": "replace"
     },
     {
@@ -1993,7 +2069,11 @@
     },
     {
         "id": "com.huawei.wallet",
-        "description": "Huawei Wallet (renammed Huawei Pay)\nMobile payment and e-wallet service for Huawei devices that offers the same services as Apple Pay, Samsung Pay etc...\nhttps://consumer.huawei.com/en/mobileservices/huawei-wallet/\n",
+        "label": "HUAWEI Wallet",
+        "description": "Formerly, Huawei Pay, is a mobile payment and e-wallet service for Huawei devices that offers the same services as Apple Pay, Samsung Pay etc.",
+        "web": [
+            "https://consumer.huawei.com/en/mobileservices/huawei-wallet/"
+        ],
         "removal": "delete"
     },
     {
@@ -2003,9 +2083,10 @@
     },
     {
         "id": "com.huawei.webview",
-        "description": "Huawei Webview.\nAllows Android apps to display content from the web directly inside the app.",
-        "removal": "replace",
-        "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
+        "label": "Huawei WebView",
+        "description": "Allows Android apps to display web contents within the app itself, based on Chrome.",
+        "removal": "caution",
+        "warning": "Make sure to have another Webview installed before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
     },
     {
@@ -2028,7 +2109,8 @@
     },
     {
         "id": "com.knox.vpn.proxyhandler",
-        "description": "Third-party package that provides caller profile information to help consumers identify incoming calls and block unwanted ones.\nhttps://en.wikipedia.org/wiki/Hiya_(company)\nhttps://hiya.com/\nNOTE: Never trust a company that promotes spam blocking features.\nhttps://itmunch.com/robocall-caught-sending-customers-confidential-data-without-consent/\nHave a look at their privacy policy. It's... pretty scary: https://hiya.com/fr/hiya-data-policy\nNeeded for Samsung Smart Call (com.samsung.android.smartcallprovider)\nSamsung Knox allows business and personal content to \"securely\" coexist on the same handset.\nThis package handles proxies alongside KNOX.",
+        "label": "KnoxVpnPacProcessor",
+        "description": "Samsung Knox allows business and personal content to \"securely\" coexist on the same handset.\nThis package handles proxies alongside KNOX.",
         "removal": "delete"
     },
     {
@@ -2486,13 +2568,13 @@
     },
     {
         "id": "com.lge.sizechangable.weather",
-        "label": "Music widget",
+        "label": "LG Weather",
         "description": "Not sure if it only manages Music widget for the launcher or also for the lockscreen.\nWeather widget for the home screen.",
         "removal": "delete"
     },
     {
         "id": "com.lge.sizechangable.weather.platform",
-        "label": "Weather Service",
+        "label": "LG Weather Service",
         "description": "Provide weather data for the weather app/widget.",
         "removal": "delete"
     },
@@ -2503,7 +2585,7 @@
     },
     {
         "id": "com.lge.smartdoctor.webview",
-        "label": "Smart Doctor Webview",
+        "label": "SmartDoctorWebview",
         "description": "A WebView is acomponent that allows Android apps to display content from the web directly inside an application.",
         "removal": "replace",
         "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
@@ -2581,7 +2663,7 @@
     },
     {
         "id": "com.lge.videoplayer",
-        "label": "com.lge.videoplayer",
+        "label": "LG Video",
         "description": "LG Video Player",
         "removal": "replace",
         "suggestions": "video_players"
@@ -2692,7 +2774,11 @@
     },
     {
         "id": "com.mi.health",
-        "description": "Mi Health\nPedometer, menstrual and sleep tracker\nYour data are synchronized in the cloud. \nDo you really want Xiaomi to know you didn't sleep much yesterday (your ovulation day btw...)\n",
+        "label": "Mi Fitness",
+        "description": "Formerly, Heart Rate and Mi Health, is a health monitor app that can be synchronized in the cloud.",
+        "web": [
+            "https://www.reddit.com/r/Xiaomi/comments/v0uhhx/found_hidden_heart_rate_app_in_miui_1304_i_opened/"
+        ],
         "removal": "delete"
     },
     {
@@ -2707,8 +2793,8 @@
     },
     {
         "id": "com.mi.webkit.core",
-        "label": "MI WebView",
-        "description": "Xiaomi alternative to Google WebView\nIt is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
+        "label": "MiWebView",
+        "description": "Discontinued. Xiaomi alternative to Google WebView\nIt is a system component for the Android operating system that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
         "warning": "Make sure to have another Webview before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
@@ -2765,8 +2851,10 @@
     },
     {
         "id": "com.miui.audiomonitor",
-        "description": "My guess is this is a feature allowing to control the sound of multiples apps.\nIt's just a guess based on existing Xiaomi devices features. Can someone check this? \n",
-        "removal": "replace"
+        "label": "karaoke",
+        "description": "Voice Call Recorder (only in MIUI dialer app). Unused on Global, EEA MIUI",
+        "removal": "replace",
+        "suggestions": "call_recorders"
     },
     {
         "id": "com.miui.backup",
@@ -2837,8 +2925,19 @@
     },
     {
         "id": "com.miui.contentcatcher",
-        "description": "Application Extension Service\nI don't have a Xiaomi device so I can't test. A lot of people delete this package but I'd like to know its purpose.\nIMO it's related to web browsing from a xiaomi app\n",
+        "label": "Application Extension Service",
+        "description": "It's a password manager in settings, requires Mi Account to Autofill and it syncs to your account.",
         "removal": "delete"
+    },
+    {
+        "id": "com.miui.core",
+        "label": "MIUI SDK",
+        "description": "It is obiously needed for MIUI to work correctly. FYI, it manages the MIUI Analytics service. Can be disabled and uninstalled with MIUI 13.0.6.",
+        "web": [
+            "https://github.com/0x192/universal-android-debloater/issues/632"
+        ],
+        "removal": "caution",
+        "warning": "Removing this package causes the Settings app to crash when searching in Settings. May also cause bootloops in MIUI < 13.0.6"
     },
     {
         "id": "com.miui.daemon",
@@ -2970,13 +3069,14 @@
     },
     {
         "id": "com.miui.nextpay",
-        "label": "Next Pay",
-        "description": "More info needed.",
+        "label": "Smart cards Web Extention",
+        "description": "Only for Chinese users.",
         "removal": "delete"
     },
     {
         "id": "com.miui.notes",
-        "description": "Mi Notes\n",
+        "label": "MIUI Notes",
+        "description": "MIUI's note-taking app.",
         "removal": "replace",
         "suggestions": "note_taking_apps"
     },
@@ -3008,11 +3108,6 @@
         "suggestions": "music_apps"
     },
     {
-        "id": "com.miui.powerkeeper",
-        "description": "Battery and Performance\n(aggressive) MIUI power management (https://dontkillmyapp.com/xiaomi)\nThat's a weird app that also contains a DRM Manager and a service related to Cloud Backup\nHas obviously a lot of dangerous permissions.\nI guess removing this package will decrease the battery performance. Is it that noticeable? Can someone try?\n",
-        "removal": "replace"
-    },
-    {
         "id": "com.miui.providers.weather",
         "description": "Provider for MI Weather app (com.miui.weather)\nContent providers encapsulate data, providing centralized management of data shared between apps.\nhttps://developer.android.com/guide/topics/providers/content-providers.html",
         "removal": "replace"
@@ -3022,6 +3117,37 @@
         "description": "MUI Qr code scanner\n",
         "removal": "replace",
         "suggestions": "barcode_scanners"
+    },
+    {
+        "id": "com.miui.securityadd",
+        "label": "Xiaomi System Service Plugin",
+        "description": "Related to the MIUI Security app",
+        "web": [
+            "https://github.com/0x192/universal-android-debloater/issues/641"
+        ],
+        "removal": "caution",
+        "warning": "Removing the app may cause bootloops."
+    },
+    {
+        "id": "com.miui.securitycenter",
+        "label": "Xiaomi Security",
+        "description": "Provides \"protection and optimization tools\": App lock, Data usage, Security scan, Cleaner, Battery saver, Blocklist and other features. It is mostly a front-end (UI).",
+        "web": [
+            "https://beta.pithus.org/report/f8c24ccfc526389ff9084505c60fba3d3463565f92e2015190e2974b370e7c4e",
+            "https://github.com/0x192/universal-android-debloater/issues/641"
+        ],
+        "removal": "caution",
+        "warning": "Removing the app may cause bootloops. It does not cause bootloops in Redmi Pad, but you will lose some functionality like the battery status/usage page, as well as the app usage/removal page."
+    },
+    {
+        "id": "com.miui.securitycore",
+        "label": "Security Core Component",
+        "description": "Core features of the \"com.miui.securitycenter\"",
+        "web": [
+            "https://github.com/0x192/universal-android-debloater/issues/641"
+        ],
+        "removal": "caution",
+        "warning": "Removing the app may cause bootloops."
     },
     {
         "id": "com.miui.screenrecorder",
@@ -3153,7 +3279,8 @@
     },
     {
         "id": "com.mobiletools.systemhelper",
-        "description": "System Helper\n",
+        "label": "SystemHelper",
+        "description": "Not available for users, has something about dual sim, App Info.",
         "removal": "delete"
     },
     {
@@ -3163,8 +3290,13 @@
     },
     {
         "id": "com.motorola.VirtualUiccPayment",
-        "description": "Virtual UICC Payment\nUICC stands for Universal Integrated Circuit Card. \nIt is a the physical and logical platform for the USIM and may contain additional USIMs and other applications.\n(U)SIM is an application on the UICC.\nhttps://bluesecblog.wordpress.com/2016/11/18/uicc-sim-usim/\nI guess this package provides support for NFC payement.\nNote: The term SIM is widely used in the industry and especially with consumers to mean both SIMs and UICCs.\nhttps://www.justaskgemalto.com/us/what-uicc-and-how-it-different-sim-card/\n",
-        "removal": "replace"
+        "label": "Virtual UICC Payment",
+        "description": "SIM Card Payment also NFC. Only useful in China by hidden image files.\nUICC stands for Universal Integrated Circuit Card.\nIt is the physical and logical platform for the USIM and may contain additional USIMs and other applications.\n(U)SIM is an application on the UICC.\nI guess this package provides support for NFC payments.\nNote: The term SIM is widely used to refer to both SIMs and UICCs in the industry and among consumers.",
+        "web": [
+            "https://bluesecblog.wordpress.com/2016/11/18/uicc-sim-usim/",
+            "https://blog.velosiot.com/euicc-and-esim-are-they-the-same-thing"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.motorola.actions",
@@ -3210,8 +3342,8 @@
     },
     {
         "id": "com.motorola.android.jvtcmd",
-        "label": "Java Tcmd Helper",
-        "description": "Seems to be a tools wich help find Java commands types.\ntcmd = commandes types",
+        "label": "JavaTcmdHelper",
+        "description": "tcmd = commandes types. Seems to be a tools wich help find Java commands types.\nUseless for normal user.",
         "removal": "delete"
     },
     {
@@ -3273,6 +3405,7 @@
     },
     {
         "id": "com.motorola.android.settings.modemdebug",
+        "label": "Modem Debug Settings",
         "description": "Provide modem debug settings menu ?\nNo longer in Android 10 image",
         "removal": "delete"
     },
@@ -3330,41 +3463,18 @@
     },
     {
         "id": "com.motorola.camera2",
-        "label": "Moto Camera 2",
-        "description": "Moto camera 2 is optimized for Moto devices and integrated with Google Photos.",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.camera2"
-        ],
-        "removal": "replace",
-        "suggestions": "cameras"
-    },
-    {
-        "id": "com.motorola.camera3",
-        "label": "Moto Camera 3",
-        "description": "Moto redesigned camera only compatible with select devices launched in 2020 and beyond.",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.camera3"
-        ],
-        "removal": "replace",
-        "suggestions": "cameras"
-    },
-    {
-        "id": "com.motorola.camera3.content.ai",
-        "label": "Moto Camera Content 3",
-        "dependencies": [
-            "com.motorola.camera3"
-        ],
-        "description": "Provides AI related features to 'com.motorola.camera3'",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.camera3.content.ai",
-            "https://beta.pithus.org/report/0b0a4e3d19819faf9f7448817b88172b33d83973334b2ba5fd99a814aae5575b"
-        ],
-        "removal": "delete"
+        "description": "Moto Camera 2 (https://play.google.com/store/apps/details?id=com.motorola.camera)\n",
+        "removal": "replace"
     },
     {
         "id": "com.motorola.carriersettingsext",
-        "description": "Seems safe to remove for now.\nCarrier settings ext\next = extension ?\nCarrier settings contains APN settings for instance.\n",
-        "removal": "delete"
+        "description": "This is a WiFi calling app supported by AT&T, T-Mobile, Orange.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.motorola.carriersettingsext",
+        "description": "This is a WiFi calling app supported by AT&T, T-Mobile, Orange.",
+        "removal": "replace"
     },
     {
         "id": "com.motorola.ccc.devicemanagement",
@@ -3422,18 +3532,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.motorola.coresettingsext",
-        "label": "Core Settings extension",
-        "description": "Its usefulness remains unkown.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.motorola.dciservice",
-        "label": "Moto DCI Service",
-        "description": "Not sure what it does.",
-        "removal": "delete"
-    },
-    {
         "id": "com.motorola.demo",
         "label": "Demo mode",
         "description": "Enable retail demonstration mode.",
@@ -3477,6 +3575,7 @@
     },
     {
         "id": "com.motorola.email",
+        "label": "Moto Email",
         "description": "Auto add CSP (Service Provider code) prefix to your phone when you're abroad.\nhttps://en.wikipedia.org/wiki/List_of_country_calling_codes\nThis seems to not work correctly and it's generally not a good idea to call home (via GSM) when you're abroad.\nIt's better and cheaper to use chat apps like Signal/Wire",
         "web": [
             "https://play.google.com/store/apps/details?id=com.motorola.email"
@@ -3609,10 +3708,7 @@
     {
         "id": "com.motorola.invisiblenet",
         "label": "Invisible Net",
-        "description": "Hard to find info about this one. I only found something from a patent: http://www.freepatentsonline.com/5469497.html\nIt's a Google patent and Google owned Motorola so maybe it is that's it.\nIt seems to implement the ICMS local area network. ICMS means Interactive Call Management Subsystems. Couldn't find more info about ICMS. It's strange that this is so badly documented.",
-        "web": [
-            "https://beta.pithus.org/report/233f65c9c8935eb7b970512e5a427149ba21ff6ea9f694c7f79d197797a14214"
-        ],
+        "description": "App for Alias ID, Shortcut Installer (most of the apps I have seen are Chinese apps).\nIt's some kind of a stub application launcher, if you open any of it's activities it goes to the play store or to the browser.",
         "removal": "delete"
     },
     {
@@ -3622,44 +3718,21 @@
     },
     {
         "id": "com.motorola.launcher3",
-        "description": "Motorola system launcher\nA default home screen app, provides a layout and display for app icons and listing.",
-        "removal": "unsafe",
-        "warning": "Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher)."
+        "label": "Moto App Launcher",
+        "description": "A default home screen app, provides a layout and display for app icons and listing.\nWARNING: Do not remove this package if you did not switch to a 3rd-pary launcher.\nKeep in mind that removing this package will break the `recent apps` button (even from another launcher).",
+        "removal": "caution",
+        "warning": "Uninstalling this breaks the Recents screen in across launchers"
     },
     {
         "id": "com.motorola.launcherconfig",
-        "description": "Config file of the motorola launcher? \nI guess launcher will not work anymore if you delete this package. Can someone confirm?",
+        "label": "Google Launcher Config",
+        "description": "It is a partner customization extension.\nHas a lot wallpapers in resources.",
         "removal": "replace",
-        "warning": "Don't remove this, unless you install another launcher.",
         "suggestions": "launchers"
     },
     {
         "id": "com.motorola.lifetimedata",
-        "description": "Not 100% sure but it's most likely the Total Call Timer or more generally it handles info like the date of manufacture of your device,\nusage time since first boot etc... \nTotal Call Timer gives you the time you spent calling.\nI don't know how to access to these info. It's surely a hidden menu (and may be accessible through the dialer with a special code)\n",
-        "removal": "delete"
-    },
-    {
-        "id": "com.motorola.livewallpaper3",
-        "label": "Interactive wallpapers",
-        "description": "Live wallpapers from Moto",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.livewallpaper3"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.motorola.mobiledesktop.core",
-        "label": "Ready For engine",
-        "description": "Let's you connect-control-view on android TV and PC.",
-        "web": [
-            "https://www.motorola.in/ready-for/"
-        ],
-        "removal": "replace"
-    },
-    {
-        "id": "com.motorola.motcameradesktop",
-        "label": "Camera Desktop Settings",
-        "description": "Video call effects for moto camera",
+        "description": "It's most likely the Total Call Timer or more generally it handles info like the date of manufacture of your device, usage time since first boot etc.\nTotal Call Timer gives you the time you spent calling. I don't know how to access to these info. It may be a hidden menu and may be accessible through the dialer with a special code.",
         "removal": "delete"
     },
     {
@@ -3706,23 +3779,9 @@
     },
     {
         "id": "com.motorola.motosignature.app",
-        "description": "Appears safe to remove.\nMaybe it's the service which check whether app's signature is trusted or not.\nNot useful if you know what you're doing (malwares apps are in PlayStore. This package will not protect you)\nMaybe I'm mistaken and this package does not handles app signatures. Can someone test it?\n",
-        "removal": "replace"
-    },
-    {
-        "id": "com.motorola.mototour",
-        "label": "Moto Tour",
-        "description": "Helps you learn about essential Moto features and customizations.",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.mototour"
-        ],
+        "label": "MotoSignatureApp",
+        "description": "This app has permissions descriptions, lab, game mode launch permissions, audio monitor descriptions.\nSo it's permissions to system apps?\nGoogle search shows that it's on some lists that recommend removing this app.",
         "removal": "delete"
-    },
-    {
-        "id": "com.motorola.msimsettings",
-        "label": "Dual SIM settings",
-        "description": "I'm guessing it helps you regarding your dual SIM management.",
-        "removal": "caution"
     },
     {
         "id": "com.motorola.nfc",
@@ -3802,13 +3861,12 @@
     },
     {
         "id": "com.motorola.systemserver",
-        "label": "com.motorola.systemserver",
-        "description": "Appears safe to remove. Maybe it's only needed for Motorola apps?",
+        "description": "Moto Service Experience, debugging app.",
         "removal": "delete"
     },
     {
         "id": "com.motorola.timeweatherwidget",
-        "label": "com.motorola.timeweatherwidget",
+        "label": "Moto Widget",
         "description": "Provides time/weather widget on the home screen.",
         "removal": "delete"
     },
@@ -3829,7 +3887,7 @@
     },
     {
         "id": "com.nearme.browser",
-        "label": "com.nearme.browser",
+        "label": "Browser",
         "description": "Default web browser",
         "removal": "replace",
         "suggestions": "browsers"
@@ -3844,7 +3902,7 @@
     },
     {
         "id": "com.nearme.instant.platform",
-        "label": "com.nearme.instant.platform",
+        "label": "Quick App",
         "description": "Not sure what it does.",
         "removal": "delete"
     },
@@ -4195,7 +4253,11 @@
     },
     {
         "id": "com.oneplus.factorymode",
-        "description": "FactoryMode\nUsed in the factory to test devices.\nType *#808# in the OnePlus dialer to acess the hidden menu.\nPotential security risk: https://nitter.net/fs0c131y/status/930115188988182531\nIt's possible for an app to enable root access on any device with the APK pre-installed.\nFor now, this only works in ADB, which requires local access to the device.",
+        "label": "FactoryMode",
+        "description": "Used in the factory to test devices.\nType *#808# in the OnePlus dialer to access the hidden menu.\nPotential security risk: it's possible for an app to enable root access on any device with the APK pre-installed.\nFor now, this only works in ADB, which requires local access to the device.",
+        "web": [
+            "https://nitter.net/fs0c131y/status/930115188988182531"
+        ],
         "removal": "delete"
     },
     {
@@ -4753,7 +4815,6 @@
     },
     {
         "id": "com.oppo.webview",
-        "label": "Oppo Webview",
         "description": "A WebView is a system component for the Android operating system (OS) that allows Android apps to display content from the web directly inside an application. It's based on Chrome.",
         "removal": "replace",
         "warning": "Make to have another Webview before uninstalling it or some apps may not work properly.",
@@ -4792,8 +4853,9 @@
     },
     {
         "id": "com.realme.securitycheck",
-        "description": "Security Analysis\n. Antivirus analysis on app install. It's up to you. Removing it may decrease your security for a bit more privacy (if we consider this app does this job well which is to be verified) [APK NEEDED]",
-        "removal": "delete"
+        "label": "SecurityAnalysis",
+        "description": "Antivirus analysis on app install. It's up to you. Removing it may decrease your security for a bit more privacy (if we consider this app does this job well which is to be verified).\nThe tested APK is from a Russian phone and might be different from other countries' versions. Application shows highly suspicious activities, sends analytics to HeyTap, connects to Facebook Ads, Google Ads, Vungle, and seems to have anti-debug checks. Was not tested if the phone bootloops once removed.",
+        "removal": "caution"
     },
     {
         "id": "com.rongcard.eid",
@@ -4802,7 +4864,12 @@
     },
     {
         "id": "com.samsung.SMT",
-        "description": "Samsung TTS (Text-to-speech)\nWorks with applications such as S Voice; translation apps, GPS that require Text-To-Speech (TTS) functionality and reads back text\nhttps://galaxystore.samsung.com/detail/com.samsung.SMT\n",
+        "label": "Samsung TTS",
+        "description": "Samsung Text-to-speech service.\nWorks with applications such as S Voice; translation apps, GPS that require Text-To-Speech (TTS) functionality and reads back text.\nWARNING: SOME VERSIONS OF THIS APP ARE VULNERABLE TO PRIVILEGE ESCALATION ATTACKS! It can allow arbitrary RCE as system (UID 1000). Identifier: CVE-2019-16253.",
+        "web": [
+            "https://galaxystore.samsung.com/detail/com.samsung.SMT",
+            "https://github.com/flankerhqd/vendor-android-cves/tree/master/SMT-CVE-2019-16253"
+        ],
         "removal": "replace",
         "suggestions": "tts"
     },
@@ -4843,7 +4910,11 @@
     },
     {
         "id": "com.samsung.android.aircommandmanager",
-        "description": "AirCommandManager manager\nGives you access to signature S Pen features. You can access Air command anytime you are using your phone by simply taking out the S Pen.\nhttps://www.samsung.com/global/galaxy/what-is/air-command/\n",
+        "label": "AirCommandManager",
+        "description": "AirCommandManager (FACM) gives you access to signature S Pen features. You can access Air command anytime you are using your phone by simply taking out the S Pen.",
+        "web": [
+            "https://www.samsung.com/global/galaxy/what-is/air-command/"
+        ],
         "removal": "delete"
     },
     {
@@ -4858,7 +4929,11 @@
     },
     {
         "id": "com.samsung.android.allshare.service.mediashare",
-        "description": "Samsung Allshare service (now called SmartView).\nUsed to stream content from your phone to a Samsung smart TV.\nhttps://www.samsung.com/us/apps/smart-view-2/",
+        "label": "Nearby Service/SmartView",
+        "description": "Formerly, Samsung AllShare service.\nUsed to stream content from your phone to a Samsung smart TV.\n On devices where the display-name is 'Nearby Service', 'Smart View' will continue to work properly (it doesn't depend on Nearby Service).",
+        "web": [
+            "https://www.samsung.com/us/apps/smart-view-2/"
+        ],
         "removal": "delete"
     },
     {
@@ -4923,7 +4998,8 @@
     },
     {
         "id": "com.samsung.android.app.cocktailbarservice",
-        "description": "Edge screen\nEnables you to open your five most used apps by simply swiping the edge of the screen.\nSwipe one of the edges of the screen to bring up information even when your device is locked (with the screen off). \nYou can also set it up to display the news or weather, for example.\n",
+        "label": "Samsung Edge screen",
+        "description": "Enables you to open your five most used apps by simply swiping the edge of the screen.\nSwipe one of the edges of the screen to bring up information even when your device is locked (with the screen off). \nYou can also set it up to display the news or weather, for example.\n",
         "removal": "delete"
     },
     {
@@ -4944,9 +5020,9 @@
     },
     {
         "id": "com.samsung.android.app.dressroom",
-        "label": "Samsung Wallpapers",
+        "label": "Samsung Wallpaper and style",
         "description": "Wallaper manager. Needed to pick up a wallpaper on Android 10+.\nHas INTERNET permission and ACCESS_MEDIA_LOCATION\nBefore Android 10, you should still be able to set a wallpaper from the Samsung gallery without this package.",
-        "removal": "unsafe",
+        "removal": "caution",
         "warning": "Removing this app will prevent you to set a new wallpaper on Android 10+ (even from the Gallery) or changing the Material You palette on Android 12+."
     },
     {
@@ -5022,7 +5098,8 @@
     },
     {
         "id": "com.samsung.android.app.omcagent",
-        "description": "Open Market Customization Agent\nBy default, the device prevents from being customized by a source other than Knox Configure.\nhttps://docs.samsungknox.com/admin/knox-configure/normal-mode.html\n",
+        "label": "Samsung Configuration update",
+        "description": "Open Market Customization Agent (AKA 'Recommended Apps')\nInstalls more Samsung \"Recommended Apps\" after device setup.",
         "removal": "delete"
     },
     {
@@ -5042,8 +5119,12 @@
     },
     {
         "id": "com.samsung.android.app.routines",
-        "description": "Samsung bixby routines (https://www.samsung.com/global/galaxy/what-is/bixby-routines/)\nAutomating actions triggered by context clues: location, time, or event\n",
-        "removal": "delete"
+        "label": "Samsung Modes and Routines",
+        "description": "Formerly, Bixby Routines.\nAutomating actions triggered by context clues: location, time, or event.",
+        "web": [
+            "https://www.samsung.com/global/galaxy/what-is/bixby-routines/"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.app.sbrowseredge",
@@ -5059,6 +5140,13 @@
         "id": "com.samsung.android.app.settings.bixby",
         "description": "Bixby settings (Bixby = Samsung intelligence assistant)\n",
         "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.app.sharelive",
+        "label": "Quick Share",
+        "description": "Samsung Quick Share (from the Galaxy Store)",
+        "removal": "replace",
+        "suggestions": "sharing_apps"
     },
     {
         "id": "com.samsung.android.app.simplesharing",
@@ -5127,7 +5215,8 @@
     },
     {
         "id": "com.samsung.android.ardrawing",
-        "description": "AR Doodles (accessible through AR Zone)\nLets you draw on your face using the front camera and uses AR Core for drawing on the environment with the rear camera.\nOnly Sasmung AR app (afaik) that requests location access, and it refuses to run without it\n",
+        "label": "Samsung AR Doodle",
+        "description": "Accessible through AR Zone.\nLets you draw on your face using the front camera and uses AR Core for drawing on the environment with the rear camera.\nOnly Sasmung AR app (afaik) that requests location access, and it refuses to run without it.",
         "removal": "delete"
     },
     {
@@ -5157,8 +5246,10 @@
     },
     {
         "id": "com.samsung.android.aware.service",
-        "description": "Samsung Quick Share\nUse Wifi direct to share files between 2 Samsung Galaxy phones (it's only for Samsung Galaxy users)\nQuick Share also lets you temporarily upload files to Samsung Cloud\nThere are better alternatives (compatible with all Android devices and free and open-source):\nFor instance: https://f-droid.org/packages/com.genonbeta.TrebleShot/\n",
-        "removal": "delete"
+        "label": "Samsung Quick Share Agent",
+        "description": "Formerly, Quick Share.\nUse Wifi direct to share files between 2 Samsung Galaxy phones (it's only for Samsung Galaxy users)\nQuick Share also lets you temporarily upload files to Samsung Cloud\nThere are better alternatives (compatible with all Android devices and free and open-source):\nFor instance: https://f-droid.org/packages/com.genonbeta.TrebleShot/\n",
+        "removal": "replace",
+        "suggestions": "sharing_apps"
     },
     {
         "id": "com.samsung.android.bbc.bbcagent",
@@ -5177,8 +5268,12 @@
     },
     {
         "id": "com.samsung.android.bio.face.service",
-        "description": "Handles Face recognition unlock \nhttps://kp-cdn.samsungknox.com/b60a7f0f59df8f466e8054f783fbbfe2.pdf\n",
-        "removal": "replace"
+        "label": "Face",
+        "description": "Handles Face recognition unlock.\nNOTE: Removing this package causes biometric prompts in apps to be delayed by 5-8 seconds before appearing. Selecting 'Biometrics and security' in the settings app also locks up the Settings app for about 5-8 seconds but eventually loads and functions as normal.",
+        "web": [
+            "https://kp-cdn.samsungknox.com/b60a7f0f59df8f466e8054f783fbbfe2.pdf"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.samsung.android.biometrics",
@@ -5247,6 +5342,15 @@
         "removal": "caution"
     },
     {
+        "id": "com.samsung.android.cmfa.framework",
+        "label": "CMFA Framework",
+        "description": "Continous Multi-Factor Authentication Framework\nSeems useless if you aren't logged-in to a Samsung Account.",
+        "web": [
+            "https://docs.samsungknox.com/dev/knox-sdk/appendix/additional-advanced-access-control-enhancements/"
+        ],
+        "removal": "replace"
+    },
+    {
         "id": "com.samsung.android.contacts",
         "description": "Samsung contacts app",
         "removal": "replace",
@@ -5279,12 +5383,21 @@
     },
     {
         "id": "com.samsung.android.dynamiclock",
-        "description": "Samsung Wallpaper services (AKA 'Dynamic Lock')\nAutomatically changes your Lock screen’s wallpaper\nhttps://www.samsung.com/us/support/answer/ANS00084210/\n",
-        "removal": "delete"
+        "label": "Samsung Wallpaper services",
+        "description": "Formerly, Dynamic Lockscreen.\nAutomatically changes your Lock screen’s wallpaper every time your Galaxy phone wakes up (wallpapers update every 2 weeks).",
+        "web": [
+            "https://www.samsung.com/us/support/answer/ANS10001593"
+        ],
+        "required_by": [
+            "com.samsung.systemui.lockstar"
+        ],
+        "removal": "caution",
+        "warning": "Breaks LockStar customizations."
     },
     {
         "id": "com.samsung.android.easysetup",
-        "description": "Samsung Connect Easy Setup (now SmartThings)\nUsed to connect every Samsung device you have in your house.\nWhat's weird is that Galaxy S10 has this package (available nowhere) but S9 has com.samsung.android.oneconnect\navailable on the Playstore (https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect)\n#\nNeeds \"com.samsung.android.beaconmanager\" to be useful.\n",
+        "label": "Nearby device scanning",
+        "description": "Previously, Samsung Connect Easy Setup, Samsung SmartThings.\nNeeds \"com.samsung.android.beaconmanager\" to be useful.",
         "removal": "delete"
     },
     {
@@ -5339,12 +5452,20 @@
     },
     {
         "id": "com.samsung.android.game.gametools",
-        "description": "Samsung Game Tools (https://www.samsung.com/au/support/mobile-devices/how-to-use-game-tools/)\nLet you record and share screenshots of your game-play. \n",
+        "label": "Samsung Game Booster",
+        "description": "Lets you record and share screenshots of your game-play.",
+        "web": [
+            "https://www.samsung.com/au/support/mobile-devices/how-to-use-game-tools/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.game.gos",
-        "description": "Samsung Game Optimizing Service \nIs supposed to \"improve\" game performance.\n",
+        "label": "Samsung Game Optimizing Service",
+        "description": "It's supposed to \"improve\" game performance.\nHas a \"Game Intent Service\" that runs occasionally. If uninstalling fails, try disabling.",
+        "web": [
+            "https://pcgamer.com/samsungs-game-optimization-service-might-be-throttling-the-performance-of-over-10000-apps"
+        ],
         "removal": "delete"
     },
     {
@@ -5356,6 +5477,15 @@
         "id": "com.samsung.android.gearoplugin",
         "description": "Gear S Plugin (https://play.google.com/store/apps/details?id=com.samsung.android.gearoplugin)\nPlugin for com.samsung.android.app.watchmanager\n",
         "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.hdmapp",
+        "label": "HdmApp",
+        "description": "Hypervisor Device Manager App",
+        "web": [
+            "https://docs.samsungknox.com/devref/knox-sdk/reference/com/samsung/android/knox/hdm/HdmManager.html"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.hmt.vrshell",
@@ -5393,7 +5523,12 @@
     },
     {
         "id": "com.samsung.android.intelligenceservice2",
-        "description": "It seems that this package is a kind of spyware. Very difficult to find information about this.\nSome people say it's linked to Carrier IQ (which is a carrier rootkit for the NSA).\nhttps://en.wikipedia.org/wiki/Carrier_IQ\nhttps://forum.xda-developers.com/showpost.php?s=c85df628dfc39c3a971e6f9cfa98cbb8&p=54071328&postcount=6\nThis package also have very stranges permissions : READ_PLACE / WRITE_PLACE. I couldn't find any explaination on the web. \nSo either it's a useless samsung package either it's a spyware. I delete it and I didn't notice anything bad.\n",
+        "label": "IntelligenceService2",
+        "description": "It seems that this package is a kind of spyware. Very difficult to find information about this.\nSome people say it's linked to Carrier IQ (which is a carrier rootkit for the NSA).\nThis package also have very stranges permissions: READ_PLACE / WRITE_PLACE. I couldn't find any explaination on the web.\nSo either it's a useless samsung package or a spyware. I deleted it and I didn't notice anything bad.",
+        "web": [
+            "https://en.wikipedia.org/wiki/Carrier_IQ",
+            "https://forum.xda-developers.com/showpost.php?s=c85df628dfc39c3a971e6f9cfa98cbb8&p=54071328&postcount=6"
+        ],
         "removal": "delete"
     },
     {
@@ -5413,7 +5548,8 @@
     },
     {
         "id": "com.samsung.android.knox.analytics.uploader",
-        "description": "Knox Analytics Uploader\nSends analytcs to Samsung\n",
+        "label": "Knox Analytics Uploader",
+        "description": "Knox Analytics Uploader\nSends analytics to Samsung.",
         "removal": "delete"
     },
     {
@@ -5423,12 +5559,20 @@
     },
     {
         "id": "com.samsung.android.knox.containeragent",
-        "description": "KNOX Work profile/space\nProvides an isolated environment to store data (see Secure Folder)\n\nNote : With Knox 3.4, Knox containers are now deprecated and replaced by Android work profiles.\nComunicate with Samsung servers :\n- https://vas.samsungapps.com (App updates)\n- http://cn-ms.samsungapps.com (APK Server)\n#\nhttps://support.samsungknox.com/hc/en-us/articles/115012547907-What-URLs-do-I-have-to-whitelist-to-make-Samsung-apps-work-with-an-authenticated-proxy-\n",
+        "label": "Work profile",
+        "description": "Formerly, Workspace.\nProvides an isolated environment to store data (see Secure Folder)\n\nNote: With Knox 3.4, Knox containers are now deprecated and replaced by Android work profiles.\nComunicate with Samsung servers:\n- https://vas.samsungapps.com (App updates)\n- http://cn-ms.samsungapps.com (APK Server).",
+        "web": [
+            "https://support.samsungknox.com/hc/en-us/articles/115012547907-What-URLs-do-I-have-to-whitelist-to-make-Samsung-apps-work-with-an-authenticated-proxy-"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.knox.containercore",
-        "description": "KNOX Work profile/space\nProvidess an isolated environment to store data (see Secure Folder)\n\nNote : With Knox 3.4, Knox containers are now deprecated and replaced by Android work profiles.\nComunicate with Samsung servers :\n- https://vas.samsungapps.com (App updates)\n- http://cn-ms.samsungapps.com (APK Server)\n#\nhttps://support.samsungknox.com/hc/en-us/articles/115012547907-What-URLs-do-I-have-to-whitelist-to-make-Samsung-apps-work-with-an-authenticated-proxy-\n",
+        "label": "KnoxCore",
+        "description": "Providess an isolated environment to store data (see Secure Folder)\n\nNote: With Knox 3.4, Knox containers are now deprecated and replaced by Android work profiles.\nComunicate with Samsung servers:\n- https://vas.samsungapps.com (App updates)\n- http://cn-ms.samsungapps.com (APK Server).",
+        "web": [
+            "https://support.samsungknox.com/hc/en-us/articles/115012547907-What-URLs-do-I-have-to-whitelist-to-make-Samsung-apps-work-with-an-authenticated-proxy-"
+        ],
         "removal": "delete"
     },
     {
@@ -5448,7 +5592,11 @@
     },
     {
         "id": "com.samsung.android.location",
-        "description": "IMO it handles GPS needs for some samsungs apps. I have it removed on my phone and I still can use the GPS with a 3-party app.\n",
+        "label": "slocation",
+        "description": "Handles GPS queries for some Samsung (Galaxy) apps, such as Camera location tagging. Apps exclusively using raw GPS and/or Google Location API are unaffected.",
+        "web": [
+            "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/issues/762#issuecomment-2567149732"
+        ],
         "removal": "replace"
     },
     {
@@ -5476,7 +5624,8 @@
     },
     {
         "id": "com.samsung.android.mdecservice",
-        "description": "Samsung Call & Text\nNot 100% sure but by looking at the recompiled java code it seems the apps provides a way to receive call and SMS on\nSamsung accessories. In any case it is only useful for Samsung IoT stuff.\nEmbeded Google Firebase analytics\n",
+        "label": "Call & Message Continuity",
+        "description": "Not 100% sure, but by looking at the decompiled Java/Dalvik/A.R.T. code it seems the app provides a way to receive call and SMS on Samsung accessories.\nIn any case it is only useful for Samsung IoT stuff.\nEmbeded Google Firebase analytics.",
         "removal": "delete"
     },
     {
@@ -5491,18 +5640,22 @@
     },
     {
         "id": "com.samsung.android.mdx.kit",
-        "description": "MDE Service Framework\nMDE = Multi Devices Experience (https://www.samsung.com/levant/multi-device-experience/)\nFramework for IoT stuff.\nAsks for a LOT of dangerous permissions\nInteracts with \"com.samsung.android.mobileservice\" and \"com.osp.app.signin\"\n",
+        "label": "S Share Connectivity",
+        "description": "Previously, Mdx Kit Service, MDE Service Framework.\nMDE = Multi Devices Experience.\nFramework for IoT stuff.\nAsks for a LOT of dangerous permissions\nInteracts with \"com.samsung.android.mobileservice\" and \"com.osp.app.signin\"",
+        "web": [
+            "https://www.samsung.com/levant/multi-device-experience/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.mdx.quickboard",
-        "label": "Media and Devices",
-        "description": "Media & Devices feature\nKind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
+        "label": "Media and devices",
+        "description": "Kind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
         "web": [
             "https://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/"
         ],
-        "removal": "replace",
-        "warning": "BRemoving this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait)"
+        "removal": "caution",
+        "warning": "Removing this package does not prevent you to connect your phones to smart devices, but oddly enough causes the brightness slider in the notification panel to not be displayed in landscape orientation (it's still shown in portrait) on some devices."
     },
     {
         "id": "com.samsung.android.mediacontroller",
@@ -5522,12 +5675,17 @@
     },
     {
         "id": "com.samsung.android.mobileservice",
-        "description": "Samsung Experience Service (https://play.google.com/store/apps/details?id=com.samsung.android.mobileservice)\nHandle you samsung account and is needed to use some samsung apps features.\nIt allows you to use multiple Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings, \nwith your Samsung account credentials.\n",
+        "label": "Group Sharing",
+        "description": "Its name was Samsung Experience Service, before One UI 1.0 (Samsung Experience version 10.0, Android 8.1). Now, it's Group Sharing. Both have similar functionality, but the legacy version was more akin to Samsung Core Services. Handles your Samsung account and is needed to use some Samsung apps features.\nIt allows you to use multiple Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings, with your Samsung account credentials.",
+        "web": [
+            "https://techshift.net/what-is-samsung-group-sharing/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.net.wifi.wifiguider",
-        "description": "Wi-Fi Tips\nI've never seen any \"wifi tips\" so I'm not sure if this app has any other functionality\nUpon reinstalling a notification pops up saying \"Analyzing Wi-Fi\" for a few seconds, no idea what it's doing\n",
+        "label": "Wi-Fi Tips",
+        "description": "Shows a question-mark button next to Wi-Fi networks that failed to connect for any reason, providing info to fix the specific issue. It also has a dedicated Settings activity that lists all possible help-tips, accessible via the \"More tips\" button when reading a tip.\nUpon reinstalling a notification pops up saying \"Analyzing Wi-Fi\" for a few seconds, no idea what it's doing.",
         "removal": "delete"
     },
     {
@@ -5559,8 +5717,10 @@
     },
     {
         "id": "com.samsung.android.provider.shootingmodeprovider",
-        "description": "Provide camera modes (when you swipe left fromt the camera app)\nSafe to remove (but it is quite useful)",
-        "removal": "replace"
+        "label": "ShootingModeProvider",
+        "description": "Provide camera modes (when you swipe left from the camera app)\nSafe to remove (but it is quite useful)",
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.samsung.android.provider.stickerprovider",
@@ -5599,7 +5759,8 @@
     },
     {
         "id": "com.samsung.android.scloud.auth",
-        "description": "Handle authentifcation for Samsung cloud",
+        "label": "Samsung Cloud Data Relay",
+        "description": "Handle authentication for Samsung cloud",
         "removal": "delete"
     },
     {
@@ -5609,8 +5770,21 @@
     },
     {
         "id": "com.samsung.android.sconnect",
-        "description": "Samsung Quick connect (discontinued ?)\nIn theorie, it lets you connect your phone to a variety of devices over Wifi\nthat support multiple protocols — including Wifi Direct and Miracast — to display photos, video or audio.\nhttps://www.samsung.com/uk/support/tv-audio-video/what-is-screen-mirroring-and-how-do-i-use-it-with-my-samsung-tv-and-samsung-mobile-device/\n",
+        "label": "Quick connect",
+        "description": "(Discontinued) In theory, it lets you connect your phone to a variety of devices over Wifi that support multiple protocols — including Wifi Direct and Miracast — to display photos, video or audio.",
+        "web": [
+            "https://www.samsung.com/uk/support/tv-audio-video/what-is-screen-mirroring-and-how-do-i-use-it-with-my-samsung-tv-and-samsung-mobile-device/"
+        ],
         "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.scs",
+        "label": "Samsung Core Services",
+        "description": "For quick and easy provision of the main features used by Samsung applications through application updates rather than through the distribution of software updates.\nProvides improved search, extraction, and intelligence features based on text and images. Used in various Samsung applications such as Camera, Gallery, Messages, Contacts, Settings, and Finder.",
+        "web": [
+            "https://galaxystore.samsung.com/prepost/000005514204"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.sdk.handwriting",
@@ -5634,13 +5808,20 @@
     },
     {
         "id": "com.samsung.android.securitylogagent",
-        "description": "Security Log Agent\nhttps://www.androidexplained.com/galaxy-note-9-disable-security-log-agent/\nRun in the background and monitore your device for any change to the /system partition.\nNOTE : When you root your phone, it will constantly tell you that your device is modified.\n",
+        "label": "SecurityLogAgent",
+        "description": "Runs in the background and monitors your device for any change to the system partition. It also listens for use of permissions by 3rd-party apps. This is a feature found in Security settings, named 'permission monitor'\nNOTE: When you root your phone, it will constantly tell you that your device is modified.",
+        "web": [
+            "https://www.androidexplained.com/galaxy-note-9-disable-security-log-agent/",
+            "https://samsung.com/levant/support/mobile-devices/what-is-app-permission-monitor-feature-and-how-to-turn-it-off",
+            "https://howtogeek.com/332816/how-to-stop-samsungs-app-permission-monitor-from-displaying-notifications"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.server.iris",
-        "description": "Provides iris recognition feature\n",
-        "removal": "replace"
+        "label": "Iris",
+        "description": "Provides iris recognition feature.\nNOTE: removing this package causes biometric prompts in apps to be delayed by 5-8 seconds before appearing. Selecting 'Biometrics and security' in the settings app also locks up the Settings app for about 5-8 seconds but eventually loads and functions as normal.",
+        "removal": "delete"
     },
     {
         "id": "com.samsung.android.service.health",
@@ -5779,7 +5960,8 @@
     },
     {
         "id": "com.samsung.android.svcagent",
-        "description": "Impossible to know what this system app does. It has full access to internet network anyway.\nSafe to remove\n",
+        "label": "SVC Agent",
+        "description": "Impossible to know what this system app does. It has full access to internet network anyway. Safe to remove. Its APK implies it has a UI, but it doesn't have any activities. It occasionally runs a MainService for many consecutive hours.",
         "removal": "delete"
     },
     {
@@ -5794,13 +5976,18 @@
     },
     {
         "id": "com.samsung.android.tadownloader",
-        "description": "Seems to check if a trusted application needs an update and downloads it. \nThis package probably does more than that. There is a LOT of lines of code (obfuscated obviously)\nIt was used to push an update to fix a security issue with the fingerprint sensor in 2019.\nhttps://libredd.it/r/galaxys10/comments/bcy93f/adb_how_to_get_the_fingerprint_update_pushed_to/\nSeems to be only used for biometrics stuff\nThere is Samsung analytics inside. You may want to remove it if you don't use biometrics authentification.\n",
+        "label": "TADownloader",
+        "description": "Seems to check if a trusted application needs an update and downloads it. \nThis package probably does more than that. There is a LOT of lines of code (obfuscated obviously)\nIt was used to push an update to fix a security issue with the fingerprint sensor in 2019.\nSeems to be only used for biometrics stuff\nThere is Samsung analytics inside. You may want to remove it if you don't use biometrics authentication.\n",
+        "web": [
+            "https://libredd.it/r/galaxys10/comments/bcy93f/adb_how_to_get_the_fingerprint_update_pushed_to/"
+        ],
         "removal": "replace"
     },
     {
         "id": "com.samsung.android.tapack.authfw",
-        "description": "AuthFw TaPack\nAuthentification Framework for Trusted Application? (don't know what 'Pack' could mean)\nHard to know what this app really does. Seems to be an assets provider used by com.samsung.android.tadownloader\n",
-        "removal": "replace"
+        "label": "AuthFw TaPack",
+        "description": "Authentication Framework for Trusted Application? (don't know what 'Pack' could mean)\nHard to know what this app really does. Seems to be an assets provider used by com.samsung.android.tadownloader.",
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.themecenter",
@@ -6077,7 +6264,7 @@
     },
     {
         "id": "com.samsung.android.watch.weather",
-        "label": "com.samsung.android.watch.weather",
+        "label": "Weather",
         "description": "Weather application from Samsung.",
         "removal": "replace",
         "suggestions": "weather_apps"
@@ -6124,11 +6311,8 @@
     },
     {
         "id": "com.samsung.android.weather",
-        "label": "Samsung Weather",
-        "dependencies": [
-            "com.sec.android.daemonapp"
-        ],
-        "description": "Lets you see updates on the weather at all times, specific to your current location.\nEven you can also check the weather in other areas.",
+        "label": "Samsung weather forecast",
+        "description": "Unified Daemon app. Named \"Weather\" on some Samsung Galaxy devices.\nProvides support for a number of different apps on your device. These include the Weather, Yahoo Finance and Yahoo News apps amongst others. The data is used by apps such as the Alarm, Calendar app and the Camera (including the \"Scan QR code\" Quick-Panel tile). If the display-name is \"Weather\", it doubles as the Samsung Weather app, which provides weather widgets.",
         "removal": "replace",
         "suggestions": "weather_apps"
     },
@@ -6159,7 +6343,8 @@
     },
     {
         "id": "com.samsung.app.newtrim",
-        "description": "Samsung Video trimmer\nLets you quickly trim video files (from the gallery “Edit -> Studio -> Video Trimmer”)\n",
+        "label": "Editor Lite",
+        "description": "Formerly, Samsung Video Trimmer.\nLets you quickly trim video files (from the gallery “Edit -> Studio -> Video Trimmer”). This trimmer is both imprecise and inaccurate, ffmpeg is much better.",
         "removal": "replace"
     },
     {
@@ -6247,6 +6432,12 @@
         "id": "com.samsung.hiddennetworksetting",
         "description": "Set of hidden network settings (inlcuding frequency band choice).\nHow to see these settings: https://forum.xda-developers.com/galaxy-note-8/help/q-hidden-network-settings-pie-t3914421/page4",
         "removal": "replace"
+    },
+    {
+        "id": "com.samsung.ims.smk",
+        "label": "SimMobilityKit",
+        "description": "",
+        "removal": "caution"
     },
     {
         "id": "com.samsung.ipservice",
@@ -6423,6 +6614,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.sec.android.autodoodle.service",
+        "label": "AutoDoodle",
+        "description": "Samsung Auto Doodle for Photo Editor",
+        "web": [
+            "https://galaxystore.samsung.com/prepost/000005425352"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.sec.android.AutoPreconfig",
         "description": "Auto Preconfig\nTells you to format the device when sim from other country is used basically (won't let you use another one)\n",
         "removal": "delete"
@@ -6444,8 +6644,12 @@
     },
     {
         "id": "com.sec.android.app.apex",
-        "description": "Samsung ApexService\nProvides a motion photos player/viewer\nhttps://www.samsung.com/global/galaxy/what-is/motion-photo/\n",
-        "removal": "delete"
+        "label": "Samsung ApexService",
+        "description": "Enables taking motion photos and provides a motion photos player/viewer, also does face recognition in the gallery app.",
+        "web": [
+            "https://www.samsung.com/global/galaxy/what-is/motion-photo/"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.sec.android.app.applinker",
@@ -6634,7 +6838,8 @@
     },
     {
         "id": "com.sec.android.app.setupwizard",
-        "description": "Samsung Setupwizard\nThe Welcome screen which guides you through the basics of setting up your device when you boot it for the first time (or after a factory reset)\n",
+        "label": "Setup Wizard",
+        "description": "The Welcome screen which guides you through the basics of setting up your device when you boot it for the first time (or after a factory reset). On some Verizon-carried devices, it can show an annoying \"SIM card not from Verizon Wireless\" notification, for each boot, and it can't be blocked unless you disable the app.",
         "removal": "delete"
     },
     {
@@ -6664,7 +6869,8 @@
     },
     {
         "id": "com.sec.android.app.sysscope",
-        "description": "Checks after every boot if the ROM and kernel have been modified. This package is only present on Verizon-locked phones.\nVerizon has the ability to check if your device has root access (content://com.verizon.security/ROOT_STATUS)\n",
+        "label": "SysScope",
+        "description": "Checks after every boot if the ROM and kernel have been modified. This package is usually present on Verizon-locked phones.\nVerizon has the ability to check if your device has root access (content://com.verizon.security/ROOT_STATUS).",
         "removal": "delete"
     },
     {
@@ -6720,8 +6926,10 @@
     },
     {
         "id": "com.sec.android.diagmonagent",
+        "label": "DiagMonAgent",
         "description": "Diagnostic Monitoring Agent\nUsed to send diagnostic data to Samsung\nData collection from Settings > Biometrics and security > Send diagnostic data\n",
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Disabling this causes scheduled services to aggressively launch it every second, spamming the android crash log and overheating the device, thus draining battery. More info is needed on the dependencies that trigger this behavior. Version tested: 9.0.11."
     },
     {
         "id": "com.sec.android.easyMover",
@@ -6750,12 +6958,20 @@
     },
     {
         "id": "com.sec.android.fido.uaf.asm",
-        "description": "Fido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.\nhttps://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html\nhttps://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html\nThe UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device to the online service and using a local authentication mechanism such as iris or fingerprint recognition.\nhttps://developers.google.com/identity/fido/android/native-apps\nThe UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.\nhttps://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html\nSafe to remove if you don't use password-less authentification to access online services.",
+        "label": "Fido ASM Data",
+        "description": "Fido is a set of open technical specifications for mechanisms of authenticating users to online services that do not depend on passwords.\nThe UAF protocol is designed to enable online services to offer passwordless and multi-factor security by allowing users to register their device to the online service and using a local authentication mechanism such as iris or fingerprint recognition.\nThe UAF Authenticator-Specific Module (ASM) is a software interface on top of UAF authenticators which gives a standardized way for FIDO UAF clients to detect and access the functionality of UAF authenticators and hides internal communication complexity from FIDO UAF Client.\nSafe to remove if you don't use password-less authentication to access online services.",
+        "web": [
+            "https://fidoalliance.org/specs/u2f-specs-1.0-bt-nfc-id-amendment/fido-glossary.html",
+            "https://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-overview-v2.0-rd-20170927.html",
+            "https://developers.google.com/identity/fido/android/native-apps",
+            "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-asm-api-v1.0-ps-20141208.html"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sec.android.fido.uaf.client",
-        "description": "Fido UAF client. It's a layer that connects authenticator and RP (the application owner) and ensures validity of the connection. \nSo it can be browser, desktop application, mobile application, platform(i.e. android/ios).\nSee above\n\nSafe to remove if you don't use password-less authentification to acess online servics\n",
+        "label": "FIDO UAF Client",
+        "description": "It's a layer that connects authenticator and RP (the application owner) and ensures validity of the connection. It can be browser, desktop application, mobile application, platform(i.e. android/ios).\nSafe to remove if you don't use password-less authentication to access online services.",
         "removal": "delete"
     },
     {
@@ -6915,12 +7131,17 @@
     },
     {
         "id": "com.sec.enterprise.mdm.services.simpin",
-        "description": "Entreprise Sim Pin Service\nI couldn't find information about this package. No permissions asked. It's quite strange.\n#\nMobile device management (MDM) is a type of security software used by an IT department to monitor employees' mobile devices.\nKNOX-dependent.\nhttps://developer.samsung.com/tech-insights/knox/mobile-device-management\n",
+        "label": "Enterprise Sim Pin Service",
+        "description": "I couldn't find information about this package. No permissions asked. It's quite strange.\nMobile device management (MDM) is a type of security software used by an IT department to monitor employees' mobile devices.\nKNOX-dependent.",
+        "web": [
+            "https://developer.samsung.com/tech-insights/knox/mobile-device-management"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sec.enterprise.mdm.vpn",
-        "description": "Entreprise VPN service\nI couldn't find information about this package. No permissions asked too.\nSee above for MDM signification\n",
+        "label": "Enterprise VPN Services",
+        "description": "I couldn't find information about this package. No permissions asked too.\nSee above for MDM signification\n",
         "removal": "delete"
     },
     {
@@ -7160,7 +7381,8 @@
     },
     {
         "id": "com.sonyericsson.idd.agent",
-        "description": "Anonymous Usage Stats\nUsed to send \"anonymous\" information about how you use your Sony Smartphone to Sony servers.\nNobody knows how these info are anonymized...\n",
+        "label": "Anonymous Usage Stats",
+        "description": "Used to send \"anonymous\" information about how you use your Sony Smartphone to Sony servers.\nIt remains unclear exactly how this information is anonymized.",
         "removal": "delete"
     },
     {
@@ -7210,7 +7432,8 @@
     },
     {
         "id": "com.sonyericsson.unsupportedheadsetnotifier",
-        "description": "Given its name, I think it diplays a notification when you insert a headset not compatible with your phone.\n",
+        "label": "Unsupported Headset Notifier",
+        "description": "Given its name, I think it diplays a notification when you insert a headset not compatible with your phone.",
         "removal": "replace"
     },
     {
@@ -7273,7 +7496,7 @@
     },
     {
         "id": "com.sonymobile.anondata",
-        "description": "Anonymous Usage Stats (yes just as com.sonyericsson.idd.agent but it's for other phones)\nUsed to send \"anonymous\" information about how you use your Sony Smartphone to Sony servers.\nNobody knows how these info are anonymized...\n",
+        "description": "Anonymous Usage Stats (yes just as com.sonyericsson.idd.agent but it's for other phones)\nUsed to send \"anonymous\" information about how you use your Sony Smartphone to Sony servers.\nIt remains unclear exactly how this information is anonymized.",
         "removal": "delete"
     },
     {
@@ -7339,7 +7562,8 @@
     },
     {
         "id": "com.sonymobile.email",
-        "description": "Sony Email app\n",
+        "label": "Sony Email",
+        "description": "Sony Email app",
         "removal": "replace",
         "suggestions": "email_clients"
     },
@@ -7395,7 +7619,7 @@
     },
     {
         "id": "com.sonymobile.intelligent.iengine",
-        "description": "According to a sony user it is part of Smart Screen rotation (auto screen rotation based on the gyroscope).\nSeems not reliable.\nDoes it break the screen-rotation if removed?\n",
+        "description": "According to a sony user it is part of Smart Screen rotation (auto screen rotation based on the gyroscope). Doesn't seem reliable.\nDoes it break the screen-rotation if removed?",
         "removal": "delete"
     },
     {
@@ -7420,7 +7644,8 @@
     },
     {
         "id": "com.sonymobile.music.googlelyricsplugin",
-        "description": "Google lyrics plugin\nProvides lycris from Google in the sony music app\n",
+        "label": "Google lyrics extension",
+        "description": "Provides lyrics from Google in the sony music app",
         "removal": "delete"
     },
     {
@@ -7440,12 +7665,21 @@
     },
     {
         "id": "com.sonymobile.pip",
-        "description": "Sony pip (Picture in Picture)\nAllows videos to shrink down to a small resizable window.\nOnly useful bere Android Oreo which provide native support for Pip ?\nhttps://developer.android.com/guide/topics/ui/picture-in-picture\nhttps://support.sonymobile.com/global-en/xperiaxz1compact/faq/apps-&-settings/8019307455ff6184015e92f63324005926/\n",
+        "label": "pip",
+        "description": "Sony's PiP (Picture in Picture)\nAllows videos to shrink down to a small resizable window.\nOnly useful bere Android Oreo which provide native support for PiP?",
+        "web": [
+            "https://developer.android.com/guide/topics/ui/picture-in-picture",
+            "https://support.sonymobile.com/global-en/xperiaxz1compact/faq/apps-&-settings/8019307455ff6184015e92f63324005926/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sonymobile.pobox",
-        "description": "Xperia Japanese keyboard\nDoes someone know what \"popox\" means ? \n",
+        "label": "Xperia™ Japanese Keyboard",
+        "description": "Package is named after POBox (Predictive Operation Based On eXample), a Japanese text entry technology and ambiguous retrieval, proposed in 1998 by Sony CSL fellow Toshiyuki Masuda.",
+        "web": [
+            "https://www.sonycsl.co.jp/project/402/"
+        ],
         "removal": "delete"
     },
     {
@@ -7470,8 +7704,9 @@
     },
     {
         "id": "com.sonymobile.smartcharger",
-        "description": "Battery Care\nDetects your charging patterns and estimates the start and end time of your regular charging period. \nThe rate of charging is controlled so that your battery reaches 100% just before you disconnect the charger.\nhttps://support.sonymobile.com/gb/xperiaxz/userguide/battery-and-power-management/\n",
-        "removal": "delete"
+        "label": "Battery Care",
+        "description": "Detects your charging patterns and estimates the start and end time of your regular charging period. \nThe rate of charging is controlled so that your battery reaches 100% just before you disconnect the charger.\nhttps://support.sonymobile.com/gb/xperiaxz/userguide/battery-and-power-management/\n",
+        "removal": "replace"
     },
     {
         "id": "com.sonymobile.support",
@@ -7525,7 +7760,7 @@
     },
     {
         "id": "com.sonymobile.xperiaweather",
-        "label": "com.sonymobile.xperiaweather",
+        "label": "Weather",
         "description": "Sony weather app\nNote : Not all location are supported.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.sonymobile.xperiaweather"
@@ -7540,16 +7775,8 @@
     },
     {
         "id": "com.sonymobile.xperiaxlivewallpaper.product.res.overlay",
-        "description": "Some overlay for a live wallaper from Sony? Overlays are usually themes, but not sure about this one as theming seems weird for live wallpapers. Could be that Sony automatically generates theme packages for all or most system apps, which might generate some unnecessary packages.",
+        "description": "Some overlay for a live wallpaper from Sony? Overlays are usually themes, but not sure about this one as theming seems weird for live wallpapers. Could be that Sony automatically generates theme packages for all or most system apps, which might generate some unnecessary packages.",
         "removal": "replace"
-    },
-    {
-        "id": "com.tblenovo.center",
-        "description": "Useless dashboard related to the User Experience Program (com.lenovo.ue.device). Has 25 permissions, including ones you probably don't want to give to this kind of sketchy app.\n",
-        "web": [
-            "https://beta.pithus.org/report/dcb4acac003896077eaaeb8c7dc770d3171891784d98f7127f8495a3dec9954d"
-        ],
-        "removal": "delete"
     },
     {
         "id": "com.tblenovo.lenovotips",
@@ -7654,8 +7881,14 @@
     },
     {
         "id": "com.transsion.filemanagerx",
-        "description": "File Manager App (https://play.google.com/store/apps/details?id=com.transsion.filemanagerx)\nComes with 3 analytics/ads trackers (https://reports.exodus-privacy.eu.org/fr/reports/com.transsion.filemanagerx/latest/)\n",
-        "removal": "replace"
+        "label": "File Manager",
+        "description": "Comes with 3 analytics/ads trackers.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.transsion.filemanagerx",
+            "https://reports.exodus-privacy.eu.org/fr/reports/com.transsion.filemanagerx/latest/"
+        ],
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.transsion.hamal",
@@ -7699,8 +7932,13 @@
     },
     {
         "id": "com.transsion.microintelligence",
-        "description": "Micro Intelligence\nProvides features like tap to awake, awake on device raise, etc.\nPhones home\n\nPithus analysis: https://beta.pithus.org/report/f7358ad68b27d9fa75a8e742ad43c64f2710b4ba5378ee825215ebbd08549275",
-        "removal": "delete"
+        "label": "Actions and Gestures",
+        "description": "Formerly, Micro Intelligence.\nProvides features like tap to awake, awake on device raise, etc.\nPhones home.",
+        "web": [
+            "https://beta.pithus.org/report/f7358ad68b27d9fa75a8e742ad43c64f2710b4ba5378ee825215ebbd08549275"
+        ],
+        "removal": "caution",
+        "warning": "Disabling this app makes you unable to use specific settings like Gesture Navigation and Action & Gesture along with other phone features."
     },
     {
         "id": "com.transsion.phonemaster",
@@ -7749,7 +7987,7 @@
     },
     {
         "id": "com.vivo.dream.weather",
-        "label": "com.vivo.dream.weather",
+        "label": "Weather",
         "description": "Vivo weather app",
         "removal": "replace",
         "suggestions": "weather_apps"
@@ -7821,7 +8059,8 @@
     },
     {
         "id": "com.xiaomi.ab",
-        "description": "MAB \nHas a LOT of permissions. If you try to desinstall it, Xiaomi will reinstall after reboot.\nhttps://thoughtarama.wordpress.com/2017/05/09/mab-fucker-or-why-im-giving-up-my-xiaomi-redmi-note-3-phone/\nMab is a part of MIUI Analytics.\n",
+        "label": "Mi Store System Components",
+        "description": "Formerly, mab.\nSomething about login, paying in Mi Store China.",
         "removal": "delete"
     },
     {
@@ -7855,8 +8094,19 @@
         "removal": "caution"
     },
     {
+        "id": "com.xiaomi.finddevice",
+        "label": "Mi Find Device",
+        "description": "Find My Device feature (in the Settings)\nEnables you to locate your lost phone and erase your data remotely.\nYour phone needs to be connected to internet (Wifi/mobile data) for this feature to work.",
+        "web": [
+            "https://github.com/0x192/universal-android-debloater/issues/641"
+        ],
+        "removal": "caution",
+        "warning": "Depending on MIUI version, removing the app may cause bootloops."
+    },
+    {
         "id": "com.xiaomi.gamecenter.sdk.service",
-        "description": "Game Service\nSurely used to \"improve\" game performance\n",
+        "label": "Game Service",
+        "description": "It's not needed for gamespace, disabled by default. It has activities such as AliPay, login to account. I'm not sure what it's needed for.",
         "removal": "delete"
     },
     {
@@ -7866,7 +8116,11 @@
     },
     {
         "id": "com.xiaomi.joyose",
-        "description": "Joyse Analytics and advertising\nRuns in background and can't be stopped. \n",
+        "label": "Joyose",
+        "description": "GPU Tuner\nOptimizes your game for gaming. Some people have noticed that it locks the fps at 60 after selecting 90.",
+        "web": [
+            "https://youtu.be/gavEuH3Ck5o?t=550"
+        ],
         "removal": "delete"
     },
     {

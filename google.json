@@ -5,9 +5,11 @@
         "description": "Google Chrome: Slow & Painful\nOccasionally runs in the background, not to mention how it tracks everything.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.android.chrome",
-            "https://privacytests.org/android.html"
+            "https://privacytests.org/android.html",
+            "https://fidoalliance.org/passkeys/"
         ],
         "removal": "replace",
+        "warning": "Removing the app breaks creating and storing passkeys on your phone, so keep this enabled if you want to use that form of authentication.",
         "suggestions": "browsers"
     },
     {
@@ -694,7 +696,11 @@
     {
         "id": "com.google.android.as",
         "label": "Android System Intelligence",
-        "description": "Previously, Device Personalization Services. Runs in the background.\n\"Enables intelligent features across Android\", like: Live Caption, Screen Attention, Improved Copy-Paste, App Predictions in the launcher, Notification Smart Actions, Smart Text Selection and Linkifying text in apps.",
+        "description": "Previously, Device Personalization Services. Runs in the background.\n\"Enables intelligent features across Android\", like: Live Caption, Screen Attention, Improved Copy-Paste, App Predictions in the launcher, Notification Smart Actions, Smart Text Selection and Linkifying text in apps.\nAlso known as device learning, e.g., enhanced keyboard auto suggestions, keeps the screen on when looking at it (with help of the camera), smart replies.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.as",
+            "https://milaq.net/android-bloatware"
+        ],
         "removal": "delete"
     },
     {
@@ -877,7 +883,7 @@
     {
         "id": "com.google.android.googlequicksearchbox",
         "label": "Google",
-        "description": "Formerly Google Search Box.\nRuns in the background.\nPointless. If you need a shortcut to Google on your homescreen just use a web-browser shortcut. Does also remove the Google Sound Search widget, but you can get that functionality from an app like Shazam, that additionally doesn't run in the background constantly like this package does.",
+        "description": "Formerly, Google Search Box.\nRuns in the background.\nPointless. If you need a shortcut to Google on your homescreen just use a web-browser shortcut. Does also remove the Google Sound Search widget, but you can get that functionality from an app like Shazam, that additionally doesn't run in the background constantly like this package does.\nThis app also powers the Google Discover page (the news 'widget' when you go to the left of the home screen) and the app symbol called 'Google'.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox"
         ],
@@ -1206,6 +1212,7 @@
             "https://play.google.com/store/apps/details?id=com.google.android.webview"
         ],
         "removal": "replace",
+        "warning": "Installing a third-party webview requires root.",
         "suggestions": "webviews"
     },
     {

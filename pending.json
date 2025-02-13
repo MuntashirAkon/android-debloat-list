@@ -505,11 +505,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.app.sharelive",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.samsung.android.app.telephonyui",
         "description": "",
         "removal": "caution"
@@ -545,11 +540,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.cmfa.framework",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.samsung.android.coldwalletservice",
         "description": "",
         "removal": "caution"
@@ -571,11 +561,6 @@
     },
     {
         "id": "com.samsung.android.dsms",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.hdmapp",
         "description": "",
         "removal": "caution"
     },
@@ -631,11 +616,6 @@
     },
     {
         "id": "com.samsung.android.rajaampat",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.android.scs",
         "description": "",
         "removal": "caution"
     },
@@ -725,11 +705,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.ims.smk",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.samsung.internal.systemui.navbar.gestural_no_hint",
         "description": "",
         "removal": "caution"
@@ -801,11 +776,6 @@
     },
     {
         "id": "com.sec.android.app.volumemonitorprovider",
-        "description": "",
-        "removal": "caution"
-    },
-    {
-        "id": "com.sec.android.autodoodle.service",
         "description": "",
         "removal": "caution"
     },

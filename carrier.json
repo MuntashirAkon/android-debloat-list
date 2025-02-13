@@ -168,7 +168,7 @@
     {
         "id": "com.att.dtv.shaderemote",
         "label": "DIRECTV Remote App",
-        "description": "Lets you control DIRECTV HD receivers in your home that are connected to Internet, from your phone. DIRECTV is a susbsidiary of AT&T.",
+        "description": "Lets you control DIRECTV HD receivers in your home that are connected to Internet, from your phone. DIRECTV is a subsidiary of AT&T.",
         "web": [
             "https://en.wikipedia.org/wiki/DirecTV#Consumer_protection_lawsuits_and_violations"
         ],
@@ -277,7 +277,10 @@
     {
         "id": "com.customermobile.preload.vzw",
         "label": "Verizon Store Demo Mode",
-        "description": "Verizon Store/Retail Demo Mode.",
+        "description": "Requires a lot of permissions and downloads a remote configuration file from an AWS-hosted domain over plain-text HTTP.\nThis leaves the overall device and configuration vulnerable.",
+        "web": [
+            "https://thehackernews.com/2024/08/google-pixel-devices-shipped-with.html"
+        ],
         "removal": "delete"
     },
     {
@@ -379,7 +382,7 @@
     {
         "id": "com.motorola.att.phone.extensions",
         "label": "ATT Phone Extension",
-        "description": "Provide access to AT&T extensions in you dialer. I'm not sure tho. It's only a supposition.",
+        "description": "Provide access to AT&T extensions in you dialer.",
         "web": [
             "https://asecare.att.com/tutorials/adding-and-deleting-an-extension-on-your-officehand-mobile-app-2990/?product=AT&T%20Office@Hand"
         ],
@@ -987,7 +990,7 @@
         "web": [
             "https://developer.android.com/reference/android/telephony/data/ApnSetting"
         ],
-        "removal": "delete"
+        "removal": "caution"
     },
     {
         "id": "com.vzw.apnservice",
@@ -1079,7 +1082,7 @@
     {
         "id": "fr.bouyguestelecom.vvmandroid",
         "label": "Messagerie vocale visuelle",
-        "description": "Voicemail application for Bouygues Telecom.",
+        "description": "Voicemail application for Bouygues Telecom. This app may inject ads into your gallery",
         "removal": "delete"
     },
     {

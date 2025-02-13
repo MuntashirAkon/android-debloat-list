@@ -65,12 +65,12 @@
         "label": "Bookmark Provider",
         "description": "Only exists for compatibility reasons to prevent apps querying it from getting null cursors they do not expect and crash.",
         "removal": "caution",
-        "warning": "Apps targeting a very old SDK might crash"
+        "warning": "Apps targeting a very old SDK might crash. For example, disabling this on LDPlayer emulator crashes the default browser."
     },
     {
         "id": "com.android.browser",
         "label": "Mi Browser",
-        "description": "Mi Browser is a privacy nightmare and should be replaced.",
+        "description": "Mi Browser and browser for the LDPlayer emulator. It is a privacy nightmare and should be replaced.",
         "web": [
             "https://www.xda-developers.com/xiaomi-mi-web-browser-pro-mint-collecting-browsing-data-incognito-mode/"
         ],
@@ -174,9 +174,9 @@
     {
         "id": "com.android.companiondevicemanager",
         "label": "Companion Device Manager",
-        "description": "This handles connections to other devices, like Bluetooth Headphones, desktop Operating Systems, etc.",
+        "description": "This handles connections to nearby (usually not remote) devices, like Bluetooth Headphones, desktop Operating Systems, etc.",
         "removal": "caution",
-        "warning": "Removing this package will result in the inability to read the SD card from your computer's file manager when connecting through USB"
+        "warning": "Removing this package may result in the inability to read the SD card from your computer's file manager (via USB)."
     },
     {
         "id": "com.android.contacts",
@@ -184,6 +184,15 @@
         "description": "The AOSP Contacts app\nSome OEMs (e.g. Xiaomi) use the same package name for their app.",
         "removal": "replace",
         "suggestions": "contacts"
+    },
+    {
+        "id": "com.android.cts.ctsshim",
+        "label": "Compatibility Test Suite",
+        "description": "Used by manufacturer to test your copy of the device for performance. It just exists and doesn't run in background.",
+        "web": [
+            "https://source.android.com/docs/compatibility/cts"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.android.cts.priv.ctsshim",
@@ -697,7 +706,7 @@
     {
         "id": "com.android.stk",
         "label": "SIM Toolkit",
-        "description": "Enables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nThis has been abused:\n- SimJacker \n- WIBattack",
+        "description": "Enables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nThis has been abused:\n- SimJacker \n- WIBattack.\nNOTE: removing this package removes the launcher icon. \"com.android.stk\" relies on \"com.android.stk2\" and vice-versa.",
         "web": [
             "https://en.wikipedia.org/wiki/SIM_Application_Toolkit#cite_note-CellularZA-1",
             "https://thehackernews.com/2019/09/simjacker-mobile-hacking.html",
@@ -710,7 +719,7 @@
     {
         "id": "com.android.stk2",
         "label": "SIM Toolkit",
-        "description": "Special package for dual-sim devices?\nEnables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nThis has been abused:\n- SimJacker \n- WIBattack",
+        "description": "Special package for dual-sim devices?\nEnables carriers to initiate \"value-added services\". Basically, some operators provide SIM-cards with applications installed on them.\nThis has been abused:\n- SimJacker \n- WIBattack.\nNOTE: removing this package removes the launcher icon. \"com.android.stk2\" relies on \"com.android.stk\" and vice-versa.",
         "web": [
             "https://en.wikipedia.org/wiki/SIM_Application_Toolkit#cite_note-CellularZA-1",
             "https://thehackernews.com/2019/09/simjacker-mobile-hacking.html",
@@ -719,6 +728,13 @@
         ],
         "removal": "delete",
         "warning": "Vulnerable to hacking, should be disabled."
+    },
+    {
+        "id": "com.android.storagemanager",
+        "label": "Smart Storage",
+        "description": "Storage manager (Maintenance/Storage panel in the settings)\nClean up unused files, show size of files regrouped by categories.",
+        "removal": "caution",
+        "warning": "May break the storage settings in Android Settings."
     },
     {
         "id": "com.android.systemui.theme.dark",
