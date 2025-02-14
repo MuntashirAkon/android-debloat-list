@@ -293,6 +293,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.dti.tim",
+        "description": "Mobile Service Manager\nIt's a system app that can't be opened but keeps running in the background. It can install/uninstall apps without notifying you, access internet, run at the boot of the system, kill background processes, ads and other permissions.\nIt's only bloatware, OTA updates work the same without it. Uninstalling didn't give any negative side-effects.",
+        "removal": "delete"
+    },
+    {
         "id": "com.hyperlync.Sprint.Backup",
         "label": "Sprint Backup",
         "description": "Lets you backup your phone’s content to your Sprint Backup account.\nThis app was developed by Hyperlync Technologies an Israel-based company which provides cyber-security solutions. It is now owned by Edition Ltd, a big Singapore based company.",
@@ -845,6 +850,12 @@
         "id": "com.telecomsys.directedsms.android.SCG",
         "label": "Verizon Location Agent",
         "description": "Location tracking (does not impact GPS function if deleted, don't worry).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.telus.myaccount",
+        "label": "My TELUS",
+        "description": "It's used for managing your telus account.\nSafe to remove if you don't use it",
         "removal": "delete"
     },
     {

@@ -2131,11 +2131,10 @@
     {
         "id": "com.zhiliaoapp.musically",
         "label": "TikTok",
-        "description": "(Previously, Yelp.) Lets users post reviews and rate businesses.",
+        "description": "The TikTok app",
         "web": [
             "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
-            "https://en.wikipedia.org/wiki/Yelp#Controversy_and_litigation",
-            "https://en.wikipedia.org/wiki/TikTok#Privacy,_cyberbullying_and_addiction_concerns"
+            "https://en.wikipedia.org/wiki/TikTok#Privacy_and_security_concerns"
         ],
         "removal": "delete"
     },
@@ -2298,7 +2297,7 @@
         "label": "org.codeaurora.ims",
         "description": "IMS(Ip Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling).\nRuns in the background as part of the system, with Google's IMS(com.google.android.ims, \"Carrier Services\") disabled, I haven't checked if it'd run with Carrier Services enabled.",
         "removal": "caution",
-        "supress": "LabelSameAsId"
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "org.simalliance.openmobileapi.service",

@@ -345,6 +345,109 @@
         "removal": "caution"
     },
     {
+        "id": "com.ape.cleanassist",
+        "label": "Smart Assist",
+        "description": "Provides junk cleaner feature for Wiko mobile",
+        "removal": "replace",
+        "suggestions": "cleaners"
+    },
+    {
+        "id": "com.ape.cleanassistoverlay",
+        "description": "Overlay app for com.ape.cleanassist.\nIf you uninstall it, this package should also be removed.",
+        "required_by": [
+            "com.ape.cleanassist"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.easymode1",
+        "label": "Simple Mode",
+        "description": "Provides easy mode/quick access for Wiko mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.fmradio",
+        "label": "FM Radio",
+        "description": "FM Radio app for Wiko mobile",
+        "removal": "replace",
+        "suggestions": "radios"
+    },
+    {
+        "id": "com.ape.fmradiooverlay",
+        "description": "Overlay app for com.ape.fmradio.\nIf you uninstall it, this package should also be removed.",
+        "required_by": [
+            "com.ape.fmradio"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.gamemode",
+        "description": "Provides game mode feature for Wiko mobilee",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.massageexpress",
+        "description": "Provides Wiko screen message feature",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.oneclean",
+        "label": "Oneclean",
+        "description": "Provides memory cleaner feature for Wiko mobile",
+        "removal": "replace",
+        "suggestions": "cleaners"
+    },
+    {
+        "id": "com.ape.smartgesture",
+        "description": "Provide smart gesture feature for Wiko mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.soundrecorder",
+        "description": "Sound recorder app for Wiko mobile",
+        "removal": "replace",
+        "suggestions": "audio_recorders"
+    },
+    {
+        "id": "com.ape.soundrecorderoverlay",
+        "description": "Overlay app for com.ape.soundrecorder.\nIf you uninstall it, this package should be removed also.",
+        "required_by": [
+            "com.ape.soundrecorder"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.walkfit",
+        "label": "Wiko Health",
+        "description": "Walk counter and health for Wiko mobile",
+        "removal": "replace"
+    },
+    {
+        "id": "com.ape.weatherlive",
+        "label": "Weather Live",
+        "description": "Weather app for Wiko mobile",
+        "removal": "replace",
+        "suggestions": "weather_apps"
+    },
+    {
+        "id": "com.ape.weatherliveoverlay",
+        "description": "Overlay app for com.ape.weatherlive. If you uninstall it, this package should also be removed.",
+        "required_by": [
+            "com.ape.weatherlive"
+        ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.wikolegal",
+        "description": "Provides legal for first time setup in Wiko mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ape.wikosetupwizard",
+        "description": "Provides first time app install for Wiko mobile",
+        "removal": "delete"
+    },
+    {
         "id": "com.asus.calculator",
         "description": "Calculator - unit converter (https://play.google.com/store/apps/details?id=com.asus.calculator)\nHas more permissions than a Calculator app reasonably should have.\nConnects to a few Google and currency exchange-rate servers.\nhttps://beta.pithus.org/report/817514371bbdb76ec52da4c8456bbc116deec179603099deabbe6fcce6f6ccdb",
         "removal": "delete"
@@ -501,7 +604,7 @@
         "label": "OPPO Cloud",
         "description": "Oppo cloud storage?",
         "removal": "replace",
-        "suggestion": "cloud_services"
+        "suggestions": "cloud_services"
     },
     {
         "id": "com.coloros.compass2",
@@ -1554,13 +1657,37 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.android.dsdscardmanager",
+        "label": "Dual SIM settings",
+        "description": "SIM management",
+        "removal": "caution"
+    },
+    {
         "id": "com.huawei.android.hsf",
         "description": "Huawei Services Framework\n3 permissions : DELETE_PACKAGES, INSTALL_PACKAGES, PACKAGE_USAGE_STATS\nSafe to remove according to huawei users\n",
         "removal": "delete"
     },
     {
+        "id": "com.huawei.android.hwaps",
+        "label": "HwAps",
+        "description": "Manages Intelligent Resolution and changing screen resolution in settings.\nIntelligent Resolution will be not available and changing screen resolution in settings.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.huawei.android.hwouc",
+        "label": "System Update",
+        "description": "OTA updates. Safe to remove if you have a very outdated device or flashed recovery.",
+        "removal": "caution"
+    },
+    {
         "id": "com.huawei.android.hwpay",
         "description": "Huawei Pay\nMobile payment and e-wallet service for Huawei devices that offers the same services as Apple Pay, Samsung Pay etc...\nhttps://consumer.huawei.com/en/mobileservices/huawei-wallet/\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.huawei.android.hwupgradeguide",
+        "label": "HwUpgradeGuide",
+        "description": "It's guide menu at first start AppGallery.",
         "removal": "delete"
     },
     {
@@ -1596,6 +1723,15 @@
     {
         "id": "com.huawei.android.mirrorshare",
         "description": "MirrorShare feature (Miracast rebranded by Huawei)\nUsed to mirror screen of you smartphone on a TV.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.huawei.android.projectmenu",
+        "label": "ProjectMenu",
+        "description": "Hidden settings not available for users. ProjectMenu interface: phone *#*#2846579#*#*",
+        "web": [
+            "https://www.99mediasector.com/open-project-menu-huawei-device-huawei-code/"
+        ],
         "removal": "delete"
     },
     {
@@ -1661,8 +1797,25 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.autoinstallapkfrommcc",
+        "label": "Information",
+        "description": "After system boots up, it checks your current mobile carrier, loads a list of packages and install/uninstall them based on MCC codes. Can possibly be abused by malware.",
+        "web": [
+            "https://forum.xda-developers.com/t/investigating-huawei-system-app-your-help-needed.3995621/"
+        ],
+        "removal": "caution"
+    },
+    {
         "id": "com.huawei.bd",
         "description": "HwUE (Huawei UserExperience)\nWhen a company call a something 'UserExperience' you know you don't need this.\nAnalytics service, run at boot. Collect information about packages/apps usages.\nHas a nice custom permission called com.huawei.permission.BIG_DATA\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.huawei.behaviorauth",
+        "description": "It seems to be related to verifying the authenticity of user behavior and enhancing password security. User can disable it so it's safe to remove.",
+        "web": [
+            "https://www.android-hilfe.de/forum/huawei-p30-p30-pro-p30-lite.3510/was-ist-die-behaviorauth-app-fuer-das-p30.1008750.html"
+        ],
         "removal": "delete"
     },
     {
@@ -1686,6 +1839,13 @@
         "description": "Huawei Calendar app.\n",
         "removal": "replace",
         "suggestions": "calendars"
+    },
+    {
+        "id": "com.huawei.camera",
+        "label": "HUAWEI Camera",
+        "description": "Huawei's stock Camera app",
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.huawei.compass",
@@ -1743,6 +1903,13 @@
             "https://developers.google.com/identity/fido/android/native-apps"
         ],
         "removal": "replace"
+    },
+    {
+        "id": "com.huawei.filemanager",
+        "label": "Files",
+        "description": "Huawei file manager\nProbably fine to remove as long as you have another file manager.",
+        "removal": "replace",
+        "suggestions": "file_managers"
     },
     {
         "id": "com.huawei.game.kitserver",
@@ -1809,6 +1976,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.himovie",
+        "label": "Huawei Video Player",
+        "description": "Bloated on newer versions. Can be safely removed if you don't want it.",
+        "removal": "replace",
+        "suggestions": "video_players"
+    },
+    {
         "id": "com.huawei.himovie.overseas",
         "label": "HUAWEI Video",
         "description": "Huawei stock video application. Has a lot of trackers.",
@@ -1821,11 +1995,22 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.hiview",
+        "label": "hiview",
+        "description": "Provides info on exposure and so on in the gallery",
+        "removal": "delete"
+    },
+    {
         "id": "com.huawei.hiviewtunnel",
         "label": "HiViewTunnel",
         "description": "This displays details/attributes of pictures in the gallery (ISO, exposure time, etc.).",
-        "removal": "replace",
-        "suggestions": "gallery"
+        "removal": "delete"
+    },
+    {
+        "id": "com.huawei.hms5gkit.agentservice",
+        "label": "HwModemKitAgentService",
+        "description": "Something to do with 5G? For some reason, this is also installed on a non-5G device. Can be uninstalled from phone settings so should be safe if you don't have 5G.",
+        "removal": "caution"
     },
     {
         "id": "com.huawei.hwasm",
@@ -1849,6 +2034,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.hwdockbar",
+        "label": "Multi-Window",
+        "description": "Probably fine to remove if you're not using Huawei Multi-Window features.",
+        "removal": "caution"
+    },
+    {
         "id": "com.huawei.hwid",
         "label": "HMS Core",
         "description": "Huawei Mobile Services\nHuawei’s alternative to Google Play Services. Needed to access advanced Huawei features.\nA Huawei ID is required to access services, like Themes, Mobile Cloud, HiCare, Huawei Wear, Huawei Health.",
@@ -1860,7 +2051,13 @@
         "required_by": [
             "com.huawei.fastapp"
         ],
-        "warning" : "This may break apps like InPost Mobile"
+        "warning": "This may break apps like InPost Mobile"
+    },
+    {
+        "id": "com.huawei.hwpanpayservice",
+        "label": "HwPanPayService",
+        "description": "Payment related service.",
+        "removal": "delete"
     },
     {
         "id": "com.huawei.hwsearch",
@@ -1892,9 +2089,27 @@
         "removal": "caution"
     },
     {
+        "id": "com.huawei.iconnect",
+        "label": "Device connection service",
+        "description": "AppGallery Connect\nDedicated to providing one-stop services for app creation, development, distribution, operations and engagement. Useless for ordinary users.",
+        "web": [
+            "https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-introduction-0000001057492641"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.huawei.ihealth",
         "description": "MotionService package, it's required for actions like shaking the phone to shut off the alarm, ecc.\n",
         "removal": "delete"
+    },
+    {
+        "id": "com.huawei.imedia.sws",
+        "label": "HUAWEI Histen",
+        "description": "Huawei Histen\nAn equaliser for Huawei devices. Removing it will cause other music apps' equalisers stop working.",
+        "web": [
+            "https://www.honor.ru/club/topicdetail/topicid-23039/"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.huawei.intelligent",
@@ -1948,6 +2163,11 @@
         "suggestions": "maps"
     },
     {
+        "id": "com.huawei.mediacontroller",
+        "description": "Can be disabled via Settings. Will disable the media controls in quick settings. Won't remove them however.",
+        "removal": "delete"
+    },
+    {
         "id": "com.huawei.meetime",
         "description": "MeeTime (https://consumer.huawei.com/en/support/content/en-us00956296/). Voice and video calling application by Huawei. Only workds with EMUI 9.1+ Huawei phones. Huawei claims they use E2EE but this wasn't verified and there is not Whitepaper so don't trust them. They also collect metadata. There is no advantages to use this app instead of the reputed open-source Signal app.",
         "removal": "delete",
@@ -1999,6 +2219,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.permissioncontroller",
+        "description": "Can be disabled via Settings as well",
+        "removal": "delete"
+    },
+    {
         "id": "com.huawei.phoneservice",
         "label": "HiCare",
         "description": "Provides you common online services including customer services, issue feedback, user guides, service centers and self-service.",
@@ -2016,6 +2241,18 @@
         "label": "Power Genius",
         "description": "Task killer app in EMUI 9+ (Android 9+).\nTask killer apps tend to do more harm than help as they clear cached RAM for no good reason, removing the battery and time savings involved in caching. In addition to the obvious issues with background functionality like notifications. However, system may start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
         "removal": "caution"
+    },
+    {
+        "id": "com.huawei.printservice",
+        "label": "Default Print Service",
+        "description": "Print service for HUAWEI.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.huawei.rcsserviceapplication",
+        "label": "Huawei RCS",
+        "description": "RCS = Rich Communication Service.\nProvides sending messages to another Huawei phone.",
+        "removal": "delete"
     },
     {
         "id": "com.huawei.scanner",
@@ -2077,6 +2314,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.huawei.wallet.sdk.walletsdk",
+        "label": "WalletSDK",
+        "description": "SDK for HUAWEI Wallet",
+        "removal": "delete"
+    },
+    {
         "id": "com.huawei.watch.sync",
         "description": "Huawei Watch sync function\nIs it only used to sync Huawei watch ?\nSafe to remove according to several users\n",
         "removal": "delete"
@@ -2088,6 +2331,12 @@
         "removal": "caution",
         "warning": "Make sure to have another Webview installed before uninstalling it or some apps may not work properly.",
         "suggestions": "webviews"
+    },
+    {
+        "id": "com.huawei.wifiprobqeservice",
+        "label": "HwWifiproBqeService",
+        "description": "Performs Wi-Fi diagnostics",
+        "removal": "delete"
     },
     {
         "id": "com.iflytek.speechsuite",
@@ -2723,6 +2972,36 @@
         "removal": "delete"
     },
     {
+        "id": "com.longcheertel.AutoTest",
+        "label": "Autotest",
+        "description": "Hidden hardware tests.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.longcheertel.cit",
+        "label": "cit test",
+        "description": "Hidden hardware tests.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.longcheertel.midtest",
+        "label": "Assemble test",
+        "description": "Hidden hardware tests.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.longcheertel.modemlog",
+        "label": "Modem log",
+        "description": "Hidden app that includes TcardLog, modem log, Tcpdump.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.longcheertel.sarauth",
+        "label": "SarUI",
+        "description": "Hidden hardware tests.",
+        "removal": "delete"
+    },
+    {
         "id": "com.mfashiongallery.emag",
         "description": "Wallpapers by Xiaomi\n",
         "removal": "delete"
@@ -3233,6 +3512,18 @@
     {
         "id": "com.miui.virtualsim",
         "description": "Mi Roaming\nIt enables users to connect to roaming data on-demand via virtual SIM technology.\nhttps://alertify.eu/xiaomi-mi-roaming/\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.voiceassist",
+        "label": "Mi AI",
+        "description": "Chinese voice assist.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.voicetrigger",
+        "label": "Wake with voice",
+        "description": "Not needed if you removed Chinese Mi AI.",
         "removal": "delete"
     },
     {
@@ -4827,7 +5118,7 @@
     },
     {
         "id": "com.payjoy.access",
-        "labrl": "PayJoy Access",
+        "label": "PayJoy Access",
         "description": "Access is PayJoy's firmware product which OEMs optionally use to enable automatic setup (“provisioning”) and device management to enable PayJoy's Lock to work “out of the box” to minimize the number of steps for the user and store clerk to get started.",
         "removal": "delete"
     },
@@ -5607,10 +5898,9 @@
             "https://play.google.com/store/apps/details?id=com.samsung.android.lool",
             "https://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details",
             "https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/"
-            
         ],
         "removal": "caution",
-        "": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices"
+        "warning": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices"
     },
     {
         "id": "com.samsung.android.mateagent",
@@ -7345,8 +7635,18 @@
         "removal": "caution"
     },
     {
+        "id": "com.sony.tvsideview.phone",
+        "label": "Video & TV SideView : Remote",
+        "description": "Sony's TV remote control app",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sony.tvsideview.phone"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.sony.tvsideview.videoph",
-        "description": "Video & TV SideView (replaced by https://play.google.com/store/apps/details?id=com.sony.tvsideview.phone)\nLets you use your smartphone or tablet as a TV remote control for the home. \n",
+        "label": "Video",
+        "description": "Sony's Video & TV SideView (replaced by \"com.sony.tvsideview.phone\")\nLets you use your smartphone or tablet as a TV remote control for the home.",
         "removal": "delete"
     },
     {
@@ -7363,6 +7663,13 @@
         "id": "com.sonyericsson.android.camera3d",
         "description": "Sony camera app (on older phones)\n",
         "removal": "replace"
+    },
+    {
+        "id": "com.sonyericsson.android.conversations",
+        "label": "Messaging",
+        "description": "Sony's default messages (SMS) app",
+        "removal": "replace",
+        "suggestions": "sms"
     },
     {
         "id": "com.sonyericsson.android.omacp",
@@ -8033,6 +8340,22 @@
         "removal": "delete"
     },
     {
+        "id": "com.wdstechnology.android.kryten",
+        "description": "OTA Access Point Configuration. it's only hidden configurations to ota, it's not needed for updates.\nIn the case of OTA updates, \"com.miui.core\" is responsible.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.wiko.packageinstaller",
+        "description": "Provides first time app install for Wiko mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "com.wiko.services",
+        "label": "Wiko Support",
+        "description": "Support app for Wiko mobile",
+        "removal": "delete"
+    },
+    {
         "id": "com.wingtech.standard",
         "description": "WTStandardTest\nWingtech is a chinese Original Design Manufacturer (ODM) involved in the manufacturing of Xiaomi devices.\nThere is very high chances this app is only a hardware conformance test app used during production process\nyou don't need as an end-user.\nCan someone share the apk just to be 100% sure?\n",
         "removal": "delete"
@@ -8067,6 +8390,12 @@
         "id": "com.xiaomi.account",
         "description": "Mi Account\nHas a LOT of permissions + Facebook trackers. Collects many information, including your phone number, your unique International mobile subscriber identity (IMSI) and your clipboard).\nYou should remove this if you don't have or don't want a Mi account.\nWARNING: Make sure to log out of your Mi Account and unbind your phone from it. If you don't you could be locked out from your phone after removing this package.\nRemove Mi Account: https://xiaomiui.net/how-to-remove-mi-account-7606/\n\nPithus analysis: https://beta.pithus.org/report/3f5abc9d7215dd0be5c3ac137b0cd528217640b5778e9f849a9beb0a34eda8dc",
         "removal": "replace"
+    },
+    {
+        "id": "com.xiaomi.aiasst.vision",
+        "label": "AiasstVision",
+        "description": "Not needed if you removed AI Call Assistant.",
+        "removal": "delete"
     },
     {
         "id": "com.xiaomi.bluetooth.overlay",
@@ -8139,6 +8468,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.xiaomi.market",
+        "label": "GetApps",
+        "description": "China Mi App Store.\nI used it only to install google play.",
+        "removal": "delete"
+    },
+    {
         "id": "com.xiaomi.mi_connect_service",
         "description": "MiConnectService\nHandles connection to IoT stuff\nSeems to be linked to Mi Home (com.xiaomi.smarthome)\n",
         "removal": "delete"
@@ -8157,6 +8492,12 @@
         "id": "com.xiaomi.midrop.overlay",
         "description": "Mi Drop overlay\nOverlays are usually themes.",
         "removal": "replace"
+    },
+    {
+        "id": "com.xiaomi.migameservice",
+        "label": "Mi Game Service",
+        "description": "Not sure what it is.\nHave: Joyose Connection Service, Recorder, Mi Time Control.",
+        "removal": "delete"
     },
     {
         "id": "com.xiaomi.mipicks",
