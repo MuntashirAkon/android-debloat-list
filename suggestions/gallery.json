@@ -1,9 +1,9 @@
 [
     {
-        "id": "com.simplemobiletools.gallery.pro",
-        "label": "Simple Gallery Pro",
-        "source": "f",
-        "repo": "https://github.com/SimpleMobileTools/Simple-Gallery"
+        "id": "org.fossify.gallery",
+        "label": "Fossify Gallery",
+        "source": "fg",
+        "repo": "https://github.com/FossifyOrg/Gallery"
     },
     {
         "id": "deckers.thibault.aves.libre",

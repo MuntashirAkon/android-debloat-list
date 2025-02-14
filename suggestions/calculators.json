@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": "org.solovyev.android.calculator",
+        "label": "Calculator++",
+        "source": "fg",
+        "repo": "https://git.bubu1.eu/Bubu/android-calculatorpp"
+    }
+]

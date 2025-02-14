@@ -1,8 +1,8 @@
 [
     {
-        "id": "de.markusfisch.android.binaryeye",
-        "label": "Binary Eye",
-        "source": "fg",
-        "repo": "https://github.com/markusfisch/BinaryEye"
+        "id": "com.atharok.barcodescanner",
+        "label": "Barcode Scanner",
+        "source": "fga",
+        "repo": "https://gitlab.com/Atharok/BarcodeScanner"
     }
 ]

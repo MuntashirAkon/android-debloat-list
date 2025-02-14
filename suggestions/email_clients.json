@@ -1,9 +1,9 @@
 [
     {
-        "id": "com.fsck.k9",
-        "label": "K-9 Mail",
+        "id": "net.thunderbird.android",
+        "label": "Thunderbird",
         "source": "fg",
         "reason": "https://blog.thunderbird.net/2023/07/k-9-mail-collaborates-with-ostif-and-7asecurity-security-audit/",
-        "repo": "https://github.com/thundernest/k-9"
+        "repo": "https://github.com/thunderbird/thunderbird-android"
     }
 ]

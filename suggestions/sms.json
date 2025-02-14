@@ -1,8 +1,8 @@
 [
     {
-        "id": "com.moez.QKSMS",
-        "label": "QKSMS",
-        "source": "fg",
-        "repo": "https://github.com/moezbhatti/qksms"
+        "id": "dev.octoshrimpy.quik",
+        "label": "QUIK SMS",
+        "source": "f",
+        "repo": "https://github.com/octoshrimpy/quik"
     }
 ]

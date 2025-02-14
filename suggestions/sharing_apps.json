@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "org.localsend.localsend_app",
+        "label": "Local Send",
+        "source": "fg",
+        "repo": "https://github.com/localsend/localsend",
+        "reason": "Supports every major operating systems"
+    }
+]

@@ -9,6 +9,7 @@
         "id": "org.koreader.launcher.fdroid",
         "label": "KOReader",
         "source": "f",
-        "repo": "https://github.com/koreader/koreader"
+        "repo": "https://github.com/koreader/koreader",
+        "reason": "Optimized for e-ink displays"
     }
 ]

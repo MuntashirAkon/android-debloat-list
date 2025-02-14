@@ -1,9 +1,1 @@
-[
-    {
-        "id": "us.spotco.mulch_wv",
-        "label": "Mulch WebView",
-        "source": "f",
-        "repo": "https://gitlab.com/divested-mobile/mulch",
-        "reason": "Provides limited privacy and security, but always up-to-date"
-    }
-]
+[]

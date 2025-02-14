@@ -10,12 +10,5 @@
         "label": "Cromite",
         "source": "f",
         "repo": "https://github.com/uazo/cromite"
-    },
-    {
-        "id": "us.spotco.fennec_dos",
-        "label": "Mull",
-        "source": "f",
-        "repo": "https://gitlab.com/divested-mobile/mull-fenix",
-        "reason": "Hardened Firefox browser without any proprietary blobs"
     }
 ]
