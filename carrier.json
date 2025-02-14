@@ -18,6 +18,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.Rogers.MyRogersTab",
+        "description": "Appears to be the tablet version of MyRogers (https://play.google.com/store/apps/details?id=com.fivemobile.myaccount), an app to manage your account with Canadian carrier Rogers.",
+        "removal": "delete"
+    },
+    {
         "id": "com.aetherpal.attdh.se",
         "label": "Device Help",
         "description": "Device Help for AT&T Samsung device.\nDeveloped by Aetherpal, a company which sells smart remote controls tools.\nI guess this app is used for tech support.",
@@ -34,6 +39,21 @@
         "web": [
             "https://en.wikipedia.org/wiki/AetherPal"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.altice.android.myapps",
+        "description": "MyApps\nit's probably for install apps but it's useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.americanexpress.plenti",
+        "description": "Plenti\nGet points and promos with your American Express card",
+        "removal": "delete"
+    },
+    {
+        "id": "com.android.partnerbrowsercustomizations.tmobile",
+        "description": "The proprietary application of the mobile operator T-Mobile, presumably displays ads, is responsible for the operation of some of the operator's settings",
         "removal": "delete"
     },
     {
@@ -157,6 +177,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.att.deviceunlock",
+        "description": "Device Unlock\nUseless app from AT&T. it's only for unlock device.",
+        "removal": "delete"
+    },
+    {
         "id": "com.att.dh",
         "label": "Device Help",
         "description": "Troubleshooting app from AT&T.",
@@ -249,6 +274,21 @@
         "suggestions": "streaming_apps"
     },
     {
+        "id": "com.aura.jet.att",
+        "description": "AT&T Hub\nApp from AT&T. Installs apps on oobe and its maded by advertising company 'ironSource'.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.aura.oobe.att",
+        "description": "AppCloud\nApp from AT&T. Installs apps on oobe and its maded by advertising company 'ironSource'.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.aura.oobe.motorola",
+        "description": "MotoApps\nIt's something to install apps, but it's an advertising company.",
+        "removal": "delete"
+    },
+    {
         "id": "com.aura.oobe.samsung",
         "label": "AppCloud",
         "description": "It offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nHas way too many permissions.",
@@ -275,12 +315,47 @@
         "warning": "This app is developed by IronSource, an Israeli advertising company."
     },
     {
+        "id": "com.aura.oobe.vodafone",
+        "description": "Vodafone AppBox\nIt is some kind of post-install recommended apps setup from the carrier.\nAsks for your age and gender and then recommends you to install popular apps.\nDevelopped by IronSource, an Israeli advertising company.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.bc360.android.service",
+        "description": "Verizon Adaptive Sound\nProvides Voice Enhance, but according to the carrier.\nDoes the same thing as the 'com.bc360.control' app.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.bc360.control",
+        "description": "Verizon Adaptive Sound\nProvides Voice Enhance, but according to the carrier.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.claroColombia.contenedor",
+        "description": "Claro\nIt's something to install apps, but it's an advertising company.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.cricketwireless.minus",
+        "description": "Cricket partner tab? better remove it. It probably have news or partner customization to chrome.",
+        "removal": "delete"
+    },
+    {
         "id": "com.customermobile.preload.vzw",
         "label": "Verizon Store Demo Mode",
         "description": "Requires a lot of permissions and downloads a remote configuration file from an AWS-hosted domain over plain-text HTTP.\nThis leaves the overall device and configuration vulnerable.",
         "web": [
             "https://thehackernews.com/2024/08/google-pixel-devices-shipped-with.html"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.directv.promo.shade",
+        "description": "DIRECTV Remote\nOfficial app from DIRECTV (subsidiary of AT&T). With the DIRECTV Remote for AT&T Samsung devices, control of your favorite DIRECTV shows is just a swipe away. Swipe down from the status bar at the top of your screen to automatically connect and control your DIRECTV receivers, it's that simple.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.amx",
+        "description": "it's used to choose app install? A lot trackers, permissions.\nUseless.",
         "removal": "delete"
     },
     {
@@ -293,6 +368,26 @@
         "removal": "delete"
     },
     {
+        "id": "com.dti.bouyguestelecom",
+        "description": "Bouygues AppCloud\nit's probably for install apps but it's useless and have ads and a lot permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.cricket",
+        "description": "it's app for installing recommended apps? it's only used on first-boot setup and it's useless.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.motorola",
+        "description": "Mobile Services Manager\nit's something for install apps but it's useless and a lot permissions.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.dti.samsung",
+        "description": "Mobile Services Manager\nDigital Turbine app, pre-install some apps/games to your phone and its made by advertising company.",
+        "removal": "delete"
+    },
+    {
         "id": "com.dti.tim",
         "description": "Mobile Service Manager\nIt's a system app that can't be opened but keeps running in the background. It can install/uninstall apps without notifying you, access internet, run at the boot of the system, kill background processes, ads and other permissions.\nIt's only bloatware, OTA updates work the same without it. Uninstalling didn't give any negative side-effects.",
         "removal": "delete"
@@ -301,6 +396,36 @@
         "id": "com.dti.tracfone",
         "label": "Mobile Services",
         "description": "Installs sponsored apps automatically on Tracfone and affiliated carriers (Straight Talk, Total Wireless, etc)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfc",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfm",
+        "description": "Setup Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfm.main",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfs",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.felicanetworks.mfw.a.boot",
+        "description": "Chinese felicanetworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.omadm.trigger",
+        "description": "OemDmTrigger\nOMA Device Managment Verizon.",
         "removal": "delete"
     },
     {
@@ -320,6 +445,26 @@
         "web": [
             "https://www.reuters.com/companies/EDITol.SI"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.inmobi.installer",
+        "description": "it's installer advertising company app.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.ironsource.appcloud.oobe.hutchison",
+        "description": "AppCloud (discontinued) from ironSource, an advertising company.\nWorth reading:\nhttps://en.wikipedia.org/wiki/IronSource",
+        "removal": "delete"
+    },
+    {
+        "id": "com.kmsjp",
+        "description": "Kaspersky\nAnti-virus pre-installed on some Huawei phone's in Japanese.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.kuackmedia.orange",
+        "description": "Altice Music\nIt's a music application that allows you to stream music, but it comes pre-installed.\nhttps://play.google.com/store/apps/details?id=com.kuackmedia.orange",
         "removal": "delete"
     },
     {
@@ -443,6 +588,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.omadm.usc",
+        "description": "OMA Device Management for Verizon \nHandles configuration of the device (including first time use), enabling and disabling features provided by carriers.\nhttps://en.wikipedia.org/wiki/OMA_Device_Management\nI believe it's only useful if you want to use a Verizon service with a non branded phone (not sure at all)\nhttps://www.androidpolice.com/2015/03/10/android-5-1-includes-new-carrier-provisioning-api-allows-carriers-easier-methods-of-setting-up-services-on-devices-they-dont-control/\nDisplays annoying notifications if you unlocked your bootloader",
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.omadm.vzw",
         "label": "VzwDM",
         "description": "OMA Device Management for Verizon.\nHandles configuration of the device (including first time use), enabling and disabling features provided by carriers.\nI believe it's only useful if you want to use a Verizon service with a non branded phone (not sure at all)\nDisplays annoying notifications if you unlocked your bootloader.",
@@ -521,6 +671,56 @@
             "https://en.wikipedia.org/wiki/Voltari",
             "https://www.lightreading.com/motricity-holds-on-to-verizon-account/d/d-id/678478"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.naviexpert.NaviExpert",
+        "description": "Navigation T-Mobile\nhttps://play.google.com/store/apps/details?id=com.naviexpert.NaviExpert",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nextbit.app",
+        "description": "docomo LIVE UX backup\nit's on some japanese phones",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nim.rogers",
+        "description": "Texture, a digital magazine service created by Rogers Media. Discontinued in 2019.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nttdocomo.android.applicationmanager",
+        "description": "Docomo Application Manager",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nttdocomo.android.dhome",
+        "description": "Docomo Launcher",
+        "removal": "replace"
+    },
+    {
+        "id": "com.nttdocomo.android.iconcier_contents",
+        "description": "Diagnostics things only in this japanese app",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nttdocomo.android.initialization",
+        "description": "Docomo Initialization app",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nttdocomo.android.rwpushcontroller",
+        "description": "rwpushcontroller\nAnother FeliCa Networks app, with japanese language\nUseless frameworks",
+        "removal": "delete"
+    },
+    {
+        "id": "com.nttdocomo.android.store",
+        "description": "Docomo App Market",
+        "removal": "delete"
+    },
+    {
+        "id": "com.oem.euiccpartnerapp",
+        "description": "EuiccPartnerApp\nNeeded for eSIM (eUICC)?\nI think it's useless.",
         "removal": "delete"
     },
     {
@@ -621,9 +821,34 @@
         "removal": "delete"
     },
     {
+        "id": "com.ptc.osp.gnc",
+        "description": "Playing the Waiting Game by T-Mobile.\nThis app is maded for listening to music.",
+        "removal": "delete"
+    },
+    {
         "id": "com.samsung.attvvm",
         "label": "Samsung AT&T Visual Voicemail",
         "description": "A simple GUI for voicemail.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.huxextension",
+        "description": "Hux Extension\nVerizon activation, registration",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.slsi.telephony.oem.oemrilhookservice",
+        "description": "Part of the Samsung cellular modem infrastructure used by the OS to provide cellular support.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.slsi.telephony.oemril",
+        "description": "Part of the Samsung cellular modem infrastructure used by the OS to provide cellular support.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.samsung.sprint.chameleon",
+        "description": "Chameleon service which is a service designed to store sprint-specific properties (customizes some apps).",
         "removal": "delete"
     },
     {
@@ -634,6 +859,11 @@
             "https://docs.samsungknox.com/CCMode/F707U_Q.pdf"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.app.tfstatus",
+        "description": "Tracfone app, function unknown",
+        "removal": "caution"
     },
     {
         "id": "com.sec.omadm",
@@ -689,6 +919,11 @@
         "suggestions": "cloud_services"
     },
     {
+        "id": "com.sfr.android.sfrjeux",
+        "description": "My Games\nit's not useful app for games and better uninstall it",
+        "removal": "delete"
+    },
+    {
         "id": "com.sfr.android.sfrmail",
         "label": "SFR Mail",
         "description": "SFR Mail",
@@ -712,6 +947,16 @@
             "https://play.google.com/store/apps/details?id=com.sfr.android.vvm"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.shannon.imsservice",
+        "description": "Verizon IMS service.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.shannon.rcsservice",
+        "description": "Verizon RCS service.",
+        "removal": "replace"
     },
     {
         "id": "com.sprint.android.musicplus2033",
@@ -853,9 +1098,19 @@
         "removal": "delete"
     },
     {
+        "id": "com.telcel.contenedor",
+        "description": "Telcel app, Advertising company to get promotions.\nhttps://play.google.com/store/apps/details?id=com.telcel.contenedor",
+        "removal": "delete"
+    },
+    {
         "id": "com.telecomsys.directedsms.android.SCG",
         "label": "Verizon Location Agent",
         "description": "Location tracking (does not impact GPS function if deleted, don't worry).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.telus.checkup",
+        "description": "Checkup app (from Mobile Klinik; a Canadian store for buying, selling, and repairing smartphones)\nMainly used to run device-health diagnostics, estimate device value post-diagnostics (for re-selling at a Mobile Klinik location), and finding nearby Mobile Klinik locations to book appointments for device repair. Also contains ads and promotions for new devices and accessories.\nGenerally regarded as bloatware because diagnostics are generic at best, and is eager to request many unnecessary and potentially invasive device permissions.\nSafe to remove if you don't use it, and can be re-downloaded from the Google Play Store at any time.",
         "removal": "delete"
     },
     {
@@ -906,6 +1161,11 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.tmobile.vvm.application"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.tracfone.preload.accountservices",
+        "description": "TracPhone / StraightTalk application. It just shows IMEI, SIM, and phone number, as well as a way to see device properties.\nComes preinstalled with any TracPhone or StraightTalk device. It can be downloaded from the playstore if needed for whatever reason.\nHas Approximate and Precise location permissions, and Device ID permission.\nRuns in the background for them to collect data.",
         "removal": "delete"
     },
     {
@@ -978,6 +1238,16 @@
             "https://docs.samsungknox.com/CCMode/N900V.pdf"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.verizon.remoteSimlock",
+        "description": "VZWRemoteSimlockService\nRemote SimLock lock, unlock, looks more danger than useful app.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.verizon.services",
+        "description": "AppDirectedSMS\nOMA Device Management for Verizon.\nit's for wifi calling, sms",
+        "removal": "replace"
     },
     {
         "id": "com.verizon.vzwavs",
@@ -1109,9 +1379,74 @@
         "removal": "delete"
     },
     {
+        "id": "hdopen.vivicitta",
+        "description": "Companion\nApp for training, so bloated and from T-Mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "hu.telekom.telekomapp",
+        "description": "Telekom\nApp for subscriptions, so bloated (a lot spying) and from T-Mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "hu.telekom.telekomtv",
+        "description": "Mobile shopping\nApp for watch tv on phone, so bloated (a lot spying) and from T-Mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "jp.co.daj.consumer.ifilter.aflauncher",
+        "description": "Something Japanese with useless code.",
+        "removal": "delete"
+    },
+    {
+        "id": "jp.co.omronsoft.iwnnime.ml",
+        "description": "iWnn IME\nJapanese keyboard pre-installed on some Huawei phone's.",
+        "removal": "delete"
+    },
+    {
+        "id": "jp.co.omronsoft.wnnext.skin.std_dark_type2_HW",
+        "description": "Skin Dark mode to Japanese Keyboard.",
+        "removal": "delete"
+    },
+    {
+        "id": "jp.co.omronsoft.wnnext.skin.std_light_type2_HW",
+        "description": "Skin Light mode to Japanese Keyboard.",
+        "removal": "delete"
+    },
+    {
+        "id": "jp.co.yahoo.android.ebookjapan.preinstall",
+        "description": "eBookJapan\nNot needed japanese.",
+        "removal": "delete"
+    },
+    {
         "id": "net.aetherpal.device",
         "label": "AT&T Remote Support",
         "description": "Provided by Aetherpal (was acquired by VMware). It allows an AT&T Advanced Support representative to assist you by accessing your device remotely.",
+        "removal": "delete"
+    },
+    {
+        "id": "pl.tmobile.miboa",
+        "description": "My T-Mobile\nHas login activity and MailBox.\nA lot metrics, analytics.",
+        "removal": "delete"
+    },
+    {
+        "id": "pl.tmobile.panel",
+        "description": "MyBox\nRequire sim card to run app\nit's app store(discontinued?)",
+        "removal": "delete"
+    },
+    {
+        "id": "ro.cosmote.aps.wnwlite",
+        "description": "TopApps(discontinued)\nit's non english app. Installs recommended apps?\nI can't launch the app because it displays an error that it can't connect to the Internet, even when Wi-Fi is on.",
+        "removal": "delete"
+    },
+    {
+        "id": "telekom.hu.android.mobilvasarlas",
+        "description": "Mobile shopping\nApp for shopping or paying, so bloated and from T-Mobile",
+        "removal": "delete"
+    },
+    {
+        "id": "tmobile.hu.android.epgmiab",
+        "description": "Newsreel\nAnother app to tv things, so bloated and from T-Mobile, not needed",
         "removal": "delete"
     },
     {

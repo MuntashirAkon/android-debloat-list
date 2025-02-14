@@ -1,8 +1,8 @@
 # Android Debloat List
 
 A comprehensive list of apps that come preinstalled with many ROMs and how to remove and replace them, intended for
-backend rather than frontend. This list is kept in synchronised with
-the [Universal Android Debloater](https://github.com/0x192/universal-android-debloater) (UAD) project.
+backend rather than frontend. This list is kept in synchronized with
+the [UAD-NG](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) project.
 
 ## JSON Schema
 

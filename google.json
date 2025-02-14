@@ -97,6 +97,11 @@
         "suggestions": "cameras"
     },
     {
+        "id": "com.google.android.accessibility.soundamplifier",
+        "description": "Accessibility sound amplifier (https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier)",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.access.wifi.consumer",
         "label": "Google Wifi",
         "description": "Google Wifi app",
@@ -379,6 +384,11 @@
         "suggestions": "maps"
     },
     {
+        "id": "com.google.android.apps.mediahome.launcher",
+        "description": "Entertainment Space\nAll-in-one application for entertainment purposes like movies, games, books etc.",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.meetings",
         "label": "Google Meet",
         "description": "Formerly Hangouts Meet. Lets you create, schedule or join an online meeting.",
@@ -492,6 +502,11 @@
         "suggestions": "podcasts"
     },
     {
+        "id": "com.google.android.apps.privacy.wildlife",
+        "description": "VPN by Google One. Discontinued. Succeeded by VPN by Google and Google Fi VPN.",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.recorder",
         "label": "Recorder",
         "description": "Audio recorder from Google LLC.",
@@ -527,12 +542,22 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.apps.scone",
+        "description": "Automatically switches basebands between LTE and 5G on demand",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.searchlite",
         "label": "Google Go",
         "description": "The Google search app made for low-RAM devices.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.searchlite"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.security.securityhub",
+        "description": "Checks security your phone(you can find it in settings). Not very useful.\nhttps://play.google.com/store/apps/details?id=com.google.android.apps.security.securityhub",
         "removal": "delete"
     },
     {
@@ -595,6 +620,11 @@
         "suggestions": "battery_managers"
     },
     {
+        "id": "com.google.android.apps.tycho",
+        "description": "Google Fi Wireless\nhttps://play.google.com/store/apps/details?id=com.google.android.apps.tycho",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.apps.uploader",
         "label": "Picasa Uploader",
         "description": "Discontinued.",
@@ -619,6 +649,11 @@
         "id": "com.google.android.apps.wallpaper",
         "label": "Wallpapers",
         "description": "Wallpaper app from Google. Lets you set wallpaper from various sources including Google Earth collection",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.apps.weather",
+        "description": "The new Weather app by Google. If removed, \"At a Glance\" and the lock screen will still redirect to the Google app (like before).\nhttps://play.google.com/store/apps/details?id=com.google.android.apps.weather",
         "removal": "delete"
     },
     {
@@ -701,6 +736,11 @@
             "https://play.google.com/store/apps/details?id=com.google.android.as",
             "https://milaq.net/android-bloatware"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.as.oss",
+        "description": "Private Compute Services. On-device behavior analysis\nEnables live caption, music recognition and smart replies.\nSeems to be a dependency of System Intelligence.\nhttps://play.google.com/store/apps/details?id=com.google.android.as.oss\nhttps://milaq.net/android-bloatware",
         "removal": "delete"
     },
     {
@@ -881,6 +921,11 @@
         "suppress": "LabelSameAsId"
     },
     {
+        "id": "com.google.android.gms.supervision",
+        "description": "Family Link parental controls\nIt has something to Family Link parental controls.\nIntroduced in android 13.\nhttps://play.google.com/store/apps/details?id=com.google.android.gms.supervision",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.googlequicksearchbox",
         "label": "Google",
         "description": "Formerly, Google Search Box.\nRuns in the background.\nPointless. If you need a shortcut to Google on your homescreen just use a web-browser shortcut. Does also remove the Google Sound Search widget, but you can get that functionality from an app like Shazam, that additionally doesn't run in the background constantly like this package does.\nThis app also powers the Google Discover page (the news 'widget' when you go to the left of the home screen) and the app symbol called 'Google'.",
@@ -905,6 +950,16 @@
         "description": "Support for managing Google accounts.",
         "removal": "caution",
         "warning": "Safe to remove if you don't use a Google account."
+    },
+    {
+        "id": "com.google.android.health.connect.backuprestore",
+        "description": "Health Connect for Android backup/restore.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.healthconnect.controller",
+        "description": "Health Connect by Android gives you a simple way to share data between your health, fitness, and wellbeing apps without compromising on privacy.\nOnce you've downloaded Health Connect, you can access it through your settings by going to Settings > Apps > Health Connect, or from your Quick Settings menu.\nhttps://play.google.com/store/apps/details?id=com.google.android.apps.healthdata",
+        "removal": "replace"
     },
     {
         "id": "com.google.android.ims",
@@ -1010,6 +1065,41 @@
         "id": "com.google.android.onetimeinitializer",
         "label": "Google One Time Init",
         "description": "Provides first time setup, safe to remove.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig",
+        "description": "Useless configurations about webview, wifi and bluetooth to scan for better location. Everything works without it.\nWARNING: causes the Galaxy App to force-close after a few seconds on a Samsung N960F running Android Q.",
+        "removal": "replace"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.asi",
+        "description": "it's another component of\nAndroid System Intelligence (previously Device Personalization Services)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.geotz",
+        "description": "Provides Geolocation Time Zone detection.\nand it's used by (com.google.android.overlay.gmsconfig.common)?\nNo effects after remove.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.personalsafety",
+        "description": "Not needed for (com.google.android.apps.safetyhub).",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchlauncherqs",
+        "description": "Useless gmsconfig. it's config default launcher but not needed.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.searchselector",
+        "description": "Not needed for (com.google.android.apps.setupwizard.searchselector).",
+        "removal": "delete"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.ww",
+        "description": "useless unused overlay gmsconfig to family link.",
         "removal": "delete"
     },
     {
@@ -1157,6 +1247,11 @@
         "suggestions": "tts"
     },
     {
+        "id": "com.google.android.turboadapter",
+        "description": "Device Health Services Adapter\nAnother app for Device Health Services(discontinued)",
+        "removal": "delete"
+    },
+    {
         "id": "com.google.android.tv.remote",
         "label": "Android TV Remote Control",
         "description": "(Discontinued) Android TV remote control",
@@ -1216,6 +1311,16 @@
         "suggestions": "webviews"
     },
     {
+        "id": "com.google.android.wifi.dialog",
+        "description": "Wi-Fi dialog. App to launch user dialogs requested by the Wi-Fi service is stored here. Contains the Activity the dialogs are launched from.\nhttps://source.android.com/docs/core/ota/modular-system/wifi\nhttps://android.googlesource.com/platform/packages/apps/Settings/+/refs/heads/main/src/com/android/settings/wifi/WifiDialog.java\nhttps://android.googlesource.com/platform/packages/apps/Settings/+/refs/heads/main/src/com/android/settings/wifi/WifiDialog2.kt",
+        "removal": "caution"
+    },
+    {
+        "id": "com.google.android.wifi.resources",
+        "description": "Wi-Fi Service Resources. Overlay APK manifest is stored here. Extracts Wi-Fi configs.\nhttps://source.android.com/docs/core/ota/modular-system/wifi",
+        "removal": "unsafe"
+    },
+    {
         "id": "com.google.android.youtube",
         "label": "YouTube",
         "description": "The YouTube app",
@@ -1272,6 +1377,11 @@
             "https://play.google.com/store/apps/details?id=com.google.earth"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.google.mainline.telemetry",
+        "description": "Contains data on which versions of modules are installed. Google Play uses this data to determine if updates are available for the modules, and to show which security patch is installed.\nThis module doesn’t contain active code and has no functionality on its own.\nAnyway I wont trust it when adservices are also in mainline.\nhttps://www.xda-developers.com/android-project-mainline-modules-explanation/\nhttps://gitlab.com/W1nst0n/universal-android-debloater/-/issues/27#note_410012436",
+        "removal": "replace"
     },
     {
         "id": "com.google.marvin.talkback",
