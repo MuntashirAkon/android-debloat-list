@@ -55,16 +55,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.fw.upgrade.sysoper",
-        "label": "UpgradeSys",
-        "description": "FOTA = Firmware Over-the-air. Has a history of spying its users.",
-        "web": [
-            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
-            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "com.android.bluetooth.overlay.common",
         "description": "Overlays are usually themes.",
         "removal": "caution"
@@ -210,6 +200,16 @@
         "id": "com.fingerprints.serviceext",
         "description": "Handles fingerprint authentication?",
         "removal": "caution"
+    },
+    {
+        "id": "com.fw.upgrade.sysoper",
+        "label": "UpgradeSys",
+        "description": "FOTA = Firmware Over-the-air. Has a history of spying its users.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
     },
     {
         "id": "com.google.android.apps.carrier.carrierwifi",

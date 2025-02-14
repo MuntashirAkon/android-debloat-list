@@ -3226,12 +3226,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.xiaomi.digitalkey",
-        "label": "digitalkey",
-        "description": "Smart door locks, can also be used as a car key. Only for China.",
-        "removal": "delete"
-    },
-    {
         "id": "com.miui.enbbs",
         "description": "Xiaomi Forums old package.\nNow com.mi.global.bbs.\n",
         "removal": "delete"
@@ -3406,6 +3400,12 @@
         "suggestions": "barcode_scanners"
     },
     {
+        "id": "com.miui.screenrecorder",
+        "description": "Mi Screen Recorder\n",
+        "removal": "replace",
+        "suggestions": "screen_recorders"
+    },
+    {
         "id": "com.miui.securityadd",
         "label": "Xiaomi System Service Plugin",
         "description": "Related to the MIUI Security app",
@@ -3442,12 +3442,6 @@
         "description": "A useless keyboard used to secure your password when logging in.",
         "removal": "replace",
         "suggestions": "keyboards"
-    },
-    {
-        "id": "com.miui.screenrecorder",
-        "description": "Mi Screen Recorder\n",
-        "removal": "replace",
-        "suggestions": "screen_recorders"
     },
     {
         "id": "com.miui.smsextra",
@@ -3994,15 +3988,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.motorola.imagertuning_lake",
-        "label": "Imager Tuning",
-        "description": "Naming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene"
-        ],
-        "removal": "replace"
-    },
-    {
         "id": "com.motorola.imagertuning_V2",
         "label": "Camera Tuner",
         "description": "Applies improvements to the camera hardware so that any app that uses the camera will be improved.",
@@ -4010,6 +3995,15 @@
             "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_V2"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.motorola.imagertuning_lake",
+        "label": "Imager Tuning",
+        "description": "Naming convention: imagertuning_[PHONE CODENAME]\nThis is the custom camera image processing stack on Motorola devices. It's generally important for improving image quality.\nPlaystore reviews indicate that it slows down the camera app significantly for some users (probably a bug).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.imagertuning_athene"
+        ],
+        "removal": "replace"
     },
     {
         "id": "com.motorola.invisiblenet",
@@ -4062,6 +4056,16 @@
         "removal": "delete"
     },
     {
+        "id": "com.motorola.motodisplay",
+        "label": "Moto Display",
+        "description": "Displays notifications with the screen off (like the Always On Display feature from other OEMs)",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.motorola.motodisplay",
+            "https://support.motorola.com/uk/en/solution/ms108519"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.motorola.motointelligence",
         "label": "Moto Intelligence",
         "description": "Not sure what it does",
@@ -4071,16 +4075,6 @@
         "id": "com.motorola.motointelligence.overlay",
         "label": "com.motorola.motointelligence.overlay",
         "description": "Overlay for 'com.motorola.motointelligence'",
-        "removal": "delete"
-    },
-    {
-        "id": "com.motorola.motodisplay",
-        "label": "Moto Display",
-        "description": "Displays notifications with the screen off (like the Always On Display feature from other OEMs)",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.motorola.motodisplay",
-            "https://support.motorola.com/uk/en/solution/ms108519"
-        ],
         "removal": "delete"
     },
     {
@@ -6914,15 +6908,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.sec.android.autodoodle.service",
-        "label": "AutoDoodle",
-        "description": "Samsung Auto Doodle for Photo Editor",
-        "web": [
-            "https://galaxystore.samsung.com/prepost/000005425352"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "com.sec.android.AutoPreconfig",
         "description": "Auto Preconfig\nTells you to format the device when sim from other country is used basically (won't let you use another one)\n",
         "removal": "delete"
@@ -7202,6 +7187,15 @@
     {
         "id": "com.sec.android.app.wlantest",
         "description": "wlan test\nHidden test app responding to the #232339*# and *#232338*# secret codes\nFYI : wlan = wireless LAN (https://en.wikipedia.org/wiki/Wireless_LAN)\nNOTE: Disabling this test will rise the exclamation mark on the WI-Fi icon and will show the message \"Unable to connect to the host\" in Settings -> Connections -> More connections settings - Private DNS - provider hostname.\nThe connection seems to work despite those esthetic errors.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.sec.android.autodoodle.service",
+        "label": "AutoDoodle",
+        "description": "Samsung Auto Doodle for Photo Editor",
+        "web": [
+            "https://galaxystore.samsung.com/prepost/000005425352"
+        ],
         "removal": "delete"
     },
     {
@@ -8440,6 +8434,12 @@
     {
         "id": "com.xiaomi.channel",
         "description": "Mi Talk \nMi instant messaging app that lets you do practically the same thing as Whatsapp. \nNOTE: You should use Signal or Wire instead Whatsapp/Mi Talk for more privacy.\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xiaomi.digitalkey",
+        "label": "digitalkey",
+        "description": "Smart door locks, can also be used as a car key. Only for China.",
         "removal": "delete"
     },
     {
