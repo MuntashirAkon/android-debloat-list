@@ -298,6 +298,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.dti.tracfone",
+        "label": "Mobile Services",
+        "description": "Installs sponsored apps automatically on Tracfone and affiliated carriers (Straight Talk, Total Wireless, etc)",
+        "removal": "delete"
+    },
+    {
         "id": "com.hyperlync.Sprint.Backup",
         "label": "Sprint Backup",
         "description": "Lets you backup your phone’s content to your Sprint Backup account.\nThis app was developed by Hyperlync Technologies an Israel-based company which provides cyber-security solutions. It is now owned by Edition Ltd, a big Singapore based company.",

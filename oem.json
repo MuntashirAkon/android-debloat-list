@@ -114,11 +114,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.agui.game",
-        "description": "Game mode\nBlocks calls & notifications when selected APP's are open\n",
-        "removal": "delete"
-    },
-    {
         "id": "com.agui.newsos",
         "description": "SOS\nNotify emergency contacts. When triggered, will also put the phone in a low comsumption mode\n",
         "removal": "delete"
@@ -136,11 +131,6 @@
     {
         "id": "com.agui.studentmodel",
         "description": "Student mode (From Unihertz Jelly2)\nSets limits to time - range, network, application limits and so on, to use a mobile phone reasonably. Under this mode, user is not allowed to install applications or factory reset. Applications not in white-list are disabled.",
-        "removal": "delete"
-    },
-    {
-        "id": "com.agui.studentmodel",
-        "description": "Student Mode\nLocks down your phone to reduce distractions\n",
         "removal": "delete"
     },
     {
@@ -315,16 +305,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.android.systemui.overlay.ct",
-        "description": "Likely overlay themes from China Mobile Communications Corporation(CMCC) or China Telecom(CT).",
-        "removal": "caution"
-    },
-    {
-        "id": "com.android.systemui.overlay.ct",
-        "description": "Likely overlay themes from China Mobile Communications Corporation(CMCC) or China Telecom(CT).",
-        "removal": "caution"
-    },
-    {
         "id": "com.android.thememanager",
         "description": "MIUI Themes (manager)\nXiaomi seems to love confusing package names.\nLets you select and apply themes provided by Xiaomi.\nNOTE: Disabling will break the ability to change lock-screen wallpaper.",
         "removal": "caution"
@@ -382,7 +362,7 @@
     },
     {
         "id": "com.ape.gamemode",
-        "description": "Provides game mode feature for Wiko mobilee",
+        "description": "Provides game mode feature for Wiko mobile.",
         "removal": "delete"
     },
     {
@@ -3079,6 +3059,12 @@
         "suggestions": "webviews"
     },
     {
+        "id": "com.mig.play.games",
+        "label": "Funmax",
+        "description": "Some kind of third-party game center bundled by Xiaomi.\nHas lots of permissions by default.",
+        "removal": "delete"
+    },
+    {
         "id": "com.milink.service",
         "description": "UniPlay Service\nMIUI screen casting service. \nIf removed, you'll have to use Android's native casting services which can be accessed through a 3rd party app.\n",
         "removal": "delete"
@@ -3156,6 +3142,17 @@
         "suggestions": "calculators"
     },
     {
+        "id": "com.miui.carlink",
+        "label": "CarWith",
+        "description": "Not supported for most cars and only Chinese.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.catcherpatch",
+        "description": "Needed for Application Extension Service (com.miui.contentcatcher).",
+        "removal": "delete"
+    },
+    {
         "id": "com.miui.cit",
         "description": "Hardware tests\nSecret codes (https://nitter.net/fs0c131y/status/933353182956326913#m) lets you run hardware tests.\nhttps://c.mi.com/thread-1744085-1-0.html\n",
         "removal": "delete"
@@ -3219,8 +3216,19 @@
         "warning": "Removing this package causes the Settings app to crash when searching in Settings. May also cause bootloops in MIUI < 13.0.6"
     },
     {
+        "id": "com.miui.core.internal.assistant",
+        "description": "Needed for Chinese Mi AI (com.miui.voiceassist).",
+        "removal": "delete"
+    },
+    {
         "id": "com.miui.daemon",
         "description": "MIUI daemon\nCollects a lot of data and sends them to China.\nSee : https://nitter.net/fs0c131y/status/938872347087564800?lang=en\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xiaomi.digitalkey",
+        "label": "digitalkey",
+        "description": "Smart door locks, can also be used as a car key. Only for China.",
         "removal": "delete"
     },
     {
@@ -3427,6 +3435,13 @@
         ],
         "removal": "caution",
         "warning": "Removing the app may cause bootloops."
+    },
+    {
+        "id": "com.miui.securityinputmethod",
+        "label": "Mi Secure Keyboard",
+        "description": "A useless keyboard used to secure your password when logging in.",
+        "removal": "replace",
+        "suggestions": "keyboards"
     },
     {
         "id": "com.miui.screenrecorder",
@@ -6786,11 +6801,6 @@
     },
     {
         "id": "com.samsung.packageinstalleroverlay",
-        "description": "It's used to display an overlay window when installing or updating apps. Shows information about the app and provides the user with the option to cancel the process. Probably breaks manual installation of apps (needs more testing).",
-        "removal": "caution"
-    },
-    {
-        "id": "com.samsung.packageinstalleroverlay",
         "description": "Most likely the overlay that appears when you installed an application.",
         "removal": "caution"
     },
@@ -7740,7 +7750,7 @@
     {
         "id": "com.sonyericsson.unsupportedheadsetnotifier",
         "label": "Unsupported Headset Notifier",
-        "description": "Given its name, I think it diplays a notification when you insert a headset not compatible with your phone.",
+        "description": "Given its name, I think it displays a notification when you insert a headset not compatible with your phone.",
         "removal": "replace"
     },
     {
@@ -7926,7 +7936,7 @@
     },
     {
         "id": "com.sonymobile.intelligent.iengine",
-        "description": "According to a sony user it is part of Smart Screen rotation (auto screen rotation based on the gyroscope). Doesn't seem reliable.\nDoes it break the screen-rotation if removed?",
+        "description": "According to a Sony user it is part of Smart Screen rotation (auto screen rotation based on the gyroscope). Doesn't seem reliable.\nDoes it break the screen-rotation if removed?\nOn Xperia 10VI: doesn't break rotation.",
         "removal": "delete"
     },
     {
@@ -7952,7 +7962,7 @@
     {
         "id": "com.sonymobile.music.googlelyricsplugin",
         "label": "Google lyrics extension",
-        "description": "Provides lyrics from Google in the sony music app",
+        "description": "Provides lyrics from Google in the Sony music app.",
         "removal": "delete"
     },
     {
@@ -8083,7 +8093,7 @@
     {
         "id": "com.sonymobile.xperiaxlivewallpaper.product.res.overlay",
         "description": "Some overlay for a live wallpaper from Sony? Overlays are usually themes, but not sure about this one as theming seems weird for live wallpapers. Could be that Sony automatically generates theme packages for all or most system apps, which might generate some unnecessary packages.",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.tblenovo.lenovotips",
@@ -8392,9 +8402,24 @@
         "removal": "replace"
     },
     {
+        "id": "com.xiaomi.aiasst.service",
+        "label": "AI Call Assistant",
+        "description": "Useless Call settings.",
+        "removal": "delete"
+    },
+    {
         "id": "com.xiaomi.aiasst.vision",
         "label": "AiasstVision",
         "description": "Not needed if you removed AI Call Assistant.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xiaomi.aicr",
+        "label": "Mi AI Engine",
+        "description": "Another app to Mi AI from MIUI China.",
+        "web": [
+            "https://hyperosupdates.com/apps/com.xiaomi.aicr/"
+        ],
         "removal": "delete"
     },
     {
@@ -8496,7 +8521,7 @@
     {
         "id": "com.xiaomi.migameservice",
         "label": "Mi Game Service",
-        "description": "Not sure what it is.\nHave: Joyose Connection Service, Recorder, Mi Time Control.",
+        "description": "Chinese app made to test game service things.",
         "removal": "delete"
     },
     {
@@ -8512,6 +8537,15 @@
     {
         "id": "com.xiaomi.mirecycle",
         "description": "Mi Recycle \nXiaomi has extended its partnership with Cashify to launch the 'Mi Recycle' feature through its MIUI Security app. \nIt will let Xiaomi phone users check the health of their smartphone and get their resale value directly from Cashify, \nthe online re-commerce company based out of New Delhi.\nSource : https://gadgets.ndtv.com/mobiles/news/xiaomi-mi-recycle-cashify-miui-security-app-2018024\n",
+        "removal": "delete"
+    },
+    {
+        "id": "com.xiaomi.mirror",
+        "label": "MIUI+ Beta",
+        "description": "Transfer files, sync copy text to PC without USB.",
+        "web": [
+            "https://plus.miui.com"
+        ],
         "removal": "delete"
     },
     {

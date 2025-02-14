@@ -1059,11 +1059,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.tct.contacts.transfer.a_overlay",
-        "description": "",
-        "removal": "caution"
-    },
-    {
         "id": "com.tct.diagprotector",
         "description": "",
         "removal": "caution"

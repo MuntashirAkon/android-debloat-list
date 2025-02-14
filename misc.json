@@ -171,6 +171,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.applovin.array.apphub.vincere",
+        "label": "AppHub",
+        "description": "Is known as tracker company, potentially adware!",
+        "removal": "delete"
+    },
+    {
         "id": "com.aspiro.tidal",
         "label": "TIDAL Music",
         "description": "Tidal Music streaming app",
