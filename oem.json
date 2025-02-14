@@ -1147,7 +1147,7 @@
             "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/issues/330"
         ],
         "removal": "caution",
-        "warning": "Breaks home and recents button on Xiaomi Mi Pad"
+        "warning": "Breaks home and recents button on Xiaomi Mi Pad."
     },
     {
         "id": "com.android.launcher",
@@ -5354,8 +5354,9 @@
     {
         "id": "com.huawei.android.dsdscardmanager",
         "label": "Dual SIM settings",
-        "description": "SIM management",
-        "removal": "caution"
+        "description": "It's sim card management in Huawei settings.",
+        "removal": "unsafe",
+        "warning": "Upon removing, sim card management in settings will no longer work."
     },
     {
         "id": "com.huawei.android.findmyphone",
@@ -5373,8 +5374,9 @@
     {
         "id": "com.huawei.android.hwaps",
         "label": "HwAps",
-        "description": "Manages Intelligent Resolution and changing screen resolution in settings.\nIntelligent Resolution will be not available and changing screen resolution in settings.",
-        "removal": "caution"
+        "description": "Manages Intelligent Resolution and changing screen resolution in settings.",
+        "removal": "unsafe",
+        "warning": "Upon removing, Intelligent Resolution will be not available, and screen resolution cannot be changed in settings."
     },
     {
         "id": "com.huawei.android.hwouc",
@@ -5396,7 +5398,7 @@
     {
         "id": "com.huawei.android.instantonline",
         "label": "HwInstantOnline",
-        "description": "No noticable consequences",
+        "description": "No noticeable consequences.",
         "removal": "delete"
     },
     {
@@ -5408,7 +5410,7 @@
         "id": "com.huawei.android.internal.app",
         "label": "Android HwResolver",
         "description": "Component of Huawei sharing.",
-        "removal": "replace",
+        "removal": "caution",
         "warning": "This may break the sharing function in some apps causing them to crash."
     },
     {
@@ -6056,16 +6058,13 @@
     },
     {
         "id": "com.huawei.iaware",
-        "description": "App Prioritizer. Prioritizes apps to avoid slowdown\nUp to you but there is apparently no noticeable difference when deleted?\nSystem will start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
+        "description": "App Prioritizer. Prioritizes apps to avoid slowdown. Up to you but there is apparently no noticeable difference when deleted?\nSystem will start lagging a little bit (you will notice it while scrolling and on some animations, for example scrolling installed apps), battery consumption will become slightly higher and battery stats will disappear soon. At the same time, logcat will be full of errors like: PowerKit: PG Server is not found. calling pid xxxx.",
         "removal": "caution"
     },
     {
         "id": "com.huawei.iconnect",
         "label": "Device connection service",
-        "description": "AppGallery Connect\nDedicated to providing one-stop services for app creation, development, distribution, operations and engagement. Useless for ordinary users.",
-        "web": [
-            "https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-introduction-0000001057492641"
-        ],
+        "description": "Hidden menu 'install PCAssistant' when connected to PC? I have never seen it. Safe to remove.",
         "removal": "delete"
     },
     {
@@ -6081,11 +6080,8 @@
     {
         "id": "com.huawei.imedia.sws",
         "label": "HUAWEI Histen",
-        "description": "Huawei Histen\nAn equaliser for Huawei devices. Removing it will cause other music apps' equalisers stop working.",
-        "web": [
-            "https://www.honor.ru/club/topicdetail/topicid-23039/"
-        ],
-        "removal": "caution"
+        "description": "Audio 3D effects found in the settings. Safe to remove if you don't use these settings.",
+        "removal": "delete"
     },
     {
         "id": "com.huawei.imonitor",
@@ -6393,7 +6389,7 @@
     {
         "id": "com.huawei.rcsserviceapplication",
         "label": "Huawei RCS",
-        "description": "RCS = Rich Communication Service.\nProvides sending messages to another Huawei phone.",
+        "description": "RCS = Rich Communication Service.\nProvides sending messages to another Huawei phone.\nHidden RCS Chats with 49 permissions.",
         "removal": "delete"
     },
     {
@@ -9375,12 +9371,7 @@
     {
         "id": "com.motorola.carriersettingsext",
         "description": "This is a WiFi calling app supported by AT&T, T-Mobile, Orange.",
-        "removal": "replace"
-    },
-    {
-        "id": "com.motorola.carriersettingsext",
-        "description": "This is a WiFi calling app supported by AT&T, T-Mobile, Orange.",
-        "removal": "replace"
+        "removal": "caution"
     },
     {
         "id": "com.motorola.ccc.devicemanagement",
@@ -9576,7 +9567,7 @@
     {
         "id": "com.motorola.gamemode",
         "label": "Moto Gametime",
-        "description": "Find your downloaded games here and discover new games.",
+        "description": "Allows the user to block calls, quick screenshots, float social apps, etc when playing a game.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.motorola.gamemode"
         ],
@@ -11920,8 +11911,13 @@
     },
     {
         "id": "com.osp.app.signin",
-        "description": "Samsung Account app\nLots of trackers in this app.\nHas a huge list of permissions. It is an essential app for a lot of samsung apps (which will be removed with the default selection in this list)\nSettings apps will crash if removed on Android 11/OneUI 3.0 (https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/39)\nThis issue happens only if you are running Android 11. If not, you can can (and should) remove this package!\n",
-        "removal": "caution"
+        "label": "Samsung account",
+        "description": "Lots of trackers in this app.\nHas a huge list of permissions. It is an essential app for a lot of Samsung apps (which will be removed with the default selection in this list)",
+        "web": [
+            "https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/39"
+        ],
+        "removal": "caution",
+        "warning": "Settings app will crash on Android 11. Should work fine in other versions of Android."
     },
     {
         "id": "com.payjoy.access",
@@ -12307,8 +12303,10 @@
     },
     {
         "id": "com.samsung.android.app.contacts",
-        "description": "Samsung contacts app\nSafe to debloat if you use another contacts app\nNOTE : If you do, you will no longer be able to access Contacts from the Samsung dialer app.\n",
+        "label": "Samsung Contacts",
+        "description": "Safe to debloat if you use another contacts app.",
         "removal": "replace",
+        "warning": "After removing the app, you will no longer be able to access Contacts from the Samsung dialer app.\nThis will also prevent the user from modifying the Safety and emergency tab within the Samsung Android native settings app. Specifically the Medical info & Emergency contacts. This information is pulled on the lockscreen by first responders or in emergency sharing mode for emergency contacts.",
         "suggestions": "contacts"
     },
     {
@@ -12340,8 +12338,13 @@
     },
     {
         "id": "com.samsung.android.app.galaxyfinder",
-        "description": "S Finder is a search application that allows you to find what you want in an instant by searching the content on your Galaxy smartphone and on the web as well. (https://www.samsung.com/global/galaxy/what-is/s-finder/)\nNOTE: Removing this will breaks the search in the app drawer.\n",
-        "removal": "replace"
+        "label": "Samsung Finder",
+        "description": "a search application that allows you to find what you want in an instant by searching the content on your Galaxy smartphone and on the web as well.",
+        "web": [
+            "https://www.samsung.com/global/galaxy/what-is/s-finder/"
+        ],
+        "removal": "replace",
+        "warning": "Removing this will remove the search in the app drawer."
     },
     {
         "id": "com.samsung.android.app.interactivepanoramaviewer",
@@ -12447,7 +12450,8 @@
         "web": [
             "https://www.samsung.com/global/galaxy/what-is/bixby-routines/"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "suggestions": "automation_apps"
     },
     {
         "id": "com.samsung.android.app.sbrowseredge",
@@ -12469,6 +12473,7 @@
         "label": "Quick Share",
         "description": "Samsung Quick Share (from the Galaxy Store)",
         "removal": "replace",
+        "warning": "Removing the package breaks Quick Share.",
         "suggestions": "sharing_apps"
     },
     {
@@ -12483,7 +12488,8 @@
     },
     {
         "id": "com.samsung.android.app.smartcapture",
-        "description": "Samsung screenshot\nYou will still be able to take screenshots without this package.",
+        "label": "Samsung capture",
+        "description": "Samsung's implementation of screenshot. Show the bottom toolbar after taking a screenshot.\nLets you group widgets on OneUI 4 (?)",
         "removal": "replace"
     },
     {
@@ -12605,7 +12611,7 @@
     {
         "id": "com.samsung.android.aware.service",
         "label": "Samsung Quick Share Agent",
-        "description": "Formerly, Quick Share.\nUse Wifi direct to share files between 2 Samsung Galaxy phones (it's only for Samsung Galaxy users)\nQuick Share also lets you temporarily upload files to Samsung Cloud\nThere are better alternatives (compatible with all Android devices and free and open-source):\nFor instance: https://f-droid.org/packages/com.genonbeta.TrebleShot/\n",
+        "description": "Formerly, Quick Share.\nUse Wifi direct to share files between 2 Samsung Galaxy phones (it's only for Samsung Galaxy users).",
         "removal": "replace",
         "suggestions": "sharing_apps"
     },
@@ -12786,7 +12792,12 @@
     },
     {
         "id": "com.samsung.android.dqagent",
-        "description": "Samsung Device Quality Agent\nMonitors how the device uses wifi. Has the ability to identify network operator related data.\nFound mention of some packages in the Java code:\n- com.samsung.android.app.mobiledoctor (https://play.google.com/store/apps/details?id=com.samsung.heartwiseVcr)\n- com.samsung.android.dhr (Device Health Report)\n- om.salab.act (https://play.google.com/store/apps/details?id=com.jquiz.act)\n- kr.co.avad.diagnostictool (unkown stuff from South Korea)\n\n2 hard-coded URLs:\nPRD = https://dc.dqa.samsung.com\nSTG = https://stg-dc.dqa.samsung.com\nPRD = Portable Recording Device, STG = Security Threat Group. 2 terms related to law enforcment.",
+        "label": "DQA",
+        "description": "DQA = Samsung Device Quality Agent. It monitors how the device uses Wi-Fi and has the ability to identify network operator-related data.\nFound mention of some packages in the Java code:\n- com.samsung.android.app.mobiledoctor\n- com.samsung.android.dhr (Device Health Report)\n- om.salab.act\n- kr.co.avad.diagnostictool (unkown stuff from South Korea)\n\n2 hard-coded URLs:\nPRD = https://dc.dqa.samsung.com\nSTG = https://stg-dc.dqa.samsung.com\nPRD = Portable Recording Device, STG = Security Threat Group. 2 terms related to law enforcment.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.heartwiseVcr",
+            "https://play.google.com/store/apps/details?id=com.jquiz.act"
+        ],
         "removal": "delete"
     },
     {
@@ -12797,7 +12808,7 @@
     {
         "id": "com.samsung.android.dynamiclock",
         "label": "Samsung Wallpaper services",
-        "description": "Formerly, Dynamic Lockscreen.\nAutomatically changes your Lock screen’s wallpaper every time your Galaxy phone wakes up (wallpapers update every 2 weeks).",
+        "description": "Formerly, Dynamic Lockscreen.\nAutomatically changes your Lock screen's wallpaper every time your Galaxy phone wakes up (wallpapers update every 2 weeks).",
         "web": [
             "https://www.samsung.com/us/support/answer/ANS10001593"
         ],
@@ -12805,12 +12816,12 @@
             "com.samsung.systemui.lockstar"
         ],
         "removal": "caution",
-        "warning": "Breaks LockStar customizations."
+        "warning": "Removing the app breaks LockStar customizations."
     },
     {
         "id": "com.samsung.android.easysetup",
         "label": "Nearby device scanning",
-        "description": "Previously, Samsung Connect Easy Setup, Samsung SmartThings.\nNeeds \"com.samsung.android.beaconmanager\" to be useful.",
+        "description": "Previously, Samsung Connect Easy Setup, Samsung SmartThings.\nRequires \"com.samsung.android.beaconmanager\" to be useful.",
         "removal": "delete"
     },
     {
@@ -12971,7 +12982,7 @@
             "https://developer.android.com/training/articles/direct-boot"
         ],
         "removal": "caution",
-        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this packages breaks the Accessibility settings on Android 11.",
+        "warning": "Do NOT disable if you don't have another keyboard with direct boot mode support, or you'll be stuck at boot (no keyboard to unlock the phone).\nDo NOT remove this package with root if it wasn't first uninstalled with the non-root method.\nRemoving this package also breaks the Accessibility settings on Android 11.",
         "suggestions": "keyboards"
     },
     {
@@ -13110,14 +13121,13 @@
     {
         "id": "com.samsung.android.lool",
         "label": "Device Care",
-        "description": "Samsung Device Care (phone optimizer)\nThis package phone home (China, Qihoo 360)\nThe clean feature (in storage setting) is provided by Qihoo 360 which is a shady company (https://en.wikipedia.org/wiki/Qihoo_360)\nNOTE : If you don't want to delete this package, at least use a firewall (Netguard/AfWall+) to block internet access",
+        "description": "While this package was suspected previously to send lots of data to Chinese servers it has since been debunked - only connects to Chinese server to retrieve database, but still sends some very basic data about the phone like model number, storage capacity, and a randomly generated identifier.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.samsung.android.lool",
-            "https://www.virustotal.com/gui/file/048ead2be8d18bbe2b05651380069b3740dd05703e9bd66630da986026518398/details",
-            "https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/"
+            "https://www.reddit.com/r/Android/comments/el99r0/samsung_members_koreas_official_reply_has_arrived/"
         ],
         "removal": "caution",
-        "warning": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices"
+        "warning": "Disabling/Removing this package may remove the option to manage Power Saving, Fast Charging & Battery Protection on some devices."
     },
     {
         "id": "com.samsung.android.mateagent",
@@ -13126,7 +13136,8 @@
     },
     {
         "id": "com.samsung.android.mcfserver",
-        "description": "Samsung Multi Connectivity (starting from Galaxy S20)\nSee https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/12\n",
+        "label": "Samsung Multi Connectivity",
+        "description": "See https://gitlab.com/W1nst0n/universal-android-debloater/-/issues/12",
         "removal": "replace"
     },
     {
@@ -13162,7 +13173,7 @@
     {
         "id": "com.samsung.android.mdx.quickboard",
         "label": "Media and devices",
-        "description": "Kind of a hub for managing medias played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio)\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
+        "description": "Kind of a hub for managing the media played on smart devices (e.g play music to 2 Bluetooth devices simultaneously with Dual audio).\nHas a lot of permissions and asks for ACCESS_COARSE_LOCATION, QUERY_ALL_PACKAGES.",
         "web": [
             "https://www.samsung.com/latin_en/support/mobile-devices/media-and-device-feature/"
         ],
@@ -13187,17 +13198,21 @@
     },
     {
         "id": "com.samsung.android.mfi",
-        "description": "Galaxy Widget (https://play.google.com/store/apps/details?id=com.samsung.android.mfi)\nProvide you with quick access to information without requiring you to open the app that manages this information\nhttps://www.samsung.com/ie/support/mobile-devices/what-are-widgets-and-how-do-i-add-them-to-my-android-smartphone-or-tablet/\n",
+        "label": "Galaxy Widget",
+        "description": "Just shows you ads of some of Samsung's services or other apps/games.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.mfi"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.mobileservice",
         "label": "Group Sharing",
-        "description": "Its name was Samsung Experience Service, before One UI 1.0 (Samsung Experience version 10.0, Android 8.1). Now, it's Group Sharing. Both have similar functionality, but the legacy version was more akin to Samsung Core Services. Handles your Samsung account and is needed to use some Samsung apps features.\nIt allows you to use multiple Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings, with your Samsung account credentials.",
+        "description": "Previously, Samsung Experience Service. The legacy version was similar to Samsung Core Services (citation needed).\nCan remove safely if you don't use any group sharing features (shared albums in gallery, etc.).\nHandles your Samsung account and is needed to use some Samsung apps features.\nIt allows you to use Samsung apps, such as Samsung Health, Samsung Pay, Galaxy Apps, Samsung Members, and SmartThings with your Samsung account credentials.",
         "web": [
             "https://techshift.net/what-is-samsung-group-sharing/"
         ],
-        "removal": "delete"
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.mocca",
@@ -13213,7 +13228,8 @@
         "id": "com.samsung.android.net.wifi.wifiguider",
         "label": "Wi-Fi Tips",
         "description": "Shows a question-mark button next to Wi-Fi networks that failed to connect for any reason, providing info to fix the specific issue. It also has a dedicated Settings activity that lists all possible help-tips, accessible via the \"More tips\" button when reading a tip.\nUpon reinstalling a notification pops up saying \"Analyzing Wi-Fi\" for a few seconds, no idea what it's doing.",
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Removing the app makes it impossible to connect to a Wi-Fi network without a detected internet connection"
     },
     {
         "id": "com.samsung.android.networkdiagnostic",
@@ -13301,7 +13317,11 @@
     },
     {
         "id": "com.samsung.android.rubin.app",
-        "description": "Customization Service\nCollect a massive amount of data (https://www.samsung.com/us/account/customization-service/)\nBasically everything you do on your phone.\nFor \"a better user experience\" blablabla...\nUsed to display customized advertisements about products and services that may be of interest to you\n",
+        "label": "Customization Service",
+        "description": "Collects a massive amount of data: basically everything you do on your phone for \"a better user experience\".\nUsed to display customized advertisements about products and services that may be of interest to you.",
+        "web": [
+            "https://www.samsung.com/us/account/customization-service/"
+        ],
         "removal": "delete"
     },
     {
@@ -13427,7 +13447,12 @@
     },
     {
         "id": "com.samsung.android.service.peoplestripe",
-        "description": "People Edge\nGives you immediate access to your favorite contacts from the edge of your phone.\nhttps://www.samsung.com/global/galaxy/what-is/people-edge/\nhttps://videotron.tmtx.ca/en/topic/samsung_galaxys9/using_people_edge.html\nIt gives you immediate access to your favorite contacts from the edge panel.\n",
+        "label": "People Edge",
+        "description": "Gives you immediate access to your favorite contacts from the edge of your phone.",
+        "web": [
+            "https://www.samsung.com/global/galaxy/what-is/people-edge/",
+            "https://videotron.tmtx.ca/en/topic/samsung_galaxys9/using_people_edge.html"
+        ],
         "removal": "delete"
     },
     {
@@ -13457,7 +13482,12 @@
     },
     {
         "id": "com.samsung.android.sm",
-        "description": "Smart Manager app \nProvides pretty useless optimizing features using Chinese company Qihoo database.\nAutomatically scans and optimizes data usage to preserve battery levels, manage storage and RAM\nhttps://www.privateinternetaccess.com/blog/android-community-worried-about-presence-of-chinese-spyware-by-qihoo-360-in-samsung-smartphones-and-tablets/\nhttps://forum.xda-developers.com/galaxy-note-9/help/samsung-services-dialling-home-to-china-t3894033\n",
+        "label": "Samsung Smart Manager",
+        "description": "Provides pretty useless optimizing features using Chinese company Qihoo database.\nAutomatically scans and optimizes data usage to preserve battery levels, manage storage and RAM",
+        "web": [
+            "https://www.privateinternetaccess.com/blog/android-community-worried-about-presence-of-chinese-spyware-by-qihoo-360-in-samsung-smartphones-and-tablets/",
+            "https://forum.xda-developers.com/galaxy-note-9/help/samsung-services-dialling-home-to-china-t3894033"
+        ],
         "removal": "delete"
     },
     {
@@ -13487,13 +13517,15 @@
     },
     {
         "id": "com.samsung.android.smartcallprovider",
-        "description": "Samsung Smart Call\nProvides caller profile information to help consumers identify incoming calls and block unwanted ones.\nAlso related to the 'local places' feature in Samsung dialer.\nRelies on Hiya (see com.hiya.star)\nTL;DR : Really bad for privacy.\n",
+        "label": "Samsung Smart Call",
+        "description": "Provides caller profile information to help consumers identify incoming calls and block unwanted ones.\nAlso related to the 'local places' feature in Samsung dialer.\nRelies on Hiya (see com.hiya.star)\nTL;DR : really bad for your privacy.",
         "removal": "delete"
     },
     {
         "id": "com.samsung.android.smartface",
-        "description": "SmartFaceService\nUsed to automatically detects faces when using the Samsung camera\nNOTE : This package has nothing to do with face unlock (com.samsung.android.bio.face.service)\n",
-        "removal": "replace"
+        "label": "SmartFaceService",
+        "description": "Used to automatically detect faces when using the Samsung camera. It might be related to \"Keep screen on while viewing\" under Motions and gestures in Settings.\nNOTE: This package has nothing to do with face unlock (com.samsung.android.bio.face.service).",
+        "removal": "delete"
     },
     {
         "id": "com.samsung.android.smartface.overlay",
@@ -13507,7 +13539,11 @@
     },
     {
         "id": "com.samsung.android.smartmirroring",
-        "description": "Samsung Smart View\nEnable you to mirror screen your phone to a TV\nhttps://www.samsung.com/us/apps/smart-view-2/. Dependency for com.samsung.android.video",
+        "label": "Samsung Smart View",
+        "description": "Enables you to mirror screen your phone to a TV.",
+        "web": [
+            "https://www.samsung.com/us/apps/smart-view-2/"
+        ],
         "removal": "replace",
         "required_by": [
             "com.samsung.android.video"
@@ -13530,7 +13566,13 @@
     },
     {
         "id": "com.samsung.android.spay",
-        "description": "Samsung Pay (https://play.google.com/store/apps/details?id=com.samsung.android.spay)\nSamsung Pay is a mobile payment and digital wallet service by Samsung Electronics that lets users make payments using compatible phones \nand other Samsung-produced devices\nhttps://en.wikipedia.org/wiki/Samsung_Pay\nNOTE : Samsung Pay is KNOX dependant and will never work again if you root your phone.\nFYI : Your data are sold (https://www.sammobile.com/news/samsung-pay-new-privacy-policy-your-data-sold/)\n",
+        "label": "Samsung Wallet",
+        "description": "Also known as, Samsung Pay.\nSamsung Pay is a mobile payment and digital wallet service by Samsung that lets users make payments using compatible phones and other Samsung-produced devices. Any personal information including transactions may be sold to third-party.\nNOTE: Samsung Wallet is KNOX dependant and will never work again if you root your phone.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.spay",
+            "https://en.wikipedia.org/wiki/Samsung_Pay",
+            "https://www.sammobile.com/news/samsung-pay-new-privacy-policy-your-data-sold/"
+        ],
         "removal": "delete",
         "dependencies": [
             "com.sec.android.app.samsungapps",
@@ -13539,7 +13581,8 @@
     },
     {
         "id": "com.samsung.android.spayfw",
-        "description": "Samsung Pay Framework needed for Samsung Pay\nSamsung Pay is a mobile payment and digital wallet service by Samsung Electronics that lets users make payments using compatible phones and other Samsung-produced devices. See below.",
+        "label": "Samsung Pay Framework",
+        "description": "Framework for Samsung Wallet.\nSamsung Pay is a mobile payment and digital wallet service by Samsung that lets users make payments using compatible phones and other Samsung-produced devices.",
         "removal": "delete",
         "required_by": [
             "com.samsung.android.spay"
@@ -13547,7 +13590,11 @@
     },
     {
         "id": "com.samsung.android.spaymini",
-        "description": "Samsung Pay Mini\nSame service as Samsung Pay but for online payments only and is available on all compatible android devices (not only Samsung devices)\nhttps://www.samsung.com/in/samsung-pay/mini/\n",
+        "label": "Samsung Pay mini",
+        "description": "Same service as Samsung Wallet but for online payments only and is available on all compatible android devices (not just Samsung devices).",
+        "web": [
+            "https://www.samsung.com/in/samsung-pay/mini/"
+        ],
         "removal": "delete"
     },
     {
@@ -13587,7 +13634,11 @@
     },
     {
         "id": "com.samsung.android.ststub",
-        "description": "Allows users to control, automate, and monitor their home environment via mobile device. \nhttps://en.wikipedia.org/wiki/SmartThings\nREMINDER : stub = https://stackoverflow.com/questions/10648280/what-is-stub-and-aidl-for-in-java\n",
+        "label": "SmartThings",
+        "description": "Allows users to control, automate, and monitor their home environment via mobile device.",
+        "web": [
+            "https://en.wikipedia.org/wiki/SmartThings"
+        ],
         "removal": "delete"
     },
     {
@@ -13598,7 +13649,7 @@
     {
         "id": "com.samsung.android.svcagent",
         "label": "SVC Agent",
-        "description": "Impossible to know what this system app does. It has full access to internet network anyway. Safe to remove. Its APK implies it has a UI, but it doesn't have any activities. It occasionally runs a MainService for many consecutive hours.",
+        "description": "The APK has various icons in it + DiagMon library (telemetry). It has full access to internet and occasionally runs a MainService for many consecutive hours.",
         "removal": "delete"
     },
     {
@@ -13633,13 +13684,18 @@
     },
     {
         "id": "com.samsung.android.themecenter",
-        "description": "Samsung Theme Center (AKA Galaxy Themes Service)\nRuns at startup and allows you to apply themes from `com.samsung.android.themestore`. Has of lot of permissions (including INTERNET and INSTALL_PACKAGES) and connects to Samsung domains for analytics.\n\nPithus analysis: https://beta.pithus.org/report/973ba78ddd74a13dcf5268e980010a64ba42a3d2a1c4c62df277ead5a17cd10c",
-        "removal": "replace"
+        "label": "Galaxy Themes Service",
+        "description": "Runs at startup and allows you to apply themes from \"com.samsung.android.themestore\". On some devices, it provides the built-in wallpaper images to the Theme Store.\nIt will enable itself if you disable it, so try uninstalling (may throw an error).\nHas of lot of permissions (including INTERNET and INSTALL_PACKAGES) and connects to Samsung domains for analytics.",
+        "web": [
+            "https://beta.pithus.org/report/973ba78ddd74a13dcf5268e980010a64ba42a3d2a1c4c62df277ead5a17cd10c"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.themestore",
-        "description": "Galaxy Themes\nOfficial Samsung app for modifying your smartphone's theme.\nhttps://www.samsung.com/global/galaxy/apps/galaxy-themes/\nYou'll still be able to change your wallpaper without this app (from the Gallery app)",
-        "removal": "replace"
+        "label": "Galaxy Themes",
+        "description": "Forces you to login to a Samsung Account if you want to download ANY content (icons, wallpapers, themes, etc.). If you already downloaded something, you can apply it \"freely\".\nNot needed for Wallpaper API, so any app (Samsung or not) can set Home & Lock wallpapers. However, on some devices, this app is required to view/apply built-in wallpapers (in that case, it requires \"com.samsung.android.themecenter\" service).",
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.timezone.autoupdate_N",
@@ -13693,7 +13749,8 @@
     },
     {
         "id": "com.samsung.android.unifiedprofile",
-        "description": "My Profile\nRelated to Samsung Members?\n",
+        "label": "My Profile",
+        "description": "Related to Samsung Members?",
         "removal": "delete"
     },
     {
@@ -13746,7 +13803,11 @@
     },
     {
         "id": "com.samsung.android.voc",
-        "description": "Samsung Members (https://play.google.com/store/apps/details?id=com.samsung.android.voc)\nThe other version is \"com.samsung.oh\".\n",
+        "label": "Samsung Members",
+        "description": "The other version is \"com.samsung.oh\".",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.android.voc"
+        ],
         "removal": "delete"
     },
     {
@@ -14166,7 +14227,11 @@
     },
     {
         "id": "com.samsung.desktopsystemui",
-        "description": "Samsung DEX UI\nExtends your smartphone into a \"desktop computing experience\".\nhttps://developer.samsung.com/samsung-dex/how-it-works\n",
+        "label": "Samsung DeX System UI",
+        "description": "Extends your smartphone into a \"desktop computing experience\".",
+        "web": [
+            "https://developer.samsung.com/samsung-dex/how-it-works"
+        ],
         "removal": "delete"
     },
     {
@@ -14187,7 +14252,12 @@
     },
     {
         "id": "com.samsung.ecomm",
-        "description": "Shop Samsung (https://play.google.com/store/apps/details?id=com.samsung.ecomm)\nApp where you can buy all (and only) Samsung products.\nhttps://www.samsung.com/us/explore/shop-samsung-app/\n",
+        "label": "Shop Samsung",
+        "description": "App where you can buy all (and only) Samsung products.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.samsung.ecomm",
+            "https://www.samsung.com/us/explore/shop-samsung-app/"
+        ],
         "removal": "delete"
     },
     {
@@ -14278,7 +14348,8 @@
     },
     {
         "id": "com.samsung.klmsagent",
-        "description": "Checks the validity of your KLM/KPE (Knox Licence Manager) licence.\nThis packages is needed for Samsung Health (com.sec.android.app.shealth) and probably all Knox related apps (like secure folder, samsung Pay...)\n\nNote: KLM licences are depreciated. Samsung now only support KPE (Knox Platform for Enterprise) keys.\nKPE keys are provided by Samsung and enable app's developers to access knox features.\n",
+        "label": "KLMS Agent",
+        "description": "Checks the validity of your KLM/KPE (Knox Licence Manager) license.\nThis package is needed for Samsung Health (\"com.sec.android.app.shealth\") and probably all Knox-related apps (like Secure Folder, Samsung Pay...)\n\nNote: KLM licences are deprecated. Samsung now only supports KPE (Knox Platform for Enterprise) keys.\nKPE keys are provided by Samsung and enable app's developers to access knox features.",
         "removal": "delete"
     },
     {
@@ -14308,7 +14379,11 @@
     },
     {
         "id": "com.samsung.knox.securefolder",
-        "description": "Knox Secure Folder (https://play.google.com/store/apps/details?id=com.samsung.knox.securefolder)\nCreate a secure space on your device to encrypt and store your private data and apps.\nhttps://www.samsungknox.com/en/solutions/personal-apps/secure-folder\nNOTE: The key used to encrypt the files is not derived from the password you use to unlock the secure folder \nbut rather from a key stored in the hardware that is set in the factory.\n",
+        "label": "Secure Folder",
+        "description": "Create a secure space on your device to encrypt and store your private data and apps.\nNOTE: The key used to encrypt the files is not derived from the password you use to unlock the secure folder but rather from a key stored in the hardware that is set in the factory.",
+        "web": [
+            "https://www.samsungknox.com/en/solutions/personal-apps/secure-folder"
+        ],
         "removal": "delete"
     },
     {
@@ -14388,7 +14463,8 @@
     },
     {
         "id": "com.samsung.safetyinformation",
-        "description": "Some safety information telling you not to put your phone in your eyes (it's not a joke)\n",
+        "label": "Safety Information",
+        "description": "Safety information telling you to be careful with the usage of your phone.",
         "removal": "delete"
     },
     {
@@ -14453,8 +14529,12 @@
     },
     {
         "id": "com.samsung.ucs.agent.boot",
-        "description": "Boot agent\nUCS is a company which has partnered with Samsung to provide licenses for Samsung Knox\nhttps://www.ucssolutions.com/blog/samsung-knox/\nI don't have precise information about the package itself but there are chances that it verifies some files on boot. If theses files are not verified\nthen it prevent the phone to boot \n",
-        "removal": "delete"
+        "label": "bootagent",
+        "description": "UCS is a company which has partnered with Samsung to provide licenses for Samsung Knox.\nI don't have precise information about the package itself but there are chances that it verifies some files on boot. If these files are not verified then it may prevent the phone from booting.",
+        "web": [
+            "https://www.ucssolutions.com/blog/samsung-knox/"
+        ],
+        "removal": "unsafe"
     },
     {
         "id": "com.samsung.ucs.agent.ese",
@@ -14478,7 +14558,8 @@
     },
     {
         "id": "com.samsung.visionprovider",
-        "description": "Provider for Bixby Vision (com.samsung.android.visionintelligence)\nManages access to data stored by itself, stored by other apps, and provide a way to share these data with other apps.\n",
+        "label": "VisionProvider",
+        "description": "Provider for Bixby Vision (com.samsung.android.visionintelligence)\nManages access to data stored by itself, stored by other apps, and provide a way to share these data with other apps.",
         "removal": "delete"
     },
     {
@@ -14562,8 +14643,10 @@
     },
     {
         "id": "com.sec.android.app.SecSetupWizard",
-        "description": "Samsung Setup Wizard\nThe first time you turn your device on, a Welcome screen is displayed. It guides you through the basics of setting up your device.\nIt's the setup for Samsung services.\n",
-        "removal": "delete"
+        "label": "Samsung SetupWizard",
+        "description": "The first time you turn your device on, a welcome screen is displayed. It guides you through the basics of setting up your device. It's the setup for Samsung services.",
+        "removal": "caution",
+        "warning": "Both \"com.sec.phone\" & \"com.sec.android.app.SecSetupWizard\" must be enabled to be able to add new eSIMs to device. Otherwise, the menu will spin indefinitely."
     },
     {
         "id": "com.sec.android.app.aftersalecamera",
@@ -14601,7 +14684,11 @@
     },
     {
         "id": "com.sec.android.app.bluetoothtest",
-        "description": "Bluetooth Test\nHidden feature accessible by entering *#*#232331#*#* in the samsung dialer\nWas calling home back in 2015 (https://forum.xda-developers.com/galaxy-s5/help/bluetoothtest-apk-calling-home-t3035182)\n",
+        "label": "BluetoothTest",
+        "description": "Hidden feature accessible by entering *#*#232331#*#* in the Samsung dialer.\nIt was found to be calling home back in 2015.",
+        "web": [
+            "https://forum.xda-developers.com/galaxy-s5/help/bluetoothtest-apk-calling-home-t3035182"
+        ],
         "removal": "delete"
     },
     {
@@ -14626,7 +14713,11 @@
     },
     {
         "id": "com.sec.android.app.desktoplauncher",
-        "description": "Samsung DeX Home (launcher)\nDex Enables users to extend their device into a desktop-like experience by connecting a keyboard, mouse, and monitor.\n\"DeX\" is a contraction of \"Desktop eXperience\".\nhttps://en.wikipedia.org/wiki/Samsung_DeX\n",
+        "label": "Samsung DeX Home",
+        "description": "DeX Enables users to extend their device into a desktop-like experience by connecting a keyboard, mouse, and monitor.\n\"DeX\" is a contraction of \"Desktop eXperience\".",
+        "web": [
+            "https://en.wikipedia.org/wiki/Samsung_DeX"
+        ],
         "removal": "delete"
     },
     {
@@ -14673,7 +14764,8 @@
     },
     {
         "id": "com.sec.android.app.hwmoduletest",
-        "description": "HwModuleTest, a hardware hidden test app (dial *#0*# to open it). \nFun low-level stuff to see in there\n",
+        "label": "HwModuleTest",
+        "description": "A hardware hidden test app (dial *#0*# to open it).\nHas stuff to quickly check the phone's hardware. Removing it does not break anything, but no point in removing it. Note: opening this menu is required to change CSC with PC programs.",
         "removal": "delete"
     },
     {
@@ -14684,12 +14776,12 @@
     {
         "id": "com.sec.android.app.launcher",
         "label": "Samsung One UI Home",
-        "description": "Samsung One UI Home launcher (homescreen) which is also Samsung's TouchWiz default launcher\n",
+        "description": "Samsung One UI Home launcher (homescreen) which is also Samsung's TouchWiz default launcher.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.sec.android.app.launcher"
         ],
         "removal": "caution",
-        "warning": "DO NOT REMOVE THIS IF YOU DON'T USE ANOTHER LAUNCHER !\nNote: Keep this package if you want swipe gestures to keep working.\n",
+        "warning": "Disabling this package breaks the multitasking navigation button on all newer versions of One UI, nothing would happen when pressing it.",
         "suggestions": "launchers"
     },
     {
@@ -14725,7 +14817,8 @@
     },
     {
         "id": "com.sec.android.app.parser",
-        "description": "DRParser Mode \nSecret code parser\nSupport for hidden samsung apps launched via secret codes\n",
+        "label": "DRParser Mode",
+        "description": "Secret code parser\nSupport for hidden samsung apps launched via secret codes.",
         "removal": "delete"
     },
     {
@@ -14770,16 +14863,18 @@
     },
     {
         "id": "com.sec.android.app.samsungapps",
+        "label": "Galaxy Store",
         "required_by": [
             "com.samsung.android.spay"
         ],
-        "description": "Samsung Galaxy Store\nSamsung app store.\nRequired for Samsung Pay feature to work.\n",
+        "description": "The Samsung app store.",
         "web": [
             "https://en.wikipedia.org/wiki/Samsung_Galaxy_Store",
             "https://www.computerworld.com/article/3514999/samsung-selling-data.html",
             "https://www.reddit.com/r/Android/comments/xtq9pq/samsungs_privacy_policy_for_oct_1st_is_crazy/"
         ],
         "removal": "replace",
+        "warning": "Removing the app may break Samsung Pay features.",
         "suggestions": "app_stores"
     },
     {
@@ -14789,8 +14884,8 @@
     },
     {
         "id": "com.sec.android.app.sbrowser",
-        "label": "Samsung Internet Browser",
-        "description": "From their privacy policy: \"The information we obtain [...] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet\"\n",
+        "label": "Samsung Internet",
+        "description": "From their privacy policy: \"The information we obtain [..] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet.\"",
         "web": [
             "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
             "https://developer.samsung.com/internet/privacy-policy-us.html",
@@ -14801,12 +14896,18 @@
     },
     {
         "id": "com.sec.android.app.sbrowser.lite",
-        "description": "Samsung web browser lite\nLite version of the Samsung browser (hah! Because the base one was too bloated?)\nDon't use this browser. In their privacy policy: \"The information we obtain [...] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet\"\nhttps://developer.samsung.com/internet/privacy-policy-us.html",
-        "removal": "delete"
+        "label": "Samsung Internet Lite/Go",
+        "description": "Lite version of the Samsung browser (hah! Because the base one was too bloated?)\nFrom their privacy policy: \"The information we obtain [..] include, identifiers associated with your devices, types of devices, web browser characteristics, device and operating system type and characteristics, language preferences, clickstream data, your interactions with Samsung Internet (such as the web pages you visit, links you click and features you use), dates and times of your use of Samsung Internet, and other information about your use of Samsung Internet.\"",
+        "web": [
+            "https://developer.samsung.com/internet/privacy-policy-us.html",
+            "https://privacytests.org/android.html"
+        ],
+        "removal": "replace",
+        "suggestions": "browsers"
     },
     {
         "id": "com.sec.android.app.scloud",
-        "description": "I guess it's the core of Samsung scloud.\n",
+        "description": "I guess it's the core of Samsung Cloud.",
         "removal": "delete"
     },
     {
@@ -14827,7 +14928,12 @@
     },
     {
         "id": "com.sec.android.app.shealth",
-        "description": "Samsung Health (https://play.google.com/store/apps/details?id=com.sec.android.app.shealth)\nServes to track various aspects of daily life contributing to well being such as physical activity, diet, and sleep.\nhttps://en.wikipedia.org/wiki/Samsung_Health\nS Health data are stored in a Knox container (with HIPAA compliance)\n",
+        "label": "Samsung Health",
+        "description": "Serves to track various aspects of daily life contributing to well being such as physical activity, diet, and sleep.\nS Health data is stored in a Knox container (with HIPAA compliance).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.android.app.shealth",
+            "https://en.wikipedia.org/wiki/Samsung_Health"
+        ],
         "removal": "delete"
     },
     {
@@ -14847,7 +14953,8 @@
     },
     {
         "id": "com.sec.android.app.soundalive",
-        "description": "Responsible for Dolby Atmos and other pre-programmed equalizer stuff (accessible from the Settings app)\nNeeded by Adapt Sound (com.sec.hearingadjust) which a pretty useful but little known feature.",
+        "label": "Samsung SoundAlive",
+        "description": "Responsible for Dolby Atmos and other equalizer stuff (accessible from the Settings app).\nNeeded by Adapt Sound (com.sec.hearingadjust) which is a pretty useful feature.",
         "removal": "delete"
     },
     {
@@ -14985,7 +15092,8 @@
     },
     {
         "id": "com.sec.android.easyMover.Agent",
-        "description": "Smart Switch Agent\nNeeded to use Smart Switch. See above.\n",
+        "label": "Smart Switch Agent",
+        "description": "Needed to use Smart Switch. See \"com.sec.android.easyMover\".",
         "removal": "delete"
     },
     {
@@ -15098,13 +15206,21 @@
     },
     {
         "id": "com.sec.android.preloadinstaller",
-        "description": "Very shady apk. According to if you're chinese or not, Samsung mount an hidden partition during the first boot and install some apps.\nhttps://nitter.net/fs0c131y/status/1046689524691218432#m\nArchive : https://web.archive.org/web/20200107110205/https://nitter.net/fs0c131y/status/1046689524691218432\n",
+        "description": "Very shady apk. According to if you're chinese or not, Samsung mount an hidden partition during the first boot and install some apps.",
+        "web": [
+            "https://web.archive.org/web/20200107110205/https://nitter.net/fs0c131y/status/1046689524691218432"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sec.android.provider.badge",
-        "description": "Provider for the notification badges (which are not very useful IMHO)\nProvides a way for apps to use notifications badges.\nhttps://www.samsung.com/au/support/mobile-devices/what-is-app-icon-badge/\n",
-        "removal": "replace"
+        "label": "BadgeProvider",
+        "description": "Provider for the notification badges (which are not very useful IMHO)\nProvides a way for apps to use notifications badges.",
+        "web": [
+            "https://www.samsung.com/au/support/mobile-devices/what-is-app-icon-badge/"
+        ],
+        "removal": "caution",
+        "warning": "Emergency Power saving launcher does not start after removing."
     },
     {
         "id": "com.sec.android.provider.emergencymode",
@@ -15308,7 +15424,12 @@
     },
     {
         "id": "com.sec.epdg",
-        "description": "Huh... that's hard to explain quickly. Let's try : \nFirst you need to know that there is a standards organization which develops protocols for mobile telephony called 3GPP (mobile network : 2G/3G/4G/5G).\nRAT (physical connection method to a wireless communication network) non specified by the 3GPP is called non-3GPP. RAT Wifi is non-3GPP.\n\nePDG means Evolved Packet Data Gateway. The main role of the ePDG is to provide security mechanisms such as IPsec tunnelling of connections \nwith the device over an untrusted non-3GPP access. It is mainly use for VoWifi (Voice over wifi).\nFor further information : \n- https://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-packet-core\n- https://www.aptilo.com/solutions/mobile-data-offloading/3gpp-wifi-access/\n- https://en.wikipedia.org/wiki/System_Architecture_Evolution#Evolved_Packet_Core_(EPC)\n#\nSafe to remove if not using VoWifi.\n",
+        "description": "Safe to remove if you're not using VoWifi.\nYou need to know that:\n3GPP is a standards organization for mobile telephony (2G/3G/4G/5G).\nNon-3GPP RAT refers to wireless connection methods not specified by 3GPP, including Wi-Fi.\nePDG (evolved Packet Data Gateway) secures connections over untrusted non-3GPP access, commonly used for VoWiFi (Voice over Wi-Fi).",
+        "web": [
+            "https://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-packet-core",
+            "https://www.aptilo.com/solutions/mobile-data-offloading/3gpp-wifi-access/",
+            "https://en.wikipedia.org/wiki/System_Architecture_Evolution#Evolved_Packet_Core_(EPC)"
+        ],
         "removal": "caution"
     },
     {
@@ -15373,7 +15494,11 @@
     },
     {
         "id": "com.sec.imslogger",
-        "description": "IMS Logger provides logging opt-ins.\nSecurity flaw: https://nitter.net/fs0c131y/status/1115889065285562368",
+        "label": "ImsLogger",
+        "description": "IMS Logger provides logging opt-ins. Has known security flaws.",
+        "web": [
+            "https://web.archive.org/web/20211209093408/https://twitter.com/fs0c131y/status/1115889065285562368"
+        ],
         "removal": "delete"
     },
     {
@@ -15383,8 +15508,8 @@
     },
     {
         "id": "com.sec.internal.vsim.VSimServiceApp",
-        "description": "Non Sim Device Solution (NSDS) needed for VoLTE and VoWifi (Wifi Calling) if you have a virtual SIM.\nSee com.sec.vsimservice\nUses IMS service\n",
-        "removal": "replace"
+        "description": "Non Sim Device Solution (NSDS) needed for VoLTE and VoWifi (Wifi Calling) if you have a virtual SIM. Enabled in devices without eSIMs for some reason. Not sure if there are non-esim virtual sims?\nSee com.sec.vsimservice. Uses IMS service.",
+        "removal": "caution"
     },
     {
         "id": "com.sec.kidsplat.installer",
@@ -15448,7 +15573,8 @@
     },
     {
         "id": "com.sec.location.nsflp2",
-        "description": "Samsung Location \nI just know this doesn't have any impact on GPS stuff. \nIt seems to be only used along samsung apps.\n",
+        "label": "Samsung Location SDK",
+        "description": "It seems to only be used by Samsung (Galaxy) apps",
         "removal": "delete"
     },
     {
@@ -15468,8 +15594,9 @@
     },
     {
         "id": "com.sec.phone",
-        "description": "another test/debug app used to test the proper functioning of phone calls.\n",
-        "removal": "delete"
+        "description": "Another test/debug app used to test the proper functioning of phone calls.",
+        "removal": "caution",
+        "warning": "Both \"com.sec.phone\" & \"com.sec.android.app.SecSetupWizard\" must be enabled to be able to add new eSIMs to device. Otherwise, the menu will spin indefinitely."
     },
     {
         "id": "com.sec.providers.assisteddialing",
@@ -15488,13 +15615,20 @@
     },
     {
         "id": "com.sec.spp.push",
-        "description": "Samsung Push Service (https://play.google.com/store/apps/details?id=com.sec.spp.push)\nProvides updates and notifications for services exclusive to Samsung..\nhttps://www.samsunggeeks.com/2015/10/25/what-is-the-samsung-push-service/\n",
+        "label": "Samsung Push Service",
+        "description": "Provides updates and notifications for services exclusive to Samsung (more like Samsung ads).",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.sec.spp.push",
+            "https://www.samsunggeeks.com/2015/10/25/what-is-the-samsung-push-service/"
+        ],
         "removal": "delete"
     },
     {
         "id": "com.sec.sve",
-        "description": "SecVideoEngineService is arguably a Samsung video engine service (handle enconding/decoding ?) for displaying video trough Samsung apps. \n3 permissions : RECORD_AUDIO, CAMERA, INTERACT_ACROSS_USERS_FULL\n\nNote: Removing it will break WiFi Calling.",
-        "removal": "caution"
+        "label": "SecVideoEngineService",
+        "description": "Arguably a Samsung video engine service (handling enconding/decoding?) for displaying video through Samsung apps.\n3 permissions: RECORD_AUDIO, CAMERA, INTERACT_ACROSS_USERS_FULL",
+        "removal": "caution",
+        "warning": "Removing it will break WiFi Calling."
     },
     {
         "id": "com.sec.svoice.lang.en_GB",
@@ -15508,8 +15642,9 @@
     },
     {
         "id": "com.sec.usbsettings",
-        "description": "USBSettings\nHidden settings. Lets you choose from ADB, MTP, RNDIS, ACM, DM (dial *#0808# to open)\nRuns at startup\n",
-        "removal": "delete"
+        "label": "USBSettings",
+        "description": "Hidden settings. Lets you choose from ADB, MTP, RNDIS, ACM, DM (dial *#0808# to open)\nRuns at startup.",
+        "removal": "caution"
     },
     {
         "id": "com.sec.vsim.ericssonnsds.webapp",
@@ -17843,7 +17978,7 @@
     },
     {
         "id": "com.wdstechnology.android.kryten",
-        "description": "OTA Access Point Configuration. it's only hidden configurations to ota, it's not needed for updates.\nIn the case of OTA updates, \"com.miui.core\" is responsible.",
+        "description": "OTA Access Point Configuration. It's only hidden configurations to OTA, it's not needed for updates.\nIn the case of OTA updates, \"com.miui.core\" is responsible.",
         "removal": "delete"
     },
     {
@@ -17889,7 +18024,11 @@
     },
     {
         "id": "com.wsomacp",
-        "description": "omacp = OMA Client Provisioning. It is a protocol specified by the Open Mobile Alliance (OMA).\nConfiguration messages parser. Used for provisioning APN settings to Samsung devices via SMS \nIn my case, it was automatic and I never needed configuration messages.\nMaybe it's useful if carriers change their APN. But you still can change the config manually, it's not difficult.\nKeep in mind these special types of SMS can be abused : \nhttps://research.checkpoint.com/2019/advanced-sms-phishing-attacks-against-modern-android-based-smartphones/\nhttps://www.zdnet.com/article/samsung-huawei-lg-and-sony-phones-vulnerable-to-rogue-provisioning-messages/\n",
+        "description": "omacp = OMA Client Provisioning. It is a protocol specified by the Open Mobile Alliance (OMA).\nConfiguration messages parser. Used for provisioning APN settings to Samsung devices via SMS \nIn my case, it was automatic and I never needed configuration messages.\nMaybe it's useful if carriers change their APN. But you still can change the config manually, it's not difficult.\nKeep in mind these special types of SMS can be abused (though you would need to select to apply the APN in the popup).",
+        "web": [
+            "https://research.checkpoint.com/2019/advanced-sms-phishing-attacks-against-modern-android-based-smartphones/",
+            "https://www.zdnet.com/article/samsung-huawei-lg-and-sony-phones-vulnerable-to-rogue-provisioning-messages/"
+        ],
         "removal": "delete"
     },
     {
