@@ -611,7 +611,7 @@
     },
     {
         "id": "com.samsung.android.providers.media",
-        "description": "Likely same as com.android.providers.media; scans the device for media files and allows permitted apps access to them.",
+        "description": "Likely same as com.android.providers.media; scans the device for media files and allows permitted apps access to them. Disabling this package can cause issues with saving screenshots.",
         "removal": "caution"
     },
     {
