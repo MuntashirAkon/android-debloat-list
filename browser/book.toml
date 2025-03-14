@@ -1,0 +1,13 @@
+[book]
+authors = ["Muntashir Al-Islam"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Android Debloat List"
+
+[output.html]
+preferred-dark-theme = "ayu"
+additional-css = ["custom.css"]
+smart-punctuation = true
+no-section-label = true
+site-url = "/android-debloat-list/"
