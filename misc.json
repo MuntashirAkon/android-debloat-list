@@ -586,6 +586,16 @@
         "removal": "delete"
     },
     {
+        "id": "com.fw.upgrade.sysoper",
+        "label": "UpgradeSys",
+        "description": "FOTA = Firmware Over-the-air. Has a history of spying its users.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.galaxyfirsatlari",
         "label": "Galaxy Fırsatları",
         "description": "Samsung-only app for Turkish people\nRecommands you stuff to buy. You are supposed to save money but we all know this kind of apps\nEncourages consumption.\nExodus found 10 trackers and 17 permissions",
@@ -1095,6 +1105,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.mediatek.mms.appservice",
+        "label": "com.mediatek.mms.appservice",
+        "description": "Provides Voice message, Video message, Fax message, Text message in a messaging app?",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
+    },
+    {
         "id": "com.mediatek.mt6879.gamedriver",
         "description": "Mediatek Arm GPU Game Driver\nGPU Game drivers for Mediatek MT6879CPU.",
         "removal": "unsafe"
@@ -1117,13 +1134,6 @@
         "id": "com.mediatek.mtklogger.proxy",
         "description": "Logs debug data.",
         "removal": "delete"
-    },
-    {
-        "id": "com.mediatek.mms.appservice",
-        "label": "com.mediatek.mms.appservice",
-        "description": "Provides Voice message, Video message, Fax message, Text message in a messaging app?",
-        "removal": "caution",
-        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.mediatek.nlpservice",
@@ -2709,10 +2719,9 @@
     {
         "id": "com.whatsapp",
         "label": "WhatsApp",
-        "description": "Popular messaging app from Meta",
+        "description": "Popular messaging app from Meta. Requires Google Play Services to receive messages in the background.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.whatsapp",
-            "https://www.whatsapp.com/legal/privacy-policy",
             "https://en.wikipedia.org/wiki/WhatsApp#Controversies_and_criticism"
         ],
         "removal": "replace"

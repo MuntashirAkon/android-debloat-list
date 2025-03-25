@@ -871,7 +871,7 @@
     {
         "id": "com.google.android.gms",
         "label": "Google Play services",
-        "description": "GMS = Google Mobile Services. It is a layer that sits on top of the OS and provides a bunch of Google APIs, giving apps access to various Google Services.\nIf you remove it all the apps relying on Google Play Services whill either: \n- detect the lack of play services and refuse to run\n- detect the lack of play services but allow you to run (improperly) by dismissing an annoying popup.\nDisabling this package will improve battery life a lot.",
+        "description": "GMS = Google Mobile Services. It is a layer that sits on top of the OS and provides a lot of proprietary Google APIs, giving apps access to various Google Services, such as: \"fused\"-location (internet and GPS chip), QR Code scanner, 2FA, G-Drive storage, Firebase API, Cloud Messaging, etc.\nIf you remove it, all the apps relying on it will either:\n- detect the lack of Play-Services and refuse to run\n- detect the lack of Play-Services but allow you to run (improperly) by dismissing an annoying popup.\nDisabling this package will improve battery life a lot.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.gms"
         ],

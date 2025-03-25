@@ -1,8 +1,8 @@
 <?php
 /* SPDX-License-Identifier: AGPL-3.0-or-later */
 
-const LAST_COMMIT = "f6e86fc5d7fb180535251925141e92ad2c47f356";
-const THIS_COMMIT = "52b78a99b49c2de52858f6a96782f17fb8a94c4c";
+const LAST_COMMIT = "52b78a99b49c2de52858f6a96782f17fb8a94c4c";
+const THIS_COMMIT = "246c2208b08ebfbe31e0a0eb90430fada932c703";
 const REPO_DIR = __DIR__ . "/..";
 const LINT_DIR = REPO_DIR . "/build";
 
@@ -26,7 +26,7 @@ function convert_to_old(array $list): array {
 $old_list_link = get_link(LAST_COMMIT);
 $new_list_link = get_link(THIS_COMMIT);
 
-$old_list = json_decode(file_get_contents($old_list_link), true);
+$old_list = convert_to_old(json_decode(file_get_contents($old_list_link), true));
 $new_list = convert_to_old(json_decode(file_get_contents($new_list_link), true));
 $id_list = explode("\n", file_get_contents(LINT_DIR . '/ids.txt'));
 

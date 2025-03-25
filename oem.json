@@ -1117,7 +1117,8 @@
     },
     {
         "id": "com.android.incallui",
-        "description": "Xiaomi (and OnePlus) Phone dialer (here we go again! Another confusing package name)\n\nClosed-source app built on top of the AOSP package.\nThe name is doubly misleading because this package is the whole dialer. It does not only provide the 'in call' screen.",
+        "label": "Phone",
+        "description": "Xiaomi (and OnePlus) Phone dialer.\nFetches APN lists on some phones. Package name is highly misleading.",
         "removal": "caution"
     },
     {
@@ -1562,6 +1563,11 @@
         "id": "com.android.secretcode",
         "description": "SecretCode\nHidden app shows some secret codes.",
         "removal": "delete"
+    },
+    {
+        "id": "com.android.server.deviceconfig.resources",
+        "description": "DeviceConfigServiceResources (Server*?). Part of com.android.configinfrastructure. Resources for the device's default server config.\nhttps://cs.android.com/android/platform/superproject/main/+/main:packages/modules/ConfigInfrastructure/service/ServiceResources/Android.bp",
+        "removal": "caution"
     },
     {
         "id": "com.android.server.telecom.auto_generated_rro_product__",
@@ -2167,8 +2173,12 @@
     },
     {
         "id": "com.android.unisoc.telephony.server",
-        "description": "UICC stands for Universal Integrated Circuit Card.\nIt is a the physical and logical platform for the USIM and may contain additional USIMs and other applications.\n(U)SIM is an application on the UICC.\nOnly for China.",
-        "removal": "delete"
+        "description": "Unisoc 4G and 5G drivers.",
+        "web": [
+            "https://xdaforums.com/t/oukitel-wp23-pro-unlocking-bootloader-rooting-gsi.4642483/#post-89239693"
+        ],
+        "removal": "caution",
+        "warning": "Removal will break incoming calls."
     },
     {
         "id": "com.android.updater",
@@ -11152,6 +11162,11 @@
         "removal": "caution"
     },
     {
+        "id": "com.oneplus.skin",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.oneplus.sms.smscplugger",
         "description": "Probably related to SMS based on the name?\nContains no services and I've never seen it run.",
         "removal": "caution"
@@ -11181,11 +11196,6 @@
         "id": "com.oneplus.store",
         "description": "OnePlus Store\nOffers getting favorites OnePlus phones in good price.\nhttps://play.google.com/store/apps/details?id=com.oneplus.store",
         "removal": "delete"
-    },
-    {
-        "id": "com.oneplus.skin",
-        "description": "",
-        "removal": "caution"
     },
     {
         "id": "com.oneplus.telephonyoptimization",
@@ -11343,6 +11353,15 @@
         "removal": "delete"
     },
     {
+        "id": "com.oplus.aod",
+        "label": "Aod",
+        "description": "Multiple sources say that AOD doesnt work without tons of extra services, but on some devices it works without extra services",
+        "web": [
+            "https://droidwin.com/remove-bloatware-debloat-oneplus-10-pro-no-root/#OnePlus_10_Pro_List_of_Bloatware_Apps"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.oplus.appdetail",
         "description": "Secure app installation",
         "removal": "delete"
@@ -11451,6 +11470,13 @@
         "id": "com.oplus.customize.coreapp",
         "description": "Useless frameworks",
         "removal": "delete"
+    },
+    {
+        "id": "com.oplus.deepthinker",
+        "label": "Intelligent Services",
+        "description": "Seems to open some common apps in the background, which may increase power consumption.",
+        "removal": "caution",
+        "warning": "Removing it on ColorOS 12.0 or above will cause the battery menu to not show the power consumption curve. This can cause a bootloop."
     },
     {
         "id": "com.oplus.dmp",
@@ -12423,12 +12449,6 @@
         "removal": "caution"
     },
     {
-        "id": "com.samsung.android.setting.multisound",
-        "label": "Separate app sound",
-        "description": "Used to split audio different apps between phone speaker and bluetooth speaker. Pretty handy.",
-        "removal": "caution"
-    },
-    {
         "id": "com.samsung.android.SettingsReceiver",
         "description": "Samsung overlay of AOSP Settings. It has 39 permissions. Handles interactions with features controlled by the settings.\n",
         "removal": "unsafe"
@@ -12853,6 +12873,16 @@
         "removal": "unsafe"
     },
     {
+        "id": "com.samsung.android.appseparation",
+        "label": "Separated Apps",
+        "description": "Separated Apps isolates third-party apps in a sandboxed folder. The third-party apps cannot intercommunicate with work apps or access confidential work data. Keep in mind that Separated Apps does not provide the same privacy guarantees as the new work profile on company-owned devices. As such, it is not intended for personal apps and data.",
+        "web": [
+            "https://docs.samsungknox.com/admin/knox-platform-for-enterprise/separated-apps.htm",
+            "https://beta.pithus.org/report/cae5798a835dc434037400436fba27f5eed960c6f476a7b7d17d85a1425530c0"
+        ],
+        "removal": "caution"
+    },
+    {
         "id": "com.samsung.android.ardrawing",
         "label": "Samsung AR Doodle",
         "description": "Accessible through AR Zone.\nLets you draw on your face using the front camera and uses AR Core for drawing on the environment with the rear camera.\nOnly Sasmung AR app (afaik) that requests location access, and it refuses to run without it.",
@@ -12995,6 +13025,11 @@
         "description": "Samsung Calendar App\n",
         "removal": "replace",
         "suggestions": "calendars"
+    },
+    {
+        "id": "com.samsung.android.callassistant",
+        "description": "Appears to handle a whole bunch of AI services related to Gallery and Phone. Can break stuff in OneUI 6.1+",
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.callbgprovider",
@@ -13892,6 +13927,12 @@
         "id": "com.samsung.android.service.travel",
         "description": "Samsung Travel Wallpaper (discontinued)\n",
         "removal": "delete"
+    },
+    {
+        "id": "com.samsung.android.setting.multisound",
+        "label": "Separate app sound",
+        "description": "Used to split audio different apps between phone speaker and bluetooth speaker. Pretty handy.",
+        "removal": "caution"
     },
     {
         "id": "com.samsung.android.setupindiaservicestnc",
@@ -15009,15 +15050,15 @@
         "removal": "delete"
     },
     {
-        "id": "com.samsung.sait.sohservice",
-        "label": "SoHService",
-        "description": "FactoryApp\nThis weird app collects battery data and probably others, who knows? Also to test battery things such as set voltage, Soc, temperature, status, timestamp.",
-        "removal": "delete"
-    },
-    {
         "id": "com.samsung.safetyinformation",
         "label": "Safety Information",
         "description": "Safety information telling you to be careful with the usage of your phone.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.sait.sohservice",
+        "label": "SoHService",
+        "description": "FactoryApp\nThis weird app collects battery data and probably others, who knows? Also to test battery things such as set voltage, Soc, temperature, status, timestamp.",
         "removal": "delete"
     },
     {
@@ -15055,6 +15096,11 @@
         "id": "com.samsung.slsi.audiologging",
         "label": "AudioLogging",
         "description": "It's hidden Audio logging.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.samsung.slsi.telephony.silentlogging",
+        "description": "Hidden network logging. Safe to remove",
         "removal": "delete"
     },
     {
@@ -17373,14 +17419,14 @@
         "removal": "delete"
     },
     {
-        "id": "com.tct.android.secureinput",
-        "label": "SecureInput",
-        "description": "Useless secure input for keycode.",
+        "id": "com.tct.android.browser",
+        "description": "Browser\nBetter use other browser.",
         "removal": "delete"
     },
     {
-        "id": "com.tct.android.browser",
-        "description": "Browser\nBetter use other browser.",
+        "id": "com.tct.android.secureinput",
+        "label": "SecureInput",
+        "description": "Useless secure input for keycode.",
         "removal": "delete"
     },
     {
@@ -18334,7 +18380,8 @@
     },
     {
         "id": "com.unisoc.phone",
-        "description": "LockAssistant\nRuns before the user unlocks the device (direct-boot aware). Reads IMEI, SMS, call log, uses gps/wifi. Unisoc is a CPU manufacturer.",
+        "label": "LockAssistant",
+        "description": "Runs before the user unlocks the device (direct-boot aware). Reads IMEI, SMS, call log, uses gps/wifi. Unisoc is a CPU manufacturer. Related to package `com.android.unisoc.telephony.server`.",
         "removal": "caution"
     },
     {
@@ -20101,8 +20148,9 @@
     },
     {
         "id": "miui.systemui.plugin",
-        "description": "System UI Plug-in. When removed, Android will use the AOSP style volume bar and reboot screen (option to power off or reboot your phone). Will break the iOS-style quick settings. The volume bar breakage only applies to MIUI-users. For HyperOS-users, all the above will apply.",
-        "removal": "replace"
+        "label": "System UI Plug-in",
+        "description": "When using HyperOS, removing this package breaks the iOS-style quick settings and Android will use the AOSP-version of the volume bar & reboot screen (AKA the option to power off/reboot your device). If your device is using MIUI, only the volume bar will change.",
+        "removal": "caution"
     },
     {
         "id": "miuix.stub",

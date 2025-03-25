@@ -54,6 +54,21 @@
         "suppress": "LabelSameAsId"
     },
     {
+        "id": "android.overlay.common",
+        "description": "It has some important settings and configurations related to Android.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.overlay.target",
+        "description": "It has some important settings and configurations related to Android.",
+        "removal": "unsafe"
+    },
+    {
+        "id": "android.qvaoverlay.common",
+        "description": "This app has no code and is safe to remove.",
+        "removal": "delete"
+    },
+    {
         "id": "com.android.adservices.api",
         "description": "Android AdServices. Introduced in Android 13 privacy sandbox beta components disabled on default.\nhttps://source.android.com/docs/core/ota/modular-system/adservices",
         "removal": "delete"
@@ -817,24 +832,9 @@
         "removal": "caution"
     },
     {
-        "id": "android.overlay.common",
-        "description": "It has some important settings and configurations related to Android.",
-        "removal": "unsafe"
-    },
-    {
         "id": "com.android.overlay.systemui",
         "description": "On some phones, it is an overlay to app \"com.google.android.apps.safetyhub\".\nCheck out this app code and think about it.",
         "removal": "caution"
-    },
-    {
-        "id": "android.overlay.target",
-        "description": "It has some important settings and configurations related to Android.",
-        "removal": "unsafe"
-    },
-    {
-        "id": "android.qvaoverlay.common",
-        "description": "This app has no code and is safe to remove.",
-        "removal": "delete"
     },
     {
         "id": "com.android.packageinstaller",
