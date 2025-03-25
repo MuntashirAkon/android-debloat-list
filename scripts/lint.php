@@ -1,19 +1,22 @@
 <?php
 /* SPDX-License-Identifier: AGPL-3.0-or-later */
 
+const SUPPORTED_BL_KEYS = ["suppress", "id", "label", "dependencies", "required_by", "tags", "description", "web", "removal", "warning", "suggestions"];
+const SUPPORTED_SUG_KEYS = ["id", "label", "reason", "source", "repo"];
 const SUPPORTED_REMOVAL_TYPES = ['delete', 'replace', 'caution', 'unsafe'];
 const SUPPORTED_TAGS = [];
 const SUPPRESS_LINT_CONST_LABEL_SAME_AS_ID = 'LabelSameAsId';
 const SUPPRESS_LINT_CONSTS = [SUPPRESS_LINT_CONST_LABEL_SAME_AS_ID];
 const REPO_DIR = __DIR__ . "/..";
 const SUGGESTIONS_DIR = REPO_DIR . '/suggestions';
-const LINT_DIR = __DIR__ . "/../build";
+const LINT_DIR = REPO_DIR . "/build";
 
 if (!file_exists(LINT_DIR)) {
     mkdir(LINT_DIR, 0777, true);
 }
 
 $lint_writer = fopen(LINT_DIR . "/lint-results.txt", "w");
+$id_writer = fopen(LINT_DIR ."/ids.txt", "w");
 
 // START MAIN
 
@@ -33,6 +36,7 @@ foreach (scandir(REPO_DIR) as $filename) {
     }
     fprintf($lint_writer, "Adding $filename\n");
     foreach ($list as $item) {
+        fprintf($id_writer, $item['id'] . "\n");
         $error_count += validate_bloatware_item($item);
     }
 }
@@ -56,17 +60,12 @@ foreach (scandir(SUGGESTIONS_DIR) as $filename) {
     }
 }
 
-if ($error_count != 0) {
-    $msg = "\n$error_count ERRORS.\n";
-    fprintf($lint_writer, $msg);
-    fprintf(STDERR, $msg);
-    exit(1);
-} else {
-    $msg = "No errors.\n";
-    fprintf($lint_writer, $msg);
-    fprintf(STDERR, $msg);
-    exit(0);
-}
+$msg = $error_count != 0 ? "\n$error_count ERRORS.\n" : "No errors.\n";
+fprintf($lint_writer, $msg);
+fclose($lint_writer);
+fclose($id_writer);
+fprintf(STDERR, $msg);
+exit($error_count != 0 ? 1 : 0);
 
 // END MAIN
 
@@ -74,6 +73,13 @@ function validate_bloatware_item(array $item): int {
     global $lint_writer;
     $suppressed = isset($item['suppress']) ? parse_suppress($item['suppress']) : [];
     $error_count = 0;
+    // Check if the keys are valid
+    foreach ($item as $key => $value) {
+        if (!in_array($key, SUPPORTED_BL_KEYS, true)) {
+            fprintf($lint_writer, "Invalid field: " . $key . "\n");
+            ++$error_count;
+        }
+    }
     // `id` is a string
     if (gettype($item['id']) != 'string') {
         fprintf($lint_writer, "Expected `id` field to be a string, found: " . gettype($item['id']) . "\n");
@@ -188,6 +194,13 @@ function validate_bloatware_item(array $item): int {
 function validate_suggestion_item(array $item): int {
     global $lint_writer;
     $error_count = 0;
+    // Check if the keys are valid
+    foreach ($item as $key => $value) {
+        if (!in_array($key, SUPPORTED_SUG_KEYS, true)) {
+            fprintf($lint_writer, "Invalid field: " . $key . "\n");
+            ++$error_count;
+        }
+    }
     // `id` is a string
     if (gettype($item['id']) != 'string') {
         fprintf($lint_writer, "Expected `id` field to be a string, found: " . gettype($item['id']) . "\n");
