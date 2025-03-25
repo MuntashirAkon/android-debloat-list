@@ -1,39 +1,64 @@
 <?php
 /* SPDX-License-Identifier: AGPL-3.0-or-later */
 
-const LAST_COMMIT = "11f27c671cba278d71296cdef4c5a5dba06add5e";
-const THIS_COMMIT = "11f27c671cba278d71296cdef4c5a5dba06add5e";
+const LAST_COMMIT = "f6e86fc5d7fb180535251925141e92ad2c47f356";
+const THIS_COMMIT = "52b78a99b49c2de52858f6a96782f17fb8a94c4c";
+const REPO_DIR = __DIR__ . "/..";
+const LINT_DIR = REPO_DIR . "/build";
 
 const COLOR_RED = 31;
 const COLOR_GREEN = 32;
 
 function get_link(string $commit_hash): string {
-    return "https://raw.githubusercontent.com/0x192/universal-android-debloater/$commit_hash/resources/assets/uad_lists.json";
+    return "https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/$commit_hash/resources/assets/uad_lists.json";
+}
+
+function convert_to_old(array $list): array {
+    // New array use "id" as key, need to replace it with "id" again
+    $new_list = [];
+    foreach($list as $id => $item) {
+        $item['id'] = $id;
+        $new_list[] = $item;
+    }
+    return $new_list;
 }
 
 $old_list_link = get_link(LAST_COMMIT);
 $new_list_link = get_link(THIS_COMMIT);
 
-if ($old_list_link == $new_list_link) {
-    echo "Already up-to-date.\n";
-    exit(0);
-}
-
 $old_list = json_decode(file_get_contents($old_list_link), true);
-$new_list = json_decode(file_get_contents($new_list_link), true);
+$new_list = convert_to_old(json_decode(file_get_contents($new_list_link), true));
+$id_list = explode("\n", file_get_contents(LINT_DIR . '/ids.txt'));
 
+$new_items = [
+    "aosp" => [],
+    "carrier" => [],
+    "google" => [],
+    "misc"=> [],
+    "oem"=> [],
+    "pending"=> [],
+];
 // Iterate over the new list to find changes w.r.t old list. Delete the matched item from the old list
 foreach ($new_list as $item) {
-    if ($item['removal'] == 'Unsafe') {
-        // Exclude Unsafe items
+    $old_item = find_in_old_list($item['id']);
+    if (!in_array($item['id'], $id_list)) {
+        // This is a new item
+        // print("\e[32m+{\e[0m\n");
+        // foreach ($item as $key => $value) {
+        //     print_diff($key, $value, COLOR_GREEN);
+        // }
+        // print("\e[32m+}\e[0m\n");
+        $new_items[strtolower($item['list'])][] = $item;
         continue;
     }
-    $old_item = find_in_old_list($item['id']);
-    if ($item != $old_item) {
+    if ($old_item != null && $item != $old_item) {
         // Two arrays aren't the same, check one by one and print values
         print(" {\n");
         foreach ($item as $key => $value) {
-            if ($value != $old_item[$key]) {
+            if (!isset($old_item[$key])) {
+                // New item
+                print_diff($key, $value, COLOR_GREEN);
+            } else if ($value != $old_item[$key]) {
                 // These values aren't the same
                 // Print diff
                 print_diff($key, $old_item[$key], COLOR_RED);
@@ -43,22 +68,49 @@ foreach ($new_list as $item) {
                 print_diff($key, $value, null);
             }
         }
+        // Print any outstanding items
+        foreach ($old_item as $key => $value) {
+            if (!isset($item[$key])) {
+                print_diff($key, $value, COLOR_RED);
+            }
+        }
         print(" }\n");
     }
 }
 
 // The remaining items in the old list are removed
 foreach ($old_list as $item) {
-    if ($item['removal'] == 'Unsafe') {
-        // Exclude Unsafe items
-        continue;
-    }
     // List this item as removed item.
     print("\e[31m-{\e[0m\n");
     foreach ($item as $key => $value) {
-        print_diff($key, $value, null);
+        print_diff($key, $value, COLOR_RED);
     }
     print("\e[31m-}\e[0m\n");
+}
+
+// Update list with new items
+foreach (scandir(REPO_DIR) as $filename) {
+    if (!str_ends_with($filename, ".json")) {
+        continue;
+    }
+    $type = substr($filename, 0, -5);
+    // Load old items
+    $file = REPO_DIR . '/' . $filename;
+    try {
+        $list = json_decode(file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
+    } catch (JsonException $e) {
+        fprintf(STDERR, "Unable to parse %s: %s\n", $filename, $e->getMessage());
+        continue;
+    }
+    // Add new items
+    foreach ($new_items[$type] as $item) {
+        $list[] = get_adl_formatted_item($item);
+    }
+    // Sort items
+    usort($list, function ($o1, $o2) {
+        return $o1['id'] <=> $o2['id'];
+    });
+    file_put_contents($file, json_encode($list, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
 
 exit(0);
@@ -78,16 +130,18 @@ function print_diff(string $key, string|array|null $value, ?int $color): void {
         $color_end = '';
     }
     if ($value == null) {
-        printf("$symbol$color_begin  $key: null,$color_end");
+        printf("$symbol$color_begin  \"$key\": null,$color_end");
     } else if (is_string($value)) {
-        printf("$symbol$color_begin  $key: $value,$color_end");
+        $value = str_replace("\n", "\\n", $value);
+        print("$symbol$color_begin  \"$key\": \"$value\",$color_end");
     } else if (is_array($value)) {
-        printf("$symbol$color_begin  $key: [$color_end");
+        printf("$symbol$color_begin  \"$key\": [$color_end\n");
         foreach ($value as $item) {
-            printf("$symbol$color_begin    $item,$color_end");
+            printf("$symbol$color_begin    \"$item\",$color_end\n");
         }
         printf("$symbol$color_begin  ],$color_end");
     }
+    printf("\n");
 }
 
 function find_in_old_list(string $id): ?array {
@@ -106,6 +160,7 @@ function find_in_old_list(string $id): ?array {
 function get_removal(string $uad_removal): string {
     switch ($uad_removal) {
         default:
+            fprintf(STDERR, "Warning: Invalid removal: " . $uad_removal . "\n");
         case "Recommended":
             return "delete";
         case "Advanced":
@@ -115,4 +170,23 @@ function get_removal(string $uad_removal): string {
         case "Unsafe":
             return "unsafe";
     }
+}
+
+function get_adl_formatted_item(array $uad_item): array {
+    $id = $uad_item["id"];
+    $description = $uad_item["description"];
+    $dependencies = $uad_item["dependencies"];
+    $required_by = $uad_item["neededBy"];
+    $removal = get_removal($uad_item["removal"]);
+    $item = [];
+    $item["id"] = $id;
+    $item["description"] = $description;
+    if (!empty($dependencies) && count($dependencies) > 0) {
+        $item["dependencies"] = $dependencies;
+    }
+    if (!empty($required_by) && count($required_by) > 0) {
+        $item["required_by"] = $required_by;
+    }
+    $item['removal'] = $removal;
+    return $item;
 }

@@ -57,6 +57,26 @@
         "removal": "delete"
     },
     {
+        "id": "com.adups.fota",
+        "label": "Wireless Update",
+        "description": "(AKA System Update) FOTA = Firmware Over-the-air. Has a history of spying its users. If the installed version is below 5.4.x, it must be uninstalled.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "caution"
+    },
+    {
+        "id": "com.adups.fota.sysoper",
+        "label": "UpgradeSys",
+        "description": "FOTA = Firmware Over-the-air. Has a history of spying on its users.",
+        "web": [
+            "https://www.malwarebytes.com/blog/news/2017/12/mobile-menace-monday-upping-the-ante-on-adups-fwupgradeprovider",
+            "https://www.cvedetails.com/vulnerability-list/vendor_id-16034/product_id-35606/year-2017/Adups-Adups-Fota.html"
+        ],
+        "removal": "delete"
+    },
+    {
         "id": "com.agui.toolbox",
         "label": "Toolbox",
         "description": "Contains a bunch of small utilites, most have there own APP but are only accessible from the Toolbox UI\nincluded; Noise test, Compass, Flashlight, Bubble Level, Picture Hanging, Heart rate, Measure height,\nMagnifier,Alarm, Plumb Bob, Protractor, Speedometer & a Pedometer.",
@@ -298,7 +318,7 @@
     {
         "id": "com.crowdcare.agent.k",
         "label": "com.crowdcare.agent.k",
-        "description": "Crowdcare is now Wysdom.AI (https://nitter.42l.fr/wysdomai)\nFrom their Twitter description : The easiest way for businesses to improve customer satisfaction, contain costs and generate revenue by using #AI to power customer experiences.\nWysdom.AI has joined the Microsoft Partner Network in 2018",
+        "description": "Crowdcare is now Wysdom.AI.\nFrom their Twitter description : The easiest way for businesses to improve customer satisfaction, contain costs and generate revenue by using #AI to power customer experiences.\nWysdom.AI has joined the Microsoft Partner Network in 2018",
         "web": [
             "https://wysdom.ai/privacy-policy/"
         ],
@@ -419,7 +439,7 @@
         "id": "com.dsi.ant.server",
         "label": "ANT Radio Service Test",
         "description": "ANT HAL (Hardware Abstraction Layer) Server.\nANT is a wireless protocol, similar to Bluetooth, that is mainly used for sport and fitness trackers.",
-        "removal": "caution"
+        "removal": "delete"
     },
     {
         "id": "com.dsi.ant.service.socket",
@@ -672,21 +692,6 @@
         "removal": "replace"
     },
     {
-        "id": "com.heytap.mcs",
-        "label": "System Messages",
-        "required_by": [
-            "com.heytap.cloud",
-            "com.heytap.market",
-            "com.oplus.synergy",
-            "com.heytap.accessory"
-        ],
-        "description": "Mobile Cloud Service? Message Controler System?.\nMy understanding is that this packages implements the communication logic of the Heytap services. It provides a MQTT client (and Firebase Cloud Manager for users outside of China) which frequently talks to heytapmobile.com. You can safely remove this package if you don't have a Heytap account.\nRuns constantly in the background",
-        "web": [
-            "https://beta.pithus.org/report/8920395af63782fca8dfce18715a10ca5a2d8236d525208ea347eff8f738731e"
-        ],
-        "removal": "delete"
-    },
-    {
         "id": "com.huaqin.FM",
         "label": "com.huaqin.FM",
         "description": "Radio app from huaqin a chinese company\nNOTE : Transistor [https://f-droid.org/en/packages/org.y20k.transistor/] is much better",
@@ -868,8 +873,9 @@
     {
         "id": "com.mediatek",
         "label": "com.mediatek",
-        "description": "Mediatek is a Taiwanese chipset manufacturer.\nCan someone share the apk? This package name is really weird.\nIt is most likely a set of general APIs for accessing general mediatek functionalities.\nCan someone share the apk?",
-        "removal": "caution"
+        "description": "Mediatek is a Taiwanese chipset manufacturer.\nCan someone share the apk? This package name is really weird.\nIt is most likely a set of general APIs for accessing general mediatek functionalities.",
+        "removal": "unsafe",
+        "warning": "Removing the app will cause bootloop."
     },
     {
         "id": "com.mediatek.FrameworkResOverlayExt",
@@ -908,8 +914,20 @@
         "removal": "delete"
     },
     {
+        "id": "com.mediatek.batterywarning",
+        "label": "com.mediatek.batterywarning",
+        "description": "Issues warning when the battery is low or when the battery temperature is high.",
+        "removal": "caution"
+    },
+    {
         "id": "com.mediatek.bluetooth.dtt",
         "description": "Bluetooth logging.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.calendarimporter",
+        "label": "VCalendar",
+        "description": "Useful in China where Google isn’t available, but not needed for Google users.",
         "removal": "delete"
     },
     {
@@ -917,6 +935,13 @@
         "label": "Call Recorder",
         "description": "This is not the kind of feature expected from a Soc company.\nIf you remove this I guess you will not be able to record your calls from the stock dialer\nCan someone share the apk and verify this?",
         "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.camera",
+        "label": "Camera",
+        "description": "Stock Camera app on some Mediatek phones.",
+        "removal": "replace",
+        "suggestions": "cameras"
     },
     {
         "id": "com.mediatek.capctrl.service",
@@ -932,6 +957,12 @@
         "id": "com.mediatek.cellbroadcastuiresoverlay",
         "description": "This app have something to emergency.",
         "removal": "replace"
+    },
+    {
+        "id": "com.mediatek.dataprotection",
+        "label": "Data Protection",
+        "description": "Possibly related to user partition encryption/decryption.\nA device should works flawlessly without it.",
+        "removal": "delete"
     },
     {
         "id": "com.mediatek.duraspeed",
@@ -965,6 +996,11 @@
         "removal": "unsafe"
     },
     {
+        "id": "com.mediatek.gba",
+        "description": "Generic Bootstrapping Architecture.\nHas ims, X-TMUS-IMEI, bsf.msg.lab.t-mobile.com things to encrypted calls ims probably\n(thinking by looking at the classes.dex code). Connects to site bsf.ims.mncXXX.pub.3gppnetwork.org.",
+        "removal": "caution"
+    },
+    {
         "id": "com.mediatek.gbaservice",
         "description": "Generic Bootstrapping Architecture. A ‘common ground’ of code used for many MediaTek apps.\nCan be removed if all other MediaTek apps are removed.",
         "removal": "delete"
@@ -975,10 +1011,16 @@
         "removal": "delete"
     },
     {
+        "id": "com.mediatek.gnssdebugreport",
+        "label": "GnssDebugReport",
+        "description": "Hidden debug stuff.",
+        "removal": "delete"
+    },
+    {
         "id": "com.mediatek.gpslocationupdate",
         "label": "GPSLocationUpdate",
-        "description": "I wonder if it is really only a logging app.\nCan someone try to remove it and use a GPS app to see if it still works?\nCan someone share the apk? (from a Xiaomi/Huawei phone)",
-        "removal": "caution"
+        "description": "Info about gps and notifications. Probably not needed for location.",
+        "removal": "delete"
     },
     {
         "id": "com.mediatek.ims",
@@ -1002,6 +1044,12 @@
         "removal": "replace"
     },
     {
+        "id": "com.mediatek.lbs.em2.ui",
+        "label": "LocationEM2",
+        "description": "Another GPS status/testing app. Removing it doesn’t stop GPS from working.",
+        "removal": "delete"
+    },
+    {
         "id": "com.mediatek.location.lppe.main",
         "label": "LPPe Service",
         "description": "LPPE = LTE Positioning Protocol enhancements/extensions (LTE = \"4G\")\nPositioning and assistance protocol between E-SMLC (mobile location center) and UE (User Equipement = phone)\nI don't know the app has the permission to read SMS",
@@ -1016,17 +1064,29 @@
         "removal": "delete"
     },
     {
+        "id": "com.mediatek.location.mtknlp",
+        "label": "Mtk Nlp",
+        "description": "Network Location Provider? This app has location permissions and no code.",
+        "removal": "caution"
+    },
+    {
         "id": "com.mediatek.magtapp",
         "description": "MAGTApp\nUnknown, has GameEventService, MAGTEventAppReceiver, but code doesn't look very useful.",
         "removal": "delete"
     },
     {
         "id": "com.mediatek.mdmconfig",
-        "label": "com.mediatek.mdmconfig",
+        "label": "MDMConfig",
         "description": "Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure your device is secure, know where it is, and remotely erase your data if the phone is stolen.\nIt's a way to ensure employees stay productive and do not breach corporate policies\nYou should NEVER have a MDM tool on your personal phone. Never.\nThis package probably isn't a MDM tool on its own but you definitively don't need it on your phone.\nCan someone share the apk?",
         "web": [
             "https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/"
         ],
+        "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.mdmlsample",
+        "label": "MDMLSample",
+        "description": "It looks like debugging app.\nBut I found some words SUBSCRIBE_TRAP, OTA, VoLTE\nOther data is a lot of debugging code so it's not needed.",
         "removal": "delete"
     },
     {
@@ -1057,6 +1117,13 @@
         "id": "com.mediatek.mtklogger.proxy",
         "description": "Logs debug data.",
         "removal": "delete"
+    },
+    {
+        "id": "com.mediatek.mms.appservice",
+        "label": "com.mediatek.mms.appservice",
+        "description": "Provides Voice message, Video message, Fax message, Text message in a messaging app?",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.mediatek.nlpservice",
@@ -1125,6 +1192,12 @@
         "removal": "replace"
     },
     {
+        "id": "com.mediatek.thermalmanager",
+        "label": "MTK Thermal Manager",
+        "description": "Hidden testing or logging app.",
+        "removal": "delete"
+    },
+    {
         "id": "com.mediatek.voicecommand",
         "description": "It's for voice commands like control music playing or voice control for alarm, camera.\nBut how to get access to it?\nProbably you need that for voice recognition but not sure.\nMaybe related to https://www.mediatek.com/products/smart-home/voice-assistant-devices",
         "removal": "delete"
@@ -1145,6 +1218,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.mediatek.ygps",
+        "label": "YGPS",
+        "description": "GPS test and bug report utilities, accessed via Engineer Mode. Not needed.",
+        "removal": "replace"
+    },
+    {
         "id": "com.mediatek.zramwritebackoverlay",
         "description": "config zramWriteback = true. What is this used for?",
         "removal": "caution"
@@ -1162,7 +1241,7 @@
     {
         "id": "com.microsoft.appmanager",
         "label": "Link to Windows",
-        "description": "Microsoft app for synchronising your phone with a W10 PC.",
+        "description": "Microsoft app for synchronising your phone with a Windows PC.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.microsoft.appmanager"
         ],
@@ -1342,6 +1421,12 @@
         "suggestions": "keyboards"
     },
     {
+        "id": "com.oem.rftoolkit",
+        "label": "RfToolkit",
+        "description": "Testing things like Wi-Fi, lots of Chinese words",
+        "removal": "delete"
+    },
+    {
         "id": "com.omusic.gPhone",
         "description": "friDay music\nA treasure house of global music, thousands of situational playlists, complete classification of Chinese, Western, Japanese and Korean, classical, and original soundtracks, allowing you to easily travel the digital music world.\nhttps://play.google.com/store/apps/details?id=com.omusic.gPhone",
         "removal": "delete"
@@ -1478,10 +1563,7 @@
     {
         "id": "com.qti.confuridialer",
         "label": "Conference URI dialer",
-        "description": "Conference call service for digital signal (SIP/VoIP).",
-        "web": [
-            "https://devcondition.com/article/removing-unneeded-miui-applications/"
-        ],
+        "description": "Conference call service for digital signal (SIP/VoIP).\nIt's hidden and no apps use it.",
         "removal": "replace"
     },
     {
@@ -1492,14 +1574,14 @@
     {
         "id": "com.qti.diagservices",
         "label": "com.qti.diagservices",
-        "description": "Starts process when plugged into a PC (with debugging on, haven't tried off) and then runs until stopped.\nCan't find info on what it is. Probably has to do with diagnostics for Android debugging?\nNoticed no ill effects from having it disabled for weeks.",
-        "removal": "caution",
+        "description": "Starts process when plugged into a PC (with debugging on, haven't tried off) and then runs until stopped.\nDiagnostic services Presumably tests to collect hardware data.\nsize of this package is 12 KB and have Diag_OnBoot, QTIDiagServices.\nHas permission: RECEIVE_BOOT_COMPLETED.",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.dpmserviceapp",
         "label": "com.qti.dpmserviceapp",
-        "description": "Data Power Manager for the radio.\nUsed to improve energy efficiency. Probably a bad idea to disable.",
+        "description": "Data Power Manager for the radio?\nUsed to improve energy efficiency?\nIn code I found something like this:\ndpm hal server, read procid\nit's still unknown.",
         "removal": "caution",
         "suppress": "LabelSameAsId"
     },
@@ -1507,6 +1589,11 @@
         "id": "com.qti.ltebc",
         "label": "LTE Broadcast Manager",
         "description": "Runs on boot, but not in the background beyond that.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qti.pasrservice",
+        "description": "Has powersaving things, device idle mode changer to screen on/off.",
         "removal": "caution"
     },
     {
@@ -1532,13 +1619,14 @@
             "https://www.qualcomm.com/news/onq/2016/05/02/qualcomm-trupalette-brings-your-phones-display-life"
         ],
         "removal": "caution",
+        "warning": "On HyperOS, disabling this package results in the mobile networks section to break as well as SIMs showing no service.",
         "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qti.qualcomm.deviceinfo",
         "label": "Device Info",
-        "description": "Displays device information. Can be found in Settings->About phone.",
-        "removal": "caution"
+        "description": "Hidden device info activity not available for users.\nIt's safe to remove and you will not loose device info in settings.",
+        "removal": "delete"
     },
     {
         "id": "com.qti.qualcomm.mstatssystemservice",
@@ -1548,8 +1636,8 @@
     {
         "id": "com.qti.service.colorservice",
         "label": "com.qti.service.colorservice",
-        "description": "Something to do with colors?\nContains a \"ColorServiceApp\" service, but I've never seen it run. Might be tied to some Display setting?\nProbably safe to disable; noticed no changes, but I also doubt there's any benefit to disabling it.",
-        "removal": "caution",
+        "description": "Allows the application to directly affect the device's display paramter.\nAFAIK no apps use it.",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
@@ -1561,7 +1649,7 @@
         "id": "com.qti.snapdragon.qdcm_ff",
         "label": "QDCM-FF",
         "description": "Qualcomm Display Color Management tool\nAttempts to \"make colors look vibrant and true to life\". No idea if it actually does something useful or if it's only some garbage dynamic color tuning (they tend to destroy colors).\nContains a service, but I've never seen it run on my Oneplus 9. Could be tied to color \"improvement\" settings in Settings->Display (all of which are off for me).",
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.qti.xdivert",
@@ -1618,7 +1706,7 @@
         "web": [
             "https://www.qualcomm.com/site/privacy/services"
         ],
-        "removal": "replace"
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.location.XT",
@@ -1638,8 +1726,9 @@
     {
         "id": "com.qualcomm.qcrilmsgtunnel",
         "label": "com.qualcomm.qcrilmsgtunnel",
-        "description": "Long-form name: Qualcomm Radio Interface Layer Message Tunnel.\nRuns in the background, both as part of user apps and as part of the system? It's an active system process even when disabled, but disabling seems to remove the user-side part of the process.\nDisabling yields no immediate consequences, but functionality may still be retained in the system process.\nActs as a bridge between Android framework services and the hardware? A tunnel between modem and Android framework?\nThe decompiled code shows nothing obvious. \"sendOemRilRequest\" seems like the only method name hinting at something.",
+        "description": "Message receiving channel (secondary card can't turn on 5g).\nIf you don't use dual-sim it's safe to remove.",
         "removal": "caution",
+        "warning": "Breaks calls after a reboot on some phones",
         "suppress": "LabelSameAsId"
     },
     {
@@ -1690,8 +1779,9 @@
     {
         "id": "com.qualcomm.qti.biometrics.fingerprint.service",
         "label": "com.qualcomm.qti.biometrics.fingerprint.service",
-        "description": "Probably the background service for handling fingerprint authentication. Will likely break that if disabled.",
-        "removal": "caution"
+        "description": "Fingerprint authentication not used by any app, maybe only china.\nTests temperature, debug, logs, fingerprint biometrics.",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.callenhancement",
@@ -1705,8 +1795,8 @@
     {
         "id": "com.qualcomm.qti.callfeaturessetting",
         "label": "CallFeatureSetting",
-        "description": "Not mandatory according to some XDA users.\nMore info needed.",
-        "removal": "caution"
+        "description": "Hidden call forwarding, call waiting settings. Not available for users.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.cne",
@@ -1723,6 +1813,13 @@
         "label": "ConfDialer",
         "description": "LTE Conferencing Service.",
         "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.devicestatisticsservice",
+        "label": "com.qualcomm.qti.devicestatisticsservice",
+        "description": "Device statistics service Statistics of the phone's usage: data, Wifi, battery, the use of various software, number of SMS and emails sent, etc.\nIt's not very useful, can be removed.",
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.dynamicddsservice",
@@ -1766,13 +1863,17 @@
         "removal": "unsafe"
     },
     {
+        "id": "com.qualcomm.qti.improvetouch.service",
+        "label": "com.qualcomm.qti.improvetouch.service",
+        "description": "A improve touch things was found in the code, but it is not available to users, only to developers.\nThe size of the app is 36.40 KB, so why would this improve touch?\nThis app does not exist on some xiaomi phones, and the touch works the same.",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
+    },
+    {
         "id": "com.qualcomm.qti.ims",
         "label": "com.qualcomm.qti.ims",
-        "description": "IMS(Ip Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling).\nGuessing this could be the low-level Qualcomm implementation or interface that allows apps to use the VoLTE/VoIP/Wi-Fi calling functionality in apps like the dialer/phone app.\nCould allow seamless transfers of calls between 4G and Wi-Fi? I thought com.qualcomm.qti.cne did that content-agnostically, but maybe calls are different, or maybe the two packages use each other?",
-        "web": [
-            "https://www.qualcomm.com/news/releases/2015/03/02/qualcomm-powers-mobile-and-home-connectivity-innovations-mobile-world"
-        ],
-        "removal": "caution",
+        "description": "Hidden IMS Settings activity not available for users.\nIn this app, you can only turn on this option: Auto reject incoming calls.",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
@@ -1804,7 +1905,7 @@
     {
         "id": "com.qualcomm.qti.optinoverlay",
         "label": "com.qualcomm.qti.optinoverlay",
-        "description": "Overlay for opting into something? Probably safe to disable?",
+        "description": "Useless frameworks for com.qualcomm.location.XT it's probably dialogues.\nAnyway it's only legal notices.",
         "removal": "delete"
     },
     {
@@ -1816,8 +1917,8 @@
     {
         "id": "com.qualcomm.qti.performancemode",
         "label": "Performance Mode",
-        "description": "Runs on boot. Probably related to CPU/SoC performance profiles.\nOneplus 10 Pro has an option called \"High performance mode\" in Settings->Battery->Advanced, which has the description:\n\"The system always operates in a high performance mode, but it will increase power consumption.\"\nI'm guessing that option triggers this package. This is probably a feature on many Qualcomm chips, but I don't think all OEMs expose it in the settings.",
-        "removal": "caution"
+        "description": "Hidden Performance Mode activity not available for users.\nIt's on Xiaomi, OnePlus.\nRemoval does not brick performance mode.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.poweroffalarm",
@@ -1831,6 +1932,12 @@
         "removal": "delete"
     },
     {
+        "id": "com.qualcomm.qti.qccauthmgr",
+        "label": "QCC-AUTHMGR",
+        "description": "It has something to with (com.qualcomm.qti.smq).\nFeedback stuff, something about key: blacklist, download or whatever. All of them look like telemetry, and it's all not available for users.",
+        "removal": "delete"
+    },
+    {
         "id": "com.qualcomm.qti.qccnetstat",
         "description": "useless network statistics also QCC in name qualcomm app is for analytics.",
         "removal": "delete"
@@ -1838,8 +1945,8 @@
     {
         "id": "com.qualcomm.qti.qcolor",
         "label": "QColor",
-        "description": "Something to do with colors?\nContains no services and I've never seen it run as a process. Only has one permission: CONTROL_DISPLAY_COLOR_TRANSFORMS\nProbably safe to disable; noticed no changes, but I also doubt there's any benefit to disabling it.",
-        "removal": "replace"
+        "description": "QTI enhanced color mode? I found a png file, color service, it's not needed for any apps.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.qcom_accesslogkit",
@@ -1854,11 +1961,8 @@
     {
         "id": "com.qualcomm.qti.qdma",
         "label": "QDMA",
-        "description": "QDMA = Quadrature-Division Multiple Access\nIt's a radio protocol combining CDMA and QPSK.\nQDMA is used for local area networks, usually wireless short-range such as WiMax.",
-        "web": [
-            "https://en.wikipedia.org/wiki/Quadrature-division_multiple_access"
-        ],
-        "removal": "caution"
+        "description": "QDMA = Qualcomm Device Management and Analytics.\nA lot of data collections: logs, dropbox, network.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.qmmi",
@@ -1892,6 +1996,13 @@
         "removal": "delete"
     },
     {
+        "id": "com.qualcomm.qti.qtisettings",
+        "label": "com.qualcomm.qti.qtisettings",
+        "description": "In code found getting info about device Ram Size, Rom Size, get Wifi Mac Address, is Settings Task Done.\nAlso in app found qtisystemservice code.\nIt looks like the app is for developers only, so it may be removed.",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
+    },
+    {
         "id": "com.qualcomm.qti.qtisystemservice",
         "label": "com.qualcomm.qti.qtisystemservice",
         "description": "Seems to only log stuff related to telephony?\nA user removed this without noticing any issues.",
@@ -1917,8 +2028,8 @@
     {
         "id": "com.qualcomm.qti.remoteSimlockAuth",
         "label": "com.qualcomm.qti.remoteSimlockAuth",
-        "description": "Authentication for locking/unlocking eSIM remotely?",
-        "removal": "caution"
+        "description": "Enable you to lock/unlock your eSIM remotely.\nSeems more of a security risk to me than anything else.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.ridemodeaudio",
@@ -1934,8 +2045,8 @@
     {
         "id": "com.qualcomm.qti.seccamservice",
         "label": "SecCamService",
-        "description": "Stands for Secure Camera Service?\nSupposedly acts as a bridge between camera hardware and SoC. Seems like this package is what a Qualcomm SoC uses to access the camera hardware.\nWill probably break camera functionality if disabled.",
-        "removal": "caution"
+        "description": "Only collects data about camera.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qti.seemp.service",
@@ -1950,6 +2061,24 @@
     {
         "id": "com.qualcomm.qti.server.wigig.tethering.rro",
         "description": "Only found dhcp range? Only the specified lists were found: 192.168. ...\nIt have a lot random of this.\nLooks very unused.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.qti.services.secureui",
+        "label": "Secure UI Service",
+        "description": "It collects your data about screen:gravity, orientation, id, layout_width.\nIt has a Wifi Display Service. QC_WFD\nDoes not run in the background.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.qti.services.systemhelper",
+        "label": "System Helper Service",
+        "description": "Runs \"SysHelperService\" in the background as part of the system.\nPermissions: DEVICE_POWER, READ_PHONE_STATE, READ_PRIVILEGED_PHONE_STATE, RECEIVE_BOOT_COMPLETED, WRITE_SETTINGS, WAKE_LOCK and ACCESS_SURFACE_FLINGER.\nAndroid simple network firewall utility service. On a RedMi Note 13 running HyperOS 2.6.0, no application is running after uninstalling this package.",
+        "removal": "caution"
+    },
+    {
+        "id": "com.qualcomm.qti.simcontacts",
+        "label": "SimContacts",
+        "description": "Hidden Qualcomm sim contacts editor app.",
         "removal": "delete"
     },
     {
@@ -1984,15 +2113,6 @@
         "removal": "unsafe"
     },
     {
-        "id": "com.qualcomm.qti.uceShimService",
-        "label": "uceShimService",
-        "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.",
-        "web": [
-            "https://fr.wikipedia.org/wiki/Session_Initiation_Protocol"
-        ],
-        "removal": "replace"
-    },
-    {
         "id": "com.qualcomm.qti.uceshimservice",
         "label": "uceShimService",
         "description": "UCE shim service\nUCE = User Capability Exchange. A shim is basically a compatibility layer for an API, that makes sure anything that uses the API does so correctly.\nUsed for RCS. Provides a discovery service for users to see the capabilities of other users.\nUCE is based on SIP PUBLISH and SIP SUBSCRIBE/NOTIFY.\nDevices PUBLISH their capabilities to a presence server, when another device wants to find out what the other party supports, the device sends a SUBSCRIBE to the presence server which then returns a NOTIFY of what the other party supports.",
@@ -2011,12 +2131,25 @@
     {
         "id": "com.qualcomm.qti.uimGbaApp",
         "label": "com.qualcomm.qti.uimGbaApp",
-        "description": "Contains a \"GbaService\", but I've never seen it run.\nRelated to SIM/R-UIM functionality? (R-UIM is a type of SIM card mainly used in Asia)",
-        "removal": "replace"
+        "description": "Contains a \"GbaService\", related to uim card (R-UIM is a type of SIM card mainly used in Asia)",
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.qti.workloadclassifier",
+        "label": "com.qualcomm.qti.workloadclassifier",
+        "description": "Runs \"WLCService\" in the background.\nI assume this has to do with CPU scheduling. Probably important for efficiency, if not basic operation.\nIt's for performance and security? It categorizes apps maybe for optimization.\nit's named workloadclassifier so it should do that. Reads the list of installed applications, storage space.\nit's still unknown.",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qti.xrcb",
         "description": "Receive xrcb network signals for radio side. \nit's about emergency alerts, weather alerts, public announcements, and other information.",
+        "removal": "delete"
+    },
+    {
+        "id": "com.qualcomm.qti.xrvd.service",
+        "label": "XRVD",
+        "description": "The real name of this app is XRVDTest. It has accessibility testing,\nCollects some data? It's something for developers probably.",
         "removal": "delete"
     },
     {
@@ -2027,21 +2160,22 @@
     {
         "id": "com.qualcomm.qtil.aptxals",
         "label": "com.qualcomm.qtil.aptxals",
-        "description": "Something to do with the AptX bluetooh audio streaming codec?\nRuns in the background as part of the system.",
-        "removal": "caution",
+        "description": "Hidden aptxals Audio Bluetooth sample improvement test.",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qtil.aptxalsOverlay",
         "label": "com.qualcomm.qtil.aptxalsOverlay",
-        "description": "com.qualcomm.qtil.aptxalsOverlay Theme pack\nGuessing it's a pack of themes for aptxalsOverlay, based on the name.",
-        "removal": "caution"
+        "description": "Overlay for hidden aptxals Audio Bluetooth sample improvement. Useless 96kHz sample.",
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.qtil.aptxui",
         "label": "Bluetooth",
-        "description": "Something to do with selecting codec for bluetooh audio streaming?\nRuns in the background as part of the system.",
-        "removal": "caution"
+        "description": "Hidden aptxals Audio Bluetooth sample improvement. Useless 96kHz sample.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.qtil.btdsda",
@@ -2062,33 +2196,36 @@
     {
         "id": "com.qualcomm.svi",
         "label": "Sunlight Visibility Improvement",
-        "description": "I've heard vaguely that some phones use it for the above purpose? On a LG Q6 there was no effect on functionality after removing.",
-        "removal": "replace"
+        "description": "SVI Settings. Hidden display enhancement colors not available to users.",
+        "removal": "delete"
     },
     {
         "id": "com.qualcomm.timeservice",
         "label": "Qualcomm Time Service",
-        "description": "Occasionally runs in the background.\nCould be what syncs the CPU clock with Android time?\nProbably not something you want to disable.",
+        "description": "Updates time-services user time offset when user changes time of the day and Android sends a TIME_CHANGED or DATE_CHANGED intents.\nTime-services restores the time of the day after reboot.",
+        "web": [
+            "https://github.com/bcyj/android_tools_leeco_msm8996/blob/master/time-services/src/com/qualcomm/timeservice/TimeServiceBroadcastReceiver.java"
+        ],
         "removal": "caution"
     },
     {
         "id": "com.qualcomm.uimremoteclient",
         "label": "com.qualcomm.uimremoteclient",
-        "description": "Contains a service by the same name, but I've never seen it run.\nRelated to SIM/R-UIM functionality? (R-UIM is a type of SIM card mainly used in Asia)",
-        "removal": "caution",
+        "description": "Related to uim card (R-UIM is a type of SIM card mainly used in Asia)",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.uimremoteserver",
         "label": "com.qualcomm.uimremoteserver",
-        "description": "Contains a service by the same name, but I've never seen it run.\nRelated to SIM/R-UIM functionality? (R-UIM is a type of SIM card mainly used in Asia)",
-        "removal": "caution",
+        "description": "Related to uim card (R-UIM is a type of SIM card mainly used in Asia)",
+        "removal": "delete",
         "suppress": "LabelSameAsId"
     },
     {
         "id": "com.qualcomm.wfd.service",
         "label": "Wfd Service",
-        "description": "Provides a way to cast your screen to a TV (Miracast)",
+        "description": "Provides a way to cast your screen to a TV (Miracast). Or is it WiFi Direct?",
         "web": [
             "https://en.wikipedia.org/wiki/Miracast"
         ],
@@ -2433,8 +2570,9 @@
     {
         "id": "com.touchtype.swiftkey",
         "label": "Swiftkey",
-        "description": "Keyboard app by TouchType, a Microsoft subsidiary (https://en.wikipedia.org/wiki/SwiftKey)\n4 Trackers + 11 Permissions",
+        "description": "Keyboard app by TouchType, a Microsoft subsidiary.\n4 Trackers + 11 Permissions",
         "web": [
+            "https://en.wikipedia.org/wiki/SwiftKey",
             "https://play.google.com/store/apps/details?id=com.touchtype.swiftkey",
             "https://reports.exodus-privacy.eu.org/en/reports/com.touchtype.swiftkey/latest/"
         ],
@@ -2880,6 +3018,11 @@
     {
         "id": "vendor.qti.imsrcs",
         "description": "IMS(Ip Multimedia Subsystem) is an open industry standard for voice and multimedia communications over packet-based IP networks (VoLTE/VoIP/Wifi calling). Also have RCS.",
+        "removal": "caution"
+    },
+    {
+        "id": "vendor.qti.iwlan",
+        "description": "Used for VoLTE/VoWifi (Wifi-calling)\nIwLAN = Interworking wLAN.\nSupport for mobile data offloading (use of complementary network technologies for delivering data originally targeted for cellular networks)\nIt means your phone will use the Wi-Fi connection instead of the cellular data connection.\nhttps://en.wikipedia.org/wiki/Mobile_data_offloading",
         "removal": "caution"
     },
     {

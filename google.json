@@ -9,7 +9,7 @@
             "https://fidoalliance.org/passkeys/"
         ],
         "removal": "replace",
-        "warning": "Removing the app breaks creating and storing passkeys on your phone, so keep this enabled if you want to use that form of authentication.",
+        "warning": "Removing the app may break creating and storing passkeys on your phone, so keep this enabled if you want to use that form of authentication. Google Play Services can also provide this functionality on some devices.",
         "suggestions": "browsers"
     },
     {
@@ -397,13 +397,13 @@
     },
     {
         "id": "com.google.android.apps.messaging",
-        "label": "Messages by Google",
-        "description": "RCS client from Google, also supports SMS/MMS. Runs in the background.",
+        "label": "Messages",
+        "description": "RCS client from Google, also supports SMS/MMS. Runs in the background.\nCould be a global dependency for SMS, MMS, RCS, OTP, and other services/verifications.\nGSMA has recently standardized E2EE, but currently, there is not alternative available for Android.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.messaging"
         ],
         "removal": "replace",
-        "warning": "Removing this may cause issues with receiving 2FA verification text messages and calls from Google on some devices. Please let us know your experience with this on https://github.com/0x192/universal-android-debloater/pull/250 (give your phone model + Android version)",
+        "warning": "Once disabled/uninstalled, even if reinstalled, a factory reset may be required to re-obtain full functionality.",
         "suggestions": "sms"
     },
     {
@@ -418,7 +418,7 @@
     },
     {
         "id": "com.google.android.apps.nbu.files",
-        "label": "Files by Google",
+        "label": "Files",
         "description": "Used to be for cleaning and sharing. But nowadays, it became a hybrid app. Runs in the background.\nFOSS alternative is https://github.com/TeamAmaze/AmazeFileUtilities",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files"
@@ -663,8 +663,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing"
         ],
-        "removal": "delete",
-        "warning": "It is a hard dependency for the settings app on Android 12+ on Pixel phones. Disable this package instead of uninstalling it, or the settings will crash on launch."
+        "removal": "caution",
+        "warning": "It is a hard dependency for the settings app on Android 12+ on Pixel phones. After uninstalling, there will be an empty entry on Settings. Rebooting should make it disappear."
     },
     {
         "id": "com.google.android.apps.work.oobconfig",
@@ -778,16 +778,6 @@
         "suggestions": "calendars"
     },
     {
-        "id": "com.google.android.carrierconfig",
-        "label": "com.google.android.carrierconfig",
-        "description": "Same as com.android.carrierconfig? Here's that description:\nDynamically provides configuration for the carrier network.\nThe config contains: Roaming networks, Voicemail settings, SMS/MMS settings, VoLTE/IMS settings, and more.\nIf a carrier app is installed it will be queried for overrides to these settings.\nSeems to run on boot and when you swap SIM card?",
-        "web": [
-            "https://source.android.com/devices/tech/config/carrier",
-            "https://cs.android.com/android/platform/superproject/+/master:packages/apps/CarrierConfig/src/com/android/carrierconfig/DefaultCarrierConfigService.java"
-        ],
-        "removal": "replace"
-    },
-    {
         "id": "com.google.android.cellbroadcastreceiver",
         "label": "Wireless emergency alerts",
         "dependencies": [
@@ -817,11 +807,11 @@
     {
         "id": "com.google.android.configupdater",
         "label": "ConfigUpdater",
-        "description": "Occasionally runs in the background.\nAuto updates certificates for TLS connection, firewall configuration, etc.\nMainly used for Google services? Might be fine to disable if you don't use Google services. Disabling might mess with security if you do use them though.",
+        "description": "Intents used to provide unbundled updates of system data. All require the UPDATE_CONFIG permission. Updates:\n- system wide certificate pins for TLS connections.\n- System wide Intent firewall.\n- List of permium SMS short codes.\n- List of carrier provisioning URLs.\n- Set of trusted logs used for Certificate Transparency support for TLS connections language detection model file\n- Smart selection model file\n- Conversation actions model file\n- Network watchlist config file\n- Intent action indicating that the updated carrier id config is available\n- The emergency number database into the devices\n- An integer to indicate the numeric version of the new data -- devices should only install if the update version is newer than the current one\n- Hash of the database, which is encoded by base-16 SHA512.",
         "web": [
             "https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/ConfigUpdate.java"
         ],
-        "removal": "delete"
+        "removal": "caution"
     },
     {
         "id": "com.google.android.contacts",
@@ -838,7 +828,7 @@
         "label": "Clock",
         "description": "Clock by Google LLC.",
         "removal": "replace",
-        "warning": "on some phones, removing this makes it so alarms and notifications only vibrate and don't make any sound (via any installed app), and makes the 'Alarm' section unavailable in 'Settings > Sound & Vibration'",
+        "warning": "On some phones, removing this makes it so alarms and notifications only vibrate and don't make any sound (via any installed app), and makes the 'Alarm' section unavailable in 'Settings > Sound & Vibration'",
         "suggestions": "clocks"
     },
     {
@@ -851,19 +841,6 @@
         ],
         "removal": "replace",
         "suggestions": "dialers"
-    },
-    {
-        "id": "com.google.android.documentsui",
-        "label": "Files",
-        "description": "Occasionally runs in the background.\nFile selector for other apps.",
-        "removal": "unsafe",
-        "warning": "Storage Access Framework (SAF) will break if this is disabled."
-    },
-    {
-        "id": "com.google.android.ext.shared",
-        "label": "Android Shared Library",
-        "description": "Used to share common code between apps. It's empty, so this package is useless?",
-        "removal": "delete"
     },
     {
         "id": "com.google.android.feedback",
@@ -904,10 +881,7 @@
     {
         "id": "com.google.android.gms.location.history",
         "label": "Google Location History",
-        "description": "I'm guessing this runs in the background unless you have this setting turned off in your Google account. I have the setting turned off and I've never seen this package run.",
-        "web": [
-            "https://support.google.com/accounts/answer/3118687?hl=en"
-        ],
+        "description": "This app has nothing in the code. Only png logo google and name.",
         "removal": "delete"
     },
     {
@@ -932,7 +906,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox"
         ],
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Disabling this package also breaks the Ok Google Search functionality as well as Google Lens."
     },
     {
         "id": "com.google.android.gsf",
@@ -1078,14 +1053,42 @@
         "removal": "delete"
     },
     {
+        "id": "com.google.android.overlay.gmsconfig.common",
+        "label": "com.google.android.overlay.gmsconfig.common",
+        "description": "If you delete this package, you won't be able to log in to your Google account on a Google app. But if you don't need to log in to a Google account, you can safely remove this.",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.comms",
+        "label": "com.google.android.overlay.gmsconfig.comms",
+        "description": "Useless configurations for Google's Phone, Messages, Contacts apps, everything works without it.",
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
+    },
+    {
         "id": "com.google.android.overlay.gmsconfig.geotz",
         "description": "Provides Geolocation Time Zone detection.\nand it's used by (com.google.android.overlay.gmsconfig.common)?\nNo effects after remove.",
         "removal": "caution"
     },
     {
+        "id": "com.google.android.overlay.gmsconfig.gsa",
+        "label": "com.google.android.overlay.gmsconfig.gsa",
+        "description": "configures default assistant? And have config to allow disabling assist disclosure?\nI think it doesn't affect anything.\nSafe to remove if you removed (com.google.android.googlequicksearchbox).",
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
+    },
+    {
         "id": "com.google.android.overlay.gmsconfig.personalsafety",
         "description": "Not needed for (com.google.android.apps.safetyhub).",
         "removal": "caution"
+    },
+    {
+        "id": "com.google.android.overlay.gmsconfig.photos",
+        "label": "com.google.android.overlay.gmsconfig.photos",
+        "description": "Overlay to Gallery (com.google.android.apps.photos). Useless.",
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.google.android.overlay.gmsconfig.searchlauncherqs",
@@ -1117,35 +1120,18 @@
     {
         "id": "com.google.android.overlay.modules.documentsui",
         "label": "com.google.android.overlay.modules.documentsui",
-        "description": "Files Theme pack. Guessing it's a pack of themes for the stock Android File Browser, based on the name.",
+        "description": "In code only found: `is_launcher_enabled` is set to false.\nIt's only made to hide app icon (com.google.android.documentsui)\nNo effects after removal (the launcher icon will be not back), it's useless.",
         "web": [
             "https://docs.samsungknox.com/CCMode/G973F_LTE_R.pdf"
         ],
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.overlay.modules.ext.services",
-        "label": "com.google.android.overlay.modules.ext.services",
-        "description": "Android System Theme pack. The package name is pretty self-explanatory.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.overlay.modules.permissioncontroller",
-        "label": "com.google.android.overlay.modules.permissioncontroller",
-        "description": "Permission controller Theme pack. Guessing it's a pack of themes for the Permission Controller based on the name.",
-        "removal": "caution"
-    },
-    {
-        "id": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "label": "com.google.android.overlay.modules.permissioncontroller.forframework",
-        "description": "Android System Theme pack. Guessing it's a pack of themes for the Android system framework permission controller based on the name.",
-        "removal": "caution"
+        "removal": "delete",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.google.android.partnersetup",
         "label": "Google Partner Setup",
         "description": "Occasionally runs in the background. Based on an unclear explanation online: Enables applications to interact with your Google account/apps, for example: adding a Google Calendar event from a To-Do app.\nProbably safe to disable; Haven't noticed any consequences of disabling from weeks of use.",
-        "removal": "delete"
+        "removal": "caution"
     },
     {
         "id": "com.google.android.pixel.setupwizard",
@@ -1163,12 +1149,6 @@
         "removal": "delete"
     },
     {
-        "id": "com.google.android.printservice.recommendation",
-        "label": "Print Service Recommendation Service",
-        "description": "I think this has to do with recommending a printservice app you can get from the Play store. I think printing still works with this off.",
-        "removal": "delete"
-    },
-    {
         "id": "com.google.android.projection.gearhead",
         "label": "Android Auto",
         "description": "Smart driving companion.",
@@ -1180,12 +1160,12 @@
     {
         "id": "com.google.android.setupwizard",
         "label": "Android Setup",
-        "description": "The new/factory reset device basic configuration setup guides you through the basics of setting up your device.",
+        "description": "The factory reset device basic configuration setup guides you through the basics of setting up your device.",
         "web": [
             "https://en.wikipedia.org/wiki/Mobile_identity_management"
         ],
         "removal": "caution",
-        "warning": "Oddly enough, disabling/uninstalling this package will break mobile identity management which could be used by apps (for example your Bank) to authenticate you."
+        "warning": "Oddly enough, disabling/uninstalling this package will break mobile identity management which could be used by apps (for example your bank) to authenticate you."
     },
     {
         "id": "com.google.android.setupwizard.a_overlay",
@@ -1237,11 +1217,11 @@
     },
     {
         "id": "com.google.android.tts",
-        "label": "Speech Services by Google",
+        "label": "Speech Recognition and Synthesis",
         "description": "Default Text To Speech (TTS) engine on most of Android devices. It enables apps to convert text into voice.\nNote: many apps like navigation and health/sport apps rely on a TTS engine to provide speech services.",
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.tts",
-            "https://beta.pithus.org/report/08f97758fbfae1e17c4a8e5ee1a1e6d2726ce6b0b4931d5452f2376d60f1b4fb"
+            "https://beta.pithus.org/report/f0a2303e1c1bd049bf1cdc5a3454dfe19b2aaf26008662c7a307aaec2538558b"
         ],
         "removal": "replace",
         "suggestions": "tts"

@@ -11,7 +11,7 @@
     {
         "id": "com.LogiaGroup.LogiaDeck",
         "label": "Mobile Services Manager",
-        "description": "\"Mobile Services Manager/DTIGNITE malware, rooted to your device by express agreement between the app's publisher and your carrier.\"",
+        "description": "Seems to be a spyware",
         "web": [
             "https://www.reddit.com/r/lgv20/comments/6u0wnf/what_is_mobile_services_manager_did_i_catch_a/"
         ],
@@ -143,7 +143,7 @@
             "https://en.wikipedia.org/wiki/Asurion"
         ],
         "removal": "delete",
-        "warning": "This app is developped by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
+        "warning": "This app is developed by Asurion, a US company whose business is to sell insurances. All US carriers use Asurion for the phone insurances."
     },
     {
         "id": "com.att.android.attsmartwifi",
@@ -304,7 +304,7 @@
     {
         "id": "com.aura.oobe.samsung.gl",
         "label": "AppCloud",
-        "description": "AppCloud\nIt offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nHas way too many permissions.",
+        "description": "It offers the \"Aura Out-Of-the-Box Experience\" (OOBE)\nIt is some kind of post-install recommended apps setup from the carrier. Asks for your age and gender and then recommends you to install popular apps.\nHas way too many permissions.",
         "web": [
             "https://en.wikipedia.org/wiki/IronSource",
             "https://aura.ironsrc.com/tools/drive-app-downloads/",
@@ -316,7 +316,7 @@
     },
     {
         "id": "com.aura.oobe.vodafone",
-        "description": "Vodafone AppBox\nIt is some kind of post-install recommended apps setup from the carrier.\nAsks for your age and gender and then recommends you to install popular apps.\nDevelopped by IronSource, an Israeli advertising company.",
+        "description": "Vodafone AppBox\nIt is some kind of post-install recommended apps setup from the carrier.\nAsks for your age and gender and then recommends you to install popular apps.\nDeveloped by IronSource, an Israeli advertising company.",
         "removal": "delete"
     },
     {
@@ -429,6 +429,11 @@
         "removal": "delete"
     },
     {
+        "id": "com.gsma.rcs",
+        "description": "RCS\nHidden RCS Messaging? or only Frameworks?\nFeature code:184501\nCarrier name: GSM Association.",
+        "removal": "caution"
+    },
+    {
         "id": "com.hyperlync.Sprint.Backup",
         "label": "Sprint Backup",
         "description": "Lets you backup your phone’s content to your Sprint Backup account.\nThis app was developed by Hyperlync Technologies an Israel-based company which provides cyber-security solutions. It is now owned by Edition Ltd, a big Singapore based company.",
@@ -456,6 +461,11 @@
         "id": "com.ironsource.appcloud.oobe.hutchison",
         "description": "AppCloud (discontinued) from ironSource, an advertising company.\nWorth reading:\nhttps://en.wikipedia.org/wiki/IronSource",
         "removal": "delete"
+    },
+    {
+        "id": "com.jrd.verizonuriintentservice",
+        "description": "",
+        "removal": "caution"
     },
     {
         "id": "com.kmsjp",
@@ -645,10 +655,7 @@
     {
         "id": "com.motorola.vzw.pco.extensions.pcoreceiver",
         "label": "PcoReceiver",
-        "description": "Protocol Configuration Options.\nRelated to APN configuration.",
-        "web": [
-            "https://www.freshpatents.com/-dt20180607ptan20180159824.php"
-        ],
+        "description": "VZW Carrier sim(Verizon). It's only for notifications.\nYou can remove that if you don't use Verizon wireless or anything like that.",
         "removal": "delete"
     },
     {
@@ -1098,6 +1105,16 @@
         "removal": "delete"
     },
     {
+        "id": "com.tcl.vzwintents",
+        "description": "",
+        "removal": "caution"
+    },
+    {
+        "id": "com.tct.vzwwifioffload",
+        "description": "",
+        "removal": "caution"
+    },
+    {
         "id": "com.telcel.contenedor",
         "description": "Telcel app, Advertising company to get promotions.\nhttps://play.google.com/store/apps/details?id=com.telcel.contenedor",
         "removal": "delete"
@@ -1177,6 +1194,11 @@
         ],
         "removal": "replace",
         "suggestions": "cloud_services"
+    },
+    {
+        "id": "com.verizon.cloudsetupwizard",
+        "description": "",
+        "removal": "delete"
     },
     {
         "id": "com.verizon.llkagent",
@@ -1277,7 +1299,8 @@
         "web": [
             "https://developer.android.com/reference/android/telephony/data/ApnSetting"
         ],
-        "removal": "caution"
+        "removal": "caution",
+        "warning": "Removing it prevents calling or texting (breaks WiFi calling). On Auto Optimization, it causes auto reboots."
     },
     {
         "id": "com.vzw.apnservice",
@@ -1287,6 +1310,11 @@
             "https://developer.android.com/reference/android/telephony/data/ApnSetting"
         ],
         "removal": "delete"
+    },
+    {
+        "id": "com.vzw.easvalidation",
+        "description": "",
+        "removal": "caution"
     },
     {
         "id": "com.vzw.ecid",
