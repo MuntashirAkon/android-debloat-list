@@ -6,7 +6,7 @@ const BROWSER_DIR = REPO_DIR . "/browser";
 const SRC_DIR = BROWSER_DIR . "/src";
 const BLOATWARE_DIR = SRC_DIR . "/bloatware";
 const SUMMARY_FILE = SRC_DIR . "/SUMMARY.md";
-const SITEMAP_FILE = SRC_DIR . "/sitemap.xml";
+const SITEMAP_FILE = SRC_DIR . "/sitemap";
 
 # Create bloatware list
 $bloatware_list = [];
@@ -51,16 +51,27 @@ file_put_contents(SUMMARY_FILE, $summary);
 
 # Create sitemap
 $SITE_NAME = "https://muntashirakon.github.io/android-debloat-list";
-$urls = '<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
-$urls .= <<<EOF
-<url><loc>{$SITE_NAME}</loc></url>
+$urls = <<<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>{$SITE_NAME}</loc>
+</url>
 EOF;
 foreach ($bloatware_list as $id => $name) {
     $urls .= <<<EOF
-<url><loc>$SITE_NAME/bloatware/{$id}.html</loc></url>
+
+<url>
+<loc>$SITE_NAME/bloatware/{$id}.html</loc>
+<changefreq>weekly</changefreq>
+</url>
 EOF;
 }
-$urls .= '</urlset>';
+$urls .= <<<EOF
+
+</urlset>
+EOF;
+file_put_contents(SITEMAP_FILE . ".xml", $urls);
 file_put_contents(SITEMAP_FILE, $urls);
 
 exit(0);
