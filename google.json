@@ -9,7 +9,7 @@
             "https://fidoalliance.org/passkeys/"
         ],
         "removal": "replace",
-        "warning": "Removing the app may break creating and storing passkeys on your phone, so keep this enabled if you want to use that form of authentication. Google Play Services can also provide this functionality on some devices.",
+        "warning": "Removing the app may break creating and storing passkeys on your phone, so keep this enabled if you want to use that form of authentication. Google Play Services can also provide this functionality on some devices. When Chrome is updated via the Play Store, the Trichrome Library is also updated automatically. If Chrome is disabled or removed, it may impact WebView functionality.\nThis is because Chrome, WebView, and the Trichrome Library work together as a bundle starting from Android 10 (API 29) and above.",
         "suggestions": "browsers"
     },
     {
@@ -1137,7 +1137,8 @@
         "id": "com.google.android.pixel.setupwizard",
         "label": "Pixel Setup",
         "description": "It's the basic configuration setup guides you through the basics of setting up Google features on your device. The package is only present on Pixel phones.",
-        "removal": "delete"
+        "removal": "caution",
+        "warning": "Removing the package breaks the Google Play System update page found on \"Security & privacy\"."
     },
     {
         "id": "com.google.android.play.games",

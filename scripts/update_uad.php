@@ -1,8 +1,8 @@
 <?php
 /* SPDX-License-Identifier: AGPL-3.0-or-later */
 
-const LAST_COMMIT = "52b78a99b49c2de52858f6a96782f17fb8a94c4c";
-const THIS_COMMIT = "246c2208b08ebfbe31e0a0eb90430fada932c703";
+const LAST_COMMIT = "246c2208b08ebfbe31e0a0eb90430fada932c703";
+const THIS_COMMIT = "a04104630ec06b2c85e196725c704d0c2a03c5c0";
 const REPO_DIR = __DIR__ . "/..";
 const LINT_DIR = REPO_DIR . "/build";
 

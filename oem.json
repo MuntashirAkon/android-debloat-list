@@ -874,8 +874,12 @@
     },
     {
         "id": "com.android.DeviceAsWebcam",
-        "description": "Using smartphone as webcam.",
-        "removal": "delete"
+        "label": "Webcam Service",
+        "description": "For using smartphone as a webcam. A dependency for Private space on Pixel devices.",
+        "web": [
+            "https://source.android.com/docs/security/features/private-space"
+        ],
+        "removal": "caution"
     },
     {
         "id": "com.android.LGSetupWizard",
@@ -1077,7 +1081,8 @@
     },
     {
         "id": "com.android.globalFileexplorer",
-        "description": "Misleading package name. It's the Xiaomi Files Manager on older phones\n",
+        "label": "File Manager",
+        "description": "Xiaomi File Manager.",
         "removal": "delete"
     },
     {
@@ -1516,8 +1521,10 @@
     },
     {
         "id": "com.android.role.notes.enabled",
-        "description": "Notes Role enabled\nUnknown overlay, but looks like a safe to remove, sets default notes.",
-        "removal": "delete"
+        "label": "Notes Role enabled",
+        "description": "Unknown overlay, sets default notes.",
+        "removal": "caution",
+        "warning": "Removing the package breaks seamless disabling and enabling of the developer options on Google Pixels."
     },
     {
         "id": "com.android.safetycenter.resources.overlay",
@@ -5144,8 +5151,13 @@
     },
     {
         "id": "com.google.pixel.camera.services",
-        "description": "CameraIDRemapper and a lot Debug stuff.",
-        "removal": "delete"
+        "label": "com.google.pixel.camera.services",
+        "description": "CameraIDRemapper and a lot Debug stuff. A dependency for Private space on Pixel devices.",
+        "web": [
+            "https://source.android.com/docs/security/features/private-space"
+        ],
+        "removal": "caution",
+        "suppress": "LabelSameAsId"
     },
     {
         "id": "com.google.pixel.digitalkey.timesync",
@@ -8579,8 +8591,9 @@
     {
         "id": "com.miui.global.packageinstaller",
         "label": "Xiaomi Package Installer",
-        "description": "The security check / virus scan that runs after package installation.\nDisabling/Uninstalling does not cause a bootloop and package installation still works fine.",
-        "removal": "caution"
+        "description": "The non-AOSP package installer present in the Xioami phones. The AOSP package installer is also present in Xioami EU ROMs.",
+        "removal": "unsafe",
+        "warning": "Removal causes bootloop on Xiaomi EU ROMs."
     },
     {
         "id": "com.miui.greenguard",
@@ -11890,8 +11903,10 @@
     },
     {
         "id": "com.oplus.trafficmonitor",
-        "description": "OnePlus Data usage\nOneplus traffic monitor (monthly data usage, etc). This app is so bloated.",
-        "removal": "delete"
+        "label": "OnePlus Data usage",
+        "description": "Oneplus traffic monitor (monthly data usage, etc).",
+        "removal": "caution",
+        "warning": "If removed, the 'Data Usage' option under 'Mobile network' will not work. App Info screen's 'Data usage' option will also disappear."
     },
     {
         "id": "com.oplus.uiengine",
