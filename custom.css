@@ -1,0 +1,34 @@
+.tags ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.tags ul > li {
+    border: 1px solid;
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: small;
+}
+
+.tags ul > li[data-tag=delete] {
+    color: green;
+}
+
+.tags ul > li[data-tag=replace] {
+    color: purple;
+}
+
+.tags ul > li[data-tag=caution] {
+    color: orange;
+}
+
+.tags ul > li[data-tag=unsafe] {
+    color: red;
+}
+
+.refs {
+    margin-block-start: unset;
+}
