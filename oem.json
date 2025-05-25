@@ -11816,7 +11816,7 @@
             "https://forum.xda-developers.com/t/the-oneplus-10-pro-debloat-thread.4503969/page-2#post-87920315"
         ],
         "removal": "caution",
-        "warning": "Breaks app lock feature when disabled/deleted, all other features work"
+        "warning": "Breaks app lock feature when disabled, all other features work. Uninstalling on OxygenOS 15 makes the phone unusable!"
     },
     {
         "id": "com.oplus.sauhelper",
