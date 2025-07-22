@@ -3201,8 +3201,10 @@
     },
     {
         "id": "com.coloros.exsystemservice",
-        "description": "Color settings, app manager things without activities. Someone can test if it's useless?",
-        "removal": "caution"
+        "label": "OplusExSystemService",
+        "description": "Responsible for gesture-based features, such as double tap to wake up and possibly other motion or gesture recognition services, essential for some display and wake/sleep functionalitiesResponsible for gesture-based features, such as double tap to wake up and possibly other motion or gesture recognition services, essential for some display and wake/sleep functionalities. The service is designed to auto-start and run persistently at boot, ensuring gesture features always work as expected. It also includes an accessibility activity, potentially to support features for users with disabilities or for system interaction enhancements",
+        "removal": "caution",
+        "warning": "Disabling or uninstalling this package may break core functions such as double-tap-to-wake or other gesture-based features."
     },
     {
         "id": "com.coloros.eyeprotect",
@@ -3338,8 +3340,9 @@
     },
     {
         "id": "com.coloros.ocs.opencapabilityservice",
-        "description": "Security things and something related to Chinese payment",
-        "removal": "delete"
+        "description": "This service acts as a core system capability provider on Oppo, Realme, and related devices, enabling or mediating various inter-app or system-level features.\nIt's also used for live alerts by front facing camera/status bar for iPhone-like style music widget (for Spotify), battery charge indicator, flashlight indicator, and more.",
+        "removal": "caution",
+        "warning": "If removed, live alerts will stop working."
     },
     {
         "id": "com.coloros.onekeylockscreen",
@@ -11732,8 +11735,10 @@
     },
     {
         "id": "com.oplus.metis",
-        "description": "Metis\nUser Behavior Records. Hidden with no activities. Collects data.",
-        "removal": "delete"
+        "label": "Metis",
+        "description": "Provides system functions such as scene recognition, smart reminders, and device environment awareness. For example, it can identify nearby TVs for seamless connection or deliver contextually intelligent reminders. It operates quietly in the background.",
+        "removal": "caution",
+        "warning": "If removed, live alerts will only work when changing volume modes and personal hotspot."
     },
     {
         "id": "com.oplus.multiapp",
