@@ -616,7 +616,8 @@
         "id": "com.google.android.apps.turbo",
         "label": "Device Health Services",
         "description": "Discontinued.",
-        "removal": "delete",
+        "removal": "caution",
+        "warning": "Breaks battery settings.",
         "suggestions": "battery_managers"
     },
     {
@@ -1027,7 +1028,8 @@
         "web": [
             "https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback"
         ],
-        "removal": "replace"
+        "removal": "caution",
+        "warning": "Removal causes com.motorola.dynamicvolume to not display the respective volume for individual apps when the volume button pressed. Seems to revert to an older (maybe testing) version of the dynamicvolume package?"
     },
     {
         "id": "com.google.android.music",

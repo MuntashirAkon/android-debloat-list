@@ -3614,8 +3614,10 @@
     },
     {
         "id": "com.coloros.wifibackuprestore",
-        "description": "WifiBackupRestore\nBackup Wi-Fi to the cloud",
-        "removal": "delete"
+        "label": "WifiBackupRestore",
+        "description": "Backs up Wi-Fi access points and credentials to the cloud",
+        "removal": "caution",
+        "warning": "Removal would cause the Backup and Restore to unable to backup locally-stored Wi-Fi access points and credentials."
     },
     {
         "id": "com.coloros.wifisecuredetect",
@@ -4831,8 +4833,9 @@
     },
     {
         "id": "com.google.android.euicc",
-        "description": "Electronic Sim management\nNeeded for eSIM",
-        "removal": "caution"
+        "label": "SIM Manager",
+        "description": "eUICC (embedded UICC) refers to the architectural standards for eSIM, a device used to securely store one or more SIM card profiles, which are the unique identifiers and cryptographic keys used by cellular network service providers to uniquely identify and securely connect to mobile network devices.",
+        "removal": "unsafe"
     },
     {
         "id": "com.google.android.euiccoverlay",
@@ -5046,8 +5049,13 @@
     },
     {
         "id": "com.google.android.tungsten.setupwraith",
-        "description": "First boot setup TV.\nhttps://play.google.com/store/apps/details?id=com.google.android.tungsten.setupwraith&hl=en&gl=US",
-        "removal": "delete"
+        "label": "TV Setup",
+        "description": "First boot setup TV.",
+        "web": [
+            "https://play.google.com/store/apps/details?id=com.google.android.tungsten.setupwraith"
+        ],
+        "removal": "caution",
+        "warning": "Removing it crashes sound related system settings and breaks volume control on Sony Bravia TV."
     },
     {
         "id": "com.google.android.tv",
@@ -8591,7 +8599,7 @@
     {
         "id": "com.miui.global.packageinstaller",
         "label": "Xiaomi Package Installer",
-        "description": "The non-AOSP package installer present in the Xioami phones. The AOSP package installer is also present in Xioami EU ROMs.",
+        "description": "The non-AOSP package installer present in the Xioami phones. It also checks the installed app for viruses.\nThe AOSP package installer is also present in Xioami EU ROMs.",
         "removal": "unsafe",
         "warning": "Removal causes bootloop on Xiaomi EU ROMs."
     },
@@ -8895,12 +8903,12 @@
     {
         "id": "com.miui.securitycore",
         "label": "Security Core Component",
-        "description": "Core features of the \"com.miui.securitycenter\". This app displays annoying notifications when you launch a new app.",
+        "description": "Core features of the \"com.miui.securitycenter\".\nProvides Enterprise Mode, Dual App, Second Space, Fingerprint Add, Gesture Settings. It also shows annoying notifications when launching a new app.",
         "web": [
             "https://github.com/0x192/universal-android-debloater/issues/641"
         ],
         "removal": "caution",
-        "warning": "Removing the app may cause bootloops. On Miui 13 and above it doesnt bootloop and looks performance like the same."
+        "warning": "Removing the app may cause bootloops. On Miui 13 and above, it doesn't cause bootloops, and the performance appears very similar."
     },
     {
         "id": "com.miui.securityinputmethod",
@@ -9895,6 +9903,51 @@
     {
         "id": "com.motorola.livewallpaper3",
         "description": "Moto interactive wallpapers\nResponds to your actions to bring your screen to life.\nhttps://play.google.com/store/apps/details?id=com.motorola.livewallpaper3",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.chroma_plume",
+        "description": "Motorola Prebuilt themes Chroma Plume",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.cool_bamboo",
+        "description": "Motorola Prebuilt themes Cool Bamboo",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.lovely_peach",
+        "description": "Motorola Prebuilt themes Lovely Peach",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.mysterious_amber",
+        "description": "Motorola Prebuilt themes Mysterious Amber",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.romantic_wisteria",
+        "description": "Motorola Prebuilt themes Romantic Wisteria",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.titan",
+        "description": "Motorola Prebuilt themes Cosmic journey",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.tranquil_whale",
+        "description": "Motorola Prebuilt themes Tranquil Whale",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.twilight_twist",
+        "description": "Motorola Prebuilt themes Twilight twist",
+        "removal": "delete"
+    },
+    {
+        "id": "com.motorola.livewallpaper3.prebuilt.vibrant_sapling",
+        "description": "Motorola Prebuilt themes Vibrant Sapling",
         "removal": "delete"
     },
     {
@@ -11946,8 +11999,12 @@
     {
         "id": "com.oplus.wifibackuprestore",
         "label": "WifiBackupRestore",
-        "description": "Lets you backup your wifi credentials to the cloud. This app has obviously access to your wifi credential and have the INTERNET permission.\n\nPithus analysis: https://beta.pithus.org/report/76e43cf4dc55452f39d9b6117074f4072189d3c8ad9cb295a86e49438545f7aa",
-        "removal": "delete"
+        "description": "Lets you backup your wifi credentials to the cloud and possibly local wifi access point backups with local backup and restore feature. This app has obviously access to your wifi credential and have the INTERNET permission.\n",
+        "web": [
+            "https://beta.pithus.org/report/76e43cf4dc55452f39d9b6117074f4072189d3c8ad9cb295a86e49438545f7aa"
+        ],
+        "removal": "caution",
+        "warning": "Removing this package may have similar effects of removing `com.coloros.wifibackuprestore` as this could also break local wifi credential backups functionality without it. However, it's effects is only tested with ColorOS devices with similar package before Oneplus merge."
     },
     {
         "id": "com.oplus.wifitest",
@@ -12838,8 +12895,9 @@
     {
         "id": "com.samsung.android.app.telephonyui",
         "label": "Samsung Call settings",
-        "description": "It's calling app from samsung China, Korea.\nI don't know how important this app is.",
-        "removal": "caution"
+        "description": "The phone call UI that offers the option to accept or reject calls, send a message, etc.",
+        "removal": "unsafe",
+        "warning": "Removing the package breaks phone app settings and SIM Manager."
     },
     {
         "id": "com.samsung.android.app.telephonyui.esimclient",
@@ -13173,11 +13231,7 @@
     {
         "id": "com.samsung.android.dqagent",
         "label": "DQA",
-        "description": "DQA = Samsung Device Quality Agent. It monitors how the device uses Wi-Fi and has the ability to identify network operator-related data.\nFound mention of some packages in the Java code:\n- com.samsung.android.app.mobiledoctor\n- com.samsung.android.dhr (Device Health Report)\n- om.salab.act\n- kr.co.avad.diagnostictool (unkown stuff from South Korea)\n\n2 hard-coded URLs:\nPRD = https://dc.dqa.samsung.com\nSTG = https://stg-dc.dqa.samsung.com\nPRD = Portable Recording Device, STG = Security Threat Group. 2 terms related to law enforcment.",
-        "web": [
-            "https://play.google.com/store/apps/details?id=com.samsung.heartwiseVcr",
-            "https://play.google.com/store/apps/details?id=com.jquiz.act"
-        ],
+        "description": "DQA = Samsung Device Quality Agent. Logging agent for diagnostic device information.",
         "removal": "delete"
     },
     {
@@ -13741,8 +13795,10 @@
     },
     {
         "id": "com.samsung.android.providers.factory",
-        "description": "FactoryTestProvider\nIt's used for log or testing.",
-        "removal": "delete"
+        "label": "FactoryTestProvider",
+        "description": "It's used for diagnostics and factory hardware testing.",
+        "removal": "caution",
+        "warning": "Removal breaks hwmoduletest."
     },
     {
         "id": "com.samsung.android.providers.media",
@@ -13752,8 +13808,10 @@
     },
     {
         "id": "com.samsung.android.providers.trash",
-        "description": "SecTrashProvider\nIndexes almost things to trash.\nThis app probably only exist on China Samsung.",
-        "removal": "replace"
+        "label": "SecTrashProvider",
+        "description": "Trash feature for Galaxy phones since One UI 6.0.\nAllows users to delete and restore files from My Files, Gallery, Voice Recordings, etc. directly from the Trash folder in My Files.",
+        "removal": "caution",
+        "warning": "Removal breaks apps that delete to Trash."
     },
     {
         "id": "com.samsung.android.rajaampat",
@@ -17895,8 +17953,10 @@
     },
     {
         "id": "com.transsion.applock",
-        "description": "AppLock\nProvides the only way to hide files and lock apps when using Transsion launchers (which the Transsion devices require for certain functionality like multiapps not working with other launchers). These are the only apps that hide files and lock apps with them.",
-        "removal": "replace"
+        "label": "AppLock",
+        "description": "Provides the only way to hide files and lock apps when using Transsion launchers (which the Transsion devices require for certain functionality like multiapps not working with other launchers). These are the only apps that hide files and lock apps with them.",
+        "removal": "caution",
+        "warning": "Removal breaks the Recents feature."
     },
     {
         "id": "com.transsion.audioshare",

@@ -955,8 +955,10 @@
     },
     {
         "id": "com.mediatek.capctrl.service",
-        "description": "It have mtkradioex. These are used for corporate deployment/controlling of devices.",
-        "removal": "caution"
+        "label": "RilCap",
+        "description": "It has mtkradioex components used for corporate device management and telephony control.",
+        "removal": "unsafe",
+        "warning": "Removing this package will break key telephony functions, such as SIM detection and carrier configuration, and cause com.android.phone to crash repeatedly."
     },
     {
         "id": "com.mediatek.carrierexpress",
@@ -1101,7 +1103,11 @@
     },
     {
         "id": "com.mediatek.miravision.ui",
-        "description": "it's for SmartScreen and display effects.\nBUT I think it's not available and it's so bloated.",
+        "label": "MiraVision",
+        "description": "Provides extensive hardware and software optimizations that improve the viewing quality.\nBUT I think it's not available and it's so bloated.",
+        "web": [
+            "https://www.mediatek.com/technology/miravision-for-smartphones"
+        ],
         "removal": "delete"
     },
     {

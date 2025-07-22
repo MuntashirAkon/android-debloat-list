@@ -80,6 +80,11 @@
         "removal": "replace"
     },
     {
+        "id": "com.android.avatarpicker",
+        "description": "Lets you assign pictures to contacts. It has two options: take picture from the camera, or choose from the gallery.\nSource code: https://android.googlesource.com/platform/packages/apps/AvatarPicker",
+        "removal": "replace"
+    },
+    {
         "id": "com.android.backupconfirm",
         "label": "com.android.backupconfirm",
         "description": "Restores Google settings with Google Backup restore.\nDisplays confirmation popup when doing ADB backup.",
@@ -107,8 +112,9 @@
     {
         "id": "com.android.bluetooth",
         "label": "Bluetooth",
-        "description": "Bluetooth service",
-        "removal": "caution"
+        "description": "Handles all Bluetooth functionality including device discovery, pairing, and data transfer.",
+        "removal": "caution",
+        "warning": "Removing this will completely break Bluetooth functionality on the device."
     },
     {
         "id": "com.android.bluetooth.overlay.common",
@@ -403,8 +409,9 @@
     {
         "id": "com.android.emergency",
         "label": "Emergency information",
-        "description": "Shows emergency info on lockscreen and power menu. Safe to disable if you don't want it.\nLoads on device unlock/lockscreen and power menu, so it's basically always cached in RAM, but shouldn't use much/any battery, so the main thing gained from disabling this package is the ~9MB RAM it uses.",
-        "removal": "delete"
+        "description": "Shows emergency info on lockscreen and power menu. Loads on device unlock/lockscreen and power menu, so it's basically always cached in RAM, but shouldn't use much/any battery. So, the main thing gained from disabling this package is the ~9MB RAM it uses.",
+        "removal": "caution",
+        "warning": "Removing this will break Safety and Emergency in Settings, and you will miss SOS alerts."
     },
     {
         "id": "com.android.emergency.basiccolorblack.overlay",
@@ -1633,7 +1640,7 @@
     {
         "id": "com.google.android.providers.media.module",
         "label": "Media",
-        "description": "Provider of media files (images, videos and such).\nContent providers encapsulate data, providing centralized management of data shared between apps.",
+        "description": "In Android 11+ this provides file access to apps without \"Manage All Files\" permission. In previous versions it's just an index of all audio-visual (no text) files in the user's file-system (`/sdcard/`, `/storage/emulated/0/`, etc...). This allows music-players and photo-galleries to list files quickly, without caching their own indices..\nContent providers encapsulate data, providing centralized management of data shared between apps.",
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
@@ -1642,8 +1649,13 @@
     },
     {
         "id": "com.google.android.safetycenter.resources",
-        "description": "Google Safety Center.\nProbably affects malware detection in new app installs, Gmail, and Chrome. Alternatively, you can use a libre spam-blocking and DNS-blocking solution instead.\nAnyway it looks like a useless frameworks.\nhttps://safety.google",
-        "removal": "delete"
+        "label": "Google Safety Center Resources",
+        "description": "Google Safe Browsing.",
+        "web": [
+            "https://www.android.com/safety/"
+        ],
+        "removal": "caution",
+        "warning": "Crashes Security and Privacy settings if removed."
     },
     {
         "id": "com.google.android.sdksandbox",
