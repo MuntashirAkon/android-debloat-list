@@ -8717,12 +8717,38 @@
     },
     {
         "id": "com.miui.miwallpaper.earth",
-        "description": "SuperWallpaperEARTH / SuperWallpaperMARS\nLive/animated Xiaomi wallaper",
+        "label": "Super wallpapers - Earth",
+        "description": "Live/animated Xiaomi wallaper",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.miwallpaper.geometry",
+        "label": "SuperWallpaperGeometry",
+        "description": "Live/animated Xiaomi wallaper",
         "removal": "delete"
     },
     {
         "id": "com.miui.miwallpaper.mars",
-        "description": "SuperWallpaperEARTH / SuperWallpaperMARS\nLive/animated Xiaomi wallaper\n",
+        "label": "SuperWallpaperMars",
+        "description": "Live/animated Xiaomi wallaper",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.miwallpaper.moon",
+        "label": "The Moon Super wallpapers",
+        "description": "Live/animated Xiaomi wallaper",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.miwallpaper.saturn",
+        "label": "SuperWallpaperSaturn",
+        "description": "Live/animated Xiaomi wallaper",
+        "removal": "delete"
+    },
+    {
+        "id": "com.miui.miwallpaper.snowmountain",
+        "label": "SuperWallpaperSnowmountain",
+        "description": "Live/animated Xiaomi wallaper",
         "removal": "delete"
     },
     {
@@ -9130,8 +9156,10 @@
     },
     {
         "id": "com.miuix.editor",
-        "description": "textaction\nIt's probably used for FrequentPhrase(`com.miui.phrase`) but also Frequent Phrases is unknown app so it's safe to remove.",
-        "removal": "delete"
+        "label": "textaction",
+        "description": "This application is responsible for displaying the text action toolbar in MIUI. Some applications, such as Telegram, use a custom text action toolbar, but most applications this standard toolbar.",
+        "removal": "delete",
+        "warning": "If removed, it will fall back to the Android's standard text action toolbar."
     },
     {
         "id": "com.mmigroup.fmradio",
