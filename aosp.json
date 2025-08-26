@@ -941,12 +941,12 @@
     {
         "id": "com.android.providers.contacts",
         "label": "Contacts Storage",
-        "description": "Provider for contact data.\nContent providers encapsulate data, providing centralized management of data shared between apps.",
+        "description": "Provider for contact data and call log.\nContent providers encapsulate data, providing centralized management of data shared between apps.",
         "web": [
             "https://developer.android.com/guide/topics/providers/content-providers.html"
         ],
         "removal": "caution",
-        "warning": "Breaks contact functionality if disabled. Not recommended to disable if you plan to use your device as a phone."
+        "warning": "Breaks contact and call log functionality if disabled. Not recommended to disable if you plan to use your device as a phone (even with a 3rd-pary phone app, as most use this provider under the hood)."
     },
     {
         "id": "com.android.providers.downloads",
