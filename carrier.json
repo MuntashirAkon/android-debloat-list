@@ -296,10 +296,14 @@
             "https://en.wikipedia.org/wiki/IronSource",
             "https://aura.ironsrc.com/tools/drive-app-downloads/",
             "https://arxiv.org/pdf/2010.10088.pdf",
-            "https://github.com/0x192/universal-android-debloater/issues/278"
+            "https://github.com/0x192/universal-android-debloater/issues/278",
+            "https://smex.org/invasive-israeli-software-is-harvesting-data-from-samsung-users-in-wana/",
+            "https://investors.unity.com/news/news-details/2022/Unity-Announces-Merger-Agreement-with-ironSource/default.aspx",
+            "https://beta.pithus.org/report/9f8ff7db0924711be9a8a238beafecde84f42f3f249dfd9acfbe6cab390994b5",
+            "https://www.virustotal.com/gui/file/9f8ff7db0924711be9a8a238beafecde84f42f3f249dfd9acfbe6cab390994b5"
         ],
         "removal": "delete",
-        "warning": "This app is developed by IronSource, an Israeli advertising company."
+        "warning": "This app is developed by IronSource, an Israeli advertising company (now owned by the American company Unity)."
     },
     {
         "id": "com.aura.oobe.samsung.gl",
@@ -309,10 +313,12 @@
             "https://en.wikipedia.org/wiki/IronSource",
             "https://aura.ironsrc.com/tools/drive-app-downloads/",
             "https://arxiv.org/pdf/2010.10088.pdf",
-            "https://github.com/0x192/universal-android-debloater/issues/278"
+            "https://github.com/0x192/universal-android-debloater/issues/278",
+            "https://smex.org/invasive-israeli-software-is-harvesting-data-from-samsung-users-in-wana/",
+            "https://investors.unity.com/news/news-details/2022/Unity-Announces-Merger-Agreement-with-ironSource/default.aspx"
         ],
         "removal": "delete",
-        "warning": "This app is developed by IronSource, an Israeli advertising company."
+        "warning": "This app is developed by IronSource, an Israeli advertising company (now owned by the American company Unity)."
     },
     {
         "id": "com.aura.oobe.vodafone",
