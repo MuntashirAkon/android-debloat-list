@@ -18489,7 +18489,7 @@
     {
         "id": "com.unisoc.phone",
         "label": "LockAssistant",
-        "description": "Runs before the user unlocks the device (direct-boot aware). Reads IMEI, SMS, call log, uses gps/wifi. Unisoc is a CPU manufacturer. Related to package `com.android.unisoc.telephony.server`.",
+        "description": "Runs before the user unlocks the device (direct-boot aware). Reads IMEI, SMS, call log, uses gps/wifi. Unisoc is a CPU manufacturer. Disabling and rebooting breaks SMS sending on Realme RMX3834. Related to package `com.android.unisoc.telephony.server`.",
         "removal": "caution"
     },
     {
